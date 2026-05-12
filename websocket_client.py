@@ -117,13 +117,14 @@ class BadlaWebSocketClient:
         try:
             with open(filepath, 'w') as f:
                 json.dump(save_data, f, indent=4)
-            logger.info(f"Data saved to {filepath}")
+            # logger.info(f"Data saved to {filepath}")
         except Exception as e:
             logger.error(f"Error writing file {filepath}: {e}")
 
     def _save_data(self, data, setting_name):
         """
         Push to Node server immediately (fast path),
+        
         then write to disk in a background thread (non-blocking).
         """
         try:
@@ -194,7 +195,7 @@ class BadlaWebSocketClient:
     
     def _send_all_instrument_requests(self):
         """Send requests for all instrument data at once."""
-        logger.info("Sending all instrument requests together")
+        # logger.info("Sending all instrument requests together")
         
         for instrument_setting in self.instrument_settings:
             try:
@@ -297,14 +298,14 @@ class BadlaWebSocketClient:
                                     # push + file write both happen in background threads
                                     self._save_data(processed_data, setting_name)
                                     responses_received += 1
-                                    logger.info(f"Received response {responses_received}/{expected_responses}")
+                                    # logger.info(f"Received response {responses_received}/{expected_responses}")
                         
                         except websocket.WebSocketTimeoutException:
                             logger.warning(f"Timeout ({self.response_timeout}s) waiting for responses. Received {responses_received}/{expected_responses}")
                             break
                     
                     elapsed_time = time.time() - start_time
-                    logger.info(f"Completed cycle in {elapsed_time:.2f}s — {responses_received}/{expected_responses} responses")
+                    # logger.info(f"Completed cycle in {elapsed_time:.2f}s — {responses_received}/{expected_responses} responses")
                     
                 except Exception as e:
                     logger.error(f"Error in request-response cycle: {e}")
@@ -313,7 +314,7 @@ class BadlaWebSocketClient:
                         time.sleep(1)
                         continue
                 
-                logger.info("Starting next cycle immediately")
+                # logger.info("Starting next cycle immediately")
                 
         except KeyboardInterrupt:
             logger.info("Keyboard interrupt received, shutting down...")
