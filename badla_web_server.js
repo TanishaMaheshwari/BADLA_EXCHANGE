@@ -390,7 +390,6 @@ function dealToFrontend(d) {
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'public', 'index.html')));
 
-server.listen(PORT, () => {
-  console.log(`BadlaBoard running on http://localhost:${PORT}`);
-  console.log(`Install dependency if needed: npm install better-sqlite3`);
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`BadlaBoard running on port ${PORT}`);
 });
