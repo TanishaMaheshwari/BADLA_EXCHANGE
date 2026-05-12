@@ -47,32 +47,40 @@ db.exec(`
       note              TEXT,
       usd_inr_rate      REAL NOT NULL DEFAULT 89,
       dginr_at_entry    REAL,
+
       -- MCX leg
       mcx_side          TEXT NOT NULL,
       mcx_price         REAL NOT NULL,
+      mcx_qty           REAL NOT NULL DEFAULT 1,
       mcx_brokerage     REAL NOT NULL DEFAULT 0,
       mcx_exit_price    REAL,
       mcx_pnl           REAL,
+
       -- COMEX leg
       comex_side        TEXT NOT NULL,
       comex_price       REAL NOT NULL,
+      comex_qty         REAL NOT NULL DEFAULT 1,
       comex_brokerage   REAL NOT NULL DEFAULT 0,
       comex_exit_price  REAL,
       comex_pnl         REAL,
-      -- DGCX leg (optional)
+
+      -- DGCX leg
       dgcx_enabled      INTEGER NOT NULL DEFAULT 0,
       dgcx_side         TEXT,
       dgcx_price        REAL,
+      dgcx_qty          REAL NOT NULL DEFAULT 1,
       dgcx_brokerage    REAL NOT NULL DEFAULT 0,
       dgcx_exit_price   REAL,
       dgcx_pnl          REAL,
+
       -- Summary
       status            TEXT DEFAULT 'open',
       total_pnl         REAL,
       entry_time        TEXT DEFAULT (datetime('now')),
       exit_time         TEXT,
+
       FOREIGN KEY(user_id) REFERENCES users(id)
-    );
+  );
 `);
 
 // ─── Helper: hash password ───────────────────────────────────────────────────
