@@ -216,7 +216,7 @@ class BadlaWebSocketClient:
                 
                 if self.ws and self.ws.connected:
                     self.ws.send(message)
-                    logger.info(f"Sent request for {instrument_setting['settingName']} with room ID {room_id}")
+                    # logger.info(f"Sent request for {instrument_setting['settingName']} with room ID {room_id}")
                 else:
                     logger.warning("WebSocket not connected, cannot send request")
             except Exception as e:
