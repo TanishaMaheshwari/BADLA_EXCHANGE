@@ -4,7 +4,7 @@
   "description": "Tools for calculating Badla values from market data files",
   "main": "badla_calculator.js",
   "scripts": {
-    "start": "node badla_web_server.js"
+    "start": "node badla_web_server.js",
     "calculate": "node badla_calculator.js",
     "cli": "node badla_calculator_cli.js",
     "run-all": "node run_all.js",
