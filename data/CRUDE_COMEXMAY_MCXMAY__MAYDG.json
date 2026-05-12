@@ -1,0 +1,221 @@
+{
+    "2026-05-12 17:41:20": {
+        "timestamp": "2026-05-12 17:41:20",
+        "instrument_id": "69df6f0cbab8e09015512d22",
+        "instrument_name": "CRUDE(COMEXMAY-MCXMAY)@MAYDG",
+        "badla_type": "CRUDE",
+        "room_id": "4I16b",
+        "raw_data": {
+            "roomId": "4I16b",
+            "data": [
+                {
+                    "mode": "KT",
+                    "ExchangeToken": "488290",
+                    "instrument_token": "75312092913",
+                    "tradable": true,
+                    "last_price": 9730,
+                    "last_quantity": 1,
+                    "average_price": "9625.79",
+                    "volume": 24390,
+                    "buy_quantity": 1107,
+                    "sell_quantity": 483,
+                    "ohlc_open": "9457",
+                    "ohlc_high": "9765",
+                    "ohlc_low": "9419",
+                    "ohlc_close": "9376",
+                    "change": "0",
+                    "buy_price_0": 9729,
+                    "sell_price_0": 9732,
+                    "buy_qty_0": 6,
+                    "sell_qty_0": 7,
+                    "LastTradeTimeD": "2026-05-12T17:41:18",
+                    "last_trade_time": "12-05-2026 17:41:18",
+                    "oi": 12516,
+                    "oi_day_high": 12516,
+                    "oi_day_low": 10731,
+                    "timestamp": "2026-05-12T17:41:19",
+                    "name": "CRUDEOIL",
+                    "expiry": "18-05-2026",
+                    "exchange": "MCX",
+                    "tradingsymbol": "CRUDEOIL26MAYFUT",
+                    "lot_size": "1.000",
+                    "lower_circuit": "8814",
+                    "upper_circuit": "9938",
+                    "net_change": "354",
+                    "percentage_change": "3.78",
+                    "buy": [
+                        {
+                            "Quantity": 6,
+                            "Price": 9729,
+                            "Orders": 2,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 23,
+                            "Price": 9728,
+                            "Orders": 16,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 16,
+                            "Price": 9727,
+                            "Orders": 5,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 17,
+                            "Price": 9726,
+                            "Orders": 7,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 22,
+                            "Price": 9725,
+                            "Orders": 12,
+                            "Flag": null
+                        }
+                    ],
+                    "sell": [
+                        {
+                            "Quantity": 7,
+                            "Price": 9732,
+                            "Orders": 3,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 14,
+                            "Price": 9733,
+                            "Orders": 6,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 16,
+                            "Price": 9734,
+                            "Orders": 12,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 18,
+                            "Price": 9735,
+                            "Orders": 15,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 14,
+                            "Price": 9736,
+                            "Orders": 8,
+                            "Flag": null
+                        }
+                    ],
+                    "The52WeekHigh": 10571,
+                    "The52WeekLow": 0,
+                    "ProviderTime": "2026-05-12T17:41:19.7518859+05:30",
+                    "BrokerReceiveTime": null,
+                    "IsHistoryOn": false,
+                    "ohlc": {
+                        "high": "9765",
+                        "low": "9419"
+                    }
+                },
+                {
+                    "mode": "IQ",
+                    "ExchangeToken": "QCLM26",
+                    "instrument_token": "93359914265",
+                    "tradable": true,
+                    "last_price": 101.62,
+                    "last_quantity": 1,
+                    "average_price": null,
+                    "volume": 52688,
+                    "buy_quantity": 0,
+                    "sell_quantity": 0,
+                    "ohlc_open": "98.39",
+                    "ohlc_high": "102.05",
+                    "ohlc_low": "98.00",
+                    "ohlc_close": "98.07",
+                    "change": "3.55",
+                    "buy_price_0": 101.6,
+                    "sell_price_0": 101.62,
+                    "buy_qty_0": 3,
+                    "sell_qty_0": 3,
+                    "LastTradeTimeD": "2026-05-12T17:41:19.497162+05:30",
+                    "last_trade_time": "12-05-2026 17:41:19",
+                    "oi": 186444,
+                    "oi_day_high": null,
+                    "oi_day_low": null,
+                    "timestamp": "2026-05-12T17:41:19.497162+05:30",
+                    "name": "CRUDEOIL",
+                    "expiry": "19-05-2026",
+                    "exchange": "COMEX",
+                    "tradingsymbol": "CRUDEOIL 19May2026",
+                    "lot_size": "1.000",
+                    "lower_circuit": "0",
+                    "upper_circuit": "0",
+                    "net_change": "3.55",
+                    "percentage_change": "3.62",
+                    "buy": [],
+                    "sell": [],
+                    "The52WeekHigh": 110.93,
+                    "The52WeekLow": 0,
+                    "ProviderTime": "2026-05-12T17:41:19.4971669+05:30",
+                    "BrokerReceiveTime": null,
+                    "IsHistoryOn": false,
+                    "ohlc": {
+                        "high": "102.05",
+                        "low": "98.00"
+                    }
+                },
+                {
+                    "mode": "XL",
+                    "ExchangeToken": "44439",
+                    "instrument_token": "44439",
+                    "tradable": false,
+                    "last_price": 104.360001,
+                    "last_quantity": null,
+                    "average_price": "0",
+                    "volume": 4722,
+                    "buy_quantity": 0,
+                    "sell_quantity": 0,
+                    "ohlc_open": "104.61",
+                    "ohlc_high": "104.66",
+                    "ohlc_low": "104.29",
+                    "ohlc_close": "104.91",
+                    "change": null,
+                    "buy_price_0": 104.31,
+                    "sell_price_0": 104.33,
+                    "buy_qty_0": 51,
+                    "sell_qty_0": 191,
+                    "LastTradeTimeD": "2026-05-12T17:40:22",
+                    "last_trade_time": "12-05-2026 17:40:22",
+                    "oi": null,
+                    "oi_day_high": null,
+                    "oi_day_low": null,
+                    "timestamp": "2026-05-12T17:40:22",
+                    "name": "DGCX",
+                    "expiry": "26-05-2026",
+                    "exchange": "DGCX",
+                    "tradingsymbol": "DGCX 26May2026",
+                    "lot_size": "0",
+                    "lower_circuit": "0",
+                    "upper_circuit": "0",
+                    "net_change": "-0.55",
+                    "percentage_change": "-0.52",
+                    "buy": [],
+                    "sell": [],
+                    "The52WeekHigh": 0,
+                    "The52WeekLow": 0,
+                    "ProviderTime": "2026-05-12T17:41:03.5810269+05:30",
+                    "BrokerReceiveTime": null,
+                    "IsHistoryOn": true,
+                    "ohlc": {
+                        "high": "104.66",
+                        "low": "104.29"
+                    }
+                }
+            ],
+            "uniqId": "69df6f0cbab8e09015512d22",
+            "marketType": "badla",
+            "equation": "L1*L3",
+            "duty": 15
+        }
+    }
+}

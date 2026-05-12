@@ -1,0 +1,221 @@
+{
+    "2026-05-12 17:41:20": {
+        "timestamp": "2026-05-12 17:41:20",
+        "instrument_id": "69eefa7cbab8e09015512d35",
+        "instrument_name": "NIFTY-SGX(MAY)",
+        "badla_type": "OTHER",
+        "room_id": "yxEAg",
+        "raw_data": {
+            "roomId": "yxEAg",
+            "data": [
+                {
+                    "mode": "KT",
+                    "ExchangeToken": "66071",
+                    "instrument_token": "10898165746",
+                    "tradable": true,
+                    "last_price": 23470,
+                    "last_quantity": 65,
+                    "average_price": "23560.45",
+                    "volume": 5760495,
+                    "buy_quantity": 92365,
+                    "sell_quantity": 458965,
+                    "ohlc_open": "23766",
+                    "ohlc_high": "23778.5",
+                    "ohlc_low": "23393.4",
+                    "ohlc_close": "23868.5",
+                    "change": "0",
+                    "buy_price_0": 23460,
+                    "sell_price_0": 23470,
+                    "buy_qty_0": 130,
+                    "sell_qty_0": 65,
+                    "LastTradeTimeD": "2026-05-12T15:29:58",
+                    "last_trade_time": "12-05-2026 15:29:58",
+                    "oi": 19300580,
+                    "oi_day_high": 19305715,
+                    "oi_day_low": 17771715,
+                    "timestamp": "2026-05-12T15:29:58",
+                    "name": "NIFTY",
+                    "expiry": "26-05-2026",
+                    "exchange": "NSE",
+                    "tradingsymbol": "NIFTY26MAYFUT",
+                    "lot_size": "65.000",
+                    "lower_circuit": "21481.7",
+                    "upper_circuit": "26255.3",
+                    "net_change": "-398.5",
+                    "percentage_change": "-1.67",
+                    "buy": [
+                        {
+                            "Quantity": 130,
+                            "Price": 23460,
+                            "Orders": 2,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 65,
+                            "Price": 23459.5,
+                            "Orders": 1,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 780,
+                            "Price": 23459,
+                            "Orders": 2,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 1755,
+                            "Price": 23458,
+                            "Orders": 1,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 65,
+                            "Price": 23457.6,
+                            "Orders": 1,
+                            "Flag": null
+                        }
+                    ],
+                    "sell": [
+                        {
+                            "Quantity": 65,
+                            "Price": 23470,
+                            "Orders": 1,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 130,
+                            "Price": 23471.8,
+                            "Orders": 1,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 325,
+                            "Price": 23472.3,
+                            "Orders": 1,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 1235,
+                            "Price": 23472.5,
+                            "Orders": 3,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 130,
+                            "Price": 23472.8,
+                            "Orders": 1,
+                            "Flag": null
+                        }
+                    ],
+                    "The52WeekHigh": 24535,
+                    "The52WeekLow": 0,
+                    "ProviderTime": "2026-05-12T15:29:59.5165817+05:30",
+                    "BrokerReceiveTime": null,
+                    "IsHistoryOn": false,
+                    "ohlc": {
+                        "high": "23778.5",
+                        "low": "23393.4"
+                    }
+                },
+                {
+                    "mode": "XL",
+                    "ExchangeToken": "44438",
+                    "instrument_token": "44438",
+                    "tradable": false,
+                    "last_price": 23395,
+                    "last_quantity": null,
+                    "average_price": "0",
+                    "volume": 56854,
+                    "buy_quantity": 0,
+                    "sell_quantity": 0,
+                    "ohlc_open": "24211.5",
+                    "ohlc_high": "23784.5",
+                    "ohlc_low": "23370.5",
+                    "ohlc_close": "23760",
+                    "change": null,
+                    "buy_price_0": 23395,
+                    "sell_price_0": 23399.5,
+                    "buy_qty_0": 2,
+                    "sell_qty_0": 7,
+                    "LastTradeTimeD": "2026-05-12T17:39:43",
+                    "last_trade_time": "12-05-2026 17:39:43",
+                    "oi": null,
+                    "oi_day_high": null,
+                    "oi_day_low": null,
+                    "timestamp": "2026-05-12T17:39:43",
+                    "name": "GIFTNIFTY",
+                    "expiry": "26-05-2026",
+                    "exchange": "SGX",
+                    "tradingsymbol": "GIFTNIFTY 26May2026",
+                    "lot_size": "0",
+                    "lower_circuit": "0",
+                    "upper_circuit": "0",
+                    "net_change": "-365",
+                    "percentage_change": "-1.54",
+                    "buy": [],
+                    "sell": [],
+                    "The52WeekHigh": 0,
+                    "The52WeekLow": 0,
+                    "ProviderTime": "2026-05-12T17:41:10.5805444+05:30",
+                    "BrokerReceiveTime": null,
+                    "IsHistoryOn": true,
+                    "ohlc": {
+                        "high": "23784.5",
+                        "low": "23370.5"
+                    }
+                },
+                {
+                    "mode": "XL",
+                    "ExchangeToken": "44439",
+                    "instrument_token": "44439",
+                    "tradable": false,
+                    "last_price": 104.360001,
+                    "last_quantity": null,
+                    "average_price": "0",
+                    "volume": 4722,
+                    "buy_quantity": 0,
+                    "sell_quantity": 0,
+                    "ohlc_open": "104.61",
+                    "ohlc_high": "104.66",
+                    "ohlc_low": "104.29",
+                    "ohlc_close": "104.91",
+                    "change": null,
+                    "buy_price_0": 104.31,
+                    "sell_price_0": 104.33,
+                    "buy_qty_0": 51,
+                    "sell_qty_0": 191,
+                    "LastTradeTimeD": "2026-05-12T17:40:22",
+                    "last_trade_time": "12-05-2026 17:40:22",
+                    "oi": null,
+                    "oi_day_high": null,
+                    "oi_day_low": null,
+                    "timestamp": "2026-05-12T17:40:22",
+                    "name": "DGCX",
+                    "expiry": "26-05-2026",
+                    "exchange": "DGCX",
+                    "tradingsymbol": "DGCX 26May2026",
+                    "lot_size": "0",
+                    "lower_circuit": "0",
+                    "upper_circuit": "0",
+                    "net_change": "-0.55",
+                    "percentage_change": "-0.52",
+                    "buy": [],
+                    "sell": [],
+                    "The52WeekHigh": 0,
+                    "The52WeekLow": 0,
+                    "ProviderTime": "2026-05-12T17:41:03.5810269+05:30",
+                    "BrokerReceiveTime": null,
+                    "IsHistoryOn": true,
+                    "ohlc": {
+                        "high": "104.66",
+                        "low": "104.29"
+                    }
+                }
+            ],
+            "uniqId": "69eefa7cbab8e09015512d35",
+            "marketType": "badla",
+            "equation": "L1",
+            "duty": 15
+        }
+    }
+}

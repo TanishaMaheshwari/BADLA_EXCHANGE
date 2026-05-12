@@ -1,0 +1,39 @@
+{
+  "name": "badla-calculator",
+  "version": "1.0.0",
+  "description": "Tools for calculating Badla values from market data files",
+  "main": "badla_calculator.js",
+  "scripts": {
+    "start": "node badla_web.js",
+    "calculate": "node badla_calculator.js",
+    "cli": "node badla_calculator_cli.js",
+    "run-all": "node run_all.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "badla",
+    "trading",
+    "finance",
+    "calculator",
+    "mcx",
+    "comex",
+    "dgcx"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^12.9.0",
+    "cors": "^2.8.6",
+    "ejs": "^3.1.10",
+    "express": "^4.22.1",
+    "ws": "^8.20.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "bin": {
+    "badla-calculator": "./badla_calculator_cli.js",
+    "badla-web": "./badla_web.js",
+    "badla-run-all": "./run_all.js"
+  }
+}

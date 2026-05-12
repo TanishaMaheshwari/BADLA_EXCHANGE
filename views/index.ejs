@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Badla Calculator</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Badla Calculator</h1>
+    
+    <div class="filters">
+      <form action="/" method="GET">
+        <div class="filter-group">
+          <label for="type">Type:</label>
+          <select name="type" id="type">
+            <option value="">All Types</option>
+            <option value="GOLD" <%= type === 'GOLD' ? 'selected' : '' %>>GOLD</option>
+            <option value="SILVER" <%= type === 'SILVER' ? 'selected' : '' %>>SILVER</option>
+            <option value="CRUDE" <%= type === 'CRUDE' ? 'selected' : '' %>>CRUDE</option>
+            <option value="COPPER" <%= type === 'COPPER' ? 'selected' : '' %>>COPPER</option>
+            <option value="GAS" <%= type === 'GAS' ? 'selected' : '' %>>GAS</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="sort">Sort By:</label>
+          <select name="sort" id="sort">
+            <option value="name" <%= sort === 'name' ? 'selected' : '' %>>Instrument Name</option>
+            <option value="type" <%= sort === 'type' ? 'selected' : '' %>>Type</option>
+            <option value="buy" <%= sort === 'buy' ? 'selected' : '' %>>Badla BUY</option>
+            <option value="sell" <%= sort === 'sell' ? 'selected' : '' %>>Badla SELL</option>
+            <option value="ltp" <%= sort === 'ltp' ? 'selected' : '' %>>Badla LTP</option>
+          </select>
+        </div>
+        
+        <button type="submit">Apply Filters</button>
+        
+        <div class="auto-refresh">
+          <div class="filter-group">
+            <input type="checkbox" id="auto-refresh" name="auto-refresh" <%= autoRefresh ? 'checked' : '' %>>
+            <label for="auto-refresh">Auto Refresh</label>
+          </div>
+          
+          <div class="filter-group">
+            <select id="refresh-interval" name="refresh-interval">
+              <option value="5" <%= refreshInterval === '5' ? 'selected' : '' %>>5 seconds</option>
+              <option value="10" <%= refreshInterval === '10' ? 'selected' : '' %>>10 seconds</option>
+              <option value="30" <%= refreshInterval === '30' ? 'selected' : '' %>>30 seconds</option>
+              <option value="60" <%= refreshInterval === '60' ? 'selected' : '' %>>1 minute</option>
+            </select>
+          </div>
+        </div>
+        
+        <button type="button" class="refresh-button" onclick="window.location.reload()">Refresh Now</button>
+      </form>
+    </div>
+    
+    <table class="badla-table">
+      <thead>
+        <tr>
+          <th>Instrument</th>
+          <th>Type</th>
+          <th>Badla[BUY]</th>
+          <th>Badla[SELL]</th>
+          <th>Badla[LTP]</th>
+          <th>Last Updated</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% results.forEach((result, index) => { %>
+          <tr class="data-row" data-id="<%= index %>">
+            <td><%= result.instrumentName %></td>
+            <td><%= result.badlaType %></td>
+            <td class="<%= parseFloat(result.badlaBUY) >= 0 ? 'positive' : 'negative' %>"><%= result.badlaBUY %></td>
+            <td class="<%= parseFloat(result.badlaSELL) >= 0 ? 'positive' : 'negative' %>"><%= result.badlaSELL %></td>
+            <td class="<%= parseFloat(result.badlaLTP) >= 0 ? 'positive' : 'negative' %>"><%= result.badlaLTP %></td>
+            <td><%= new Date(result.timestamp).toLocaleString() %></td>
+          </tr>
+          <tr id="details-<%= index %>" class="details-row">
+            <td colspan="6">
+              <div class="details-content">
+                <div class="details-grid">
+                  <div class="exchange-card">
+                    <h3>MCX</h3>
+                    <div class="price-row">
+                      <span class="price-label">Last Price:</span>
+                      <span><%= result.mcx.lastPrice %></span>
+                    </div>
+                    <div class="price-row">
+                      <span class="price-label">Buy Price:</span>
+                      <span><%= result.mcx.buyPrice %></span>
+                    </div>
+                    <div class="price-row">
+                      <span class="price-label">Sell Price:</span>
+                      <span><%= result.mcx.sellPrice %></span>
+                    </div>
+                  </div>
+                  
+                  <div class="exchange-card">
+                    <h3>COMEX</h3>
+                    <div class="price-row">
+                      <span class="price-label">Last Price:</span>
+                      <span><%= result.comex.lastPrice %></span>
+                    </div>
+                    <div class="price-row">
+                      <span class="price-label">Buy Price:</span>
+                      <span><%= result.comex.buyPrice %></span>
+                    </div>
+                    <div class="price-row">
+                      <span class="price-label">Sell Price:</span>
+                      <span><%= result.comex.sellPrice %></span>
+                    </div>
+                  </div>
+                  
+                  <div class="exchange-card">
+                    <h3>DGCX</h3>
+                    <div class="price-row">
+                      <span class="price-label">Last Price:</span>
+                      <span><%= result.dgcx.lastPrice %></span>
+                    </div>
+                    <div class="price-row">
+                      <span class="price-label">Buy Price:</span>
+                      <span><%= result.dgcx.buyPrice %></span>
+                    </div>
+                    <div class="price-row">
+                      <span class="price-label">Sell Price:</span>
+                      <span><%= result.dgcx.sellPrice %></span>
+                    </div>
+                  </div>
+                  
+                  <div class="equation-box">
+                    <div class="equation-title">Calculation Details:</div>
+                    <div class="price-row">
+                      <span class="price-label">Equation:</span>
+                      <span class="equation-text"><%= result.equation %></span>
+                    </div>
+                    <div class="price-row">
+                      <span class="price-label">Duty:</span>
+                      <span><%= result.duty %>%</span>
+                    </div>
+                    <div class="price-row">
+                      <span class="price-label">Reverse:</span>
+                      <span><%= result.reverse ? 'Yes' : 'No' %></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        <% }); %>
+        
+        <% if (results.length === 0) { %>
+          <tr>
+            <td colspan="6" style="text-align: center; padding: 20px;">No results found</td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </div>
+  
+  <script src="/script.js"></script>
+</body>
+</html>

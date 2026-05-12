@@ -1,0 +1,221 @@
+{
+    "2026-05-12 17:41:20": {
+        "timestamp": "2026-05-12 17:41:20",
+        "instrument_id": "69df6e21bab8e09015512d21",
+        "instrument_name": "NGAS(COMEXMAY-MCXMAY)MAYDG",
+        "badla_type": "GAS",
+        "room_id": "hNgUG",
+        "raw_data": {
+            "roomId": "hNgUG",
+            "data": [
+                {
+                    "mode": "KT",
+                    "ExchangeToken": "488505",
+                    "instrument_token": "68609638792",
+                    "tradable": true,
+                    "last_price": 277.5,
+                    "last_quantity": 1,
+                    "average_price": "279.27",
+                    "volume": 34872,
+                    "buy_quantity": 1737,
+                    "sell_quantity": 2193,
+                    "ohlc_open": "279.3",
+                    "ohlc_high": "281.7",
+                    "ohlc_low": "276.6",
+                    "ohlc_close": "277.6",
+                    "change": "0",
+                    "buy_price_0": 277.5,
+                    "sell_price_0": 277.6,
+                    "buy_qty_0": 9,
+                    "sell_qty_0": 34,
+                    "LastTradeTimeD": "2026-05-12T17:41:13",
+                    "last_trade_time": "12-05-2026 17:41:13",
+                    "oi": 25941,
+                    "oi_day_high": 27041,
+                    "oi_day_low": 25861,
+                    "timestamp": "2026-05-12T17:41:18",
+                    "name": "NATURALGAS",
+                    "expiry": "26-05-2026",
+                    "exchange": "MCX",
+                    "tradingsymbol": "NATURALGAS26MAYFUT",
+                    "lot_size": "1.000",
+                    "lower_circuit": "266.5",
+                    "upper_circuit": "288.7",
+                    "net_change": "-0.1",
+                    "percentage_change": "-0.04",
+                    "buy": [
+                        {
+                            "Quantity": 9,
+                            "Price": 277.5,
+                            "Orders": 3,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 52,
+                            "Price": 277.4,
+                            "Orders": 22,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 45,
+                            "Price": 277.3,
+                            "Orders": 23,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 47,
+                            "Price": 277.2,
+                            "Orders": 22,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 48,
+                            "Price": 277.1,
+                            "Orders": 19,
+                            "Flag": null
+                        }
+                    ],
+                    "sell": [
+                        {
+                            "Quantity": 34,
+                            "Price": 277.6,
+                            "Orders": 12,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 46,
+                            "Price": 277.7,
+                            "Orders": 16,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 37,
+                            "Price": 277.8,
+                            "Orders": 11,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 52,
+                            "Price": 277.9,
+                            "Orders": 14,
+                            "Flag": null
+                        },
+                        {
+                            "Quantity": 94,
+                            "Price": 278,
+                            "Orders": 35,
+                            "Flag": null
+                        }
+                    ],
+                    "The52WeekHigh": 281.7,
+                    "The52WeekLow": 0,
+                    "ProviderTime": "2026-05-12T17:41:19.7515656+05:30",
+                    "BrokerReceiveTime": null,
+                    "IsHistoryOn": false,
+                    "ohlc": {
+                        "high": "281.7",
+                        "low": "276.6"
+                    }
+                },
+                {
+                    "mode": "IQ",
+                    "ExchangeToken": "QNGM26",
+                    "instrument_token": "66500552748",
+                    "tradable": true,
+                    "last_price": 2.895,
+                    "last_quantity": 1,
+                    "average_price": null,
+                    "volume": 21240,
+                    "buy_quantity": 0,
+                    "sell_quantity": 0,
+                    "ohlc_open": "2.926",
+                    "ohlc_high": "2.945",
+                    "ohlc_low": "2.880",
+                    "ohlc_close": "2.910",
+                    "change": "-0.015",
+                    "buy_price_0": 2.894,
+                    "sell_price_0": 2.895,
+                    "buy_qty_0": 5,
+                    "sell_qty_0": 11,
+                    "LastTradeTimeD": "2026-05-12T17:41:20.6064359+05:30",
+                    "last_trade_time": "12-05-2026 17:41:20",
+                    "oi": 185018,
+                    "oi_day_high": null,
+                    "oi_day_low": null,
+                    "timestamp": "2026-05-12T17:41:20.6064359+05:30",
+                    "name": "NATURALGAS",
+                    "expiry": "27-05-2026",
+                    "exchange": "COMEX",
+                    "tradingsymbol": "NATURALGAS 27May2026",
+                    "lot_size": "1.000",
+                    "lower_circuit": "0",
+                    "upper_circuit": "0",
+                    "net_change": "-0.02",
+                    "percentage_change": "-0.52",
+                    "buy": [],
+                    "sell": [],
+                    "The52WeekHigh": 4.42,
+                    "The52WeekLow": 0,
+                    "ProviderTime": "2026-05-12T17:41:20.6064396+05:30",
+                    "BrokerReceiveTime": null,
+                    "IsHistoryOn": false,
+                    "ohlc": {
+                        "high": "2.945",
+                        "low": "2.880"
+                    }
+                },
+                {
+                    "mode": "XL",
+                    "ExchangeToken": "44439",
+                    "instrument_token": "44439",
+                    "tradable": false,
+                    "last_price": 104.360001,
+                    "last_quantity": null,
+                    "average_price": "0",
+                    "volume": 4722,
+                    "buy_quantity": 0,
+                    "sell_quantity": 0,
+                    "ohlc_open": "104.61",
+                    "ohlc_high": "104.66",
+                    "ohlc_low": "104.29",
+                    "ohlc_close": "104.91",
+                    "change": null,
+                    "buy_price_0": 104.31,
+                    "sell_price_0": 104.33,
+                    "buy_qty_0": 51,
+                    "sell_qty_0": 191,
+                    "LastTradeTimeD": "2026-05-12T17:40:22",
+                    "last_trade_time": "12-05-2026 17:40:22",
+                    "oi": null,
+                    "oi_day_high": null,
+                    "oi_day_low": null,
+                    "timestamp": "2026-05-12T17:40:22",
+                    "name": "DGCX",
+                    "expiry": "26-05-2026",
+                    "exchange": "DGCX",
+                    "tradingsymbol": "DGCX 26May2026",
+                    "lot_size": "0",
+                    "lower_circuit": "0",
+                    "upper_circuit": "0",
+                    "net_change": "-0.55",
+                    "percentage_change": "-0.52",
+                    "buy": [],
+                    "sell": [],
+                    "The52WeekHigh": 0,
+                    "The52WeekLow": 0,
+                    "ProviderTime": "2026-05-12T17:41:03.5810269+05:30",
+                    "BrokerReceiveTime": null,
+                    "IsHistoryOn": true,
+                    "ohlc": {
+                        "high": "104.66",
+                        "low": "104.29"
+                    }
+                }
+            ],
+            "uniqId": "69df6e21bab8e09015512d21",
+            "marketType": "badla",
+            "equation": "L1*L3",
+            "duty": 15
+        }
+    }
+}

@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Badla Board</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0a0f;
+  --surface: #111118;
+  --surface2: #16161f;
+  --border: #1e1e2e;
+  --accent: #00ff88;
+  --red: #ff4466;
+  --green: #00ff88;
+  --gold: #ffd700;
+  --text: #e0e0f0;
+  --muted: #555570;
+  --header-h: 56px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: 'JetBrains Mono', monospace; font-size: 13px; overflow-x: hidden; }
+
+/* ── Login ── */
+#login-screen {
+  display: flex; align-items: center; justify-content: center;
+  min-height: 100vh; background: var(--bg);
+}
+.login-box {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px; padding: 40px 36px; width: 360px;
+}
+.login-logo { font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 800; color: var(--accent); margin-bottom: 6px; }
+.login-logo span { color: var(--muted); }
+.login-sub { color: var(--muted); font-size: 11px; margin-bottom: 28px; }
+.login-field { display: flex; flex-direction: column; gap: 5px; margin-bottom: 14px; }
+.login-field label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.login-field input {
+  background: var(--bg); border: 1px solid var(--border); color: var(--text);
+  padding: 10px 12px; border-radius: 6px; font-family: 'JetBrains Mono', monospace;
+  font-size: 13px; outline: none;
+}
+.login-field input:focus { border-color: var(--accent); }
+.login-btn {
+  width: 100%; padding: 11px; background: var(--accent); color: #000;
+  border: none; border-radius: 6px; font-family: 'JetBrains Mono', monospace;
+  font-size: 13px; font-weight: 700; cursor: pointer; margin-top: 8px;
+  transition: opacity 0.15s;
+}
+.login-btn:hover { opacity: 0.85; }
+.login-error { color: var(--red); font-size: 11px; margin-top: 10px; display: none; }
+
+/* ── App shell (hidden until logged in) ── */
+#app { display: none; }
+
+/* ── Header ── */
+.header {
+  height: var(--header-h); display: flex; align-items: center; justify-content: space-between;
+  padding: 0 20px; background: var(--surface); border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; z-index: 100;
+}
+.logo { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 800; color: var(--accent); letter-spacing: -0.5px; }
+.logo span { color: var(--muted); }
+.header-right { display: flex; align-items: center; gap: 16px; }
+.username-badge { font-size: 11px; color: var(--muted); }
+.username-badge strong { color: var(--accent); }
+.logout-btn { font-size: 11px; color: var(--muted); background: none; border: 1px solid var(--border); padding: 4px 10px; border-radius: 4px; cursor: pointer; font-family: 'JetBrains Mono', monospace; }
+.logout-btn:hover { border-color: var(--red); color: var(--red); }
+.status { display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--muted); }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); transition: background 0.3s; }
+.dot.live { background: var(--accent); box-shadow: 0 0 8px var(--accent); animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
+.nav { display: flex; gap: 2px; }
+.nav-btn { padding: 6px 14px; border: 1px solid var(--border); background: none; color: var(--muted); cursor: pointer; font-family: 'JetBrains Mono', monospace; font-size: 11px; border-radius: 4px; transition: all 0.2s; }
+.nav-btn.active, .nav-btn:hover { background: var(--accent); color: #000; border-color: var(--accent); font-weight: 600; }
+
+/* ── Pages ── */
+.page { display: none; padding: 16px 20px; }
+.page.active { display: block; }
+
+/* ── Dashboard cards ── */
+.dash-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.dash-title { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; color: var(--text); }
+.btn-add-instr { padding: 7px 14px; background: var(--accent); color: #000; border: none; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; cursor: pointer; }
+.btn-add-instr:hover { opacity: 0.85; }
+.dash-empty { color: var(--muted); font-size: 12px; padding: 48px; text-align: center; border: 1px dashed var(--border); border-radius: 8px; }
+
+.dash-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 12px;
+}
+
+.dash-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: 14px 16px;
+  transition: border-color 0.15s;
+}
+.dash-card:hover { border-color: rgba(0,255,136,0.25); }
+.dash-card.flash-green { animation: flashG 0.4s ease; }
+.dash-card.flash-red   { animation: flashR 0.4s ease; }
+@keyframes flashG { 0%{background:rgba(0,255,136,0.08)} 100%{background:transparent} }
+@keyframes flashR { 0%{background:rgba(255,68,102,0.08)} 100%{background:transparent} }
+
+.card-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 12px; }
+.card-name { font-size: 12px; font-weight: 600; color: var(--text); line-height: 1.3; }
+.card-type-badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 9px; font-weight: 600; margin-top: 3px; }
+.card-remove { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 14px; line-height: 1; padding: 2px 4px; }
+.card-remove:hover { color: var(--red); }
+
+.card-badla { display: flex; gap: 0; margin-bottom: 12px; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+.badla-cell { flex: 1; padding: 8px 10px; text-align: center; border-right: 1px solid var(--border); }
+.badla-cell:last-child { border-right: none; }
+.badla-label { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 3px; }
+.badla-val { font-size: 16px; font-weight: 700; }
+
+.card-prices { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+.price-block { background: var(--surface2); border-radius: 5px; padding: 7px 10px; }
+.price-block-label { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
+.price-row { display: flex; justify-content: space-between; align-items: baseline; }
+.price-key { font-size: 9px; color: var(--muted); }
+.price-val { font-size: 12px; font-weight: 600; color: var(--text); }
+.price-sub { font-size: 9px; color: var(--muted); margin-top: 2px; }
+
+/* ── Filter bar ── */
+.filter-bar { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+.filter-btn { padding: 4px 12px; border: 1px solid var(--border); background: none; color: var(--muted); cursor: pointer; font-family: 'JetBrains Mono', monospace; font-size: 11px; border-radius: 20px; transition: all 0.15s; }
+.filter-btn.active { border-color: var(--accent); color: var(--accent); }
+.search { background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 4px 10px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 11px; outline: none; width: 200px; }
+.search:focus { border-color: var(--accent); }
+.update-time { margin-left: auto; color: var(--muted); font-size: 11px; }
+
+/* ── Table ── */
+.tbl-wrap { overflow-x: auto; border-radius: 6px; border: 1px solid var(--border); }
+table { width: 100%; border-collapse: collapse; }
+thead th { background: var(--surface); color: var(--muted); font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 10px 12px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--border); }
+thead th:first-child { text-align: left; }
+tbody tr { border-bottom: 1px solid var(--border); transition: background 0.1s; cursor: pointer; }
+tbody tr:last-child { border-bottom: none; }
+tbody tr:hover { background: rgba(0,255,136,0.04); }
+tbody tr.flash-green { animation: flashG 0.4s ease; }
+tbody tr.flash-red   { animation: flashR 0.4s ease; }
+td { padding: 9px 12px; text-align: right; white-space: nowrap; }
+td:first-child { text-align: left; }
+.inst-name { font-size: 11px; color: var(--text); max-width: 260px; overflow: hidden; text-overflow: ellipsis; }
+.inst-type { font-size: 9px; color: var(--muted); margin-top: 2px; }
+.pos { color: var(--green); }
+.neg { color: var(--red); }
+.muted { color: var(--muted); }
+.td-sub { font-size: 9px; color: var(--muted); margin-top: 2px; }
+.badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 9px; font-weight: 600; }
+.badge-gold   { background: rgba(255,215,0,0.15); color: var(--gold); }
+.badge-silver { background: rgba(160,160,200,0.15); color: #aab; }
+.badge-crude  { background: rgba(255,140,0,0.15); color: #fa0; }
+.badge-copper { background: rgba(180,100,40,0.15); color: #c84; }
+.badge-gas    { background: rgba(100,200,255,0.15); color: #6cf; }
+.badge-other  { background: rgba(100,100,150,0.15); color: #88a; }
+
+/* ── Deals ── */
+.deal-controls { display: flex; gap: 10px; margin-bottom: 16px; align-items: center; flex-wrap: wrap; }
+.btn { padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; transition: all 0.15s; }
+.btn-primary { background: var(--accent); color: #000; }
+.btn-primary:hover { opacity: 0.85; }
+.btn-danger { background: var(--red); color: #fff; }
+.btn-sm { padding: 4px 10px; font-size: 11px; }
+
+/* ── P&L bar ── */
+.pnl-bar { display: flex; gap: 16px; margin-bottom: 12px; flex-wrap: wrap; }
+.pnl-card { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 10px 16px; }
+.pnl-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.pnl-value { font-size: 18px; font-weight: 700; margin-top: 2px; }
+
+/* ── Modal ── */
+.modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.75); z-index: 200; align-items: center; justify-content: center; }
+.modal-overlay.open { display: flex; }
+.modal { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; width: 480px; max-width: 95vw; max-height: 90vh; overflow-y: auto; }
+.modal h3 { font-family: 'Syne', sans-serif; font-size: 16px; margin-bottom: 16px; color: var(--accent); }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.form-group { display: flex; flex-direction: column; gap: 4px; }
+.form-group.full { grid-column: 1/-1; }
+label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+input, select { background: var(--bg); border: 1px solid var(--border); color: var(--text); padding: 8px 10px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 12px; outline: none; }
+input:focus, select:focus { border-color: var(--accent); }
+select option { background: var(--surface); }
+.form-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 16px; }
+.btn-cancel { background: var(--border); color: var(--text); }
+
+/* ── DGCX toggle ── */
+.dgcx-toggle-row {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--surface2); border-radius: 6px; padding: 10px 12px;
+  border: 1px solid var(--border); cursor: pointer; user-select: none;
+}
+.dgcx-toggle-row input[type=checkbox] { accent-color: var(--accent); width: 14px; height: 14px; cursor: pointer; }
+.dgcx-toggle-label { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; color: #6cf; }
+.dgcx-toggle-sub { font-size: 10px; color: var(--muted); margin-left: auto; }
+
+/* Add instrument modal list */
+.instr-search { width: 100%; margin-bottom: 10px; }
+.instr-list { max-height: 320px; overflow-y: auto; border: 1px solid var(--border); border-radius: 4px; }
+.instr-item { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.1s; }
+.instr-item:last-child { border-bottom: none; }
+.instr-item:hover { background: rgba(0,255,136,0.06); }
+.instr-item.already { opacity: 0.4; cursor: default; }
+.instr-item-name { font-size: 11px; color: var(--text); }
+.instr-item-type { font-size: 10px; color: var(--muted); }
+.instr-add-btn { font-size: 10px; background: var(--accent); color: #000; border: none; padding: 3px 8px; border-radius: 3px; cursor: pointer; font-family: 'JetBrains Mono', monospace; font-weight: 600; }
+.instr-added-tag { font-size: 10px; color: var(--muted); }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════ LOGIN SCREEN -->
+<div id="login-screen">
+  <div class="login-box">
+    <div class="login-logo">BADLA<span>BOARD</span></div>
+    <div class="login-sub">Sign in to your account</div>
+    <div class="login-field">
+      <label>Username</label>
+      <input type="text" id="l-user" placeholder="username" autocomplete="username">
+    </div>
+    <div class="login-field">
+      <label>Password</label>
+      <input type="password" id="l-pass" placeholder="••••••••" autocomplete="current-password">
+    </div>
+    <button class="login-btn" onclick="doLogin()">Sign In</button>
+    <div class="login-error" id="login-error">Invalid username or password</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════ MAIN APP -->
+<div id="app">
+
+<div class="header">
+  <div class="logo">BADLA<span>BOARD</span></div>
+  <div class="nav">
+    <button class="nav-btn active" data-page="dashboard" onclick="showPage('dashboard',this)">Dashboard</button>
+    <button class="nav-btn" data-page="prices" onclick="showPage('prices',this)">Prices</button>
+    <button class="nav-btn" data-page="deals" onclick="showPage('deals',this)">Deals</button>
+  </div>
+  <div class="header-right">
+    <div class="status">
+      <div class="dot" id="dot"></div>
+      <span id="status-text">Connecting...</span>
+      <span id="update-count" style="color:var(--accent)"></span>
+    </div>
+    <div class="username-badge">Signed in as <strong id="username-display">—</strong></div>
+    <button class="logout-btn" onclick="doLogout()">Sign Out</button>
+  </div>
+</div>
+
+<!-- ══ DASHBOARD PAGE ══ -->
+<div class="page active" id="page-dashboard">
+  <div class="dash-header">
+    <div class="dash-title">Dashboard</div>
+    <button class="btn-add-instr" onclick="openAddInstrModal()">+ Add Instrument</button>
+  </div>
+  <div class="dash-grid" id="dash-grid">
+    <div class="dash-empty" id="dash-empty">No instruments pinned yet.<br>Click <strong>+ Add Instrument</strong> to get started.</div>
+  </div>
+</div>
+
+<!-- ══ PRICES PAGE ══ -->
+<div class="page" id="page-prices">
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="setFilter('ALL',this)">ALL</button>
+    <button class="filter-btn" onclick="setFilter('GOLD',this)">GOLD</button>
+    <button class="filter-btn" onclick="setFilter('SILVER',this)">SILVER</button>
+    <button class="filter-btn" onclick="setFilter('CRUDE',this)">CRUDE</button>
+    <button class="filter-btn" onclick="setFilter('COPPER',this)">COPPER</button>
+    <button class="filter-btn" onclick="setFilter('GAS',this)">GAS</button>
+    <button class="filter-btn" onclick="setFilter('OTHER',this)">OTHER</button>
+    <input class="search" id="search" placeholder="Search instrument..." oninput="renderPrices()">
+    <span class="update-time" id="last-update">--</span>
+  </div>
+  <div class="tbl-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Instrument</th>
+          <th>Type</th>
+          <th>BADLA[BUY]</th>
+          <th>BADLA[SELL]</th>
+          <th>BADLA[LTP]</th>
+          <th>MCX BID</th>
+          <th>MCX ASK</th>
+          <th>Conv. COMEX</th>
+          <th>COMEX BID</th>
+          <th>COMEX ASK</th>
+          <th>DGCX</th>
+          <th>10k/DGCX</th>
+          <th>Updated</th>
+        </tr>
+      </thead>
+      <tbody id="prices-tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ══ DEALS PAGE ══ -->
+<div class="page" id="page-deals">
+  <div class="pnl-bar">
+    <div class="pnl-card"><div class="pnl-label">Open Deals</div><div class="pnl-value" id="open-count">0</div></div>
+    <div class="pnl-card"><div class="pnl-label">Live P&L</div><div class="pnl-value" id="live-pnl">₹0</div></div>
+    <div class="pnl-card"><div class="pnl-label">Closed P&L</div><div class="pnl-value" id="closed-pnl">₹0</div></div>
+    <div class="pnl-card"><div class="pnl-label">Total P&L</div><div class="pnl-value" id="total-pnl">₹0</div></div>
+  </div>
+  <div class="deal-controls">
+    <button class="btn btn-primary" onclick="openDealModal()">+ New Deal</button>
+    <div style="display:flex;gap:4px;margin-left:8px">
+      <button class="filter-btn active" id="tab-open"   onclick="setDealTab('open')"  >Open</button>
+      <button class="filter-btn"        id="tab-closed" onclick="setDealTab('closed')">Closed</button>
+    </div>
+  </div>
+  <div id="deals-cards" style="display:flex;flex-direction:column;gap:12px"></div>
+</div>
+
+</div><!-- end #app -->
+
+<!-- ══ ADD INSTRUMENT MODAL ══ -->
+<div class="modal-overlay" id="add-instr-modal">
+  <div class="modal">
+    <h3>Add Instrument to Dashboard</h3>
+    <input class="search instr-search" id="instr-search" placeholder="Search streaming instruments..." oninput="renderInstrList()">
+    <div class="instr-list" id="instr-list"></div>
+    <div class="form-actions">
+      <button class="btn btn-cancel" onclick="closeAddInstrModal()">Done</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ EDIT DEAL MODAL ══ -->
+<div class="modal-overlay" id="edit-modal">
+  <div class="modal" style="width:640px">
+    <h3>Edit Deal</h3>
+
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;margin-bottom:14px">
+      <div class="form-group">
+        <label>Instrument</label>
+        <input type="text" id="e-instrument-display" readonly style="color:var(--muted);cursor:default">
+      </div>
+      <div class="form-group">
+        <label>USD/INR Rate</label>
+        <input type="number" id="e-usd-inr" placeholder="89">
+      </div>
+      <div class="form-group">
+        <label>DGINR at Entry</label>
+        <input type="number" id="e-dginr" placeholder="auto" style="color:var(--accent)">
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px">
+      <!-- MCX Leg -->
+      <div style="background:var(--surface2);border-radius:6px;padding:12px;display:flex;flex-direction:column;gap:8px;border:1px solid var(--border)">
+        <div style="font-size:10px;color:var(--accent);font-weight:700;letter-spacing:0.08em">MCX LEG</div>
+        <div class="form-group"><label>Side</label>
+          <select id="e-mcx-side"><option value="SELL">SELL</option><option value="BUY">BUY</option></select>
+        </div>
+        <div class="form-group"><label>Entry Price (₹)</label>
+          <input type="number" id="e-mcx-price" step="0.01">
+        </div>
+        <div class="form-group"><label>Qty (lots)</label>
+          <input type="number" id="e-mcx-qty" min="0.01" step="0.01">
+        </div>
+        <div class="form-group"><label>Brokerage (₹)</label>
+          <input type="number" id="e-mcx-brok" min="0" step="0.01">
+        </div>
+      </div>
+
+      <!-- COMEX Leg -->
+      <div style="background:var(--surface2);border-radius:6px;padding:12px;display:flex;flex-direction:column;gap:8px;border:1px solid var(--border)">
+        <div style="font-size:10px;color:var(--gold);font-weight:700;letter-spacing:0.08em">COMEX LEG</div>
+        <div class="form-group"><label>Side</label>
+          <select id="e-comex-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select>
+        </div>
+        <div class="form-group"><label>Entry Price (USD)</label>
+          <input type="number" id="e-comex-price" step="0.01">
+        </div>
+        <div class="form-group"><label>Qty (lots)</label>
+          <input type="number" id="e-comex-qty" min="0.01" step="0.01">
+        </div>
+        <div class="form-group"><label>Brokerage (₹)</label>
+          <input type="number" id="e-comex-brok" min="0" step="0.01">
+        </div>
+      </div>
+    </div>
+
+    <!-- DGCX toggle -->
+    <label class="dgcx-toggle-row" style="margin-bottom:12px" for="e-dgcx-enabled">
+      <input type="checkbox" id="e-dgcx-enabled" onchange="toggleEditDgcxLeg()">
+      <span class="dgcx-toggle-label">DGCX LEG</span>
+      <span class="dgcx-toggle-sub">Optional third leg</span>
+    </label>
+
+    <!-- DGCX Leg -->
+    <div id="e-dgcx-leg-fields" style="display:none;background:var(--surface2);border-radius:6px;padding:12px;border:1px solid rgba(100,200,255,0.2);margin-bottom:14px">
+      <div style="font-size:10px;color:#6cf;font-weight:700;letter-spacing:0.08em;margin-bottom:10px">DGCX LEG</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div class="form-group"><label>Side</label>
+          <select id="e-dgcx-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select>
+        </div>
+        <div class="form-group"><label>Entry Price (USD)</label>
+          <input type="number" id="e-dgcx-price" step="0.01">
+        </div>
+        <div class="form-group"><label>Qty (lots)</label>
+          <input type="number" id="e-dgcx-qty" min="0.01" step="0.01">
+        </div>
+        <div class="form-group"><label>Brokerage (₹)</label>
+          <input type="number" id="e-dgcx-brok" min="0" step="0.01">
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group" style="margin-bottom:4px">
+      <label>Note (optional)</label>
+      <input type="text" id="e-note" placeholder="e.g. spread 1024">
+    </div>
+
+    <div class="form-actions">
+      <button class="btn btn-cancel" onclick="closeEditModal()">Cancel</button>
+      <button class="btn btn-primary" id="edit-save-btn" onclick="saveEditDeal()">Save Changes</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NEW DEAL MODAL ══ -->
+<div class="modal-overlay" id="deal-modal">
+  <div class="modal" style="width:640px">
+    <h3>New Arbitrage Deal</h3>
+
+    <!-- Row 0: Instrument + USD/INR + DGINR -->
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;margin-bottom:14px">
+      <div class="form-group">
+        <label>Instrument</label>
+        <select id="d-instrument"><option value="">Select...</option></select>
+      </div>
+      <div class="form-group">
+        <label>USD/INR Rate</label>
+        <input type="number" id="d-usd-inr" placeholder="89" value="89">
+      </div>
+      <div class="form-group">
+        <label>DGINR at Entry</label>
+        <input type="number" id="d-dginr" placeholder="auto" readonly style="color:var(--accent)">
+      </div>
+    </div>
+
+    <!-- Legs row: MCX | COMEX | DGCX (conditional) -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px" id="legs-grid">
+
+      <!-- MCX Leg -->
+      <div style="background:var(--surface2);border-radius:6px;padding:12px;display:flex;flex-direction:column;gap:8px;border:1px solid var(--border)">
+        <div style="font-size:10px;color:var(--accent);font-weight:700;letter-spacing:0.08em">MCX LEG</div>
+        <div class="form-group">
+          <label>Side</label>
+          <select id="d-mcx-side"><option value="SELL">SELL</option><option value="BUY">BUY</option></select>
+        </div>
+        <div class="form-group">
+          <label>Entry Price (₹)</label>
+          <input type="number" id="d-mcx-price" placeholder="0.00" step="0.01">
+        </div>
+        <div class="form-group">
+          <label>Qty (lots)</label>
+          <input type="number" id="d-mcx-qty" placeholder="1" value="1" min="0.01" step="0.01">
+        </div>
+        <div class="form-group">
+          <label>Brokerage (₹)</label>
+          <input type="number" id="d-mcx-brok" placeholder="0" value="0" min="0" step="0.01">
+        </div>
+      </div>
+
+      <!-- COMEX Leg -->
+      <div style="background:var(--surface2);border-radius:6px;padding:12px;display:flex;flex-direction:column;gap:8px;border:1px solid var(--border)">
+        <div style="font-size:10px;color:var(--gold);font-weight:700;letter-spacing:0.08em">COMEX LEG</div>
+        <div class="form-group">
+          <label>Side</label>
+          <select id="d-comex-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select>
+        </div>
+        <div class="form-group">
+          <label>Entry Price (USD)</label>
+          <input type="number" id="d-comex-price" placeholder="0.00" step="0.01">
+        </div>
+        <div class="form-group">
+          <label>Qty (lots)</label>
+          <input type="number" id="d-comex-qty" placeholder="1" value="1" min="0.01" step="0.01">
+        </div>
+        <div class="form-group">
+          <label>Brokerage (₹)</label>
+          <input type="number" id="d-comex-brok" placeholder="0" value="0" min="0" step="0.01">
+        </div>
+      </div>
+
+    </div><!-- end legs-grid -->
+
+    <!-- DGCX toggle -->
+    <label class="dgcx-toggle-row" style="margin-bottom:12px" for="d-dgcx-enabled">
+      <input type="checkbox" id="d-dgcx-enabled" onchange="toggleDgcxLeg()">
+      <span class="dgcx-toggle-label">DGCX LEG</span>
+      <span class="dgcx-toggle-sub">Optional third leg</span>
+    </label>
+
+    <!-- DGCX Leg (shown when checkbox ticked) -->
+    <div id="dgcx-leg-fields" style="display:none;background:var(--surface2);border-radius:6px;padding:12px;border:1px solid rgba(100,200,255,0.2);margin-bottom:14px">
+      <div style="font-size:10px;color:#6cf;font-weight:700;letter-spacing:0.08em;margin-bottom:10px">DGCX LEG</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div class="form-group">
+          <label>Side</label>
+          <select id="d-dgcx-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select>
+        </div>
+        <div class="form-group">
+          <label>Entry Price (USD)</label>
+          <input type="number" id="d-dgcx-price" placeholder="0.00" step="0.01">
+        </div>
+        <div class="form-group">
+          <label>Qty (lots)</label>
+          <input type="number" id="d-dgcx-qty" placeholder="1" value="1" min="0.01" step="0.01">
+        </div>
+        <div class="form-group">
+          <label>Brokerage (₹)</label>
+          <input type="number" id="d-dgcx-brok" placeholder="0" value="0" min="0" step="0.01">
+        </div>
+      </div>
+    </div>
+
+    <!-- Note -->
+    <div class="form-group" style="margin-bottom:4px">
+      <label>Note (optional)</label>
+      <input type="text" id="d-note" placeholder="e.g. spread 1024">
+    </div>
+
+    <div class="form-actions">
+      <button class="btn btn-cancel" onclick="closeDealModal()">Cancel</button>
+      <button class="btn btn-primary" onclick="saveDeal()">Save Deal</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ CLOSE DEAL MODAL ══ -->
+<div class="modal-overlay" id="close-modal">
+  <div class="modal" style="width:480px">
+    <h3>Close Deal</h3>
+    <div class="form-grid" style="grid-template-columns:1fr 1fr">
+      <div class="form-group"><label>MCX Exit Price (₹)</label><input type="number" id="c-mcx-price" placeholder="0.00" step="0.01"></div>
+      <div class="form-group"><label>COMEX Exit Price (USD)</label><input type="number" id="c-comex-price" placeholder="0.00" step="0.01"></div>
+      <div class="form-group" id="c-dgcx-wrap" style="display:none"><label>DGCX Exit Price (USD)</label><input type="number" id="c-dgcx-price" placeholder="0.00" step="0.01"></div>
+    </div>
+    <div class="form-actions">
+      <button class="btn btn-cancel" onclick="closeCloseModal()">Cancel</button>
+      <button class="btn btn-primary" onclick="confirmClose()">Confirm Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── State ──────────────────────────────────────────────────────────────────
+let prices = {};
+let deals  = [];
+let dashboardInstruments = [];
+let filter = 'ALL';
+let updateCount = 0;
+let closingDealId = null;
+let dealTab = 'open';
+let sessionToken = localStorage.getItem('badla_token');
+let currentUser  = localStorage.getItem('badla_user');
+
+// ── Auth ───────────────────────────────────────────────────────────────────
+async function doLogin() {
+  const username = document.getElementById('l-user').value.trim();
+  const password = document.getElementById('l-pass').value;
+  const err = document.getElementById('login-error');
+  err.style.display = 'none';
+  try {
+    const res = await fetch('/api/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username, password })
+    });
+    const data = await res.json();
+    if (!res.ok) { err.style.display = 'block'; return; }
+    sessionToken = data.token;
+    currentUser  = data.username;
+    localStorage.setItem('badla_token', sessionToken);
+    localStorage.setItem('badla_user', currentUser);
+    startApp();
+  } catch(e) { err.style.display = 'block'; }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('l-pass').addEventListener('keydown', e => { if(e.key==='Enter') doLogin(); });
+  document.getElementById('l-user').addEventListener('keydown', e => { if(e.key==='Enter') doLogin(); });
+  if (sessionToken) verifyAndStart();
+
+  // Auto-fill prices when instrument selected
+  document.getElementById('d-instrument').addEventListener('change', function() {
+    const p = prices[this.value];
+    if (!p) return;
+    if (p.mcx)   document.getElementById('d-mcx-price').value   = p.mcx.ask   || p.mcx.ltp   || '';
+    if (p.comex) document.getElementById('d-comex-price').value = p.comex.bid  || p.comex.ltp || '';
+    if (p.dgcx)  document.getElementById('d-dgcx-price').value  = p.dgcx.ltp  || '';
+    if (p.dgcx && p.dgcx.ltp) {
+      document.getElementById('d-dginr').value = (10000 / parseFloat(p.dgcx.ltp)).toFixed(4);
+    }
+  });
+});
+
+async function verifyAndStart() {
+  try {
+    const res = await fetch('/api/me', { headers: { 'x-session-token': sessionToken } });
+    if (res.ok) startApp();
+    else clearAuth();
+  } catch(e) { clearAuth(); }
+}
+
+function clearAuth() {
+  sessionToken = null; currentUser = null;
+  localStorage.removeItem('badla_token');
+  localStorage.removeItem('badla_user');
+}
+
+async function doLogout() {
+  await apiFetch('/api/logout', { method: 'POST' });
+  clearAuth();
+  location.reload();
+}
+
+function startApp() {
+  document.getElementById('login-screen').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+  document.getElementById('username-display').textContent = currentUser;
+  loadDashboard();
+  loadDeals();
+  connectWS();
+}
+
+// ── API helper ─────────────────────────────────────────────────────────────
+async function apiFetch(url, opts = {}) {
+  opts.headers = { ...(opts.headers || {}), 'x-session-token': sessionToken };
+  const res = await fetch(url, opts);
+  if (res.status === 401) { clearAuth(); location.reload(); }
+  return res;
+}
+
+// ── WebSocket ──────────────────────────────────────────────────────────────
+function connectWS() {
+  const proto = location.protocol === 'https:' ? 'wss' : 'ws';
+  const ws = new WebSocket(`${proto}://${location.host}?token=${sessionToken}`);
+
+  ws.onopen = () => {
+    document.getElementById('dot').classList.add('live');
+    document.getElementById('status-text').textContent = 'Live';
+  };
+
+  ws.onmessage = (e) => {
+    const msg = JSON.parse(e.data);
+    if (msg.type === 'snapshot') {
+      msg.data.forEach(d => prices[d.name] = d);
+      renderPrices();
+      renderDashboard();
+      populateInstrumentSelect();
+    } else if (msg.type === 'update') {
+      const prev = prices[msg.data.name];
+      prices[msg.data.name] = msg.data;
+      updateCount++;
+      document.getElementById('update-count').textContent = `${updateCount} ticks`;
+      document.getElementById('last-update').textContent = new Date().toLocaleTimeString();
+      flashRow(msg.data.name, prev, msg.data);
+      renderPriceRow(msg.data);
+      updateDashCard(msg.data, prev);
+      updateDealsLivePnl();
+    }
+  };
+
+  ws.onclose = () => {
+    document.getElementById('dot').classList.remove('live');
+    document.getElementById('status-text').textContent = 'Reconnecting...';
+    setTimeout(connectWS, 2000);
+  };
+}
+
+// ── Dashboard ──────────────────────────────────────────────────────────────
+async function loadDashboard() {
+  const res = await apiFetch('/api/dashboard');
+  const rows = await res.json();
+  dashboardInstruments = rows.map(r => r.instrument_name);
+  renderDashboard();
+}
+
+function renderDashboard() {
+  const grid = document.getElementById('dash-grid');
+  const empty = document.getElementById('dash-empty');
+
+  if (dashboardInstruments.length === 0) {
+    grid.innerHTML = '';
+    grid.appendChild(empty);
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+
+  [...grid.querySelectorAll('.dash-card')].forEach(card => {
+    if (!dashboardInstruments.includes(card.dataset.name)) card.remove();
+  });
+
+  dashboardInstruments.forEach(name => {
+    const existing = document.getElementById('dashcard-' + slugify(name));
+    if (existing) return;
+    const p = prices[name];
+    const card = buildDashCard(name, p);
+    grid.appendChild(card);
+  });
+}
+
+function buildDashCard(name, p) {
+  const card = document.createElement('div');
+  card.className = 'dash-card';
+  card.id = 'dashcard-' + slugify(name);
+  card.dataset.name = name;
+  card.innerHTML = dashCardHTML(name, p);
+  return card;
+}
+
+function dashCardHTML(name, p) {
+  const displayName = p ? (p.displayName || p.name) : name;
+  const type = p ? p.type : '—';
+  const bc = badgeClass(type);
+
+  const badlaBUY  = p ? p.badlaBUY  : '--';
+  const badlaSELL = p ? p.badlaSELL : '--';
+  const badlaLTP  = p ? p.badlaLTP  : '--';
+
+  const mcxBid    = p && p.mcx  ? fmt(p.mcx.bid)  : '--';
+  const mcxAsk    = p && p.mcx  ? fmt(p.mcx.ask)  : '--';
+  const mcxLtp    = p && p.mcx  ? fmt(p.mcx.ltp)  : '--';
+  const convComex = p && p.mcx && p.mcx.convertedComex ? fmt(p.mcx.convertedComex) : '--';
+
+  const comexBid  = p && p.comex ? fmt(p.comex.bid) : '--';
+  const comexAsk  = p && p.comex ? fmt(p.comex.ask) : '--';
+  const comexLtp  = p && p.comex ? fmt(p.comex.ltp) : '--';
+
+  const dgcxLtp   = p && p.dgcx ? fmt(p.dgcx.ltp)    : '--';
+  const dgcxConv  = p && p.dgcx ? p.dgcx.converted    : '--';
+
+  return `
+    <div class="card-top">
+      <div>
+        <div class="card-name">${displayName}</div>
+        <span class="card-type-badge badge ${bc}">${type}</span>
+      </div>
+      <button class="card-remove" onclick="removeDashInstr('${name}')" title="Remove">✕</button>
+    </div>
+    <div class="card-badla">
+      <div class="badla-cell">
+        <div class="badla-label">BUY</div>
+        <div class="badla-val ${colorClass(badlaBUY)}">${badlaBUY}</div>
+      </div>
+      <div class="badla-cell">
+        <div class="badla-label">SELL</div>
+        <div class="badla-val ${colorClass(badlaSELL)}">${badlaSELL}</div>
+      </div>
+      <div class="badla-cell">
+        <div class="badla-label">LTP</div>
+        <div class="badla-val ${colorClass(badlaLTP)}">${badlaLTP}</div>
+      </div>
+    </div>
+    <div class="card-prices">
+      <div class="price-block">
+        <div class="price-block-label">MCX</div>
+        <div class="price-row"><span class="price-key">BID</span><span class="price-val">${mcxBid}</span></div>
+        <div class="price-row"><span class="price-key">ASK</span><span class="price-val">${mcxAsk}</span></div>
+        <div class="price-row"><span class="price-key">LTP</span><span class="price-val">${mcxLtp}</span></div>
+        <div class="price-sub">Conv. COMEX: ${convComex}</div>
+      </div>
+      <div class="price-block">
+        <div class="price-block-label">COMEX</div>
+        <div class="price-row"><span class="price-key">BID</span><span class="price-val">${comexBid}</span></div>
+        <div class="price-row"><span class="price-key">ASK</span><span class="price-val">${comexAsk}</span></div>
+        <div class="price-row"><span class="price-key">LTP</span><span class="price-val">${comexLtp}</span></div>
+      </div>
+      <div class="price-block">
+        <div class="price-block-label">DGCX</div>
+        <div class="price-row"><span class="price-key">LTP</span><span class="price-val">${dgcxLtp}</span></div>
+        <div class="price-sub">10k/DGCX: ${dgcxConv}</div>
+      </div>
+    </div>
+  `;
+}
+
+function updateDashCard(p, prev) {
+  const card = document.getElementById('dashcard-' + slugify(p.name));
+  if (!card) return;
+  card.innerHTML = dashCardHTML(p.name, p);
+  const dir = prev && parseFloat(p.badlaLTP) > parseFloat(prev.badlaLTP) ? 'green' : 'red';
+  card.classList.remove('flash-green', 'flash-red');
+  void card.offsetWidth;
+  card.classList.add(`flash-${dir}`);
+}
+
+async function removeDashInstr(name) {
+  await apiFetch(`/api/dashboard/${encodeURIComponent(name)}`, { method: 'DELETE' });
+  dashboardInstruments = dashboardInstruments.filter(n => n !== name);
+  const card = document.getElementById('dashcard-' + slugify(name));
+  if (card) card.remove();
+  if (dashboardInstruments.length === 0) renderDashboard();
+}
+
+// ── Add instrument modal ───────────────────────────────────────────────────
+function openAddInstrModal() {
+  document.getElementById('instr-search').value = '';
+  renderInstrList();
+  document.getElementById('add-instr-modal').classList.add('open');
+}
+function closeAddInstrModal() {
+  document.getElementById('add-instr-modal').classList.remove('open');
+}
+
+function renderInstrList() {
+  const q = document.getElementById('instr-search').value.toLowerCase();
+  const list = document.getElementById('instr-list');
+  const all = Object.values(prices).filter(p =>
+    !q || p.name.toLowerCase().includes(q) || (p.displayName||'').toLowerCase().includes(q)
+  );
+
+  if (all.length === 0) {
+    list.innerHTML = '<div style="padding:16px;color:var(--muted);text-align:center;font-size:11px">No streaming instruments found</div>';
+    return;
+  }
+
+  list.innerHTML = all.map(p => {
+    const already = dashboardInstruments.includes(p.name);
+    return `
+      <div class="instr-item ${already ? 'already' : ''}" id="instritem-${slugify(p.name)}">
+        <div>
+          <div class="instr-item-name">${p.displayName || p.name}</div>
+          <div class="instr-item-type">${p.type}</div>
+        </div>
+        ${already
+          ? '<span class="instr-added-tag">✓ Added</span>'
+          : `<button class="instr-add-btn" onclick="addDashInstr('${p.name}')">+ Add</button>`
+        }
+      </div>
+    `;
+  }).join('');
+}
+
+async function addDashInstr(name) {
+  if (dashboardInstruments.includes(name)) return;
+  await apiFetch('/api/dashboard', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ instrument_name: name })
+  });
+  dashboardInstruments.push(name);
+
+  const item = document.getElementById('instritem-' + slugify(name));
+  if (item) {
+    item.classList.add('already');
+    const btn = item.querySelector('.instr-add-btn');
+    if (btn) btn.outerHTML = '<span class="instr-added-tag">✓ Added</span>';
+  }
+
+  const grid = document.getElementById('dash-grid');
+  document.getElementById('dash-empty').style.display = 'none';
+  const p = prices[name];
+  const card = buildDashCard(name, p);
+  grid.appendChild(card);
+}
+
+// ── Flash row ──────────────────────────────────────────────────────────────
+function flashRow(name, prev, curr) {
+  const rowId = 'row-' + slugify(name);
+  const row = document.getElementById(rowId);
+  if (!row || !prev) return;
+  const dir = parseFloat(curr.badlaLTP) > parseFloat(prev.badlaLTP) ? 'green' : 'red';
+  row.classList.remove('flash-green', 'flash-red');
+  void row.offsetWidth;
+  row.classList.add(`flash-${dir}`);
+}
+
+function slugify(s) { return s.replace(/[^a-z0-9]/gi, '_'); }
+
+// ── Prices table ───────────────────────────────────────────────────────────
+function badgeClass(type) {
+  const map = { GOLD:'gold', SILVER:'silver', CRUDE:'crude', COPPER:'copper', GAS:'gas' };
+  return 'badge-' + (map[type] || 'other');
+}
+
+function fmt(v) { return (v === null || v === undefined) ? '--' : parseFloat(v).toFixed(2); }
+function colorClass(v) { return parseFloat(v) >= 0 ? 'pos' : 'neg'; }
+
+function renderPriceRow(d) {
+  const tbody = document.getElementById('prices-tbody');
+  const rowId = 'row-' + slugify(d.name);
+  let row = document.getElementById(rowId);
+
+  const search = document.getElementById('search').value.toLowerCase();
+  const show = (filter === 'ALL' || d.type === filter) && d.name.toLowerCase().includes(search);
+  if (!show) { if (row) row.style.display = 'none'; return; }
+
+  const html = `
+    <td><div class="inst-name">${d.displayName || d.name}</div><div class="inst-type">${d.type}</div></td>
+    <td><span class="badge ${badgeClass(d.type)}">${d.type}</span></td>
+    <td class="${colorClass(d.badlaBUY)}">${fmt(d.badlaBUY)}</td>
+    <td class="${colorClass(d.badlaSELL)}">${fmt(d.badlaSELL)}</td>
+    <td class="${colorClass(d.badlaLTP)}">${fmt(d.badlaLTP)}</td>
+    <td class="muted">${d.mcx ? fmt(d.mcx.bid) : '--'}</td>
+    <td class="muted">${d.mcx ? fmt(d.mcx.ask) : '--'}</td>
+    <td><div>${d.mcx && d.mcx.convertedComex ? fmt(d.mcx.convertedComex) : '--'}</div></td>
+    <td class="muted">${d.comex ? fmt(d.comex.bid) : '--'}</td>
+    <td class="muted">${d.comex ? fmt(d.comex.ask) : '--'}</td>
+    <td class="muted">${d.dgcx ? fmt(d.dgcx.ltp) : '--'}</td>
+    <td><div>${d.dgcx ? d.dgcx.converted : '--'}</div></td>
+    <td class="muted">${new Date(d.timestamp).toLocaleTimeString()}</td>
+  `;
+
+  if (row) { row.innerHTML = html; row.style.display = ''; }
+  else {
+    row = document.createElement('tr');
+    row.id = rowId;
+    row.innerHTML = html;
+    tbody.appendChild(row);
+  }
+}
+
+function renderPrices() {
+  Object.values(prices).forEach(renderPriceRow);
+}
+
+function setFilter(f, btn) {
+  filter = f;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderPrices();
+}
+
+// ── Pages ──────────────────────────────────────────────────────────────────
+function showPage(name, btn) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('page-' + name).classList.add('active');
+  if (btn) btn.classList.add('active');
+  if (name === 'deals') renderDeals();
+}
+
+// ── Deals ──────────────────────────────────────────────────────────────────
+function populateInstrumentSelect() {
+  const sel = document.getElementById('d-instrument');
+  const current = sel.value;
+  sel.innerHTML = '<option value="">Select instrument...</option>';
+  Object.values(prices).forEach(p => {
+    const opt = document.createElement('option');
+    opt.value = p.name;
+    opt.textContent = p.displayName || p.name;
+    sel.appendChild(opt);
+  });
+  if (current) sel.value = current;
+}
+
+function setDealTab(tab) {
+  dealTab = tab;
+  document.getElementById('tab-open').classList.toggle('active', tab === 'open');
+  document.getElementById('tab-closed').classList.toggle('active', tab === 'closed');
+  renderDeals();
+}
+
+// ── DGCX leg toggle ────────────────────────────────────────────────────────
+function toggleDgcxLeg() {
+  const enabled = document.getElementById('d-dgcx-enabled').checked;
+  document.getElementById('dgcx-leg-fields').style.display = enabled ? 'block' : 'none';
+}
+
+// ── Deal modal open/close ──────────────────────────────────────────────────
+function openDealModal() {
+  // Reset DGCX state
+  document.getElementById('d-dgcx-enabled').checked = false;
+  document.getElementById('dgcx-leg-fields').style.display = 'none';
+  document.getElementById('deal-modal').classList.add('open');
+}
+function closeDealModal() { document.getElementById('deal-modal').classList.remove('open'); }
+
+async function loadDeals() {
+  const res = await apiFetch('/api/deals');
+  deals = await res.json();
+  if (document.getElementById('page-deals').classList.contains('active')) renderDeals();
+}
+
+// ── saveDeal — reads all separate qty fields correctly ─────────────────────
+function getVal(id) {
+  const el = document.getElementById(id);
+  if (!el) throw new Error(`Element not found: #${id}`);
+  return el.value;
+}
+function getChecked(id) {
+  const el = document.getElementById(id);
+  if (!el) throw new Error(`Element not found: #${id}`);
+  return el.checked;
+}
+
+async function saveDeal() {
+  try {
+    const dgcxEnabled = getChecked('d-dgcx-enabled');
+
+    const instrument     = getVal('d-instrument');
+    const note           = getVal('d-note');
+    const usdInrRate     = parseFloat(getVal('d-usd-inr')) || 89;
+    const dginrAtEntry   = getVal('d-dginr') || null;
+
+    const mcxSide        = getVal('d-mcx-side');
+    const mcxPrice       = parseFloat(getVal('d-mcx-price'));
+    const mcxQty         = parseFloat(getVal('d-mcx-qty')) || 1;
+    const mcxBrokerage   = parseFloat(getVal('d-mcx-brok')) || 0;
+
+    const comexSide      = getVal('d-comex-side');
+    const comexPrice     = parseFloat(getVal('d-comex-price'));
+    const comexQty       = parseFloat(getVal('d-comex-qty')) || 1;
+    const comexBrokerage = parseFloat(getVal('d-comex-brok')) || 0;
+
+    const dgcxSide       = dgcxEnabled ? getVal('d-dgcx-side')                       : null;
+    const dgcxPrice      = dgcxEnabled ? parseFloat(getVal('d-dgcx-price'))           : null;
+    const dgcxQty        = dgcxEnabled ? (parseFloat(getVal('d-dgcx-qty'))   || 1)    : null;
+    const dgcxBrokerage  = dgcxEnabled ? (parseFloat(getVal('d-dgcx-brok'))  || 0)    : null;
+
+    if (!instrument)                                          return alert('Please select an instrument');
+    if (isNaN(mcxPrice)   || mcxPrice   <= 0)                return alert('Please enter a valid MCX entry price');
+    if (isNaN(comexPrice) || comexPrice <= 0)                return alert('Please enter a valid COMEX entry price');
+    if (dgcxEnabled && (isNaN(dgcxPrice) || dgcxPrice <= 0)) return alert('Please enter a valid DGCX entry price');
+
+    const body = {
+      instrument,
+      note,
+      usdInrRate,
+      dginrAtEntry,
+      mcxSide,   mcxPrice,   mcxQty,   mcxBrokerage,
+      comexSide, comexPrice, comexQty, comexBrokerage,
+      dgcxEnabled,
+      dgcxSide, dgcxPrice, dgcxQty, dgcxBrokerage,
+    };
+
+    const saveBtn = document.querySelector('#deal-modal .btn-primary');
+    if (saveBtn) { saveBtn.textContent = 'Saving...'; saveBtn.disabled = true; }
+
+    const res = await apiFetch('/api/deals', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    });
+
+    if (!res.ok) {
+      const txt = await res.text();
+      throw new Error(`Server error ${res.status}: ${txt}`);
+    }
+
+    await loadDeals();
+    closeDealModal();
+    // Navigate to deals tab
+    const dealsNavBtn = document.querySelector('.nav-btn[data-page="deals"]');
+    showPage('deals', dealsNavBtn);
+
+  } catch (err) {
+    console.error('saveDeal error:', err);
+    alert('Failed to save deal: ' + err.message);
+  } finally {
+    const saveBtn = document.querySelector('#deal-modal .btn-primary');
+    if (saveBtn) { saveBtn.textContent = 'Save Deal'; saveBtn.disabled = false; }
+  }
+}
+
+// ── getLivePnl — uses per-leg qty correctly ────────────────────────────────
+function getLivePnl(deal) {
+  const p    = prices[deal.instrument];
+  const rate = parseFloat(deal.usdInrRate) || 89;
+
+  let mcxPnl   = null;
+  let comexPnl = null;
+  let dgcxPnl  = null;
+  let mcxNow   = null;
+  let comexNow = null;
+  let dgcxNow  = null;
+
+  // MCX leg — priced in ₹ directly, no currency conversion needed
+  if (p && p.mcx && deal.mcx) {
+    const qty = parseFloat(deal.mcx.qty) || 1;
+    const brok = parseFloat(deal.mcx.brokerage) || 0;
+    mcxNow = deal.mcx.side === 'SELL' ? p.mcx.bid : p.mcx.ask;
+    if (mcxNow != null) {
+      const raw = deal.mcx.side === 'SELL'
+        ? (parseFloat(deal.mcx.entryPrice) - parseFloat(mcxNow))
+        : (parseFloat(mcxNow) - parseFloat(deal.mcx.entryPrice));
+      mcxPnl = raw * qty - brok;
+    }
+  }
+
+  // COMEX leg — priced in USD, convert to ₹
+  if (p && p.comex && deal.comex) {
+    const qty  = parseFloat(deal.comex.qty) || 1;
+    const brok = parseFloat(deal.comex.brokerage) || 0;
+    comexNow = deal.comex.side === 'SELL' ? p.comex.bid : p.comex.ask;
+    if (comexNow != null) {
+      const raw = deal.comex.side === 'SELL'
+        ? (parseFloat(deal.comex.entryPrice) - parseFloat(comexNow))
+        : (parseFloat(comexNow) - parseFloat(deal.comex.entryPrice));
+      comexPnl = raw * qty * rate - brok;
+    }
+  }
+
+  // DGCX leg — priced in USD, convert to ₹
+  if (deal.dgcx && p && p.dgcx) {
+    const qty  = parseFloat(deal.dgcx.qty) || 1;
+    const brok = parseFloat(deal.dgcx.brokerage) || 0;
+    dgcxNow = p.dgcx.ltp;
+    if (dgcxNow != null) {
+      const raw = deal.dgcx.side === 'SELL'
+        ? (parseFloat(deal.dgcx.entryPrice) - parseFloat(dgcxNow))
+        : (parseFloat(dgcxNow) - parseFloat(deal.dgcx.entryPrice));
+      dgcxPnl = raw * qty * rate - brok;
+    }
+  }
+
+  const total = (mcxPnl || 0) + (comexPnl || 0) + (dgcxPnl || 0);
+  return { mcxPnl, comexPnl, dgcxPnl, total, mcxNow, comexNow, dgcxNow };
+}
+
+// ── Deal card HTML ─────────────────────────────────────────────────────────
+function dealCardHTML(deal) {
+  const isOpen = deal.status === 'open';
+  const live   = isOpen ? getLivePnl(deal) : null;
+  const rate   = parseFloat(deal.usdInrRate) || 89;
+
+  const mcxPnl   = isOpen ? live.mcxPnl   : deal.mcx.pnl;
+  const comexPnl = isOpen ? live.comexPnl : deal.comex.pnl;
+  const dgcxPnl  = isOpen ? live.dgcxPnl  : (deal.dgcx ? deal.dgcx.pnl : null);
+  const totalPnl = isOpen ? live.total     : deal.totalPnl;
+
+  const mcxNow   = isOpen ? live.mcxNow   : deal.mcx.exitPrice;
+  const comexNow = isOpen ? live.comexNow : deal.comex.exitPrice;
+  const dgcxNow  = isOpen ? live.dgcxNow  : (deal.dgcx ? deal.dgcx.exitPrice : null);
+
+  const pc     = v => (v === null || v === undefined) ? '--' : `₹${parseFloat(v).toFixed(0)}`;
+  const pclass = v => (v === null || v === undefined) ? '' : (parseFloat(v) >= 0 ? 'pos' : 'neg');
+
+  const legHTML = (label, color, side, entry, now, pnl, brok, qty, extra = '') => `
+    <div style="background:var(--surface2);border-radius:6px;padding:12px;display:flex;flex-direction:column;gap:6px;min-width:0">
+      <div style="font-size:10px;font-weight:700;letter-spacing:0.08em;color:${color}">${label}</div>
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span style="font-size:10px;color:var(--muted)">SIDE</span>
+        <span style="font-weight:700;color:${side==='SELL'?'var(--red)':'var(--green)'}">${side}</span>
+      </div>
+      <div style="display:flex;justify-content:space-between">
+        <span style="font-size:10px;color:var(--muted)">QTY</span>
+        <span style="font-size:12px;font-weight:600">${qty}</span>
+      </div>
+      <div style="display:flex;justify-content:space-between">
+        <span style="font-size:10px;color:var(--muted)">ENTRY</span>
+        <span style="font-size:12px;font-weight:600">${fmt(entry)}</span>
+      </div>
+      <div style="display:flex;justify-content:space-between">
+        <span style="font-size:10px;color:var(--muted)">${isOpen ? 'NOW' : 'EXIT'}</span>
+        <span style="font-size:12px;color:var(--muted)">${now != null ? fmt(now) : '--'}</span>
+      </div>
+      <div style="display:flex;justify-content:space-between">
+        <span style="font-size:10px;color:var(--muted)">BROK</span>
+        <span style="font-size:10px;color:var(--muted)">₹${fmt(brok)}</span>
+      </div>
+      ${extra}
+      <div style="border-top:1px solid var(--border);padding-top:6px;display:flex;justify-content:space-between;align-items:baseline">
+        <span style="font-size:10px;color:var(--muted)">P&L</span>
+        <span style="font-size:15px;font-weight:700" class="${pclass(pnl)}">${pc(pnl)}</span>
+      </div>
+    </div>
+  `;
+
+  const cols = deal.dgcx ? '1fr 1fr 1fr' : '1fr 1fr';
+
+  return `
+    <div style="background:var(--surface);border:1px solid ${isOpen ? 'var(--border)' : 'rgba(255,255,255,0.05)'};border-radius:8px;padding:16px;opacity:${isOpen ? 1 : 0.6}" id="dealcard-${deal.id}">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">
+        <div>
+          <div style="font-size:13px;font-weight:700;color:var(--text)">${deal.instrument}</div>
+          <div style="font-size:10px;color:var(--muted);margin-top:2px">
+            USD/INR: ${rate}
+            ${deal.dginrAtEntry ? ` · DGINR@entry: ${parseFloat(deal.dginrAtEntry).toFixed(2)}` : ''}
+            ${deal.note ? ` · ${deal.note}` : ''}
+          </div>
+          <div style="font-size:10px;color:var(--muted);margin-top:1px">
+            ${new Date(deal.entryTime).toLocaleString()}
+            ${deal.exitTime ? ` → ${new Date(deal.exitTime).toLocaleTimeString()}` : ''}
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <div style="text-align:right">
+            <div style="font-size:10px;color:var(--muted)">NET P&L</div>
+            <div style="font-size:20px;font-weight:800" class="${pclass(totalPnl)}">${pc(totalPnl)}</div>
+          </div>
+          ${isOpen ? `
+            <button class="btn btn-sm" style="background:var(--surface2);border:1px solid var(--border);color:var(--text)" onclick="openEditModal(${deal.id})">Edit</button>
+            <button class="btn btn-sm btn-primary" onclick="openCloseModal(${deal.id})">Close</button>
+            <button class="btn btn-sm btn-danger"  onclick="deleteDeal(${deal.id})">✕</button>
+          ` : `
+            <button class="btn btn-sm" style="background:var(--surface2);border:1px solid var(--border);color:var(--text)" onclick="openEditModal(${deal.id})">Edit</button>
+            <button class="btn btn-sm btn-danger"  onclick="deleteDeal(${deal.id})">✕</button>
+          `}
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:${cols};gap:10px">
+        ${legHTML('MCX LEG',   'var(--accent)', deal.mcx.side,   deal.mcx.entryPrice,   mcxNow,   mcxPnl,   deal.mcx.brokerage,   deal.mcx.qty   || 1)}
+        ${legHTML('COMEX LEG', 'var(--gold)',   deal.comex.side, deal.comex.entryPrice, comexNow, comexPnl, deal.comex.brokerage, deal.comex.qty || 1,
+          `<div style="font-size:9px;color:var(--muted)">× ${rate} USD/INR</div>`)}
+        ${deal.dgcx ? legHTML('DGCX LEG', '#6cf', deal.dgcx.side, deal.dgcx.entryPrice, dgcxNow, dgcxPnl, deal.dgcx.brokerage, deal.dgcx.qty || 1,
+          `<div style="font-size:9px;color:var(--muted)">× ${rate} USD/INR</div>`) : ''}
+      </div>
+    </div>
+  `;
+}
+
+function renderDeals() {
+  const container = document.getElementById('deals-cards');
+  const filtered  = deals.filter(d => d.status === dealTab);
+
+  let livePnlTotal   = 0;
+  let closedPnlTotal = 0;
+  let openCount      = 0;
+
+  deals.forEach(d => {
+    if (d.status === 'open') {
+      openCount++;
+      livePnlTotal += getLivePnl(d).total;
+    } else {
+      closedPnlTotal += parseFloat(d.totalPnl || 0);
+    }
+  });
+
+  container.innerHTML = filtered.length === 0
+    ? `<div style="color:var(--muted);text-align:center;padding:48px;border:1px dashed var(--border);border-radius:8px">No ${dealTab} deals</div>`
+    : filtered.map(dealCardHTML).join('');
+
+  const total = livePnlTotal + closedPnlTotal;
+  document.getElementById('open-count').textContent  = openCount;
+  document.getElementById('live-pnl').textContent    = `₹${livePnlTotal.toFixed(0)}`;
+  document.getElementById('closed-pnl').textContent  = `₹${closedPnlTotal.toFixed(0)}`;
+  document.getElementById('total-pnl').textContent   = `₹${total.toFixed(0)}`;
+  document.getElementById('live-pnl').className      = 'pnl-value ' + (livePnlTotal >= 0 ? 'pos' : 'neg');
+  document.getElementById('total-pnl').className     = 'pnl-value ' + (total >= 0 ? 'pos' : 'neg');
+}
+
+function updateDealsLivePnl() {
+  if (document.getElementById('page-deals').classList.contains('active')) renderDeals();
+}
+
+function openCloseModal(id) {
+  closingDealId = id;
+  const deal = deals.find(d => d.id === id);
+  const p    = prices[deal.instrument];
+  if (p) {
+    if (p.mcx)   document.getElementById('c-mcx-price').value   = deal.mcx.side   === 'SELL' ? p.mcx.bid   : p.mcx.ask;
+    if (p.comex) document.getElementById('c-comex-price').value = deal.comex.side === 'SELL' ? p.comex.bid : p.comex.ask;
+    if (deal.dgcx && p.dgcx) document.getElementById('c-dgcx-price').value = p.dgcx.ltp;
+  }
+  document.getElementById('c-dgcx-wrap').style.display = deal.dgcx ? 'block' : 'none';
+  document.getElementById('close-modal').classList.add('open');
+}
+
+function closeCloseModal() { document.getElementById('close-modal').classList.remove('open'); }
+
+async function confirmClose() {
+  const body = {
+    mcxExitPrice:   document.getElementById('c-mcx-price').value,
+    comexExitPrice: document.getElementById('c-comex-price').value,
+    dgcxExitPrice:  document.getElementById('c-dgcx-price').value || null,
+  };
+  await apiFetch(`/api/deals/${closingDealId}/close`, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body)
+  });
+  await loadDeals();
+  closeCloseModal();
+  renderDeals();
+}
+
+async function deleteDeal(id) {
+  if (!confirm('Delete this deal?')) return;
+  await apiFetch(`/api/deals/${id}`, { method: 'DELETE' });
+  await loadDeals();
+  renderDeals();
+}
+
+// ── Edit Deal ──────────────────────────────────────────────────────────────
+let editingDealId = null;
+
+function toggleEditDgcxLeg() {
+  const enabled = document.getElementById('e-dgcx-enabled').checked;
+  document.getElementById('e-dgcx-leg-fields').style.display = enabled ? 'block' : 'none';
+}
+
+function openEditModal(id) {
+  const deal = deals.find(d => d.id === id);
+  if (!deal) return;
+  editingDealId = id;
+
+  // Header fields
+  document.getElementById('e-instrument-display').value = deal.instrument;
+  document.getElementById('e-usd-inr').value   = deal.usdInrRate || 89;
+  document.getElementById('e-dginr').value     = deal.dginrAtEntry || '';
+  document.getElementById('e-note').value      = deal.note || '';
+
+  // MCX
+  document.getElementById('e-mcx-side').value  = deal.mcx.side;
+  document.getElementById('e-mcx-price').value = deal.mcx.entryPrice;
+  document.getElementById('e-mcx-qty').value   = deal.mcx.qty || 1;
+  document.getElementById('e-mcx-brok').value  = deal.mcx.brokerage || 0;
+
+  // COMEX
+  document.getElementById('e-comex-side').value  = deal.comex.side;
+  document.getElementById('e-comex-price').value = deal.comex.entryPrice;
+  document.getElementById('e-comex-qty').value   = deal.comex.qty || 1;
+  document.getElementById('e-comex-brok').value  = deal.comex.brokerage || 0;
+
+  // DGCX
+  const hasDgcx = !!deal.dgcx;
+  document.getElementById('e-dgcx-enabled').checked = hasDgcx;
+  document.getElementById('e-dgcx-leg-fields').style.display = hasDgcx ? 'block' : 'none';
+  if (hasDgcx) {
+    document.getElementById('e-dgcx-side').value  = deal.dgcx.side;
+    document.getElementById('e-dgcx-price').value = deal.dgcx.entryPrice;
+    document.getElementById('e-dgcx-qty').value   = deal.dgcx.qty || 1;
+    document.getElementById('e-dgcx-brok').value  = deal.dgcx.brokerage || 0;
+  }
+
+  document.getElementById('edit-modal').classList.add('open');
+}
+
+function closeEditModal() {
+  document.getElementById('edit-modal').classList.remove('open');
+  editingDealId = null;
+}
+
+async function saveEditDeal() {
+  const btn = document.getElementById('edit-save-btn');
+  try {
+    btn.textContent = 'Saving...'; btn.disabled = true;
+
+    const dgcxEnabled = document.getElementById('e-dgcx-enabled').checked;
+
+    const usdInrRate     = parseFloat(document.getElementById('e-usd-inr').value)   || 89;
+    const dginrAtEntry   = document.getElementById('e-dginr').value                 || null;
+    const note           = document.getElementById('e-note').value;
+
+    const mcxSide        = document.getElementById('e-mcx-side').value;
+    const mcxPrice       = parseFloat(document.getElementById('e-mcx-price').value);
+    const mcxQty         = parseFloat(document.getElementById('e-mcx-qty').value)   || 1;
+    const mcxBrokerage   = parseFloat(document.getElementById('e-mcx-brok').value)  || 0;
+
+    const comexSide      = document.getElementById('e-comex-side').value;
+    const comexPrice     = parseFloat(document.getElementById('e-comex-price').value);
+    const comexQty       = parseFloat(document.getElementById('e-comex-qty').value) || 1;
+    const comexBrokerage = parseFloat(document.getElementById('e-comex-brok').value)|| 0;
+
+    const dgcxSide       = dgcxEnabled ? document.getElementById('e-dgcx-side').value                      : null;
+    const dgcxPrice      = dgcxEnabled ? parseFloat(document.getElementById('e-dgcx-price').value)          : null;
+    const dgcxQty        = dgcxEnabled ? (parseFloat(document.getElementById('e-dgcx-qty').value)  || 1)    : null;
+    const dgcxBrokerage  = dgcxEnabled ? (parseFloat(document.getElementById('e-dgcx-brok').value) || 0)    : null;
+
+    if (isNaN(mcxPrice)   || mcxPrice   <= 0) return alert('Please enter a valid MCX entry price');
+    if (isNaN(comexPrice) || comexPrice <= 0) return alert('Please enter a valid COMEX entry price');
+    if (dgcxEnabled && (isNaN(dgcxPrice) || dgcxPrice <= 0)) return alert('Please enter a valid DGCX entry price');
+
+    const body = {
+      note, usdInrRate, dginrAtEntry,
+      mcxSide,   mcxPrice,   mcxQty,   mcxBrokerage,
+      comexSide, comexPrice, comexQty, comexBrokerage,
+      dgcxEnabled,
+      dgcxSide, dgcxPrice, dgcxQty, dgcxBrokerage,
+    };
+
+    const res = await apiFetch(`/api/deals/${editingDealId}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    });
+
+    if (!res.ok) {
+      const txt = await res.text();
+      throw new Error(`Server error ${res.status}: ${txt}`);
+    }
+
+    await loadDeals();
+    closeEditModal();
+    renderDeals();
+
+  } catch (err) {
+    console.error('saveEditDeal error:', err);
+    alert('Failed to save: ' + err.message);
+  } finally {
+    btn.textContent = 'Save Changes'; btn.disabled = false;
+  }
+}
+
+</script>
+</body>
+</html>
