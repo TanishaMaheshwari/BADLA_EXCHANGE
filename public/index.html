@@ -4,6 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Badla Board</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/icon-192.png">
+<meta name="theme-color" content="#0a0a0f">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Badla Board">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <style>
@@ -531,6 +539,47 @@ select option { background: var(--surface); }
   .alarm-banner { font-size: 12px; padding: 10px 12px; }
   .alarm-stop-btn { padding: 5px 10px; font-size: 11px; }
   .toast { min-width: 0; }
+  .install-banner {
+    position: fixed;
+    left: 16px;
+    right: 16px;
+    bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+    z-index: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 14px;
+    background: rgba(20, 24, 33, 0.96);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    color: var(--text);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+    backdrop-filter: blur(10px);
+    transform: translateY(120%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  .install-banner.show { transform: translateY(0); opacity: 1; }
+  .install-banner-content { display: flex; flex-direction: column; gap: 4px; }
+  .install-banner-title { font-size: 13px; font-weight: 700; }
+  .install-banner-text { font-size: 11px; color: var(--muted); }
+  .install-banner button {
+    border: none;
+    background: var(--accent);
+    color: #000;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    cursor: pointer;
+  }
+  .install-banner-close {
+    background: none;
+    color: var(--text);
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 8px 10px;
+  }
   .order-leg-fields { grid-template-columns: 1fr !important; }
 }
 @media (max-width: 600px) {
@@ -1085,6 +1134,16 @@ select option { background: var(--surface); }
 </div>
 
 <div id="toast-container"></div>
+<div id="pwa-install-banner" class="install-banner" style="display:none">
+  <div class="install-banner-content">
+    <div class="install-banner-title">Install Badla Board</div>
+    <div class="install-banner-text">Add the app to your home screen for faster access.</div>
+  </div>
+  <div>
+    <button id="install-pwa-btn">Install</button>
+    <button id="dismiss-pwa-btn" class="install-banner-close">X</button>
+  </div>
+</div>
 
 <script>
 // ── State ──────────────────────────────────────────────────────────────────
@@ -2245,6 +2304,57 @@ async function deleteBroker(id) {
   if (!confirm(`Delete broker "${b?.brokerName}"?`)) return;
   await apiFetch(`/api/brokers/${id}`,{method:'DELETE'});
   await loadBrokers(); renderBrokers();
+}
+
+let deferredInstallPrompt = null;
+const installBanner = document.getElementById('pwa-install-banner');
+const installBtn = document.getElementById('install-pwa-btn');
+const dismissBtn = document.getElementById('dismiss-pwa-btn');
+
+function showInstallBanner() {
+  if (!installBanner) return;
+  installBanner.style.display = 'flex';
+  requestAnimationFrame(() => installBanner.classList.add('show'));
+}
+
+function hideInstallBanner() {
+  if (!installBanner) return;
+  installBanner.classList.remove('show');
+  setTimeout(() => { if (installBanner) installBanner.style.display = 'none'; }, 300);
+}
+
+window.addEventListener('beforeinstallprompt', event => {
+  event.preventDefault();
+  deferredInstallPrompt = event;
+  showInstallBanner();
+});
+
+installBtn?.addEventListener('click', async () => {
+  if (!deferredInstallPrompt) return;
+  deferredInstallPrompt.prompt();
+  const choiceResult = await deferredInstallPrompt.userChoice;
+  if (choiceResult.outcome === 'accepted') {
+    console.log('User accepted the PWA install prompt');
+  } else {
+    console.log('User dismissed the PWA install prompt');
+  }
+  deferredInstallPrompt = null;
+  hideInstallBanner();
+});
+
+dismissBtn?.addEventListener('click', () => {
+  hideInstallBanner();
+});
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', async () => {
+    try {
+      const registration = await navigator.serviceWorker.register('/sw.js');
+      console.log('Service Worker registered with scope:', registration.scope);
+    } catch (err) {
+      console.warn('Service Worker registration failed:', err);
+    }
+  });
 }
 </script>
 </body>
