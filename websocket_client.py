@@ -124,7 +124,6 @@ class BadlaWebSocketClient:
     def _save_data(self, data, setting_name):
         """
         Push to Node server immediately (fast path),
-        
         then write to disk in a background thread (non-blocking).
         """
         try:

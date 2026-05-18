@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Badla Board</title>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <style>
 :root {
   --bg: #0a0a0f;
@@ -15,524 +16,748 @@
   --red: #ff4466;
   --green: #00ff88;
   --gold: #ffd700;
+  --blue: #64c8ff;
   --text: #e0e0f0;
   --muted: #555570;
   --header-h: 56px;
+  --bottom-nav-h: 64px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
 }
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: var(--bg); color: var(--text); font-family: 'JetBrains Mono', monospace; font-size: 13px; overflow-x: hidden; }
 
-/* ── Login ── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  overflow-x: hidden;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* ── LOGIN ── */
 #login-screen {
   display: flex; align-items: center; justify-content: center;
-  min-height: 100vh; background: var(--bg);
+  min-height: 100vh; min-height: 100dvh;
+  background: var(--bg); padding: 16px;
 }
 .login-box {
   background: var(--surface); border: 1px solid var(--border);
-  border-radius: 12px; padding: 40px 36px; width: 360px;
+  border-radius: 12px; padding: 40px 36px; width: 100%; max-width: 360px;
 }
-.login-logo { font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 800; color: var(--accent); margin-bottom: 6px; }
+.login-logo { font-family: 'Syne', sans-serif; font-size: 24px; font-weight: 800; color: var(--accent); margin-bottom: 6px; }
 .login-logo span { color: var(--muted); }
 .login-sub { color: var(--muted); font-size: 11px; margin-bottom: 28px; }
 .login-field { display: flex; flex-direction: column; gap: 5px; margin-bottom: 14px; }
 .login-field label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
 .login-field input {
   background: var(--bg); border: 1px solid var(--border); color: var(--text);
-  padding: 10px 12px; border-radius: 6px; font-family: 'JetBrains Mono', monospace;
-  font-size: 13px; outline: none;
+  padding: 10px 12px; border-radius: 6px;
+  font-family: 'JetBrains Mono', monospace; font-size: 13px; outline: none; width: 100%;
 }
 .login-field input:focus { border-color: var(--accent); }
 .login-btn {
   width: 100%; padding: 11px; background: var(--accent); color: #000;
   border: none; border-radius: 6px; font-family: 'JetBrains Mono', monospace;
-  font-size: 13px; font-weight: 700; cursor: pointer; margin-top: 8px;
-  transition: opacity 0.15s;
+  font-size: 13px; font-weight: 700; cursor: pointer; margin-top: 8px; transition: opacity 0.15s;
 }
 .login-btn:hover { opacity: 0.85; }
 .login-error { color: var(--red); font-size: 11px; margin-top: 10px; display: none; }
 
-/* ── App shell (hidden until logged in) ── */
+/* ── APP SHELL ── */
 #app { display: none; }
 
-/* ── Header ── */
+/* ── HEADER ── */
 .header {
   height: var(--header-h); display: flex; align-items: center; justify-content: space-between;
   padding: 0 20px; background: var(--surface); border-bottom: 1px solid var(--border);
-  position: sticky; top: 0; z-index: 100;
+  position: sticky; top: 0; z-index: 100; gap: 12px;
 }
-.logo { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 800; color: var(--accent); letter-spacing: -0.5px; }
+.logo { font-family: Syne, sans-serif; font-size: 20px; font-weight: 800; color: var(--accent); letter-spacing: -0.5px; flex-shrink: 0; }
 .logo span { color: var(--muted); }
-.header-right { display: flex; align-items: center; gap: 16px; }
-.username-badge { font-size: 11px; color: var(--muted); }
-.username-badge strong { color: var(--accent); }
-.logout-btn { font-size: 11px; color: var(--muted); background: none; border: 1px solid var(--border); padding: 4px 10px; border-radius: 4px; cursor: pointer; font-family: 'JetBrains Mono', monospace; }
-.logout-btn:hover { border-color: var(--red); color: var(--red); }
-.status { display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--muted); }
-.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); transition: background 0.3s; }
-.dot.live { background: var(--accent); box-shadow: 0 0 8px var(--accent); animation: pulse 2s infinite; }
-@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
-.nav { display: flex; gap: 2px; }
-.nav-btn { padding: 6px 14px; border: 1px solid var(--border); background: none; color: var(--muted); cursor: pointer; font-family: 'JetBrains Mono', monospace; font-size: 11px; border-radius: 4px; transition: all 0.2s; }
+
+.desktop-nav { display: flex; gap: 2px; }
+.nav-btn {
+  padding: 6px 14px; border: 1px solid var(--border); background: none; color: var(--muted);
+  cursor: pointer; font-family: JetBrains Mono, monospace; font-size: 11px;
+  border-radius: 4px; transition: all 0.2s; white-space: nowrap;
+}
 .nav-btn.active, .nav-btn:hover { background: var(--accent); color: #000; border-color: var(--accent); font-weight: 600; }
 
-/* ── Pages ── */
+.header-right { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.username-badge { font-size: 11px; color: var(--muted); white-space: nowrap; }
+.username-badge strong { color: var(--accent); }
+.logout-btn {
+  font-size: 11px; color: var(--muted); background: none;
+  border: 1px solid var(--border); padding: 4px 10px; border-radius: 4px;
+  cursor: pointer; font-family: 'JetBrains Mono', monospace; white-space: nowrap;
+}
+.logout-btn:hover { border-color: var(--red); color: var(--red); }
+.status { display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--muted); white-space: nowrap; }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); transition: background 0.3s; flex-shrink: 0; }
+.dot.live { background: var(--accent); box-shadow: 0 0 8px var(--accent); animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
+
+/* MT5 status badge */
+.mt5-badge {
+  font-size: 10px; padding: 3px 8px; border-radius: 10px;
+  border: 1px solid var(--border); color: var(--muted);
+  white-space: nowrap; flex-shrink: 0;
+}
+.mt5-badge.connected { border-color: var(--blue); color: var(--blue); }
+
+/* ── BOTTOM NAV (mobile) ── */
+.mobile-bottom-nav {
+  display: none; position: fixed; left: 0; right: 0; bottom: 0;
+  height: calc(var(--bottom-nav-h) + var(--safe-bottom));
+  padding-bottom: var(--safe-bottom);
+  background: var(--surface); border-top: 1px solid var(--border); z-index: 200;
+}
+.mobile-bottom-nav-inner { display: flex; height: var(--bottom-nav-h); }
+.mobile-bottom-nav .nav-btn {
+  flex: 1; height: 100%; border: none; border-radius: 0; background: transparent; color: var(--muted);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 3px; font-size: 10px; padding: 6px 4px;
+}
+.mobile-bottom-nav .nav-btn .icon { font-size: 18px; line-height: 1; }
+.mobile-bottom-nav .nav-btn.active { color: var(--accent); background: rgba(0,255,136,0.06); font-weight: 700; }
+.mobile-bottom-nav .nav-btn:hover { background: rgba(0,255,136,0.04); }
+
+/* ── PAGES ── */
 .page { display: none; padding: 16px 20px; }
 .page.active { display: block; }
 
-/* ── Dashboard cards ── */
-.dash-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+/* ── DASHBOARD ── */
+.dash-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; gap: 12px; }
 .dash-title { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; color: var(--text); }
-.btn-add-instr { padding: 7px 14px; background: var(--accent); color: #000; border: none; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; cursor: pointer; }
-.btn-add-instr:hover { opacity: 0.85; }
-.dash-empty { color: var(--muted); font-size: 12px; padding: 48px; text-align: center; border: 1px dashed var(--border); border-radius: 8px; }
-
-.dash-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
-  gap: 12px;
+.btn-add-instr {
+  padding: 7px 14px; background: var(--accent); color: #000;
+  border: none; border-radius: 4px; font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; font-weight: 700; cursor: pointer; white-space: nowrap; flex-shrink: 0;
 }
-
+.btn-add-instr:hover { opacity: 0.85; }
+.dash-empty { color: var(--muted); font-size: 12px; padding: 48px 16px; text-align: center; border: 1px dashed var(--border); border-radius: 8px; }
+.dash-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 12px; }
 .dash-card {
   background: var(--surface); border: 1px solid var(--border);
-  border-radius: 8px; padding: 14px 16px;
-  transition: border-color 0.15s;
+  border-radius: 8px; padding: 14px 16px; transition: border-color 0.15s; min-width: 0;
 }
 .dash-card:hover { border-color: rgba(0,255,136,0.25); }
-.dash-card.flash-green { animation: flashG 0.4s ease; }
-.dash-card.flash-red   { animation: flashR 0.4s ease; }
-@keyframes flashG { 0%{background:rgba(0,255,136,0.08)} 100%{background:transparent} }
-@keyframes flashR { 0%{background:rgba(255,68,102,0.08)} 100%{background:transparent} }
 
-.card-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 12px; }
+@keyframes flashG { 0%{background:rgba(0,255,136,0.08)} 100%{background:var(--surface)} }
+@keyframes flashR { 0%{background:rgba(255,68,102,0.08)} 100%{background:var(--surface)} }
+.dash-card.flash-green { animation: flashG 0.0s ease; }
+.dash-card.flash-red   { animation: flashR 0.0s ease; }
+
+.card-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 12px; gap: 8px; }
 .card-name { font-size: 12px; font-weight: 600; color: var(--text); line-height: 1.3; }
 .card-type-badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 9px; font-weight: 600; margin-top: 3px; }
-.card-remove { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 14px; line-height: 1; padding: 2px 4px; }
+.card-top-actions { display: flex; gap: 4px; align-items: center; flex-shrink: 0; }
+.card-alert-btn, .deal-alert-btn, .card-order-btn {
+  background: none; border: 1px solid var(--border); color: var(--muted);
+  cursor: pointer; font-size: 12px; padding: 3px 7px; border-radius: 3px;
+  transition: all 0.2s; line-height: 1;
+}
+.card-alert-btn:hover, .deal-alert-btn:hover { background: var(--surface2); color: var(--text); }
+.card-alert-btn.active, .deal-alert-btn.active { background: var(--accent); color: #000; border-color: var(--accent); }
+.card-order-btn:hover { background: var(--surface2); color: var(--blue); border-color: var(--blue); }
+.card-order-btn.has-order { border-color: rgba(100,200,255,0.5); color: var(--blue); }
+.card-remove { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 14px; padding: 3px 5px; line-height: 1; }
 .card-remove:hover { color: var(--red); }
 
 .card-badla { display: flex; gap: 0; margin-bottom: 12px; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
-.badla-cell { flex: 1; padding: 8px 10px; text-align: center; border-right: 1px solid var(--border); }
+.badla-cell { flex: 1; padding: 8px 10px; text-align: center; border-right: 1px solid var(--border); min-width: 0; }
 .badla-cell:last-child { border-right: none; }
 .badla-label { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 3px; }
-.badla-val { font-size: 16px; font-weight: 700; }
+.badla-val { font-size: 15px; font-weight: 700; overflow: hidden; text-overflow: ellipsis; }
 
 .card-prices { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
-.price-block { background: var(--surface2); border-radius: 5px; padding: 7px 10px; }
+.price-block { background: var(--surface2); border-radius: 5px; padding: 7px 10px; min-width: 0; }
 .price-block-label { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
-.price-row { display: flex; justify-content: space-between; align-items: baseline; }
-.price-key { font-size: 9px; color: var(--muted); }
-.price-val { font-size: 12px; font-weight: 600; color: var(--text); }
-.price-sub { font-size: 9px; color: var(--muted); margin-top: 2px; }
+.price-row { display: flex; justify-content: space-between; align-items: baseline; gap: 4px; }
+.price-key { font-size: 9px; color: var(--muted); flex-shrink: 0; }
+.price-val { font-size: 11px; font-weight: 600; color: var(--text); text-align: right; overflow: hidden; text-overflow: ellipsis; }
+.price-sub { font-size: 9px; color: var(--muted); margin-top: 2px; overflow: hidden; text-overflow: ellipsis; }
 
-/* ── Filter bar ── */
-.filter-bar { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
-.filter-btn { padding: 4px 12px; border: 1px solid var(--border); background: none; color: var(--muted); cursor: pointer; font-family: 'JetBrains Mono', monospace; font-size: 11px; border-radius: 20px; transition: all 0.15s; }
+/* ── FILTER BAR ── */
+.filter-bar { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+.filter-btn {
+  padding: 4px 12px; border: 1px solid var(--border); background: none; color: var(--muted);
+  cursor: pointer; font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  border-radius: 20px; transition: all 0.15s; white-space: nowrap;
+}
 .filter-btn.active { border-color: var(--accent); color: var(--accent); }
-.search { background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 4px 10px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 11px; outline: none; width: 200px; }
+.search {
+  background: var(--surface); border: 1px solid var(--border); color: var(--text);
+  padding: 4px 10px; border-radius: 4px; font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; outline: none; min-width: 0; width: 180px;
+}
 .search:focus { border-color: var(--accent); }
-.update-time { margin-left: auto; color: var(--muted); font-size: 11px; }
+.update-time { color: var(--muted); font-size: 11px; white-space: nowrap; }
 
-/* ── Table ── */
-.tbl-wrap { overflow-x: auto; border-radius: 6px; border: 1px solid var(--border); }
-table { width: 100%; border-collapse: collapse; }
-thead th { background: var(--surface); color: var(--muted); font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 10px 12px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--border); }
+/* ── PRICES TABLE ── */
+.tbl-wrap { overflow-x: auto; border-radius: 6px; border: 1px solid var(--border); -webkit-overflow-scrolling: touch; }
+table { width: 100%; border-collapse: collapse; min-width: 800px; }
+thead th {
+  background: var(--surface); color: var(--muted); font-size: 10px; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase; padding: 10px 12px;
+  text-align: right; white-space: nowrap; border-bottom: 1px solid var(--border);
+}
 thead th:first-child { text-align: left; }
 tbody tr { border-bottom: 1px solid var(--border); transition: background 0.1s; cursor: pointer; }
 tbody tr:last-child { border-bottom: none; }
 tbody tr:hover { background: rgba(0,255,136,0.04); }
-tbody tr.flash-green { animation: flashG 0.4s ease; }
-tbody tr.flash-red   { animation: flashR 0.4s ease; }
+tbody tr.flash-green { animation: flashG 0.0s ease; }
+tbody tr.flash-red   { animation: flashR 0.0s ease; }
 td { padding: 9px 12px; text-align: right; white-space: nowrap; }
 td:first-child { text-align: left; }
-.inst-name { font-size: 11px; color: var(--text); max-width: 260px; overflow: hidden; text-overflow: ellipsis; }
+.inst-name { font-size: 11px; color: var(--text); max-width: 200px; overflow: hidden; text-overflow: ellipsis; }
 .inst-type { font-size: 9px; color: var(--muted); margin-top: 2px; }
 .pos { color: var(--green); }
 .neg { color: var(--red); }
 .muted { color: var(--muted); }
-.td-sub { font-size: 9px; color: var(--muted); margin-top: 2px; }
 .badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 9px; font-weight: 600; }
-.badge-gold   { background: rgba(255,215,0,0.15); color: var(--gold); }
+.badge-gold   { background: rgba(255,215,0,0.15);   color: var(--gold); }
 .badge-silver { background: rgba(160,160,200,0.15); color: #aab; }
-.badge-crude  { background: rgba(255,140,0,0.15); color: #fa0; }
-.badge-copper { background: rgba(180,100,40,0.15); color: #c84; }
+.badge-crude  { background: rgba(255,140,0,0.15);   color: #fa0; }
+.badge-copper { background: rgba(180,100,40,0.15);  color: #c84; }
 .badge-gas    { background: rgba(100,200,255,0.15); color: #6cf; }
 .badge-other  { background: rgba(100,100,150,0.15); color: #88a; }
 
-/* ── Deals ── */
+/* ── DEALS ── */
 .deal-controls { display: flex; gap: 10px; margin-bottom: 16px; align-items: center; flex-wrap: wrap; }
-.btn { padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; transition: all 0.15s; }
+.btn {
+  padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer;
+  font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600;
+  transition: all 0.15s; white-space: nowrap;
+}
 .btn-primary { background: var(--accent); color: #000; }
 .btn-primary:hover { opacity: 0.85; }
 .btn-danger { background: var(--red); color: #fff; }
+.btn-blue   { background: rgba(100,200,255,0.15); color: var(--blue); border: 1px solid rgba(100,200,255,0.3); }
+.btn-blue:hover { background: rgba(100,200,255,0.25); }
 .btn-sm { padding: 4px 10px; font-size: 11px; }
 
-/* ── P&L bar ── */
-.pnl-bar { display: flex; gap: 16px; margin-bottom: 12px; flex-wrap: wrap; }
-.pnl-card { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 10px 16px; }
+/* ── PNL BAR ── */
+.pnl-bar { display: flex; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; }
+.pnl-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 6px; padding: 10px 16px; min-width: 100px; flex: 1 1 auto;
+}
 .pnl-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
 .pnl-value { font-size: 18px; font-weight: 700; margin-top: 2px; }
 
-/* ── Modal ── */
-.modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.75); z-index: 200; align-items: center; justify-content: center; }
+/* ── DEAL CARDS ── */
+.deal-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px; min-width: 0;
+}
+.deal-card.closed { opacity: 0.6; border-color: rgba(255,255,255,0.05); }
+.deal-card.partial-child { opacity: 0.6; border-color: rgba(255,255,255,0.05); }
+.deal-card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+.deal-card-title { min-width: 0; flex: 1 1 0; }
+.deal-card-name  { font-size: 13px; font-weight: 700; color: var(--text); word-break: break-word; }
+.deal-card-meta, .deal-card-time { font-size: 10px; color: var(--muted); margin-top: 2px; line-height: 1.5; word-break: break-word; }
+.deal-card-side { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; flex-shrink: 0; max-width: 50%; }
+.deal-card-pnl { text-align: right; }
+.deal-card-pnl-label { font-size: 10px; color: var(--muted); }
+.deal-card-pnl-value  { font-size: 20px; font-weight: 800; }
+.deal-card-actions { display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 4px; }
+.deal-card-grid { display: grid; gap: 10px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.deal-card-grid.has-dgcx { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.deal-leg {
+  background: var(--surface2); border-radius: 6px; padding: 12px;
+  display: flex; flex-direction: column; gap: 6px; min-width: 0;
+}
+.deal-leg-label { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; }
+.deal-leg-row { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.deal-leg-row span:first-child { font-size: 10px; color: var(--muted); flex-shrink: 0; }
+.deal-leg-row span:last-child  { font-size: 12px; font-weight: 600; text-align: right; overflow: hidden; text-overflow: ellipsis; }
+.deal-leg-extra  { font-size: 9px; color: var(--muted); }
+.deal-leg-pnl    { border-top: 1px solid var(--border); padding-top: 6px; display: flex; justify-content: space-between; align-items: baseline; }
+.deal-leg-pnl .label { font-size: 10px; color: var(--muted); }
+.deal-leg-pnl .value { font-size: 10px; font-weight: 500; }
+.deal-leg-broker { font-size: 9px; color: var(--muted); margin-top: 2px; text-align: right; }
+.partial-info {
+  background: rgba(255,215,0,0.07); border: 1px solid rgba(255,215,0,0.2);
+  border-radius: 5px; padding: 6px 10px; font-size: 10px; color: var(--gold); margin-bottom: 10px;
+}
+
+/* ── ORDERS PAGE ── */
+.order-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: 14px 16px; min-width: 0;
+}
+.order-card.status-pending  { border-left: 3px solid var(--muted); }
+.order-card.status-triggered { border-left: 3px solid var(--gold); }
+.order-card.status-sent_to_mt5 { border-left: 3px solid var(--blue); }
+.order-card.status-executed  { border-left: 3px solid var(--accent); }
+.order-card.status-failed    { border-left: 3px solid var(--red); }
+.order-status-pill {
+  display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 9px; font-weight: 700; text-transform: uppercase;
+}
+.order-status-pill.pending   { background: rgba(85,85,112,0.3);   color: var(--muted); }
+.order-status-pill.triggered { background: rgba(255,215,0,0.15);  color: var(--gold); }
+.order-status-pill.sent_to_mt5 { background: rgba(100,200,255,0.15); color: var(--blue); }
+.order-status-pill.executed  { background: rgba(0,255,136,0.15);  color: var(--accent); }
+.order-status-pill.failed    { background: rgba(255,68,102,0.15); color: var(--red); }
+.order-leg-chip {
+  display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px;
+  border-radius: 4px; font-size: 10px; font-weight: 600; margin-right: 4px; margin-top: 4px;
+}
+.order-leg-chip.buy  { background: rgba(0,255,136,0.1); color: var(--accent); }
+.order-leg-chip.sell { background: rgba(255,68,102,0.1); color: var(--red); }
+.order-condition-tag {
+  display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 10px;
+  background: rgba(255,215,0,0.08); color: var(--gold); border: 1px solid rgba(255,215,0,0.2);
+  margin-top: 6px;
+}
+.mt5-info-box {
+  background: rgba(100,200,255,0.05); border: 1px solid rgba(100,200,255,0.2);
+  border-radius: 8px; padding: 14px 16px; margin-bottom: 16px; font-size: 11px; color: var(--muted); line-height: 1.7;
+}
+.mt5-info-box strong { color: var(--blue); }
+.mt5-info-box code {
+  background: var(--surface2); padding: 1px 5px; border-radius: 3px;
+  font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text);
+}
+
+/* ── MODAL ── */
+.modal-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.75);
+  z-index: 300; align-items: center; justify-content: center;
+  padding: 16px; overflow-y: auto;
+}
 .modal-overlay.open { display: flex; }
-.modal { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; width: 480px; max-width: 95vw; max-height: 90vh; overflow-y: auto; }
+.modal {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: 24px; width: 480px; max-width: 100%;
+  max-height: calc(100vh - 32px); overflow-y: auto; margin: auto; position: relative;
+}
 .modal h3 { font-family: 'Syne', sans-serif; font-size: 16px; margin-bottom: 16px; color: var(--accent); }
+
 .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .form-group { display: flex; flex-direction: column; gap: 4px; }
-.form-group.full { grid-column: 1/-1; }
+.form-group.full { grid-column: 1 / -1; }
 label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
-input, select { background: var(--bg); border: 1px solid var(--border); color: var(--text); padding: 8px 10px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 12px; outline: none; }
+input, select {
+  background: var(--bg); border: 1px solid var(--border); color: var(--text);
+  padding: 8px 10px; border-radius: 4px; font-family: 'JetBrains Mono', monospace;
+  font-size: 12px; outline: none; width: 100%; min-width: 0;
+}
 input:focus, select:focus { border-color: var(--accent); }
 select option { background: var(--surface); }
-.form-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 16px; }
+.form-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 16px; flex-wrap: wrap; }
 .btn-cancel { background: var(--border); color: var(--text); }
 
-/* ── DGCX toggle ── */
+.leg-card {
+  background: var(--surface2); border-radius: 6px; padding: 12px;
+  display: flex; flex-direction: column; gap: 8px; border: 1px solid var(--border);
+}
+.leg-card-title { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 2px; }
+.broker-select-row { display: flex; flex-direction: column; gap: 3px; padding-top: 6px; border-top: 1px solid var(--border); margin-top: 2px; }
+.broker-select-row label { font-size: 9px; color: var(--muted); }
+.broker-select-row select { font-size: 11px; padding: 5px 8px; }
+
 .dgcx-toggle-row {
   display: flex; align-items: center; gap: 8px;
   background: var(--surface2); border-radius: 6px; padding: 10px 12px;
   border: 1px solid var(--border); cursor: pointer; user-select: none;
 }
-.dgcx-toggle-row input[type=checkbox] { accent-color: var(--accent); width: 14px; height: 14px; cursor: pointer; }
+.dgcx-toggle-row input[type=checkbox] { accent-color: var(--accent); width: 14px; height: 14px; cursor: pointer; flex-shrink: 0; }
 .dgcx-toggle-label { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; color: #6cf; }
-.dgcx-toggle-sub { font-size: 10px; color: var(--muted); margin-left: auto; }
+.dgcx-toggle-sub   { font-size: 10px; color: var(--muted); margin-left: auto; }
 
-/* Add instrument modal list */
+/* ── ORDER MODAL SPECIFIC ── */
+.order-leg-row {
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px;
+  background: var(--surface2); border-radius: 6px; padding: 10px 12px; border: 1px solid var(--border);
+  align-items: end;
+}
+.order-leg-row-title { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 6px; }
+.order-leg-check { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; cursor: pointer; }
+.order-leg-check input { width: 14px; height: 14px; accent-color: var(--accent); cursor: pointer; }
+.order-leg-check span { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; }
+.order-leg-fields { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-top: 6px; }
+
+.condition-section {
+  background: rgba(255,215,0,0.04); border: 1px solid rgba(255,215,0,0.2);
+  border-radius: 6px; padding: 12px; margin-top: 2px;
+}
+.condition-section label { color: var(--gold); }
+.condition-section input, .condition-section select { border-color: rgba(255,215,0,0.3); }
+.condition-section input:focus, .condition-section select:focus { border-color: var(--gold); }
+.condition-row { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 8px; }
+
+.confirm-overlay {
+  background: rgba(255,215,0,0.07); border: 1px solid rgba(255,215,0,0.3);
+  border-radius: 6px; padding: 12px; margin-top: 12px; font-size: 11px; color: var(--gold);
+}
+.confirm-overlay strong { display: block; font-size: 13px; margin-bottom: 6px; }
+
+/* Instrument picker */
 .instr-search { width: 100%; margin-bottom: 10px; }
-.instr-list { max-height: 320px; overflow-y: auto; border: 1px solid var(--border); border-radius: 4px; }
-.instr-item { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.1s; }
+.instr-list { max-height: 300px; overflow-y: auto; border: 1px solid var(--border); border-radius: 4px; -webkit-overflow-scrolling: touch; }
+.instr-item {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  cursor: pointer; transition: background 0.1s; gap: 8px;
+}
 .instr-item:last-child { border-bottom: none; }
 .instr-item:hover { background: rgba(0,255,136,0.06); }
 .instr-item.already { opacity: 0.4; cursor: default; }
 .instr-item-name { font-size: 11px; color: var(--text); }
 .instr-item-type { font-size: 10px; color: var(--muted); }
-.instr-add-btn { font-size: 10px; background: var(--accent); color: #000; border: none; padding: 3px 8px; border-radius: 3px; cursor: pointer; font-family: 'JetBrains Mono', monospace; font-weight: 600; }
-.instr-added-tag { font-size: 10px; color: var(--muted); }
+.instr-add-btn {
+  font-size: 10px; background: var(--accent); color: #000; border: none;
+  padding: 3px 8px; border-radius: 3px; cursor: pointer;
+  font-family: 'JetBrains Mono', monospace; font-weight: 600; flex-shrink: 0;
+}
+.instr-added-tag { font-size: 10px; color: var(--muted); flex-shrink: 0; }
 
-/* ── Scrollbar ── */
+/* Alert popover */
+.alert-popover {
+  position: fixed; z-index: 10000; background: var(--surface);
+  border: 1px solid var(--accent); border-radius: 8px; padding: 12px;
+  width: min(230px, calc(100vw - 24px)); box-shadow: 0 4px 24px rgba(0,0,0,0.7);
+}
+.alert-popover label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px; }
+.alert-popover input, .alert-popover select { width: 100%; margin-bottom: 8px; }
+.alert-popover .pop-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.alert-popover .pop-row button { flex: 1; min-width: 60px; }
+
+/* Alarm banner */
+.alarm-banner {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 99999;
+  background: var(--red); color: #fff; padding: 12px 20px;
+  display: flex; align-items: center; justify-content: space-between;
+  font-weight: 700; font-size: 14px; animation: bannerPulse 0.5s infinite alternate; gap: 12px;
+}
+@keyframes bannerPulse { from{opacity:1} to{opacity:0.7} }
+.alarm-stop-btn {
+  background: #fff; color: var(--red); border: none; padding: 6px 16px;
+  border-radius: 4px; font-weight: 700; cursor: pointer;
+  font-family: 'JetBrains Mono', monospace; font-size: 13px; flex-shrink: 0;
+}
+
+/* Toast */
+#toast-container {
+  position: fixed; bottom: 20px; right: 20px; z-index: 9999;
+  display: flex; flex-direction: column; gap: 8px; max-width: calc(100vw - 40px);
+}
+.toast {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 12px 16px; min-width: 260px; max-width: 340px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4); animation: slideIn 0.2s ease;
+  display: flex; gap: 10px; align-items: flex-start;
+}
+.toast.alert   { border-left: 3px solid var(--gold); }
+.toast.trigger { border-left: 3px solid var(--accent); }
+.toast.error   { border-left: 3px solid var(--red); }
+.toast.info    { border-left: 3px solid var(--muted); }
+.toast.order   { border-left: 3px solid var(--blue); }
+.toast-icon  { font-size: 18px; line-height: 1; flex-shrink: 0; }
+.toast-title { font-size: 12px; font-weight: 700; color: var(--text); }
+.toast-body  { font-size: 11px; color: var(--muted); margin-top: 2px; word-break: break-word; }
+.toast-close { margin-left: auto; background: none; border: none; color: var(--muted); cursor: pointer; font-size: 14px; flex-shrink: 0; }
+@keyframes slideIn { from{transform:translateX(100%);opacity:0} to{transform:translateX(0);opacity:1} }
+
+/* Brokers */
+.broker-row td { vertical-align: middle; }
+.broker-row:hover { background: rgba(0,255,136,0.04); }
+.pass-hidden { font-family: monospace; letter-spacing: 2px; color: var(--muted); }
+.profit-badge { display: inline-block; padding: 2px 8px; border-radius: 12px; background: rgba(0,255,136,0.1); color: var(--accent); font-size: 11px; font-weight: 700; }
+.acct-badge   { display: inline-block; padding: 2px 8px; border-radius: 12px; background: rgba(100,200,255,0.1); color: #6cf; font-size: 11px; font-family: 'JetBrains Mono', monospace; }
+
+/* Scrollbar */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .status #update-count { display: none; }
+  .username-badge { display: none; }
+}
+@media (max-width: 768px) {
+  :root { --header-h: 50px; }
+  .header { padding: 0 12px; gap: 8px; }
+  .logo { font-size: 17px; }
+  .desktop-nav { display: none; }
+  .status { display: none; }
+  .logout-btn { padding: 5px 8px; font-size: 11px; }
+  .mobile-bottom-nav { display: block; }
+  .page { padding: 12px 12px calc(var(--bottom-nav-h) + var(--safe-bottom) + 12px); }
+  #toast-container { bottom: calc(var(--bottom-nav-h) + var(--safe-bottom) + 8px); right: 12px; max-width: calc(100vw - 24px); }
+  .dash-grid { grid-template-columns: 1fr; }
+  .dash-card { padding: 12px; }
+  .badla-val { font-size: 14px; }
+  .card-prices { grid-template-columns: 1fr 1fr 1fr; }
+  .price-val { font-size: 10px; }
+  .pnl-bar { gap: 8px; }
+  .pnl-card { padding: 8px 12px; }
+  .pnl-value { font-size: 16px; }
+  .deal-card { padding: 12px; }
+  .deal-card-pnl-value { font-size: 18px; }
+  .deal-card-grid, .deal-card-grid.has-dgcx { grid-template-columns: 1fr; }
+  .modal { padding: 16px; border-radius: 8px; }
+  .modal h3 { font-size: 14px; margin-bottom: 12px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .form-grid .form-group.full { grid-column: 1; }
+  .deal-modal-legs { grid-template-columns: 1fr !important; }
+  .deal-modal-top { grid-template-columns: 1fr 1fr !important; }
+  .broker-hide-tablet { display: none; }
+  .mt5-badge { display: none; }
+}
+@media (max-width: 480px) {
+  :root { --header-h: 48px; }
+  .header { padding: 0 10px; }
+  .logo { font-size: 15px; }
+  .card-prices { grid-template-columns: 1fr 1fr; }
+  .price-block:last-child { grid-column: 1 / -1; }
+  .deal-card-actions .btn, .deal-card-actions .deal-alert-btn { padding: 3px 7px; font-size: 10px; }
+  .deal-card-pnl-value { font-size: 16px; }
+  .deal-card-name { font-size: 12px; }
+  .pnl-bar { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .pnl-card { flex: unset; min-width: unset; }
+  .pnl-value { font-size: 15px; }
+  .filter-bar { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; -webkit-overflow-scrolling: touch; gap: 4px; }
+  .filter-bar .update-time { display: none; }
+  .search { width: 140px; }
+  .modal-overlay { padding: 8px; align-items: flex-end; }
+  .modal { border-radius: 12px 12px 0 0; max-height: 92vh; }
+  .form-actions { justify-content: stretch; }
+  .form-actions .btn { flex: 1; justify-content: center; }
+  .alarm-banner { font-size: 12px; padding: 10px 12px; }
+  .alarm-stop-btn { padding: 5px 10px; font-size: 11px; }
+  .toast { min-width: 0; }
+  .order-leg-fields { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 600px) {
+  .deal-modal-top { grid-template-columns: 1fr 1fr !important; }
+  .deal-modal-top .form-group:first-child { grid-column: 1 / -1; }
+  .deal-modal-legs { grid-template-columns: 1fr !important; }
+  .condition-row { grid-template-columns: 1fr !important; }
+}
 </style>
 </head>
 <body>
 
-<!-- ══════════════════════════════════════════════════════════ LOGIN SCREEN -->
 <div id="login-screen">
   <div class="login-box">
     <div class="login-logo">BADLA<span>BOARD</span></div>
     <div class="login-sub">Sign in to your account</div>
-    <div class="login-field">
-      <label>Username</label>
-      <input type="text" id="l-user" placeholder="username" autocomplete="username">
-    </div>
-    <div class="login-field">
-      <label>Password</label>
-      <input type="password" id="l-pass" placeholder="••••••••" autocomplete="current-password">
-    </div>
+    <div class="login-field"><label>Username</label><input type="text" id="l-user" placeholder="username" autocomplete="username"></div>
+    <div class="login-field"><label>Password</label><input type="password" id="l-pass" placeholder="••••••••" autocomplete="current-password"></div>
     <button class="login-btn" onclick="doLogin()">Sign In</button>
     <div class="login-error" id="login-error">Invalid username or password</div>
   </div>
 </div>
 
-<!-- ══════════════════════════════════════════════════════════ MAIN APP -->
 <div id="app">
-
-<div class="header">
-  <div class="logo">BADLA<span>BOARD</span></div>
-  <div class="nav">
-    <button class="nav-btn active" data-page="dashboard" onclick="showPage('dashboard',this)">Dashboard</button>
-    <button class="nav-btn" data-page="prices" onclick="showPage('prices',this)">Prices</button>
-    <button class="nav-btn" data-page="deals" onclick="showPage('deals',this)">Deals</button>
-  </div>
-  <div class="header-right">
-    <div class="status">
-      <div class="dot" id="dot"></div>
-      <span id="status-text">Connecting...</span>
-      <span id="update-count" style="color:var(--accent)"></span>
-    </div>
-    <div class="username-badge">Signed in as <strong id="username-display">—</strong></div>
-    <button class="logout-btn" onclick="doLogout()">Sign Out</button>
-  </div>
-</div>
-
-<!-- ══ DASHBOARD PAGE ══ -->
-<div class="page active" id="page-dashboard">
-  <div class="dash-header">
-    <div class="dash-title">Dashboard</div>
-    <button class="btn-add-instr" onclick="openAddInstrModal()">+ Add Instrument</button>
-  </div>
-  <div class="dash-grid" id="dash-grid">
-    <div class="dash-empty" id="dash-empty">No instruments pinned yet.<br>Click <strong>+ Add Instrument</strong> to get started.</div>
-  </div>
-</div>
-
-<!-- ══ PRICES PAGE ══ -->
-<div class="page" id="page-prices">
-  <div class="filter-bar">
-    <button class="filter-btn active" onclick="setFilter('ALL',this)">ALL</button>
-    <button class="filter-btn" onclick="setFilter('GOLD',this)">GOLD</button>
-    <button class="filter-btn" onclick="setFilter('SILVER',this)">SILVER</button>
-    <button class="filter-btn" onclick="setFilter('CRUDE',this)">CRUDE</button>
-    <button class="filter-btn" onclick="setFilter('COPPER',this)">COPPER</button>
-    <button class="filter-btn" onclick="setFilter('GAS',this)">GAS</button>
-    <button class="filter-btn" onclick="setFilter('OTHER',this)">OTHER</button>
-    <input class="search" id="search" placeholder="Search instrument..." oninput="renderPrices()">
-    <span class="update-time" id="last-update">--</span>
-  </div>
-  <div class="tbl-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th>Instrument</th>
-          <th>Type</th>
-          <th>BADLA[BUY]</th>
-          <th>BADLA[SELL]</th>
-          <th>BADLA[LTP]</th>
-          <th>MCX BID</th>
-          <th>MCX ASK</th>
-          <th>Conv. COMEX</th>
-          <th>COMEX BID</th>
-          <th>COMEX ASK</th>
-          <th>DGCX</th>
-          <th>10k/DGCX</th>
-          <th>Updated</th>
-        </tr>
-      </thead>
-      <tbody id="prices-tbody"></tbody>
-    </table>
-  </div>
-</div>
-
-<!-- ══ DEALS PAGE ══ -->
-<div class="page" id="page-deals">
-  <div class="pnl-bar">
-    <div class="pnl-card"><div class="pnl-label">Open Deals</div><div class="pnl-value" id="open-count">0</div></div>
-    <div class="pnl-card"><div class="pnl-label">Live P&L</div><div class="pnl-value" id="live-pnl">₹0</div></div>
-    <div class="pnl-card"><div class="pnl-label">Closed P&L</div><div class="pnl-value" id="closed-pnl">₹0</div></div>
-    <div class="pnl-card"><div class="pnl-label">Total P&L</div><div class="pnl-value" id="total-pnl">₹0</div></div>
-  </div>
-  <div class="deal-controls">
-    <button class="btn btn-primary" onclick="openDealModal()">+ New Deal</button>
-    <div style="display:flex;gap:4px;margin-left:8px">
-      <button class="filter-btn active" id="tab-open"   onclick="setDealTab('open')"  >Open</button>
-      <button class="filter-btn"        id="tab-closed" onclick="setDealTab('closed')">Closed</button>
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo">BADLA<span>BOARD</span></div>
+    <nav class="desktop-nav">
+      <button class="nav-btn active" data-page="dashboard" onclick="showPage('dashboard',this)">Dashboard</button>
+      <button class="nav-btn" data-page="prices"    onclick="showPage('prices',this)">Prices</button>
+      <button class="nav-btn" data-page="deals"     onclick="showPage('deals',this)">Deals</button>
+      <button class="nav-btn" data-page="orders"    onclick="showPage('orders',this)">Orders</button>
+      <button class="nav-btn" data-page="brokers"   onclick="showPage('brokers',this)">Brokers</button>
+    </nav>
+    <div class="header-right">
+      <div class="status">
+        <div class="dot" id="dot"></div>
+        <span id="status-text">Connecting...</span>
+        <span id="update-count" style="color:var(--accent)"></span>
+      </div>
+      <div class="mt5-badge" id="mt5-badge">MT5 —</div>
+      <div class="username-badge">Signed in as <strong id="username-display"></strong></div>
+      <button class="logout-btn" onclick="doLogout()"><i class="fas fa-sign-out-alt"></i></button>
     </div>
   </div>
-  <div id="deals-cards" style="display:flex;flex-direction:column;gap:12px"></div>
+
+  <!-- PAGES -->
+  <div class="page active" id="page-dashboard">
+    <div class="dash-header">
+      <div class="dash-title">Dashboard</div>
+      <button class="btn-add-instr" onclick="openAddInstrModal()">+ Add</button>
+    </div>
+    <div class="dash-grid" id="dash-grid">
+      <div class="dash-empty" id="dash-empty">No instruments pinned yet.<br>Click <strong>+ Add</strong> to get started.</div>
+    </div>
+  </div>
+
+  <div class="page" id="page-prices">
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="setFilter('ALL',this)">ALL</button>
+      <button class="filter-btn" onclick="setFilter('GOLD',this)">GOLD</button>
+      <button class="filter-btn" onclick="setFilter('SILVER',this)">SILVER</button>
+      <button class="filter-btn" onclick="setFilter('CRUDE',this)">CRUDE</button>
+      <button class="filter-btn" onclick="setFilter('COPPER',this)">COPPER</button>
+      <button class="filter-btn" onclick="setFilter('GAS',this)">GAS</button>
+      <button class="filter-btn" onclick="setFilter('OTHER',this)">OTHER</button>
+      <input class="search" id="search" placeholder="Search..." oninput="renderPrices()">
+      <span class="update-time" id="last-update">--</span>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr>
+          <th>Instrument</th><th>Type</th>
+          <th>BADLA[BUY]</th><th>BADLA[SELL]</th><th>BADLA[LTP]</th>
+          <th>MCX BID</th><th>MCX ASK</th><th>Conv. COMEX</th>
+          <th>COMEX BID</th><th>COMEX ASK</th>
+          <th>DGCX</th><th>10k/DGCX</th><th>Updated</th>
+        </tr></thead>
+        <tbody id="prices-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="page" id="page-deals">
+    <div class="pnl-bar">
+      <div class="pnl-card"><div class="pnl-label">Open Deals</div><div class="pnl-value" id="open-count">0</div></div>
+      <div class="pnl-card"><div class="pnl-label">Live P&amp;L</div><div class="pnl-value" id="live-pnl">₹0</div></div>
+      <div class="pnl-card"><div class="pnl-label">Closed P&amp;L</div><div class="pnl-value" id="closed-pnl">₹0</div></div>
+      <div class="pnl-card"><div class="pnl-label">Total P&amp;L</div><div class="pnl-value" id="total-pnl">₹0</div></div>
+    </div>
+    <div class="deal-controls">
+      <div style="display:flex;gap:4px">
+        <button class="filter-btn active" id="tab-open"   onclick="setDealTab('open')">Open</button>
+        <button class="filter-btn"        id="tab-closed" onclick="setDealTab('closed')">Closed</button>
+      </div>
+      <button class="btn btn-primary" style="margin-left:auto" onclick="openDealModal()">+ New Deal</button>
+    </div>
+    <div id="deals-cards" style="display:flex;flex-direction:column;gap:12px"></div>
+  </div>
+
+  <!-- ORDERS PAGE -->
+  <div class="page" id="page-orders">
+    <div class="dash-header">
+      <div class="dash-title">Orders</div>
+      <button class="btn-add-instr" onclick="openOrderModal(null)">+ New Order</button>
+    </div>
+    <div class="mt5-info-box" id="mt5-info-box">
+      <strong>MT5 EA Connection</strong>
+      The MT5 Expert Advisor polls <code>GET /api/mt5/pending-orders</code> with header <code>x-mt5-key: YOUR_KEY</code>.
+      Set <code>MT5_EA_KEY</code> env var on the server. EA confirms execution via <code>POST /api/mt5/confirm</code>.
+      Once wired, orders placed here will be automatically sent to MT5 for execution.
+      <br>Status: <span id="mt5-orders-status" style="color:var(--muted)">Not yet connected</span>
+    </div>
+    <div class="deal-controls" style="margin-bottom:12px">
+      <div style="display:flex;gap:4px;flex-wrap:wrap">
+        <button class="filter-btn active" id="otab-all"      onclick="setOrderTab('all')">All</button>
+        <button class="filter-btn"        id="otab-pending"  onclick="setOrderTab('pending')">Pending</button>
+        <button class="filter-btn"        id="otab-executed" onclick="setOrderTab('executed')">Executed</button>
+      </div>
+    </div>
+    <div id="orders-cards" style="display:flex;flex-direction:column;gap:10px"></div>
+  </div>
+
+  <div class="page" id="page-brokers">
+    <div class="dash-header">
+      <div class="dash-title">Broker Accounts</div>
+      <button class="btn-add-instr" onclick="openBrokerModal()">+ Add Broker</button>
+    </div>
+    <div class="pnl-bar" id="broker-summary" style="margin-bottom:16px"></div>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th style="text-align:left">Broker Name</th>
+            <th style="text-align:left">Account ID</th>
+            <th style="text-align:left" class="broker-hide-tablet">Instrument</th>
+            <th class="broker-hide-tablet">Lot Size</th>
+            <th>Brokerage (₹)</th>
+            <th>Profit %</th>
+            <th class="broker-hide-tablet">Password</th>
+            <th class="broker-hide-tablet">Added</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="brokers-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- MOBILE BOTTOM NAV -->
+  <nav class="mobile-bottom-nav" aria-label="Main navigation">
+    <div class="mobile-bottom-nav-inner">
+      <button class="nav-btn active" data-page="dashboard" onclick="showPage('dashboard',this)">
+        <span class="icon">📊</span><span>Dashboard</span>
+      </button>
+      <button class="nav-btn" data-page="prices" onclick="showPage('prices',this)">
+        <span class="icon">💹</span><span>Prices</span>
+      </button>
+      <button class="nav-btn" data-page="deals" onclick="showPage('deals',this)">
+        <span class="icon">💼</span><span>Deals</span>
+      </button>
+      <button class="nav-btn" data-page="orders" onclick="showPage('orders',this)">
+        <span class="icon">📋</span><span>Orders</span>
+      </button>
+      <button class="nav-btn" data-page="brokers" onclick="showPage('brokers',this)">
+        <span class="icon">🏦</span><span>Brokers</span>
+      </button>
+    </div>
+  </nav>
 </div>
 
-</div><!-- end #app -->
+<!-- ── MODALS ── -->
 
-<!-- ══ ADD INSTRUMENT MODAL ══ -->
+<!-- ADD INSTRUMENT -->
 <div class="modal-overlay" id="add-instr-modal">
   <div class="modal">
     <h3>Add Instrument to Dashboard</h3>
     <input class="search instr-search" id="instr-search" placeholder="Search streaming instruments..." oninput="renderInstrList()">
     <div class="instr-list" id="instr-list"></div>
-    <div class="form-actions">
-      <button class="btn btn-cancel" onclick="closeAddInstrModal()">Done</button>
-    </div>
+    <div class="form-actions"><button class="btn btn-cancel" onclick="closeAddInstrModal()">Done</button></div>
   </div>
 </div>
 
-<!-- ══ EDIT DEAL MODAL ══ -->
-<div class="modal-overlay" id="edit-modal">
-  <div class="modal" style="width:640px">
-    <h3>Edit Deal</h3>
-
-    <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;margin-bottom:14px">
-      <div class="form-group">
-        <label>Instrument</label>
-        <input type="text" id="e-instrument-display" readonly style="color:var(--muted);cursor:default">
-      </div>
-      <div class="form-group">
-        <label>USD/INR Rate</label>
-        <input type="number" id="e-usd-inr" placeholder="89">
-      </div>
-      <div class="form-group">
-        <label>DGINR at Entry</label>
-        <input type="number" id="e-dginr" placeholder="auto" style="color:var(--accent)">
-      </div>
-    </div>
-
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px">
-      <!-- MCX Leg -->
-      <div style="background:var(--surface2);border-radius:6px;padding:12px;display:flex;flex-direction:column;gap:8px;border:1px solid var(--border)">
-        <div style="font-size:10px;color:var(--accent);font-weight:700;letter-spacing:0.08em">MCX LEG</div>
-        <div class="form-group"><label>Side</label>
-          <select id="e-mcx-side"><option value="SELL">SELL</option><option value="BUY">BUY</option></select>
-        </div>
-        <div class="form-group"><label>Entry Price (₹)</label>
-          <input type="number" id="e-mcx-price" step="0.01">
-        </div>
-        <div class="form-group"><label>Qty (lots)</label>
-          <input type="number" id="e-mcx-qty" min="0.01" step="0.01">
-        </div>
-        <div class="form-group"><label>Brokerage (₹)</label>
-          <input type="number" id="e-mcx-brok" min="0" step="0.01">
-        </div>
-      </div>
-
-      <!-- COMEX Leg -->
-      <div style="background:var(--surface2);border-radius:6px;padding:12px;display:flex;flex-direction:column;gap:8px;border:1px solid var(--border)">
-        <div style="font-size:10px;color:var(--gold);font-weight:700;letter-spacing:0.08em">COMEX LEG</div>
-        <div class="form-group"><label>Side</label>
-          <select id="e-comex-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select>
-        </div>
-        <div class="form-group"><label>Entry Price (USD)</label>
-          <input type="number" id="e-comex-price" step="0.01">
-        </div>
-        <div class="form-group"><label>Qty (lots)</label>
-          <input type="number" id="e-comex-qty" min="0.01" step="0.01">
-        </div>
-        <div class="form-group"><label>Brokerage (₹)</label>
-          <input type="number" id="e-comex-brok" min="0" step="0.01">
-        </div>
-      </div>
-    </div>
-
-    <!-- DGCX toggle -->
-    <label class="dgcx-toggle-row" style="margin-bottom:12px" for="e-dgcx-enabled">
-      <input type="checkbox" id="e-dgcx-enabled" onchange="toggleEditDgcxLeg()">
-      <span class="dgcx-toggle-label">DGCX LEG</span>
-      <span class="dgcx-toggle-sub">Optional third leg</span>
-    </label>
-
-    <!-- DGCX Leg -->
-    <div id="e-dgcx-leg-fields" style="display:none;background:var(--surface2);border-radius:6px;padding:12px;border:1px solid rgba(100,200,255,0.2);margin-bottom:14px">
-      <div style="font-size:10px;color:#6cf;font-weight:700;letter-spacing:0.08em;margin-bottom:10px">DGCX LEG</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-        <div class="form-group"><label>Side</label>
-          <select id="e-dgcx-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select>
-        </div>
-        <div class="form-group"><label>Entry Price (USD)</label>
-          <input type="number" id="e-dgcx-price" step="0.01">
-        </div>
-        <div class="form-group"><label>Qty (lots)</label>
-          <input type="number" id="e-dgcx-qty" min="0.01" step="0.01">
-        </div>
-        <div class="form-group"><label>Brokerage (₹)</label>
-          <input type="number" id="e-dgcx-brok" min="0" step="0.01">
-        </div>
-      </div>
-    </div>
-
-    <div class="form-group" style="margin-bottom:4px">
-      <label>Note (optional)</label>
-      <input type="text" id="e-note" placeholder="e.g. spread 1024">
-    </div>
-
-    <div class="form-actions">
-      <button class="btn btn-cancel" onclick="closeEditModal()">Cancel</button>
-      <button class="btn btn-primary" id="edit-save-btn" onclick="saveEditDeal()">Save Changes</button>
-    </div>
-  </div>
-</div>
-
-<!-- ══ NEW DEAL MODAL ══ -->
+<!-- NEW DEAL -->
 <div class="modal-overlay" id="deal-modal">
-  <div class="modal" style="width:640px">
+  <div class="modal" style="width:680px">
     <h3>New Arbitrage Deal</h3>
-
-    <!-- Row 0: Instrument + USD/INR + DGINR -->
-    <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;margin-bottom:14px">
-      <div class="form-group">
-        <label>Instrument</label>
-        <select id="d-instrument"><option value="">Select...</option></select>
+    <div class="deal-modal-top" style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;margin-bottom:14px">
+      <div class="form-group"><label>Instrument</label><select id="d-instrument"><option value="">Select...</option></select></div>
+      <div class="form-group"><label>USD/INR Rate</label><input type="number" id="d-usd-inr" placeholder="89" value="89"></div>
+      <div class="form-group"><label>DGINR at Entry</label><input type="number" id="d-dginr" placeholder="auto" readonly style="color:var(--accent)"></div>
+    </div>
+    <div class="deal-modal-legs" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px">
+      <div class="leg-card" style="border-color:rgba(0,255,136,0.25)">
+        <div class="leg-card-title" style="color:var(--accent)">MCX LEG</div>
+        <div class="form-group"><label>Side</label><select id="d-mcx-side"><option value="SELL">SELL</option><option value="BUY">BUY</option></select></div>
+        <div class="form-group"><label>Entry Price (₹)</label><input type="number" id="d-mcx-price" placeholder="0" step="0.01"></div>
+        <div class="form-group"><label>Qty (lots)</label><input type="number" id="d-mcx-qty" placeholder="1" value="1" min="0.01" step="0.01"></div>
+        <div class="form-group"><label>Brokerage (₹)</label><input type="number" id="d-mcx-brok" placeholder="0" value="0" min="0" step="0.01"></div>
+        <div class="broker-select-row"><label>Broker Account</label><select id="d-mcx-broker" onchange="autofillLegBroker('mcx')"><option value="">No broker</option></select></div>
       </div>
-      <div class="form-group">
-        <label>USD/INR Rate</label>
-        <input type="number" id="d-usd-inr" placeholder="89" value="89">
-      </div>
-      <div class="form-group">
-        <label>DGINR at Entry</label>
-        <input type="number" id="d-dginr" placeholder="auto" readonly style="color:var(--accent)">
+      <div class="leg-card" style="border-color:rgba(255,215,0,0.25)">
+        <div class="leg-card-title" style="color:var(--gold)">COMEX LEG</div>
+        <div class="form-group"><label>Side</label><select id="d-comex-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select></div>
+        <div class="form-group"><label>Entry Price (USD)</label><input type="number" id="d-comex-price" placeholder="0" step="0.000001"></div>
+        <div class="form-group"><label>Qty (lots)</label><input type="number" id="d-comex-qty" placeholder="1" value="1" min="0.000001" step="0.000001"></div>
+        <div class="form-group"><label>Brokerage (₹)</label><input type="number" id="d-comex-brok" placeholder="0" value="0" min="0" step="0.000001"></div>
+        <div class="broker-select-row"><label>Broker Account</label><select id="d-comex-broker" onchange="autofillLegBroker('comex')"><option value="">No broker</option></select></div>
       </div>
     </div>
-
-    <!-- Legs row: MCX | COMEX | DGCX (conditional) -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px" id="legs-grid">
-
-      <!-- MCX Leg -->
-      <div style="background:var(--surface2);border-radius:6px;padding:12px;display:flex;flex-direction:column;gap:8px;border:1px solid var(--border)">
-        <div style="font-size:10px;color:var(--accent);font-weight:700;letter-spacing:0.08em">MCX LEG</div>
-        <div class="form-group">
-          <label>Side</label>
-          <select id="d-mcx-side"><option value="SELL">SELL</option><option value="BUY">BUY</option></select>
-        </div>
-        <div class="form-group">
-          <label>Entry Price (₹)</label>
-          <input type="number" id="d-mcx-price" placeholder="0.00" step="0.01">
-        </div>
-        <div class="form-group">
-          <label>Qty (lots)</label>
-          <input type="number" id="d-mcx-qty" placeholder="1" value="1" min="0.01" step="0.01">
-        </div>
-        <div class="form-group">
-          <label>Brokerage (₹)</label>
-          <input type="number" id="d-mcx-brok" placeholder="0" value="0" min="0" step="0.01">
-        </div>
-      </div>
-
-      <!-- COMEX Leg -->
-      <div style="background:var(--surface2);border-radius:6px;padding:12px;display:flex;flex-direction:column;gap:8px;border:1px solid var(--border)">
-        <div style="font-size:10px;color:var(--gold);font-weight:700;letter-spacing:0.08em">COMEX LEG</div>
-        <div class="form-group">
-          <label>Side</label>
-          <select id="d-comex-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select>
-        </div>
-        <div class="form-group">
-          <label>Entry Price (USD)</label>
-          <input type="number" id="d-comex-price" placeholder="0.00" step="0.01">
-        </div>
-        <div class="form-group">
-          <label>Qty (lots)</label>
-          <input type="number" id="d-comex-qty" placeholder="1" value="1" min="0.01" step="0.01">
-        </div>
-        <div class="form-group">
-          <label>Brokerage (₹)</label>
-          <input type="number" id="d-comex-brok" placeholder="0" value="0" min="0" step="0.01">
-        </div>
-      </div>
-
-    </div><!-- end legs-grid -->
-
-    <!-- DGCX toggle -->
     <label class="dgcx-toggle-row" style="margin-bottom:12px" for="d-dgcx-enabled">
       <input type="checkbox" id="d-dgcx-enabled" onchange="toggleDgcxLeg()">
-      <span class="dgcx-toggle-label">DGCX LEG</span>
-      <span class="dgcx-toggle-sub">Optional third leg</span>
+      <span class="dgcx-toggle-label">DGCX LEG</span><span class="dgcx-toggle-sub">Optional third leg</span>
     </label>
-
-    <!-- DGCX Leg (shown when checkbox ticked) -->
-    <div id="dgcx-leg-fields" style="display:none;background:var(--surface2);border-radius:6px;padding:12px;border:1px solid rgba(100,200,255,0.2);margin-bottom:14px">
-      <div style="font-size:10px;color:#6cf;font-weight:700;letter-spacing:0.08em;margin-bottom:10px">DGCX LEG</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-        <div class="form-group">
-          <label>Side</label>
-          <select id="d-dgcx-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select>
+    <div id="dgcx-leg-fields" style="display:none;margin-bottom:14px">
+      <div class="leg-card" style="border-color:rgba(100,200,255,0.25)">
+        <div class="leg-card-title" style="color:#6cf">DGCX LEG</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+          <div class="form-group"><label>Side</label><select id="d-dgcx-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select></div>
+          <div class="form-group"><label>Entry Price (USD)</label><input type="number" id="d-dgcx-price" placeholder="0" step="0.000001"></div>
+          <div class="form-group"><label>Qty (lots)</label><input type="number" id="d-dgcx-qty" placeholder="1" value="1" min="0.000001" step="0.000001"></div>
+          <div class="form-group"><label>Brokerage (₹)</label><input type="number" id="d-dgcx-brok" placeholder="0" value="0" min="0" step="0.000001"></div>
         </div>
-        <div class="form-group">
-          <label>Entry Price (USD)</label>
-          <input type="number" id="d-dgcx-price" placeholder="0.00" step="0.01">
-        </div>
-        <div class="form-group">
-          <label>Qty (lots)</label>
-          <input type="number" id="d-dgcx-qty" placeholder="1" value="1" min="0.01" step="0.01">
-        </div>
-        <div class="form-group">
-          <label>Brokerage (₹)</label>
-          <input type="number" id="d-dgcx-brok" placeholder="0" value="0" min="0" step="0.01">
-        </div>
+        <div class="broker-select-row"><label>Broker Account</label><select id="d-dgcx-broker" onchange="autofillLegBroker('dgcx')"><option value="">No broker</option></select></div>
       </div>
     </div>
-
-    <!-- Note -->
-    <div class="form-group" style="margin-bottom:4px">
-      <label>Note (optional)</label>
-      <input type="text" id="d-note" placeholder="e.g. spread 1024">
-    </div>
-
+    <div class="form-group" style="margin-bottom:4px"><label>Note (optional)</label><input type="text" id="d-note" placeholder="e.g. spread 1024"></div>
     <div class="form-actions">
       <button class="btn btn-cancel" onclick="closeDealModal()">Cancel</button>
       <button class="btn btn-primary" onclick="saveDeal()">Save Deal</button>
@@ -540,865 +765,1487 @@ select option { background: var(--surface); }
   </div>
 </div>
 
-<!-- ══ CLOSE DEAL MODAL ══ -->
-<div class="modal-overlay" id="close-modal">
-  <div class="modal" style="width:480px">
-    <h3>Close Deal</h3>
-    <div class="form-grid" style="grid-template-columns:1fr 1fr">
-      <div class="form-group"><label>MCX Exit Price (₹)</label><input type="number" id="c-mcx-price" placeholder="0.00" step="0.01"></div>
-      <div class="form-group"><label>COMEX Exit Price (USD)</label><input type="number" id="c-comex-price" placeholder="0.00" step="0.01"></div>
-      <div class="form-group" id="c-dgcx-wrap" style="display:none"><label>DGCX Exit Price (USD)</label><input type="number" id="c-dgcx-price" placeholder="0.00" step="0.01"></div>
+<!-- EDIT DEAL -->
+<div class="modal-overlay" id="edit-modal">
+  <div class="modal" style="width:680px">
+    <h3>Edit Deal</h3>
+    <div class="deal-modal-top" style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;margin-bottom:14px">
+      <div class="form-group"><label>Instrument</label><input type="text" id="e-instrument-display" readonly style="color:var(--muted);cursor:default"></div>
+      <div class="form-group"><label>USD/INR Rate</label><input type="number" id="e-usd-inr" placeholder="89"></div>
+      <div class="form-group"><label>DGINR at Entry</label><input type="number" id="e-dginr" placeholder="auto" style="color:var(--accent)"></div>
     </div>
+    <div class="deal-modal-legs" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px">
+      <div class="leg-card" style="border-color:rgba(0,255,136,0.25)">
+        <div class="leg-card-title" style="color:var(--accent)">MCX LEG</div>
+        <div class="form-group"><label>Side</label><select id="e-mcx-side"><option value="SELL">SELL</option><option value="BUY">BUY</option></select></div>
+        <div class="form-group"><label>Entry Price (₹)</label><input type="number" id="e-mcx-price" step="0.01"></div>
+        <div class="form-group"><label>Qty (lots)</label><input type="number" id="e-mcx-qty" min="0.01" step="0.01"></div>
+        <div class="form-group"><label>Brokerage (₹)</label><input type="number" id="e-mcx-brok" min="0" step="0.01"></div>
+        <div class="broker-select-row"><label>Broker Account</label><select id="e-mcx-broker"><option value="">No broker</option></select></div>
+      </div>
+      <div class="leg-card" style="border-color:rgba(255,215,0,0.25)">
+        <div class="leg-card-title" style="color:var(--gold)">COMEX LEG</div>
+        <div class="form-group"><label>Side</label><select id="e-comex-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select></div>
+        <div class="form-group"><label>Entry Price (USD)</label><input type="number" id="e-comex-price" step="0.000001"></div>
+        <div class="form-group"><label>Qty (lots)</label><input type="number" id="e-comex-qty" min="0.000001" step="0.000001"></div>
+        <div class="form-group"><label>Brokerage (₹)</label><input type="number" id="e-comex-brok" min="0" step="0.000001"></div>
+        <div class="broker-select-row"><label>Broker Account</label><select id="e-comex-broker"><option value="">No broker</option></select></div>
+      </div>
+    </div>
+    <label class="dgcx-toggle-row" style="margin-bottom:12px" for="e-dgcx-enabled">
+      <input type="checkbox" id="e-dgcx-enabled" onchange="toggleEditDgcxLeg()">
+      <span class="dgcx-toggle-label">DGCX LEG</span><span class="dgcx-toggle-sub">Optional third leg</span>
+    </label>
+    <div id="e-dgcx-leg-fields" style="display:none;margin-bottom:14px">
+      <div class="leg-card" style="border-color:rgba(100,200,255,0.25)">
+        <div class="leg-card-title" style="color:#6cf">DGCX LEG</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+          <div class="form-group"><label>Side</label><select id="e-dgcx-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select></div>
+          <div class="form-group"><label>Entry Price (USD)</label><input type="number" id="e-dgcx-price" step="0.00001"></div>
+          <div class="form-group"><label>Qty (lots)</label><input type="number" id="e-dgcx-qty" min="0.000001" step="0.000001"></div>
+          <div class="form-group"><label>Brokerage (₹)</label><input type="number" id="e-dgcx-brok" min="0" step="0.000001"></div>
+        </div>
+        <div class="broker-select-row"><label>Broker Account</label><select id="e-dgcx-broker"><option value="">No broker</option></select></div>
+      </div>
+    </div>
+    <div class="form-group" style="margin-bottom:4px"><label>Note (optional)</label><input type="text" id="e-note" placeholder="e.g. spread 1024"></div>
     <div class="form-actions">
-      <button class="btn btn-cancel" onclick="closeCloseModal()">Cancel</button>
-      <button class="btn btn-primary" onclick="confirmClose()">Confirm Close</button>
+      <button class="btn btn-cancel" onclick="closeEditModal()">Cancel</button>
+      <button class="btn btn-primary" id="edit-save-btn" onclick="saveEditDeal()">Save Changes</button>
     </div>
   </div>
 </div>
+
+<!-- CLOSE DEAL -->
+<div class="modal-overlay" id="close-modal">
+  <div class="modal" style="width:580px">
+    <h3>Close Deal</h3>
+
+    <div class="mode-tabs" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:16px">
+      <div class="mode-tab active-manual" id="tab-manual" onclick="setCloseMode('manual')">
+        <div style="font-size:14px;color:#6cf">✎</div>
+        <div style="font-size:10px;font-weight:700;letter-spacing:.07em;color:#6cf">FILL PRICES</div>
+        <div style="font-size:9px;color:var(--muted);margin-top:2px">Enter prices manually</div>
+      </div>
+      <div class="mode-tab" id="tab-condition" onclick="setCloseMode('condition')">
+        <div style="font-size:14px;color:var(--gold)">◎</div>
+        <div style="font-size:10px;font-weight:700;letter-spacing:.07em;color:var(--gold)">CLOSE WHEN</div>
+        <div style="font-size:9px;color:var(--muted);margin-top:2px">Trigger on price condition</div>
+      </div>
+      <div class="mode-tab" id="tab-immediate" onclick="setCloseMode('immediate')">
+        <div style="font-size:14px;color:#ff5555">⚡</div>
+        <div style="font-size:10px;font-weight:700;letter-spacing:.07em;color:#ff5555">CLOSE NOW</div>
+        <div style="font-size:9px;color:var(--muted);margin-top:2px">Market order on MT5</div>
+      </div>
+    </div>
+
+    <!-- Qty always visible -->
+    <div style="background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:12px;margin-bottom:12px">
+      <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px">Close quantities</div>
+      <div id="close-qty-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:10px"></div>
+      <div style="font-size:10px;color:var(--muted);margin-top:8px">Leave blank to close full qty for that leg.</div>
+    </div>
+
+    <!-- FILL PRICES panel (default) -->
+    <div id="panel-manual">
+      <div class="form-grid" style="grid-template-columns:1fr 1fr">
+        <div class="form-group"><label>MCX Exit Price (₹)</label><input type="number" id="c-mcx-price" placeholder="0.00" step="0.01"></div>
+        <div class="form-group"><label>COMEX Exit Price (USD)</label><input type="number" id="c-comex-price" placeholder="0" step="0.000001"></div>
+        <div class="form-group" id="c-dgcx-wrap" style="display:none"><label>DGCX Exit Price (USD)</label><input type="number" id="c-dgcx-price" placeholder="0" step="0.000001"></div>
+      </div>
+    </div>
+
+    <!-- CLOSE WHEN panel -->
+    <div id="panel-condition" style="display:none">
+      <div style="background:var(--surface2);border:1px solid rgba(255,215,0,0.25);border-radius:6px;padding:12px;margin-bottom:10px">
+        <div style="font-size:10px;color:var(--gold);font-weight:700;margin-bottom:8px">Close position when:</div>
+        <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px">
+          <div class="form-group">
+            <label style="color:var(--gold)">Price Field</label>
+            <select id="c-cond-field">
+              <option value="badlaLTP">Badla LTP</option>
+              <option value="badlaBUY">Badla BUY</option>
+              <option value="badlaSELL">Badla SELL</option>
+              <option value="mcx.bid">MCX BID</option>
+              <option value="mcx.ask">MCX ASK</option>
+              <option value="comex.bid">COMEX BID</option>
+              <option value="comex.ask">COMEX ASK</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label style="color:var(--gold)">Direction</label>
+            <select id="c-cond-dir"><option value="below">≤ Below</option><option value="above">≥ Above</option></select>
+          </div>
+          <div class="form-group">
+            <label style="color:var(--gold)">Value</label>
+            <input type="number" id="c-cond-value" placeholder="e.g. 700" step="0.01">
+          </div>
+        </div>
+      </div>
+      <div style="background:rgba(255,215,0,0.07);border:1px solid rgba(255,215,0,0.3);border-radius:6px;padding:10px 14px;font-size:12px;color:#ffe88a;margin-bottom:10px">
+        <strong style="display:block;color:var(--gold);margin-bottom:3px">◎ Conditional close</strong>
+        MT5 order will be triggered automatically once the condition above is met.
+      </div>
+    </div>
+
+    <!-- CLOSE NOW panel -->
+    <div id="panel-immediate" style="display:none">
+      <div style="background:rgba(255,85,85,0.1);border:1px solid rgba(255,85,85,0.35);border-radius:6px;padding:10px 14px;font-size:12px;color:#ffaaaa;margin-bottom:10px">
+        <strong style="display:block;color:#ff5555;margin-bottom:3px">⚡ Immediate market close</strong>
+        A market order will be sent to MT5 right now. This cannot be undone. Slippage may occur.
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <button class="btn btn-cancel" onclick="closeCloseModal()">Cancel</button>
+      <button class="btn btn-primary" id="c-confirm-btn" onclick="confirmClose()">Confirm Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- PLACE ORDER MODAL -->
+<div class="modal-overlay" id="order-modal">
+  <div class="modal" style="width:620px">
+    <h3>📋 Place Order</h3>
+
+    <!-- Instrument row -->
+    <div style="display:grid;grid-template-columns:2fr 1fr;gap:12px;margin-bottom:14px">
+      <div class="form-group">
+        <label>Instrument</label>
+        <select id="o-instrument"><option value="">Select instrument...</option></select>
+      </div>
+      <div class="form-group">
+        <label>Note (optional)</label>
+        <input type="text" id="o-note" placeholder="e.g. arb entry">
+      </div>
+    </div>
+
+    <!-- MCX leg -->
+    <div style="margin-bottom:10px">
+      <label class="order-leg-check" for="o-mcx-enabled">
+        <input type="checkbox" id="o-mcx-enabled" checked onchange="toggleOrderLeg('mcx')">
+        <span style="color:var(--accent)">MCX LEG</span>
+      </label>
+      <div id="o-mcx-fields" class="order-leg-fields" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
+        <div class="form-group">
+          <label>Side</label>
+          <select id="o-mcx-side"><option value="SELL">SELL</option><option value="BUY">BUY</option></select>
+        </div>
+        <div class="form-group">
+          <label>Qty (lots)</label>
+          <input type="number" id="o-mcx-qty" placeholder="1" value="1" min="0.01" step="0.01">
+        </div>
+        <div class="form-group">
+          <label>Broker</label>
+          <select id="o-mcx-broker" onchange="autofillLotFromBroker('mcx')"><option value="">No broker</option></select>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMEX leg -->
+    <div style="margin-bottom:10px">
+      <label class="order-leg-check" for="o-comex-enabled">
+        <input type="checkbox" id="o-comex-enabled" checked onchange="toggleOrderLeg('comex')">
+        <span style="color:var(--gold)">COMEX LEG</span>
+      </label>
+      <div id="o-comex-fields" class="order-leg-fields" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
+        <div class="form-group">
+          <label>Side</label>
+          <select id="o-comex-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select>
+        </div>
+        <div class="form-group">
+          <label>Qty (lots)</label>
+          <input type="number" id="o-comex-qty" placeholder="1" value="1" min="0.000001" step="0.000001">
+        </div>
+        <div class="form-group">
+          <label>Broker</label>
+          <select id="o-comex-broker" onchange="autofillLotFromBroker('comex')"><option value="">No broker</option></select>
+        </div>
+      </div>
+    </div>
+
+    <!-- DGCX leg -->
+    <div style="margin-bottom:14px">
+      <label class="order-leg-check" for="o-dgcx-enabled">
+        <input type="checkbox" id="o-dgcx-enabled" onchange="toggleOrderLeg('dgcx')">
+        <span style="color:#6cf">DGCX LEG</span>
+        <span style="font-size:10px;color:var(--muted);margin-left:4px">(optional)</span>
+      </label>
+      <div id="o-dgcx-fields" class="order-leg-fields" style="display:none;grid-template-columns:1fr 1fr 1fr;gap:8px">
+        <div class="form-group">
+          <label>Side</label>
+          <select id="o-dgcx-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select>
+        </div>
+        <div class="form-group">
+          <label>Qty (lots)</label>
+          <input type="number" id="o-dgcx-qty" placeholder="1" value="1" min="0.000001" step="0.000001">
+        </div>
+        <div class="form-group">
+          <label>Broker</label>
+          <select id="o-dgcx-broker" onchange="autofillLotFromBroker('dgcx')"><option value="">No broker</option></select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Condition toggle -->
+    <label class="dgcx-toggle-row" for="o-has-condition" style="margin-bottom:10px;border-color:rgba(255,215,0,0.3)">
+      <input type="checkbox" id="o-has-condition" onchange="toggleOrderCondition()">
+      <span style="font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--gold)">IMMEDIATE EXECUTION</span>
+      <span style="font-size:10px;color:var(--muted);margin-left:auto">Check to skip condition &amp; execute now</span>
+    </label>
+
+   <div id="o-condition-fields" class="condition-section" style="display:block;margin-bottom:14px">
+      <div style="font-size:10px;color:var(--gold);margin-bottom:8px;font-weight:700">Place order when:</div>
+      <div class="condition-row" style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px">
+        <div class="form-group">
+          <label style="color:var(--gold)">Price Field</label>
+          <select id="o-cond-field">
+            <option value="badlaLTP">Badla LTP</option>
+            <option value="badlaBUY">Badla BUY</option>
+            <option value="badlaSELL">Badla SELL</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label style="color:var(--gold)">Direction</label>
+          <select id="o-cond-dir">
+            <option value="below">≤ Below</option>
+            <option value="above">≥ Above</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label style="color:var(--gold)">Value</label>
+          <input type="number" id="o-cond-value" placeholder="e.g. 700" step="0.01">
+        </div>
+      </div>
+    </div>
+
+    <!-- Confirmation warning (shown when no condition) -->
+    <div id="o-confirm-box" class="confirm-overlay" style="display:none;margin-bottom:14px">
+      <strong>⚡ Immediate execution</strong>
+      No condition set — this order will be placed immediately and sent to MT5 for execution. Confirm?
+    </div>
+
+    <div class="form-actions">
+      <button class="btn btn-cancel" onclick="closeOrderModal()">Cancel</button>
+      <button class="btn btn-primary" id="o-save-btn" onclick="saveOrder()">Set Order</button>
+    </div>
+  </div>
+</div>
+
+<!-- BROKER MODAL -->
+<div class="modal-overlay" id="broker-modal">
+  <div class="modal" style="width:520px">
+    <h3 id="broker-modal-title">Add Broker Account</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div class="form-group full" style="grid-column:1/-1">
+        <label>Broker Name</label>
+        <input type="text" id="b-name" placeholder="e.g. Zerodha MCX, IBKR COMEX">
+      </div>
+      <div class="form-group">
+        <label>Account ID / Client Code</label>
+        <input type="text" id="b-account-id" placeholder="e.g. ZR12345">
+      </div>
+      <div class="form-group">
+        <label>Password / API Key</label>
+        <input type="password" id="b-password" placeholder="optional">
+      </div>
+      <div class="form-group">
+        <label>Instrument</label>
+        <select id="b-instrument"><option value="">Select instrument...</option></select>
+      </div>
+      <div class="form-group">
+        <label>Lot Size</label>
+        <input type="number" id="b-lot-size" placeholder="1" value="1" min="0.001" step="0.001">
+      </div>
+      <div class="form-group">
+        <label>Brokerage per Trade (₹)</label>
+        <input type="number" id="b-brokerage" placeholder="0" value="0" min="0" step="0.01">
+      </div>
+      <div class="form-group full" style="grid-column:1/-1">
+        <label>Profit Share %</label>
+        <input type="number" id="b-profit-share" placeholder="0" value="0" min="0" max="100" step="0.1">
+        <span style="font-size:10px;color:var(--muted);margin-top:4px">% of deal P&amp;L allocated to this broker account</span>
+      </div>
+    </div>
+    <div class="form-actions">
+      <button class="btn btn-cancel" onclick="closeBrokerModal()">Cancel</button>
+      <button class="btn btn-primary" id="broker-save-btn" onclick="saveBroker()">Save Broker</button>
+    </div>
+  </div>
+</div>
+
+<!-- ALERT MODAL -->
+<div class="modal-overlay" id="alert-modal">
+  <div class="modal" style="width:560px">
+    <h3>🔔 Active Alerts</h3>
+    <p style="color:var(--muted);font-size:11px;margin-bottom:12px">Click 🔔 on any dashboard card or deal to set a price alarm.</p>
+    <div id="alert-list"></div>
+    <div class="form-actions"><button class="btn btn-cancel" onclick="closeAlertModal()">Close</button></div>
+  </div>
+</div>
+
+<div id="toast-container"></div>
 
 <script>
 // ── State ──────────────────────────────────────────────────────────────────
 let prices = {};
 let deals  = [];
+let brokers = [];
+let orders = [];
 let dashboardInstruments = [];
 let filter = 'ALL';
 let updateCount = 0;
 let closingDealId = null;
 let dealTab = 'open';
+let orderTab = 'all';
 let sessionToken = localStorage.getItem('badla_token');
 let currentUser  = localStorage.getItem('badla_user');
+let editingDealId = null;
+let editingBrokerId = null;
+let orderModalInstrument = null; // pre-fill from dashboard card
+
+// ── Alert System ───────────────────────────────────────────────────────────
+let priceAlerts = {};
+let dealPnlAlerts = {};
+let alarmFiring = null, alertIdCounter = 0, openPopover = null;
+function newAlertId() { return ++alertIdCounter; }
+
+function startAlarm() {
+  if (alarmFiring) return;
+  const ctx = new (window.AudioContext || window.webkitAudioContext)();
+  let beat = 0;
+  const intervalId = setInterval(() => {
+    const o = ctx.createOscillator(), g = ctx.createGain();
+    o.connect(g); g.connect(ctx.destination);
+    o.frequency.value = beat%2===0?1200:800;
+    g.gain.setValueAtTime(0.9, ctx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime+0.18);
+    o.start(ctx.currentTime); o.stop(ctx.currentTime+0.18); beat++;
+  }, 220);
+  alarmFiring = { intervalId, ctx };
+}
+function stopAlarm() {
+  if (!alarmFiring) return;
+  clearInterval(alarmFiring.intervalId);
+  try { alarmFiring.ctx.close(); } catch(e) {}
+  alarmFiring = null;
+  const b = document.getElementById('alarm-banner'); if (b) b.remove();
+}
+function showAlarmBanner(msg) {
+  let b = document.getElementById('alarm-banner');
+  if (!b) { b = document.createElement('div'); b.id='alarm-banner'; b.className='alarm-banner'; document.body.prepend(b); }
+  b.innerHTML = `<span>🔔 ALARM: ${msg}</span><button class="alarm-stop-btn" onclick="stopAlarm()">■ STOP</button>`;
+}
+function checkAlerts(data) {
+  Object.values(priceAlerts).forEach(al => {
+    if (!al.active || al.instrument !== data.name) return;
+    let val;
+    if (al.field.includes('.')) {
+      const [obj, key] = al.field.split('.');
+      val = data[obj] ? parseFloat(data[obj][key]) : NaN;
+    } else {
+      val = parseFloat(data[al.field]);
+    }
+    if (isNaN(val)) return;
+    const hit = al.direction === 'above' ? val >= al.target : val <= al.target;
+    if (hit) {
+      al.active = false;
+      const msg = `${data.displayName || data.name} ${al.field} ${al.direction === 'above' ? '≥' : '≤'} ${al.target} (now ${val.toFixed(2)})`;
+      startAlarm(); showAlarmBanner(msg); showToast('🔔 Price Alert', msg, 'alert', 0);
+      updateAllAlertButtons();
+    }
+  });
+}
+function checkDealPnlAlerts() {
+  deals.forEach(deal => {
+    const al = dealPnlAlerts[deal.id];
+    if (!al || !al.active || deal.status !== 'open') return;
+    const pnl = parseFloat(getLivePnl(deal).total || 0);
+    const hit = al.direction === 'above' ? pnl >= al.target : pnl <= al.target;
+    if (hit) {
+      al.active = false;
+      const msg = `${deal.instrument} NET P/L ${al.direction === 'above' ? '≥' : '≤'} ${al.target} (now ${pnl.toFixed(0)})`;
+      startAlarm(); showAlarmBanner(msg); showToast('🔔 Deal P/L Alert', msg, 'alert', 0);
+      updateDealAlertButtons();
+    }
+  });
+}
+
+function closePopover() {
+  if (openPopover) { openPopover.remove(); openPopover=null; }
+  document.removeEventListener('click', outsidePopoverClick);
+}
+function openAlertPopover(anchorEl, instrument, existingAlertId) {
+  closePopover();
+  const existing = existingAlertId!=null ? priceAlerts[existingAlertId] : null;
+  const pop = document.createElement('div'); pop.className='alert-popover';
+  const fields=['badlaBUY','badlaSELL','badlaLTP','mcx.bid','mcx.ask','comex.bid','comex.ask'];
+  const cf=existing?.field||'badlaLTP', cd=existing?.direction||'above', ct=existing?.target||'';
+  pop.innerHTML=`
+    <div style="font-size:11px;font-weight:700;color:var(--accent);margin-bottom:10px">🔔 ${instrument}</div>
+    <label>Field</label>
+    <select id="pop-field">${fields.map(f=>`<option value="${f}"${f===cf?' selected':''}>${f}</option>`).join('')}</select>
+    <label>Direction</label>
+    <select id="pop-dir"><option value="above"${cd==='above'?' selected':''}>Above ≥</option><option value="below"${cd==='below'?' selected':''}>Below ≤</option></select>
+    <label>Target Price</label>
+    <input type="number" id="pop-target" placeholder="e.g. 1024.50" value="${ct}" step="0.01">
+    <div class="pop-row">
+      <button class="btn btn-primary btn-sm" onclick="saveAlertPopover('${instrument}',${existingAlertId??'null'})">Set</button>
+      ${existing?`<button class="btn btn-danger btn-sm" onclick="removeAlert(${existingAlertId})">Remove</button>`:''}
+      <button class="btn btn-cancel btn-sm" onclick="closePopover()">Cancel</button>
+    </div>`;
+  const rect=anchorEl.getBoundingClientRect();
+  const popW=230;
+  let left=rect.left;
+  if (left+popW>window.innerWidth-12) left=window.innerWidth-popW-12;
+  if (left<12) left=12;
+  pop.style.top=(rect.bottom+6)+'px';
+  pop.style.left=left+'px';
+  document.body.appendChild(pop); openPopover=pop;
+  setTimeout(()=>document.addEventListener('click', outsidePopoverClick), 10);
+}
+function outsidePopoverClick(e) { if (openPopover&&!openPopover.contains(e.target)) closePopover(); }
+function saveAlertPopover(instrument, existingId) {
+  const field=document.getElementById('pop-field').value;
+  const direction=document.getElementById('pop-dir').value;
+  const target=parseFloat(document.getElementById('pop-target').value);
+  if (isNaN(target)) { alert('Enter a valid target price'); return; }
+  if (existingId!==null&&priceAlerts[existingId]) {
+    priceAlerts[existingId]={...priceAlerts[existingId],field,direction,target,active:true};
+  } else {
+    const id=newAlertId(); priceAlerts[id]={id,instrument,field,direction,target,active:true};
+  }
+  closePopover(); updateAllAlertButtons();
+  showToast('Alert Set', `${instrument} ${field} ${direction==='above'?'≥':'≤'} ${target}`, 'info', 3000);
+}
+function removeAlert(id) { delete priceAlerts[id]; closePopover(); updateAllAlertButtons(); renderAlertList(); }
+function resetAlert(id)  { if (priceAlerts[id]) priceAlerts[id].active=true; renderAlertList(); updateAllAlertButtons(); }
+function getAlertForInstrument(name) { return Object.values(priceAlerts).find(a=>a.instrument===name)||null; }
+function toggleInstrumentAlert(name, btnEl) { const e=getAlertForInstrument(name); openAlertPopover(btnEl, name, e?e.id:null); }
+
+function toggleDealAlert(dealId, btnEl) {
+  dealId = parseInt(dealId);
+  const d = deals.find(x => x.id === dealId); if (!d) return;
+  const existing = dealPnlAlerts[dealId] || null;
+  closePopover();
+  const pop = document.createElement('div'); pop.className='alert-popover';
+  pop.innerHTML=`
+    <div style="font-size:11px;font-weight:700;color:var(--accent);margin-bottom:10px">🔔 ${d.instrument} P/L</div>
+    <label>Direction</label>
+    <select id="pop-dir">
+      <option value="above" ${(existing?.direction==='above')?'selected':''}>Above ≥</option>
+      <option value="below" ${(existing?.direction==='below')?'selected':''}>Below ≤</option>
+    </select>
+    <label>Target P/L</label>
+    <input type="number" id="pop-target" placeholder="e.g. 5000" value="${existing?.target||''}" step="1">
+    <div class="pop-row">
+      <button class="btn btn-primary btn-sm" onclick="saveDealPnlAlert(${dealId})">Set Alarm</button>
+      ${existing?`<button class="btn btn-danger btn-sm" onclick="removeDealPnlAlert(${dealId})">Remove</button>`:''}
+      <button class="btn btn-cancel btn-sm" onclick="closePopover()">Cancel</button>
+    </div>`;
+  const rect=btnEl.getBoundingClientRect();
+  pop.style.top=(rect.bottom+6)+'px';
+  pop.style.left=Math.min(rect.left,window.innerWidth-240)+'px';
+  document.body.appendChild(pop); openPopover=pop;
+  setTimeout(()=>document.addEventListener('click', outsidePopoverClick), 10);
+}
+function saveDealPnlAlert(dealId) {
+  const direction=document.getElementById('pop-dir').value;
+  const target=parseFloat(document.getElementById('pop-target').value);
+  if (isNaN(target)) { alert('Enter a valid P/L target'); return; }
+  dealPnlAlerts[dealId]={id:dealId,direction,target,active:true};
+  closePopover(); updateDealAlertButtons();
+  showToast('Alert Set',`Deal P/L ${direction==='above'?'≥':'≤'} ${target}`,'info',3000);
+}
+function removeDealPnlAlert(dealId) { delete dealPnlAlerts[dealId]; closePopover(); updateDealAlertButtons(); }
+function updateAllAlertButtons() { updateInstrumentAlertButtons(); updateDealAlertButtons(); }
+function updateInstrumentAlertButtons() {
+  dashboardInstruments.forEach(name=>{
+    const btn=document.querySelector(`#dashcard-${slugify(name)} .card-alert-btn`); if (!btn) return;
+    const al=getAlertForInstrument(name); btn.classList.toggle('active',!!(al?.active));
+    btn.title=al?`Alert: ${al.field} ${al.direction} ${al.target}`:'Set price alert';
+  });
+}
+function updateDealAlertButtons() {
+  deals.forEach(deal=>{
+    const btn=document.querySelector(`#dealcard-${deal.id} .deal-alert-btn`); if (!btn) return;
+    const al=dealPnlAlerts[deal.id];
+    btn.classList.toggle('active',!!(al&&al.active));
+    btn.title=al?`P/L Alert: ${al.direction} ${al.target}`:'Set P/L alert';
+  });
+}
+function openAlertModal() { renderAlertList(); document.getElementById('alert-modal').classList.add('open'); }
+function closeAlertModal() { document.getElementById('alert-modal').classList.remove('open'); }
+function renderAlertList() {
+  const list=document.getElementById('alert-list');
+  const all=Object.values(priceAlerts);
+  if (all.length===0) { list.innerHTML='<div style="color:var(--muted);font-size:11px;padding:12px 0">No alerts set.</div>'; return; }
+  list.innerHTML=all.map(a=>`
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:8px;background:var(--surface2);border-radius:4px;margin-bottom:6px;gap:8px;flex-wrap:wrap">
+      <div><span style="font-size:11px;color:var(--text);font-weight:600">${a.instrument}</span>
+      <span style="font-size:10px;color:var(--muted);margin-left:8px">${a.field} ${a.direction==='above'?'≥':'≤'} ${a.target}</span></div>
+      <div style="display:flex;gap:6px;align-items:center;flex-shrink:0">
+        <span style="font-size:10px;color:${a.active?'var(--accent)':'var(--red)'}">${a.active?'● Armed':'✓ Fired'}</span>
+        <button onclick="resetAlert(${a.id})" style="font-size:10px;background:none;border:1px solid var(--border);color:var(--muted);padding:2px 6px;border-radius:3px;cursor:pointer">Reset</button>
+        <button onclick="removeAlert(${a.id})" style="background:none;border:none;color:var(--red);cursor:pointer;font-size:14px">✕</button>
+      </div>
+    </div>`).join('');
+}
+function initAlerts() { if ('Notification' in window) Notification.requestPermission(); }
+
+// ── Toast ──────────────────────────────────────────────────────────────────
+function showToast(title, body, type='info', duration=6000) {
+  const icons={alert:'⚠️',trigger:'🎯',error:'❌',info:'ℹ️',order:'📋'};
+  const container=document.getElementById('toast-container');
+  const toast=document.createElement('div'); toast.className=`toast ${type}`;
+  toast.innerHTML=`<span class="toast-icon">${icons[type]||'🔔'}</span><div style="min-width:0"><div class="toast-title">${title}</div><div class="toast-body">${body}</div></div><button class="toast-close" onclick="this.parentElement.remove()">✕</button>`;
+  container.appendChild(toast);
+  if (duration>0) setTimeout(()=>toast.remove(), duration);
+}
 
 // ── Auth ───────────────────────────────────────────────────────────────────
 async function doLogin() {
-  const username = document.getElementById('l-user').value.trim();
-  const password = document.getElementById('l-pass').value;
-  const err = document.getElementById('login-error');
-  err.style.display = 'none';
+  const username=document.getElementById('l-user').value.trim();
+  const password=document.getElementById('l-pass').value;
+  const err=document.getElementById('login-error'); err.style.display='none';
   try {
-    const res = await fetch('/api/login', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username, password })
-    });
-    const data = await res.json();
-    if (!res.ok) { err.style.display = 'block'; return; }
-    sessionToken = data.token;
-    currentUser  = data.username;
-    localStorage.setItem('badla_token', sessionToken);
-    localStorage.setItem('badla_user', currentUser);
+    const res=await fetch('/api/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username,password})});
+    const data=await res.json();
+    if (!res.ok) { err.style.display='block'; return; }
+    sessionToken=data.token; currentUser=data.username;
+    localStorage.setItem('badla_token',sessionToken); localStorage.setItem('badla_user',currentUser);
     startApp();
-  } catch(e) { err.style.display = 'block'; }
+  } catch(e) { err.style.display='block'; }
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('l-pass').addEventListener('keydown', e => { if(e.key==='Enter') doLogin(); });
-  document.getElementById('l-user').addEventListener('keydown', e => { if(e.key==='Enter') doLogin(); });
+document.addEventListener('DOMContentLoaded', ()=>{
+  document.getElementById('l-pass').addEventListener('keydown',e=>{ if(e.key==='Enter') doLogin(); });
+  document.getElementById('l-user').addEventListener('keydown',e=>{ if(e.key==='Enter') doLogin(); });
   if (sessionToken) verifyAndStart();
-
-  // Auto-fill prices when instrument selected
-  document.getElementById('d-instrument').addEventListener('change', function() {
-    const p = prices[this.value];
-    if (!p) return;
-    if (p.mcx)   document.getElementById('d-mcx-price').value   = p.mcx.ask   || p.mcx.ltp   || '';
-    if (p.comex) document.getElementById('d-comex-price').value = p.comex.bid  || p.comex.ltp || '';
-    if (p.dgcx)  document.getElementById('d-dgcx-price').value  = p.dgcx.ltp  || '';
-    if (p.dgcx && p.dgcx.ltp) {
-      document.getElementById('d-dginr').value = (10000 / parseFloat(p.dgcx.ltp)).toFixed(4);
-    }
+  document.getElementById('d-instrument').addEventListener('change', function(){
+    const p=prices[this.value]; if (!p) return;
+    if (p.mcx)   document.getElementById('d-mcx-price').value   = p.mcx.ask  || p.mcx.ltp  || '';
+    if (p.comex) document.getElementById('d-comex-price').value = p.comex.bid || p.comex.ltp || '';
+    if (p.dgcx)  document.getElementById('d-dgcx-price').value  = p.dgcx.ltp || '';
+    if (p.dgcx&&p.dgcx.ltp) document.getElementById('d-dginr').value=(10000/parseFloat(p.dgcx.ltp)).toFixed(4);
   });
+  // Order modal: toggle confirm box when condition checkbox changes
+  document.getElementById('o-has-condition').addEventListener('change', toggleOrderCondition);
 });
-
 async function verifyAndStart() {
-  try {
-    const res = await fetch('/api/me', { headers: { 'x-session-token': sessionToken } });
-    if (res.ok) startApp();
-    else clearAuth();
-  } catch(e) { clearAuth(); }
+  try { const res=await fetch('/api/me',{headers:{'x-session-token':sessionToken}}); if(res.ok) startApp(); else clearAuth(); }
+  catch(e) { clearAuth(); }
 }
-
 function clearAuth() {
-  sessionToken = null; currentUser = null;
-  localStorage.removeItem('badla_token');
-  localStorage.removeItem('badla_user');
+  sessionToken=null; currentUser=null;
+  localStorage.removeItem('badla_token'); localStorage.removeItem('badla_user');
 }
-
-async function doLogout() {
-  await apiFetch('/api/logout', { method: 'POST' });
-  clearAuth();
-  location.reload();
+async function doLogout() { await apiFetch('/api/logout',{method:'POST'}); clearAuth(); location.reload(); }
+async function startApp() {
+  document.getElementById('login-screen').style.display='none';
+  document.getElementById('app').style.display='block';
+  document.getElementById('username-display').textContent=currentUser;
+  await loadBrokers(); loadDashboard(); loadDeals(); loadOrders(); connectWS(); initAlerts();
 }
-
-function startApp() {
-  document.getElementById('login-screen').style.display = 'none';
-  document.getElementById('app').style.display = 'block';
-  document.getElementById('username-display').textContent = currentUser;
-  loadDashboard();
-  loadDeals();
-  connectWS();
-}
-
-// ── API helper ─────────────────────────────────────────────────────────────
-async function apiFetch(url, opts = {}) {
-  opts.headers = { ...(opts.headers || {}), 'x-session-token': sessionToken };
-  const res = await fetch(url, opts);
-  if (res.status === 401) { clearAuth(); location.reload(); }
+async function apiFetch(url, opts={}) {
+  opts.headers={...(opts.headers||{}),'x-session-token':sessionToken};
+  const res=await fetch(url,opts);
+  if (res.status===401) { clearAuth(); location.reload(); }
   return res;
 }
 
 // ── WebSocket ──────────────────────────────────────────────────────────────
 function connectWS() {
-  const proto = location.protocol === 'https:' ? 'wss' : 'ws';
-  const ws = new WebSocket(`${proto}://${location.host}?token=${sessionToken}`);
-
-  ws.onopen = () => {
-    document.getElementById('dot').classList.add('live');
-    document.getElementById('status-text').textContent = 'Live';
-  };
-
-  ws.onmessage = (e) => {
-    const msg = JSON.parse(e.data);
-    if (msg.type === 'snapshot') {
-      msg.data.forEach(d => prices[d.name] = d);
-      renderPrices();
-      renderDashboard();
-      populateInstrumentSelect();
-    } else if (msg.type === 'update') {
-      const prev = prices[msg.data.name];
-      prices[msg.data.name] = msg.data;
-      updateCount++;
-      document.getElementById('update-count').textContent = `${updateCount} ticks`;
-      document.getElementById('last-update').textContent = new Date().toLocaleTimeString();
-      flashRow(msg.data.name, prev, msg.data);
-      renderPriceRow(msg.data);
-      updateDashCard(msg.data, prev);
-      updateDealsLivePnl();
+  const proto=location.protocol==='https:'?'wss':'ws';
+  const ws=new WebSocket(`${proto}://${location.host}?token=${sessionToken}`);
+  ws.onopen=()=>{ document.getElementById('dot').classList.add('live'); document.getElementById('status-text').textContent='Live'; };
+  ws.onmessage=(e)=>{
+    const msg=JSON.parse(e.data);
+    if (msg.type==='snapshot') {
+      msg.data.forEach(d=>prices[d.name]=d);
+      renderPrices(); renderDashboard(); populateAllInstrumentSelects();
+    } else if (msg.type==='update') {
+      const prev=prices[msg.data.name]; prices[msg.data.name]=msg.data;
+      updateCount++; document.getElementById('update-count').textContent=`${updateCount} ticks`;
+      document.getElementById('last-update').textContent=new Date().toLocaleTimeString();
+      flashRow(msg.data.name,prev,msg.data); renderPriceRow(msg.data);
+      updateDashCard(msg.data,prev); updateDealsLivePnl(); checkDealPnlAlerts(); checkAlerts(msg.data);
+    } else if (msg.type==='order_triggered') {
+      const o = orders.find(x=>x.id===msg.orderId);
+      showToast('⚡ Order Triggered', `${msg.instrument} order #${msg.orderId} triggered → sending to MT5`, 'order', 5000);
+      loadOrders();
+    } else if (msg.type==='order_confirmed') {
+      showToast(
+        msg.success ? '✅ MT5 Executed' : '❌ MT5 Failed',
+        msg.success ? `Order #${msg.orderId} executed (ticket ${msg.ticket})` : `Order #${msg.orderId} failed: ${msg.error}`,
+        msg.success ? 'trigger' : 'error', 6000
+      );
+      loadOrders();
     }
   };
-
-  ws.onclose = () => {
+  ws.onclose=()=>{
     document.getElementById('dot').classList.remove('live');
-    document.getElementById('status-text').textContent = 'Reconnecting...';
-    setTimeout(connectWS, 2000);
+    document.getElementById('status-text').textContent='Reconnecting...';
+    setTimeout(connectWS,2000);
   };
 }
 
 // ── Dashboard ──────────────────────────────────────────────────────────────
 async function loadDashboard() {
-  const res = await apiFetch('/api/dashboard');
-  const rows = await res.json();
-  dashboardInstruments = rows.map(r => r.instrument_name);
+  const res=await apiFetch('/api/dashboard');
+  const rows=await res.json();
+  dashboardInstruments=rows.map(r=>r.instrument_name);
   renderDashboard();
 }
-
 function renderDashboard() {
-  const grid = document.getElementById('dash-grid');
-  const empty = document.getElementById('dash-empty');
-
-  if (dashboardInstruments.length === 0) {
-    grid.innerHTML = '';
-    grid.appendChild(empty);
-    empty.style.display = 'block';
-    return;
-  }
-  empty.style.display = 'none';
-
-  [...grid.querySelectorAll('.dash-card')].forEach(card => {
-    if (!dashboardInstruments.includes(card.dataset.name)) card.remove();
-  });
-
-  dashboardInstruments.forEach(name => {
-    const existing = document.getElementById('dashcard-' + slugify(name));
-    if (existing) return;
-    const p = prices[name];
-    const card = buildDashCard(name, p);
-    grid.appendChild(card);
-  });
+  const grid=document.getElementById('dash-grid'), empty=document.getElementById('dash-empty');
+  if (dashboardInstruments.length===0) { grid.innerHTML=''; grid.appendChild(empty); empty.style.display='block'; return; }
+  empty.style.display='none';
+  [...grid.querySelectorAll('.dash-card')].forEach(card=>{ if (!dashboardInstruments.includes(card.dataset.name)) card.remove(); });
+  dashboardInstruments.forEach(name=>{ if (document.getElementById('dashcard-'+slugify(name))) return; grid.appendChild(buildDashCard(name,prices[name])); });
+  updateAllAlertButtons(); updateOrderButtons();
 }
-
-function buildDashCard(name, p) {
-  const card = document.createElement('div');
-  card.className = 'dash-card';
-  card.id = 'dashcard-' + slugify(name);
-  card.dataset.name = name;
-  card.innerHTML = dashCardHTML(name, p);
-  return card;
+function buildDashCard(name,p) {
+  const card=document.createElement('div'); card.className='dash-card'; card.id='dashcard-'+slugify(name); card.dataset.name=name;
+  card.innerHTML=dashCardHTML(name,p); return card;
 }
-
-function dashCardHTML(name, p) {
-  const displayName = p ? (p.displayName || p.name) : name;
-  const type = p ? p.type : '—';
-  const bc = badgeClass(type);
-
-  const badlaBUY  = p ? p.badlaBUY  : '--';
-  const badlaSELL = p ? p.badlaSELL : '--';
-  const badlaLTP  = p ? p.badlaLTP  : '--';
-
-  const mcxBid    = p && p.mcx  ? fmt(p.mcx.bid)  : '--';
-  const mcxAsk    = p && p.mcx  ? fmt(p.mcx.ask)  : '--';
-  const mcxLtp    = p && p.mcx  ? fmt(p.mcx.ltp)  : '--';
-  const convComex = p && p.mcx && p.mcx.convertedComex ? fmt(p.mcx.convertedComex) : '--';
-
-  const comexBid  = p && p.comex ? fmt(p.comex.bid) : '--';
-  const comexAsk  = p && p.comex ? fmt(p.comex.ask) : '--';
-  const comexLtp  = p && p.comex ? fmt(p.comex.ltp) : '--';
-
-  const dgcxLtp   = p && p.dgcx ? fmt(p.dgcx.ltp)    : '--';
-  const dgcxConv  = p && p.dgcx ? p.dgcx.converted    : '--';
-
+function dashCardHTML(name,p) {
+  const displayName=p?(p.displayName||p.name):name, type=p?p.type:'—', bc=badgeClass(type);
+  const badlaBUY=p?p.badlaBUY:'--', badlaSELL=p?p.badlaSELL:'--', badlaLTP=p?p.badlaLTP:'--';
+  const mcxBid=p?.mcx?fmt(p.mcx.bid):'--', mcxAsk=p?.mcx?fmt(p.mcx.ask):'--', mcxLtp=p?.mcx?fmt(p.mcx.ltp):'--';
+  const convComex=p?.mcx?.convertedComex?fmt(p.mcx.convertedComex):'--';
+  const comexBid=p?.comex?fmt(p.comex.bid):'--', comexAsk=p?.comex?fmt(p.comex.ask):'--', comexLtp=p?.comex?fmt(p.comex.ltp):'--';
+  const dgcxLtp=p?.dgcx?fmt(p.dgcx.ltp):'--', dgcxConv=p?.dgcx?p.dgcx.converted:'--';
+  const hasOrder = orders.some(o => o.instrument===name && o.status==='pending');
   return `
     <div class="card-top">
-      <div>
+      <div style="min-width:0">
         <div class="card-name">${displayName}</div>
         <span class="card-type-badge badge ${bc}">${type}</span>
       </div>
-      <button class="card-remove" onclick="removeDashInstr('${name}')" title="Remove">✕</button>
+      <div class="card-top-actions">
+        <button class="card-order-btn ${hasOrder?'has-order':''}" onclick="openOrderModal('${name}')" title="Place order">📋</button>
+        <button class="card-alert-btn" onclick="toggleInstrumentAlert('${name}',this)" title="Set price alert">🔔</button>
+        <button class="card-remove" onclick="removeDashInstr('${name}')" title="Remove">✕</button>
+      </div>
     </div>
     <div class="card-badla">
-      <div class="badla-cell">
-        <div class="badla-label">BUY</div>
-        <div class="badla-val ${colorClass(badlaBUY)}">${badlaBUY}</div>
-      </div>
-      <div class="badla-cell">
-        <div class="badla-label">SELL</div>
-        <div class="badla-val ${colorClass(badlaSELL)}">${badlaSELL}</div>
-      </div>
-      <div class="badla-cell">
-        <div class="badla-label">LTP</div>
-        <div class="badla-val ${colorClass(badlaLTP)}">${badlaLTP}</div>
-      </div>
+      <div class="badla-cell"><div class="badla-label">BUY</div><div class="badla-val ${colorClass(badlaBUY)}">${badlaBUY}</div></div>
+      <div class="badla-cell"><div class="badla-label">SELL</div><div class="badla-val ${colorClass(badlaSELL)}">${badlaSELL}</div></div>
+      <div class="badla-cell"><div class="badla-label">LTP</div><div class="badla-val ${colorClass(badlaLTP)}">${badlaLTP}</div></div>
     </div>
     <div class="card-prices">
-      <div class="price-block">
-        <div class="price-block-label">MCX</div>
+      <div class="price-block"><div class="price-block-label">MCX</div>
         <div class="price-row"><span class="price-key">BID</span><span class="price-val">${mcxBid}</span></div>
         <div class="price-row"><span class="price-key">ASK</span><span class="price-val">${mcxAsk}</span></div>
         <div class="price-row"><span class="price-key">LTP</span><span class="price-val">${mcxLtp}</span></div>
-        <div class="price-sub">Conv. COMEX: ${convComex}</div>
+        <div class="price-sub">Conv: ${convComex}</div>
       </div>
-      <div class="price-block">
-        <div class="price-block-label">COMEX</div>
+      <div class="price-block"><div class="price-block-label">COMEX</div>
         <div class="price-row"><span class="price-key">BID</span><span class="price-val">${comexBid}</span></div>
         <div class="price-row"><span class="price-key">ASK</span><span class="price-val">${comexAsk}</span></div>
         <div class="price-row"><span class="price-key">LTP</span><span class="price-val">${comexLtp}</span></div>
       </div>
-      <div class="price-block">
-        <div class="price-block-label">DGCX</div>
+      <div class="price-block"><div class="price-block-label">DGCX</div>
         <div class="price-row"><span class="price-key">LTP</span><span class="price-val">${dgcxLtp}</span></div>
-        <div class="price-sub">10k/DGCX: ${dgcxConv}</div>
+        <div class="price-sub">10k/DG: ${dgcxConv}</div>
       </div>
-    </div>
-  `;
+    </div>`;
 }
-
-function updateDashCard(p, prev) {
-  const card = document.getElementById('dashcard-' + slugify(p.name));
-  if (!card) return;
-  card.innerHTML = dashCardHTML(p.name, p);
-  const dir = prev && parseFloat(p.badlaLTP) > parseFloat(prev.badlaLTP) ? 'green' : 'red';
-  card.classList.remove('flash-green', 'flash-red');
-  void card.offsetWidth;
-  card.classList.add(`flash-${dir}`);
-}
-
-async function removeDashInstr(name) {
-  await apiFetch(`/api/dashboard/${encodeURIComponent(name)}`, { method: 'DELETE' });
-  dashboardInstruments = dashboardInstruments.filter(n => n !== name);
-  const card = document.getElementById('dashcard-' + slugify(name));
-  if (card) card.remove();
-  if (dashboardInstruments.length === 0) renderDashboard();
-}
-
-// ── Add instrument modal ───────────────────────────────────────────────────
-function openAddInstrModal() {
-  document.getElementById('instr-search').value = '';
-  renderInstrList();
-  document.getElementById('add-instr-modal').classList.add('open');
-}
-function closeAddInstrModal() {
-  document.getElementById('add-instr-modal').classList.remove('open');
-}
-
-function renderInstrList() {
-  const q = document.getElementById('instr-search').value.toLowerCase();
-  const list = document.getElementById('instr-list');
-  const all = Object.values(prices).filter(p =>
-    !q || p.name.toLowerCase().includes(q) || (p.displayName||'').toLowerCase().includes(q)
-  );
-
-  if (all.length === 0) {
-    list.innerHTML = '<div style="padding:16px;color:var(--muted);text-align:center;font-size:11px">No streaming instruments found</div>';
+function updateDashCard(p,prev) {
+  const card=document.getElementById('dashcard-'+slugify(p.name));
+  if (!card) {
+    if (dashboardInstruments.includes(p.name)) {
+      document.getElementById('dash-empty').style.display='none';
+      document.getElementById('dash-grid').appendChild(buildDashCard(p.name,p));
+      updateAllAlertButtons(); updateOrderButtons();
+    }
     return;
   }
-
-  list.innerHTML = all.map(p => {
-    const already = dashboardInstruments.includes(p.name);
-    return `
-      <div class="instr-item ${already ? 'already' : ''}" id="instritem-${slugify(p.name)}">
-        <div>
-          <div class="instr-item-name">${p.displayName || p.name}</div>
-          <div class="instr-item-type">${p.type}</div>
-        </div>
-        ${already
-          ? '<span class="instr-added-tag">✓ Added</span>'
-          : `<button class="instr-add-btn" onclick="addDashInstr('${p.name}')">+ Add</button>`
-        }
-      </div>
-    `;
+  card.innerHTML=dashCardHTML(p.name,p);
+  const dir=prev&&parseFloat(p.badlaLTP)>parseFloat(prev.badlaLTP)?'green':'red';
+  card.classList.remove('flash-green','flash-red'); void card.offsetWidth; card.classList.add(`flash-${dir}`);
+  updateInstrumentAlertButtons(); updateOrderButtons();
+}
+async function removeDashInstr(name) {
+  await apiFetch(`/api/dashboard/${encodeURIComponent(name)}`,{method:'DELETE'});
+  dashboardInstruments=dashboardInstruments.filter(n=>n!==name);
+  const card=document.getElementById('dashcard-'+slugify(name)); if (card) card.remove();
+  if (dashboardInstruments.length===0) renderDashboard();
+}
+function updateOrderButtons() {
+  dashboardInstruments.forEach(name=>{
+    const btn=document.querySelector(`#dashcard-${slugify(name)} .card-order-btn`); if (!btn) return;
+    const hasOrder=orders.some(o=>o.instrument===name&&o.status==='pending');
+    btn.classList.toggle('has-order', hasOrder);
+    btn.title=hasOrder?'Active pending order — click to add another':'Place order';
+  });
+}
+function openAddInstrModal() { document.getElementById('instr-search').value=''; renderInstrList(); document.getElementById('add-instr-modal').classList.add('open'); }
+function closeAddInstrModal() { document.getElementById('add-instr-modal').classList.remove('open'); }
+function renderInstrList() {
+  const q=document.getElementById('instr-search').value.toLowerCase(), list=document.getElementById('instr-list');
+  const all=Object.values(prices).filter(p=>!q||p.name.toLowerCase().includes(q)||(p.displayName||'').toLowerCase().includes(q));
+  if (all.length===0) { list.innerHTML='<div style="padding:16px;color:var(--muted);text-align:center;font-size:11px">No streaming instruments found</div>'; return; }
+  list.innerHTML=all.map(p=>{
+    const already=dashboardInstruments.includes(p.name);
+    return `<div class="instr-item ${already?'already':''}" id="instritem-${slugify(p.name)}">
+      <div style="min-width:0"><div class="instr-item-name">${p.displayName||p.name}</div><div class="instr-item-type">${p.type}</div></div>
+      ${already?'<span class="instr-added-tag">✓ Added</span>':`<button class="instr-add-btn" onclick="addDashInstr('${p.name}')">+ Add</button>`}
+    </div>`;
   }).join('');
 }
-
 async function addDashInstr(name) {
   if (dashboardInstruments.includes(name)) return;
-  await apiFetch('/api/dashboard', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ instrument_name: name })
-  });
+  await apiFetch('/api/dashboard',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({instrument_name:name})});
   dashboardInstruments.push(name);
-
-  const item = document.getElementById('instritem-' + slugify(name));
-  if (item) {
-    item.classList.add('already');
-    const btn = item.querySelector('.instr-add-btn');
-    if (btn) btn.outerHTML = '<span class="instr-added-tag">✓ Added</span>';
-  }
-
-  const grid = document.getElementById('dash-grid');
-  document.getElementById('dash-empty').style.display = 'none';
-  const p = prices[name];
-  const card = buildDashCard(name, p);
-  grid.appendChild(card);
+  const item=document.getElementById('instritem-'+slugify(name));
+  if (item) { item.classList.add('already'); const btn=item.querySelector('.instr-add-btn'); if(btn) btn.outerHTML='<span class="instr-added-tag">✓ Added</span>'; }
+  document.getElementById('dash-empty').style.display='none';
+  document.getElementById('dash-grid').appendChild(buildDashCard(name,prices[name]));
 }
-
-// ── Flash row ──────────────────────────────────────────────────────────────
-function flashRow(name, prev, curr) {
-  const rowId = 'row-' + slugify(name);
-  const row = document.getElementById(rowId);
-  if (!row || !prev) return;
-  const dir = parseFloat(curr.badlaLTP) > parseFloat(prev.badlaLTP) ? 'green' : 'red';
-  row.classList.remove('flash-green', 'flash-red');
-  void row.offsetWidth;
-  row.classList.add(`flash-${dir}`);
+function flashRow(name,prev,curr) {
+  const row=document.getElementById('row-'+slugify(name)); if (!row||!prev) return;
+  const dir=parseFloat(curr.badlaLTP)>parseFloat(prev.badlaLTP)?'green':'red';
+  row.classList.remove('flash-green','flash-red'); void row.offsetWidth; row.classList.add(`flash-${dir}`);
 }
-
-function slugify(s) { return s.replace(/[^a-z0-9]/gi, '_'); }
-
-// ── Prices table ───────────────────────────────────────────────────────────
-function badgeClass(type) {
-  const map = { GOLD:'gold', SILVER:'silver', CRUDE:'crude', COPPER:'copper', GAS:'gas' };
-  return 'badge-' + (map[type] || 'other');
-}
-
-function fmt(v) { return (v === null || v === undefined) ? '--' : parseFloat(v).toFixed(2); }
-function colorClass(v) { return parseFloat(v) >= 0 ? 'pos' : 'neg'; }
+function slugify(s) { return s.replace(/[^a-z0-9]/gi,'_'); }
+function badgeClass(type) { const m={GOLD:'gold',SILVER:'silver',CRUDE:'crude',COPPER:'copper',GAS:'gas'}; return 'badge-'+(m[type]||'other'); }
+function fmt(v) { return (v===null||v===undefined)?'--':parseFloat(v).toFixed(2); }
+function fmtComex(v) { return (v===null||v===undefined)?'--':parseFloat(v).toFixed(5); }
+function colorClass(v) { return parseFloat(v)>=0?'pos':'neg'; }
 
 function renderPriceRow(d) {
-  const tbody = document.getElementById('prices-tbody');
-  const rowId = 'row-' + slugify(d.name);
-  let row = document.getElementById(rowId);
-
-  const search = document.getElementById('search').value.toLowerCase();
-  const show = (filter === 'ALL' || d.type === filter) && d.name.toLowerCase().includes(search);
-  if (!show) { if (row) row.style.display = 'none'; return; }
-
-  const html = `
-    <td><div class="inst-name">${d.displayName || d.name}</div><div class="inst-type">${d.type}</div></td>
+  const tbody=document.getElementById('prices-tbody'), rowId='row-'+slugify(d.name);
+  let row=document.getElementById(rowId);
+  const search=document.getElementById('search').value.toLowerCase();
+  const show=(filter==='ALL'||d.type===filter)&&d.name.toLowerCase().includes(search);
+  if (!show) { if(row) row.style.display='none'; return; }
+  const html=`
+    <td><div class="inst-name">${d.displayName||d.name}</div><div class="inst-type">${d.type}</div></td>
     <td><span class="badge ${badgeClass(d.type)}">${d.type}</span></td>
     <td class="${colorClass(d.badlaBUY)}">${fmt(d.badlaBUY)}</td>
     <td class="${colorClass(d.badlaSELL)}">${fmt(d.badlaSELL)}</td>
     <td class="${colorClass(d.badlaLTP)}">${fmt(d.badlaLTP)}</td>
-    <td class="muted">${d.mcx ? fmt(d.mcx.bid) : '--'}</td>
-    <td class="muted">${d.mcx ? fmt(d.mcx.ask) : '--'}</td>
-    <td><div>${d.mcx && d.mcx.convertedComex ? fmt(d.mcx.convertedComex) : '--'}</div></td>
-    <td class="muted">${d.comex ? fmt(d.comex.bid) : '--'}</td>
-    <td class="muted">${d.comex ? fmt(d.comex.ask) : '--'}</td>
-    <td class="muted">${d.dgcx ? fmt(d.dgcx.ltp) : '--'}</td>
-    <td><div>${d.dgcx ? d.dgcx.converted : '--'}</div></td>
-    <td class="muted">${new Date(d.timestamp).toLocaleTimeString()}</td>
-  `;
+    <td class="muted">${d.mcx?fmt(d.mcx.bid):'--'}</td>
+    <td class="muted">${d.mcx?fmt(d.mcx.ask):'--'}</td>
+    <td>${d.mcx?.convertedComex?fmt(d.mcx.convertedComex):'--'}</td>
+    <td class="muted">${d.comex?fmt(d.comex.bid):'--'}</td>
+    <td class="muted">${d.comex?fmt(d.comex.ask):'--'}</td>
+    <td class="muted">${d.dgcx?fmt(d.dgcx.ltp):'--'}</td>
+    <td>${d.dgcx?d.dgcx.converted:'--'}</td>
+    <td class="muted">${new Date(d.timestamp).toLocaleTimeString()}</td>`;
+  if (row) { row.innerHTML=html; row.style.display=''; }
+  else { row=document.createElement('tr'); row.id=rowId; row.innerHTML=html; tbody.appendChild(row); }
+}
+function renderPrices() { Object.values(prices).forEach(renderPriceRow); }
+function setFilter(f,btn) {
+  filter=f;
+  document.querySelectorAll('#page-prices .filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active'); renderPrices();
+}
+function showPage(name,btn) {
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-btn[data-page]').forEach(b=>b.classList.toggle('active', b.dataset.page===name));
+  document.getElementById('page-'+name).classList.add('active');
+  if (name==='deals')   renderDeals();
+  if (name==='orders')  renderOrders();
+  if (name==='brokers') { populateBrokerInstrumentSelect(); renderBrokers(); }
+}
+function populateAllInstrumentSelects() {
+  populateInstrumentSelect('d-instrument');
+  populateInstrumentSelect('o-instrument');
+  populateBrokerInstrumentSelect();
+}
+function populateInstrumentSelect(selId) {
+  const sel=document.getElementById(selId); if (!sel) return;
+  const current=sel.value; sel.innerHTML='<option value="">Select...</option>';
+  Object.values(prices).forEach(p=>{ const opt=document.createElement('option'); opt.value=p.name; opt.textContent=p.displayName||p.name; sel.appendChild(opt); });
+  if (current) sel.value=current;
+}
+function populateLegBrokerSelect(selId, selectedBrokerId) {
+  const sel=document.getElementById(selId); if (!sel) return;
+  sel.innerHTML='<option value="">No broker</option>';
+  brokers.forEach(b=>{ const opt=document.createElement('option'); opt.value=b.id; opt.textContent=`${b.brokerName}${b.accountId?' ['+b.accountId+']':''} (lot:${b.lotSize})`; sel.appendChild(opt); });
+  if (selectedBrokerId) sel.value=selectedBrokerId;
+}
+function autofillLegBroker(leg) {
+  const prefix=leg==='mcx'?'d-mcx':leg==='comex'?'d-comex':'d-dgcx';
+  const brokerId=document.getElementById(`${prefix}-broker`).value; if (!brokerId) return;
+  const b=brokers.find(x=>x.id===parseInt(brokerId)); if (!b) return;
+  document.getElementById(`${prefix}-qty`).value=b.lotSize;
+  document.getElementById(`${prefix}-brok`).value=b.brokerage;
+  showToast(`Broker: ${b.brokerName}`,`lot size ${b.lotSize}, brokerage ₹${b.brokerage}`,'info',2500);
+}
 
-  if (row) { row.innerHTML = html; row.style.display = ''; }
-  else {
-    row = document.createElement('tr');
-    row.id = rowId;
-    row.innerHTML = html;
-    tbody.appendChild(row);
+// ── ORDER MODAL ────────────────────────────────────────────────────────────
+function openOrderModal(instrumentName) {
+  orderModalInstrument = instrumentName;
+  populateInstrumentSelect('o-instrument');
+  populateLegBrokerSelect('o-mcx-broker', null);
+  populateLegBrokerSelect('o-comex-broker', null);
+  populateLegBrokerSelect('o-dgcx-broker', null);
+  document.getElementById('o-mcx-enabled').checked = true;
+  document.getElementById('o-comex-enabled').checked = true;
+  document.getElementById('o-dgcx-enabled').checked = false;
+  document.getElementById('o-mcx-fields').style.display = 'grid';
+  document.getElementById('o-comex-fields').style.display = 'grid';
+  document.getElementById('o-dgcx-fields').style.display = 'none';
+  document.getElementById('o-has-condition').checked = false;
+  document.getElementById('o-condition-fields').style.display = 'block';
+  document.getElementById('o-confirm-box').style.display = 'none';
+  document.getElementById('o-note').value = '';
+  document.getElementById('o-mcx-qty').value = '1';
+  document.getElementById('o-comex-qty').value = '1';
+  document.getElementById('o-dgcx-qty').value = '1';
+  document.getElementById('o-cond-value').value = '';
+  if (instrumentName) {
+    document.getElementById('o-instrument').value = instrumentName;
+    // Autofill default broker qty from first matching broker
+    const p = prices[instrumentName];
+    if (p) {
+      const b = brokers.find(x => x.instrument === instrumentName);
+      if (b) {
+        document.getElementById('o-mcx-qty').value = b.lotSize;
+        document.getElementById('o-comex-qty').value = b.lotSize;
+      }
+      if (p.badlaLTP) document.getElementById('o-cond-value').value = parseFloat(p.badlaLTP).toFixed(2);
+    }
+  }
+  document.getElementById('order-modal').classList.add('open');
+}
+function closeOrderModal() { document.getElementById('order-modal').classList.remove('open'); orderModalInstrument = null; }
+
+function toggleOrderLeg(leg) {
+  const enabled = document.getElementById(`o-${leg}-enabled`).checked;
+  const fields = document.getElementById(`o-${leg}-fields`);
+  fields.style.display = enabled ? 'grid' : 'none';
+}
+function toggleOrderCondition() {
+  const checked = document.getElementById('o-has-condition').checked;
+  document.getElementById('o-condition-fields').style.display = checked ? 'none' : 'block';
+  document.getElementById('o-confirm-box').style.display      = checked ? 'block' : 'none';
+}
+
+async function saveOrder() {
+  const btn = document.getElementById('o-save-btn');
+  try {
+    btn.textContent = 'Placing...'; btn.disabled = true;
+    const instrument = document.getElementById('o-instrument').value;
+    if (!instrument) return alert('Please select an instrument');
+
+    const mcxEnabled = document.getElementById('o-mcx-enabled').checked;
+    const comexEnabled = document.getElementById('o-comex-enabled').checked;
+    const dgcxEnabled = document.getElementById('o-dgcx-enabled').checked;
+    const immediateExecution = document.getElementById('o-has-condition').checked; // checked = immediate
+
+    if (!mcxEnabled && !comexEnabled && !dgcxEnabled) return alert('Enable at least one leg');
+
+    const conditionValue = parseFloat(document.getElementById('o-cond-value').value);
+    if (!immediateExecution && isNaN(conditionValue)) return alert('Enter a valid condition value');
+
+    // If immediate execution, confirm before placing
+    if (immediateExecution) {
+      if (!confirm(`Place order immediately for ${instrument}?\nThis will be sent to MT5 for execution.`)) {
+        return;
+      }
+    }
+
+    const body = {
+      instrument,
+      note: document.getElementById('o-note').value || null,
+      mcxSide:     mcxEnabled ? document.getElementById('o-mcx-side').value : null,
+      mcxQty:      mcxEnabled ? parseFloat(document.getElementById('o-mcx-qty').value) || 1 : null,
+      mcxBrokerId: mcxEnabled ? document.getElementById('o-mcx-broker').value || null : null,
+      comexSide:     comexEnabled ? document.getElementById('o-comex-side').value : null,
+      comexQty:      comexEnabled ? parseFloat(document.getElementById('o-comex-qty').value) || 1 : null,
+      comexBrokerId: comexEnabled ? document.getElementById('o-comex-broker').value || null : null,
+      dgcxEnabled,
+      dgcxSide:     dgcxEnabled ? document.getElementById('o-dgcx-side').value : null,
+      dgcxQty:      dgcxEnabled ? parseFloat(document.getElementById('o-dgcx-qty').value) || 1 : null,
+      dgcxBrokerId: dgcxEnabled ? document.getElementById('o-dgcx-broker').value || null : null,
+      hasCondition: !immediateExecution,                                              // flipped
+      conditionField: !immediateExecution ? document.getElementById('o-cond-field').value : null,
+      conditionDir:   !immediateExecution ? document.getElementById('o-cond-dir').value : null,
+      conditionValue: !immediateExecution ? conditionValue : null,
+      placeImmediately: immediateExecution,                                           // flipped
+    };
+
+    const res = await apiFetch('/api/orders', {
+      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)
+    });
+    if (!res.ok) throw new Error(await res.text());
+    await loadOrders();
+    closeOrderModal();
+    const action = immediateExecution ? 'Order placed → sent to MT5' : 'Order set — waiting for condition';
+    showToast('📋 Order Created', `${instrument}: ${action}`, 'order', 4000);
+    updateOrderButtons();
+  } catch(err) {
+    alert('Failed to save order: ' + err.message);
+  } finally {
+    btn.textContent = 'Set Order'; btn.disabled = false;
   }
 }
 
-function renderPrices() {
-  Object.values(prices).forEach(renderPriceRow);
+function autofillLotFromBroker(leg) {
+  const brokerId = document.getElementById(`o-${leg}-broker`).value;
+  if (!brokerId) return;
+  const broker = brokers.find(b => b.id == brokerId);
+  if (broker && broker.lotSize) {
+    document.getElementById(`o-${leg}-qty`).value = broker.lotSize;
+  }
 }
 
-function setFilter(f, btn) {
-  filter = f;
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  renderPrices();
+// ── Orders List ────────────────────────────────────────────────────────────
+async function loadOrders() {
+  const res = await apiFetch('/api/orders');
+  orders = await res.json();
+  if (document.getElementById('page-orders').classList.contains('active')) renderOrders();
+  updateOrderButtons();
 }
 
-// ── Pages ──────────────────────────────────────────────────────────────────
-function showPage(name, btn) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('page-' + name).classList.add('active');
-  if (btn) btn.classList.add('active');
-  if (name === 'deals') renderDeals();
+function setOrderTab(tab) {
+  orderTab = tab;
+  ['all','pending','executed'].forEach(t => {
+    document.getElementById(`otab-${t}`)?.classList.toggle('active', t === tab);
+  });
+  renderOrders();
+}
+
+function renderOrders() {
+  const container = document.getElementById('orders-cards');
+  let filtered = orders;
+  if (orderTab === 'pending')  filtered = orders.filter(o => ['pending'].includes(o.status));
+  if (orderTab === 'executed') filtered = orders.filter(o => ['executed','failed'].includes(o.status));
+
+  if (filtered.length === 0) {
+    container.innerHTML = `<div style="color:var(--muted);text-align:center;padding:48px 16px;border:1px dashed var(--border);border-radius:8px">No ${orderTab === 'all' ? '' : orderTab} orders yet. Click <strong>📋</strong> on a dashboard card to place one.</div>`;
+    return;
+  }
+  container.innerHTML = filtered.map(orderCardHTML).join('');
+}
+
+function statusLabel(status) {
+  const map = { pending:'Pending', triggered:'Triggered', sent_to_mt5:'Sent to MT5', executed:'Executed', failed:'Failed' };
+  return map[status] || status;
+}
+
+function orderCardHTML(o) {
+  const brokerName = id => { if (!id) return null; const b = brokers.find(x=>x.id===parseInt(id)); return b?.brokerName||null; };
+  const legChips = [
+    o.mcx   ? `<span class="order-leg-chip ${o.mcx.side.toLowerCase()}">MCX ${o.mcx.side} ${o.mcx.qty}lot${brokerName(o.mcx.brokerId)?' · '+brokerName(o.mcx.brokerId):''}</span>` : '',
+    o.comex ? `<span class="order-leg-chip ${o.comex.side.toLowerCase()}">COMEX ${o.comex.side} ${o.comex.qty}lot${brokerName(o.comex.brokerId)?' · '+brokerName(o.comex.brokerId):''}</span>` : '',
+    o.dgcx  ? `<span class="order-leg-chip ${o.dgcx.side.toLowerCase()}">DGCX ${o.dgcx.side} ${o.dgcx.qty}lot${brokerName(o.dgcx.brokerId)?' · '+brokerName(o.dgcx.brokerId):''}</span>` : '',
+  ].filter(Boolean).join('');
+  const condTag = o.condition
+    ? `<div class="order-condition-tag">⚡ When ${o.condition.field} ${o.condition.direction==='above'?'≥':'≤'} ${o.condition.value}</div>`
+    : `<div class="order-condition-tag" style="border-color:rgba(0,255,136,0.2);background:rgba(0,255,136,0.05);color:var(--accent)">⚡ Immediate</div>`;
+
+  return `
+    <div class="order-card status-${o.status}">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+        <div style="min-width:0">
+          <div style="font-size:13px;font-weight:700;color:var(--text)">${o.instrument}${o.note?` <span style="font-size:11px;color:var(--muted);font-weight:400">· ${o.note}</span>`:''}</div>
+          <div style="margin-top:4px">${legChips}</div>
+          ${condTag}
+          <div style="font-size:10px;color:var(--muted);margin-top:6px">Created: ${new Date(o.createdAt).toLocaleString()}${o.triggeredAt?` · Triggered: ${new Date(o.triggeredAt).toLocaleString()}`:''}${o.sentToMt5At?` · Sent MT5: ${new Date(o.sentToMt5At).toLocaleString()}`:''}${o.mt5ConfirmedAt?` · Confirmed: ${new Date(o.mt5ConfirmedAt).toLocaleString()}`:''}</div>
+          ${o.mt5Result?`<div style="font-size:10px;color:var(--muted);margin-top:2px">MT5: ${o.mt5Result}</div>`:''}
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0">
+          <span class="order-status-pill ${o.status}">${statusLabel(o.status)}</span>
+          ${o.status==='pending'?`<button class="btn btn-sm btn-danger" onclick="cancelOrder(${o.id})">Cancel</button>`:''}
+        </div>
+      </div>
+    </div>`;
+}
+
+async function cancelOrder(id) {
+  if (!confirm('Cancel this pending order?')) return;
+  const res = await apiFetch(`/api/orders/${id}`, { method: 'DELETE' });
+  if (!res.ok) { const t = await res.json(); alert(t.error || 'Cannot cancel'); return; }
+  await loadOrders(); renderOrders();
+  showToast('Order Cancelled', `Order #${id} cancelled`, 'info', 3000);
+  updateOrderButtons();
 }
 
 // ── Deals ──────────────────────────────────────────────────────────────────
-function populateInstrumentSelect() {
-  const sel = document.getElementById('d-instrument');
-  const current = sel.value;
-  sel.innerHTML = '<option value="">Select instrument...</option>';
-  Object.values(prices).forEach(p => {
-    const opt = document.createElement('option');
-    opt.value = p.name;
-    opt.textContent = p.displayName || p.name;
-    sel.appendChild(opt);
-  });
-  if (current) sel.value = current;
-}
-
 function setDealTab(tab) {
-  dealTab = tab;
-  document.getElementById('tab-open').classList.toggle('active', tab === 'open');
-  document.getElementById('tab-closed').classList.toggle('active', tab === 'closed');
+  dealTab=tab;
+  document.getElementById('tab-open').classList.toggle('active',tab==='open');
+  document.getElementById('tab-closed').classList.toggle('active',tab==='closed');
   renderDeals();
 }
+function toggleDgcxLeg()     { document.getElementById('dgcx-leg-fields').style.display   = document.getElementById('d-dgcx-enabled').checked?'block':'none'; }
+function toggleEditDgcxLeg() { document.getElementById('e-dgcx-leg-fields').style.display = document.getElementById('e-dgcx-enabled').checked?'block':'none'; }
 
-// ── DGCX leg toggle ────────────────────────────────────────────────────────
-function toggleDgcxLeg() {
-  const enabled = document.getElementById('d-dgcx-enabled').checked;
-  document.getElementById('dgcx-leg-fields').style.display = enabled ? 'block' : 'none';
-}
-
-// ── Deal modal open/close ──────────────────────────────────────────────────
 function openDealModal() {
-  // Reset DGCX state
-  document.getElementById('d-dgcx-enabled').checked = false;
-  document.getElementById('dgcx-leg-fields').style.display = 'none';
+  document.getElementById('d-dgcx-enabled').checked=false;
+  document.getElementById('dgcx-leg-fields').style.display='none';
+  populateInstrumentSelect('d-instrument');
+  populateLegBrokerSelect('d-mcx-broker',null); populateLegBrokerSelect('d-comex-broker',null); populateLegBrokerSelect('d-dgcx-broker',null);
   document.getElementById('deal-modal').classList.add('open');
 }
 function closeDealModal() { document.getElementById('deal-modal').classList.remove('open'); }
 
 async function loadDeals() {
-  const res = await apiFetch('/api/deals');
-  deals = await res.json();
+  const res=await apiFetch('/api/deals'); deals=await res.json();
   if (document.getElementById('page-deals').classList.contains('active')) renderDeals();
 }
-
-// ── saveDeal — reads all separate qty fields correctly ─────────────────────
-function getVal(id) {
-  const el = document.getElementById(id);
-  if (!el) throw new Error(`Element not found: #${id}`);
-  return el.value;
-}
-function getChecked(id) {
-  const el = document.getElementById(id);
-  if (!el) throw new Error(`Element not found: #${id}`);
-  return el.checked;
-}
+function getVal(id) { const el=document.getElementById(id); if(!el) throw new Error(`#${id} not found`); return el.value; }
+function getChecked(id) { const el=document.getElementById(id); if(!el) throw new Error(`#${id} not found`); return el.checked; }
 
 async function saveDeal() {
   try {
-    const dgcxEnabled = getChecked('d-dgcx-enabled');
-
-    const instrument     = getVal('d-instrument');
-    const note           = getVal('d-note');
-    const usdInrRate     = parseFloat(getVal('d-usd-inr')) || 89;
-    const dginrAtEntry   = getVal('d-dginr') || null;
-
-    const mcxSide        = getVal('d-mcx-side');
-    const mcxPrice       = parseFloat(getVal('d-mcx-price'));
-    const mcxQty         = parseFloat(getVal('d-mcx-qty')) || 1;
-    const mcxBrokerage   = parseFloat(getVal('d-mcx-brok')) || 0;
-
-    const comexSide      = getVal('d-comex-side');
-    const comexPrice     = parseFloat(getVal('d-comex-price'));
-    const comexQty       = parseFloat(getVal('d-comex-qty')) || 1;
-    const comexBrokerage = parseFloat(getVal('d-comex-brok')) || 0;
-
-    const dgcxSide       = dgcxEnabled ? getVal('d-dgcx-side')                       : null;
-    const dgcxPrice      = dgcxEnabled ? parseFloat(getVal('d-dgcx-price'))           : null;
-    const dgcxQty        = dgcxEnabled ? (parseFloat(getVal('d-dgcx-qty'))   || 1)    : null;
-    const dgcxBrokerage  = dgcxEnabled ? (parseFloat(getVal('d-dgcx-brok'))  || 0)    : null;
-
-    if (!instrument)                                          return alert('Please select an instrument');
-    if (isNaN(mcxPrice)   || mcxPrice   <= 0)                return alert('Please enter a valid MCX entry price');
-    if (isNaN(comexPrice) || comexPrice <= 0)                return alert('Please enter a valid COMEX entry price');
-    if (dgcxEnabled && (isNaN(dgcxPrice) || dgcxPrice <= 0)) return alert('Please enter a valid DGCX entry price');
-
-    const body = {
-      instrument,
-      note,
-      usdInrRate,
-      dginrAtEntry,
-      mcxSide,   mcxPrice,   mcxQty,   mcxBrokerage,
-      comexSide, comexPrice, comexQty, comexBrokerage,
-      dgcxEnabled,
-      dgcxSide, dgcxPrice, dgcxQty, dgcxBrokerage,
-    };
-
-    const saveBtn = document.querySelector('#deal-modal .btn-primary');
-    if (saveBtn) { saveBtn.textContent = 'Saving...'; saveBtn.disabled = true; }
-
-    const res = await apiFetch('/api/deals', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(body)
-    });
-
-    if (!res.ok) {
-      const txt = await res.text();
-      throw new Error(`Server error ${res.status}: ${txt}`);
-    }
-
-    await loadDeals();
-    closeDealModal();
-    // Navigate to deals tab
-    const dealsNavBtn = document.querySelector('.nav-btn[data-page="deals"]');
-    showPage('deals', dealsNavBtn);
-
-  } catch (err) {
-    console.error('saveDeal error:', err);
-    alert('Failed to save deal: ' + err.message);
-  } finally {
-    const saveBtn = document.querySelector('#deal-modal .btn-primary');
-    if (saveBtn) { saveBtn.textContent = 'Save Deal'; saveBtn.disabled = false; }
-  }
+    const dgcxEnabled=getChecked('d-dgcx-enabled');
+    const instrument=getVal('d-instrument'), note=getVal('d-note');
+    const usdInrRate=parseFloat(getVal('d-usd-inr'))||89, dginrAtEntry=getVal('d-dginr')||null;
+    const mcxSide=getVal('d-mcx-side'), mcxPrice=parseFloat(getVal('d-mcx-price'));
+    const mcxQty=parseFloat(getVal('d-mcx-qty'))||1, mcxBrok=parseFloat(getVal('d-mcx-brok'))||0;
+    const mcxBrokerId=getVal('d-mcx-broker')||null;
+    const comexSide=getVal('d-comex-side'), comexPrice=parseFloat(getVal('d-comex-price'));
+    const comexQty=parseFloat(getVal('d-comex-qty'))||1, comexBrok=parseFloat(getVal('d-comex-brok'))||0;
+    const comexBrokerId=getVal('d-comex-broker')||null;
+    const dgcxSide=dgcxEnabled?getVal('d-dgcx-side'):null;
+    const dgcxPrice=dgcxEnabled?parseFloat(getVal('d-dgcx-price')):null;
+    const dgcxQty=dgcxEnabled?(parseFloat(getVal('d-dgcx-qty'))||1):null;
+    const dgcxBrok=dgcxEnabled?(parseFloat(getVal('d-dgcx-brok'))||0):null;
+    const dgcxBrokerId=dgcxEnabled?(getVal('d-dgcx-broker')||null):null;
+    if (!instrument) return alert('Please select an instrument');
+    if (isNaN(mcxPrice)||mcxPrice<=0) return alert('Please enter a valid MCX entry price');
+    if (isNaN(comexPrice)||comexPrice<=0) return alert('Please enter a valid COMEX entry price');
+    if (dgcxEnabled&&(isNaN(dgcxPrice)||dgcxPrice<=0)) return alert('Please enter a valid DGCX entry price');
+    const saveBtn=document.querySelector('#deal-modal .btn-primary');
+    if (saveBtn) { saveBtn.textContent='Saving...'; saveBtn.disabled=true; }
+    const res=await apiFetch('/api/deals',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({instrument,note,usdInrRate,dginrAtEntry,
+        mcxSide,mcxPrice,mcxQty,mcxBrokerage:mcxBrok,mcxBrokerId,
+        comexSide,comexPrice,comexQty,comexBrokerage:comexBrok,comexBrokerId,
+        dgcxEnabled,dgcxSide,dgcxPrice,dgcxQty,dgcxBrokerage:dgcxBrok,dgcxBrokerId})});
+    if (!res.ok) throw new Error(`Server error ${res.status}: ${await res.text()}`);
+    await loadDeals(); closeDealModal();
+    showPage('deals',document.querySelector('.nav-btn[data-page="deals"]'));
+  } catch(err) { console.error('saveDeal error:',err); alert('Failed to save deal: '+err.message); }
+  finally { const saveBtn=document.querySelector('#deal-modal .btn-primary'); if(saveBtn){saveBtn.textContent='Save Deal';saveBtn.disabled=false;} }
 }
 
-// ── getLivePnl — uses per-leg qty correctly ────────────────────────────────
+// ── P&L calculation ────────────────────────────────────────────────────────
 function getLivePnl(deal) {
-  const p    = prices[deal.instrument];
-  const rate = parseFloat(deal.usdInrRate) || 89;
-
-  let mcxPnl   = null;
-  let comexPnl = null;
-  let dgcxPnl  = null;
-  let mcxNow   = null;
-  let comexNow = null;
-  let dgcxNow  = null;
-
-  // MCX leg — priced in ₹ directly, no currency conversion needed
-  if (p && p.mcx && deal.mcx) {
-    const qty = parseFloat(deal.mcx.qty) || 1;
-    const brok = parseFloat(deal.mcx.brokerage) || 0;
-    mcxNow = deal.mcx.side === 'SELL' ? p.mcx.bid : p.mcx.ask;
-    if (mcxNow != null) {
-      const raw = deal.mcx.side === 'SELL'
-        ? (parseFloat(deal.mcx.entryPrice) - parseFloat(mcxNow))
-        : (parseFloat(mcxNow) - parseFloat(deal.mcx.entryPrice));
-      mcxPnl = raw * qty - brok;
+  const p=prices[deal.instrument], rate=parseFloat(deal.usdInrRate)||89;
+  let mcxPnl=null, comexPnl=null, dgcxPnl=null, mcxNow=null, comexNow=null, dgcxNow=null;
+  if (p?.mcx&&deal.mcx) {
+    const qty=parseFloat(deal.mcx.qty)||1, brok=parseFloat(deal.mcx.brokerage)||0;
+    mcxNow=deal.mcx.side==='SELL'?p.mcx.bid:p.mcx.ask;
+    if (mcxNow!=null) {
+      const raw=deal.mcx.side==='SELL'?(parseFloat(deal.mcx.entryPrice)-parseFloat(mcxNow)):(parseFloat(mcxNow)-parseFloat(deal.mcx.entryPrice));
+      const broker=deal.mcx.brokerId?brokers.find(b=>b.id===parseInt(deal.mcx.brokerId)):null;
+      const share=broker?(broker.profitShare/100):1;
+      mcxPnl=(raw*qty-brok)*share;
     }
   }
-
-  // COMEX leg — priced in USD, convert to ₹
-  if (p && p.comex && deal.comex) {
-    const qty  = parseFloat(deal.comex.qty) || 1;
-    const brok = parseFloat(deal.comex.brokerage) || 0;
-    comexNow = deal.comex.side === 'SELL' ? p.comex.bid : p.comex.ask;
-    if (comexNow != null) {
-      const raw = deal.comex.side === 'SELL'
-        ? (parseFloat(deal.comex.entryPrice) - parseFloat(comexNow))
-        : (parseFloat(comexNow) - parseFloat(deal.comex.entryPrice));
-      comexPnl = raw * qty * rate - brok;
+  if (p?.comex&&deal.comex) {
+    const qty=parseFloat(deal.comex.qty)||1, brok=parseFloat(deal.comex.brokerage)||0;
+    comexNow=deal.comex.side==='SELL'?p.comex.bid:p.comex.ask;
+    if (comexNow!=null) {
+      const raw=deal.comex.side==='SELL'?(parseFloat(deal.comex.entryPrice)-parseFloat(comexNow)):(parseFloat(comexNow)-parseFloat(deal.comex.entryPrice));
+      const broker=deal.comex.brokerId?brokers.find(b=>b.id===parseInt(deal.comex.brokerId)):null;
+      const share=broker?(broker.profitShare/100):1;
+      comexPnl=(raw*qty*rate-brok)*share;
     }
   }
-
-  // DGCX leg — priced in USD, convert to ₹
-  if (deal.dgcx && p && p.dgcx) {
-    const qty  = parseFloat(deal.dgcx.qty) || 1;
-    const brok = parseFloat(deal.dgcx.brokerage) || 0;
-    dgcxNow = p.dgcx.ltp;
-    if (dgcxNow != null) {
-      const raw = deal.dgcx.side === 'SELL'
-        ? (parseFloat(deal.dgcx.entryPrice) - parseFloat(dgcxNow))
-        : (parseFloat(dgcxNow) - parseFloat(deal.dgcx.entryPrice));
-      dgcxPnl = raw * qty * rate - brok;
+  if (deal.dgcx&&p?.dgcx) {
+    const qty=parseFloat(deal.dgcx.qty)||1, brok=parseFloat(deal.dgcx.brokerage)||0;
+    dgcxNow=p.dgcx.ltp;
+    if (dgcxNow!=null) {
+      const raw=deal.dgcx.side==='SELL'?(parseFloat(deal.dgcx.entryPrice)-parseFloat(dgcxNow)):(parseFloat(dgcxNow)-parseFloat(deal.dgcx.entryPrice));
+      const broker=deal.dgcx.brokerId?brokers.find(b=>b.id===parseInt(deal.dgcx.brokerId)):null;
+      const share=broker?(broker.profitShare/100):1;
+      dgcxPnl=(raw*qty*rate-brok)*share;
     }
   }
-
-  const total = (mcxPnl || 0) + (comexPnl || 0) + (dgcxPnl || 0);
-  return { mcxPnl, comexPnl, dgcxPnl, total, mcxNow, comexNow, dgcxNow };
+  return {mcxPnl,comexPnl,dgcxPnl,total:(mcxPnl||0)+(comexPnl||0)+(dgcxPnl||0),mcxNow,comexNow,dgcxNow};
 }
-
-// ── Deal card HTML ─────────────────────────────────────────────────────────
+function applyBrokerShare(rawPnl, brokerId) {
+  if (rawPnl===null||rawPnl===undefined) return rawPnl;
+  const broker=brokerId?brokers.find(b=>b.id===parseInt(brokerId)):null;
+  const share=broker?(broker.profitShare/100):1;
+  return rawPnl*share;
+}
+function brokerNameById(id) {
+  if (!id) return null;
+  const b=brokers.find(x=>x.id===parseInt(id));
+  return b?b.brokerName:null;
+}
 function dealCardHTML(deal) {
-  const isOpen = deal.status === 'open';
-  const live   = isOpen ? getLivePnl(deal) : null;
-  const rate   = parseFloat(deal.usdInrRate) || 89;
-
-  const mcxPnl   = isOpen ? live.mcxPnl   : deal.mcx.pnl;
-  const comexPnl = isOpen ? live.comexPnl : deal.comex.pnl;
-  const dgcxPnl  = isOpen ? live.dgcxPnl  : (deal.dgcx ? deal.dgcx.pnl : null);
-  const totalPnl = isOpen ? live.total     : deal.totalPnl;
-
-  const mcxNow   = isOpen ? live.mcxNow   : deal.mcx.exitPrice;
-  const comexNow = isOpen ? live.comexNow : deal.comex.exitPrice;
-  const dgcxNow  = isOpen ? live.dgcxNow  : (deal.dgcx ? deal.dgcx.exitPrice : null);
-
-  const pc     = v => (v === null || v === undefined) ? '--' : `₹${parseFloat(v).toFixed(0)}`;
-  const pclass = v => (v === null || v === undefined) ? '' : (parseFloat(v) >= 0 ? 'pos' : 'neg');
-
-  const legHTML = (label, color, side, entry, now, pnl, brok, qty, extra = '') => `
-    <div style="background:var(--surface2);border-radius:6px;padding:12px;display:flex;flex-direction:column;gap:6px;min-width:0">
-      <div style="font-size:10px;font-weight:700;letter-spacing:0.08em;color:${color}">${label}</div>
-      <div style="display:flex;justify-content:space-between;align-items:center">
-        <span style="font-size:10px;color:var(--muted)">SIDE</span>
-        <span style="font-weight:700;color:${side==='SELL'?'var(--red)':'var(--green)'}">${side}</span>
-      </div>
-      <div style="display:flex;justify-content:space-between">
-        <span style="font-size:10px;color:var(--muted)">QTY</span>
-        <span style="font-size:12px;font-weight:600">${qty}</span>
-      </div>
-      <div style="display:flex;justify-content:space-between">
-        <span style="font-size:10px;color:var(--muted)">ENTRY</span>
-        <span style="font-size:12px;font-weight:600">${fmt(entry)}</span>
-      </div>
-      <div style="display:flex;justify-content:space-between">
-        <span style="font-size:10px;color:var(--muted)">${isOpen ? 'NOW' : 'EXIT'}</span>
-        <span style="font-size:12px;color:var(--muted)">${now != null ? fmt(now) : '--'}</span>
-      </div>
-      <div style="display:flex;justify-content:space-between">
-        <span style="font-size:10px;color:var(--muted)">BROK</span>
-        <span style="font-size:10px;color:var(--muted)">₹${fmt(brok)}</span>
-      </div>
-      ${extra}
-      <div style="border-top:1px solid var(--border);padding-top:6px;display:flex;justify-content:space-between;align-items:baseline">
-        <span style="font-size:10px;color:var(--muted)">P&L</span>
-        <span style="font-size:15px;font-weight:700" class="${pclass(pnl)}">${pc(pnl)}</span>
-      </div>
-    </div>
-  `;
-
-  const cols = deal.dgcx ? '1fr 1fr 1fr' : '1fr 1fr';
-
+  const isOpen=deal.status==='open';
+  const live=isOpen?getLivePnl(deal):null;
+  const mcxPnl   = isOpen ? live.mcxPnl   : applyBrokerShare(deal.mcx.pnl,   deal.mcx.brokerId);
+  const comexPnl = isOpen ? live.comexPnl : applyBrokerShare(deal.comex.pnl, deal.comex.brokerId);
+  const dgcxPnl  = isOpen ? live.dgcxPnl  : (deal.dgcx ? applyBrokerShare(deal.dgcx.pnl, deal.dgcx.brokerId) : null);
+  const totalPnl = isOpen ? live.total : (mcxPnl||0)+(comexPnl||0)+(dgcxPnl||0);
+  const mcxNow   = isOpen?live.mcxNow   :deal.mcx.exitPrice;
+  const comexNow = isOpen?live.comexNow :deal.comex.exitPrice;
+  const dgcxNow  = isOpen?live.dgcxNow  :(deal.dgcx?deal.dgcx.exitPrice:null);
+  const pc   = v=>(v===null||v===undefined?'--':parseFloat(v).toFixed(0));
+  const pcls = v=>(v===null||v===undefined?'':(parseFloat(v)>=0?'pos':'neg'));
+  const isPartialChild = !!deal.parentDealId;
+  const legHTML=(label,color,side,entry,now,pnl,brok,qty,brokerId,ff=fmt)=>{
+    const bName=brokerNameById(brokerId);
+    const broker=brokerId?brokers.find(b=>b.id==parseInt(brokerId)):null;
+    const brokerShare=broker?broker.profitShare:100;
+    return `
+    <div class="deal-leg">
+      <div class="deal-leg-label" style="color:${color}">${label}</div>
+      <div class="deal-leg-row"><span>SIDE</span><span style="font-weight:700;color:${side==='SELL'?'var(--red)':'var(--green)'}">${side}</span></div>
+      <div class="deal-leg-row"><span>QTY</span><span>${qty}</span></div>
+      <div class="deal-leg-row"><span>ENTRY</span><span>${ff(entry)}</span></div>
+      <div class="deal-leg-row"><span>${isOpen?'NOW':'EXIT'}</span><span class="muted">${now!=null?ff(now):'--'}</span></div>
+      <div class="deal-leg-row"><span>BROK</span><span class="muted">${fmt(brok)}</span></div>
+      ${bName?`<div class="deal-leg-broker">🏦 ${bName} — ${brokerShare}%</div>`:''}
+      <div class="deal-leg-pnl"><span class="label">P/L</span><span class="value ${pcls(pnl)}">${pc(pnl)}</span></div>
+    </div>`;
+  };
   return `
-    <div style="background:var(--surface);border:1px solid ${isOpen ? 'var(--border)' : 'rgba(255,255,255,0.05)'};border-radius:8px;padding:16px;opacity:${isOpen ? 1 : 0.6}" id="dealcard-${deal.id}">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">
-        <div>
-          <div style="font-size:13px;font-weight:700;color:var(--text)">${deal.instrument}</div>
-          <div style="font-size:10px;color:var(--muted);margin-top:2px">
-            USD/INR: ${rate}
-            ${deal.dginrAtEntry ? ` · DGINR@entry: ${parseFloat(deal.dginrAtEntry).toFixed(2)}` : ''}
-            ${deal.note ? ` · ${deal.note}` : ''}
+    <div class="deal-card ${!isOpen?'closed':''} ${isPartialChild?'partial-child':''}" id="dealcard-${deal.id}">
+      <div class="deal-card-head">
+        <div class="deal-card-title">
+          <div class="deal-card-name">${deal.instrument}${isPartialChild?' <span style="font-size:10px;color:var(--gold)">[partial]</span>':''}</div>
+          <div class="deal-card-meta">USDINR ${deal.usdInrRate}${deal.dginrAtEntry?` • DGINR ${parseFloat(deal.dginrAtEntry).toFixed(2)}`:''}${deal.note?` • ${deal.note}`:''}</div>
+          <div class="deal-card-time">Entry: ${new Date(deal.entryTime).toLocaleString()}${deal.exitTime ? ` • Exit: ${new Date(deal.exitTime).toLocaleString()}` : ''}</div>
+        </div>
+        <div class="deal-card-side">
+          <div class="deal-card-pnl">
+            <div class="deal-card-pnl-label">NET P/L</div>
+            <div class="deal-card-pnl-value ${pcls(totalPnl)}">${pc(totalPnl)}</div>
           </div>
-          <div style="font-size:10px;color:var(--muted);margin-top:1px">
-            ${new Date(deal.entryTime).toLocaleString()}
-            ${deal.exitTime ? ` → ${new Date(deal.exitTime).toLocaleTimeString()}` : ''}
+          <div class="deal-card-actions">
+            ${isOpen?`
+              <button class="deal-alert-btn" onclick="toggleDealAlert('${deal.id}',this)" title="Set P/L alert">🔔</button>
+              <button class="btn btn-sm" style="background:var(--surface2);border:1px solid var(--border);color:var(--text)" onclick="openEditModal('${deal.id}')">Edit</button>
+              <button class="btn btn-sm btn-primary" onclick="openCloseModal('${deal.id}')">Close</button>
+              <button class="btn btn-sm btn-danger" onclick="deleteDeal('${deal.id}')">Delete</button>`
+            :`<button class="btn btn-sm" style="background:var(--surface2);border:1px solid var(--border);color:var(--text)" onclick="openEditModal('${deal.id}')">Edit</button>
+              <button class="btn btn-sm btn-danger" onclick="deleteDeal('${deal.id}')">Delete</button>`}
           </div>
         </div>
-        <div style="display:flex;align-items:center;gap:8px">
-          <div style="text-align:right">
-            <div style="font-size:10px;color:var(--muted)">NET P&L</div>
-            <div style="font-size:20px;font-weight:800" class="${pclass(totalPnl)}">${pc(totalPnl)}</div>
-          </div>
-          ${isOpen ? `
-            <button class="btn btn-sm" style="background:var(--surface2);border:1px solid var(--border);color:var(--text)" onclick="openEditModal(${deal.id})">Edit</button>
-            <button class="btn btn-sm btn-primary" onclick="openCloseModal(${deal.id})">Close</button>
-            <button class="btn btn-sm btn-danger"  onclick="deleteDeal(${deal.id})">✕</button>
-          ` : `
-            <button class="btn btn-sm" style="background:var(--surface2);border:1px solid var(--border);color:var(--text)" onclick="openEditModal(${deal.id})">Edit</button>
-            <button class="btn btn-sm btn-danger"  onclick="deleteDeal(${deal.id})">✕</button>
-          `}
-        </div>
       </div>
-      <div style="display:grid;grid-template-columns:${cols};gap:10px">
-        ${legHTML('MCX LEG',   'var(--accent)', deal.mcx.side,   deal.mcx.entryPrice,   mcxNow,   mcxPnl,   deal.mcx.brokerage,   deal.mcx.qty   || 1)}
-        ${legHTML('COMEX LEG', 'var(--gold)',   deal.comex.side, deal.comex.entryPrice, comexNow, comexPnl, deal.comex.brokerage, deal.comex.qty || 1,
-          `<div style="font-size:9px;color:var(--muted)">× ${rate} USD/INR</div>`)}
-        ${deal.dgcx ? legHTML('DGCX LEG', '#6cf', deal.dgcx.side, deal.dgcx.entryPrice, dgcxNow, dgcxPnl, deal.dgcx.brokerage, deal.dgcx.qty || 1,
-          `<div style="font-size:9px;color:var(--muted)">× ${rate} USD/INR</div>`) : ''}
+      <div class="deal-card-grid ${deal.dgcx?'has-dgcx':''}">
+        ${legHTML('MCX LEG',  'var(--accent)',deal.mcx.side,  deal.mcx.entryPrice,  mcxNow,  mcxPnl,  deal.mcx.brokerage,  deal.mcx.qty,  deal.mcx.brokerId)}
+        ${legHTML('COMEX LEG','var(--gold)',  deal.comex.side,deal.comex.entryPrice,comexNow,comexPnl,deal.comex.brokerage,deal.comex.qty,deal.comex.brokerId,fmtComex)}
+        ${deal.dgcx?legHTML('DGCX LEG','#6cf',deal.dgcx.side,deal.dgcx.entryPrice,dgcxNow,dgcxPnl,deal.dgcx.brokerage,deal.dgcx.qty,deal.dgcx.brokerId,fmtComex):''}
       </div>
-    </div>
-  `;
+    </div>`;
 }
-
 function renderDeals() {
-  const container = document.getElementById('deals-cards');
-  const filtered  = deals.filter(d => d.status === dealTab);
-
-  let livePnlTotal   = 0;
-  let closedPnlTotal = 0;
-  let openCount      = 0;
-
-  deals.forEach(d => {
-    if (d.status === 'open') {
-      openCount++;
-      livePnlTotal += getLivePnl(d).total;
+  const container=document.getElementById('deals-cards');
+  const filtered=deals.filter(d=>d.status===dealTab);
+  let livePnl=0, closedPnl=0, openCount=0;
+  deals.forEach(d=>{
+    if (d.status==='open') {
+      openCount++; livePnl+=getLivePnl(d).total;
     } else {
-      closedPnlTotal += parseFloat(d.totalPnl || 0);
+      const mp=applyBrokerShare(d.mcx?.pnl, d.mcx?.brokerId)||0;
+      const cp=applyBrokerShare(d.comex?.pnl, d.comex?.brokerId)||0;
+      const dp=d.dgcx?applyBrokerShare(d.dgcx?.pnl, d.dgcx?.brokerId)||0:0;
+      closedPnl+=mp+cp+dp;
     }
   });
-
-  container.innerHTML = filtered.length === 0
-    ? `<div style="color:var(--muted);text-align:center;padding:48px;border:1px dashed var(--border);border-radius:8px">No ${dealTab} deals</div>`
-    : filtered.map(dealCardHTML).join('');
-
-  const total = livePnlTotal + closedPnlTotal;
-  document.getElementById('open-count').textContent  = openCount;
-  document.getElementById('live-pnl').textContent    = `₹${livePnlTotal.toFixed(0)}`;
-  document.getElementById('closed-pnl').textContent  = `₹${closedPnlTotal.toFixed(0)}`;
-  document.getElementById('total-pnl').textContent   = `₹${total.toFixed(0)}`;
-  document.getElementById('live-pnl').className      = 'pnl-value ' + (livePnlTotal >= 0 ? 'pos' : 'neg');
-  document.getElementById('total-pnl').className     = 'pnl-value ' + (total >= 0 ? 'pos' : 'neg');
+  container.innerHTML=filtered.length===0
+    ?`<div style="color:var(--muted);text-align:center;padding:48px 16px;border:1px dashed var(--border);border-radius:8px">No ${dealTab} deals</div>`
+    :filtered.map(dealCardHTML).join('');
+  const total=livePnl+closedPnl;
+  document.getElementById('open-count').textContent=openCount;
+  document.getElementById('live-pnl').textContent=`₹${livePnl.toFixed(0)}`;
+  document.getElementById('closed-pnl').textContent=`₹${closedPnl.toFixed(0)}`;
+  document.getElementById('total-pnl').textContent=`₹${total.toFixed(0)}`;
+  document.getElementById('live-pnl').className='pnl-value '+(livePnl>=0?'pos':'neg');
+  document.getElementById('total-pnl').className='pnl-value '+(total>=0?'pos':'neg');
+  updateDealAlertButtons();
 }
+function updateDealsLivePnl() { if (document.getElementById('page-deals').classList.contains('active')) renderDeals(); }
 
-function updateDealsLivePnl() {
-  if (document.getElementById('page-deals').classList.contains('active')) renderDeals();
-}
+let closeMode = 'manual';
 
-function openCloseModal(id) {
-  closingDealId = id;
-  const deal = deals.find(d => d.id === id);
-  const p    = prices[deal.instrument];
-  if (p) {
-    if (p.mcx)   document.getElementById('c-mcx-price').value   = deal.mcx.side   === 'SELL' ? p.mcx.bid   : p.mcx.ask;
-    if (p.comex) document.getElementById('c-comex-price').value = deal.comex.side === 'SELL' ? p.comex.bid : p.comex.ask;
-    if (deal.dgcx && p.dgcx) document.getElementById('c-dgcx-price').value = p.dgcx.ltp;
+function setCloseMode(mode) {
+  closeMode = mode;
+  ['manual','condition','immediate'].forEach(m => {
+    document.getElementById('panel-'+m).style.display = m === mode ? 'block' : 'none';
+    const tab = document.getElementById('tab-'+m);
+    tab.classList.remove('active-manual','active-condition','active-immediate');
+    if (m === mode) tab.classList.add('active-'+m);
+  });
+  const btn = document.getElementById('c-confirm-btn');
+  if (mode === 'immediate') {
+    btn.style.background = '#ff5555'; btn.textContent = 'Close Now';
+  } else if (mode === 'condition') {
+    btn.style.background = 'var(--gold)'; btn.textContent = 'Set Condition';
+  } else {
+    btn.style.background = '#6cf'; btn.textContent = 'Confirm Close';
   }
-  document.getElementById('c-dgcx-wrap').style.display = deal.dgcx ? 'block' : 'none';
+}
+
+// Call setCloseMode('manual') inside your openCloseModal to reset on open
+function openCloseModal(dealId) {
+  closingDealId = dealId;
+  const deal = deals.find(d => d.id === parseInt(dealId));
+  if (!deal) return;
+
+  const grid = document.getElementById('close-qty-grid');
+  grid.innerHTML = '';
+
+  if (deal.mcx?.qty) {
+    grid.innerHTML += `
+      <div class="form-group">
+        <label>MCX qty (lots) <span style="color:var(--muted);font-weight:400">/ ${deal.mcx.qty} open</span></label>
+        <input type="number" id="c-mcx-qty" placeholder="${deal.mcx.qty}" min="0.01" step="0.01">
+      </div>`;
+  }
+  if (deal.comex?.qty) {
+    grid.innerHTML += `
+      <div class="form-group">
+        <label>COMEX qty (lots) <span style="color:var(--muted);font-weight:400">/ ${deal.comex.qty} open</span></label>
+        <input type="number" id="c-comex-qty" placeholder="${deal.comex.qty}" min="0.000001" step="0.000001">
+      </div>`;
+  }
+  if (deal.dgcx?.qty) {
+    grid.innerHTML += `
+      <div class="form-group">
+        <label>DGCX qty (lots) <span style="color:var(--muted);font-weight:400">/ ${deal.dgcx.qty} open</span></label>
+        <input type="number" id="c-dgcx-qty" placeholder="${deal.dgcx.qty}" min="0.000001" step="0.000001">
+      </div>`;
+    document.getElementById('c-dgcx-wrap').style.display = 'block';
+  } else {
+    document.getElementById('c-dgcx-wrap').style.display = 'none';
+  }
+
+  setCloseMode('manual');
+  document.getElementById('c-mcx-price').value = '';
+  document.getElementById('c-comex-price').value = '';
+  if (document.getElementById('c-dgcx-price')) document.getElementById('c-dgcx-price').value = '';
+  document.getElementById('c-cond-value').value = '';
   document.getElementById('close-modal').classList.add('open');
 }
-
-function closeCloseModal() { document.getElementById('close-modal').classList.remove('open'); }
+function closeCloseModal() {
+  document.getElementById('close-modal').classList.remove('open');
+  closingDealId = null;
+}
 
 async function confirmClose() {
+  const deal = deals.find(d => d.id === parseInt(closingDealId));
+  if (!deal) return alert('Deal not found');
+
+  if (closeMode === 'condition') {
+    const condValue = parseFloat(document.getElementById('c-cond-value').value);
+    if (isNaN(condValue)) return alert('Enter a valid condition value');
+  }
+
+  if (closeMode === 'immediate') {
+    if (!confirm('Send market close order to MT5 immediately? This cannot be undone.')) return;
+  }
+
   const body = {
-    mcxExitPrice:   document.getElementById('c-mcx-price').value,
-    comexExitPrice: document.getElementById('c-comex-price').value,
-    dgcxExitPrice:  document.getElementById('c-dgcx-price').value || null,
+      closeMode,
+      mcxCloseQty:   document.getElementById('c-mcx-qty')?.value || null,
+      comexCloseQty: document.getElementById('c-comex-qty')?.value || null,
+      dgcxCloseQty:  deal.dgcx ? (document.getElementById('c-dgcx-qty')?.value || null) : null,
+      mcxExitPrice:   closeMode === 'manual' ? document.getElementById('c-mcx-price').value : null,
+      comexExitPrice: closeMode === 'manual' ? document.getElementById('c-comex-price').value : null,
+      dgcxExitPrice:  closeMode === 'manual' && deal.dgcx ? (document.getElementById('c-dgcx-price')?.value || null) : null,
+      conditionField: closeMode === 'condition' ? document.getElementById('c-cond-field').value : null,
+      conditionDir:   closeMode === 'condition' ? document.getElementById('c-cond-dir').value : null,
+      conditionValue: closeMode === 'condition' ? parseFloat(document.getElementById('c-cond-value').value) : null,
+      placeImmediately: closeMode === 'immediate',
   };
-  await apiFetch(`/api/deals/${closingDealId}/close`, {
-    method: 'PUT',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body)
+
+  const res = await apiFetch(`/api/deals/${closingDealId}/close`, {
+    method: 'PUT', headers: {'Content-Type':'application/json'}, body: JSON.stringify(body)
   });
-  await loadDeals();
-  closeCloseModal();
-  renderDeals();
+  if (!res.ok) throw new Error((await res.text()) || 'Failed to close deal');
+  const data = await res.json();
+  await loadDeals(); closeCloseModal(); renderDeals();
+
+  const msg = closeMode === 'immediate' ? 'Market order sent to MT5'
+            : closeMode === 'condition' ? 'Close order set — waiting for condition'
+            : data.partial ? 'Partial close completed' : 'Deal closed successfully';
+  showToast('Deal Closed', msg, 'trigger', 3000);
 }
 
 async function deleteDeal(id) {
+  id=parseInt(id);
   if (!confirm('Delete this deal?')) return;
-  await apiFetch(`/api/deals/${id}`, { method: 'DELETE' });
-  await loadDeals();
-  renderDeals();
+  await apiFetch(`/api/deals/${id}`,{method:'DELETE'});
+  await loadDeals(); renderDeals();
 }
-
-// ── Edit Deal ──────────────────────────────────────────────────────────────
-let editingDealId = null;
-
-function toggleEditDgcxLeg() {
-  const enabled = document.getElementById('e-dgcx-enabled').checked;
-  document.getElementById('e-dgcx-leg-fields').style.display = enabled ? 'block' : 'none';
-}
-
 function openEditModal(id) {
-  const deal = deals.find(d => d.id === id);
-  if (!deal) return;
-  editingDealId = id;
-
-  // Header fields
-  document.getElementById('e-instrument-display').value = deal.instrument;
-  document.getElementById('e-usd-inr').value   = deal.usdInrRate || 89;
-  document.getElementById('e-dginr').value     = deal.dginrAtEntry || '';
-  document.getElementById('e-note').value      = deal.note || '';
-
-  // MCX
-  document.getElementById('e-mcx-side').value  = deal.mcx.side;
-  document.getElementById('e-mcx-price').value = deal.mcx.entryPrice;
-  document.getElementById('e-mcx-qty').value   = deal.mcx.qty || 1;
-  document.getElementById('e-mcx-brok').value  = deal.mcx.brokerage || 0;
-
-  // COMEX
-  document.getElementById('e-comex-side').value  = deal.comex.side;
-  document.getElementById('e-comex-price').value = deal.comex.entryPrice;
-  document.getElementById('e-comex-qty').value   = deal.comex.qty || 1;
-  document.getElementById('e-comex-brok').value  = deal.comex.brokerage || 0;
-
-  // DGCX
-  const hasDgcx = !!deal.dgcx;
-  document.getElementById('e-dgcx-enabled').checked = hasDgcx;
-  document.getElementById('e-dgcx-leg-fields').style.display = hasDgcx ? 'block' : 'none';
+  id=parseInt(id); const deal=deals.find(d=>d.id===id); if (!deal) return;
+  editingDealId=id;
+  document.getElementById('e-instrument-display').value=deal.instrument;
+  document.getElementById('e-usd-inr').value=deal.usdInrRate||89;
+  document.getElementById('e-dginr').value=deal.dginrAtEntry||'';
+  document.getElementById('e-note').value=deal.note||'';
+  document.getElementById('e-mcx-side').value=deal.mcx.side;
+  document.getElementById('e-mcx-price').value=deal.mcx.entryPrice;
+  document.getElementById('e-mcx-qty').value=deal.mcx.qty||1;
+  document.getElementById('e-mcx-brok').value=deal.mcx.brokerage||0;
+  document.getElementById('e-comex-side').value=deal.comex.side;
+  document.getElementById('e-comex-price').value=deal.comex.entryPrice;
+  document.getElementById('e-comex-qty').value=deal.comex.qty||1;
+  document.getElementById('e-comex-brok').value=deal.comex.brokerage||0;
+  const hasDgcx=!!deal.dgcx;
+  document.getElementById('e-dgcx-enabled').checked=hasDgcx;
+  document.getElementById('e-dgcx-leg-fields').style.display=hasDgcx?'block':'none';
   if (hasDgcx) {
-    document.getElementById('e-dgcx-side').value  = deal.dgcx.side;
-    document.getElementById('e-dgcx-price').value = deal.dgcx.entryPrice;
-    document.getElementById('e-dgcx-qty').value   = deal.dgcx.qty || 1;
-    document.getElementById('e-dgcx-brok').value  = deal.dgcx.brokerage || 0;
+    document.getElementById('e-dgcx-side').value=deal.dgcx.side;
+    document.getElementById('e-dgcx-price').value=deal.dgcx.entryPrice;
+    document.getElementById('e-dgcx-qty').value=deal.dgcx.qty||1;
+    document.getElementById('e-dgcx-brok').value=deal.dgcx.brokerage||0;
   }
-
+  populateLegBrokerSelect('e-mcx-broker',  deal.mcx.brokerId);
+  populateLegBrokerSelect('e-comex-broker',deal.comex.brokerId);
+  populateLegBrokerSelect('e-dgcx-broker', deal.dgcx?.brokerId||null);
   document.getElementById('edit-modal').classList.add('open');
 }
-
-function closeEditModal() {
-  document.getElementById('edit-modal').classList.remove('open');
-  editingDealId = null;
-}
-
+function closeEditModal() { document.getElementById('edit-modal').classList.remove('open'); editingDealId=null; }
 async function saveEditDeal() {
-  const btn = document.getElementById('edit-save-btn');
+  const btn=document.getElementById('edit-save-btn');
   try {
-    btn.textContent = 'Saving...'; btn.disabled = true;
-
-    const dgcxEnabled = document.getElementById('e-dgcx-enabled').checked;
-
-    const usdInrRate     = parseFloat(document.getElementById('e-usd-inr').value)   || 89;
-    const dginrAtEntry   = document.getElementById('e-dginr').value                 || null;
-    const note           = document.getElementById('e-note').value;
-
-    const mcxSide        = document.getElementById('e-mcx-side').value;
-    const mcxPrice       = parseFloat(document.getElementById('e-mcx-price').value);
-    const mcxQty         = parseFloat(document.getElementById('e-mcx-qty').value)   || 1;
-    const mcxBrokerage   = parseFloat(document.getElementById('e-mcx-brok').value)  || 0;
-
-    const comexSide      = document.getElementById('e-comex-side').value;
-    const comexPrice     = parseFloat(document.getElementById('e-comex-price').value);
-    const comexQty       = parseFloat(document.getElementById('e-comex-qty').value) || 1;
-    const comexBrokerage = parseFloat(document.getElementById('e-comex-brok').value)|| 0;
-
-    const dgcxSide       = dgcxEnabled ? document.getElementById('e-dgcx-side').value                      : null;
-    const dgcxPrice      = dgcxEnabled ? parseFloat(document.getElementById('e-dgcx-price').value)          : null;
-    const dgcxQty        = dgcxEnabled ? (parseFloat(document.getElementById('e-dgcx-qty').value)  || 1)    : null;
-    const dgcxBrokerage  = dgcxEnabled ? (parseFloat(document.getElementById('e-dgcx-brok').value) || 0)    : null;
-
-    if (isNaN(mcxPrice)   || mcxPrice   <= 0) return alert('Please enter a valid MCX entry price');
-    if (isNaN(comexPrice) || comexPrice <= 0) return alert('Please enter a valid COMEX entry price');
-    if (dgcxEnabled && (isNaN(dgcxPrice) || dgcxPrice <= 0)) return alert('Please enter a valid DGCX entry price');
-
-    const body = {
-      note, usdInrRate, dginrAtEntry,
-      mcxSide,   mcxPrice,   mcxQty,   mcxBrokerage,
-      comexSide, comexPrice, comexQty, comexBrokerage,
+    btn.textContent='Saving...'; btn.disabled=true;
+    const dgcxEnabled=document.getElementById('e-dgcx-enabled').checked;
+    const body={
+      note:           document.getElementById('e-note').value,
+      usdInrRate:     parseFloat(document.getElementById('e-usd-inr').value)||89,
+      dginrAtEntry:   document.getElementById('e-dginr').value||null,
+      mcxSide:        document.getElementById('e-mcx-side').value,
+      mcxPrice:       parseFloat(document.getElementById('e-mcx-price').value),
+      mcxQty:         parseFloat(document.getElementById('e-mcx-qty').value)||1,
+      mcxBrokerage:   parseFloat(document.getElementById('e-mcx-brok').value)||0,
+      mcxBrokerId:    document.getElementById('e-mcx-broker').value||null,
+      comexSide:      document.getElementById('e-comex-side').value,
+      comexPrice:     parseFloat(document.getElementById('e-comex-price').value),
+      comexQty:       parseFloat(document.getElementById('e-comex-qty').value)||1,
+      comexBrokerage: parseFloat(document.getElementById('e-comex-brok').value)||0,
+      comexBrokerId:  document.getElementById('e-comex-broker').value||null,
       dgcxEnabled,
-      dgcxSide, dgcxPrice, dgcxQty, dgcxBrokerage,
+      dgcxSide:       dgcxEnabled?document.getElementById('e-dgcx-side').value:null,
+      dgcxPrice:      dgcxEnabled?parseFloat(document.getElementById('e-dgcx-price').value):null,
+      dgcxQty:        dgcxEnabled?(parseFloat(document.getElementById('e-dgcx-qty').value)||1):null,
+      dgcxBrokerage:  dgcxEnabled?(parseFloat(document.getElementById('e-dgcx-brok').value)||0):null,
+      dgcxBrokerId:   dgcxEnabled?(document.getElementById('e-dgcx-broker').value||null):null,
     };
-
-    const res = await apiFetch(`/api/deals/${editingDealId}`, {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(body)
-    });
-
-    if (!res.ok) {
-      const txt = await res.text();
-      throw new Error(`Server error ${res.status}: ${txt}`);
-    }
-
-    await loadDeals();
-    closeEditModal();
-    renderDeals();
-
-  } catch (err) {
-    console.error('saveEditDeal error:', err);
-    alert('Failed to save: ' + err.message);
-  } finally {
-    btn.textContent = 'Save Changes'; btn.disabled = false;
-  }
+    if (isNaN(body.mcxPrice)||body.mcxPrice<=0) return alert('Please enter a valid MCX entry price');
+    if (isNaN(body.comexPrice)||body.comexPrice<=0) return alert('Please enter a valid COMEX entry price');
+    const res=await apiFetch(`/api/deals/${editingDealId}`,{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+    if (!res.ok) throw new Error(`Server error ${res.status}: ${await res.text()}`);
+    await loadDeals(); closeEditModal(); renderDeals();
+  } catch(err) { console.error('saveEditDeal error:',err); alert('Failed to save: '+err.message); }
+  finally { btn.textContent='Save Changes'; btn.disabled=false; }
 }
 
+// ── Brokers ────────────────────────────────────────────────────────────────
+async function loadBrokers() {
+  const res=await apiFetch('/api/brokers'); brokers=await res.json();
+}
+function renderBrokers() {
+  const tbody=document.getElementById('brokers-tbody'); if (!tbody) return;
+  if (brokers.length===0) {
+    tbody.innerHTML=`<tr><td colspan="9" style="text-align:center;padding:40px;color:var(--muted)">No broker accounts yet.</td></tr>`;
+    return;
+  }
+  tbody.innerHTML=brokers.map(b=>`
+    <tr class="broker-row">
+      <td style="text-align:left"><div style="font-weight:600;font-size:12px">${b.brokerName}</div></td>
+      <td style="text-align:left">${b.accountId?`<span class="acct-badge">${b.accountId}</span>`:'<span style="color:var(--muted);font-size:10px">—</span>'}</td>
+      <td style="text-align:left" class="broker-hide-tablet"><div style="font-size:11px;color:var(--text)">${b.instrument}</div></td>
+      <td class="broker-hide-tablet">${b.lotSize}</td>
+      <td>₹${parseFloat(b.brokerage).toFixed(2)}</td>
+      <td><span class="profit-badge">${b.profitShare}%</span></td>
+      <td class="broker-hide-tablet">
+        <span class="pass-hidden">${b.password?'':'—'}</span>
+        ${b.password?`<button onclick="togglePass(${b.id})" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:10px;margin-left:4px" id="passToggle-${b.id}">show</button>
+        <span id="passText-${b.id}" style="display:none;font-size:11px;color:var(--accent)">${b.password}</span>`:''}
+      </td>
+      <td class="broker-hide-tablet" style="color:var(--muted);font-size:10px">${new Date(b.createdAt).toLocaleDateString()}</td>
+      <td>
+        <button class="btn btn-sm" style="background:var(--surface2);border:1px solid var(--border);color:var(--text);margin-right:4px" onclick="openEditBrokerModal(${b.id})">Edit</button>
+        <button class="btn btn-sm btn-danger" onclick="deleteBroker(${b.id})">✕</button>
+      </td>
+    </tr>`).join('');
+  renderBrokerSummary();
+}
+function renderBrokerSummary() {
+  const summary=document.getElementById('broker-summary'); if (!summary) return;
+  summary.innerHTML=`
+    <div class="pnl-card"><div class="pnl-label">Total Brokers</div><div class="pnl-value">${brokers.length}</div></div>
+    <div class="pnl-card"><div class="pnl-label">Avg Brokerage</div><div class="pnl-value" style="font-size:16px">₹${brokers.length?(brokers.reduce((s,b)=>s+b.brokerage,0)/brokers.length).toFixed(0):0}</div></div>
+    <div class="pnl-card"><div class="pnl-label">Avg Profit Share</div><div class="pnl-value" style="font-size:16px">${brokers.length?(brokers.reduce((s,b)=>s+b.profitShare,0)/brokers.length).toFixed(1):0}%</div></div>`;
+}
+function togglePass(id) {
+  const text=document.getElementById('passText-'+id), btn=document.getElementById('passToggle-'+id);
+  if (!text||!btn) return;
+  const showing=text.style.display!=='none';
+  text.style.display=showing?'none':'inline'; btn.textContent=showing?'show':'hide';
+}
+function openBrokerModal() {
+  editingBrokerId=null;
+  document.getElementById('broker-modal-title').textContent='Add Broker Account';
+  document.getElementById('broker-save-btn').textContent='Save Broker';
+  ['b-name','b-account-id','b-password','b-lot-size','b-brokerage','b-profit-share'].forEach(id=>{
+    const el=document.getElementById(id);
+    if (el) el.value=id==='b-lot-size'?'1':(id==='b-brokerage'||id==='b-profit-share'?'0':'');
+  });
+  document.getElementById('b-instrument').value='';
+  populateBrokerInstrumentSelect();
+  document.getElementById('broker-modal').classList.add('open');
+}
+function openEditBrokerModal(id) {
+  const b=brokers.find(x=>x.id===id); if (!b) return;
+  editingBrokerId=id;
+  document.getElementById('broker-modal-title').textContent='Edit Broker Account';
+  document.getElementById('broker-save-btn').textContent='Save Changes';
+  populateBrokerInstrumentSelect();
+  document.getElementById('b-name').value        =b.brokerName;
+  document.getElementById('b-account-id').value  =b.accountId||'';
+  document.getElementById('b-password').value    =b.password||'';
+  document.getElementById('b-instrument').value  =b.instrument;
+  document.getElementById('b-lot-size').value    =b.lotSize;
+  document.getElementById('b-brokerage').value   =b.brokerage;
+  document.getElementById('b-profit-share').value=b.profitShare;
+  document.getElementById('broker-modal').classList.add('open');
+}
+function closeBrokerModal() { document.getElementById('broker-modal').classList.remove('open'); editingBrokerId=null; }
+function populateBrokerInstrumentSelect() {
+  const sel=document.getElementById('b-instrument'); if (!sel) return;
+  const current=sel.value; sel.innerHTML='<option value="">Select instrument...</option>';
+  Object.values(prices).forEach(p=>{ const opt=document.createElement('option'); opt.value=p.name; opt.textContent=p.displayName||p.name; sel.appendChild(opt); });
+  if (current) sel.value=current;
+}
+async function saveBroker() {
+  const btn=document.getElementById('broker-save-btn');
+  try {
+    btn.textContent='Saving...'; btn.disabled=true;
+    const body={
+      brokerName:  document.getElementById('b-name').value.trim(),
+      accountId:   document.getElementById('b-account-id').value.trim()||null,
+      password:    document.getElementById('b-password').value||null,
+      instrument:  document.getElementById('b-instrument').value,
+      lotSize:     parseFloat(document.getElementById('b-lot-size').value)||1,
+      brokerage:   parseFloat(document.getElementById('b-brokerage').value)||0,
+      profitShare: parseFloat(document.getElementById('b-profit-share').value)||0,
+    };
+    if (!body.brokerName) return alert('Broker name is required');
+    if (!body.instrument) return alert('Please select an instrument');
+    const url=editingBrokerId?`/api/brokers/${editingBrokerId}`:'/api/brokers';
+    const method=editingBrokerId?'PUT':'POST';
+    const res=await apiFetch(url,{method,headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+    if (!res.ok) throw new Error(await res.text());
+    await loadBrokers(); renderBrokers(); closeBrokerModal();
+  } catch(err) { alert('Failed to save broker: '+err.message); }
+  finally { btn.textContent=editingBrokerId?'Save Changes':'Save Broker'; btn.disabled=false; }
+}
+async function deleteBroker(id) {
+  const b=brokers.find(x=>x.id===id);
+  if (!confirm(`Delete broker "${b?.brokerName}"?`)) return;
+  await apiFetch(`/api/brokers/${id}`,{method:'DELETE'});
+  await loadBrokers(); renderBrokers();
+}
 </script>
 </body>
 </html>
