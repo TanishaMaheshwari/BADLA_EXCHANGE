@@ -1,0 +1,221 @@
+{
+    "2026-05-20 10:18:11": {
+        "timestamp": "2026-05-20 10:18:11",
+        "instrument_id": "69df77c0bab8e09015512d23",
+        "instrument_name": "COPPER4%(COMEXJULY-MCXMAY)@MAYDG",
+        "badla_type": "COPPER",
+        "room_id": "R3vap",
+        "raw_data": {
+            "roomId": "R3vap",
+            "data": [
+                {
+                    "mode": "US",
+                    "ExchangeToken": "510480",
+                    "instrument_token": "93619349824",
+                    "tradable": true,
+                    "last_price": 1333.3,
+                    "last_quantity": 2500,
+                    "average_price": "1333.87",
+                    "volume": 918,
+                    "buy_quantity": 410,
+                    "sell_quantity": 465,
+                    "ohlc_open": "1332.05",
+                    "ohlc_high": "1336",
+                    "ohlc_low": "1332",
+                    "ohlc_close": "1337.55",
+                    "change": "0",
+                    "buy_price_0": 1333,
+                    "sell_price_0": 1333.25,
+                    "buy_qty_0": 1,
+                    "sell_qty_0": 1,
+                    "LastTradeTimeD": "2026-05-20T10:17:52",
+                    "last_trade_time": "20-05-2026 10:17:52",
+                    "oi": 9156,
+                    "oi_day_high": 0,
+                    "oi_day_low": 0,
+                    "timestamp": "2026-05-20T10:18:10.981",
+                    "name": "COPPER",
+                    "expiry": "29-05-2026",
+                    "exchange": "MCX",
+                    "tradingsymbol": "COPPER26MAYFUT",
+                    "lot_size": "1.000",
+                    "lower_circuit": "1284.05",
+                    "upper_circuit": "1391.05",
+                    "net_change": "-4.25",
+                    "percentage_change": "-0.32",
+                    "buy": [
+                        {
+                            "Quantity": 1,
+                            "Price": 1333,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 1,
+                            "Price": 1332.95,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 1,
+                            "Price": 1332.9,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 1,
+                            "Price": 1332.85,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 2,
+                            "Price": 1332.8,
+                            "Orders": 0,
+                            "Flag": 0
+                        }
+                    ],
+                    "sell": [
+                        {
+                            "Quantity": 1,
+                            "Price": 1333.25,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 2,
+                            "Price": 1333.5,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 1,
+                            "Price": 1333.55,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 1,
+                            "Price": 1333.7,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 5,
+                            "Price": 1333.75,
+                            "Orders": 0,
+                            "Flag": 0
+                        }
+                    ],
+                    "The52WeekHigh": 1414,
+                    "The52WeekLow": 0,
+                    "ProviderTime": "2026-05-20T10:18:11.1040192+05:30",
+                    "BrokerReceiveTime": null,
+                    "IsHistoryOn": true,
+                    "ohlc": {
+                        "high": "1336",
+                        "low": "1332"
+                    }
+                },
+                {
+                    "mode": "IQ",
+                    "ExchangeToken": "QHGN26",
+                    "instrument_token": "50617248258",
+                    "tradable": true,
+                    "last_price": 6.1685,
+                    "last_quantity": 1,
+                    "average_price": null,
+                    "volume": 4151,
+                    "buy_quantity": 0,
+                    "sell_quantity": 0,
+                    "ohlc_open": "6.1875",
+                    "ohlc_high": "6.2160",
+                    "ohlc_low": "6.1475",
+                    "ohlc_close": "6.2065",
+                    "change": "-0.0380",
+                    "buy_price_0": 6.1675,
+                    "sell_price_0": 6.1685,
+                    "buy_qty_0": 2,
+                    "sell_qty_0": 2,
+                    "LastTradeTimeD": "2026-05-20T10:18:10.828165+05:30",
+                    "last_trade_time": "20-05-2026 10:18:10",
+                    "oi": 142832,
+                    "oi_day_high": null,
+                    "oi_day_low": null,
+                    "timestamp": "2026-05-20T10:18:10.828165+05:30",
+                    "name": "COPPER",
+                    "expiry": "29-07-2026",
+                    "exchange": "COMEX",
+                    "tradingsymbol": "COPPER 29Jul2026",
+                    "lot_size": "1.000",
+                    "lower_circuit": "0",
+                    "upper_circuit": "0",
+                    "net_change": "-0.04",
+                    "percentage_change": "-0.61",
+                    "buy": [],
+                    "sell": [],
+                    "The52WeekHigh": 6.716,
+                    "The52WeekLow": 0,
+                    "ProviderTime": "2026-05-20T10:18:10.8281705+05:30",
+                    "BrokerReceiveTime": null,
+                    "IsHistoryOn": false,
+                    "ohlc": {
+                        "high": "6.2160",
+                        "low": "6.1475"
+                    }
+                },
+                {
+                    "mode": "XL",
+                    "ExchangeToken": "44439",
+                    "instrument_token": "44439",
+                    "tradable": false,
+                    "last_price": 103.199997,
+                    "last_quantity": null,
+                    "average_price": "0",
+                    "volume": 1078,
+                    "buy_quantity": 0,
+                    "sell_quantity": 0,
+                    "ohlc_open": "103.44",
+                    "ohlc_high": "103.34",
+                    "ohlc_low": "103.15",
+                    "ohlc_close": "103.44",
+                    "change": null,
+                    "buy_price_0": 103.2,
+                    "sell_price_0": 103.22,
+                    "buy_qty_0": 82,
+                    "sell_qty_0": 102,
+                    "LastTradeTimeD": "2026-05-20T10:15:40",
+                    "last_trade_time": "20-05-2026 10:15:40",
+                    "oi": null,
+                    "oi_day_high": null,
+                    "oi_day_low": null,
+                    "timestamp": "2026-05-20T10:15:40",
+                    "name": "DGCX",
+                    "expiry": "26-05-2026",
+                    "exchange": "DGCX",
+                    "tradingsymbol": "DGCX 26May2026",
+                    "lot_size": "0",
+                    "lower_circuit": "0",
+                    "upper_circuit": "0",
+                    "net_change": "-0.24",
+                    "percentage_change": "-0.23",
+                    "buy": [],
+                    "sell": [],
+                    "The52WeekHigh": 0,
+                    "The52WeekLow": 0,
+                    "ProviderTime": "2026-05-20T10:17:40.0816065+05:30",
+                    "BrokerReceiveTime": null,
+                    "IsHistoryOn": true,
+                    "ohlc": {
+                        "high": "103.34",
+                        "low": "103.15"
+                    }
+                }
+            ],
+            "uniqId": "69df77c0bab8e09015512d23",
+            "marketType": "badla",
+            "equation": "Math.round(((((L1*2.204623)*L3))*D1)/100) + (((L1*2.204623)*L3))",
+            "duty": 4
+        }
+    }
+}

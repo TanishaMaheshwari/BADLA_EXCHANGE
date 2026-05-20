@@ -227,6 +227,10 @@ function broadcast(data) {
 }
 
 function calculateBadla(data) {
+  const DISPLAY_NAME_OVERRIDES = {
+    'GOLD-6%(COMEXJUNE-MCXJUNE)@MAYDG': 'GOLD15%-(COMEXJUNE-MCXJUNE)@MAYDG',
+    'SILVER6%-(COMEXJULY-MCXJULY)@MAYDG': 'SILVER15%-(COMEXJULY-MCXJULY)@MAYDG'
+  };
   const latestTimestamp = Object.keys(data)[0];
   const latestData = data[latestTimestamp];
   if (!latestData || !latestData.raw_data) return null;
@@ -258,8 +262,7 @@ function calculateBadla(data) {
 
     return {
       id: latestData.instrument_id, name: latestData.instrument_name,
-      displayName: latestData.raw_data.displayName||latestData.instrument_name,
-      type: latestData.badla_type, timestamp: latestTimestamp,
+      displayName: DISPLAY_NAME_OVERRIDES[latestData.raw_data.displayName] || DISPLAY_NAME_OVERRIDES[latestData.instrument_name] || latestData.raw_data.displayName || latestData.instrument_name,        type: latestData.badla_type, timestamp: latestTimestamp,
       badlaLTP: finalLTP.toFixed(2), badlaBUY: finalBUY.toFixed(2), badlaSELL: finalSELL.toFixed(2),
       mcx:   mcxData   ? { bid: mcxData.buy_price_0, ask: mcxData.sell_price_0, ltp: mcxData.last_price } : null,
       comex: comexData ? {
