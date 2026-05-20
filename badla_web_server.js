@@ -248,15 +248,32 @@ function calculateBadla(data) {
     const finalLTP  = reverse==="1"?ltp-L2:L2-ltp;
     const finalBUY  = reverse==="1"?sell-(mcxData?mcxData.buy_price_0:0):(mcxData?mcxData.buy_price_0:0)-sell;
     const finalSELL = reverse==="1"?buy-(mcxData?mcxData.sell_price_0:0):(mcxData?mcxData.sell_price_0:0)-buy;
-    const convertedComex = evalEq(equation, L1, 0, L3);
+
+    const convertedComexLTP = evalEq(equation, L1, 0, L3);
+    const convertedComexBID = sell;
+    const convertedComexASK = buy;
+
+    const dgcxL3BID = dgcxData ? (10000 / (dgcxData.buy_price_0  || dgcxData.last_price)) : 1;
+    const dgcxL3ASK = dgcxData ? (10000 / (dgcxData.sell_price_0 || dgcxData.last_price)) : 1;
+
     return {
       id: latestData.instrument_id, name: latestData.instrument_name,
       displayName: latestData.raw_data.displayName||latestData.instrument_name,
       type: latestData.badla_type, timestamp: latestTimestamp,
       badlaLTP: finalLTP.toFixed(2), badlaBUY: finalBUY.toFixed(2), badlaSELL: finalSELL.toFixed(2),
-      mcx:   mcxData   ? { bid: mcxData.buy_price_0,   ask: mcxData.sell_price_0,   ltp: mcxData.last_price,   convertedComex: convertedComex.toFixed(2) } : null,
-      comex: comexData ? { bid: comexData.buy_price_0, ask: comexData.sell_price_0, ltp: comexData.last_price } : null,
-      dgcx:  dgcxData  ? { ltp: dgcxData.last_price,   converted: (10000/dgcxData.last_price).toFixed(4) }      : null,
+      mcx:   mcxData   ? { bid: mcxData.buy_price_0, ask: mcxData.sell_price_0, ltp: mcxData.last_price } : null,
+      comex: comexData ? {
+        bid: comexData.buy_price_0, ask: comexData.sell_price_0, ltp: comexData.last_price,
+        convertedLTP: convertedComexLTP.toFixed(2),
+        convertedBID: convertedComexBID.toFixed(2),
+        convertedASK: convertedComexASK.toFixed(2),
+      } : null,
+      dgcx: dgcxData ? {
+        bid: dgcxData.buy_price_0, ask: dgcxData.sell_price_0, ltp: dgcxData.last_price,
+        convertedLTP: (10000 / dgcxData.last_price).toFixed(4),
+        convertedBID: dgcxL3BID.toFixed(4),
+        convertedASK: dgcxL3ASK.toFixed(4),
+      } : null,
     };
   } catch(e) { return null; }
 }

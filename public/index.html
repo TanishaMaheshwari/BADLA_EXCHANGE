@@ -16,20 +16,23 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <style>
 :root {
-  --bg: #0a0a0f;
-  --surface: #111118;
-  --surface2: #16161f;
-  --border: #1e1e2e;
-  --accent: #00ff88;
-  --red: #ff4466;
-  --green: #00ff88;
-  --gold: #ffd700;
-  --blue: #64c8ff;
-  --text: #e0e0f0;
-  --muted: #555570;
+  --bg: #f5f5fa;
+  --surface: #ffffff;
+  --surface2: #eeeef5;
+  --border: #d8d8e8;
+  --accent: #00aa55;
+  --red: #e0203f;
+  --green: #00aa55;
+  --gold: #b8860b;
+  --blue: #2a7db5;
+  --text: #1a1a2e;
+  --muted: #8888a0;
   --header-h: 56px;
   --bottom-nav-h: 64px;
   --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --green-lt: rgba(0,170,85,0.12);
+  --red-lt:   rgba(224,32,63,0.12);
+  --base-font: 13px;
 }
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -37,8 +40,8 @@ html { -webkit-text-size-adjust: 100%; }
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 13px;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;  
+  font-size: var(--base-font, 13px);
   overflow-x: hidden;
   min-height: 100vh;
   min-height: 100dvh;
@@ -54,24 +57,24 @@ body {
   background: var(--surface); border: 1px solid var(--border);
   border-radius: 12px; padding: 40px 36px; width: 100%; max-width: 360px;
 }
-.login-logo { font-family: 'Syne', sans-serif; font-size: 24px; font-weight: 800; color: var(--accent); margin-bottom: 6px; }
+.login-logo { font-family: 'Arial', sans-serif; font-size: 24px; font-weight: 800; color: var(--accent); margin-bottom: 6px; }
 .login-logo span { color: var(--muted); }
-.login-sub { color: var(--muted); font-size: 11px; margin-bottom: 28px; }
+.login-sub { color: var(--muted); font-size: 0.85em; margin-bottom: 28px; }
 .login-field { display: flex; flex-direction: column; gap: 5px; margin-bottom: 14px; }
 .login-field label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
 .login-field input {
   background: var(--bg); border: 1px solid var(--border); color: var(--text);
   padding: 10px 12px; border-radius: 6px;
-  font-family: 'JetBrains Mono', monospace; font-size: 13px; outline: none; width: 100%;
+  font-family: 'Arial', sans-serif; font-size: 13px; outline: none; width: 100%;
 }
 .login-field input:focus { border-color: var(--accent); }
 .login-btn {
   width: 100%; padding: 11px; background: var(--accent); color: #000;
-  border: none; border-radius: 6px; font-family: 'JetBrains Mono', monospace;
+  border: none; border-radius: 6px; font-family: 'Arial', sans-serif;
   font-size: 13px; font-weight: 700; cursor: pointer; margin-top: 8px; transition: opacity 0.15s;
 }
 .login-btn:hover { opacity: 0.85; }
-.login-error { color: var(--red); font-size: 11px; margin-top: 10px; display: none; }
+.login-error { color: var(--red); font-size: 0.85em; margin-top: 10px; display: none; }
 
 /* ── APP SHELL ── */
 #app { display: none; }
@@ -80,29 +83,29 @@ body {
 .header {
   height: var(--header-h); display: flex; align-items: center; justify-content: space-between;
   padding: 0 20px; background: var(--surface); border-bottom: 1px solid var(--border);
-  position: sticky; top: 0; z-index: 100; gap: 12px;
+  position: sticky; top: 0; z-index: 100; gap: 12px; overflow: visible;
 }
-.logo { font-family: Syne, sans-serif; font-size: 20px; font-weight: 800; color: var(--accent); letter-spacing: -0.5px; flex-shrink: 0; }
+.logo { font-family: 'Arial', sans-serif; font-size: 20px; font-weight: 800; color: var(--accent); letter-spacing: -0.5px; flex-shrink: 0; }
 .logo span { color: var(--muted); }
 
 .desktop-nav { display: flex; gap: 2px; }
 .nav-btn {
   padding: 6px 14px; border: 1px solid var(--border); background: none; color: var(--muted);
-  cursor: pointer; font-family: JetBrains Mono, monospace; font-size: 11px;
+  cursor: pointer; font-family: 'Arial', sans-serif; font-size: 0.85em;
   border-radius: 4px; transition: all 0.2s; white-space: nowrap;
 }
 .nav-btn.active, .nav-btn:hover { background: var(--accent); color: #000; border-color: var(--accent); font-weight: 600; }
 
 .header-right { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
-.username-badge { font-size: 11px; color: var(--muted); white-space: nowrap; }
+.username-badge { font-size: 0.85em; color: var(--muted); white-space: nowrap; }
 .username-badge strong { color: var(--accent); }
 .logout-btn {
-  font-size: 11px; color: var(--muted); background: none;
+  font-size: 0.85em; color: var(--muted); background: none;
   border: 1px solid var(--border); padding: 4px 10px; border-radius: 4px;
-  cursor: pointer; font-family: 'JetBrains Mono', monospace; white-space: nowrap;
+  cursor: pointer; font-family: 'Arial', sans-serif; white-space: nowrap;
 }
 .logout-btn:hover { border-color: var(--red); color: var(--red); }
-.status { display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--muted); white-space: nowrap; }
+.status { display: flex; align-items: center; gap: 8px; font-size: 0.85em; color: var(--muted); white-space: nowrap; }
 .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); transition: background 0.3s; flex-shrink: 0; }
 .dot.live { background: var(--accent); box-shadow: 0 0 8px var(--accent); animation: pulse 2s infinite; }
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
@@ -138,11 +141,11 @@ body {
 
 /* ── DASHBOARD ── */
 .dash-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; gap: 12px; }
-.dash-title { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; color: var(--text); }
+.dash-title { font-family: 'Arial', sans-serif; font-size: 16px; font-weight: 700; color: var(--text); }
 .btn-add-instr {
   padding: 7px 14px; background: var(--accent); color: #000;
-  border: none; border-radius: 4px; font-family: 'JetBrains Mono', monospace;
-  font-size: 11px; font-weight: 700; cursor: pointer; white-space: nowrap; flex-shrink: 0;
+  border: none; border-radius: 4px; font-family: 'arial', sans-serif;
+  font-size: 0.85em; font-weight: 700; cursor: pointer; white-space: nowrap; flex-shrink: 0;
 }
 .btn-add-instr:hover { opacity: 0.85; }
 .dash-empty { color: var(--muted); font-size: 12px; padding: 48px 16px; text-align: center; border: 1px dashed var(--border); border-radius: 8px; }
@@ -160,13 +163,79 @@ body {
 
 .card-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 12px; gap: 8px; }
 .card-name { font-size: 12px; font-weight: 600; color: var(--text); line-height: 1.3; }
-.card-type-badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 9px; font-weight: 600; margin-top: 3px; }
+.card-type-badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 0.7em; font-weight: 600; margin-top: 3px; }
 .card-top-actions { display: flex; gap: 4px; align-items: center; flex-shrink: 0; }
 .card-alert-btn, .deal-alert-btn, .card-order-btn {
   background: none; border: 1px solid var(--border); color: var(--muted);
   cursor: pointer; font-size: 12px; padding: 3px 7px; border-radius: 3px;
   transition: all 0.2s; line-height: 1;
 }
+/* Mobile: show cards, hide table */
+.dash-cards-view { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.dash-table-view  { display: none; }
+
+/* Desktop: hide cards, show table */
+@media (min-width: 769px) {
+  .dash-cards-view { display: none; }
+  .dash-table-view  { display: block; }
+}
+
+/* Card tabs — mobile only */
+.card-tabs {
+  display: flex; gap: 2px; margin-bottom: 8px;
+  background: var(--surface2); border-radius: var(--radius);
+  padding: 3px; border: 1px solid var(--border);
+}
+.card-tab-btn {
+  flex: 1; padding: 5px 4px; border: none; background: none;
+  cursor: pointer; font-family: Arial, sans-serif; font-size: 10px;
+  font-weight: 600; border-radius: 5px; color: var(--muted);
+  transition: all 0.15s; letter-spacing: 0.04em;
+}
+.card-tab-btn.active { background: var(--surface); color: var(--text); box-shadow: var(--shadow-sm); }
+.card-tab-panel { display: none; }
+.card-tab-panel.active { display: block; }
+
+/* Desktop table */
+.dash-tbl-wrap { overflow-x: auto; border-radius: var(--radius-lg); border: 1px solid var(--border); box-shadow: var(--shadow-sm); }
+.dash-tbl-wrap table { width: 100%; border-collapse: collapse; min-width: 1000px; background: var(--surface); }
+.dash-tbl-wrap thead th {
+  background: var(--surface2);
+  color: var(--muted);
+  font-size: 0.7em;                /* smaller header */
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  text-align: right;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--border);
+}
+.dash-tbl-wrap thead th:first-child { text-align: left; }
+.dash-tbl-wrap thead th span { font-size: 8px; opacity: 0.7; font-weight: 400; }
+
+.dash-tbl-wrap td {
+  padding: 10px 12px;
+  text-align: right;
+  white-space: nowrap;
+  font-size: 14px;               /* bigger digits */
+  font-weight: 600;
+}
+.dash-tbl-wrap td:first-child {
+  text-align: left;
+  font-size: 0.85em;               /* symbol name stays smaller */
+  font-weight: 700;
+}
+.dash-tbl-wrap tbody tr { border-bottom: 1px solid var(--border); transition: background 0.1s; }
+.dash-tbl-wrap tbody tr:last-child { border-bottom: none; }
+.dash-tbl-wrap tbody tr:hover { background: var(--accent-lt); }
+.dash-tbl-actions { display: flex; gap: 4px; justify-content: flex-end; align-items: center; }
+
+@keyframes cellFlashG { 0%{background:var(--green-lt)} 100%{background:transparent} }
+@keyframes cellFlashR { 0%{background:var(--red-lt)}   100%{background:transparent} }
+
+.cell-flash-green { animation: cellFlashG 0.8s ease forwards; border-radius: 3px; }
+.cell-flash-red   { animation: cellFlashR 0.8s ease forwards; border-radius: 3px; }
 .card-alert-btn:hover, .deal-alert-btn:hover { background: var(--surface2); color: var(--text); }
 .card-alert-btn.active, .deal-alert-btn.active { background: var(--accent); color: #000; border-color: var(--accent); }
 .card-order-btn:hover { background: var(--surface2); color: var(--blue); border-color: var(--blue); }
@@ -177,32 +246,32 @@ body {
 .card-badla { display: flex; gap: 0; margin-bottom: 12px; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
 .badla-cell { flex: 1; padding: 8px 10px; text-align: center; border-right: 1px solid var(--border); min-width: 0; }
 .badla-cell:last-child { border-right: none; }
-.badla-label { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 3px; }
+.badla-label { font-size: 0.7em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 3px; }
 .badla-val { font-size: 15px; font-weight: 700; overflow: hidden; text-overflow: ellipsis; }
 
 .card-prices { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
 .price-block { background: var(--surface2); border-radius: 5px; padding: 7px 10px; min-width: 0; }
-.price-block-label { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
+.price-block-label { font-size: 0.7em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
 .price-row { display: flex; justify-content: space-between; align-items: baseline; gap: 4px; }
-.price-key { font-size: 9px; color: var(--muted); flex-shrink: 0; }
-.price-val { font-size: 11px; font-weight: 600; color: var(--text); text-align: right; overflow: hidden; text-overflow: ellipsis; }
-.price-sub { font-size: 9px; color: var(--muted); margin-top: 2px; overflow: hidden; text-overflow: ellipsis; }
+.price-key { font-size: 0.7em; color: var(--muted); flex-shrink: 0; }
+.price-val { font-size: 0.85em; font-weight: 600; color: var(--text); text-align: right; overflow: hidden; text-overflow: ellipsis; }
+.price-sub-line { font-size: 24px; color: var(--muted); font-weight: 400;  margin-top: 2px; line-height: 1.2;}
 
 /* ── FILTER BAR ── */
 .filter-bar { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
 .filter-btn {
   padding: 4px 12px; border: 1px solid var(--border); background: none; color: var(--muted);
-  cursor: pointer; font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  cursor: pointer; font-family: 'Arial', sans-serif; font-size: 0.85em;
   border-radius: 20px; transition: all 0.15s; white-space: nowrap;
 }
 .filter-btn.active { border-color: var(--accent); color: var(--accent); }
 .search {
   background: var(--surface); border: 1px solid var(--border); color: var(--text);
-  padding: 4px 10px; border-radius: 4px; font-family: 'JetBrains Mono', monospace;
-  font-size: 11px; outline: none; min-width: 0; width: 180px;
+  padding: 4px 10px; border-radius: 4px; font-family: 'Arial', sans-serif;
+  font-size: 0.85em; outline: none; min-width: 0; width: 180px;
 }
 .search:focus { border-color: var(--accent); }
-.update-time { color: var(--muted); font-size: 11px; white-space: nowrap; }
+.update-time { color: var(--muted); font-size: 0.85em; white-space: nowrap; }
 
 /* ── PRICES TABLE ── */
 .tbl-wrap { overflow-x: auto; border-radius: 6px; border: 1px solid var(--border); -webkit-overflow-scrolling: touch; }
@@ -216,16 +285,16 @@ thead th:first-child { text-align: left; }
 tbody tr { border-bottom: 1px solid var(--border); transition: background 0.1s; cursor: pointer; }
 tbody tr:last-child { border-bottom: none; }
 tbody tr:hover { background: rgba(0,255,136,0.04); }
-tbody tr.flash-green { animation: flashG 0.0s ease; }
-tbody tr.flash-red   { animation: flashR 0.0s ease; }
+tbody tr.flash-green { animation: flashG 0.1s ease; }
+tbody tr.flash-red   { animation: flashR 0.1s ease; }
 td { padding: 9px 12px; text-align: right; white-space: nowrap; }
 td:first-child { text-align: left; }
-.inst-name { font-size: 11px; color: var(--text); max-width: 200px; overflow: hidden; text-overflow: ellipsis; }
-.inst-type { font-size: 9px; color: var(--muted); margin-top: 2px; }
+.inst-name { font-size: 0.85em; color: var(--text); max-width: 200px; overflow: hidden; text-overflow: ellipsis; }
+.inst-type { font-size: 0.7em; color: var(--muted); margin-top: 2px; }
 .pos { color: var(--green); }
 .neg { color: var(--red); }
 .muted { color: var(--muted); }
-.badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 9px; font-weight: 600; }
+.badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 0.7em; font-weight: 600; }
 .badge-gold   { background: rgba(255,215,0,0.15);   color: var(--gold); }
 .badge-silver { background: rgba(160,160,200,0.15); color: #aab; }
 .badge-crude  { background: rgba(255,140,0,0.15);   color: #fa0; }
@@ -237,7 +306,7 @@ td:first-child { text-align: left; }
 .deal-controls { display: flex; gap: 10px; margin-bottom: 16px; align-items: center; flex-wrap: wrap; }
 .btn {
   padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer;
-  font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600;
+  font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 600;
   transition: all 0.15s; white-space: nowrap;
 }
 .btn-primary { background: var(--accent); color: #000; }
@@ -245,7 +314,7 @@ td:first-child { text-align: left; }
 .btn-danger { background: var(--red); color: #fff; }
 .btn-blue   { background: rgba(100,200,255,0.15); color: var(--blue); border: 1px solid rgba(100,200,255,0.3); }
 .btn-blue:hover { background: rgba(100,200,255,0.25); }
-.btn-sm { padding: 4px 10px; font-size: 11px; }
+.btn-sm { padding: 4px 10px; font-size: 0.85em; }
 
 /* ── PNL BAR ── */
 .pnl-bar { display: flex; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; }
@@ -281,11 +350,11 @@ td:first-child { text-align: left; }
 .deal-leg-row { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
 .deal-leg-row span:first-child { font-size: 10px; color: var(--muted); flex-shrink: 0; }
 .deal-leg-row span:last-child  { font-size: 12px; font-weight: 600; text-align: right; overflow: hidden; text-overflow: ellipsis; }
-.deal-leg-extra  { font-size: 9px; color: var(--muted); }
+.deal-leg-extra  { font-size: 0.7em; color: var(--muted); }
 .deal-leg-pnl    { border-top: 1px solid var(--border); padding-top: 6px; display: flex; justify-content: space-between; align-items: baseline; }
 .deal-leg-pnl .label { font-size: 10px; color: var(--muted); }
 .deal-leg-pnl .value { font-size: 10px; font-weight: 500; }
-.deal-leg-broker { font-size: 9px; color: var(--muted); margin-top: 2px; text-align: right; }
+.deal-leg-broker { font-size: 0.7em; color: var(--muted); margin-top: 2px; text-align: right; }
 .partial-info {
   background: rgba(255,215,0,0.07); border: 1px solid rgba(255,215,0,0.2);
   border-radius: 5px; padding: 6px 10px; font-size: 10px; color: var(--gold); margin-bottom: 10px;
@@ -302,7 +371,7 @@ td:first-child { text-align: left; }
 .order-card.status-executed  { border-left: 3px solid var(--accent); }
 .order-card.status-failed    { border-left: 3px solid var(--red); }
 .order-status-pill {
-  display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 9px; font-weight: 700; text-transform: uppercase;
+  display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.7em; font-weight: 700; text-transform: uppercase;
 }
 .order-status-pill.pending   { background: rgba(85,85,112,0.3);   color: var(--muted); }
 .order-status-pill.triggered { background: rgba(255,215,0,0.15);  color: var(--gold); }
@@ -322,12 +391,12 @@ td:first-child { text-align: left; }
 }
 .mt5-info-box {
   background: rgba(100,200,255,0.05); border: 1px solid rgba(100,200,255,0.2);
-  border-radius: 8px; padding: 14px 16px; margin-bottom: 16px; font-size: 11px; color: var(--muted); line-height: 1.7;
+  border-radius: 8px; padding: 14px 16px; margin-bottom: 16px; font-size: 0.85em; color: var(--muted); line-height: 1.7;
 }
 .mt5-info-box strong { color: var(--blue); }
 .mt5-info-box code {
   background: var(--surface2); padding: 1px 5px; border-radius: 3px;
-  font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text);
+  font-family: 'Arial', sans-serif; font-size: 0.85em; color: var(--text);
 }
 
 /* ── MODAL ── */
@@ -350,7 +419,7 @@ td:first-child { text-align: left; }
 label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
 input, select {
   background: var(--bg); border: 1px solid var(--border); color: var(--text);
-  padding: 8px 10px; border-radius: 4px; font-family: 'JetBrains Mono', monospace;
+  padding: 8px 10px; border-radius: 4px; font-family: 'Arial', sans-serif;
   font-size: 12px; outline: none; width: 100%; min-width: 0;
 }
 input:focus, select:focus { border-color: var(--accent); }
@@ -364,8 +433,8 @@ select option { background: var(--surface); }
 }
 .leg-card-title { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 2px; }
 .broker-select-row { display: flex; flex-direction: column; gap: 3px; padding-top: 6px; border-top: 1px solid var(--border); margin-top: 2px; }
-.broker-select-row label { font-size: 9px; color: var(--muted); }
-.broker-select-row select { font-size: 11px; padding: 5px 8px; }
+.broker-select-row label { font-size: 0.7em; color: var(--muted); }
+.broker-select-row select { font-size: 0.85em; padding: 5px 8px; }
 
 .dgcx-toggle-row {
   display: flex; align-items: center; gap: 8px;
@@ -399,7 +468,7 @@ select option { background: var(--surface); }
 
 .confirm-overlay {
   background: rgba(255,215,0,0.07); border: 1px solid rgba(255,215,0,0.3);
-  border-radius: 6px; padding: 12px; margin-top: 12px; font-size: 11px; color: var(--gold);
+  border-radius: 6px; padding: 12px; margin-top: 12px; font-size: 0.85em; color: var(--gold);
 }
 .confirm-overlay strong { display: block; font-size: 13px; margin-bottom: 6px; }
 
@@ -414,12 +483,12 @@ select option { background: var(--surface); }
 .instr-item:last-child { border-bottom: none; }
 .instr-item:hover { background: rgba(0,255,136,0.06); }
 .instr-item.already { opacity: 0.4; cursor: default; }
-.instr-item-name { font-size: 11px; color: var(--text); }
+.instr-item-name { font-size: 0.85em; color: var(--text); }
 .instr-item-type { font-size: 10px; color: var(--muted); }
 .instr-add-btn {
   font-size: 10px; background: var(--accent); color: #000; border: none;
   padding: 3px 8px; border-radius: 3px; cursor: pointer;
-  font-family: 'JetBrains Mono', monospace; font-weight: 600; flex-shrink: 0;
+  font-family: 'Arial', sans-serif; font-weight: 600; flex-shrink: 0;
 }
 .instr-added-tag { font-size: 10px; color: var(--muted); flex-shrink: 0; }
 
@@ -445,7 +514,7 @@ select option { background: var(--surface); }
 .alarm-stop-btn {
   background: #fff; color: var(--red); border: none; padding: 6px 16px;
   border-radius: 4px; font-weight: 700; cursor: pointer;
-  font-family: 'JetBrains Mono', monospace; font-size: 13px; flex-shrink: 0;
+  font-family: 'Arial', sans-serif; font-size: 13px; flex-shrink: 0;
 }
 
 /* Toast */
@@ -466,16 +535,57 @@ select option { background: var(--surface); }
 .toast.order   { border-left: 3px solid var(--blue); }
 .toast-icon  { font-size: 18px; line-height: 1; flex-shrink: 0; }
 .toast-title { font-size: 12px; font-weight: 700; color: var(--text); }
-.toast-body  { font-size: 11px; color: var(--muted); margin-top: 2px; word-break: break-word; }
+.toast-body  { font-size: 0.85em; color: var(--muted); margin-top: 2px; word-break: break-word; }
 .toast-close { margin-left: auto; background: none; border: none; color: var(--muted); cursor: pointer; font-size: 14px; flex-shrink: 0; }
 @keyframes slideIn { from{transform:translateX(100%);opacity:0} to{transform:translateX(0);opacity:1} }
-
+.install-banner {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  left: auto;
+  width: 320px;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  background: rgba(197, 199, 202, 0.96);
+  border: 1px solid rgba(111, 111, 111, 0.08);
+  border-radius: 14px;
+  color: var(--text);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  transform: translateY(120%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.install-banner.show { transform: translateY(0); opacity: 1; }
+.install-banner-content { display: flex; flex-direction: column; gap: 4px; }
+.install-banner-title { font-size: 13px; font-weight: 700; }
+.install-banner-text { font-size: 0.85em; color: var(--muted); }
+.install-banner button {
+  border: none;
+  background: var(--muted);
+  color: #000;
+  padding: 5px 7px;
+  border-radius: 10px;
+  font-family: 'Arial', sans-serif;
+  font-size: 10px;
+  cursor: pointer;
+}
+.install-banner-close {
+  background: none;
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 8px 10px;
+}
 /* Brokers */
 .broker-row td { vertical-align: middle; }
 .broker-row:hover { background: rgba(0,255,136,0.04); }
 .pass-hidden { font-family: monospace; letter-spacing: 2px; color: var(--muted); }
-.profit-badge { display: inline-block; padding: 2px 8px; border-radius: 12px; background: rgba(0,255,136,0.1); color: var(--accent); font-size: 11px; font-weight: 700; }
-.acct-badge   { display: inline-block; padding: 2px 8px; border-radius: 12px; background: rgba(100,200,255,0.1); color: #6cf; font-size: 11px; font-family: 'JetBrains Mono', monospace; }
+.profit-badge { display: inline-block; padding: 2px 8px; border-radius: 12px; background: rgba(0,255,136,0.1); color: var(--accent); font-size: 0.85em; font-weight: 700; }
+.acct-badge   { display: inline-block; padding: 2px 8px; border-radius: 12px; background: rgba(100,200,255,0.1); color: #6cf; font-size: 0.85em; font-family: 'Arial', sans-serif; }
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
@@ -493,7 +603,7 @@ select option { background: var(--surface); }
   .logo { font-size: 17px; }
   .desktop-nav { display: none; }
   .status { display: none; }
-  .logout-btn { padding: 5px 8px; font-size: 11px; }
+  .logout-btn { padding: 5px 8px; font-size: 0.85em; }
   .mobile-bottom-nav { display: block; }
   .page { padding: 12px 12px calc(var(--bottom-nav-h) + var(--safe-bottom) + 12px); }
   #toast-container { bottom: calc(var(--bottom-nav-h) + var(--safe-bottom) + 8px); right: 12px; max-width: calc(100vw - 24px); }
@@ -537,12 +647,13 @@ select option { background: var(--surface); }
   .form-actions { justify-content: stretch; }
   .form-actions .btn { flex: 1; justify-content: center; }
   .alarm-banner { font-size: 12px; padding: 10px 12px; }
-  .alarm-stop-btn { padding: 5px 10px; font-size: 11px; }
+  .alarm-stop-btn { padding: 5px 10px; font-size: 0.85em; }
   .toast { min-width: 0; }
   .install-banner {
     position: fixed;
     left: 16px;
     right: 16px;
+    width: auto;
     bottom: calc(88px + env(safe-area-inset-bottom, 0px));
     z-index: 500;
     display: flex;
@@ -550,8 +661,8 @@ select option { background: var(--surface); }
     justify-content: space-between;
     gap: 12px;
     padding: 12px 14px;
-    background: rgba(20, 24, 33, 0.96);
-    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(197, 199, 202, 0.96);
+    border: 1px solid rgba(111,111,111,0.08);
     border-radius: 14px;
     color: var(--text);
     box-shadow: 0 20px 60px rgba(0,0,0,0.25);
@@ -563,15 +674,15 @@ select option { background: var(--surface); }
   .install-banner.show { transform: translateY(0); opacity: 1; }
   .install-banner-content { display: flex; flex-direction: column; gap: 4px; }
   .install-banner-title { font-size: 13px; font-weight: 700; }
-  .install-banner-text { font-size: 11px; color: var(--muted); }
+  .install-banner-text { font-size: 0.85em; color: var(--muted); }
   .install-banner button {
     border: none;
-    background: var(--accent);
+    background: var(--muted);
     color: #000;
     padding: 10px 14px;
     border-radius: 10px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.85em;
     cursor: pointer;
   }
   .install-banner-close {
@@ -620,9 +731,39 @@ select option { background: var(--surface); }
         <span id="status-text">Connecting...</span>
         <span id="update-count" style="color:var(--accent)"></span>
       </div>
-      <div class="mt5-badge" id="mt5-badge">MT5 —</div>
-      <div class="username-badge">Signed in as <strong id="username-display"></strong></div>
-      <button class="logout-btn" onclick="doLogout()"><i class="fas fa-sign-out-alt"></i></button>
+      <div style="position:relative">
+        <button class="logout-btn" onclick="toggleProfileMenu(event)" id="profile-btn" style="display:flex;align-items:center;gap:6px;padding:5px 10px">
+          <i class="fas fa-user-circle" style="font-size:14px"></i>
+          <span id="username-display" style="font-size:11px;color:var(--accent);font-weight:700"></span>
+          <i class="fas fa-chevron-down" style="font-size:9px"></i>
+        </button>
+        <div id="profile-menu" style="display:none;position:absolute;right:0;top:calc(100% + 6px);width:220px;background:var(--surface);border:1px solid var(--border);border-radius:8px;box-shadow:0 8px 32px rgba(0,0,0,0.18);z-index:999;padding:8px 0">
+          <div style="padding:10px 14px;border-bottom:1px solid var(--border);margin-bottom:4px">
+            <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em">Signed in as</div>
+            <div style="font-size:12px;font-weight:700;color:var(--accent);margin-top:2px" id="profile-username"></div>
+          </div>
+          <div style="padding:6px 14px;border-bottom:1px solid var(--border);margin-bottom:4px">
+            <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">MT5 Status</div>
+            <div class="mt5-badge" id="mt5-badge" style="display:inline-block">MT5 —</div>
+          </div>
+          <div style="padding:6px 14px;border-bottom:1px solid var(--border);margin-bottom:4px">
+            <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">Font Size</div>
+            <div style="display:flex;align-items:center;gap:8px">
+              <span style="font-size:10px;color:var(--muted)">12</span>
+              <input type="range" id="font-size-slider" min="12" max="24" value="13" step="1"
+                style="flex:1;accent-color:var(--accent);cursor:pointer"
+                oninput="applyFontSize(this.value)">
+              <span style="font-size:10px;color:var(--muted)">24</span>
+              <span id="font-size-label" style="font-size:10px;color:var(--accent);font-weight:700;min-width:24px">13px</span>
+            </div>
+          </div>
+          <div style="padding:4px 8px">
+            <button onclick="doLogout()" style="width:100%;display:flex;align-items:center;gap:8px;padding:8px 8px;background:none;border:none;border-radius:6px;color:var(--red);cursor:pointer;font-size:12px;font-weight:600;font-family:Arial,sans-serif">
+              <i class="fas fa-sign-out-alt"></i> Sign Out
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -632,10 +773,35 @@ select option { background: var(--surface); }
       <div class="dash-title">Dashboard</div>
       <button class="btn-add-instr" onclick="openAddInstrModal()">+ Add</button>
     </div>
-    <div class="dash-grid" id="dash-grid">
-      <div class="dash-empty" id="dash-empty">No instruments pinned yet.<br>Click <strong>+ Add</strong> to get started.</div>
+      <!-- MOBILE: cards -->
+  <div class="dash-cards-view" id="dash-grid">
+    <div class="dash-empty" id="dash-empty">No instruments pinned yet.<br>Click <strong>+ Add</strong> to get started.</div>
+  </div>
+
+  <!-- DESKTOP: table -->
+  <div class="dash-table-view" id="dash-table-wrap">
+    <div class="dash-empty" id="dash-table-empty" style="display:none">No instruments pinned yet. Click <strong>+ Add</strong> to get started.</div>
+    <div class="dash-tbl-wrap" id="dash-tbl-container" style="display:none">
+      <table>
+        <thead><tr>
+          <th style="text-align:left">Symbol</th>
+          <th>Duty</th>
+          <th>Badla[BUY]</th>
+          <th>Badla[SELL]</th>
+          <th>Badla[LTP]</th>
+          <th>MCX BID<br><span style="font-weight:400;font-size:7px;opacity:.7">Comex (INR)</span></th>
+          <th>MCX ASK<br><span style="font-weight:400;font-size:7px;opacity:.7">Comex (INR)</span></th>
+          <th>COMEX BID</th>
+          <th>COMEX ASK</th>
+          <th>DGCX BID</th>
+          <th>DGCX ASK</th>
+          <th>Actions</th>
+        </tr></thead>
+        <tbody id="dash-tbody"></tbody>
+      </table>
     </div>
   </div>
+</div>
 
   <div class="page" id="page-prices">
     <div class="filter-bar">
@@ -716,7 +882,7 @@ select option { background: var(--surface); }
             <th style="text-align:left">Broker Name</th>
             <th style="text-align:left">Account ID</th>
             <th style="text-align:left" class="broker-hide-tablet">Instrument</th>
-            <th class="broker-hide-tablet">Lot Size</th>
+            <th class="broker-hide-tablet">Lot Size - Qty.</th>
             <th>Brokerage (₹)</th>
             <th>Profit %</th>
             <th class="broker-hide-tablet">Password</th>
@@ -1103,7 +1269,7 @@ select option { background: var(--surface); }
         <select id="b-instrument"><option value="">Select instrument...</option></select>
       </div>
       <div class="form-group">
-        <label>Lot Size</label>
+        <label>Lot Size - Qty.</label>
         <input type="number" id="b-lot-size" placeholder="1" value="1" min="0.001" step="0.001">
       </div>
       <div class="form-group">
@@ -1139,9 +1305,10 @@ select option { background: var(--surface); }
     <div class="install-banner-title">Install Badla Board</div>
     <div class="install-banner-text">Add the app to your home screen for faster access.</div>
   </div>
-  <div>
+  <div style="display:flex;gap:2px;flex-shrink:0">
     <button id="install-pwa-btn">Install</button>
-    <button id="dismiss-pwa-btn" class="install-banner-close">X</button>
+    <button id="dismiss-pwa-btn" class="install-banner-close">✕</button>
+  </div>
   </div>
 </div>
 
@@ -1162,6 +1329,40 @@ let currentUser  = localStorage.getItem('badla_user');
 let editingDealId = null;
 let editingBrokerId = null;
 let orderModalInstrument = null; // pre-fill from dashboard card
+function applyFontSize(size) {
+  const scale = size / 13; // 13 is the base font size
+  document.getElementById('app').style.zoom = scale;
+  document.getElementById('font-size-label').textContent = size + 'px';
+  localStorage.setItem('badla_font_size', size);
+}
+function toggleProfileMenu(e) {
+  e.stopPropagation();
+  e.preventDefault();
+  const menu = document.getElementById('profile-menu');
+  const isOpen = menu.style.display === 'block';
+  if (isOpen) {
+    menu.style.display = 'none';
+    document.removeEventListener('click', outsideProfileClick);
+  } else {
+    menu.style.display = 'block';
+    document.getElementById('profile-username').textContent = currentUser;
+    setTimeout(() => document.addEventListener('click', outsideProfileClick), 100);
+  }
+}
+function outsideProfileClick(e) {
+  const menu = document.getElementById('profile-menu');
+  const btn  = document.getElementById('profile-btn');
+  if (!menu || !btn) return;
+  if (!menu.contains(e.target) && !btn.contains(e.target)) {
+    menu.style.display = 'none';
+    document.removeEventListener('click', outsideProfileClick);
+  }
+}
+function applyFontSize(size) {
+  document.body.style.fontSize = size + 'px';
+  document.getElementById('font-size-label').textContent = size + 'px';
+  localStorage.setItem('badla_font_size', size);
+}
 
 // ── Alert System ───────────────────────────────────────────────────────────
 let priceAlerts = {};
@@ -1400,6 +1601,8 @@ function clearAuth() {
 }
 async function doLogout() { await apiFetch('/api/logout',{method:'POST'}); clearAuth(); location.reload(); }
 async function startApp() {
+  const savedFont = localStorage.getItem('badla_font_size');
+  if (savedFont) { applyFontSize(savedFont); document.getElementById('font-size-slider').value = savedFont; }
   document.getElementById('login-screen').style.display='none';
   document.getElementById('app').style.display='block';
   document.getElementById('username-display').textContent=currentUser;
@@ -1456,25 +1659,136 @@ async function loadDashboard() {
   renderDashboard();
 }
 function renderDashboard() {
-  const grid=document.getElementById('dash-grid'), empty=document.getElementById('dash-empty');
-  if (dashboardInstruments.length===0) { grid.innerHTML=''; grid.appendChild(empty); empty.style.display='block'; return; }
-  empty.style.display='none';
-  [...grid.querySelectorAll('.dash-card')].forEach(card=>{ if (!dashboardInstruments.includes(card.dataset.name)) card.remove(); });
-  dashboardInstruments.forEach(name=>{ if (document.getElementById('dashcard-'+slugify(name))) return; grid.appendChild(buildDashCard(name,prices[name])); });
-  updateAllAlertButtons(); updateOrderButtons();
+  const grid  = document.getElementById('dash-grid');
+  const empty = document.getElementById('dash-empty');
+  const tblContainer = document.getElementById('dash-tbl-container');
+  const tblEmpty     = document.getElementById('dash-table-empty');
+
+  if (dashboardInstruments.length === 0) {
+    grid.innerHTML = ''; grid.appendChild(empty); empty.style.display = 'block';
+    tblContainer.style.display = 'none'; tblEmpty.style.display = 'block';
+    return;
+  }
+
+  empty.style.display = 'none';
+  tblEmpty.style.display = 'none';
+  tblContainer.style.display = 'block';
+
+  // Mobile cards — only add missing ones
+  [...grid.querySelectorAll('.dash-card')].forEach(card => {
+    if (!dashboardInstruments.includes(card.dataset.name)) card.remove();
+  });
+  dashboardInstruments.forEach(name => {
+    if (!document.getElementById('dashcard-' + slugify(name))) {
+      grid.appendChild(buildDashCard(name, prices[name]));
+    }
+  });
+
+  // Desktop table — full re-render
+  renderDashTable();
+  updateAllAlertButtons();
+  updateOrderButtons();
+}
+function renderDashRowHTML(name, p) {
+  const displayName = p ? (p.displayName || p.name) : name;
+  const duty        = p ? (p.duty ?? '15') : '—';
+  const badlaBUY    = p ? fmt(p.badlaBUY)  : '--';
+  const badlaSELL   = p ? fmt(p.badlaSELL) : '--';
+  const badlaLTP    = p ? fmt(p.badlaLTP)  : '--';
+  const mcxBid      = p?.mcx   ? fmt(p.mcx.bid)        : '--';
+  const mcxAsk      = p?.mcx   ? fmt(p.mcx.ask)        : '--';
+  const mcxBidSub   = p?.comex?.convertedBID ? fmt(p.comex.convertedBID) : '';
+  const mcxAskSub   = p?.comex?.convertedASK ? fmt(p.comex.convertedASK) : '';
+  const comexBid    = p?.comex ? fmtComex(p.comex.bid) : '--';
+  const comexAsk    = p?.comex ? fmtComex(p.comex.ask) : '--';
+  const comexBidSub = p?.comex?.convertedBID ? fmt(p.comex.convertedBID) : '';
+  const comexAskSub = p?.comex?.convertedASK ? fmt(p.comex.convertedASK) : '';
+  const dgcxBid     = p?.dgcx  ? fmt(p.dgcx.bid ?? p.dgcx.ltp) : '--';
+  const dgcxAsk     = p?.dgcx  ? fmt(p.dgcx.ask ?? p.dgcx.ltp) : '--';
+  const dgcxBidSub  = p?.dgcx?.convertedBID ? p.dgcx.convertedBID : '';
+  const dgcxAskSub  = p?.dgcx?.convertedASK ? p.dgcx.convertedASK : '';
+  const hasOrder    = orders.some(o => o.instrument === name && o.status === 'pending');
+  const hasAlert    = !!getAlertForInstrument(name)?.active;
+  const uid         = slugify(name);
+
+  return `<tr id="dashtrow-${uid}" data-name="${name}">
+    <td style="text-align:left">
+      <div style="font-size:11px;font-weight:700;color:var(--text);max-width:240px;overflow:hidden;text-overflow:ellipsis">${displayName}</div>
+    </td>
+    <td style="color:var(--muted)">${duty}</td>
+    <td class="${colorClass(p?.badlaBUY)}" style="font-weight:700">${badlaBUY}</td>
+    <td class="${colorClass(p?.badlaSELL)}" style="font-weight:700">${badlaSELL}</td>
+    <td class="${colorClass(p?.badlaLTP)}" style="font-weight:700">${badlaLTP}</td>
+    <td>
+      <div style="font-weight:600">${mcxBid}</div>
+      ${mcxBidSub ? `<div style="font-size:9px;color:var(--muted)">${mcxBidSub}</div>` : ''}
+    </td>
+    <td>
+      <div style="font-weight:600">${mcxAsk}</div>
+      ${mcxAskSub ? `<div style="font-size:9px;color:var(--muted)">${mcxAskSub}</div>` : ''}
+    </td>
+    <td>
+      <div style="font-weight:600">${comexBid}</div>
+      ${comexBidSub ? `<div style="font-size:9px;color:var(--muted)">${comexBidSub}</div>` : ''}
+    </td>
+    <td>
+      <div style="font-weight:600">${comexAsk}</div>
+      ${comexAskSub ? `<div style="font-size:9px;color:var(--muted)">${comexAskSub}</div>` : ''}
+    </td>
+    <td>
+      <div style="font-weight:600">${dgcxBid}</div>
+      ${dgcxBidSub ? `<div style="font-size:9px;color:var(--muted)">${dgcxBidSub}</div>` : ''}
+    </td>
+    <td>
+      <div style="font-weight:600">${dgcxAsk}</div>
+      ${dgcxAskSub ? `<div style="font-size:9px;color:var(--muted)">${dgcxAskSub}</div>` : ''}
+    </td>
+    <td>
+      <div class="dash-tbl-actions">
+        <button class="card-order-btn ${hasOrder ? 'has-order' : ''}"
+          onclick="openOrderModal('${name}')" title="Place order">📋</button>
+        <button class="card-alert-btn ${hasAlert ? 'active' : ''}"
+          onclick="toggleInstrumentAlert('${name}',this)" title="Set alert">🔔</button>
+        <button class="card-remove"
+          onclick="removeDashInstr('${name}')" title="Remove">🗑</button>
+      </div>
+    </td>
+  </tr>`;
+}
+
+function renderDashTable() {
+  const tbody = document.getElementById('dash-tbody');
+  if (!tbody) return;
+  tbody.innerHTML = dashboardInstruments.map(name => renderDashRowHTML(name, prices[name])).join('');
 }
 function buildDashCard(name,p) {
   const card=document.createElement('div'); card.className='dash-card'; card.id='dashcard-'+slugify(name); card.dataset.name=name;
   card.innerHTML=dashCardHTML(name,p); return card;
 }
-function dashCardHTML(name,p) {
-  const displayName=p?(p.displayName||p.name):name, type=p?p.type:'—', bc=badgeClass(type);
-  const badlaBUY=p?p.badlaBUY:'--', badlaSELL=p?p.badlaSELL:'--', badlaLTP=p?p.badlaLTP:'--';
-  const mcxBid=p?.mcx?fmt(p.mcx.bid):'--', mcxAsk=p?.mcx?fmt(p.mcx.ask):'--', mcxLtp=p?.mcx?fmt(p.mcx.ltp):'--';
-  const convComex=p?.mcx?.convertedComex?fmt(p.mcx.convertedComex):'--';
-  const comexBid=p?.comex?fmt(p.comex.bid):'--', comexAsk=p?.comex?fmt(p.comex.ask):'--', comexLtp=p?.comex?fmt(p.comex.ltp):'--';
-  const dgcxLtp=p?.dgcx?fmt(p.dgcx.ltp):'--', dgcxConv=p?.dgcx?p.dgcx.converted:'--';
-  const hasOrder = orders.some(o => o.instrument===name && o.status==='pending');
+function dashCardHTML(name, p) {
+  const displayName = p ? (p.displayName || p.name) : name;
+  const type = p ? p.type : '—', bc = badgeClass(type);
+  const badlaBUY = p ? fmt(p.badlaBUY) : '--';
+  const badlaSELL = p ? fmt(p.badlaSELL) : '--';
+  const badlaLTP = p ? fmt(p.badlaLTP) : '--';
+  const mcxBid = p?.mcx ? fmt(p.mcx.bid) : '--';
+  const mcxAsk = p?.mcx ? fmt(p.mcx.ask) : '--';
+  const mcxLtp = p?.mcx ? fmt(p.mcx.ltp) : '--';
+  const convComexLTP = p?.comex?.convertedLTP ? fmt(p.comex.convertedLTP) : '--';
+  const convComexBID = p?.comex?.convertedBID ? fmt(p.comex.convertedBID) : '--';
+  const convComexASK = p?.comex?.convertedASK ? fmt(p.comex.convertedASK) : '--';
+  const comexBid = p?.comex ? fmtComex(p.comex.bid) : '--';
+  const comexAsk = p?.comex ? fmtComex(p.comex.ask) : '--';
+  const comexLtp = p?.comex ? fmtComex(p.comex.ltp) : '--';
+  const dgcxBid  = p?.dgcx  ? fmt(p.dgcx.bid ?? p.dgcx.ltp) : '--';
+  const dgcxAsk  = p?.dgcx  ? fmt(p.dgcx.ask ?? p.dgcx.ltp) : '--';
+  const dgcxLtp  = p?.dgcx  ? fmt(p.dgcx.ltp) : '--';
+  const dgcxConvLTP = p?.dgcx?.convertedLTP ? p.dgcx.convertedLTP : '--';
+  const dgcxConvBID = p?.dgcx?.convertedBID ? p.dgcx.convertedBID : '--';
+  const dgcxConvASK = p?.dgcx?.convertedASK ? p.dgcx.convertedASK : '--';
+  const hasOrder = orders.some(o => o.instrument === name && o.status === 'pending');
+  const uid = slugify(name); // unique prefix for tab IDs
+
   return `
     <div class="card-top">
       <div style="min-width:0">
@@ -1482,54 +1796,143 @@ function dashCardHTML(name,p) {
         <span class="card-type-badge badge ${bc}">${type}</span>
       </div>
       <div class="card-top-actions">
-        <button class="card-order-btn ${hasOrder?'has-order':''}" onclick="openOrderModal('${name}')" title="Place order">📋</button>
+        <button class="card-order-btn ${hasOrder ? 'has-order' : ''}" onclick="openOrderModal('${name}')" title="Place order">📋</button>
         <button class="card-alert-btn" onclick="toggleInstrumentAlert('${name}',this)" title="Set price alert">🔔</button>
         <button class="card-remove" onclick="removeDashInstr('${name}')" title="Remove">✕</button>
       </div>
     </div>
+
     <div class="card-badla">
       <div class="badla-cell"><div class="badla-label">BUY</div><div class="badla-val ${colorClass(badlaBUY)}">${badlaBUY}</div></div>
       <div class="badla-cell"><div class="badla-label">SELL</div><div class="badla-val ${colorClass(badlaSELL)}">${badlaSELL}</div></div>
       <div class="badla-cell"><div class="badla-label">LTP</div><div class="badla-val ${colorClass(badlaLTP)}">${badlaLTP}</div></div>
     </div>
-    <div class="card-prices">
-      <div class="price-block"><div class="price-block-label">MCX</div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:${dgcxLtp !== '--' ? '6px' : '0'}">
+
+      <div style="border:1px solid var(--border);border-radius:6px;padding:7px 10px">
+        <div style="font-size:9px;font-weight:700;color:var(--accent);letter-spacing:.06em;margin-bottom:5px">MCX</div>
         <div class="price-row"><span class="price-key">BID</span><span class="price-val">${mcxBid}</span></div>
         <div class="price-row"><span class="price-key">ASK</span><span class="price-val">${mcxAsk}</span></div>
         <div class="price-row"><span class="price-key">LTP</span><span class="price-val">${mcxLtp}</span></div>
-        <div class="price-sub">Conv: ${convComex}</div>
       </div>
-      <div class="price-block"><div class="price-block-label">COMEX</div>
+
+      <div style="border:1px solid var(--border);border-radius:6px;padding:7px 10px">
+        <div style="font-size:9px;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-bottom:5px">CONV</div>
+        <div class="price-row"><span class="price-key">BID</span><span class="price-val">${convComexBID}</span></div>
+        <div class="price-row"><span class="price-key">ASK</span><span class="price-val">${convComexASK}</span></div>
+        <div class="price-row"><span class="price-key">LTP</span><span class="price-val">${convComexLTP}</span></div>
+      </div>
+
+      <div style="border:1px solid var(--border);border-radius:6px;padding:7px 10px">
+        <div style="font-size:9px;font-weight:700;color:var(--gold);letter-spacing:.06em;margin-bottom:5px">COMEX</div>
         <div class="price-row"><span class="price-key">BID</span><span class="price-val">${comexBid}</span></div>
         <div class="price-row"><span class="price-key">ASK</span><span class="price-val">${comexAsk}</span></div>
         <div class="price-row"><span class="price-key">LTP</span><span class="price-val">${comexLtp}</span></div>
       </div>
-      <div class="price-block"><div class="price-block-label">DGCX</div>
-        <div class="price-row"><span class="price-key">LTP</span><span class="price-val">${dgcxLtp}</span></div>
-        <div class="price-sub">10k/DG: ${dgcxConv}</div>
-      </div>
-    </div>`;
+
+    </div>
+
+${dgcxLtp !== '--' ? `
+      <div style="border:1px solid var(--border);border-radius:6px;padding:7px 10px">
+        <div style="font-size:9px;font-weight:700;color:#6cf;letter-spacing:.06em;margin-bottom:5px">DGCX</div>
+        <div style="display:flex;gap:12px">
+          <div style="display:flex;align-items:baseline;gap:5px">
+            <span class="price-key">BID</span><span class="price-val">${dgcxBid}</span><span style="font-size:9px;color:var(--muted)">${dgcxConvBID}</span>
+          </div>
+          <div style="display:flex;align-items:baseline;gap:5px">
+            <span class="price-key">ASK</span><span class="price-val">${dgcxAsk}</span><span style="font-size:9px;color:var(--muted)">${dgcxConvASK}</span>
+          </div>
+          <div style="display:flex;align-items:baseline;gap:5px">
+            <span class="price-key">LTP</span><span class="price-val">${dgcxLtp}</span><span style="font-size:9px;color:var(--muted)">${dgcxConvLTP}</span>
+        </div>
+      </div>` : ''}`
 }
-function updateDashCard(p,prev) {
-  const card=document.getElementById('dashcard-'+slugify(p.name));
-  if (!card) {
-    if (dashboardInstruments.includes(p.name)) {
-      document.getElementById('dash-empty').style.display='none';
-      document.getElementById('dash-grid').appendChild(buildDashCard(p.name,p));
-      updateAllAlertButtons(); updateOrderButtons();
-    }
-    return;
+function updateDashCard(p, prev) {
+  const dir = prev && parseFloat(p.badlaLTP) > parseFloat(prev.badlaLTP) ? 'green' : 'red';
+
+  // Mobile card
+  const card = document.getElementById('dashcard-' + slugify(p.name));
+  if (card) {
+    card.innerHTML = dashCardHTML(p.name, p);
+    card.classList.remove('flash-green', 'flash-red');
+    void card.offsetWidth;
+    card.classList.add(`flash-${dir}`);
+  } else if (dashboardInstruments.includes(p.name)) {
+    document.getElementById('dash-empty').style.display = 'none';
+    document.getElementById('dash-grid').appendChild(buildDashCard(p.name, p));
   }
-  card.innerHTML=dashCardHTML(p.name,p);
-  const dir=prev&&parseFloat(p.badlaLTP)>parseFloat(prev.badlaLTP)?'green':'red';
-  card.classList.remove('flash-green','flash-red'); void card.offsetWidth; card.classList.add(`flash-${dir}`);
-  updateInstrumentAlertButtons(); updateOrderButtons();
+
+  // Desktop table row — cell-by-cell flash
+const trow = document.getElementById('dashtrow-' + slugify(p.name));
+if (trow) {
+  const prev_p = prev; // already have prev from outer scope
+
+  function flashCell(td, newHTML, newClass, oldVal, newVal) {
+    td.innerHTML = newHTML;
+    td.className = newClass;
+    if (oldVal === undefined || oldVal === null) return;
+    const changed = parseFloat(newVal) !== parseFloat(oldVal);
+    if (!changed) return;
+    const up = parseFloat(newVal) > parseFloat(oldVal);
+    td.style.animation = 'none';
+    void td.offsetHeight; // reflow
+    td.style.animation = '';
+    td.classList.add(up ? 'cell-flash-green' : 'cell-flash-red');
+    setTimeout(() => td.classList.remove('cell-flash-green', 'cell-flash-red'), 800);
+  }
+
+  const cells = trow.cells;
+  // [0]=symbol [1]=duty [2]=badlaBUY [3]=badlaSELL [4]=badlaLTP
+  // [5]=mcxBid [6]=mcxAsk [7]=comexBid [8]=comexAsk
+  // [9]=dgcxBid [10]=dgcxAsk [11]=actions
+
+  flashCell(cells[2],
+    fmt(p.badlaBUY), colorClass(p.badlaBUY),
+    prev_p?.badlaBUY, p.badlaBUY);
+
+  flashCell(cells[3],
+    fmt(p.badlaSELL), colorClass(p.badlaSELL),
+    prev_p?.badlaSELL, p.badlaSELL);
+
+  flashCell(cells[4],
+    fmt(p.badlaLTP), colorClass(p.badlaLTP),
+    prev_p?.badlaLTP, p.badlaLTP);
+
+  flashCell(cells[5],
+    `<div>${fmt(p.mcx?.bid)}</div>${p.comex?.convertedBID ? `<div style="font-size:11px;color:var(--muted)">${fmt(p.comex.convertedBID)}</div>` : ''}`,
+    '', prev_p?.mcx?.bid, p.mcx?.bid);
+
+  flashCell(cells[6],
+    `<div>${fmt(p.mcx?.ask)}</div>${p.comex?.convertedASK ? `<div style="font-size:11px;color:var(--muted)">${fmt(p.comex.convertedASK)}</div>` : ''}`,
+    '', prev_p?.mcx?.ask, p.mcx?.ask);
+
+  flashCell(cells[7],
+    fmtComex(p.comex?.bid), '',
+    prev_p?.comex?.bid, p.comex?.bid);
+
+  flashCell(cells[8],
+    fmtComex(p.comex?.ask), '',
+    prev_p?.comex?.ask, p.comex?.ask);
+
+  flashCell(cells[9],
+    `<div>${fmt(p.dgcx?.bid ?? p.dgcx?.ltp)}</div>${p.dgcx?.convertedBID ? `<div style="font-size:11px;color:var(--muted)">${p.dgcx.convertedBID}</div>` : ''}`,
+    '', prev_p?.dgcx?.bid ?? prev_p?.dgcx?.ltp, p.dgcx?.bid ?? p.dgcx?.ltp);
+
+  flashCell(cells[10],
+    `<div>${fmt(p.dgcx?.ask ?? p.dgcx?.ltp)}</div>${p.dgcx?.convertedASK ? `<div style="font-size:11px;color:var(--muted)">${p.dgcx.convertedASK}</div>` : ''}`,
+    '', prev_p?.dgcx?.ask ?? prev_p?.dgcx?.ltp, p.dgcx?.ask ?? p.dgcx?.ltp);;
+}
+
+  updateInstrumentAlertButtons();
+  updateOrderButtons();
 }
 async function removeDashInstr(name) {
-  await apiFetch(`/api/dashboard/${encodeURIComponent(name)}`,{method:'DELETE'});
-  dashboardInstruments=dashboardInstruments.filter(n=>n!==name);
-  const card=document.getElementById('dashcard-'+slugify(name)); if (card) card.remove();
-  if (dashboardInstruments.length===0) renderDashboard();
+  await apiFetch(`/api/dashboard/${encodeURIComponent(name)}`, { method: 'DELETE' });
+  dashboardInstruments = dashboardInstruments.filter(n => n !== name);
+  const card = document.getElementById('dashcard-' + slugify(name)); if (card) card.remove();
+  const trow = document.getElementById('dashtrow-' + slugify(name)); if (trow) trow.remove();
+  if (dashboardInstruments.length === 0) renderDashboard();
 }
 function updateOrderButtons() {
   dashboardInstruments.forEach(name=>{
@@ -1561,6 +1964,10 @@ async function addDashInstr(name) {
   if (item) { item.classList.add('already'); const btn=item.querySelector('.instr-add-btn'); if(btn) btn.outerHTML='<span class="instr-added-tag">✓ Added</span>'; }
   document.getElementById('dash-empty').style.display='none';
   document.getElementById('dash-grid').appendChild(buildDashCard(name,prices[name]));
+  document.getElementById('dash-tbl-container').style.display = 'block';
+  document.getElementById('dash-table-empty').style.display = 'none';
+  const tbody = document.getElementById('dash-tbody');
+  if (tbody) tbody.insertAdjacentHTML('beforeend', renderDashRowHTML(name, prices[name]));
 }
 function flashRow(name,prev,curr) {
   const row=document.getElementById('row-'+slugify(name)); if (!row||!prev) return;
@@ -1570,31 +1977,66 @@ function flashRow(name,prev,curr) {
 function slugify(s) { return s.replace(/[^a-z0-9]/gi,'_'); }
 function badgeClass(type) { const m={GOLD:'gold',SILVER:'silver',CRUDE:'crude',COPPER:'copper',GAS:'gas'}; return 'badge-'+(m[type]||'other'); }
 function fmt(v) { return (v===null||v===undefined)?'--':parseFloat(v).toFixed(2); }
-function fmtComex(v) { return (v===null||v===undefined)?'--':parseFloat(v).toFixed(5); }
+function fmtComex(v) {
+  if (v === null || v === undefined) return '--';
+  const n = parseFloat(v);
+  if (isNaN(n)) return '--';
+  return n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 5, useGrouping: false });
+}
 function colorClass(v) { return parseFloat(v)>=0?'pos':'neg'; }
 
 function renderPriceRow(d) {
-  const tbody=document.getElementById('prices-tbody'), rowId='row-'+slugify(d.name);
-  let row=document.getElementById(rowId);
-  const search=document.getElementById('search').value.toLowerCase();
-  const show=(filter==='ALL'||d.type===filter)&&d.name.toLowerCase().includes(search);
-  if (!show) { if(row) row.style.display='none'; return; }
-  const html=`
-    <td><div class="inst-name">${d.displayName||d.name}</div><div class="inst-type">${d.type}</div></td>
+  const tbody = document.getElementById('prices-tbody'), rowId = 'row-' + slugify(d.name);
+  let row = document.getElementById(rowId);
+  const search = document.getElementById('search').value.toLowerCase();
+  const show = (filter === 'ALL' || d.type === filter) && d.name.toLowerCase().includes(search);
+  if (!show) { if (row) row.style.display = 'none'; return; }
+
+  // MCX: INR prices, sub = converted COMEX in INR
+  const mcxBid    = d.mcx ? fmt(d.mcx.bid) : '--';
+  const mcxAsk    = d.mcx ? fmt(d.mcx.ask) : '--';
+  const mcxBidSub = d.mcx?.convertedComexBid  ? fmt(d.mcx.convertedComexBid)  : (d.mcx?.convertedComex ? fmt(d.mcx.convertedComex) : '');
+  const mcxAskSub = d.mcx?.convertedComexAsk  ? fmt(d.mcx.convertedComexAsk)  : '';
+  const convComex = d.mcx?.convertedComex      ? fmt(d.mcx.convertedComex)     : '--';
+
+  // DGCX: USD prices, sub = converted INR (10k/DG style)
+  const dgcxLtp    = d.dgcx ? fmt(d.dgcx.ltp)                    : '--';
+  const dgcxBid    = d.dgcx ? fmt(d.dgcx.bid ?? d.dgcx.ltp)      : '--';
+  const dgcxAsk    = d.dgcx ? fmt(d.dgcx.ask ?? d.dgcx.ltp)      : '--';
+  const dgcxBidSub = d.dgcx?.convertedBid ? fmt(d.dgcx.convertedBid) : (d.dgcx?.converted ? d.dgcx.converted : '');
+  const dgcxAskSub = d.dgcx?.convertedAsk ? fmt(d.dgcx.convertedAsk) : (d.dgcx?.converted ? d.dgcx.converted : '');
+  const dgcxConv   = d.dgcx?.converted ?? '--';
+
+  const sub = (val) => val ? `<div class="price-sub-line">${val}</div>` : '';
+
+  const html = `
+    <td>
+      <div class="inst-name">${d.displayName || d.name}</div>
+      <div class="inst-type">${d.type}</div>
+    </td>
     <td><span class="badge ${badgeClass(d.type)}">${d.type}</span></td>
     <td class="${colorClass(d.badlaBUY)}">${fmt(d.badlaBUY)}</td>
     <td class="${colorClass(d.badlaSELL)}">${fmt(d.badlaSELL)}</td>
     <td class="${colorClass(d.badlaLTP)}">${fmt(d.badlaLTP)}</td>
-    <td class="muted">${d.mcx?fmt(d.mcx.bid):'--'}</td>
-    <td class="muted">${d.mcx?fmt(d.mcx.ask):'--'}</td>
-    <td>${d.mcx?.convertedComex?fmt(d.mcx.convertedComex):'--'}</td>
-    <td class="muted">${d.comex?fmt(d.comex.bid):'--'}</td>
-    <td class="muted">${d.comex?fmt(d.comex.ask):'--'}</td>
-    <td class="muted">${d.dgcx?fmt(d.dgcx.ltp):'--'}</td>
-    <td>${d.dgcx?d.dgcx.converted:'--'}</td>
+    <td class="muted">
+      <div>${mcxBid}</div>${sub(mcxBidSub)}
+    </td>
+    <td class="muted">
+      <div>${mcxAsk}</div>${sub(mcxAskSub)}
+    </td>
+    <td>${convComex}</td>
+    <td class="muted">${d.comex ? fmtComex(d.comex.bid) : '--'}</td>
+    <td class="muted">${d.comex ? fmtComex(d.comex.ask) : '--'}</td>
+    <td class="muted">
+      <div>${dgcxBid}</div>${sub(dgcxBidSub)}
+    </td>
+    <td class="muted">
+      <div>${dgcxAsk}</div>${sub(dgcxAskSub)}
+    </td>
     <td class="muted">${new Date(d.timestamp).toLocaleTimeString()}</td>`;
-  if (row) { row.innerHTML=html; row.style.display=''; }
-  else { row=document.createElement('tr'); row.id=rowId; row.innerHTML=html; tbody.appendChild(row); }
+
+  if (row) { row.innerHTML = html; row.style.display = ''; }
+  else { row = document.createElement('tr'); row.id = rowId; row.innerHTML = html; tbody.appendChild(row); }
 }
 function renderPrices() { Object.values(prices).forEach(renderPriceRow); }
 function setFilter(f,btn) {
@@ -1905,9 +2347,10 @@ function getLivePnl(deal) {
     comexNow=deal.comex.side==='SELL'?p.comex.bid:p.comex.ask;
     if (comexNow!=null) {
       const raw=deal.comex.side==='SELL'?(parseFloat(deal.comex.entryPrice)-parseFloat(comexNow)):(parseFloat(comexNow)-parseFloat(deal.comex.entryPrice));
+      const convRate = raw >= 0 ? 88.88 : 89;
       const broker=deal.comex.brokerId?brokers.find(b=>b.id===parseInt(deal.comex.brokerId)):null;
       const share=broker?(broker.profitShare/100):1;
-      comexPnl=(raw*qty*rate-brok)*share;
+      comexPnl=(raw*qty*convRate-brok)*share;
     }
   }
   if (deal.dgcx&&p?.dgcx) {
@@ -1915,9 +2358,10 @@ function getLivePnl(deal) {
     dgcxNow=p.dgcx.ltp;
     if (dgcxNow!=null) {
       const raw=deal.dgcx.side==='SELL'?(parseFloat(deal.dgcx.entryPrice)-parseFloat(dgcxNow)):(parseFloat(dgcxNow)-parseFloat(deal.dgcx.entryPrice));
+      const convRate = raw >= 0 ? 88.88 : 89;
       const broker=deal.dgcx.brokerId?brokers.find(b=>b.id===parseInt(deal.dgcx.brokerId)):null;
       const share=broker?(broker.profitShare/100):1;
-      dgcxPnl=(raw*qty*rate-brok)*share;
+      dgcxPnl=(raw*qty*convRate-brok)*share;
     }
   }
   return {mcxPnl,comexPnl,dgcxPnl,total:(mcxPnl||0)+(comexPnl||0)+(dgcxPnl||0),mcxNow,comexNow,dgcxNow};
