@@ -1,12 +1,12 @@
 {
-    "2026-05-27 09:39:08": {
-        "timestamp": "2026-05-27 09:39:08",
+    "2026-06-02 13:37:01": {
+        "timestamp": "2026-06-02 13:37:01",
         "instrument_id": "69df6f0cbab8e09015512d22",
         "instrument_name": "CRUDE(COMEXMAY-MCXMAY)@MAYDG",
         "badla_type": "CRUDE",
-        "room_id": "aSAFx",
+        "room_id": "YWhWN",
         "raw_data": {
-            "roomId": "aSAFx",
+            "roomId": "YWhWN",
             "data": [
                 {
                     "mode": "XL",

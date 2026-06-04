@@ -288,10 +288,12 @@ async function doLogout() { await apiFetch('/api/logout',{method:'POST'}); clear
 async function startApp() {
   const savedFont = localStorage.getItem('badla_font_size');
   if (savedFont) { applyFontSize(savedFont); document.getElementById('font-size-slider').value = savedFont; }
-  document.getElementById('login-screen').style.display='none';
-  document.getElementById('app').style.display='block';
-  document.getElementById('username-display').textContent=currentUser;
-  await loadBrokers(); loadDashboard(); loadDeals(); loadOrders(); connectWS(); initAlerts();
+  document.getElementById('login-screen').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+  document.getElementById('username-display').textContent = currentUser;
+  await loadBrokers();
+  renderBrokerSummary(); // ← add this
+  loadDashboard(); loadDeals(); loadOrders(); connectWS(); initAlerts();
 }
 async function apiFetch(url, opts={}) {
   opts.headers={...(opts.headers||{}),'x-session-token':sessionToken};
@@ -729,13 +731,13 @@ function setFilter(f,btn) {
   document.querySelectorAll('#page-prices .filter-btn').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active'); renderPrices();
 }
-function showPage(name,btn) {
-  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
-  document.querySelectorAll('.nav-btn[data-page]').forEach(b=>b.classList.toggle('active', b.dataset.page===name));
-  document.getElementById('page-'+name).classList.add('active');
-  if (name==='deals')   renderDeals();
-  if (name==='orders')  renderOrders();
-  if (name==='brokers') { populateBrokerInstrumentSelect(); renderBrokers(); }
+function showPage(name, btn) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-btn[data-page]').forEach(b => b.classList.toggle('active', b.dataset.page === name));
+  document.getElementById('page-' + name).classList.add('active');
+  if (name === 'deals')   renderDeals();
+  if (name === 'orders')  renderOrders();
+  if (name === 'brokers') { renderBrokers(); }  // renderBrokers() calls renderBrokerSummary() internally
 }
 function populateAllInstrumentSelects() {
   populateInstrumentSelect('d-instrument');
@@ -754,8 +756,11 @@ function populateLegBrokerSelect(selId, selectedBrokerId) {
   brokers.forEach(b => {
     const opt = document.createElement('option');
     opt.value = b.id;
-    const instrList = (b.instruments||[]).map(i=>i.instrument.split('(')[0].trim()).join(', ');
-    opt.textContent = `${b.brokerName}${b.accountId?' ['+b.accountId+']':''} (${instrList||'no instruments'})`;
+    // Use first instrument name if available, else fallback
+    const instrLabel = b.instruments?.length
+      ? b.instruments.map(i => i.name).join(', ')
+      : 'no instruments';
+    opt.textContent = `${b.brokerName}${b.accountId ? ' [' + b.accountId + ']' : ''} (${instrLabel})`;
     sel.appendChild(opt);
   });
   if (selectedBrokerId) sel.value = selectedBrokerId;
@@ -763,27 +768,38 @@ function populateLegBrokerSelect(selId, selectedBrokerId) {
 function autofillLotFromBroker(leg) {
   const brokerId = document.getElementById(`o-${leg}-broker`).value;
   if (!brokerId) return;
-  const broker = brokers.find(b => b.id == brokerId);
-  if (!broker) return;
-  const instrument = document.getElementById('o-instrument')?.value;
-  // find matching instrument row, fall back to first
-  const instrRow = (broker.instruments||[]).find(i => i.instrument === instrument)
-                || (broker.instruments||[])[0];
-  if (instrRow) {
-    document.getElementById(`o-${leg}-qty`).value = instrRow.lotSize;
+  const broker = brokers.find(b => b.id == brokerId); if (!broker) return;
+
+  const instrName = document.getElementById('o-instrument')?.value || '';
+  const matchedInstr = broker.instruments?.find(i =>
+    i.name.toLowerCase().includes(instrName.toLowerCase()) ||
+    instrName.toLowerCase().includes(i.name.toLowerCase())
+  ) || broker.instruments?.[0];
+
+  if (matchedInstr) {
+    document.getElementById(`o-${leg}-qty`).value = matchedInstr.maxLots;
   }
 }
 function autofillLegBroker(leg) {
-  const prefix = leg==='mcx'?'d-mcx':leg==='comex'?'d-comex':'d-dgcx';
+  const prefix = leg === 'mcx' ? 'd-mcx' : leg === 'comex' ? 'd-comex' : 'd-dgcx';
   const brokerId = document.getElementById(`${prefix}-broker`).value; if (!brokerId) return;
   const b = brokers.find(x => x.id === parseInt(brokerId)); if (!b) return;
-  const instrument = document.getElementById('d-instrument')?.value;
-  const instrRow = (b.instruments||[]).find(i => i.instrument === instrument)
-                || (b.instruments||[])[0];
-  if (instrRow) {
-    document.getElementById(`${prefix}-qty`).value = instrRow.lotSize;
-    document.getElementById(`${prefix}-brok`).value = b.brokerage;
-    showToast(`Broker: ${b.brokerName}`, `lot size ${instrRow.lotSize}, brokerage ₹${b.brokerage}`, 'info', 2500);
+
+  // Try to match instrument by the currently selected deal instrument
+  const dealInstr = document.getElementById('d-instrument')?.value || '';
+  const matchedInstr = b.instruments?.find(i =>
+    i.name.toLowerCase().includes(dealInstr.toLowerCase()) ||
+    dealInstr.toLowerCase().includes(i.name.toLowerCase())
+  ) || b.instruments?.[0];
+
+  if (matchedInstr) {
+    document.getElementById(`${prefix}-qty`).value  = matchedInstr.maxLots;
+    document.getElementById(`${prefix}-brok`).value = matchedInstr.brokerage;
+    showToast(
+      `Broker: ${b.brokerName}`,
+      `${matchedInstr.name} — max ${matchedInstr.maxLots} lots, ₹${matchedInstr.brokerage}/lot`,
+      'info', 2500
+    );
   }
 }
 
@@ -813,11 +829,22 @@ function openOrderModal(instrumentName) {
     // Autofill default broker qty from first matching broker
     const p = prices[instrumentName];
     if (p) {
-      const b = brokers.find(x => x.instrument === instrumentName);
-      if (b) {
-        document.getElementById('o-mcx-qty').value = b.lotSize;
-        document.getElementById('o-comex-qty').value = b.lotSize;
-      }
+      const b = brokers.find(x =>
+        x.instruments?.some(i =>
+            i.name.toLowerCase().includes(instrumentName.toLowerCase()) ||
+            instrumentName.toLowerCase().includes(i.name.toLowerCase())
+        )
+    );
+    if (b) {
+        const matchedInstr = b.instruments?.find(i =>
+            i.name.toLowerCase().includes(instrumentName.toLowerCase()) ||
+            instrumentName.toLowerCase().includes(i.name.toLowerCase())
+        ) || b.instruments?.[0];
+        if (matchedInstr) {
+            document.getElementById('o-mcx-qty').value   = matchedInstr.maxLots;
+            document.getElementById('o-comex-qty').value = matchedInstr.maxLots;
+        }
+    }
       if (p.badlaLTP) document.getElementById('o-cond-value').value = parseFloat(p.badlaLTP).toFixed(2);
     }
   }
@@ -1197,21 +1224,21 @@ function openCloseModal(dealId) {
   if (deal.mcx?.qty) {
     grid.innerHTML += `
       <div class="form-group">
-        <label>MCX qty (lots) <span style="color:var(--muted);font-weight:400">/ ${deal.mcx.qty} open</span></label>
+        <label>MCX qty <span style="color:var(--muted);font-weight:400">/ ${deal.mcx.qty} open</span></label>
         <input type="number" id="c-mcx-qty" placeholder="${deal.mcx.qty}" min="0.01" step="0.01">
       </div>`;
   }
   if (deal.comex?.qty) {
     grid.innerHTML += `
       <div class="form-group">
-        <label>COMEX qty (lots) <span style="color:var(--muted);font-weight:400">/ ${deal.comex.qty} open</span></label>
+        <label>COMEX qty <span style="color:var(--muted);font-weight:400">/ ${deal.comex.qty} open</span></label>
         <input type="number" id="c-comex-qty" placeholder="${deal.comex.qty}" min="0.000001" step="0.000001">
       </div>`;
   }
   if (deal.dgcx?.qty) {
     grid.innerHTML += `
       <div class="form-group">
-        <label>DGCX qty (lots) <span style="color:var(--muted);font-weight:400">/ ${deal.dgcx.qty} open</span></label>
+        <label>DGCX qty <span style="color:var(--muted);font-weight:400">/ ${deal.dgcx.qty} open</span></label>
         <input type="number" id="c-dgcx-qty" placeholder="${deal.dgcx.qty}" min="0.000001" step="0.000001">
       </div>`;
     document.getElementById('c-dgcx-wrap').style.display = 'block';
@@ -1342,66 +1369,128 @@ async function saveEditDeal() {
   finally { btn.textContent='Save Changes'; btn.disabled=false; }
 }
 
+
 // ── Brokers ────────────────────────────────────────────────────────────────
-function renderInstrumentRows(instruments=[]) {
-  const container = document.getElementById('b-instr-rows');
-  container.innerHTML = '';
-  if (instruments.length === 0) addInstrumentRow();
-  else instruments.forEach(i => addInstrumentRow(i));
-}
+function addInstrumentRow(instr = {}) {
+  const list = document.getElementById('broker-instruments-list');
+  const div = document.createElement('div');
+  div.className = 'instr-row';
+  div.style.cssText = 'background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;margin-bottom:10px;position:relative';
 
-function addInstrumentRow(data={}) {
-  const container = document.getElementById('b-instr-rows');
-  const row = document.createElement('div');
-  row.className = 'order-leg-fields';
-  row.style.cssText = 'display:grid;grid-template-columns:1fr 80px 80px 80px 36px;gap:8px;margin-bottom:8px;align-items:end';
-  const instrOpts = Object.values(prices).map(p =>
-    `<option value="${p.name}" ${data.instrument===p.name?'selected':''}>${p.displayName||p.name}</option>`
+  const instrOptions = Object.values(prices).map(p =>
+    `<option value="${p.name}" ${instr.name === p.name ? 'selected' : ''}>${p.displayName || p.name}</option>`
   ).join('');
-  row.innerHTML = `
-    <select class="bi-instrument"><option value="">Select...</option>${instrOpts}</select>
-    <input type="number" class="bi-lotsize"  placeholder="1"   value="${data.lotSize||1}"  min="0.001" step="0.001">
-    <input type="number" class="bi-lotqty"   placeholder="100" value="${data.lotQty||''}"  min="0.001" step="0.001">
-    <input type="number" class="bi-maxlots"  placeholder="—"   value="${data.maxLots||''}" min="0.01"  step="0.01">
-    <button type="button" onclick="this.closest('div').remove()"
-      style="width:32px;height:32px;border-radius:6px;border:0.5px solid var(--border);
-             background:none;color:var(--muted);cursor:pointer;font-size:18px;line-height:1">×</button>`;
-  container.appendChild(row);
-}
 
-function getBrokerInstruments() {
-  return [...document.querySelectorAll('#b-instr-rows > div')].map(row => ({
-    instrument: row.querySelector('.bi-instrument').value,
-    lotSize:    parseFloat(row.querySelector('.bi-lotsize').value) || 1,
-    lotQty:     parseFloat(row.querySelector('.bi-lotqty').value)  || 1,
-    maxLots:    parseFloat(row.querySelector('.bi-maxlots').value) || null,
-  })).filter(i => i.instrument);
-}
+  div.innerHTML = `
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+      <select class="i-name" onchange="onInstrumentRowChange(this)" style="flex:1;padding:6px 8px;background:var(--surface);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:12px;font-weight:600;margin-right:8px">
+        <option value="">Select badla instrument...</option>
+        ${instrOptions}
+        ${instr.name && !prices[instr.name] ? `<option value="${instr.name}" selected>${instr.name}</option>` : ''}
+      </select>
+      <input type="number" class="i-maxlots" placeholder="Max lots" value="${instr.maxLots || ''}" min="1"
+        style="width:90px;padding:6px 8px;background:var(--surface);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:12px;margin-right:8px"
+        title="Max lots allowed for this instrument">
+      <button onclick="this.closest('.instr-row').remove()" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:18px;padding:0;line-height:1">✕</button>
+    </div>
 
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+      <!-- MCX LEG -->
+      <div style="border:1px solid rgba(0,255,136,0.2);border-radius:6px;padding:8px">
+        <div style="font-size:10px;font-weight:700;color:var(--accent);letter-spacing:.06em;margin-bottom:6px">MCX LEG</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+          <div>
+            <div style="font-size:9px;color:var(--muted);margin-bottom:3px">BROKER SYMBOL</div>
+            <input type="text" class="i-mcx-symbol" placeholder="e.g. GOLD24JUN" value="${instr.mcxSymbol || ''}"
+              style="width:100%;padding:5px 7px;background:var(--surface);border:1px solid var(--border);border-radius:5px;color:var(--text);font-size:11px">
+          </div>
+          <div>
+            <div style="font-size:9px;color:var(--muted);margin-bottom:3px">1 LOT = QTY</div>
+            <input type="number" class="i-mcx-lotqty" placeholder="100" value="${instr.mcxLotQty || ''}" min="0.001" step="0.001"
+              style="width:100%;padding:5px 7px;background:var(--surface);border:1px solid var(--border);border-radius:5px;color:var(--text);font-size:11px">
+          </div>
+          <div style="grid-column:1/-1">
+            <div style="font-size:9px;color:var(--muted);margin-bottom:3px">BROKERAGE / LOT (₹)</div>
+            <input type="number" class="i-mcx-brok" placeholder="45" value="${instr.mcxBrokerage || ''}" min="0" step="0.01"
+              style="width:100%;padding:5px 7px;background:var(--surface);border:1px solid var(--border);border-radius:5px;color:var(--text);font-size:11px">
+          </div>
+        </div>
+      </div>
+
+      <!-- COMEX LEG -->
+      <div style="border:1px solid rgba(255,215,0,0.2);border-radius:6px;padding:8px">
+        <div style="font-size:10px;font-weight:700;color:var(--gold);letter-spacing:.06em;margin-bottom:6px">COMEX LEG</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+          <div>
+            <div style="font-size:9px;color:var(--muted);margin-bottom:3px">BROKER SYMBOL</div>
+            <input type="text" class="i-comex-symbol" placeholder="e.g. XAUUSD" value="${instr.comexSymbol || ''}"
+              style="width:100%;padding:5px 7px;background:var(--surface);border:1px solid var(--border);border-radius:5px;color:var(--text);font-size:11px">
+          </div>
+          <div>
+            <div style="font-size:9px;color:var(--muted);margin-bottom:3px">1 LOT = QTY</div>
+            <input type="number" class="i-comex-lotqty" placeholder="1" value="${instr.comexLotQty || ''}" min="0.000001" step="0.000001"
+              style="width:100%;padding:5px 7px;background:var(--surface);border:1px solid var(--border);border-radius:5px;color:var(--text);font-size:11px">
+          </div>
+          <div style="grid-column:1/-1">
+            <div style="font-size:9px;color:var(--muted);margin-bottom:3px">BROKERAGE / LOT (₹)</div>
+            <input type="number" class="i-comex-brok" placeholder="40" value="${instr.comexBrokerage || ''}" min="0" step="0.01"
+              style="width:100%;padding:5px 7px;background:var(--surface);border:1px solid var(--border);border-radius:5px;color:var(--text);font-size:11px">
+          </div>
+        </div>
+      </div>
+    </div>`;
+
+  list.appendChild(div);
+}
+function getInstrumentsFromModal() {
+  return [...document.querySelectorAll('#broker-instruments-list .instr-row')].map(row => ({
+    name:          row.querySelector('.i-name').value.trim(),
+    maxLots:       parseFloat(row.querySelector('.i-maxlots').value) || 1,
+    mcxSymbol:     row.querySelector('.i-mcx-symbol').value.trim()    || null,
+    mcxLotQty:     parseFloat(row.querySelector('.i-mcx-lotqty').value) || 1,
+    mcxBrokerage:  parseFloat(row.querySelector('.i-mcx-brok').value)   || 0,
+    comexSymbol:   row.querySelector('.i-comex-symbol').value.trim()  || null,
+    comexLotQty:   parseFloat(row.querySelector('.i-comex-lotqty').value) || 1,
+    comexBrokerage:parseFloat(row.querySelector('.i-comex-brok').value)   || 0,
+  })).filter(i => i.name);
+}
 function openBrokerModal() {
   editingBrokerId = null;
   document.getElementById('broker-modal-title').textContent = 'Add broker account';
   document.getElementById('broker-save-btn').textContent = 'Save broker';
-  ['b-name','b-account-id','b-password','b-brokerage','b-profit-share']
-    .forEach(id => { const el=document.getElementById(id); if(el) el.value = id.includes('brok')||id.includes('profit') ? '0' : ''; });
-  renderInstrumentRows([]);
+  ['b-name','b-account-id','b-password'].forEach(id => document.getElementById(id).value = '');
+  document.getElementById('b-profit-share').value = '0';
+  document.getElementById('b-total-pnl').value = '0';
+  document.getElementById('broker-instruments-list').innerHTML = '';
+  addInstrumentRow();
   document.getElementById('broker-modal').classList.add('open');
 }
-
 function openEditBrokerModal(id) {
-  const b = brokers.find(x => x.id === id); if (!b) return;
-  editingBrokerId = id;
+  const b = brokers.find(x => x.id === parseInt(id)); 
+  if (!b) { console.error('Broker not found:', id, brokers); return; }
+  
+  editingBrokerId = parseInt(id);
   document.getElementById('broker-modal-title').textContent = 'Edit broker account';
   document.getElementById('broker-save-btn').textContent = 'Save changes';
-  document.getElementById('b-name').value         = b.brokerName;
-  document.getElementById('b-account-id').value   = b.accountId || '';
-  document.getElementById('b-password').value     = b.password  || '';
-  document.getElementById('b-brokerage').value    = b.brokerage;
-  document.getElementById('b-profit-share').value = b.profitShare;
-  renderInstrumentRows(b.instruments || []);
+  document.getElementById('b-name').value         = b.brokerName || '';
+  document.getElementById('b-account-id').value   = b.accountId  || '';
+  document.getElementById('b-password').value     = b.password   || '';
+  document.getElementById('b-profit-share').value = b.profitShare ?? 0;
+  document.getElementById('b-total-pnl').value    = b.totalPnl   ?? 0;
+
+  const list = document.getElementById('broker-instruments-list');
+  list.innerHTML = '';
+
+  console.log('Loading broker instruments:', b.instruments); // debug
+
+  if (b.instruments && b.instruments.length > 0) {
+    b.instruments.forEach(i => addInstrumentRow(i));
+  } else {
+    addInstrumentRow();
+  }
+
   document.getElementById('broker-modal').classList.add('open');
 }
-
 async function saveBroker() {
   const btn = document.getElementById('broker-save-btn');
   try {
@@ -1410,55 +1499,76 @@ async function saveBroker() {
       brokerName:  document.getElementById('b-name').value.trim(),
       accountId:   document.getElementById('b-account-id').value.trim() || null,
       password:    document.getElementById('b-password').value || null,
-      brokerage:   parseFloat(document.getElementById('b-brokerage').value) || 0,
       profitShare: parseFloat(document.getElementById('b-profit-share').value) || 0,
-      instruments: getBrokerInstruments(),
+      totalPnl:    parseFloat(document.getElementById('b-total-pnl').value) || 0,
+      instruments: getInstrumentsFromModal(),
     };
     if (!body.brokerName) return alert('Broker name is required');
     const url    = editingBrokerId ? `/api/brokers/${editingBrokerId}` : '/api/brokers';
     const method = editingBrokerId ? 'PUT' : 'POST';
-    const res = await apiFetch(url, { method, headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) });
+    const res = await apiFetch(url, { method, headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body) });
     if (!res.ok) throw new Error(await res.text());
-    await loadBrokers(); renderBrokers(); closeBrokerModal();
+    await loadBrokers();  // reload fresh from server
+    renderBrokers();
+    closeBrokerModal();
   } catch(err) { alert('Failed to save broker: ' + err.message); }
   finally { btn.textContent = editingBrokerId ? 'Save changes' : 'Save broker'; btn.disabled = false; }
 }
-async function loadBrokers() {
-  const res=await apiFetch('/api/brokers'); brokers=await res.json();
-}
 function renderBrokers() {
-  const tbody=document.getElementById('brokers-tbody'); if (!tbody) return;
-  if (brokers.length===0) {
-    tbody.innerHTML=`<tr><td colspan="9" style="text-align:center;padding:40px;color:var(--muted)">No broker accounts yet.</td></tr>`;
+  const tbody = document.getElementById('brokers-tbody'); if (!tbody) return;
+  if (!brokers.length) {
+    tbody.innerHTML = `<tr><td colspan="8" style="text-align:center;padding:40px;color:var(--muted)">No broker accounts yet.</td></tr>`;
     return;
   }
-  tbody.innerHTML=brokers.map(b=>`
+  tbody.innerHTML = brokers.map(b => {
+    const pnlShare = b.totalPnl > 0 ? (b.totalPnl * b.profitShare / 100) : null;
+    const instrCount = (b.instruments || []).length;
+    return `
     <tr class="broker-row">
-      <td style="text-align:left"><div style="font-weight:600;font-size:12px">${b.brokerName}</div></td>
-      <td style="text-align:left">${b.accountId?`<span class="acct-badge">${b.accountId}</span>`:'<span style="color:var(--muted);font-size:10px">—</span>'}</td>
-      <td style="text-align:left" class="broker-hide-tablet"><div style="font-size:11px;color:var(--text)">${b.instrument}</div></td>
-      <td class="broker-hide-tablet">${b.lotSize}</td>
-      <td>₹${parseFloat(b.brokerage).toFixed(2)}</td>
-      <td><span class="profit-badge">${b.profitShare}%</span></td>
-      <td class="broker-hide-tablet">
-        <span class="pass-hidden">${b.password?'':'—'}</span>
-        ${b.password?`<button onclick="togglePass(${b.id})" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:10px;margin-left:4px" id="passToggle-${b.id}">show</button>
-        <span id="passText-${b.id}" style="display:none;font-size:11px;color:var(--accent)">${b.password}</span>`:''}
+      <td style="text-align:left">
+        <div style="font-weight:600;font-size:12px">${b.brokerName}</div>
+        <div style="font-size:10px;color:var(--muted)">${new Date(b.createdAt).toLocaleDateString()}</div>
       </td>
-      <td class="broker-hide-tablet" style="color:var(--muted);font-size:10px">${new Date(b.createdAt).toLocaleDateString()}</td>
+      <td>${b.accountId ? `<span class="acct-badge">${b.accountId}</span>` : '<span style="color:var(--muted);font-size:10px">—</span>'}</td>
+      <td><span class="profit-badge">${b.profitShare}%</span></td>
+      <td style="font-weight:600;color:${b.totalPnl>=0?'var(--accent)':'#e24b4a'}">
+        ${b.totalPnl >= 0 ? '₹' : '−₹'}${Math.abs(b.totalPnl).toLocaleString('en-IN')}
+      </td>
+      <td style="font-weight:600;color:#ef9f27">
+        ${pnlShare !== null ? '₹' + pnlShare.toLocaleString('en-IN', {maximumFractionDigits:0}) : '—'}
+      </td>
+      <td>
+        <span class="acct-badge" style="cursor:pointer" onclick="openEditBrokerModal(${b.id})" title="Click to manage">
+          ${instrCount} instrument${instrCount!==1?'s':''}
+        </span>
+      </td>
+      <td class="broker-hide-tablet">
+        <span class="pass-hidden">${b.password ? '••••••••' : '—'}</span>
+        ${b.password ? `<button onclick="togglePass(${b.id})" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:10px;margin-left:4px" id="passToggle-${b.id}">show</button>
+        <span id="passText-${b.id}" style="display:none;font-size:11px;color:var(--accent)">${b.password}</span>` : ''}
+      </td>
       <td>
         <button class="btn btn-sm" style="background:var(--surface2);border:1px solid var(--border);color:var(--text);margin-right:4px" onclick="openEditBrokerModal(${b.id})">Edit</button>
         <button class="btn btn-sm btn-danger" onclick="deleteBroker(${b.id})">✕</button>
       </td>
-    </tr>`).join('');
+    </tr>`;
+  }).join('');
   renderBrokerSummary();
 }
 function renderBrokerSummary() {
-  const summary=document.getElementById('broker-summary'); if (!summary) return;
-  summary.innerHTML=`
+  const summary = document.getElementById('broker-summary'); if (!summary) return;
+  const totalPnl   = brokers.reduce((s, b) => s + (b.totalPnl || 0), 0);
+  const totalShare = brokers.reduce((s, b) => s + (b.totalPnl > 0 ? b.totalPnl * b.profitShare / 100 : 0), 0);
+  const avgShare   = brokers.length ? brokers.reduce((s, b) => s + b.profitShare, 0) / brokers.length : 0;
+  summary.innerHTML = `
     <div class="pnl-card"><div class="pnl-label">Total Brokers</div><div class="pnl-value">${brokers.length}</div></div>
-    <div class="pnl-card"><div class="pnl-label">Avg Brokerage</div><div class="pnl-value" style="font-size:16px">₹${brokers.length?(brokers.reduce((s,b)=>s+b.brokerage,0)/brokers.length).toFixed(0):0}</div></div>
-    <div class="pnl-card"><div class="pnl-label">Avg Profit Share</div><div class="pnl-value" style="font-size:16px">${brokers.length?(brokers.reduce((s,b)=>s+b.profitShare,0)/brokers.length).toFixed(1):0}%</div></div>`;
+    <div class="pnl-card"><div class="pnl-label">Total P&L</div><div class="pnl-value" style="color:${totalPnl>=0?'var(--accent)':'#e24b4a'};font-size:16px">
+      ${totalPnl>=0?'₹':'−₹'}${Math.abs(totalPnl).toLocaleString('en-IN')}</div></div>
+    <div class="pnl-card"><div class="pnl-label">P&L × Profit share</div><div class="pnl-value" style="color:#ef9f27;font-size:16px">₹${totalShare.toLocaleString('en-IN',{maximumFractionDigits:0})}</div></div>
+    <div class="pnl-card"><div class="pnl-label">Avg Profit Share</div><div class="pnl-value" style="font-size:16px">${avgShare.toFixed(1)}%</div></div>`;
+}
+async function loadBrokers() {
+  const res=await apiFetch('/api/brokers'); brokers=await res.json();
 }
 function togglePass(id) {
   const text=document.getElementById('passText-'+id), btn=document.getElementById('passToggle-'+id);

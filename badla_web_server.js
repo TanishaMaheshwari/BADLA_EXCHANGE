@@ -158,19 +158,27 @@ async function initDB() {
   )`);
 
   db.run(`CREATE TABLE IF NOT EXISTS brokers (
-    id              INTEGER PRIMARY KEY AUTOINCREMENT,
-    user_id         INTEGER NOT NULL,
-    broker_name     TEXT NOT NULL,
-    password        TEXT,
-    account_id      TEXT,
-    instrument      TEXT NOT NULL,
-    lot_size        REAL NOT NULL DEFAULT 1,
-    brokerage       REAL NOT NULL DEFAULT 0,
-    profit_share    REAL NOT NULL DEFAULT 0,
-    created_at      TEXT DEFAULT (datetime('now','localtime')),
+    id           INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id      INTEGER NOT NULL,
+    broker_name  TEXT NOT NULL,
+    account_id   TEXT,
+    password     TEXT,
+    profit_share REAL NOT NULL DEFAULT 0,
+    total_pnl    REAL NOT NULL DEFAULT 0,
+    created_at   TEXT DEFAULT (datetime('now','localtime')),
     FOREIGN KEY(user_id) REFERENCES users(id)
   )`);
 
+  db.run(`CREATE TABLE IF NOT EXISTS broker_instruments (
+    id            INTEGER PRIMARY KEY AUTOINCREMENT,
+    broker_id     INTEGER NOT NULL,
+    name          TEXT NOT NULL,
+    max_lots      REAL NOT NULL DEFAULT 1,
+    lot_qty       REAL NOT NULL DEFAULT 1,
+    brokerage     REAL NOT NULL DEFAULT 0,
+    broker_symbol TEXT,
+    FOREIGN KEY(broker_id) REFERENCES brokers(id) ON DELETE CASCADE
+  )`);
 
   // ── Migrations ────────────────────────────────────────────────────────────
   const dealColsResult = db.exec("PRAGMA table_info(deals)");
@@ -187,7 +195,82 @@ async function initDB() {
   const brokerCols = brokerColsResult.length ? brokerColsResult[0].values.map(r => r[1]) : [];
   if (!brokerCols.includes('account_id'))   db.run("ALTER TABLE brokers ADD COLUMN account_id TEXT");
 
-  saveDB();
+  // After the broker_instruments migration block, add:
+  const brokerCols2 = db.exec("PRAGMA table_info(brokers)");
+  const bCols = brokerCols2.length ? brokerCols2[0].values.map(r => r[1]) : [];
+  if (bCols.includes('instrument')) {
+    // SQLite can't DROP columns directly — recreate the table without it
+    const hasInstrumentNotNull = db.exec("SELECT sql FROM sqlite_master WHERE type='table' AND name='brokers'");
+    const tableSql = hasInstrumentNotNull?.[0]?.values?.[0]?.[0] || '';
+    if (tableSql.includes('instrument') && tableSql.toLowerCase().includes('not null')) {
+      console.log('Migration: removing NOT NULL instrument column from brokers');
+      db.run(`CREATE TABLE brokers_new (
+        id           INTEGER PRIMARY KEY AUTOINCREMENT,
+        user_id      INTEGER NOT NULL,
+        broker_name  TEXT NOT NULL,
+        account_id   TEXT,
+        password     TEXT,
+        instrument   TEXT,
+        lot_size     REAL DEFAULT 1,
+        brokerage    REAL DEFAULT 0,
+        profit_share REAL NOT NULL DEFAULT 0,
+        total_pnl    REAL NOT NULL DEFAULT 0,
+        created_at   TEXT DEFAULT (datetime('now','localtime')),
+        FOREIGN KEY(user_id) REFERENCES users(id)
+      )`);
+      db.run(`INSERT INTO brokers_new SELECT id, user_id, broker_name, account_id, password, instrument, lot_size, brokerage, profit_share, total_pnl, created_at FROM brokers`);
+      db.run(`DROP TABLE brokers`);
+      db.run(`ALTER TABLE brokers_new RENAME TO brokers`);
+      saveDB();
+      console.log('Migration: brokers table recreated without NOT NULL on instrument');
+    }
+  }
+
+  // Replace your entire biCheck block with this:
+  let biTableOk = false;
+  try {
+    const biCols = db.exec("PRAGMA table_info(broker_instruments)");
+    const colNames = biCols.length ? biCols[0].values.map(r => r[1]) : [];
+    biTableOk = colNames.includes('name') && colNames.includes('broker_id');
+    console.log('broker_instruments columns found:', colNames);
+  } catch(e) {
+    biTableOk = false;
+  }
+
+  if (!biTableOk) {
+    console.log('Migration: dropping and recreating broker_instruments table');
+    db.run('DROP TABLE IF EXISTS broker_instruments');
+    db.run(`CREATE TABLE broker_instruments (
+      id          INTEGER PRIMARY KEY AUTOINCREMENT,
+      broker_id   INTEGER NOT NULL,
+      name        TEXT NOT NULL,
+      max_lots    REAL NOT NULL DEFAULT 1,
+      lot_qty     REAL NOT NULL DEFAULT 1,
+      brokerage   REAL NOT NULL DEFAULT 0,
+      FOREIGN KEY(broker_id) REFERENCES brokers(id) ON DELETE CASCADE
+    )`);
+    console.log('Migration: created broker_instruments table');
+
+    const oldBrokers = dbAll('SELECT * FROM brokers');
+    for (const b of oldBrokers) {
+      if (b.instrument) {
+        db.run(
+          `INSERT INTO broker_instruments (broker_id, name, max_lots, lot_qty, brokerage) VALUES (?, ?, ?, ?, ?)`,
+          [b.id, b.instrument, b.lot_size || 1, b.lot_size || 1, b.brokerage || 0]
+        );
+      }
+    }
+    saveDB();
+    console.log('Migration: seeded broker_instruments from existing brokers');
+  }
+
+  const biCols2 = db.exec("PRAGMA table_info(broker_instruments)");
+  const biColNames = biCols2.length ? biCols2[0].values.map(r => r[1]) : [];
+  if (!biColNames.includes('broker_symbol')) {
+    db.run("ALTER TABLE broker_instruments ADD COLUMN broker_symbol TEXT");
+    saveDB();
+    console.log('Migration: added broker_symbol to broker_instruments');
+  }
 
   const userCount = dbGet('SELECT COUNT(*) as c FROM users');
   if (!userCount || userCount.c === 0) {
@@ -636,61 +719,99 @@ function dealToFrontend(d) {
   };
 }
 
-// ─── Brokers ──────────────────────────────────────────────────────────────────
+// ─── helpers ─────────────────────────────────────────────────────────────────
+function brokerToFrontend(b) {
+  const instruments = dbAll(
+    'SELECT * FROM broker_instruments WHERE broker_id = ? ORDER BY name',
+    [b.id]
+  );
+  return {
+    id: b.id,
+    brokerName: b.broker_name,
+    accountId: b.account_id || null,
+    password: b.password || null,
+    profitShare: b.profit_share,
+    totalPnl: b.total_pnl,
+    createdAt: b.created_at,
+    instruments: instruments.map(i => ({
+    id: i.id,
+    name: i.name,
+    maxLots: i.max_lots,
+    lotQty: i.lot_qty,
+    brokerage: i.brokerage,
+    brokerSymbol: i.broker_symbol || null,  // ← add this
+    })),
+  };
+}
+
+function saveInstruments(brokerId, instruments = []) {
+  dbRun('DELETE FROM broker_instruments WHERE broker_id = ?', [brokerId]);
+  for (const instr of instruments) {
+    if (!instr.name?.trim()) continue;
+    dbRun(
+      `INSERT INTO broker_instruments (broker_id, name, max_lots, lot_qty, brokerage, broker_symbol)
+       VALUES (?, ?, ?, ?, ?, ?)`,
+      [brokerId, instr.name.trim(), parseFloat(instr.maxLots) || 1,
+       parseFloat(instr.lotQty) || 1, parseFloat(instr.brokerage) || 0,
+       instr.brokerSymbol || null]
+    );
+  }
+}
+
+// ─── routes ──────────────────────────────────────────────────────────────────
 app.get('/api/brokers', requireAuth, (req, res) => {
-  res.json(dbAll('SELECT * FROM brokers WHERE user_id = ? ORDER BY broker_name', [req.user.id]).map(brokerToFrontend));
+  res.json(
+    dbAll('SELECT * FROM brokers WHERE user_id = ? ORDER BY broker_name', [req.user.id])
+      .map(brokerToFrontend)
+  );
 });
 
 app.get('/api/brokers/:id', requireAuth, (req, res) => {
-  const row = dbGet('SELECT * FROM brokers WHERE id = ? AND user_id = ?', [parseInt(req.params.id), req.user.id]);
+  const row = dbGet('SELECT * FROM brokers WHERE id = ? AND user_id = ?',
+    [parseInt(req.params.id), req.user.id]);
   if (!row) return res.status(404).json({ error: 'Not found' });
   res.json(brokerToFrontend(row));
 });
 
 app.post('/api/brokers', requireAuth, (req, res) => {
-  const { brokerName, password, accountId, instrument, lotSize, brokerage, profitShare } = req.body;
-  if (!brokerName || !instrument) return res.status(400).json({ error: 'brokerName and instrument are required' });
-  const newId = dbInsert(`
-    INSERT INTO brokers (user_id, broker_name, password, account_id, instrument, lot_size, brokerage, profit_share)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-  `, [req.user.id, brokerName.trim(), password||null, accountId||null, instrument.trim(), parseFloat(lotSize)||1, parseFloat(brokerage)||0, parseFloat(profitShare)||0]);
+  const { brokerName, accountId, password, profitShare, totalPnl, instruments } = req.body;
+  if (!brokerName) return res.status(400).json({ error: 'brokerName is required' });
+  const newId = dbInsert(
+    `INSERT INTO brokers (user_id, broker_name, account_id, password, profit_share, total_pnl)
+     VALUES (?, ?, ?, ?, ?, ?)`,
+    [req.user.id, brokerName.trim(), accountId || null, password || null,
+     parseFloat(profitShare) || 0, parseFloat(totalPnl) || 0]
+  );
+  saveInstruments(newId, instruments);
   res.json(brokerToFrontend(dbGet('SELECT * FROM brokers WHERE id = ?', [newId])));
 });
 
 app.put('/api/brokers/:id', requireAuth, (req, res) => {
-  const broker = dbGet('SELECT * FROM brokers WHERE id = ? AND user_id = ?', [parseInt(req.params.id), req.user.id]);
+  const broker = dbGet('SELECT * FROM brokers WHERE id = ? AND user_id = ?',
+    [parseInt(req.params.id), req.user.id]);
   if (!broker) return res.status(404).json({ error: 'Not found' });
-  const { brokerName, password, accountId, instrument, lotSize, brokerage, profitShare } = req.body;
-  dbRun(`
-    UPDATE brokers SET broker_name=?, password=?, account_id=?, instrument=?, lot_size=?, brokerage=?, profit_share=?
-    WHERE id=?
-  `, [
-    brokerName||broker.broker_name,
-    password !== undefined ? (password||null) : broker.password,
-    accountId !== undefined ? (accountId||null) : broker.account_id,
-    instrument||broker.instrument,
-    parseFloat(lotSize)??broker.lot_size,
-    parseFloat(brokerage)??broker.brokerage,
-    parseFloat(profitShare)??broker.profit_share,
-    broker.id
-  ]);
+  const { brokerName, accountId, password, profitShare, totalPnl, instruments } = req.body;
+  dbRun(
+    `UPDATE brokers SET broker_name=?, account_id=?, password=?, profit_share=?, total_pnl=?
+     WHERE id=?`,
+    [
+      brokerName || broker.broker_name,
+      accountId !== undefined ? (accountId || null) : broker.account_id,
+      password !== undefined ? (password || null) : broker.password,
+      parseFloat(profitShare) ?? broker.profit_share,
+      parseFloat(totalPnl) ?? broker.total_pnl,
+      broker.id,
+    ]
+  );
+  if (instruments !== undefined) saveInstruments(broker.id, instruments);
   res.json(brokerToFrontend(dbGet('SELECT * FROM brokers WHERE id = ?', [broker.id])));
 });
 
 app.delete('/api/brokers/:id', requireAuth, (req, res) => {
-  dbRun('DELETE FROM brokers WHERE id = ? AND user_id = ?', [parseInt(req.params.id), req.user.id]);
+  dbRun('DELETE FROM brokers WHERE id = ? AND user_id = ?',
+    [parseInt(req.params.id), req.user.id]);
   res.json({ ok: true });
 });
-
-function brokerToFrontend(b) {
-  return {
-    id: b.id, brokerName: b.broker_name, password: b.password,
-    accountId: b.account_id || null,
-    instrument: b.instrument, lotSize: b.lot_size,
-    brokerage: b.brokerage, profitShare: b.profit_share,
-    createdAt: b.created_at,
-  };
-}
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'public', 'index.html')));
 

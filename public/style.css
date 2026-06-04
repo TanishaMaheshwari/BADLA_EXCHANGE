@@ -647,6 +647,31 @@ select option { background: var(--surface); }
 .pass-hidden { font-family: monospace; letter-spacing: 2px; color: var(--muted); }
 .profit-badge { display: inline-block; padding: 2px 8px; border-radius: 12px; background: rgba(0,255,136,0.1); color: var(--accent); font-size: 0.85em; font-weight: 700; }
 .acct-badge   { display: inline-block; padding: 2px 8px; border-radius: 12px; background: rgba(100,200,255,0.1); color: #6cf; font-size: 0.85em; font-family: 'Arial', sans-serif; }
+/* Broker summary stat cards */
+#broker-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+#broker-summary .pnl-card {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+#broker-summary .pnl-label {
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin-bottom: 6px;
+}
+#broker-summary .pnl-value {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+}
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; height: 6px; }

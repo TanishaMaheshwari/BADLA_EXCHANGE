@@ -242,14 +242,13 @@
       <table>
         <thead>
           <tr>
-            <th style="text-align:left">Broker Name</th>
+            <th style="text-align:left">Broker</th>
             <th style="text-align:left">Account ID</th>
-            <th style="text-align:left" class="broker-hide-tablet">Instrument</th>
-            <th class="broker-hide-tablet">Lot Size - Qty.</th>
-            <th>Brokerage (₹)</th>
-            <th>Profit %</th>
+            <th>Profit share</th>
+            <th>P&amp;L</th>
+            <th>P&amp;L × share</th>
+            <th>Instruments</th>
             <th class="broker-hide-tablet">Password</th>
-            <th class="broker-hide-tablet">Added</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -306,7 +305,7 @@
         <div class="leg-card-title" style="color:var(--accent)">MCX LEG</div>
         <div class="form-group"><label>Side</label><select id="d-mcx-side"><option value="SELL">SELL</option><option value="BUY">BUY</option></select></div>
         <div class="form-group"><label>Entry Price (₹)</label><input type="number" id="d-mcx-price" placeholder="0" step="0.01"></div>
-        <div class="form-group"><label>Qty (lots)</label><input type="number" id="d-mcx-qty" placeholder="1" value="1" min="0.01" step="0.01"></div>
+        <div class="form-group"><label>Qty</label><input type="number" id="d-mcx-qty" placeholder="1" value="1" min="0.01" step="0.01"></div>
         <div class="form-group"><label>Brokerage (₹)</label><input type="number" id="d-mcx-brok" placeholder="0" value="0" min="0" step="0.01"></div>
         <div class="broker-select-row"><label>Broker Account</label><select id="d-mcx-broker" onchange="autofillLegBroker('mcx')"><option value="">No broker</option></select></div>
       </div>
@@ -314,7 +313,7 @@
         <div class="leg-card-title" style="color:var(--gold)">COMEX LEG</div>
         <div class="form-group"><label>Side</label><select id="d-comex-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select></div>
         <div class="form-group"><label>Entry Price (USD)</label><input type="number" id="d-comex-price" placeholder="0" step="0.000001"></div>
-        <div class="form-group"><label>Qty (lots)</label><input type="number" id="d-comex-qty" placeholder="1" value="1" min="0.000001" step="0.000001"></div>
+        <div class="form-group"><label>Qty</label><input type="number" id="d-comex-qty" placeholder="1" value="1" min="0.000001" step="0.000001"></div>
         <div class="form-group"><label>Brokerage (₹)</label><input type="number" id="d-comex-brok" placeholder="0" value="0" min="0" step="0.000001"></div>
         <div class="broker-select-row"><label>Broker Account</label><select id="d-comex-broker" onchange="autofillLegBroker('comex')"><option value="">No broker</option></select></div>
       </div>
@@ -329,7 +328,7 @@
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
           <div class="form-group"><label>Side</label><select id="d-dgcx-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select></div>
           <div class="form-group"><label>Entry Price (USD)</label><input type="number" id="d-dgcx-price" placeholder="0" step="0.000001"></div>
-          <div class="form-group"><label>Qty (lots)</label><input type="number" id="d-dgcx-qty" placeholder="1" value="1" min="0.000001" step="0.000001"></div>
+          <div class="form-group"><label>Qty</label><input type="number" id="d-dgcx-qty" placeholder="1" value="1" min="0.000001" step="0.000001"></div>
           <div class="form-group"><label>Brokerage (₹)</label><input type="number" id="d-dgcx-brok" placeholder="0" value="0" min="0" step="0.000001"></div>
         </div>
         <div class="broker-select-row"><label>Broker Account</label><select id="d-dgcx-broker" onchange="autofillLegBroker('dgcx')"><option value="">No broker</option></select></div>
@@ -357,7 +356,7 @@
         <div class="leg-card-title" style="color:var(--accent)">MCX LEG</div>
         <div class="form-group"><label>Side</label><select id="e-mcx-side"><option value="SELL">SELL</option><option value="BUY">BUY</option></select></div>
         <div class="form-group"><label>Entry Price (₹)</label><input type="number" id="e-mcx-price" step="0.01"></div>
-        <div class="form-group"><label>Qty (lots)</label><input type="number" id="e-mcx-qty" min="0.01" step="0.01"></div>
+        <div class="form-group"><label>Qty</label><input type="number" id="e-mcx-qty" min="0.01" step="0.01"></div>
         <div class="form-group"><label>Brokerage (₹)</label><input type="number" id="e-mcx-brok" min="0" step="0.01"></div>
         <div class="broker-select-row"><label>Broker Account</label><select id="e-mcx-broker"><option value="">No broker</option></select></div>
       </div>
@@ -365,7 +364,7 @@
         <div class="leg-card-title" style="color:var(--gold)">COMEX LEG</div>
         <div class="form-group"><label>Side</label><select id="e-comex-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select></div>
         <div class="form-group"><label>Entry Price (USD)</label><input type="number" id="e-comex-price" step="0.000001"></div>
-        <div class="form-group"><label>Qty (lots)</label><input type="number" id="e-comex-qty" min="0.000001" step="0.000001"></div>
+        <div class="form-group"><label>Qty</label><input type="number" id="e-comex-qty" min="0.000001" step="0.000001"></div>
         <div class="form-group"><label>Brokerage (₹)</label><input type="number" id="e-comex-brok" min="0" step="0.000001"></div>
         <div class="broker-select-row"><label>Broker Account</label><select id="e-comex-broker"><option value="">No broker</option></select></div>
       </div>
@@ -380,7 +379,7 @@
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
           <div class="form-group"><label>Side</label><select id="e-dgcx-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select></div>
           <div class="form-group"><label>Entry Price (USD)</label><input type="number" id="e-dgcx-price" step="0.00001"></div>
-          <div class="form-group"><label>Qty (lots)</label><input type="number" id="e-dgcx-qty" min="0.000001" step="0.000001"></div>
+          <div class="form-group"><label>Qty</label><input type="number" id="e-dgcx-qty" min="0.000001" step="0.000001"></div>
           <div class="form-group"><label>Brokerage (₹)</label><input type="number" id="e-dgcx-brok" min="0" step="0.000001"></div>
         </div>
         <div class="broker-select-row"><label>Broker Account</label><select id="e-dgcx-broker"><option value="">No broker</option></select></div>
@@ -510,7 +509,7 @@
           <select id="o-mcx-side"><option value="SELL">SELL</option><option value="BUY">BUY</option></select>
         </div>
         <div class="form-group">
-          <label>Qty (lots)</label>
+          <label>Qty</label>
           <input type="number" id="o-mcx-qty" placeholder="1" value="1" min="0.01" step="0.01">
         </div>
         <div class="form-group">
@@ -532,7 +531,7 @@
           <select id="o-comex-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select>
         </div>
         <div class="form-group">
-          <label>Qty (lots)</label>
+          <label>Qty</label>
           <input type="number" id="o-comex-qty" placeholder="1" value="1" min="0.000001" step="0.000001">
         </div>
         <div class="form-group">
@@ -555,7 +554,7 @@
           <select id="o-dgcx-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select>
         </div>
         <div class="form-group">
-          <label>Qty (lots)</label>
+          <label>Qty</label>
           <input type="number" id="o-dgcx-qty" placeholder="1" value="1" min="0.000001" step="0.000001">
         </div>
         <div class="form-group">
@@ -612,42 +611,52 @@
 
 <!-- BROKER MODAL -->
 <div class="modal-overlay" id="broker-modal">
-  <div class="modal" style="width:520px">
-    <h3 id="broker-modal-title">Add Broker Account</h3>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-      <div class="form-group full" style="grid-column:1/-1">
-        <label>Broker Name</label>
-        <input type="text" id="b-name" placeholder="e.g. Zerodha MCX, IBKR COMEX">
+  <div class="modal" style="width:560px">
+    <h3 id="broker-modal-title">Add broker account</h3>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+      <div class="form-group">
+        <label>Broker name</label>
+        <input type="text" id="b-name" placeholder="e.g. Zerodha MCX">
       </div>
       <div class="form-group">
-        <label>Account ID / Client Code</label>
+        <label>Account ID / Client code</label>
         <input type="text" id="b-account-id" placeholder="e.g. ZR12345">
       </div>
       <div class="form-group">
-        <label>Password / API Key</label>
+        <label>API key / Password</label>
         <input type="password" id="b-password" placeholder="optional">
       </div>
       <div class="form-group">
-        <label>Instrument</label>
-        <select id="b-instrument"><option value="">Select instrument...</option></select>
-      </div>
-      <div class="form-group">
-        <label>Lot Size - Qty.</label>
-        <input type="number" id="b-lot-size" placeholder="1" value="1" min="0.001" step="0.001">
-      </div>
-      <div class="form-group">
-        <label>Brokerage per Trade (₹)</label>
-        <input type="number" id="b-brokerage" placeholder="0" value="0" min="0" step="0.01">
-      </div>
-      <div class="form-group full" style="grid-column:1/-1">
-        <label>Profit Share %</label>
+        <label>Profit share %</label>
         <input type="number" id="b-profit-share" placeholder="0" value="0" min="0" max="100" step="0.1">
-        <span style="font-size:10px;color:var(--muted);margin-top:4px">% of deal P&amp;L allocated to this broker account</span>
       </div>
     </div>
+
+    <div class="form-group" style="margin-bottom:16px;background:var(--surface2);border-radius:8px;padding:10px 12px;display:flex;align-items:center;justify-content:space-between">
+      <label style="margin:0;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em">Ongoing total P&amp;L (₹)</label>
+      <input type="number" id="b-total-pnl" value="0" style="text-align:right;background:none;border:none;font-size:14px;font-weight:600;color:var(--accent);width:140px;outline:none">
+    </div>
+
+    <div style="border-top:1px solid var(--border);margin-bottom:14px;padding-top:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+        <span style="font-size:12px;font-weight:600">Instruments</span>
+        <button class="btn btn-sm" style="background:rgba(0,255,136,.1);border:1px solid rgba(0,255,136,.25);color:var(--accent);font-size:11px" onclick="addInstrumentRow()">+ Add instrument</button>
+      </div>
+     <!-- <div style="display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr 1fr 28px;gap:8px;margin-bottom:4px">
+        <span style="font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Instrument</span>
+        <span style="font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Max lots</span>
+        <span style="font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">1 lot = qty</span>
+        <span style="font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Brokerage/lot ₹</span>
+        <span style="font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Broker symbol</span>
+        <span></span>
+      </div> -->
+      <div id="broker-instruments-list"></div>
+    </div>
+
     <div class="form-actions">
       <button class="btn btn-cancel" onclick="closeBrokerModal()">Cancel</button>
-      <button class="btn btn-primary" id="broker-save-btn" onclick="saveBroker()">Save Broker</button>
+      <button class="btn btn-primary" id="broker-save-btn" onclick="saveBroker()">Save broker</button>
     </div>
   </div>
 </div>
