@@ -293,12 +293,13 @@ class BadlaWebSocketClient:
                     lp = item.get("last_price")
                     if tok and lp is not None:
                         self.price_map[tok] = float(lp)
-                        # also update buy/sell prices in instrumentsDetail
+                        # Update bid/ask in instrumentsDetail with live values
                         for inst in self.instrument_settings:
                             for detail in inst.get("instrumentsDetail", []):
                                 if str(detail.get("instrument_token", "")) == tok:
-                                    detail["buy_price_0"]  = item.get("buy_quantity") and item.get("last_price") or float(lp)
-                                    detail["sell_price_0"] = item.get("sell_quantity") and item.get("last_price") or float(lp)
+                                    detail["last_price"]   = float(lp)
+                                    detail["buy_price_0"]  = float(item.get("buy_price_0") or lp)
+                                    detail["sell_price_0"] = float(item.get("sell_price_0") or lp)
         except Exception as e:
             logger.debug(f"Frame parse error: {e}")
 
@@ -315,55 +316,50 @@ class BadlaWebSocketClient:
 
                 try:
                     self._send_watch_request()
-                    time.sleep(0.5)
-                    self.ws.settimeout(3.0)
+                    time.sleep(1.0)
+                    self.ws.settimeout(5.0)
+                    logger.info("Subscribed — listening for live ticks...")
 
-                    cycle_start = time.time()
-                    frames = 0
-
+                    # Listen forever — server pushes instrument-data continuously
                     while True:
                         try:
                             msg = self.ws.recv()
                         except websocket.WebSocketTimeoutException:
+                            # No tick in 5s — push current prices to server
                             if self.price_map:
-                                saved = pushed = 0
+                                saved = 0
                                 for inst in self.instrument_settings:
                                     value = self._evaluate(inst)
                                     if value is not None:
                                         self._save_data(inst, value)
                                         self._push_to_server(inst)
                                         saved += 1
-                                    pushed += 1
-                                elapsed = time.time() - cycle_start
-                                logger.info(
-                                    f"Snapshot | elapsed={elapsed:.1f}s | frames={frames} | "
-                                    f"pushed={saved}/{len(self.instrument_settings)} | "
-                                    f"prices={len(self.price_map)}"
-                                )
-                                cycle_start = time.time()
-                                frames = 0
-                            else:
-                                logger.warning("No prices yet, still waiting...")
-                            continue
+                                logger.info(f"Pushed {saved}/{len(self.instrument_settings)} | prices={len(self.price_map)}")
+                            continue  # keep listening, don't reconnect
 
                         if msg in ("2", "3"):
+                            self.ws.send("3") if msg == "2" else None
                             continue
                         if not msg.startswith("42"):
                             continue
 
                         self._process_frame(msg)
-                        frames += 1
+
+                        # Push immediately on every tick
+                        for inst in self.instrument_settings:
+                            value = self._evaluate(inst)
+                            if value is not None:
+                                self._push_to_server(inst)
 
                 except Exception as e:
-                    logger.error(f"Cycle error: {e}")
-                    if not self.ws or not self.ws.connected:
-                        time.sleep(1)
+                    logger.error(f"Connection lost: {e}")
+                    self.connected = False
+                    time.sleep(2)
 
         except KeyboardInterrupt:
             logger.info("Shutting down...")
         finally:
             self.disconnect()
-
 
 if __name__ == "__main__":
     client = BadlaWebSocketClient()
