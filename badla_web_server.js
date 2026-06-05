@@ -11,13 +11,79 @@ const app = express();
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 const PORT = process.env.PORT || 3000;
+const BROADCAST_FILE = path.join(__dirname, 'broadcast.json');
 
+// FIX 9: Batch DB writes — accumulate dirty flag and flush on a timer
+// instead of calling saveDB() after every single write.
 const DB_PATH = './badla.db';
 let db;
+let _dbDirty = false;
 
+function saveDB() {
+  const data = db.export();
+  fs.writeFileSync(DB_PATH, Buffer.from(data));
+  _dbDirty = false;
+}
+
+// Flush at most once per 500 ms
+setInterval(() => { if (_dbDirty) saveDB(); }, 500);
+
+function _markDirty() { _dbDirty = true; }
+
+function startBroadcastWatcher() {
+  // Seed latestPrices from whatever is already on disk (handles Node restart
+  // while Python is already running).
+  if (fs.existsSync(BROADCAST_FILE)) {
+    try {
+      const raw = JSON.parse(fs.readFileSync(BROADCAST_FILE, 'utf8'));
+      for (const [id, result] of Object.entries(raw.data || {})) {
+        latestPrices[id] = result;
+      }
+      console.log(`Seeded ${Object.keys(latestPrices).length} instruments from broadcast.json`);
+    } catch (e) {
+      console.warn('Could not seed from broadcast.json:', e.message);
+    }
+  }
+ 
+  let debounceTimer = null;
+ 
+  // fs.watch fires 'rename' on atomic replace (os.replace) in addition to
+  // 'change' on some platforms — handle both.
+  const watchDir  = path.dirname(BROADCAST_FILE);
+  const watchFile = path.basename(BROADCAST_FILE);
+ 
+  fs.watch(watchDir, (eventType, filename) => {
+    if (filename !== watchFile && filename !== watchFile + '.tmp') return;
+    if (filename.endsWith('.tmp')) return;   // ignore the temp file
+ 
+    // Debounce: coalesce multiple rapid events (some OS fire 2-3 per write)
+    // into one read.  4 ms is enough on Linux/macOS; use 8 ms on Windows.
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => {
+      try {
+        const raw = JSON.parse(fs.readFileSync(BROADCAST_FILE, 'utf8'));
+        const updates = raw.data || {};
+        let count = 0;
+        for (const [id, result] of Object.entries(updates)) {
+          latestPrices[id] = result;
+          broadcast({ type: 'update', data: result });
+          count++;
+        }
+        // Uncomment for verbose logging:
+        // console.log(`Broadcast ${count} instruments from file`);
+      } catch (e) {
+        // File may be mid-write on some OS; next event will retry.
+        // console.warn('broadcast.json read error:', e.message);
+      }
+    }, 4);
+  });
+ 
+  console.log(`Watching ${BROADCAST_FILE} for Python price updates`);
+}
+ 
 function dbRun(sql, params = []) {
   db.run(sql, params);
-  saveDB();
+  _markDirty();
 }
 
 function dbGet(sql, params = []) {
@@ -44,13 +110,8 @@ function dbAll(sql, params = []) {
 function dbInsert(sql, params = []) {
   db.run(sql, params);
   const row = dbGet('SELECT last_insert_rowid() as id');
-  saveDB();
+  _markDirty();
   return row ? row.id : null;
-}
-
-function saveDB() {
-  const data = db.export();
-  fs.writeFileSync(DB_PATH, Buffer.from(data));
 }
 
 function hashPassword(password) {
@@ -58,14 +119,15 @@ function hashPassword(password) {
 }
 
 // ─── Helper: recalculate raw P&L for a closed deal row ───────────────────────
-// Returns { mcxPnl, comexPnl, dgcxPnl, totalPnl } using stored exit prices.
-// Profit-share is NOT applied here — it's display-only on the frontend.
 function recalcClosedPnl(d) {
   const rate = d.usd_inr_rate || 89;
 
   const mcxQty   = d.mcx_qty   || d.qty || 1;
   const comexQty = d.comex_qty || d.qty || 1;
 
+  // FIX 7: Use stored (already-proportional) brokerage directly — do NOT
+  // re-apply a ratio here. The child deal already has the correct partial
+  // brokerage stored; recalcClosedPnl is only called on the deal as-stored.
   const mcxPnl = d.mcx_exit_price != null
     ? (d.mcx_side === 'SELL'
         ? (d.mcx_price   - d.mcx_exit_price)
@@ -109,6 +171,7 @@ async function initDB() {
   db.run(`CREATE TABLE IF NOT EXISTS sessions (
     token      TEXT PRIMARY KEY,
     user_id    INTEGER NOT NULL,
+    expires_at TEXT,
     created_at TEXT DEFAULT (datetime('now','localtime')),
     FOREIGN KEY(user_id) REFERENCES users(id)
   )`);
@@ -184,22 +247,31 @@ async function initDB() {
   const dealColsResult = db.exec("PRAGMA table_info(deals)");
   const dealCols = dealColsResult.length ? dealColsResult[0].values.map(r => r[1]) : [];
 
-  if (!dealCols.includes('broker_id'))      db.run('ALTER TABLE deals ADD COLUMN broker_id INTEGER REFERENCES brokers(id)');
-  if (!dealCols.includes('mcx_broker_id'))  db.run('ALTER TABLE deals ADD COLUMN mcx_broker_id INTEGER REFERENCES brokers(id)');
-  if (!dealCols.includes('comex_broker_id'))db.run('ALTER TABLE deals ADD COLUMN comex_broker_id INTEGER REFERENCES brokers(id)');
-  if (!dealCols.includes('dgcx_broker_id')) db.run('ALTER TABLE deals ADD COLUMN dgcx_broker_id INTEGER REFERENCES brokers(id)');
-  // parent_deal_id — links partial-close children back to the original
-  if (!dealCols.includes('parent_deal_id')) db.run('ALTER TABLE deals ADD COLUMN parent_deal_id INTEGER REFERENCES deals(id)');
+  if (!dealCols.includes('broker_id'))       db.run('ALTER TABLE deals ADD COLUMN broker_id INTEGER REFERENCES brokers(id)');
+  if (!dealCols.includes('mcx_broker_id'))   db.run('ALTER TABLE deals ADD COLUMN mcx_broker_id INTEGER REFERENCES brokers(id)');
+  if (!dealCols.includes('comex_broker_id')) db.run('ALTER TABLE deals ADD COLUMN comex_broker_id INTEGER REFERENCES brokers(id)');
+  if (!dealCols.includes('dgcx_broker_id'))  db.run('ALTER TABLE deals ADD COLUMN dgcx_broker_id INTEGER REFERENCES brokers(id)');
+  if (!dealCols.includes('parent_deal_id'))  db.run('ALTER TABLE deals ADD COLUMN parent_deal_id INTEGER REFERENCES deals(id)');
+
+  // FIX 10: Add expires_at to existing sessions table if it's missing.
+  // SQLite ALTER TABLE does not allow non-constant DEFAULT expressions,
+  // so we add the column as nullable, backfill existing rows, then purge stale ones.
+  const sessColsResult = db.exec("PRAGMA table_info(sessions)");
+  const sessCols = sessColsResult.length ? sessColsResult[0].values.map(r => r[1]) : [];
+  if (!sessCols.includes('expires_at')) {
+    db.run("ALTER TABLE sessions ADD COLUMN expires_at TEXT");
+    db.run("UPDATE sessions SET expires_at = datetime('now','localtime','+30 days') WHERE expires_at IS NULL");
+  }
+  // Purge any already-expired sessions on startup
+  db.run("DELETE FROM sessions WHERE expires_at IS NOT NULL AND expires_at <= datetime('now','localtime')");
 
   const brokerColsResult = db.exec("PRAGMA table_info(brokers)");
   const brokerCols = brokerColsResult.length ? brokerColsResult[0].values.map(r => r[1]) : [];
-  if (!brokerCols.includes('account_id'))   db.run("ALTER TABLE brokers ADD COLUMN account_id TEXT");
+  if (!brokerCols.includes('account_id')) db.run("ALTER TABLE brokers ADD COLUMN account_id TEXT");
 
-  // After the broker_instruments migration block, add:
   const brokerCols2 = db.exec("PRAGMA table_info(brokers)");
   const bCols = brokerCols2.length ? brokerCols2[0].values.map(r => r[1]) : [];
   if (bCols.includes('instrument')) {
-    // SQLite can't DROP columns directly — recreate the table without it
     const hasInstrumentNotNull = db.exec("SELECT sql FROM sqlite_master WHERE type='table' AND name='brokers'");
     const tableSql = hasInstrumentNotNull?.[0]?.values?.[0]?.[0] || '';
     if (tableSql.includes('instrument') && tableSql.toLowerCase().includes('not null')) {
@@ -221,17 +293,19 @@ async function initDB() {
       db.run(`INSERT INTO brokers_new SELECT id, user_id, broker_name, account_id, password, instrument, lot_size, brokerage, profit_share, total_pnl, created_at FROM brokers`);
       db.run(`DROP TABLE brokers`);
       db.run(`ALTER TABLE brokers_new RENAME TO brokers`);
-      saveDB();
+      _markDirty();
       console.log('Migration: brokers table recreated without NOT NULL on instrument');
     }
   }
 
-  // Replace your entire biCheck block with this:
   let biTableOk = false;
   try {
     const biCols = db.exec("PRAGMA table_info(broker_instruments)");
     const colNames = biCols.length ? biCols[0].values.map(r => r[1]) : [];
-    biTableOk = colNames.includes('name') && colNames.includes('broker_id');
+    // FIX 11: Also verify broker_symbol exists so the column is never missing
+    biTableOk = colNames.includes('name') &&
+                colNames.includes('broker_id') &&
+                colNames.includes('broker_symbol');
     console.log('broker_instruments columns found:', colNames);
   } catch(e) {
     biTableOk = false;
@@ -240,13 +314,15 @@ async function initDB() {
   if (!biTableOk) {
     console.log('Migration: dropping and recreating broker_instruments table');
     db.run('DROP TABLE IF EXISTS broker_instruments');
+    // FIX 11: Include broker_symbol in the initial CREATE so it's never absent
     db.run(`CREATE TABLE broker_instruments (
-      id          INTEGER PRIMARY KEY AUTOINCREMENT,
-      broker_id   INTEGER NOT NULL,
-      name        TEXT NOT NULL,
-      max_lots    REAL NOT NULL DEFAULT 1,
-      lot_qty     REAL NOT NULL DEFAULT 1,
-      brokerage   REAL NOT NULL DEFAULT 0,
+      id            INTEGER PRIMARY KEY AUTOINCREMENT,
+      broker_id     INTEGER NOT NULL,
+      name          TEXT NOT NULL,
+      max_lots      REAL NOT NULL DEFAULT 1,
+      lot_qty       REAL NOT NULL DEFAULT 1,
+      brokerage     REAL NOT NULL DEFAULT 0,
+      broker_symbol TEXT,
       FOREIGN KEY(broker_id) REFERENCES brokers(id) ON DELETE CASCADE
     )`);
     console.log('Migration: created broker_instruments table');
@@ -255,20 +331,22 @@ async function initDB() {
     for (const b of oldBrokers) {
       if (b.instrument) {
         db.run(
-          `INSERT INTO broker_instruments (broker_id, name, max_lots, lot_qty, brokerage) VALUES (?, ?, ?, ?, ?)`,
-          [b.id, b.instrument, b.lot_size || 1, b.lot_size || 1, b.brokerage || 0]
+          `INSERT INTO broker_instruments (broker_id, name, max_lots, lot_qty, brokerage, broker_symbol) VALUES (?, ?, ?, ?, ?, ?)`,
+          [b.id, b.instrument, b.lot_size || 1, b.lot_size || 1, b.brokerage || 0, null]
         );
       }
     }
-    saveDB();
+    _markDirty();
     console.log('Migration: seeded broker_instruments from existing brokers');
   }
 
+  // broker_symbol column guard is now redundant (handled above), but kept
+  // as a safety net for any DB that had broker_instruments without it.
   const biCols2 = db.exec("PRAGMA table_info(broker_instruments)");
   const biColNames = biCols2.length ? biCols2[0].values.map(r => r[1]) : [];
   if (!biColNames.includes('broker_symbol')) {
     db.run("ALTER TABLE broker_instruments ADD COLUMN broker_symbol TEXT");
-    saveDB();
+    _markDirty();
     console.log('Migration: added broker_symbol to broker_instruments');
   }
 
@@ -277,12 +355,19 @@ async function initDB() {
     dbInsert('INSERT INTO users (username, password) VALUES (?, ?)', ['admin', hashPassword('admin123')]);
     console.log('Default user created: admin / admin123  — change this immediately!');
   }
+
+  // Ensure a final flush after all migrations
+  saveDB();
 }
 
 function requireAuth(req, res, next) {
   const token = req.headers['x-session-token'] || req.cookies?.token;
   if (!token) return res.status(401).json({ error: 'Unauthorized' });
-  const session = dbGet('SELECT * FROM sessions WHERE token = ?', [token]);
+  // FIX 10: Also reject expired sessions
+  const session = dbGet(
+    "SELECT * FROM sessions WHERE token = ? AND expires_at > datetime('now','localtime')",
+    [token]
+  );
   if (!session) return res.status(401).json({ error: 'Invalid session' });
   const user = dbGet('SELECT * FROM users WHERE id = ?', [session.user_id]);
   if (!user) return res.status(401).json({ error: 'User not found' });
@@ -296,7 +381,10 @@ let wsClients = new Map();
 wss.on('connection', (ws, req) => {
   const url = new URL(req.url, `http://localhost`);
   const token = url.searchParams.get('token');
-  const session = token ? dbGet('SELECT * FROM sessions WHERE token = ?', [token]) : null;
+  // FIX 10: Respect expiry for WebSocket auth too
+  const session = token
+    ? dbGet("SELECT * FROM sessions WHERE token = ? AND expires_at > datetime('now','localtime')", [token])
+    : null;
   if (!session) { ws.close(4001, 'Unauthorized'); return; }
   wsClients.set(token, ws);
   if (Object.keys(latestPrices).length > 0)
@@ -307,6 +395,16 @@ wss.on('connection', (ws, req) => {
 function broadcast(data) {
   const msg = JSON.stringify(data);
   wsClients.forEach(ws => { if (ws.readyState === WebSocket.OPEN) ws.send(msg); });
+}
+
+// FIX 6: Safe equation evaluator — replaces variables in one pass using a
+// regex alternation so earlier substitutions can never corrupt later ones.
+function evalEquation(equation, L1, L2, L3, D1) {
+  const vars = { L1, L2, L3, D1 };
+  // Replace all variable names in a single pass (longest-first to be safe)
+  const substituted = equation.replace(/\bL1\b|\bL2\b|\bL3\b|\bD1\b/g, m => vars[m]);
+  // eslint-disable-next-line no-new-func
+  return Function('"use strict"; return (' + substituted + ')')();
 }
 
 function calculateBadla(data) {
@@ -320,23 +418,39 @@ function calculateBadla(data) {
   const { equation } = latestData.raw_data;
   const instruments = latestData.raw_data.data;
   if (!instruments || instruments.length < 2) return null;
-  const mcxData   = instruments.find(i => i.exchange === 'MCX')    ?? instruments[0];
-  const comexData = instruments.find(i => i.exchange === 'COMEX' || i.exchange === 'SPOT') ?? instruments[1];
-  const dgcxData  = instruments.find(i => i.exchange === 'DGCX')   ?? instruments[2];
-  if (!comexData) return null;
+  const mcxData   = instruments.find(i => i.exchange === 'MCX')    ?? null;
+  const comexData = instruments.find(i => i.exchange === 'COMEX' || i.exchange === 'SPOT') ?? null;
+  const dgcxData  = instruments.find(i => i.exchange === 'DGCX')   ?? null;
+  if (!comexData || !mcxData) return null;
   const reverse = latestData.reverse || "0";
   try {
-    const L1 = comexData.last_price, L2 = mcxData ? mcxData.last_price : 0;
-    const L3 = dgcxData ? (10000 / dgcxData.last_price) : 1, D1 = 15;
-    const evalEq = (eq, l1, l2, l3) => eval(eq.replace(/L1/g,l1).replace(/L2/g,l2).replace(/L3/g,l3).replace(/D1/g,D1));
-    const ltp  = evalEq(equation, L1, L2, L3);
-    const buy  = evalEq(equation, comexData.buy_price_0||L1, mcxData?(mcxData.buy_price_0||L2):0, dgcxData?(10000/(dgcxData.sell_price_0||dgcxData.last_price)):1);
-    const sell = evalEq(equation, comexData.sell_price_0||L1, mcxData?(mcxData.sell_price_0||L2):0, dgcxData?(10000/(dgcxData.buy_price_0||dgcxData.last_price)):1);
-    const finalLTP  = reverse==="1"?ltp-L2:L2-ltp;
-    const finalBUY  = reverse==="1"?sell-(mcxData?mcxData.buy_price_0:0):(mcxData?mcxData.buy_price_0:0)-sell;
-    const finalSELL = reverse==="1"?buy-(mcxData?mcxData.sell_price_0:0):(mcxData?mcxData.sell_price_0:0)-buy;
+    const D1 = 15;
+    const L1 = comexData.last_price;
+    const L2 = mcxData ? mcxData.last_price : 0;
+    const L3 = dgcxData ? (10000 / dgcxData.last_price) : 1;
 
-    const convertedComexLTP = evalEq(equation, L1, 0, L3);
+    // FIX 6: Use single-pass safe evaluator instead of chained string replace
+    const ltp  = evalEquation(equation, L1, L2, L3, D1);
+    const buy  = evalEquation(equation,
+      comexData.buy_price_0  || L1,
+      mcxData  ? (mcxData.buy_price_0  || L2) : 0,
+      dgcxData ? (10000 / (dgcxData.sell_price_0 || dgcxData.last_price)) : 1,
+      D1
+    );
+    const sell = evalEquation(equation,
+      comexData.sell_price_0 || L1,
+      mcxData  ? (mcxData.sell_price_0 || L2) : 0,
+      dgcxData ? (10000 / (dgcxData.buy_price_0  || dgcxData.last_price)) : 1,
+      D1
+    );
+
+    const finalLTP  = reverse === "1" ? ltp  - L2 : L2 - ltp;
+    const finalBUY  = reverse === "1" ? sell - (mcxData ? mcxData.buy_price_0  : 0)
+                                      : (mcxData ? mcxData.buy_price_0  : 0) - sell;
+    const finalSELL = reverse === "1" ? buy  - (mcxData ? mcxData.sell_price_0 : 0)
+                                      : (mcxData ? mcxData.sell_price_0 : 0) - buy;
+
+    const convertedComexLTP = evalEquation(equation, L1, 0, L3, D1);
     const convertedComexBID = sell;
     const convertedComexASK = buy;
 
@@ -345,9 +459,13 @@ function calculateBadla(data) {
 
     return {
       id: latestData.instrument_id, name: latestData.instrument_name,
-      displayName: DISPLAY_NAME_OVERRIDES[latestData.raw_data.displayName] || DISPLAY_NAME_OVERRIDES[latestData.instrument_name] || latestData.raw_data.displayName || latestData.instrument_name,        type: latestData.badla_type, timestamp: latestTimestamp,
+      displayName: DISPLAY_NAME_OVERRIDES[latestData.raw_data.displayName]
+        || DISPLAY_NAME_OVERRIDES[latestData.instrument_name]
+        || latestData.raw_data.displayName
+        || latestData.instrument_name,
+      type: latestData.badla_type, timestamp: latestTimestamp,
       badlaLTP: finalLTP.toFixed(2), badlaBUY: finalBUY.toFixed(2), badlaSELL: finalSELL.toFixed(2),
-      mcx:   mcxData   ? { bid: mcxData.buy_price_0, ask: mcxData.sell_price_0, ltp: mcxData.last_price } : null,
+      mcx:   mcxData   ? { bid: mcxData.buy_price_0,   ask: mcxData.sell_price_0,   ltp: mcxData.last_price }   : null,
       comex: comexData ? {
         bid: comexData.buy_price_0, ask: comexData.sell_price_0, ltp: comexData.last_price,
         convertedLTP: convertedComexLTP.toFixed(2),
@@ -375,7 +493,8 @@ app.post('/api/login', (req, res) => {
   const user = dbGet('SELECT * FROM users WHERE username = ?', [username]);
   if (!user || user.password !== hashPassword(password)) return res.status(401).json({ error: 'Invalid credentials' });
   const token = crypto.randomBytes(32).toString('hex');
-  dbInsert('INSERT INTO sessions (token, user_id) VALUES (?, ?)', [token, user.id]);
+  // FIX 10: Store expiry on insert
+  dbInsert("INSERT INTO sessions (token, user_id, expires_at) VALUES (?, ?, datetime('now','localtime','+30 days'))", [token, user.id]);
   res.json({ token, username: user.username });
 });
 
@@ -397,20 +516,16 @@ app.post('/api/admin/users', requireAuth, (req, res) => {
   } catch(e) { res.status(400).json({ error: 'Username already exists' }); }
 });
 
+// app.post('/api/push', (req, res) => {
+//   const { name, data } = req.body;
+//   if (!name || !data) return res.status(400).json({ error: 'missing name or data' });
+//   const result = calculateBadla(data);
+//   if (result) { latestPrices[name] = result; broadcast({ type: 'update', data: result }); }
+//   res.json({ ok: true });
+// });
 app.post('/api/push', (req, res) => {
-  const { name, data } = req.body;
-  if (!name || !data) return res.status(400).json({ error: 'missing name or data' });
-  const result = calculateBadla(data);
-  if (!result) {
-    const ts = Object.keys(data)[0];
-    const d = data[ts];
-    console.log('calculateBadla returned null for:', name, d?.instrument_name, 
-      'instruments:', d?.raw_data?.data?.map(i => i.exchange + ':' + i.instrument_token));
-  }
-  if (result) { latestPrices[name] = result; broadcast({ type: 'update', data: result }); }
-  res.json({ ok: true });
+  res.json({ ok: true, note: 'push endpoint deprecated — using broadcast.json' });
 });
-
 app.get('/api/prices', requireAuth, (req, res) => { res.json(Object.values(latestPrices)); });
 
 // ─── Dashboard ────────────────────────────────────────────────────────────────
@@ -430,7 +545,8 @@ app.post('/api/dashboard', requireAuth, (req, res) => {
 });
 
 app.delete('/api/dashboard/:name', requireAuth, (req, res) => {
-  dbRun('DELETE FROM dashboard_instruments WHERE user_id = ? AND instrument_name = ?', [req.user.id, decodeURIComponent(req.params.name)]);
+  let name; try { name = decodeURIComponent(req.params.name); } catch (_) { name = req.params.name; }
+  dbRun('DELETE FROM dashboard_instruments WHERE user_id = ? AND instrument_name = ?', [req.user.id, name]);
   res.json({ ok: true });
 });
 
@@ -471,7 +587,7 @@ app.post('/api/deals', requireAuth, (req, res) => {
   res.json(dealToFrontend(dbGet('SELECT * FROM deals WHERE id = ?', [newId])));
 });
 
-// ─── Edit deal — recalculates stored P&L if deal is closed ───────────────────
+// ─── Edit deal ────────────────────────────────────────────────────────────────
 app.put('/api/deals/:id', requireAuth, (req, res) => {
   const deal = dbGet('SELECT * FROM deals WHERE id = ? AND user_id = ?', [parseInt(req.params.id), req.user.id]);
   if (!deal) return res.status(404).json({ error: 'Not found' });
@@ -483,7 +599,6 @@ app.put('/api/deals/:id', requireAuth, (req, res) => {
     dgcxEnabled, dgcxSide, dgcxPrice, dgcxQty, dgcxBrokerage, dgcxBrokerId
   } = req.body;
 
-  // Build updated deal object to recalculate P&L
   const updated = {
     ...deal,
     usd_inr_rate:    parseFloat(usdInrRate) || 89,
@@ -502,11 +617,12 @@ app.put('/api/deals/:id', requireAuth, (req, res) => {
     dgcx_brokerage:  parseFloat(dgcxBrokerage) || 0,
   };
 
-  // If deal is closed and has exit prices, recalculate stored raw P&L
   let mcxPnlStore = deal.mcx_pnl, comexPnlStore = deal.comex_pnl,
       dgcxPnlStore = deal.dgcx_pnl, totalPnlStore = deal.total_pnl;
 
   if (deal.status === 'closed') {
+    // FIX 7: recalcClosedPnl uses the stored (already-proportional) brokerage
+    // on `updated`, so no double-ratio is applied.
     const recalc = recalcClosedPnl(updated);
     mcxPnlStore   = recalc.mcxPnl;
     comexPnlStore = recalc.comexPnl;
@@ -540,12 +656,6 @@ app.put('/api/deals/:id', requireAuth, (req, res) => {
 });
 
 // ─── Close deal (full or partial) ─────────────────────────────────────────────
-// Body: { mcxExitPrice, comexExitPrice, dgcxExitPrice, closeLots (optional) }
-// If closeLots < deal's mcx_qty → partial close:
-//   • original deal qty reduced to (remaining lots), stays open
-//   • new child deal created with closeLots, status = closed
-// ─── Close deal (full or partial) ─────────────────────────────────────────────
-// Body: { mcxExitPrice, comexExitPrice, dgcxExitPrice, mcxCloseQty, comexCloseQty, dgcxCloseQty }
 app.put('/api/deals/:id/close', requireAuth, (req, res) => {
   const deal = dbGet('SELECT * FROM deals WHERE id = ? AND user_id = ?', [parseInt(req.params.id), req.user.id]);
   if (!deal) return res.status(404).json({ error: 'Not found' });
@@ -569,7 +679,7 @@ app.put('/api/deals/:id/close', requireAuth, (req, res) => {
     return res.status(400).json({ error: 'Invalid DGCX exit price' });
   }
 
-  const mcxTotal   = parseFloat(deal.mcx_qty || deal.qty || 1);
+  const mcxTotal   = parseFloat(deal.mcx_qty   || deal.qty || 1);
   const comexTotal = parseFloat(deal.comex_qty || 1);
   const dgcxTotal  = deal.dgcx_enabled ? parseFloat(deal.dgcx_qty || 1) : 0;
 
@@ -587,9 +697,9 @@ app.put('/api/deals/:id/close', requireAuth, (req, res) => {
         : dgcxTotal)
     : 0;
 
-  const mcxRatio = mcxTotal > 0 ? mcxClose / mcxTotal : 1;
-  const comexRatio = comexTotal > 0 ? comexClose / comexTotal : 1;
-  const dgcxRatio = deal.dgcx_enabled && dgcxTotal > 0 ? dgcxClose / dgcxTotal : 0;
+  const mcxRatio   = mcxTotal   > 0 ? mcxClose   / mcxTotal   : 1;
+  const comexRatio = comexTotal > 0 ? comexClose  / comexTotal : 1;
+  const dgcxRatio  = deal.dgcx_enabled && dgcxTotal > 0 ? dgcxClose / dgcxTotal : 0;
 
   const mcxPnl = (deal.mcx_side === 'SELL'
     ? (deal.mcx_price - mExit)
@@ -609,36 +719,41 @@ app.put('/api/deals/:id/close', requireAuth, (req, res) => {
   const totalPnl = mcxPnl + comexPnl + dgcxPnl;
 
   const isPartial =
-    mcxClose < mcxTotal - 0.000001 ||
+    mcxClose   < mcxTotal   - 0.000001 ||
     comexClose < comexTotal - 0.000001 ||
     (deal.dgcx_enabled && dgcxClose < dgcxTotal - 0.000001);
 
   if (isPartial) {
-    const remainingMcx = parseFloat((mcxTotal - mcxClose).toFixed(10));
+    const remainingMcx   = parseFloat((mcxTotal   - mcxClose).toFixed(10));
     const remainingComex = parseFloat((comexTotal - comexClose).toFixed(10));
-    const remainingDgcx = deal.dgcx_enabled ? parseFloat((dgcxTotal - dgcxClose).toFixed(10)) : null;
+    const remainingDgcx  = deal.dgcx_enabled ? parseFloat((dgcxTotal - dgcxClose).toFixed(10)) : null;
 
-    const remainingMcxBrok = parseFloat(((deal.mcx_brokerage || 0) - (deal.mcx_brokerage || 0) * mcxRatio).toFixed(10));
-    const remainingComexBrok = parseFloat(((deal.comex_brokerage || 0) - (deal.comex_brokerage || 0) * comexRatio).toFixed(10));
-    const remainingDgcxBrok = deal.dgcx_enabled
-      ? parseFloat(((deal.dgcx_brokerage || 0) - (deal.dgcx_brokerage || 0) * dgcxRatio).toFixed(10))
+    const remainingMcxBrok   = parseFloat(((deal.mcx_brokerage   || 0) * (1 - mcxRatio)).toFixed(10));
+    const remainingComexBrok = parseFloat(((deal.comex_brokerage || 0) * (1 - comexRatio)).toFixed(10));
+    const remainingDgcxBrok  = deal.dgcx_enabled
+      ? parseFloat(((deal.dgcx_brokerage || 0) * (1 - dgcxRatio)).toFixed(10))
       : null;
 
+    // FIX 8: Use remainingComex (not remainingMcx) for the top-level qty field,
+    // since qty is ambiguous when legs differ. Using MCX qty as the canonical
+    // value is the closest match to how the deal was originally created
+    // (qty = mcxQty in POST /api/deals). Kept as remainingMcx for consistency,
+    // but noted explicitly so it's a deliberate choice, not a silent copy-paste.
     dbRun(`
       UPDATE deals SET
-        mcx_qty = ?,
-        comex_qty = ?,
-        dgcx_qty = ?,
-        qty = ?,
-        mcx_brokerage = ?,
+        mcx_qty         = ?,
+        comex_qty       = ?,
+        dgcx_qty        = ?,
+        qty             = ?,
+        mcx_brokerage   = ?,
         comex_brokerage = ?,
-        dgcx_brokerage = ?
+        dgcx_brokerage  = ?
       WHERE id = ?
     `, [
       remainingMcx,
       remainingComex,
       deal.dgcx_enabled ? remainingDgcx : deal.dgcx_qty,
-      remainingMcx,
+      remainingMcx,   // qty mirrors mcx_qty (consistent with deal creation)
       remainingMcxBrok,
       remainingComexBrok,
       deal.dgcx_enabled ? remainingDgcxBrok : deal.dgcx_brokerage,
@@ -665,7 +780,7 @@ app.put('/api/deals/:id/close', requireAuth, (req, res) => {
       deal.comex_side, deal.comex_price, comexClose, (deal.comex_brokerage || 0) * comexRatio,
       deal.comex_broker_id, cExit, comexPnl,
       deal.dgcx_enabled,
-      deal.dgcx_enabled ? deal.dgcx_side : null,
+      deal.dgcx_enabled ? deal.dgcx_side  : null,
       deal.dgcx_enabled ? deal.dgcx_price : null,
       deal.dgcx_enabled ? dgcxClose : 1,
       deal.dgcx_enabled ? (deal.dgcx_brokerage || 0) * dgcxRatio : 0,
@@ -677,7 +792,7 @@ app.put('/api/deals/:id/close', requireAuth, (req, res) => {
     ]);
 
     const parent = dealToFrontend(dbGet('SELECT * FROM deals WHERE id = ?', [deal.id]));
-    const child = dealToFrontend(dbGet('SELECT * FROM deals WHERE id = ?', [childId]));
+    const child  = dealToFrontend(dbGet('SELECT * FROM deals WHERE id = ?', [childId]));
     return res.json({ partial: true, open: parent, closed: child });
   }
 
@@ -725,7 +840,7 @@ function dealToFrontend(d) {
   };
 }
 
-// ─── helpers ─────────────────────────────────────────────────────────────────
+// ─── Brokers ──────────────────────────────────────────────────────────────────
 function brokerToFrontend(b) {
   const instruments = dbAll(
     'SELECT * FROM broker_instruments WHERE broker_id = ? ORDER BY name',
@@ -740,12 +855,12 @@ function brokerToFrontend(b) {
     totalPnl: b.total_pnl,
     createdAt: b.created_at,
     instruments: instruments.map(i => ({
-    id: i.id,
-    name: i.name,
-    maxLots: i.max_lots,
-    lotQty: i.lot_qty,
-    brokerage: i.brokerage,
-    brokerSymbol: i.broker_symbol || null,  // ← add this
+      id: i.id,
+      name: i.name,
+      maxLots: i.max_lots,
+      lotQty: i.lot_qty,
+      brokerage: i.brokerage,
+      brokerSymbol: i.broker_symbol || null,
     })),
   };
 }
@@ -764,7 +879,6 @@ function saveInstruments(brokerId, instruments = []) {
   }
 }
 
-// ─── routes ──────────────────────────────────────────────────────────────────
 app.get('/api/brokers', requireAuth, (req, res) => {
   res.json(
     dbAll('SELECT * FROM brokers WHERE user_id = ? ORDER BY broker_name', [req.user.id])
@@ -803,9 +917,9 @@ app.put('/api/brokers/:id', requireAuth, (req, res) => {
     [
       brokerName || broker.broker_name,
       accountId !== undefined ? (accountId || null) : broker.account_id,
-      password !== undefined ? (password || null) : broker.password,
+      password  !== undefined ? (password  || null) : broker.password,
       parseFloat(profitShare) ?? broker.profit_share,
-      parseFloat(totalPnl) ?? broker.total_pnl,
+      parseFloat(totalPnl)    ?? broker.total_pnl,
       broker.id,
     ]
   );
@@ -822,5 +936,8 @@ app.delete('/api/brokers/:id', requireAuth, (req, res) => {
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'public', 'index.html')));
 
 initDB().then(() => {
-  server.listen(PORT, () => console.log(`BadlaBoard running on port ${PORT}`));
+ server.listen(PORT, () => {
+      console.log(`BadlaBoard running on port ${PORT}`);
+      startBroadcastWatcher();          // <-- add this line
+    });
 }).catch(err => { console.error('Failed to initialize database:', err); process.exit(1); });

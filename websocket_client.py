@@ -8,7 +8,6 @@ import string
 import logging
 import os
 import sys
-import requests
 from datetime import datetime
 
 logging.basicConfig(
@@ -21,12 +20,23 @@ logging.basicConfig(
 )
 logger = logging.getLogger("BadlaWebSocket")
 
-PUSH_URL = "http://localhost:3000/api/push"
+# ── Tunable knobs ──────────────────────────────────────────────────────────────
+PUSH_INTERVAL               = 0.08   # ~12 Hz — go lower if CPU allows
+MIN_PUSH_INTERVAL_PER_INST  = 0.06
+DISK_SAVE_INTERVAL          = 5.0
+BROADCAST_FILE              = "broadcast.json"   # Node watches this
+# ──────────────────────────────────────────────────────────────────────────────
+
+DISPLAY_NAME_OVERRIDES = {
+    'GOLD-6%(COMEXJUNE-MCXJUNE)@MAYDG':       'GOLD15%-(COMEXJUNE-MCXJUNE)@MAYDG',
+    'SILVER6%-(COMEXJULY-MCXJULY)@MAYDG':     'SILVER15%-(COMEXJULY-MCXJULY)@MAYDG',
+}
 
 
 class BadlaWebSocketClient:
 
-    def __init__(self, data_dir="data", settings_file="instrument_settings.json", response_timeout=1.0):
+    def __init__(self, data_dir="data", settings_file="instrument_settings.json",
+                 response_timeout=0.08):
         self.ws_url = "wss://schart.99sports.games/socket.io/?api_token_temp=android&EIO=3&transport=websocket"
         self.headers = {
             "Upgrade": "websocket",
@@ -43,6 +53,8 @@ class BadlaWebSocketClient:
 
         self.ws = None
         self.ping_thread = None
+        self.push_thread = None
+        self.save_thread = None
         self.ping_interval = 25000
         self.connected = False
         self.response_timeout = response_timeout
@@ -55,6 +67,15 @@ class BadlaWebSocketClient:
 
         self.price_map: dict[str, float] = {}
         self.price_lock = threading.Lock()
+        self.bid_map: dict[str, float] = {}
+        self.ask_map: dict[str, float] = {}
+
+        self._last_push_ts: dict[str, float] = {}
+        self._push_ts_lock = threading.Lock()
+
+        # Buffer for slow disk saves
+        self._save_buf: dict[str, tuple] = {}
+        self._save_lock = threading.Lock()
 
     # ── helpers ────────────────────────────────────────────────────────────────
 
@@ -69,101 +90,163 @@ class BadlaWebSocketClient:
             logger.error(f"Failed to load instrument settings: {e}")
             return []
 
+    def _snapshot(self) -> tuple:
+        with self.price_lock:
+            return dict(self.price_map), dict(self.bid_map), dict(self.ask_map)
+
     # ── equation evaluator ─────────────────────────────────────────────────────
 
-    def _evaluate(self, instrument: dict) -> float | None:
-        tokens = instrument.get("instrumentToken", [])
-        equation = instrument.get("equation", "L1")
+    def _evaluate(self, instrument: dict, prices: dict) -> float | None:
+        tokens    = instrument.get("instrumentToken", [])
+        equation  = instrument.get("equation", "L1")
         duty_list = instrument.get("settingValue", [{"Duty": 15}])
-        D1 = float(duty_list[0].get("Duty", 15)) if duty_list else 15.0
+        D1        = float(duty_list[0].get("Duty", 15)) if duty_list else 15.0
 
-        with self.price_lock:
-            prices = [self.price_map.get(str(t)) for t in tokens]
-
-        if not prices or prices[0] is None:
+        vals = [prices.get(str(t)) for t in tokens]
+        if not vals or vals[0] is None:
             return None
 
-        L1 = float(prices[0])
-        L2 = float(prices[1]) if len(prices) > 1 and prices[1] is not None else 0.0
-        L3 = float(prices[2]) if len(prices) > 2 and prices[2] is not None else 0.0
+        L1 = float(vals[0])
+        L2 = float(vals[1]) if len(vals) > 1 and vals[1] is not None else 0.0
+        L3 = float(vals[2]) if len(vals) > 2 and vals[2] is not None else 0.0
 
         try:
-            result = eval(equation, {"__builtins__": {}}, {
+            return float(eval(equation, {"__builtins__": {}}, {
                 "L1": L1, "L2": L2, "L3": L3, "D1": D1,
                 "Math": type('Math', (), {"round": round})(),
                 "round": round, "abs": abs, "max": max, "min": min,
-            })
-            return float(result)
+            }))
         except Exception as ex:
             logger.debug(f"Equation eval failed for {instrument.get('settingName')}: {ex}")
             return None
 
-    # ── build push payload ─────────────────────────────────────────────────────
+    # ── calculate badla (mirrors server.js calculateBadla) ─────────────────────
 
-    def _build_push_payload(self, inst: dict) -> dict | None:
+    def _calculate_badla(self, inst: dict, prices: dict,
+                         bids: dict, asks: dict) -> dict | None:
+        """Run the full badla calculation in Python so Node gets a ready result."""
         tokens = inst.get("instrumentToken", [])
         if not tokens:
             return None
 
-        instruments_detail = []
-        for tok in tokens:
-            price = self.price_map.get(str(tok))
-            if price is None:
-                continue
-            detail = next(
-                (d for d in inst.get("instrumentsDetail", [])
-                 if str(d.get("instrument_token", "")) == str(tok)),
-                {}
-            )
-            instruments_detail.append({
-                "instrument_token": str(tok),
-                "exchange":         detail.get("exchange", ""),
-                "last_price":       price,
-                "buy_price_0":      detail.get("buy_price_0") or price,
-                "sell_price_0":     detail.get("sell_price_0") or price,
-            })
+        detail_map = {
+            str(d.get("instrument_token", "")): d
+            for d in inst.get("instrumentsDetail", [])
+        }
 
+        def _get(tok):
+            p = prices.get(str(tok))
+            if p is None:
+                return None
+            d = detail_map.get(str(tok), {})
+            return {
+                "instrument_token": str(tok),
+                "exchange":         d.get("exchange", ""),
+                "last_price":       p,
+                "buy_price_0":      bids.get(str(tok), p),
+                "sell_price_0":     asks.get(str(tok), p),
+            }
+
+        instruments_detail = [r for r in (_get(t) for t in tokens) if r]
         if len(instruments_detail) < 2:
             return None
 
-        ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        mcx_data   = next((i for i in instruments_detail if i["exchange"] == "MCX"),   None)
+        comex_data = next((i for i in instruments_detail if i["exchange"] in ("COMEX","SPOT")), None)
+        dgcx_data  = next((i for i in instruments_detail if i["exchange"] == "DGCX"),  None)
+        if not mcx_data or not comex_data:
+            return None
+
+        equation = inst.get("equation", "L1")
+        duty_list = inst.get("settingValue", [{"Duty": 15}])
+        D1 = float(duty_list[0].get("Duty", 15)) if duty_list else 15.0
+        reverse = inst.get("reverse", "0")
+
+        def _eval(L1, L2, L3):
+            try:
+                return float(eval(equation, {"__builtins__": {}}, {
+                    "L1": L1, "L2": L2, "L3": L3, "D1": D1,
+                    "Math": type('Math', (), {"round": round})(),
+                    "round": round, "abs": abs, "max": max, "min": min,
+                }))
+            except Exception:
+                return None
+
+        L1 = comex_data["last_price"]
+        L2 = mcx_data["last_price"]
+        L3 = (10000 / dgcx_data["last_price"]) if dgcx_data else 1
+
+        ltp  = _eval(L1, L2, L3)
+        buy  = _eval(comex_data["buy_price_0"]  or L1,
+                     mcx_data["buy_price_0"]    or L2,
+                     (10000 / (dgcx_data["sell_price_0"] or dgcx_data["last_price"])) if dgcx_data else 1)
+        sell = _eval(comex_data["sell_price_0"] or L1,
+                     mcx_data["sell_price_0"]   or L2,
+                     (10000 / (dgcx_data["buy_price_0"]  or dgcx_data["last_price"])) if dgcx_data else 1)
+
+        if ltp is None or buy is None or sell is None:
+            return None
+
+        final_ltp  = (ltp  - L2) if reverse == "1" else (L2 - ltp)
+        final_buy  = (sell - mcx_data["buy_price_0"])  if reverse == "1" else (mcx_data["buy_price_0"]  - sell)
+        final_sell = (buy  - mcx_data["sell_price_0"]) if reverse == "1" else (mcx_data["sell_price_0"] - buy)
+
+        converted_ltp = _eval(L1, 0, L3)
+        dgcx_bid_l3 = (10000 / (dgcx_data["buy_price_0"]  or dgcx_data["last_price"])) if dgcx_data else 1
+        dgcx_ask_l3 = (10000 / (dgcx_data["sell_price_0"] or dgcx_data["last_price"])) if dgcx_data else 1
+
+        name = inst["settingName"]
         return {
-            ts: {
-                "timestamp":       ts,
-                "instrument_id":   inst["_id"],
-                "instrument_name": inst["settingName"],
-                "badla_type":      inst.get("badlaType", "GOLD"),
-                "reverse":         inst.get("reverse", "0"),
-                "raw_data": {
-                    "equation":    inst.get("equation", "L1"),
-                    "displayName": inst.get("settingName"),
-                    "data":        instruments_detail,
-                }
-            }
+            "id":          inst["_id"],
+            "name":        name,
+            "displayName": DISPLAY_NAME_OVERRIDES.get(inst.get("raw_data", {}).get("displayName", name),
+                           DISPLAY_NAME_OVERRIDES.get(name, name)),
+            "type":        inst.get("badlaType", "GOLD"),
+            "timestamp":   datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "badlaLTP":    f"{final_ltp:.2f}",
+            "badlaBUY":    f"{final_buy:.2f}",
+            "badlaSELL":   f"{final_sell:.2f}",
+            "mcx": {
+                "bid": mcx_data["buy_price_0"],
+                "ask": mcx_data["sell_price_0"],
+                "ltp": L2,
+            },
+            "comex": {
+                "bid": comex_data["buy_price_0"],
+                "ask": comex_data["sell_price_0"],
+                "ltp": L1,
+                "convertedLTP": f"{converted_ltp:.2f}" if converted_ltp is not None else None,
+                "convertedBID": f"{sell:.2f}",
+                "convertedASK": f"{buy:.2f}",
+            },
+            "dgcx": {
+                "bid": dgcx_data["buy_price_0"],
+                "ask": dgcx_data["sell_price_0"],
+                "ltp": dgcx_data["last_price"],
+                "convertedLTP": f"{L3:.4f}",
+                "convertedBID": f"{dgcx_bid_l3:.4f}",
+                "convertedASK": f"{dgcx_ask_l3:.4f}",
+            } if dgcx_data else None,
         }
 
-    # ── push to server ─────────────────────────────────────────────────────────
+    # ── atomic broadcast file write ────────────────────────────────────────────
 
-    def _push_to_server(self, inst: dict):
-        payload = self._build_push_payload(inst)
-        if not payload:
-            return
-        try:
-            requests.post(
-                PUSH_URL,
-                json={"name": inst["_id"], "data": payload},
-                timeout=2
-            )
-        except Exception as e:
-            logger.debug(f"Push failed for {inst['settingName']}: {e}")
+    def _write_broadcast(self, results: dict):
+        """Write all computed results atomically to broadcast.json.
+        Node.js watches this file and pushes its contents straight to
+        WebSocket clients — no HTTP round-trip at all.
+        """
+        tmp = BROADCAST_FILE + ".tmp"
+        with open(tmp, "w") as f:
+            json.dump({"ts": time.time(), "data": results}, f, separators=(',', ':'))
+        os.replace(tmp, BROADCAST_FILE)
 
-    # ── save to disk ───────────────────────────────────────────────────────────
+    # ── disk save (slow path) ──────────────────────────────────────────────────
 
-    def _save_data(self, instrument: dict, value: float):
+    def _save_data(self, instrument: dict, value: float, prices: dict):
         setting_name = instrument["settingName"]
         safe_name = ''.join(c if c.isalnum() else '_' for c in setting_name).strip('_')
         filepath = os.path.join(self.data_dir, f"{safe_name}.json")
-
         try:
             existing = {}
             if os.path.exists(filepath):
@@ -171,21 +254,90 @@ class BadlaWebSocketClient:
                     existing = json.load(f)
         except Exception:
             existing = {}
-
         ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         existing[ts] = {
-            "timestamp":       ts,
-            "instrument_id":   instrument["_id"],
+            "timestamp":      ts,
+            "instrument_id":  instrument["_id"],
             "instrument_name": setting_name,
-            "computed_value":  value,
-            "prices": {
-                str(t): self.price_map.get(str(t))
-                for t in instrument.get("instrumentToken", [])
-            }
+            "computed_value": value,
+            "prices": {str(t): prices.get(str(t)) for t in instrument.get("instrumentToken", [])}
         }
-
         with open(filepath, 'w') as f:
             json.dump(existing, f, indent=4)
+
+    def _disk_save_loop(self):
+        logger.info(f"Disk-save thread started (interval={DISK_SAVE_INTERVAL}s)")
+        while self.connected:
+            time.sleep(DISK_SAVE_INTERVAL)
+            with self._save_lock:
+                batch = dict(self._save_buf)
+                self._save_buf.clear()
+            for _, (inst, value, prices) in batch.items():
+                try:
+                    self._save_data(inst, value, prices)
+                except Exception as e:
+                    logger.warning(f"Disk save failed for {inst.get('settingName')}: {e}")
+        logger.info("Disk-save thread stopped")
+
+    # ── push all (no HTTP — just file write) ───────────────────────────────────
+
+    def _push_all(self):
+        if not self.price_map:
+            return
+
+        prices, bids, asks = self._snapshot()
+        now = time.time()
+        results = {}
+
+        for inst in self.instrument_settings:
+            inst_id = inst["_id"]
+
+            with self._push_ts_lock:
+                if now - self._last_push_ts.get(inst_id, 0) < MIN_PUSH_INTERVAL_PER_INST:
+                    continue
+                self._last_push_ts[inst_id] = now
+
+            result = self._calculate_badla(inst, prices, bids, asks)
+            if result is None:
+                continue
+
+            results[inst_id] = result
+
+            # Queue disk save
+            value = self._evaluate(inst, prices)
+            if value is not None:
+                with self._save_lock:
+                    self._save_buf[inst_id] = (inst, value, dict(prices))
+
+        if results:
+            self._write_broadcast(results)
+            # Also update live_prices.json for any other readers
+            with self.price_lock:
+                state = {"last": dict(self.price_map), "bid": dict(self.bid_map),
+                         "ask": dict(self.ask_map), "ts": time.time()}
+            tmp = "live_prices.tmp"
+            with open(tmp, "w") as f:
+                json.dump(state, f)
+            os.replace(tmp, "live_prices.json")
+
+            logger.debug(f"Broadcast {len(results)}/{len(self.instrument_settings)} instruments")
+
+    # ── timer thread ───────────────────────────────────────────────────────────
+
+    def _timed_push(self):
+        logger.info(f"Push timer started ({1/PUSH_INTERVAL:.0f} Hz)")
+        next_tick = time.monotonic() + PUSH_INTERVAL
+        while self.connected:
+            sleep_for = next_tick - time.monotonic()
+            if sleep_for > 0:
+                time.sleep(sleep_for)
+            next_tick += PUSH_INTERVAL
+            if self.connected and self.price_map:
+                try:
+                    self._push_all()
+                except Exception as e:
+                    logger.error(f"Push timer error: {e}")
+        logger.info("Push timer stopped")
 
     # ── websocket ──────────────────────────────────────────────────────────────
 
@@ -210,7 +362,6 @@ class BadlaWebSocketClient:
             self.ws = websocket.create_connection(
                 self.ws_url, header=self.headers, sslopt={"context": ssl_ctx}
             )
-
             msg = self.ws.recv()
             if msg.startswith("0"):
                 try:
@@ -231,7 +382,10 @@ class BadlaWebSocketClient:
 
             self.connected = True
             self.ping_thread = threading.Thread(target=self._send_ping, daemon=True)
-            self.ping_thread.start()
+            self.push_thread = threading.Thread(target=self._timed_push, daemon=True)
+            self.save_thread = threading.Thread(target=self._disk_save_loop, daemon=True)
+            for t in (self.ping_thread, self.push_thread, self.save_thread):
+                t.start()
             return True
 
         except Exception as e:
@@ -277,7 +431,6 @@ class BadlaWebSocketClient:
             "response_type":    "full",
             "duty":             [],
         }
-
         self.ws.send(f'42["watch-instruments",{json.dumps(payload)}]')
         logger.info(f"Sent watch-instruments for {len(equation_dict)} instruments")
 
@@ -293,17 +446,10 @@ class BadlaWebSocketClient:
                     lp = item.get("last_price")
                     if tok and lp is not None:
                         self.price_map[tok] = float(lp)
-                        # Update bid/ask in instrumentsDetail with live values
-                        for inst in self.instrument_settings:
-                            for detail in inst.get("instrumentsDetail", []):
-                                if str(detail.get("instrument_token", "")) == tok:
-                                    detail["last_price"]   = float(lp)
-                                    detail["buy_price_0"]  = float(item.get("buy_price_0") or lp)
-                                    detail["sell_price_0"] = float(item.get("sell_price_0") or lp)
+                        self.bid_map[tok]   = float(item.get("buy_price_0") or lp)
+                        self.ask_map[tok]   = float(item.get("sell_price_0") or lp)
         except Exception as e:
             logger.debug(f"Frame parse error: {e}")
-
-    # ── main loop ──────────────────────────────────────────────────────────────
 
     def run(self):
         try:
@@ -313,53 +459,31 @@ class BadlaWebSocketClient:
                         logger.warning("Reconnecting in 5s...")
                         time.sleep(5)
                         continue
-
                 try:
                     self._send_watch_request()
-                    time.sleep(1.0)
-                    self.ws.settimeout(5.0)
+                    time.sleep(0.2)
+                    self.ws.settimeout(self.response_timeout)
                     logger.info("Subscribed — listening for live ticks...")
-
-                    # Listen forever — server pushes instrument-data continuously
                     while True:
                         try:
                             msg = self.ws.recv()
                         except websocket.WebSocketTimeoutException:
-                            # No tick in 5s — push current prices to server
-                            if self.price_map:
-                                saved = 0
-                                for inst in self.instrument_settings:
-                                    value = self._evaluate(inst)
-                                    if value is not None:
-                                        self._save_data(inst, value)
-                                        self._push_to_server(inst)
-                                        saved += 1
-                                logger.info(f"Pushed {saved}/{len(self.instrument_settings)} | prices={len(self.price_map)}")
-                            continue  # keep listening, don't reconnect
-
+                            continue
                         if msg in ("2", "3"):
                             self.ws.send("3") if msg == "2" else None
                             continue
                         if not msg.startswith("42"):
                             continue
-
                         self._process_frame(msg)
-
-                        # Push immediately on every tick
-                        for inst in self.instrument_settings:
-                            value = self._evaluate(inst)
-                            if value is not None:
-                                self._push_to_server(inst)
-
                 except Exception as e:
                     logger.error(f"Connection lost: {e}")
                     self.connected = False
                     time.sleep(2)
-
         except KeyboardInterrupt:
             logger.info("Shutting down...")
         finally:
             self.disconnect()
+
 
 if __name__ == "__main__":
     client = BadlaWebSocketClient()
