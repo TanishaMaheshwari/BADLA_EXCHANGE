@@ -401,6 +401,12 @@ app.post('/api/push', (req, res) => {
   const { name, data } = req.body;
   if (!name || !data) return res.status(400).json({ error: 'missing name or data' });
   const result = calculateBadla(data);
+  if (!result) {
+    const ts = Object.keys(data)[0];
+    const d = data[ts];
+    console.log('calculateBadla returned null for:', name, d?.instrument_name, 
+      'instruments:', d?.raw_data?.data?.map(i => i.exchange + ':' + i.instrument_token));
+  }
   if (result) { latestPrices[name] = result; broadcast({ type: 'update', data: result }); }
   res.json({ ok: true });
 });

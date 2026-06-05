@@ -128,3 +128,44 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - This calculator is designed to work with the data format from the LivebadlaComponent
 - Special thanks to the trading community for their input on Badla calculations 
+
+
+
+--------------------------------------------------------------------------------------------
+HOW TO UPDATE FOR NEW INSTRUMENTS
+
+Here's the process:
+
+**Every few days (or when new instruments appear):**
+
+**Step 1 — Get fresh payload**
+1. Log in to `https://badla.dgexch.com`
+2. Open DevTools → Network → WS tab
+3. Click the websocket connection
+4. In Messages, find the outgoing frame starting with `42["watch-instruments",`
+5. Copy the JSON object inside it (the `{...}` part after `42["watch-instruments",`)
+
+**Step 2 — Update `build_instruments.py`**
+Replace the `RAW_PAYLOAD` value with the new copied text:
+```python
+RAW_PAYLOAD = r"""{ ...paste new payload here... }"""
+```
+
+**Step 3 — Run the builder**
+```bash
+python build_instruments.py
+```
+This regenerates `instrument_settings.json` with all new instruments + their `instrumentsDetail` (exchange info etc).
+
+**Step 4 — Restart everything**
+```bash
+# Terminal 1 — restart Node
+node badla_web_server.js
+
+# Terminal 2 — restart Python
+python main.py
+```
+
+That's it. The whole chain picks up automatically — `instrument_settings.json` → `websocket_client.py` reads it → pushes all instruments → webapp shows them all.
+
+**You never need to touch `websocket_client.py` or `badla_web_server.js`** — only `RAW_PAYLOAD` in `build_instruments.py` changes.
