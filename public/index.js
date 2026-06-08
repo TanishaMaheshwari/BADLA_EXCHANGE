@@ -316,7 +316,7 @@ function connectWS() {
       const prev=prices[msg.data.name]; prices[msg.data.name]=msg.data;
       updateCount++; document.getElementById('update-count').textContent=`${updateCount} ticks`;
       document.getElementById('last-update').textContent=new Date().toLocaleTimeString();
-      flashRow(msg.data.name,prev,msg.data); renderPriceRow(msg.data);
+      renderPriceRow(msg.data);
       updateDashCard(msg.data,prev); updateDealsLivePnl(); checkDealPnlAlerts(); checkAlerts(msg.data);
     } else if (msg.type==='order_triggered') {
       const o = orders.find(x=>x.id===msg.orderId);
@@ -655,11 +655,6 @@ async function addDashInstr(name) {
   document.getElementById('dash-table-empty').style.display = 'none';
   const tbody = document.getElementById('dash-tbody');
   if (tbody) tbody.insertAdjacentHTML('beforeend', renderDashRowHTML(name, prices[name]));
-}
-function flashRow(name,prev,curr) {
-  const row=document.getElementById('row-'+slugify(name)); if (!row||!prev) return;
-  const dir=parseFloat(curr.badlaLTP)>parseFloat(prev.badlaLTP)?'green':'red';
-  row.classList.remove('flash-green','flash-red'); void row.offsetWidth; row.classList.add(`flash-${dir}`);
 }
 function slugify(s) { return s.replace(/[^a-z0-9]/gi,'_'); }
 function badgeClass(type) { const m={GOLD:'gold',SILVER:'silver',CRUDE:'crude',COPPER:'copper',GAS:'gas'}; return 'badge-'+(m[type]||'other'); }

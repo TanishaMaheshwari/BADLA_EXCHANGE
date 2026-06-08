@@ -150,12 +150,19 @@ class BadlaWebSocketClient:
         instruments_detail = [r for r in (_get(t) for t in tokens) if r]
         if len(instruments_detail) < 2:
             return None
-
+        
         mcx_data   = next((i for i in instruments_detail if i["exchange"] == "MCX"),   None)
         comex_data = next((i for i in instruments_detail if i["exchange"] in ("COMEX","SPOT")), None)
         dgcx_data  = next((i for i in instruments_detail if i["exchange"] == "DGCX"),  None)
+        # Fallback: for non MCX+COMEX pairs (NSE, SGX, MCX+MCX etc.)
+        # assign positionally so L1=first token, L2=second token
         if not mcx_data or not comex_data:
-            return None
+            non_dgcx = [i for i in instruments_detail if i["exchange"] != "DGCX"]
+            if len(non_dgcx) < 2:
+                return None
+            comex_data = non_dgcx[0]   # L1
+            mcx_data   = non_dgcx[1]   # L2
+            reverse = "1" 
 
         equation = inst.get("equation", "L1")
         duty_list = inst.get("settingValue", [{"Duty": 15}])

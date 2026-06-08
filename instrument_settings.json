@@ -24,7 +24,7 @@
           "ExchangeToken": "499095",
           "instrument_token": "23737742814",
           "tradable": true,
-          "last_price": "8897",
+          "last_price": "8970",
           "last_quantity": 1,
           "average_price": "9005.2",
           "volume": 39090,
@@ -133,7 +133,7 @@
           "ExchangeToken": "QCLN26",
           "instrument_token": "27494082360",
           "tradable": true,
-          "last_price": "92.92",
+          "last_price": "94.03",
           "last_quantity": 1,
           "average_price": null,
           "volume": 77508,
@@ -180,7 +180,7 @@
           "ExchangeToken": "44695",
           "instrument_token": "44695",
           "tradable": false,
-          "last_price": "104.330002",
+          "last_price": "104.830002",
           "last_quantity": null,
           "average_price": "0",
           "volume": 2625,
@@ -223,7 +223,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a0b10036121bd19cead3925",
@@ -247,7 +247,7 @@
           "ExchangeToken": "459277",
           "instrument_token": "70526413128",
           "tradable": true,
-          "last_price": "155685",
+          "last_price": "152551",
           "last_quantity": 1,
           "average_price": "155453.58",
           "volume": 24,
@@ -356,7 +356,7 @@
           "ExchangeToken": "QGCM26",
           "instrument_token": "41830568678",
           "tradable": true,
-          "last_price": "4499.3",
+          "last_price": "4314.8",
           "last_quantity": 2,
           "average_price": null,
           "volume": 142,
@@ -403,7 +403,7 @@
           "ExchangeToken": "44695",
           "instrument_token": "44695",
           "tradable": false,
-          "last_price": "104.330002",
+          "last_price": "104.830002",
           "last_quantity": null,
           "average_price": "0",
           "volume": 2625,
@@ -446,7 +446,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a0c2ca76121bd19cead3926",
@@ -684,7 +684,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a0e95a26121bd19cead3927",
@@ -708,7 +708,7 @@
           "ExchangeToken": "466583",
           "instrument_token": "20848323089",
           "tradable": true,
-          "last_price": "160170",
+          "last_price": "154090",
           "last_quantity": 1,
           "average_price": "159541.61",
           "volume": 2733,
@@ -817,7 +817,7 @@
           "ExchangeToken": "QGCQ26",
           "instrument_token": "78072679092",
           "tradable": true,
-          "last_price": "4537.7",
+          "last_price": "4342.8",
           "last_quantity": 1,
           "average_price": null,
           "volume": 55092,
@@ -864,7 +864,7 @@
           "ExchangeToken": "44695",
           "instrument_token": "44695",
           "tradable": false,
-          "last_price": "104.330002",
+          "last_price": "104.830002",
           "last_quantity": null,
           "average_price": "0",
           "volume": 2625,
@@ -907,7 +907,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a0e960f6121bd19cead3928",
@@ -931,7 +931,7 @@
           "ExchangeToken": "466583",
           "instrument_token": "20848323089",
           "tradable": true,
-          "last_price": "160170",
+          "last_price": "154090",
           "last_quantity": 1,
           "average_price": "159541.61",
           "volume": 2733,
@@ -1040,7 +1040,7 @@
           "ExchangeToken": "QGCQ26",
           "instrument_token": "78072679092",
           "tradable": true,
-          "last_price": "4537.7",
+          "last_price": "4342.8",
           "last_quantity": 1,
           "average_price": null,
           "volume": 55092,
@@ -1087,7 +1087,7 @@
           "ExchangeToken": "44695",
           "instrument_token": "44695",
           "tradable": false,
-          "last_price": "104.330002",
+          "last_price": "104.830002",
           "last_quantity": null,
           "average_price": "0",
           "volume": 2625,
@@ -1130,7 +1130,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a0e986c6121bd19cead392a",
@@ -1154,7 +1154,7 @@
           "ExchangeToken": "464150",
           "instrument_token": "20446366594",
           "tradable": true,
-          "last_price": "266289",
+          "last_price": "243255",
           "last_quantity": 1,
           "average_price": "263858.19",
           "volume": 3898,
@@ -1263,7 +1263,7 @@
           "ExchangeToken": "QSIN26",
           "instrument_token": "71069778201",
           "tradable": true,
-          "last_price": "74.74",
+          "last_price": "67.96",
           "last_quantity": 1,
           "average_price": null,
           "volume": 13740,
@@ -1310,7 +1310,7 @@
           "ExchangeToken": "44695",
           "instrument_token": "44695",
           "tradable": false,
-          "last_price": "104.330002",
+          "last_price": "104.830002",
           "last_quantity": null,
           "average_price": "0",
           "volume": 2625,
@@ -1353,7 +1353,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a1002dd6121bd19cead392b",
@@ -1377,7 +1377,7 @@
           "ExchangeToken": "504265",
           "instrument_token": "71406830696",
           "tradable": true,
-          "last_price": "317",
+          "last_price": "303.3",
           "last_quantity": 1,
           "average_price": "312.44",
           "volume": 53275,
@@ -1486,7 +1486,7 @@
           "ExchangeToken": "QNGN26",
           "instrument_token": "97967302236",
           "tradable": true,
-          "last_price": "3.307",
+          "last_price": "3.174",
           "last_quantity": 1,
           "average_price": null,
           "volume": 33190,
@@ -1533,7 +1533,7 @@
           "ExchangeToken": "44695",
           "instrument_token": "44695",
           "tradable": false,
-          "last_price": "104.330002",
+          "last_price": "104.830002",
           "last_quantity": null,
           "average_price": "0",
           "volume": 2625,
@@ -1576,7 +1576,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a10033c6121bd19cead392c",
@@ -1600,7 +1600,7 @@
           "ExchangeToken": "552708",
           "instrument_token": "77383798437",
           "tradable": true,
-          "last_price": "1373.55",
+          "last_price": "1331.45",
           "last_quantity": 1,
           "average_price": "1368.51",
           "volume": 6867,
@@ -1709,7 +1709,7 @@
           "ExchangeToken": "QHGN26",
           "instrument_token": "50617248258",
           "tradable": true,
-          "last_price": "6.5275",
+          "last_price": "6.2885",
           "last_quantity": 1,
           "average_price": null,
           "volume": 17496,
@@ -1756,7 +1756,7 @@
           "ExchangeToken": "44695",
           "instrument_token": "44695",
           "tradable": false,
-          "last_price": "104.330002",
+          "last_price": "104.830002",
           "last_quantity": null,
           "average_price": "0",
           "volume": 2625,
@@ -1799,7 +1799,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a10039d6121bd19cead392d",
@@ -1823,7 +1823,7 @@
           "ExchangeToken": "552708",
           "instrument_token": "77383798437",
           "tradable": true,
-          "last_price": "1373.55",
+          "last_price": "1331.45",
           "last_quantity": 1,
           "average_price": "1368.51",
           "volume": 6867,
@@ -1932,7 +1932,7 @@
           "ExchangeToken": "QHGN26",
           "instrument_token": "50617248258",
           "tradable": true,
-          "last_price": "6.5275",
+          "last_price": "6.2885",
           "last_quantity": 1,
           "average_price": null,
           "volume": 17496,
@@ -1979,7 +1979,7 @@
           "ExchangeToken": "44695",
           "instrument_token": "44695",
           "tradable": false,
-          "last_price": "104.330002",
+          "last_price": "104.830002",
           "last_quantity": null,
           "average_price": "0",
           "volume": 2625,
@@ -2022,7 +2022,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a1577da6121bd19cead392e",
@@ -2046,7 +2046,7 @@
           "ExchangeToken": "464150",
           "instrument_token": "20446366594",
           "tradable": true,
-          "last_price": "266289",
+          "last_price": "243255",
           "last_quantity": 1,
           "average_price": "263858.19",
           "volume": 3898,
@@ -2155,7 +2155,7 @@
           "ExchangeToken": "QSIN26",
           "instrument_token": "71069778201",
           "tradable": true,
-          "last_price": "74.74",
+          "last_price": "67.96",
           "last_quantity": 1,
           "average_price": null,
           "volume": 13740,
@@ -2202,7 +2202,7 @@
           "ExchangeToken": "44695",
           "instrument_token": "44695",
           "tradable": false,
-          "last_price": "104.330002",
+          "last_price": "104.830002",
           "last_quantity": null,
           "average_price": "0",
           "volume": 2625,
@@ -2245,7 +2245,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a157a466121bd19cead392f",
@@ -2406,7 +2406,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a157aae6121bd19cead3930",
@@ -2567,7 +2567,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a159db66121bd19cead3931",
@@ -2728,7 +2728,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a16cb836121bd19cead3932",
@@ -2752,7 +2752,7 @@
           "ExchangeToken": "466583",
           "instrument_token": "20848323089",
           "tradable": true,
-          "last_price": "160170",
+          "last_price": "154090",
           "last_quantity": 1,
           "average_price": "159541.61",
           "volume": 2733,
@@ -2861,7 +2861,7 @@
           "ExchangeToken": "QGCQ26",
           "instrument_token": "78072679092",
           "tradable": true,
-          "last_price": "4537.7",
+          "last_price": "4342.8",
           "last_quantity": 1,
           "average_price": null,
           "volume": 55092,
@@ -2908,7 +2908,7 @@
           "ExchangeToken": "44695",
           "instrument_token": "44695",
           "tradable": false,
-          "last_price": "104.330002",
+          "last_price": "104.830002",
           "last_quantity": null,
           "average_price": "0",
           "volume": 2625,
@@ -2951,7 +2951,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a16cccb6121bd19cead3933",
@@ -2975,7 +2975,7 @@
           "ExchangeToken": "464150",
           "instrument_token": "20446366594",
           "tradable": true,
-          "last_price": "266289",
+          "last_price": "243255",
           "last_quantity": 1,
           "average_price": "263858.19",
           "volume": 3898,
@@ -3084,7 +3084,7 @@
           "ExchangeToken": "QSIN26",
           "instrument_token": "71069778201",
           "tradable": true,
-          "last_price": "74.74",
+          "last_price": "67.96",
           "last_quantity": 1,
           "average_price": null,
           "volume": 13740,
@@ -3131,7 +3131,7 @@
           "ExchangeToken": "44695",
           "instrument_token": "44695",
           "tradable": false,
-          "last_price": "104.330002",
+          "last_price": "104.830002",
           "last_quantity": null,
           "average_price": "0",
           "volume": 2625,
@@ -3174,7 +3174,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a16cdaf6121bd19cead3934",
@@ -3459,7 +3459,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a16ee9b6121bd19cead3935",
@@ -3483,7 +3483,7 @@
           "ExchangeToken": "464150",
           "instrument_token": "20446366594",
           "tradable": true,
-          "last_price": "266289",
+          "last_price": "243255",
           "last_quantity": 1,
           "average_price": "263858.19",
           "volume": 3898,
@@ -3592,7 +3592,7 @@
           "ExchangeToken": "QSIN26",
           "instrument_token": "71069778201",
           "tradable": true,
-          "last_price": "74.74",
+          "last_price": "67.96",
           "last_quantity": 1,
           "average_price": null,
           "volume": 13740,
@@ -3639,7 +3639,7 @@
           "ExchangeToken": "44695",
           "instrument_token": "44695",
           "tradable": false,
-          "last_price": "104.330002",
+          "last_price": "104.830002",
           "last_quantity": null,
           "average_price": "0",
           "volume": 2625,
@@ -3682,7 +3682,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a16eedf6121bd19cead3936",
@@ -3706,7 +3706,7 @@
           "ExchangeToken": "466583",
           "instrument_token": "20848323089",
           "tradable": true,
-          "last_price": "160170",
+          "last_price": "154090",
           "last_quantity": 1,
           "average_price": "159541.61",
           "volume": 2733,
@@ -3815,7 +3815,7 @@
           "ExchangeToken": "QGCQ26",
           "instrument_token": "78072679092",
           "tradable": true,
-          "last_price": "4537.7",
+          "last_price": "4342.8",
           "last_quantity": 1,
           "average_price": null,
           "volume": 55092,
@@ -3862,7 +3862,7 @@
           "ExchangeToken": "44695",
           "instrument_token": "44695",
           "tradable": false,
-          "last_price": "104.330002",
+          "last_price": "104.830002",
           "last_quantity": null,
           "average_price": "0",
           "volume": 2625,
@@ -3905,7 +3905,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a1983726121bd19cead3937",
@@ -3929,7 +3929,7 @@
           "ExchangeToken": "466583",
           "instrument_token": "20848323089",
           "tradable": true,
-          "last_price": "160170",
+          "last_price": "154090",
           "last_quantity": 1,
           "average_price": "159541.61",
           "volume": 2733,
@@ -4038,7 +4038,7 @@
           "ExchangeToken": "QGCQ26",
           "instrument_token": "78072679092",
           "tradable": true,
-          "last_price": "4537.7",
+          "last_price": "4342.8",
           "last_quantity": 1,
           "average_price": null,
           "volume": 55092,
@@ -4085,7 +4085,7 @@
           "ExchangeToken": "44695",
           "instrument_token": "44695",
           "tradable": false,
-          "last_price": "104.330002",
+          "last_price": "104.830002",
           "last_quantity": null,
           "average_price": "0",
           "volume": 2625,
@@ -4128,7 +4128,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "69fc426dbab8e09015512d39",
@@ -4366,7 +4366,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a040e47bab8e09015512d3c",
@@ -4391,7 +4391,7 @@
           "ExchangeToken": "459277",
           "instrument_token": "70526413128",
           "tradable": true,
-          "last_price": "155685",
+          "last_price": "152551",
           "last_quantity": 1,
           "average_price": "155453.58",
           "volume": 24,
@@ -4500,7 +4500,7 @@
           "ExchangeToken": "QGCM26",
           "instrument_token": "41830568678",
           "tradable": true,
-          "last_price": "4499.3",
+          "last_price": "4314.8",
           "last_quantity": 2,
           "average_price": null,
           "volume": 142,
@@ -4547,7 +4547,7 @@
           "ExchangeToken": "44695",
           "instrument_token": "44695",
           "tradable": false,
-          "last_price": "104.330002",
+          "last_price": "104.830002",
           "last_quantity": null,
           "average_price": "0",
           "volume": 2625,
@@ -4590,7 +4590,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a040eaebab8e09015512d3d",
@@ -4615,7 +4615,7 @@
           "ExchangeToken": "464150",
           "instrument_token": "20446366594",
           "tradable": true,
-          "last_price": "266289",
+          "last_price": "243255",
           "last_quantity": 1,
           "average_price": "263858.19",
           "volume": 3898,
@@ -4724,7 +4724,7 @@
           "ExchangeToken": "QSIN26",
           "instrument_token": "71069778201",
           "tradable": true,
-          "last_price": "74.74",
+          "last_price": "67.96",
           "last_quantity": 1,
           "average_price": null,
           "volume": 13740,
@@ -4771,7 +4771,7 @@
           "ExchangeToken": "44695",
           "instrument_token": "44695",
           "tradable": false,
-          "last_price": "104.330002",
+          "last_price": "104.830002",
           "last_quantity": null,
           "average_price": "0",
           "volume": 2625,
@@ -4814,7 +4814,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a046907bab8e09015512d3f",
@@ -4839,7 +4839,7 @@
           "ExchangeToken": "464150",
           "instrument_token": "20446366594",
           "tradable": true,
-          "last_price": "266289",
+          "last_price": "243255",
           "last_quantity": 1,
           "average_price": "263858.19",
           "volume": 3898,
@@ -4948,7 +4948,7 @@
           "ExchangeToken": "QSIN26",
           "instrument_token": "71069778201",
           "tradable": true,
-          "last_price": "74.74",
+          "last_price": "67.96",
           "last_quantity": 1,
           "average_price": null,
           "volume": 13740,
@@ -4995,7 +4995,7 @@
           "ExchangeToken": "44695",
           "instrument_token": "44695",
           "tradable": false,
-          "last_price": "104.330002",
+          "last_price": "104.830002",
           "last_quantity": null,
           "average_price": "0",
           "volume": 2625,
@@ -5038,7 +5038,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "6a056828bab8e09015512d40",
@@ -5062,7 +5062,7 @@
           "ExchangeToken": "459277",
           "instrument_token": "70526413128",
           "tradable": true,
-          "last_price": "155685",
+          "last_price": "152551",
           "last_quantity": 1,
           "average_price": "155453.58",
           "volume": 24,
@@ -5171,7 +5171,7 @@
           "ExchangeToken": "QGCM26",
           "instrument_token": "41830568678",
           "tradable": true,
-          "last_price": "4499.3",
+          "last_price": "4314.8",
           "last_quantity": 2,
           "average_price": null,
           "volume": 142,
@@ -5218,7 +5218,7 @@
           "ExchangeToken": "44695",
           "instrument_token": "44695",
           "tradable": false,
-          "last_price": "104.330002",
+          "last_price": "104.830002",
           "last_quantity": null,
           "average_price": "0",
           "volume": 2625,
@@ -5261,7 +5261,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "699e91656754c439a4ad8e78",
@@ -5422,7 +5422,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "69cb71586754c439a4ad8e89",
@@ -5583,7 +5583,7 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     },
     {
       "_id": "697c47bdd64a70878cc02b0d",
@@ -5821,7 +5821,8 @@
           }
         }
       ],
-      "updatedAt": "2026-06-04T12:51:36.000Z"
+      "updatedAt": "2026-06-08T04:31:12.000Z"
     }
-  ]
+  ],
+  "updatedAt": "2026-06-08T04:29:52.000Z"
 }
