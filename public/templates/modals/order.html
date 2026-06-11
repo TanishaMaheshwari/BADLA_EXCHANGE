@@ -1,0 +1,128 @@
+<!-- PLACE ORDER MODAL -->
+<div class="modal-overlay" id="order-modal">
+  <div class="modal" style="width:620px">
+    <h3>📋 Place Order</h3>
+
+    <!-- Instrument row -->
+    <div style="display:grid;grid-template-columns:2fr 1fr;gap:12px;margin-bottom:14px">
+      <div class="form-group">
+        <label>Instrument</label>
+        <select id="o-instrument"><option value="">Select instrument...</option></select>
+      </div>
+      <div class="form-group">
+        <label>Note (optional)</label>
+        <input type="text" id="o-note" placeholder="e.g. arb entry">
+      </div>
+    </div>
+
+    <!-- MCX leg -->
+    <div style="margin-bottom:10px">
+      <label class="order-leg-check" for="o-mcx-enabled">
+        <input type="checkbox" id="o-mcx-enabled" checked onchange="toggleOrderLeg('mcx')">
+        <span style="color:var(--accent)">MCX LEG</span>
+      </label>
+      <div id="o-mcx-fields" class="order-leg-fields" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
+        <div class="form-group">
+          <label>Side</label>
+          <select id="o-mcx-side"><option value="SELL">SELL</option><option value="BUY">BUY</option></select>
+        </div>
+        <div class="form-group">
+          <label>Qty</label>
+          <input type="number" id="o-mcx-qty" placeholder="1" value="1" min="0.01" step="0.01">
+        </div>
+        <div class="form-group">
+          <label>Broker</label>
+          <select id="o-mcx-broker" onchange="autofillLotFromBroker('mcx')"><option value="">No broker</option></select>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMEX leg -->
+    <div style="margin-bottom:10px">
+      <label class="order-leg-check" for="o-comex-enabled">
+        <input type="checkbox" id="o-comex-enabled" checked onchange="toggleOrderLeg('comex')">
+        <span style="color:var(--gold)">COMEX LEG</span>
+      </label>
+      <div id="o-comex-fields" class="order-leg-fields" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
+        <div class="form-group">
+          <label>Side</label>
+          <select id="o-comex-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select>
+        </div>
+        <div class="form-group">
+          <label>Qty</label>
+          <input type="number" id="o-comex-qty" placeholder="1" value="1" min="0.000001" step="0.000001">
+        </div>
+        <div class="form-group">
+          <label>Broker</label>
+          <select id="o-comex-broker" onchange="autofillLotFromBroker('comex')"><option value="">No broker</option></select>
+        </div>
+      </div>
+    </div>
+
+    <!-- DGCX leg -->
+    <div style="margin-bottom:14px">
+      <label class="order-leg-check" for="o-dgcx-enabled">
+        <input type="checkbox" id="o-dgcx-enabled" onchange="toggleOrderLeg('dgcx')">
+        <span style="color:#6cf">DGCX LEG</span>
+        <span style="font-size:10px;color:var(--muted);margin-left:4px">(optional)</span>
+      </label>
+      <div id="o-dgcx-fields" class="order-leg-fields" style="display:none;grid-template-columns:1fr 1fr 1fr;gap:8px">
+        <div class="form-group">
+          <label>Side</label>
+          <select id="o-dgcx-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select>
+        </div>
+        <div class="form-group">
+          <label>Qty</label>
+          <input type="number" id="o-dgcx-qty" placeholder="1" value="1" min="0.000001" step="0.000001">
+        </div>
+        <div class="form-group">
+          <label>Broker</label>
+          <select id="o-dgcx-broker" onchange="autofillLotFromBroker('dgcx')"><option value="">No broker</option></select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Condition toggle -->
+    <label class="dgcx-toggle-row" for="o-has-condition" style="margin-bottom:10px;border-color:rgba(255,215,0,0.3)">
+      <input type="checkbox" id="o-has-condition" onchange="toggleOrderCondition()">
+      <span style="font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--gold)">IMMEDIATE EXECUTION</span>
+      <span style="font-size:10px;color:var(--muted);margin-left:auto">Check to skip condition &amp; execute now</span>
+    </label>
+
+   <div id="o-condition-fields" class="condition-section" style="display:block;margin-bottom:14px">
+      <div style="font-size:10px;color:var(--gold);margin-bottom:8px;font-weight:700">Place order when:</div>
+      <div class="condition-row" style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px">
+        <div class="form-group">
+          <label style="color:var(--gold)">Price Field</label>
+          <select id="o-cond-field">
+            <option value="badlaLTP">Badla LTP</option>
+            <option value="badlaBUY">Badla BUY</option>
+            <option value="badlaSELL">Badla SELL</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label style="color:var(--gold)">Direction</label>
+          <select id="o-cond-dir">
+            <option value="below">≤ Below</option>
+            <option value="above">≥ Above</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label style="color:var(--gold)">Value</label>
+          <input type="number" id="o-cond-value" placeholder="e.g. 700" step="0.01">
+        </div>
+      </div>
+    </div>
+
+    <!-- Confirmation warning (shown when no condition) -->
+    <div id="o-confirm-box" class="confirm-overlay" style="display:none;margin-bottom:14px">
+      <strong>⚡ Immediate execution</strong>
+      No condition set — this order will be placed immediately and sent to MT5 for execution. Confirm?
+    </div>
+
+    <div class="form-actions">
+      <button class="btn btn-cancel" onclick="closeOrderModal()">Cancel</button>
+      <button class="btn btn-primary" id="o-save-btn" onclick="saveOrder()">Set Order</button>
+    </div>
+  </div>
+</div>

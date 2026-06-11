@@ -1,0 +1,86 @@
+<!-- CLOSE DEAL -->
+<div class="modal-overlay" id="close-modal">
+  <div class="modal" style="width:580px">
+    <h3>Close Deal</h3>
+
+    <div class="mode-tabs" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:16px">
+      <div class="mode-tab active-manual" id="tab-manual" onclick="setCloseMode('manual')">
+        <div style="font-size:14px;color:#6cf">✎</div>
+        <div style="font-size:10px;font-weight:700;letter-spacing:.07em;color:#6cf">FILL PRICES</div>
+        <div style="font-size:9px;color:var(--muted);margin-top:2px">Enter prices manually</div>
+      </div>
+      <div class="mode-tab" id="tab-condition" onclick="setCloseMode('condition')">
+        <div style="font-size:14px;color:var(--gold)">◎</div>
+        <div style="font-size:10px;font-weight:700;letter-spacing:.07em;color:var(--gold)">CLOSE WHEN</div>
+        <div style="font-size:9px;color:var(--muted);margin-top:2px">Trigger on price condition</div>
+      </div>
+      <div class="mode-tab" id="tab-immediate" onclick="setCloseMode('immediate')">
+        <div style="font-size:14px;color:#ff5555">⚡</div>
+        <div style="font-size:10px;font-weight:700;letter-spacing:.07em;color:#ff5555">CLOSE NOW</div>
+        <div style="font-size:9px;color:var(--muted);margin-top:2px">Market order on MT5</div>
+      </div>
+    </div>
+
+    <!-- Qty always visible -->
+    <div style="background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:12px;margin-bottom:12px">
+      <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px">Close quantities</div>
+      <div id="close-qty-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:10px"></div>
+      <div style="font-size:10px;color:var(--muted);margin-top:8px">Leave blank to close full qty for that leg.</div>
+    </div>
+
+    <!-- FILL PRICES panel (default) -->
+    <div id="panel-manual">
+      <div class="form-grid" style="grid-template-columns:1fr 1fr">
+        <div class="form-group"><label>MCX Exit Price (₹)</label><input type="number" id="c-mcx-price" placeholder="0.00" step="0.01"></div>
+        <div class="form-group"><label>COMEX Exit Price (USD)</label><input type="number" id="c-comex-price" placeholder="0" step="0.000001"></div>
+        <div class="form-group" id="c-dgcx-wrap" style="display:none"><label>DGCX Exit Price (USD)</label><input type="number" id="c-dgcx-price" placeholder="0" step="0.000001"></div>
+      </div>
+    </div>
+
+    <!-- CLOSE WHEN panel -->
+    <div id="panel-condition" style="display:none">
+      <div style="background:var(--surface2);border:1px solid rgba(255,215,0,0.25);border-radius:6px;padding:12px;margin-bottom:10px">
+        <div style="font-size:10px;color:var(--gold);font-weight:700;margin-bottom:8px">Close position when:</div>
+        <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px">
+          <div class="form-group">
+            <label style="color:var(--gold)">Price Field</label>
+            <select id="c-cond-field">
+              <option value="badlaLTP">Badla LTP</option>
+              <option value="badlaBUY">Badla BUY</option>
+              <option value="badlaSELL">Badla SELL</option>
+              <option value="mcx.bid">MCX BID</option>
+              <option value="mcx.ask">MCX ASK</option>
+              <option value="comex.bid">COMEX BID</option>
+              <option value="comex.ask">COMEX ASK</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label style="color:var(--gold)">Direction</label>
+            <select id="c-cond-dir"><option value="below">≤ Below</option><option value="above">≥ Above</option></select>
+          </div>
+          <div class="form-group">
+            <label style="color:var(--gold)">Value</label>
+            <input type="number" id="c-cond-value" placeholder="e.g. 700" step="0.01">
+          </div>
+        </div>
+      </div>
+      <div style="background:rgba(255,215,0,0.07);border:1px solid rgba(255,215,0,0.3);border-radius:6px;padding:10px 14px;font-size:12px;color:#ffe88a;margin-bottom:10px">
+        <strong style="display:block;color:var(--gold);margin-bottom:3px">◎ Conditional close</strong>
+        MT5 order will be triggered automatically once the condition above is met.
+      </div>
+    </div>
+
+    <!-- CLOSE NOW panel -->
+    <div id="panel-immediate" style="display:none">
+      <div style="background:rgba(255,85,85,0.1);border:1px solid rgba(255,85,85,0.35);border-radius:6px;padding:10px 14px;font-size:12px;color:#ffaaaa;margin-bottom:10px">
+        <strong style="display:block;color:#ff5555;margin-bottom:3px">⚡ Immediate market close</strong>
+        A market order will be sent to MT5 right now. This cannot be undone. Slippage may occur.
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <button class="btn btn-cancel" onclick="closeCloseModal()">Cancel</button>
+      <button class="btn btn-primary" id="c-confirm-btn" onclick="confirmClose()">Confirm Close</button>
+    </div>
+  </div>
+</div>

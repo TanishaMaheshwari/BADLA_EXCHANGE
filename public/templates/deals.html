@@ -1,0 +1,16 @@
+  <div class="page" id="page-deals">
+    <div class="pnl-bar">
+      <div class="pnl-card"><div class="pnl-label">Open Deals</div><div class="pnl-value" id="open-count">0</div></div>
+      <div class="pnl-card"><div class="pnl-label">Live P&amp;L</div><div class="pnl-value" id="live-pnl">₹0</div></div>
+      <div class="pnl-card"><div class="pnl-label">Closed P&amp;L</div><div class="pnl-value" id="closed-pnl">₹0</div></div>
+      <div class="pnl-card"><div class="pnl-label">Total P&amp;L</div><div class="pnl-value" id="total-pnl">₹0</div></div>
+    </div>
+    <div class="deal-controls">
+      <div style="display:flex;gap:4px">
+        <button class="filter-btn active" id="tab-open"   onclick="setDealTab('open')">Open</button>
+        <button class="filter-btn"        id="tab-closed" onclick="setDealTab('closed')">Closed</button>
+      </div>
+      <button class="btn btn-primary" style="margin-left:auto" onclick="openDealModal()">+ New Deal</button>
+    </div>
+    <div id="deals-cards" style="display:flex;flex-direction:column;gap:12px"></div>
+  </div>

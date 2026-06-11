@@ -1,0 +1,85 @@
+
+  <!-- PAGES -->
+  <div class="page active" id="page-dashboard">
+    <div class="dash-header">
+      <div class="dash-title">Dashboard</div>
+      <button class="btn-add-instr" onclick="openAddInstrModal()">+ Add</button>
+    </div>
+      <!-- MOBILE: cards -->
+  <div class="dash-cards-view" id="dash-grid">
+    <div class="dash-empty" id="dash-empty">No instruments pinned yet.<br>Click <strong>+ Add</strong> to get started.</div>
+</div>
+
+  <!-- DESKTOP: table -->
+  <div class="dash-table-view" id="dash-table-wrap">
+    <div class="dash-empty" id="dash-table-empty" style="display:none">No instruments pinned yet. Click <strong>+ Add</strong> to get started.</div>
+    <div class="dash-tbl-wrap" id="dash-tbl-container" style="display:none">
+      <table>
+        <thead><tr>
+          <th style="text-align:left">Symbol</th>
+          <th>Duty</th>
+          <th>Badla[BUY]</th>
+          <th>Badla[SELL]</th>
+          <th>Badla[LTP]</th>
+          <th>MCX BID<br><span style="font-weight:400;font-size:7px;opacity:.7">Comex (INR)</span></th>
+          <th>MCX ASK<br><span style="font-weight:400;font-size:7px;opacity:.7">Comex (INR)</span></th>
+          <th>COMEX BID</th>
+          <th>COMEX ASK</th>
+          <th>DGCX BID</th>
+          <th>DGCX ASK</th>
+          <th>Actions</th>
+        </tr></thead>
+        <tbody id="dash-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="ea-check-panel">
+  <h3>⬡ EA Preflight Check</h3>
+ 
+  <div class="ea-toolbar">
+    <button class="btn-check" id="btn-check-eas" onclick="checkEAs()">
+      <span id="check-icon">↻</span> Check EAs
+    </button>
+ 
+    <label class="ea-auto-toggle">
+      <input type="checkbox" id="ea-auto-recheck" onchange="toggleAutoRecheck(this.checked)">
+      <span class="ea-toggle-track"></span>
+      <span class="ea-toggle-knob"></span>
+      Auto-recheck every 30s
+    </label>
+ 
+    <span id="ea-last-checked" style="font-size:11px;color:#4a5060;margin-left:auto;">
+      Never checked
+    </span>
+  </div>
+ 
+  <!-- Validity countdown bar -->
+  <div class="ea-validity-bar" id="ea-validity-bar" style="display:none;">
+    <span style="font-size:11px;color:#4a5060;">Valid for</span>
+    <div class="validity-track"><div class="validity-fill" id="validity-fill"></div></div>
+    <span class="validity-label" id="validity-label">5:00</span>
+  </div>
+ 
+  <!-- Per-EA leg cards -->
+  <div class="ea-legs-grid" id="ea-legs-grid">
+    <div style="font-size:11px;color:#3a4050;padding:8px 0;">
+      No EAs connected yet — click Check EAs
+    </div>
+  </div>
+ 
+  <!-- Status footer + commit gate -->
+  <div class="ea-status-footer">
+    <div class="ea-status-dot dot-unknown" id="ea-overall-dot"></div>
+    <span class="ea-status-text" id="ea-overall-text">
+      Run preflight check before placing a trade
+    </span>
+    <button class="btn-commit locked" id="btn-commit-deal"
+            onclick="commitDeal()" disabled>
+      Place Trade
+    </button>
+  </div>
+
+</div>
+ 
+</div>

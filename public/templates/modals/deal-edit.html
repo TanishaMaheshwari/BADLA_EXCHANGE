@@ -1,0 +1,51 @@
+
+<!-- EDIT DEAL -->
+<div class="modal-overlay" id="edit-modal">
+  <div class="modal" style="width:680px">
+    <h3>Edit Deal</h3>
+    <div class="deal-modal-top" style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;margin-bottom:14px">
+      <div class="form-group"><label>Instrument</label><input type="text" id="e-instrument-display" readonly style="color:var(--muted);cursor:default"></div>
+      <div class="form-group"><label>USD/INR Rate</label><input type="number" id="e-usd-inr" placeholder="89"></div>
+      <div class="form-group"><label>DGINR at Entry</label><input type="number" id="e-dginr" placeholder="auto" style="color:var(--accent)"></div>
+    </div>
+    <div class="deal-modal-legs" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px">
+      <div class="leg-card" style="border-color:rgba(0,255,136,0.25)">
+        <div class="leg-card-title" style="color:var(--accent)">MCX LEG</div>
+        <div class="form-group"><label>Side</label><select id="e-mcx-side"><option value="SELL">SELL</option><option value="BUY">BUY</option></select></div>
+        <div class="form-group"><label>Entry Price (₹)</label><input type="number" id="e-mcx-price" step="0.01"></div>
+        <div class="form-group"><label>Qty</label><input type="number" id="e-mcx-qty" min="0.01" step="0.01"></div>
+        <div class="form-group"><label>Brokerage (₹)</label><input type="number" id="e-mcx-brok" min="0" step="0.01"></div>
+        <div class="broker-select-row"><label>Broker Account</label><select id="e-mcx-broker"><option value="">No broker</option></select></div>
+      </div>
+      <div class="leg-card" style="border-color:rgba(255,215,0,0.25)">
+        <div class="leg-card-title" style="color:var(--gold)">COMEX LEG</div>
+        <div class="form-group"><label>Side</label><select id="e-comex-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select></div>
+        <div class="form-group"><label>Entry Price (USD)</label><input type="number" id="e-comex-price" step="0.000001"></div>
+        <div class="form-group"><label>Qty</label><input type="number" id="e-comex-qty" min="0.000001" step="0.000001"></div>
+        <div class="form-group"><label>Brokerage (₹)</label><input type="number" id="e-comex-brok" min="0" step="0.000001"></div>
+        <div class="broker-select-row"><label>Broker Account</label><select id="e-comex-broker"><option value="">No broker</option></select></div>
+      </div>
+    </div>
+    <label class="dgcx-toggle-row" style="margin-bottom:12px" for="e-dgcx-enabled">
+      <input type="checkbox" id="e-dgcx-enabled" onchange="toggleEditDgcxLeg()">
+      <span class="dgcx-toggle-label">DGCX LEG</span><span class="dgcx-toggle-sub">Optional third leg</span>
+    </label>
+    <div id="e-dgcx-leg-fields" style="display:none;margin-bottom:14px">
+      <div class="leg-card" style="border-color:rgba(100,200,255,0.25)">
+        <div class="leg-card-title" style="color:#6cf">DGCX LEG</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+          <div class="form-group"><label>Side</label><select id="e-dgcx-side"><option value="BUY">BUY</option><option value="SELL">SELL</option></select></div>
+          <div class="form-group"><label>Entry Price (USD)</label><input type="number" id="e-dgcx-price" step="0.00001"></div>
+          <div class="form-group"><label>Qty</label><input type="number" id="e-dgcx-qty" min="0.000001" step="0.000001"></div>
+          <div class="form-group"><label>Brokerage (₹)</label><input type="number" id="e-dgcx-brok" min="0" step="0.000001"></div>
+        </div>
+        <div class="broker-select-row"><label>Broker Account</label><select id="e-dgcx-broker"><option value="">No broker</option></select></div>
+      </div>
+    </div>
+    <div class="form-group" style="margin-bottom:4px"><label>Note (optional)</label><input type="text" id="e-note" placeholder="e.g. spread 1024"></div>
+    <div class="form-actions">
+      <button class="btn btn-cancel" onclick="closeEditModal()">Cancel</button>
+      <button class="btn btn-primary" id="edit-save-btn" onclick="saveEditDeal()">Save Changes</button>
+    </div>
+  </div>
+</div>

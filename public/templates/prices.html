@@ -1,0 +1,25 @@
+  <div class="page" id="page-prices">
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="setFilter('ALL',this)">ALL</button>
+      <button class="filter-btn" onclick="setFilter('GOLD',this)">GOLD</button>
+      <button class="filter-btn" onclick="setFilter('SILVER',this)">SILVER</button>
+      <button class="filter-btn" onclick="setFilter('CRUDE',this)">CRUDE</button>
+      <button class="filter-btn" onclick="setFilter('COPPER',this)">COPPER</button>
+      <button class="filter-btn" onclick="setFilter('GAS',this)">GAS</button>
+      <button class="filter-btn" onclick="setFilter('OTHER',this)">OTHER</button>
+      <input class="search" id="search" placeholder="Search..." oninput="renderPrices()">
+      <span class="update-time" id="last-update">--</span>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr>
+          <th>Instrument</th><th>Type</th>
+          <th>BADLA[BUY]</th><th>BADLA[SELL]</th><th>BADLA[LTP]</th>
+          <th>MCX BID</th><th>MCX ASK</th><th>Conv. COMEX</th>
+          <th>COMEX BID</th><th>COMEX ASK</th>
+          <th>DGCX</th><th>10k/DGCX</th><th>Updated</th>
+        </tr></thead>
+        <tbody id="prices-tbody"></tbody>
+      </table>
+    </div>
+  </div>

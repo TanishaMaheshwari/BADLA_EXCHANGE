@@ -1,0 +1,51 @@
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo">BADLA<span>BOARD</span></div>
+    <nav class="desktop-nav">
+      <button class="nav-btn active" data-page="dashboard" onclick="showPage('dashboard',this)">Dashboard</button>
+      <button class="nav-btn" data-page="prices"    onclick="showPage('prices',this)">Prices</button>
+      <button class="nav-btn" data-page="deals"     onclick="showPage('deals',this)">Deals</button>
+      <button class="nav-btn" data-page="orders"    onclick="showPage('orders',this)">Orders</button>
+      <button class="nav-btn" data-page="brokers"   onclick="showPage('brokers',this)">Brokers</button>
+    </nav>
+    <div class="header-right">
+      <div class="status">
+        <div class="dot" id="dot"></div>
+        <span id="status-text">Connecting...</span>
+        <span id="update-count" style="color:var(--accent)"></span>
+      </div>
+      <div style="position:relative">
+        <button class="logout-btn" onclick="toggleProfileMenu(event)" id="profile-btn" style="display:flex;align-items:center;gap:6px;padding:5px 10px">
+          <i class="fas fa-user-circle" style="font-size:14px"></i>
+          <span id="username-display" style="font-size:11px;color:var(--accent);font-weight:700"></span>
+          <i class="fas fa-chevron-down" style="font-size:9px"></i>
+        </button>
+        <div id="profile-menu" style="display:none;position:absolute;right:0;top:calc(100% + 6px);width:220px;background:var(--surface);border:1px solid var(--border);border-radius:8px;box-shadow:0 8px 32px rgba(0,0,0,0.18);z-index:999;padding:8px 0">
+          <div style="padding:10px 14px;border-bottom:1px solid var(--border);margin-bottom:4px">
+            <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em">Signed in as</div>
+            <div style="font-size:12px;font-weight:700;color:var(--accent);margin-top:2px" id="profile-username"></div>
+          </div>
+          <div style="padding:6px 14px;border-bottom:1px solid var(--border);margin-bottom:4px">
+            <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">MT5 Status</div>
+            <div class="mt5-badge" id="mt5-badge" style="display:inline-block">MT5 —</div>
+          </div>
+          <div style="padding:6px 14px;border-bottom:1px solid var(--border);margin-bottom:4px">
+            <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">Font Size</div>
+            <div style="display:flex;align-items:center;gap:8px">
+              <span style="font-size:10px;color:var(--muted)">12</span>
+              <input type="range" id="font-size-slider" min="12" max="24" value="13" step="1"
+                style="flex:1;accent-color:var(--accent);cursor:pointer"
+                oninput="applyFontSize(this.value)">
+              <span style="font-size:10px;color:var(--muted)">24</span>
+              <span id="font-size-label" style="font-size:10px;color:var(--accent);font-weight:700;min-width:24px">13px</span>
+            </div>
+          </div>
+          <div style="padding:4px 8px">
+            <button onclick="doLogout()" style="width:100%;display:flex;align-items:center;gap:8px;padding:8px 8px;background:none;border:none;border-radius:6px;color:var(--red);cursor:pointer;font-size:12px;font-weight:600;font-family:Arial,sans-serif">
+              <i class="fas fa-sign-out-alt"></i> Sign Out
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
