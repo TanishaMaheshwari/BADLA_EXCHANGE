@@ -2,7 +2,7 @@ const CACHE_NAME = 'badla-board-shell-v1';
 const CACHE_URLS = [
   '/',
   '/index.html',
-  '/styles.css',
+  '/style.css',
   '/manifest.webmanifest',
   '/icons/icon-192.png',
   '/icons/icon-512.png'
@@ -48,4 +48,33 @@ self.addEventListener('fetch', event => {
       }).catch(() => caches.match('/index.html'));
     })
   );
+});
+
+self.addEventListener('push', event => {
+  let data;
+  try {
+    data = event.data.json();
+  } catch(e) {
+    // devtools sends plain text, not JSON
+    data = {
+      title: '🔔 Badla Board',
+      body: event.data.text(),
+      icon: '/icons/icon-192.png',
+      requireInteraction: true
+    };
+  }
+  event.waitUntil(
+    self.registration.showNotification(data.title, {
+      body: data.body,
+      icon: data.icon,
+      badge: data.badge,
+      tag: data.tag,
+      requireInteraction: data.requireInteraction
+    })
+  );
+});
+
+self.addEventListener('notificationclick', event => {
+  event.notification.close();
+  event.waitUntil(clients.openWindow('/'));
 });

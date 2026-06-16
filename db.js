@@ -56,237 +56,114 @@ async function initDB() {
     db = new SQL.Database();
   }
 
-  db.run(`CREATE TABLE IF NOT EXISTS users (
-    id         INTEGER PRIMARY KEY AUTOINCREMENT,
-    username   TEXT UNIQUE NOT NULL,
-    password   TEXT NOT NULL,
-    created_at TEXT DEFAULT (datetime('now','localtime'))
-  )`);
+// ── New table migrations ───────────────────────────────────────────────────
 
-  db.run(`CREATE TABLE IF NOT EXISTS sessions (
-    token      TEXT PRIMARY KEY,
-    user_id    INTEGER NOT NULL,
-    expires_at TEXT,
-    created_at TEXT DEFAULT (datetime('now','localtime')),
-    FOREIGN KEY(user_id) REFERENCES users(id)
-  )`);
-
-  db.run(`CREATE TABLE IF NOT EXISTS dashboard_instruments (
-    id              INTEGER PRIMARY KEY AUTOINCREMENT,
-    user_id         INTEGER NOT NULL,
-    instrument_name TEXT NOT NULL,
-    position        INTEGER DEFAULT 0,
-    added_at        TEXT DEFAULT (datetime('now','localtime')),
-    UNIQUE(user_id, instrument_name),
-    FOREIGN KEY(user_id) REFERENCES users(id)
-  )`);
-
-  db.run(`CREATE TABLE IF NOT EXISTS deals (
-    id                INTEGER PRIMARY KEY AUTOINCREMENT,
-    user_id           INTEGER NOT NULL,
-    instrument        TEXT NOT NULL,
-    qty               REAL NOT NULL,
-    note              TEXT,
-    usd_inr_rate      REAL NOT NULL DEFAULT 89,
-    dginr_at_entry    REAL,
-    mcx_side          TEXT NOT NULL,
-    mcx_price         REAL NOT NULL,
-    mcx_qty           REAL NOT NULL DEFAULT 1,
-    mcx_brokerage     REAL NOT NULL DEFAULT 0,
-    mcx_exit_price    REAL,
-    mcx_pnl           REAL,
-    comex_side        TEXT NOT NULL,
-    comex_price       REAL NOT NULL,
-    comex_qty         REAL NOT NULL DEFAULT 1,
-    comex_brokerage   REAL NOT NULL DEFAULT 0,
-    comex_exit_price  REAL,
-    comex_pnl         REAL,
-    dgcx_enabled      INTEGER NOT NULL DEFAULT 0,
-    dgcx_side         TEXT,
-    dgcx_price        REAL,
-    dgcx_qty          REAL NOT NULL DEFAULT 1,
-    dgcx_brokerage    REAL NOT NULL DEFAULT 0,
-    dgcx_exit_price   REAL,
-    dgcx_pnl          REAL,
-    status            TEXT DEFAULT 'open',
-    total_pnl         REAL,
-    entry_time        TEXT DEFAULT (datetime('now','localtime')),
-    exit_time         TEXT,
-    FOREIGN KEY(user_id) REFERENCES users(id)
-  )`);
-
-  db.run(`CREATE TABLE IF NOT EXISTS brokers (
+  // instruments table
+  db.run(`CREATE TABLE IF NOT EXISTS instruments (
     id           INTEGER PRIMARY KEY AUTOINCREMENT,
-    user_id      INTEGER NOT NULL,
-    broker_name  TEXT NOT NULL,
-    account_id   TEXT,
-    password     TEXT,
-    profit_share REAL NOT NULL DEFAULT 0,
-    total_pnl    REAL NOT NULL DEFAULT 0,
-    created_at   TEXT DEFAULT (datetime('now','localtime')),
-    FOREIGN KEY(user_id) REFERENCES users(id)
+    name         TEXT UNIQUE NOT NULL,
+    display_name TEXT,
+    type         TEXT,
+    equation     TEXT,
+    reverse      INTEGER DEFAULT 0,
+    duty         REAL DEFAULT 15,
+    active       INTEGER DEFAULT 1,
+    created_at   TEXT DEFAULT (datetime('now','localtime'))
   )`);
 
-  db.run(`CREATE TABLE IF NOT EXISTS broker_instruments (
-    id            INTEGER PRIMARY KEY AUTOINCREMENT,
-    broker_id     INTEGER NOT NULL,
-    name          TEXT NOT NULL,
-    max_lots      REAL NOT NULL DEFAULT 1,
-    lot_qty       REAL NOT NULL DEFAULT 1,
-    brokerage     REAL NOT NULL DEFAULT 0,
-    broker_symbol TEXT,
-    FOREIGN KEY(broker_id) REFERENCES brokers(id) ON DELETE CASCADE
-  )`);
-
-  // ── Migrations ────────────────────────────────────────────────────────────
-  const dealColsResult = db.exec("PRAGMA table_info(deals)");
-  const dealCols = dealColsResult.length ? dealColsResult[0].values.map(r => r[1]) : [];
-
-  if (!dealCols.includes('broker_id'))       db.run('ALTER TABLE deals ADD COLUMN broker_id INTEGER REFERENCES brokers(id)');
-  if (!dealCols.includes('mcx_broker_id'))   db.run('ALTER TABLE deals ADD COLUMN mcx_broker_id INTEGER REFERENCES brokers(id)');
-  if (!dealCols.includes('comex_broker_id')) db.run('ALTER TABLE deals ADD COLUMN comex_broker_id INTEGER REFERENCES brokers(id)');
-  if (!dealCols.includes('dgcx_broker_id'))  db.run('ALTER TABLE deals ADD COLUMN dgcx_broker_id INTEGER REFERENCES brokers(id)');
-  if (!dealCols.includes('parent_deal_id'))  db.run('ALTER TABLE deals ADD COLUMN parent_deal_id INTEGER REFERENCES deals(id)');
-
-  // FIX 10: Add expires_at to existing sessions table if it's missing.
-  // SQLite ALTER TABLE does not allow non-constant DEFAULT expressions,
-  // so we add the column as nullable, backfill existing rows, then purge stale ones.
-  const sessColsResult = db.exec("PRAGMA table_info(sessions)");
-  const sessCols = sessColsResult.length ? sessColsResult[0].values.map(r => r[1]) : [];
-  if (!sessCols.includes('expires_at')) {
-    db.run("ALTER TABLE sessions ADD COLUMN expires_at TEXT");
-    db.run("UPDATE sessions SET expires_at = datetime('now','localtime','+30 days') WHERE expires_at IS NULL");
-  }
-  // Purge any already-expired sessions on startup
-  db.run("DELETE FROM sessions WHERE expires_at IS NOT NULL AND expires_at <= datetime('now','localtime')");
-
-  const brokerColsResult = db.exec("PRAGMA table_info(brokers)");
-  const brokerCols = brokerColsResult.length ? brokerColsResult[0].values.map(r => r[1]) : [];
-  if (!brokerCols.includes('account_id')) db.run("ALTER TABLE brokers ADD COLUMN account_id TEXT");
-
-  const brokerCols2 = db.exec("PRAGMA table_info(brokers)");
-  const bCols = brokerCols2.length ? brokerCols2[0].values.map(r => r[1]) : [];
-  if (bCols.includes('instrument')) {
-    const hasInstrumentNotNull = db.exec("SELECT sql FROM sqlite_master WHERE type='table' AND name='brokers'");
-    const tableSql = hasInstrumentNotNull?.[0]?.values?.[0]?.[0] || '';
-    if (tableSql.includes('instrument') && tableSql.toLowerCase().includes('not null')) {
-      console.log('Migration: removing NOT NULL instrument column from brokers');
-      db.run(`CREATE TABLE brokers_new (
-        id           INTEGER PRIMARY KEY AUTOINCREMENT,
-        user_id      INTEGER NOT NULL,
-        broker_name  TEXT NOT NULL,
-        account_id   TEXT,
-        password     TEXT,
-        instrument   TEXT,
-        lot_size     REAL DEFAULT 1,
-        brokerage    REAL DEFAULT 0,
-        profit_share REAL NOT NULL DEFAULT 0,
-        total_pnl    REAL NOT NULL DEFAULT 0,
-        created_at   TEXT DEFAULT (datetime('now','localtime')),
-        FOREIGN KEY(user_id) REFERENCES users(id)
-      )`);
-      db.run(`INSERT INTO brokers_new SELECT id, user_id, broker_name, account_id, password, instrument, lot_size, brokerage, profit_share, total_pnl, created_at FROM brokers`);
-      db.run(`DROP TABLE brokers`);
-      db.run(`ALTER TABLE brokers_new RENAME TO brokers`);
-      _markDirty();
-      console.log('Migration: brokers table recreated without NOT NULL on instrument');
-    }
+  // Seed instruments table from latestPrices if empty
+  const instrCount = dbGet('SELECT COUNT(*) as c FROM instruments');
+  if (!instrCount || instrCount.c === 0) {
+    console.log('Seeding instruments table from latestPrices...');
+    // Will be seeded by broadcast watcher on first run via seedInstrumentsFromPrices()
   }
 
-  let biTableOk = false;
-  try {
-    const biCols = db.exec("PRAGMA table_info(broker_instruments)");
-    const colNames = biCols.length ? biCols[0].values.map(r => r[1]) : [];
-    // FIX 11: Also verify broker_symbol exists so the column is never missing
-    biTableOk = colNames.includes('name') &&
-                colNames.includes('broker_id') &&
-                colNames.includes('broker_symbol');
-    console.log('broker_instruments columns found:', colNames);
-  } catch(e) {
-    biTableOk = false;
-  }
-
-  if (!biTableOk) {
-    console.log('Migration: dropping and recreating broker_instruments table');
-    db.run('DROP TABLE IF EXISTS broker_instruments');
-    // FIX 11: Include broker_symbol in the initial CREATE so it's never absent
-    db.run(`CREATE TABLE broker_instruments (
-      id            INTEGER PRIMARY KEY AUTOINCREMENT,
-      broker_id     INTEGER NOT NULL,
-      name          TEXT NOT NULL,
-      max_lots      REAL NOT NULL DEFAULT 1,
-      lot_qty       REAL NOT NULL DEFAULT 1,
-      brokerage     REAL NOT NULL DEFAULT 0,
-      broker_symbol TEXT,
-      FOREIGN KEY(broker_id) REFERENCES brokers(id) ON DELETE CASCADE
-    )`);
-    console.log('Migration: created broker_instruments table');
-
-    const oldBrokers = dbAll('SELECT * FROM brokers');
-    for (const b of oldBrokers) {
-      if (b.instrument) {
-        db.run(
-          `INSERT INTO broker_instruments (broker_id, name, max_lots, lot_qty, brokerage, broker_symbol) VALUES (?, ?, ?, ?, ?, ?)`,
-          [b.id, b.instrument, b.lot_size || 1, b.lot_size || 1, b.brokerage || 0, null]
-        );
-      }
-    }
-    _markDirty();
-    console.log('Migration: seeded broker_instruments from existing brokers');
-  }
-
-  // broker_symbol column guard is now redundant (handled above), but kept
-  // as a safety net for any DB that had broker_instruments without it.
-  const biCols2 = db.exec("PRAGMA table_info(broker_instruments)");
-  const biColNames = biCols2.length ? biCols2[0].values.map(r => r[1]) : [];
-  if (!biColNames.includes('broker_symbol')) {
-    db.run("ALTER TABLE broker_instruments ADD COLUMN broker_symbol TEXT");
-    _markDirty();
-    console.log('Migration: added broker_symbol to broker_instruments');
-  }
-
-  const userCount = dbGet('SELECT COUNT(*) as c FROM users');
-  if (!userCount || userCount.c === 0) {
-    dbInsert('INSERT INTO users (username, password) VALUES (?, ?)', ['admin', hashPassword('admin123')]);
-    console.log('Default user created: admin / admin123  — change this immediately!');
-  }
-
-  // ── MT5 migrations ────────────────────────────────────────────────────────
-  const brokerCols3 = db.exec("PRAGMA table_info(brokers)");
-  const bCols3 = brokerCols3.length ? brokerCols3[0].values.map(r => r[1]) : [];
-  if (!bCols3.includes('exchange_type')) {
+  // ── Brokers: add exchange_type if missing ──────────────────────────────────
+  const bCols4 = db.exec("PRAGMA table_info(brokers)");
+  const brokerColNames = bCols4.length ? bCols4[0].values.map(r => r[1]) : [];
+  if (!brokerColNames.includes('exchange_type')) {
     db.run("ALTER TABLE brokers ADD COLUMN exchange_type TEXT DEFAULT 'MCX'");
     console.log('Migration: added exchange_type to brokers');
   }
 
-  const biCols3 = db.exec("PRAGMA table_info(broker_instruments)");
-  const biColNames3 = biCols3.length ? biCols3[0].values.map(r => r[1]) : [];
-  if (!biColNames3.includes('mt5_symbol'))       db.run("ALTER TABLE broker_instruments ADD COLUMN mt5_symbol TEXT");
-  if (!biColNames3.includes('mcx_symbol'))        db.run("ALTER TABLE broker_instruments ADD COLUMN mcx_symbol TEXT");
-  if (!biColNames3.includes('mcx_lot_qty'))       db.run("ALTER TABLE broker_instruments ADD COLUMN mcx_lot_qty REAL DEFAULT 1");
-  if (!biColNames3.includes('mcx_brokerage'))     db.run("ALTER TABLE broker_instruments ADD COLUMN mcx_brokerage REAL DEFAULT 0");
-  if (!biColNames3.includes('comex_symbol'))      db.run("ALTER TABLE broker_instruments ADD COLUMN comex_symbol TEXT");
-  if (!biColNames3.includes('comex_lot_qty'))     db.run("ALTER TABLE broker_instruments ADD COLUMN comex_lot_qty REAL DEFAULT 1");
-  if (!biColNames3.includes('comex_brokerage'))   db.run("ALTER TABLE broker_instruments ADD COLUMN comex_brokerage REAL DEFAULT 0");
+  // ── broker_instruments: add instrument_id if missing ──────────────────────
+  const biCols4 = db.exec("PRAGMA table_info(broker_instruments)");
+  const biColNames4 = biCols4.length ? biCols4[0].values.map(r => r[1]) : [];
+  if (!biColNames4.includes('instrument_id'))
+    db.run("ALTER TABLE broker_instruments ADD COLUMN instrument_id INTEGER REFERENCES instruments(id) ON DELETE SET NULL");
 
-  db.run(`CREATE TABLE IF NOT EXISTS mt5_orders (
-    id              INTEGER PRIMARY KEY AUTOINCREMENT,
-    deal_id         INTEGER REFERENCES deals(id),
-    instrument_name TEXT NOT NULL,
-    broker_id       INTEGER NOT NULL REFERENCES brokers(id),
-    account_id      TEXT NOT NULL,
-    exchange_type   TEXT NOT NULL,
-    mt5_symbol      TEXT NOT NULL,
-    action          TEXT NOT NULL,
-    lots            REAL NOT NULL,
-    status          TEXT NOT NULL DEFAULT 'pending',
-    mt5_ticket      INTEGER,
-    mt5_price       REAL,
-    error_message   TEXT,
-    created_at      TEXT DEFAULT (datetime('now','localtime')),
-    executed_at     TEXT
+  // ── dashboard_instruments: add instrument_id if missing ───────────────────
+  const diCols = db.exec("PRAGMA table_info(dashboard_instruments)");
+  const diColNames = diCols.length ? diCols[0].values.map(r => r[1]) : [];
+  if (!diColNames.includes('instrument_id'))
+    db.run("ALTER TABLE dashboard_instruments ADD COLUMN instrument_id INTEGER REFERENCES instruments(id) ON DELETE SET NULL");
+
+  // ── deals: add instrument_id if missing ───────────────────────────────────
+  const dealCols2 = db.exec("PRAGMA table_info(deals)");
+  const dealColNames2 = dealCols2.length ? dealCols2[0].values.map(r => r[1]) : [];
+  if (!dealColNames2.includes('instrument_id'))
+    db.run("ALTER TABLE deals ADD COLUMN instrument_id INTEGER REFERENCES instruments(id) ON DELETE SET NULL");
+
+  // ── orders table (replaces mt5_orders for frontend orders) ────────────────
+  db.run(`CREATE TABLE IF NOT EXISTS orders (
+    id                INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id           INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    instrument        TEXT NOT NULL,
+    instrument_id     INTEGER REFERENCES instruments(id) ON DELETE SET NULL,
+    note              TEXT,
+    mcx_side          TEXT,
+    mcx_qty           REAL,
+    mcx_broker_id     INTEGER REFERENCES brokers(id) ON DELETE SET NULL,
+    comex_side        TEXT,
+    comex_qty         REAL,
+    comex_broker_id   INTEGER REFERENCES brokers(id) ON DELETE SET NULL,
+    dgcx_enabled      INTEGER DEFAULT 0,
+    dgcx_side         TEXT,
+    dgcx_qty          REAL,
+    dgcx_broker_id    INTEGER REFERENCES brokers(id) ON DELETE SET NULL,
+    has_condition     INTEGER DEFAULT 1,
+    condition_field   TEXT,
+    condition_dir     TEXT,
+    condition_value   REAL,
+    place_immediately INTEGER DEFAULT 0,
+    status            TEXT DEFAULT 'pending',
+    deal_id           INTEGER REFERENCES deals(id) ON DELETE SET NULL,
+    mt5_result        TEXT,
+    mt5_ticket        INTEGER,
+    triggered_at      TEXT,
+    sent_to_mt5_at    TEXT,
+    mt5_confirmed_at  TEXT,
+    created_at        TEXT DEFAULT (datetime('now','localtime'))
   )`);
-  console.log('MT5 migrations done');
+
+  // ── notifications table ────────────────────────────────────────────────────
+  db.run(`CREATE TABLE IF NOT EXISTS notifications (
+    id                      INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id                 INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    dashboard_instrument_id INTEGER REFERENCES dashboard_instruments(id) ON DELETE CASCADE,
+    type                    TEXT NOT NULL DEFAULT 'price_alert',
+    instrument_name         TEXT,
+    field                   TEXT,
+    direction               TEXT,
+    target                  REAL,
+    message                 TEXT,
+    status                  TEXT DEFAULT 'armed',
+    push_enabled            INTEGER DEFAULT 1,
+    fired_at                TEXT,
+    created_at              TEXT DEFAULT (datetime('now','localtime'))
+  )`);
+
+  // ── push_subscriptions table ───────────────────────────────────────────────
+  db.run(`CREATE TABLE IF NOT EXISTS push_subscriptions (
+    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id    INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    endpoint   TEXT NOT NULL UNIQUE,
+    p256dh     TEXT NOT NULL,
+    auth       TEXT NOT NULL,
+    created_at TEXT DEFAULT (datetime('now','localtime'))
+  )`);
+
+  console.log('New table migrations done');
 
   // Ensure a final flush after all migrations
   saveDB();

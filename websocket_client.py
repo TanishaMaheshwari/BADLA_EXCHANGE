@@ -24,7 +24,9 @@ logger = logging.getLogger("BadlaWebSocket")
 PUSH_INTERVAL               = 0.08   # ~12 Hz — go lower if CPU allows
 MIN_PUSH_INTERVAL_PER_INST  = 0.06
 DISK_SAVE_INTERVAL          = 5.0
-BROADCAST_FILE              = "broadcast.json"   # Node watches this
+BASE_DIR       = os.path.dirname(os.path.abspath(__file__))
+BROADCAST_FILE = os.path.join(BASE_DIR, "broadcast.json")
+LIVE_PRICES_FILE = os.path.join(BASE_DIR, "live_prices.json")
 # ──────────────────────────────────────────────────────────────────────────────
 
 DISPLAY_NAME_OVERRIDES = {
@@ -76,6 +78,7 @@ class BadlaWebSocketClient:
         # Buffer for slow disk saves
         self._save_buf: dict[str, tuple] = {}
         self._save_lock = threading.Lock()
+        self._broadcast_lock = threading.Lock()
 
     # ── helpers ────────────────────────────────────────────────────────────────
 
@@ -239,14 +242,14 @@ class BadlaWebSocketClient:
     # ── atomic broadcast file write ────────────────────────────────────────────
 
     def _write_broadcast(self, results: dict):
-        """Write all computed results atomically to broadcast.json.
-        Node.js watches this file and pushes its contents straight to
-        WebSocket clients — no HTTP round-trip at all.
-        """
         tmp = BROADCAST_FILE + ".tmp"
-        with open(tmp, "w") as f:
-            json.dump({"ts": time.time(), "data": results}, f, separators=(',', ':'))
-        os.replace(tmp, BROADCAST_FILE)
+        with self._broadcast_lock:
+            try:
+                with open(tmp, "w") as f:
+                    json.dump({"ts": time.time(), "data": results}, f, separators=(',', ':'))
+                os.replace(tmp, BROADCAST_FILE)
+            except FileNotFoundError:
+                pass  # tmp was consumed by another process (Node watcher) — harmless
 
     # ── disk save (slow path) ──────────────────────────────────────────────────
 
@@ -322,10 +325,10 @@ class BadlaWebSocketClient:
             with self.price_lock:
                 state = {"last": dict(self.price_map), "bid": dict(self.bid_map),
                          "ask": dict(self.ask_map), "ts": time.time()}
-            tmp = "live_prices.tmp"
+            tmp = LIVE_PRICES_FILE + ".tmp"
             with open(tmp, "w") as f:
                 json.dump(state, f)
-            os.replace(tmp, "live_prices.json")
+            os.replace(tmp, LIVE_PRICES_FILE)
 
             logger.debug(f"Broadcast {len(results)}/{len(self.instrument_settings)} instruments")
 
@@ -343,7 +346,7 @@ class BadlaWebSocketClient:
                 try:
                     self._push_all()
                 except Exception as e:
-                    logger.error(f"Push timer error: {e}")
+                    logger.error(f"Push timer error: {e}", exc_info=True)  # ← add exc_info=True
         logger.info("Push timer stopped")
 
     # ── websocket ──────────────────────────────────────────────────────────────

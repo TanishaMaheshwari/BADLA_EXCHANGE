@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express    = require('express');
 const http       = require('http');
 const path       = require('path');
@@ -24,6 +26,8 @@ app.use('/api', require('./routes/deals'));
 app.use('/api', require('./routes/brokers'));
 app.use('/api', require('./routes/mt5').router);
 app.use('/api', require('./routes/ea'));
+app.use('/api', require('./routes/push'));
+app.use('/api', require('./routes/notification'));
 
 app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, 'public', 'index.html')));

@@ -149,7 +149,8 @@ function connectWS() {
       renderPrices(); renderDashboard(); populateAllInstrumentSelects();
     } else if (msg.type==='update') {
       const prev=prices[msg.data.name]; prices[msg.data.name]=msg.data;
-      updateCount++; document.getElementById('update-count').textContent=`${updateCount} ticks`;
+      updateCount++; 
+      // document.getElementById('update-count').textContent=`${updateCount} ticks`;
       document.getElementById('last-update').textContent=new Date().toLocaleTimeString();
       renderPriceRow(msg.data);
       updateDashCard(msg.data,prev); updateDealsLivePnl(); checkDealPnlAlerts(); checkAlerts(msg.data);
@@ -164,7 +165,20 @@ function connectWS() {
         msg.success ? 'trigger' : 'error', 6000
       );
       loadOrders();
-    }
+    } else if (msg.type === 'notification_fired') {
+      showToast('🔔 Price Alert', `${msg.instrument} ${msg.field} hit ${msg.target}`, 'alert', 0);
+    } else if (msg.type === 'show_notification') {
+        setTimeout(() => {
+          navigator.serviceWorker.ready.then(reg => {
+            reg.showNotification(msg.payload.title, {
+              body: msg.payload.body,
+              icon: msg.payload.icon,
+              tag: msg.payload.tag,
+              requireInteraction: msg.payload.requireInteraction
+            });
+          });
+        }, 100);
+      }   
   };
   ws.onclose=()=>{
     document.getElementById('dot').classList.remove('live');
@@ -232,7 +246,7 @@ function initApp() {
     if (p.dgcx && p.dgcx.ltp) document.getElementById('d-dginr').value = (10000 / parseFloat(p.dgcx.ltp)).toFixed(4);
   });
   document.getElementById('o-has-condition').addEventListener('change', toggleOrderCondition);
-
+  initPWA();
   if (sessionToken) verifyAndStart();
 }
 
@@ -258,6 +272,7 @@ async function startApp() {
   await loadBrokers();
   renderBrokerSummary(); // ← add this
   loadDashboard(); loadDeals(); loadOrders(); connectWS(); initAlerts();
+  subscribeToPush();
 }
 async function apiFetch(url, opts={}) {
   opts.headers={...(opts.headers||{}),'x-session-token':sessionToken};
@@ -265,4 +280,3 @@ async function apiFetch(url, opts={}) {
   if (res.status===401) { clearAuth(); location.reload(); }
   return res;
 }
-
