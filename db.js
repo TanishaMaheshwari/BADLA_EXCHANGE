@@ -153,6 +153,12 @@ async function initDB() {
     created_at              TEXT DEFAULT (datetime('now','localtime'))
   )`);
 
+  // ── notifications: add deal_id if missing (for deal P/L alerts) ──────────
+  const notifCols = db.exec("PRAGMA table_info(notifications)");
+  const notifColNames = notifCols.length ? notifCols[0].values.map(r => r[1]) : [];
+  if (!notifColNames.includes('deal_id'))
+    db.run("ALTER TABLE notifications ADD COLUMN deal_id INTEGER REFERENCES deals(id) ON DELETE CASCADE");
+
   // ── push_subscriptions table ───────────────────────────────────────────────
   db.run(`CREATE TABLE IF NOT EXISTS push_subscriptions (
     id         INTEGER PRIMARY KEY AUTOINCREMENT,

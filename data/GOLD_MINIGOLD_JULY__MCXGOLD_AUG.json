@@ -1,0 +1,871 @@
+{
+    "2026-06-16 10:31:30": {
+        "timestamp": "2026-06-16 10:31:30",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152688.0,
+        "prices": {
+            "20848323089": 152688.0,
+            "99823636843": 150578.0,
+            "44695": 105.68
+        }
+    },
+    "2026-06-16 10:31:35": {
+        "timestamp": "2026-06-16 10:31:35",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152688.0,
+        "prices": {
+            "20848323089": 152688.0,
+            "99823636843": 150600.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:31:40": {
+        "timestamp": "2026-06-16 10:31:40",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152688.0,
+        "prices": {
+            "20848323089": 152688.0,
+            "99823636843": 150582.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:31:41": {
+        "timestamp": "2026-06-16 10:31:41",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152688.0,
+        "prices": {
+            "20848323089": 152688.0,
+            "99823636843": 150578.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:31:45": {
+        "timestamp": "2026-06-16 10:31:45",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152688.0,
+        "prices": {
+            "20848323089": 152688.0,
+            "99823636843": 150577.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:31:46": {
+        "timestamp": "2026-06-16 10:31:46",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152688.0,
+        "prices": {
+            "20848323089": 152688.0,
+            "99823636843": 150577.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:31:51": {
+        "timestamp": "2026-06-16 10:31:51",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152688.0,
+        "prices": {
+            "20848323089": 152688.0,
+            "99823636843": 150576.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:31:56": {
+        "timestamp": "2026-06-16 10:31:56",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152688.0,
+        "prices": {
+            "20848323089": 152688.0,
+            "99823636843": 150577.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:32:01": {
+        "timestamp": "2026-06-16 10:32:01",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152688.0,
+        "prices": {
+            "20848323089": 152688.0,
+            "99823636843": 150585.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:32:06": {
+        "timestamp": "2026-06-16 10:32:06",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152650.0,
+        "prices": {
+            "20848323089": 152650.0,
+            "99823636843": 150580.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:32:11": {
+        "timestamp": "2026-06-16 10:32:11",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152650.0,
+        "prices": {
+            "20848323089": 152650.0,
+            "99823636843": 150580.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:32:12": {
+        "timestamp": "2026-06-16 10:32:12",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152650.0,
+        "prices": {
+            "20848323089": 152650.0,
+            "99823636843": 150580.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:32:16": {
+        "timestamp": "2026-06-16 10:32:16",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152697.0,
+        "prices": {
+            "20848323089": 152697.0,
+            "99823636843": 150650.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:32:17": {
+        "timestamp": "2026-06-16 10:32:17",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152697.0,
+        "prices": {
+            "20848323089": 152697.0,
+            "99823636843": 150650.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:32:22": {
+        "timestamp": "2026-06-16 10:32:22",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152697.0,
+        "prices": {
+            "20848323089": 152697.0,
+            "99823636843": 150639.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:32:27": {
+        "timestamp": "2026-06-16 10:32:27",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152700.0,
+        "prices": {
+            "20848323089": 152700.0,
+            "99823636843": 150610.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:32:28": {
+        "timestamp": "2026-06-16 10:32:28",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152700.0,
+        "prices": {
+            "20848323089": 152700.0,
+            "99823636843": 150610.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:32:32": {
+        "timestamp": "2026-06-16 10:32:32",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152700.0,
+        "prices": {
+            "20848323089": 152700.0,
+            "99823636843": 150600.0,
+            "44695": 105.690002
+        }
+    },
+    "2026-06-16 10:32:33": {
+        "timestamp": "2026-06-16 10:32:33",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152739.0,
+        "prices": {
+            "20848323089": 152739.0,
+            "99823636843": 150600.0,
+            "44695": 105.690002
+        }
+    },
+    "2026-06-16 10:32:37": {
+        "timestamp": "2026-06-16 10:32:37",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152739.0,
+        "prices": {
+            "20848323089": 152739.0,
+            "99823636843": 150609.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:32:38": {
+        "timestamp": "2026-06-16 10:32:38",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152739.0,
+        "prices": {
+            "20848323089": 152739.0,
+            "99823636843": 150609.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:32:42": {
+        "timestamp": "2026-06-16 10:32:42",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152744.0,
+        "prices": {
+            "20848323089": 152744.0,
+            "99823636843": 150607.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:32:43": {
+        "timestamp": "2026-06-16 10:32:43",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152744.0,
+        "prices": {
+            "20848323089": 152744.0,
+            "99823636843": 150640.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:32:47": {
+        "timestamp": "2026-06-16 10:32:47",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152744.0,
+        "prices": {
+            "20848323089": 152744.0,
+            "99823636843": 150642.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:32:48": {
+        "timestamp": "2026-06-16 10:32:48",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152744.0,
+        "prices": {
+            "20848323089": 152744.0,
+            "99823636843": 150609.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:32:53": {
+        "timestamp": "2026-06-16 10:32:53",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150642.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:32:54": {
+        "timestamp": "2026-06-16 10:32:54",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150642.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:32:58": {
+        "timestamp": "2026-06-16 10:32:58",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150640.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:32:59": {
+        "timestamp": "2026-06-16 10:32:59",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152753.0,
+        "prices": {
+            "20848323089": 152753.0,
+            "99823636843": 150616.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:03": {
+        "timestamp": "2026-06-16 10:33:03",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152712.0,
+        "prices": {
+            "20848323089": 152712.0,
+            "99823636843": 150640.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:04": {
+        "timestamp": "2026-06-16 10:33:04",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152712.0,
+        "prices": {
+            "20848323089": 152712.0,
+            "99823636843": 150640.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:08": {
+        "timestamp": "2026-06-16 10:33:08",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152712.0,
+        "prices": {
+            "20848323089": 152712.0,
+            "99823636843": 150620.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:09": {
+        "timestamp": "2026-06-16 10:33:09",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152712.0,
+        "prices": {
+            "20848323089": 152712.0,
+            "99823636843": 150620.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:13": {
+        "timestamp": "2026-06-16 10:33:13",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152712.0,
+        "prices": {
+            "20848323089": 152712.0,
+            "99823636843": 150640.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:14": {
+        "timestamp": "2026-06-16 10:33:14",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152712.0,
+        "prices": {
+            "20848323089": 152712.0,
+            "99823636843": 150640.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:18": {
+        "timestamp": "2026-06-16 10:33:18",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152712.0,
+        "prices": {
+            "20848323089": 152712.0,
+            "99823636843": 150640.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:19": {
+        "timestamp": "2026-06-16 10:33:19",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152712.0,
+        "prices": {
+            "20848323089": 152712.0,
+            "99823636843": 150640.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:23": {
+        "timestamp": "2026-06-16 10:33:23",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152712.0,
+        "prices": {
+            "20848323089": 152712.0,
+            "99823636843": 150642.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:25": {
+        "timestamp": "2026-06-16 10:33:25",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152712.0,
+        "prices": {
+            "20848323089": 152712.0,
+            "99823636843": 150633.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:29": {
+        "timestamp": "2026-06-16 10:33:29",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150633.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:30": {
+        "timestamp": "2026-06-16 10:33:30",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150633.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:34": {
+        "timestamp": "2026-06-16 10:33:34",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150645.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:35": {
+        "timestamp": "2026-06-16 10:33:35",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150640.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:39": {
+        "timestamp": "2026-06-16 10:33:39",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150633.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:40": {
+        "timestamp": "2026-06-16 10:33:40",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150633.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:44": {
+        "timestamp": "2026-06-16 10:33:44",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150640.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:45": {
+        "timestamp": "2026-06-16 10:33:45",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150640.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:49": {
+        "timestamp": "2026-06-16 10:33:49",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150640.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:50": {
+        "timestamp": "2026-06-16 10:33:50",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150633.0,
+            "44695": 105.709999
+        }
+    },
+    "2026-06-16 10:33:54": {
+        "timestamp": "2026-06-16 10:33:54",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150644.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:33:56": {
+        "timestamp": "2026-06-16 10:33:56",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150644.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:00": {
+        "timestamp": "2026-06-16 10:34:00",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150644.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:01": {
+        "timestamp": "2026-06-16 10:34:01",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150644.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:05": {
+        "timestamp": "2026-06-16 10:34:05",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150646.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:06": {
+        "timestamp": "2026-06-16 10:34:06",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150656.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:10": {
+        "timestamp": "2026-06-16 10:34:10",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150665.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:11": {
+        "timestamp": "2026-06-16 10:34:11",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150657.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:15": {
+        "timestamp": "2026-06-16 10:34:15",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150686.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:17": {
+        "timestamp": "2026-06-16 10:34:17",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150686.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:20": {
+        "timestamp": "2026-06-16 10:34:20",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150654.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:22": {
+        "timestamp": "2026-06-16 10:34:22",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150654.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:25": {
+        "timestamp": "2026-06-16 10:34:25",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150650.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:27": {
+        "timestamp": "2026-06-16 10:34:27",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150650.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:30": {
+        "timestamp": "2026-06-16 10:34:30",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150644.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:32": {
+        "timestamp": "2026-06-16 10:34:32",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150644.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:36": {
+        "timestamp": "2026-06-16 10:34:36",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150650.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:37": {
+        "timestamp": "2026-06-16 10:34:37",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150650.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:41": {
+        "timestamp": "2026-06-16 10:34:41",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150659.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:42": {
+        "timestamp": "2026-06-16 10:34:42",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150659.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:46": {
+        "timestamp": "2026-06-16 10:34:46",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150659.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:48": {
+        "timestamp": "2026-06-16 10:34:48",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150659.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:51": {
+        "timestamp": "2026-06-16 10:34:51",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150659.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:53": {
+        "timestamp": "2026-06-16 10:34:53",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150659.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:56": {
+        "timestamp": "2026-06-16 10:34:56",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150659.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:34:58": {
+        "timestamp": "2026-06-16 10:34:58",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150659.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:35:01": {
+        "timestamp": "2026-06-16 10:35:01",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150659.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:35:03": {
+        "timestamp": "2026-06-16 10:35:03",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150660.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:35:06": {
+        "timestamp": "2026-06-16 10:35:06",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150660.0,
+            "44695": 105.699997
+        }
+    },
+    "2026-06-16 10:35:08": {
+        "timestamp": "2026-06-16 10:35:08",
+        "instrument_id": "6a16cdaf6121bd19cead3934",
+        "instrument_name": "GOLD-MINIGOLD(JULY) MCXGOLD(AUG)",
+        "computed_value": 152750.0,
+        "prices": {
+            "20848323089": 152750.0,
+            "99823636843": 150660.0,
+            "44695": 105.699997
+        }
+    }
+}

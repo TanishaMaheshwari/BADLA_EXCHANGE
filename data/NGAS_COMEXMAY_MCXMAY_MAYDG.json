@@ -1,0 +1,65 @@
+{
+    "2026-06-03 23:55:38": {
+        "timestamp": "2026-06-03 23:55:38",
+        "instrument_id": "69df6e21bab8e09015512d21",
+        "instrument_name": "NGAS(COMEXMAY-MCXMAY)MAYDG",
+        "badla_type": "GAS",
+        "room_id": "c0fv2",
+        "raw_data": {
+            "roomId": "c0fv2",
+            "data": [
+                {
+                    "mode": "IQ",
+                    "ExchangeToken": "QNGM26",
+                    "instrument_token": "66500552748",
+                    "tradable": true,
+                    "last_price": 3.036,
+                    "last_quantity": 4,
+                    "average_price": null,
+                    "volume": 4730,
+                    "buy_quantity": 0,
+                    "sell_quantity": 0,
+                    "ohlc_open": "2.910",
+                    "ohlc_high": "3.055",
+                    "ohlc_low": "2.857",
+                    "ohlc_close": "2.894",
+                    "change": "0.142",
+                    "buy_price_0": 3,
+                    "sell_price_0": 3.048,
+                    "buy_qty_0": 1,
+                    "sell_qty_0": 2,
+                    "LastTradeTimeD": "2026-05-28T00:00:00.0930103+05:30",
+                    "last_trade_time": "28-05-2026 00:00:00",
+                    "oi": 3627,
+                    "oi_day_high": null,
+                    "oi_day_low": null,
+                    "timestamp": "2026-05-28T00:00:00.0930103+05:30",
+                    "name": "NATURALGAS",
+                    "expiry": "27-05-2026",
+                    "exchange": "COMEX",
+                    "tradingsymbol": "NATURALGAS 27May2026",
+                    "lot_size": "1.000",
+                    "lower_circuit": "0",
+                    "upper_circuit": "0",
+                    "net_change": "0.14",
+                    "percentage_change": "4.91",
+                    "buy": [],
+                    "sell": [],
+                    "The52WeekHigh": 4.42,
+                    "The52WeekLow": 0,
+                    "ProviderTime": "2026-05-28T00:00:00.0930156+05:30",
+                    "BrokerReceiveTime": null,
+                    "IsHistoryOn": false,
+                    "ohlc": {
+                        "high": "3.055",
+                        "low": "2.857"
+                    }
+                }
+            ],
+            "uniqId": "69df6e21bab8e09015512d21",
+            "marketType": "badla",
+            "equation": "L1*L3",
+            "duty": 15
+        }
+    }
+}

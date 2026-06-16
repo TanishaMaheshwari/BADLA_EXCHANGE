@@ -1,0 +1,65 @@
+{
+    "2026-06-12 16:31:31": {
+        "timestamp": "2026-06-12 16:31:31",
+        "instrument_id": "69df781bbab8e09015512d24",
+        "instrument_name": "COPPER(COMEXJULY-MCXMAY)@MAYDG (2.204623)",
+        "badla_type": "COPPER",
+        "room_id": "4Mfyl",
+        "raw_data": {
+            "roomId": "4Mfyl",
+            "data": [
+                {
+                    "mode": "IQ",
+                    "ExchangeToken": "QHGN26",
+                    "instrument_token": "50617248258",
+                    "tradable": true,
+                    "last_price": 6.392,
+                    "last_quantity": 1,
+                    "average_price": null,
+                    "volume": 16515,
+                    "buy_quantity": 0,
+                    "sell_quantity": 0,
+                    "ohlc_open": "6.3880",
+                    "ohlc_high": "6.4455",
+                    "ohlc_low": "6.3585",
+                    "ohlc_close": "6.2750",
+                    "change": "0.1170",
+                    "buy_price_0": 6.3915,
+                    "sell_price_0": 6.3925,
+                    "buy_qty_0": 3,
+                    "sell_qty_0": 1,
+                    "LastTradeTimeD": "2026-06-12T16:31:31.1422127+05:30",
+                    "last_trade_time": "12-06-2026 16:31:31",
+                    "oi": 92676,
+                    "oi_day_high": null,
+                    "oi_day_low": null,
+                    "timestamp": "2026-06-12T16:31:31.1422127+05:30",
+                    "name": "COPPER",
+                    "expiry": "29-07-2026",
+                    "exchange": "COMEX",
+                    "tradingsymbol": "COPPER 29Jul2026",
+                    "lot_size": "1.000",
+                    "lower_circuit": "0",
+                    "upper_circuit": "0",
+                    "net_change": "0.12",
+                    "percentage_change": "1.86",
+                    "buy": [],
+                    "sell": [],
+                    "The52WeekHigh": 6.716,
+                    "The52WeekLow": 0,
+                    "ProviderTime": "2026-06-12T16:31:31.1422368+05:30",
+                    "BrokerReceiveTime": null,
+                    "IsHistoryOn": false,
+                    "ohlc": {
+                        "high": "6.4455",
+                        "low": "6.3585"
+                    }
+                }
+            ],
+            "uniqId": "69df781bbab8e09015512d24",
+            "marketType": "badla",
+            "equation": "Math.round((L1*2.204623)*L3)",
+            "duty": 6.75
+        }
+    }
+}

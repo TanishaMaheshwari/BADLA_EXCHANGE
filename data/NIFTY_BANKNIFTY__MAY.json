@@ -1,0 +1,236 @@
+{
+    "2026-06-02 15:05:26": {
+        "timestamp": "2026-06-02 15:05:26",
+        "instrument_id": "69eef98fbab8e09015512d34",
+        "instrument_name": "NIFTY-BANKNIFTY (MAY)",
+        "badla_type": "OTHER",
+        "room_id": "AIDJL",
+        "raw_data": {
+            "roomId": "AIDJL",
+            "data": [
+                {
+                    "mode": "US",
+                    "ExchangeToken": "66068",
+                    "instrument_token": "31055624443",
+                    "tradable": true,
+                    "last_price": 55086.4,
+                    "last_quantity": 60,
+                    "average_price": "55229.54",
+                    "volume": 745770,
+                    "buy_quantity": 11100,
+                    "sell_quantity": 13800,
+                    "ohlc_open": "55431",
+                    "ohlc_high": "55559.8",
+                    "ohlc_low": "55008",
+                    "ohlc_close": "55431.4",
+                    "change": "0",
+                    "buy_price_0": 55088.8,
+                    "sell_price_0": 55090,
+                    "buy_qty_0": 30,
+                    "sell_qty_0": 990,
+                    "LastTradeTimeD": "2026-05-26T15:29:59.359",
+                    "last_trade_time": "26-05-2026 15:29:59",
+                    "oi": 841140,
+                    "oi_day_high": 1152540,
+                    "oi_day_low": 845610,
+                    "timestamp": "2026-05-26T15:30:00.406",
+                    "name": "BANKNIFTY",
+                    "expiry": "26-05-2026",
+                    "exchange": "NSE",
+                    "tradingsymbol": "BANKNIFTY26MAYFUT",
+                    "lot_size": "30.000",
+                    "lower_circuit": "49888.4",
+                    "upper_circuit": "60974.4",
+                    "net_change": "-345.0",
+                    "percentage_change": "-0.62",
+                    "buy": [
+                        {
+                            "Quantity": 30,
+                            "Price": 55088.8,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 30,
+                            "Price": 55088.2,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 30,
+                            "Price": 55088,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 120,
+                            "Price": 55087.8,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 30,
+                            "Price": 55085.8,
+                            "Orders": 0,
+                            "Flag": 0
+                        }
+                    ],
+                    "sell": [
+                        {
+                            "Quantity": 990,
+                            "Price": 55090,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 30,
+                            "Price": 55091,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 60,
+                            "Price": 55092,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 30,
+                            "Price": 55094,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 150,
+                            "Price": 55095,
+                            "Orders": 0,
+                            "Flag": 0
+                        }
+                    ],
+                    "The52WeekHigh": 55600,
+                    "The52WeekLow": 0,
+                    "ProviderTime": "2026-05-26T15:30:00.6422092+05:30",
+                    "BrokerReceiveTime": null,
+                    "IsHistoryOn": true,
+                    "ohlc": {
+                        "high": "55559.8",
+                        "low": "55008"
+                    }
+                },
+                {
+                    "mode": "US",
+                    "ExchangeToken": "66071",
+                    "instrument_token": "10898165746",
+                    "tradable": true,
+                    "last_price": 23911.3,
+                    "last_quantity": 65,
+                    "average_price": "23991.22",
+                    "volume": 3281525,
+                    "buy_quantity": 37310,
+                    "sell_quantity": 42315,
+                    "ohlc_open": "24047",
+                    "ohlc_high": "24084.3",
+                    "ohlc_low": "23880",
+                    "ohlc_close": "24063",
+                    "change": "0",
+                    "buy_price_0": 23911.3,
+                    "sell_price_0": 23912,
+                    "buy_qty_0": 65,
+                    "sell_qty_0": 3835,
+                    "LastTradeTimeD": "2026-05-26T15:29:59.382",
+                    "last_trade_time": "26-05-2026 15:29:59",
+                    "oi": 7004465,
+                    "oi_day_high": 8368425,
+                    "oi_day_low": 7008560,
+                    "timestamp": "2026-05-26T15:30:00.406",
+                    "name": "NIFTY",
+                    "expiry": "26-05-2026",
+                    "exchange": "NSE",
+                    "tradingsymbol": "NIFTY26MAYFUT",
+                    "lot_size": "65.000",
+                    "lower_circuit": "21656.7",
+                    "upper_circuit": "26469.3",
+                    "net_change": "-151.7",
+                    "percentage_change": "-0.63",
+                    "buy": [
+                        {
+                            "Quantity": 65,
+                            "Price": 23911.3,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 65,
+                            "Price": 23911.2,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 65,
+                            "Price": 23911.1,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 65,
+                            "Price": 23910.9,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 130,
+                            "Price": 23910.7,
+                            "Orders": 0,
+                            "Flag": 0
+                        }
+                    ],
+                    "sell": [
+                        {
+                            "Quantity": 3835,
+                            "Price": 23912,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 195,
+                            "Price": 23913,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 65,
+                            "Price": 23913.9,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 195,
+                            "Price": 23914,
+                            "Orders": 0,
+                            "Flag": 0
+                        },
+                        {
+                            "Quantity": 1625,
+                            "Price": 23915,
+                            "Orders": 0,
+                            "Flag": 0
+                        }
+                    ],
+                    "The52WeekHigh": 24119.8,
+                    "The52WeekLow": 0,
+                    "ProviderTime": "2026-05-26T15:30:00.6421537+05:30",
+                    "BrokerReceiveTime": null,
+                    "IsHistoryOn": true,
+                    "ohlc": {
+                        "high": "24084.3",
+                        "low": "23880"
+                    }
+                }
+            ],
+            "uniqId": "69eef98fbab8e09015512d34",
+            "marketType": "badla",
+            "equation": "L1*2",
+            "duty": 15
+        }
+    }
+}
