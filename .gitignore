@@ -1,6 +1,8 @@
-*.log*.log*
-*.log.*
-data/
-node_modules/
-badla.db
 .env
+badla.db
+node_modules/
+*.log
+mt5_queue.json
+mt5_status.json
+broadcast.json
+live_prices.json
