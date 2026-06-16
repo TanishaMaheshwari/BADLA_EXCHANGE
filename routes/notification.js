@@ -13,16 +13,15 @@ router.get('/notifications', requireAuth, (req, res) => {
 
 // Save a price alert
 router.post('/notifications', requireAuth, (req, res) => {
-  const { instrumentName, dashboardInstrumentId, field, direction, target, type } = req.body;
-  if (!instrumentName || !field || !direction || target == null)
+  const { instrumentName, dashboardInstrumentId, field, direction, target, type, dealId } = req.body;
+    if (!instrumentName || !direction || target == null || (type !== 'deal_pnl_alert' && !field))
     return res.status(400).json({ error: 'Missing fields' });
-
-  const id = dbInsert(`
-    INSERT INTO notifications 
-      (user_id, dashboard_instrument_id, type, instrument_name, field, direction, target, status, push_enabled)
-    VALUES (?, ?, ?, ?, ?, ?, ?, 'armed', 1)
-  `, [req.user.id, dashboardInstrumentId || null, type || 'price_alert',
-      instrumentName, field, direction, parseFloat(target)]);
+    const id = dbInsert(`
+        INSERT INTO notifications
+        (user_id, dashboard_instrument_id, type, instrument_name, field, direction, target, status, push_enabled, deal_id)
+        VALUES (?, ?, ?, ?, ?, ?, ?, 'armed', 1, ?)
+    `, [req.user.id, dashboardInstrumentId || null, type || 'price_alert',
+        instrumentName, field, direction, parseFloat(target), dealId || null]);
 
   res.json(dbGet('SELECT * FROM notifications WHERE id = ?', [id]));
 });

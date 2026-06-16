@@ -163,6 +163,40 @@ async function initDB() {
     created_at TEXT DEFAULT (datetime('now','localtime'))
   )`);
 
+  const notifCols = db.exec("PRAGMA table_info(notifications)");
+  const notifColNames = notifCols.length ? notifCols[0].values.map(r => r[1]) : [];
+  if (!notifColNames.includes('deal_id'))
+    db.run("ALTER TABLE notifications ADD COLUMN deal_id INTEGER REFERENCES deals(id) ON DELETE CASCADE");
+
+  if (notifCols.length) {
+    const fieldInfo = notifCols[0].values.find(r => r[1] === 'field');
+    if (fieldInfo && (fieldInfo[2].toUpperCase() !== 'TEXT' || fieldInfo[3] === 1)) {
+      console.log('Migration: relaxing notifications.field nullability');
+      db.run(`CREATE TABLE notifications_backup AS SELECT * FROM notifications`);
+      db.run(`DROP TABLE notifications`);
+      db.run(`CREATE TABLE notifications (
+        id                      INTEGER PRIMARY KEY AUTOINCREMENT,
+        user_id                 INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+        dashboard_instrument_id INTEGER REFERENCES dashboard_instruments(id) ON DELETE CASCADE,
+        deal_id                 INTEGER REFERENCES deals(id) ON DELETE CASCADE,
+        type                    TEXT NOT NULL DEFAULT 'price_alert',
+        instrument_name         TEXT,
+        field                   TEXT,
+        direction               TEXT,
+        target                  REAL,
+        message                 TEXT,
+        status                  TEXT DEFAULT 'armed',
+        push_enabled            INTEGER DEFAULT 1,
+        fired_at                TEXT,
+        created_at              TEXT DEFAULT (datetime('now','localtime'))
+      )`);
+      db.run(`INSERT INTO notifications (id, user_id, dashboard_instrument_id, deal_id, type, instrument_name, field, direction, target, message, status, push_enabled, fired_at, created_at)
+              SELECT id, user_id, dashboard_instrument_id, deal_id, type, instrument_name, field, direction, target, message, status, push_enabled, fired_at, created_at
+              FROM notifications_backup`);
+      db.run(`DROP TABLE notifications_backup`);
+    }
+  }
+
   console.log('New table migrations done');
 
   // Ensure a final flush after all migrations
