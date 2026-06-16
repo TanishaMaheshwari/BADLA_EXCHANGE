@@ -1,50 +1,9 @@
+<!-- ALERT MODAL -->
 <div class="modal-overlay" id="alert-modal">
-  <div class="modal" style="width:600px">
+  <div class="modal" style="width:560px">
     <h3>🔔 Active Alerts</h3>
-    <!-- <p style="color:var(--muted);font-size:11px;margin-bottom:12px">
-      Click 🔔 on any dashboard card to add an alert. Multiple alerts per instrument supported.
-    </p> -->
+    <p style="color:var(--muted);font-size:11px;margin-bottom:12px">Click 🔔 on any dashboard card or deal to set a price alarm.</p>
     <div id="alert-list"></div>
-    <div class="form-actions">
-      <button class="btn btn-cancel" onclick="closeAlertModal()">Close</button>
-    </div>
-  </div>
-</div>
-
-<!-- EDIT ALERT POPOVER MODAL -->
-<div class="modal-overlay" id="edit-alert-modal" style="display:none;z-index:1100">
-  <div class="modal" style="width:380px">
-    <h3 id="edit-alert-title" style="margin-bottom:20px">🔔 Edit Alert</h3>
-    <div class="form-group" style="margin-bottom:16px">
-      <label style="display:block;margin-bottom:6px;font-size:11px;color:var(--muted);
-        text-transform:uppercase;letter-spacing:.06em">Field</label>
-      <select id="edit-alert-field" style="width:100%;padding:8px 10px">
-        <option value="badlaBUY">badlaBUY</option>
-        <option value="badlaSELL">badlaSELL</option>
-        <option value="badlaLTP">badlaLTP</option>
-        <option value="mcx.bid">mcx.bid</option>
-        <option value="mcx.ask">mcx.ask</option>
-        <option value="comex.bid">comex.bid</option>
-        <option value="comex.ask">comex.ask</option>
-      </select>
-    </div>
-    <div class="form-group" style="margin-bottom:16px">
-      <label style="display:block;margin-bottom:6px;font-size:11px;color:var(--muted);
-        text-transform:uppercase;letter-spacing:.06em">Direction</label>
-      <select id="edit-alert-dir" style="width:100%;padding:8px 10px">
-        <option value="above">Above ≥</option>
-        <option value="below">Below ≤</option>
-      </select>
-    </div>
-    <div class="form-group" style="margin-bottom:24px">
-      <label style="display:block;margin-bottom:6px;font-size:11px;color:var(--muted);
-        text-transform:uppercase;letter-spacing:.06em">Target Price</label>
-      <input type="number" id="edit-alert-target" placeholder="e.g. 1024.50" step="0.01"
-        style="width:100%;padding:8px 10px">
-    </div>
-    <div class="form-actions" style="gap:10px">
-      <button class="btn btn-cancel" onclick="closeEditAlertModal()">Cancel</button>
-      <button class="btn btn-primary" onclick="saveEditAlert()">Save Changes</button>
-    </div>
+    <div class="form-actions"><button class="btn btn-cancel" onclick="closeAlertModal()">Close</button></div>
   </div>
 </div>

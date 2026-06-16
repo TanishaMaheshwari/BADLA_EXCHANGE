@@ -1,4 +1,5 @@
 .env
+badla.db
 node_modules/
 *.log
 mt5_queue.json
