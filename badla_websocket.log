@@ -26281,3 +26281,55 @@ FileNotFoundError: [Errno 2] No such file or directory: '/Users/tanishamaheshwar
 2026-06-16 21:59:11,980 - BadlaWebSocket - INFO - Shutting down...
 2026-06-16 21:59:11,997 - BadlaWebSocket - INFO - Push timer stopped
 2026-06-16 21:59:12,276 - BadlaWebSocket - INFO - Disconnected
+2026-06-17 09:20:45,119 - BadlaMain - INFO - Starting Badla WebSocket Client
+2026-06-17 09:20:45,120 - BadlaMain - INFO -   data-dir          : data
+2026-06-17 09:20:45,120 - BadlaMain - INFO -   settings-file     : instrument_settings.json
+2026-06-17 09:20:45,120 - BadlaMain - INFO -   response-timeout  : 1.0s
+2026-06-17 09:20:45,949 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-17 09:20:45,950 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-17 09:20:45,950 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-17 09:20:45,950 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-17 09:20:45,951 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-17 09:20:46,153 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-17 09:21:12,232 - BadlaWebSocket - INFO - Shutting down...
+2026-06-17 09:21:12,275 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-17 09:21:12,479 - BadlaWebSocket - INFO - Disconnected
+2026-06-17 09:51:54,267 - BadlaMain - INFO - Starting Badla WebSocket Client
+2026-06-17 09:51:54,267 - BadlaMain - INFO -   data-dir          : data
+2026-06-17 09:51:54,267 - BadlaMain - INFO -   settings-file     : instrument_settings.json
+2026-06-17 09:51:54,267 - BadlaMain - INFO -   response-timeout  : 1.0s
+2026-06-17 09:51:55,120 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-17 09:51:55,125 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-17 09:51:55,127 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-17 09:51:55,128 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-17 09:51:55,129 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-17 09:51:55,336 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-17 10:41:42,634 - BadlaWebSocket - INFO - Shutting down...
+2026-06-17 10:41:42,689 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-17 10:41:42,891 - BadlaWebSocket - INFO - Disconnected
+2026-06-18 09:32:55,985 - BadlaMain - INFO - Starting Badla WebSocket Client
+2026-06-18 09:32:55,985 - BadlaMain - INFO -   data-dir          : data
+2026-06-18 09:32:55,986 - BadlaMain - INFO -   settings-file     : instrument_settings.json
+2026-06-18 09:32:55,986 - BadlaMain - INFO -   response-timeout  : 1.0s
+2026-06-18 09:32:56,787 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-18 09:32:56,787 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-18 09:32:56,788 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-18 09:32:56,788 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-18 09:32:56,788 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-18 09:32:56,989 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-18 09:33:35,603 - BadlaWebSocket - INFO - Shutting down...
+2026-06-18 09:33:35,670 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-18 09:33:35,847 - BadlaWebSocket - INFO - Disconnected
+2026-06-18 09:36:20,710 - BadlaMain - INFO - Starting Badla WebSocket Client
+2026-06-18 09:36:20,710 - BadlaMain - INFO -   data-dir          : data
+2026-06-18 09:36:20,711 - BadlaMain - INFO -   settings-file     : instrument_settings.json
+2026-06-18 09:36:20,711 - BadlaMain - INFO -   response-timeout  : 1.0s
+2026-06-18 09:36:21,542 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-18 09:36:21,544 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-18 09:36:21,544 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-18 09:36:21,545 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-18 09:36:21,546 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-18 09:36:21,766 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-18 09:36:55,803 - BadlaWebSocket - INFO - Shutting down...
+2026-06-18 09:36:55,867 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-18 09:36:56,100 - BadlaWebSocket - INFO - Disconnected

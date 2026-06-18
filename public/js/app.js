@@ -166,7 +166,15 @@ function connectWS() {
       );
       loadOrders();
     } else if (msg.type === 'notification_fired') {
-      showToast('🔔 Price Alert', `${msg.instrument} ${msg.field} hit ${msg.target}`, 'alert', 0);
+        if (priceAlerts[msg.alertId]) {
+          priceAlerts[msg.alertId].active = false;
+          renderAlertList();
+          updateAllAlertButtons();
+        }
+        const desc = msg.field
+          ? `${msg.instrument} ${msg.field} hit ${msg.target}`
+          : `${msg.instrument} P/L hit ₹${msg.target}`;
+        showToast('🔔 Alert', desc, 'alert', 0);
     } else if (msg.type === 'show_notification') {
         setTimeout(() => {
           navigator.serviceWorker.ready.then(reg => {

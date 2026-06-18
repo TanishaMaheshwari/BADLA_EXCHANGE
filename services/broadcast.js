@@ -17,8 +17,13 @@ function getCurrentValue(data, field) {
 
 function getBrokerShare(brokerId) {
   if (!brokerId) return 1;
-  const broker = dbAll('SELECT * FROM brokers WHERE id = ?', [brokerId])[0];
-  return broker ? (parseFloat(broker.profit_share) || 0) / 100 : 1;
+  try {
+    const broker = dbAll('SELECT * FROM brokers WHERE id = ?', [brokerId])[0];
+    return broker ? (parseFloat(broker.profit_share) || 0) / 100 : 1;
+  } catch (e) {
+    console.error('FAILED at getBrokerShare. brokerId:', brokerId, '| typeof:', typeof brokerId, '| error:', e.message);
+    return 1;
+  }
 }
 
 function computeDealLivePnl(deal, p) {
@@ -66,18 +71,36 @@ function computeDealLivePnl(deal, p) {
 }
 
 async function checkDealPnlAlert(alert, data) {
-  const deal = dbAll('SELECT * FROM deals WHERE id = ?', [alert.deal_id])[0];
+  let deal;
+  try {
+    deal = dbAll('SELECT * FROM deals WHERE id = ?', [alert.deal_id])[0];
+  } catch (e) {
+    console.error('FAILED at deal lookup. alert:', JSON.stringify(alert), '| error:', e.message);
+    return;
+  }
   if (!deal) return;
   if (deal.status !== 'open') return;   // skip alerts on closed deals
 
-  const total = computeDealLivePnl(deal, data);
+  let total;
+  try {
+    total = computeDealLivePnl(deal, data);
+  } catch (e) {
+    console.error('FAILED at computeDealLivePnl. deal:', JSON.stringify(deal), '| error:', e.message);
+    return;
+  }
+
   const hit = alert.direction === 'above' ? total >= alert.target : total <= alert.target;
   if (!hit) return;
 
-  dbRun(
-    "UPDATE notifications SET status='fired', fired_at=datetime('now','localtime') WHERE id=?",
-    [alert.id]
-  );
+  try {
+    dbRun(
+      "UPDATE notifications SET status='fired', fired_at=datetime('now','localtime') WHERE id=?",
+      [alert.id]
+    );
+  } catch (e) {
+    console.error('FAILED at UPDATE notifications (deal alert). alertId:', alert.id, '| error:', e.message);
+    return;
+  }
 
   await sendPushToUser(alert.user_id, {
     title: `🔔 Deal P/L: ${alert.instrument_name}`,
@@ -105,10 +128,15 @@ async function checkPriceFieldAlert(alert, data) {
   const hit = alert.direction === 'above' ? val >= alert.target : val <= alert.target;
   if (!hit) return;
 
-  dbRun(
-    "UPDATE notifications SET status='fired', fired_at=datetime('now','localtime') WHERE id=?",
-    [alert.id]
-  );
+  try {
+    dbRun(
+      "UPDATE notifications SET status='fired', fired_at=datetime('now','localtime') WHERE id=?",
+      [alert.id]
+    );
+  } catch (e) {
+    console.error('FAILED at UPDATE notifications (price alert). alertId:', alert.id, '| error:', e.message);
+    return;
+  }
 
   await sendPushToUser(alert.user_id, {
     title: `🔔 Alert: ${alert.instrument_name}`,
@@ -131,10 +159,16 @@ async function checkPriceFieldAlert(alert, data) {
 }
 
 async function checkNotifications(data) {
-  const armed = dbAll(
-    `SELECT * FROM notifications WHERE status = 'armed' AND instrument_name = ?`,
-    [data.name]
-  );
+  let armed;
+  try {
+    armed = dbAll(
+      `SELECT * FROM notifications WHERE status = 'armed' AND instrument_name = ?`,
+      [data.name]
+    );
+  } catch (e) {
+    console.error('FAILED at armed-alerts lookup. data.name:', data?.name, '| typeof:', typeof data?.name, '| error:', e.message);
+    return;
+  }
 
   for (const alert of armed) {
     if (alert.type === 'deal_pnl_alert') {
@@ -170,7 +204,7 @@ function startBroadcastWatcher() {
           broadcast({ type: 'update', data: result });
           await checkNotifications(result);  // ← check alerts on every price update
         }
-      } catch(e) { console.error('broadcast watcher error:', e.message); }
+      } catch(e) { console.error('broadcast watcher error:', e.message, '\n', e.stack); }
     }, 4);
   });
 

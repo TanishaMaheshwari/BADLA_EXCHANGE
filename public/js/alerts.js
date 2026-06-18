@@ -3,20 +3,20 @@ let priceAlerts = {};       // keyed by notification id from DB
 let dealPnlAlerts = {};
 let alarmFiring = null, openPopover = null;
 
-function startAlarm() {
-  if (alarmFiring) return;
-  const ctx = new (window.AudioContext || window.webkitAudioContext)();
-  let beat = 0;
-  const intervalId = setInterval(() => {
-    const o = ctx.createOscillator(), g = ctx.createGain();
-    o.connect(g); g.connect(ctx.destination);
-    o.frequency.value = beat % 2 === 0 ? 1200 : 800;
-    g.gain.setValueAtTime(0.9, ctx.currentTime);
-    g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.18);
-    o.start(ctx.currentTime); o.stop(ctx.currentTime + 0.18); beat++;
-  }, 220);
-  alarmFiring = { intervalId, ctx };
-}
+// function startAlarm() {
+//   if (alarmFiring) return;
+//   const ctx = new (window.AudioContext || window.webkitAudioContext)();
+//   let beat = 0;
+//   const intervalId = setInterval(() => {
+//     const o = ctx.createOscillator(), g = ctx.createGain();
+//     o.connect(g); g.connect(ctx.destination);
+//     o.frequency.value = beat % 2 === 0 ? 1200 : 800;
+//     g.gain.setValueAtTime(0.9, ctx.currentTime);
+//     g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.18);
+//     o.start(ctx.currentTime); o.stop(ctx.currentTime + 0.18); beat++;
+//   }, 220);
+//   alarmFiring = { intervalId, ctx };
+// }
 
 function stopAlarm() {
   if (!alarmFiring) return;
@@ -420,7 +420,7 @@ function renderAlertList() {
         <div style="font-size:10px;color:var(--muted);margin-top:2px">
           ${desc}
           <span style="margin-left:8px;color:${a.active ? 'var(--accent)' : 'var(--red)'}">
-            ${a.active ? '● Armed' : '✓ Fired'}
+            ${a.active ? '● Active' : '● Inactive'}
           </span>
         </div>
       </div>

@@ -11,19 +11,61 @@ router.get('/notifications', requireAuth, (req, res) => {
   ));
 });
 
-// Save a price alert
 router.post('/notifications', requireAuth, (req, res) => {
-  const { instrumentName, dashboardInstrumentId, field, direction, target, type, dealId } = req.body;
-    if (!instrumentName || !direction || target == null || (type !== 'deal_pnl_alert' && !field))
-    return res.status(400).json({ error: 'Missing fields' });
-    const id = dbInsert(`
-        INSERT INTO notifications
-        (user_id, dashboard_instrument_id, type, instrument_name, field, direction, target, status, push_enabled, deal_id)
-        VALUES (?, ?, ?, ?, ?, ?, ?, 'armed', 1, ?)
-    `, [req.user.id, dashboardInstrumentId || null, type || 'price_alert',
-        instrumentName, field, direction, parseFloat(target), dealId || null]);
+  try {
+    const {
+      instrumentName,
+      dashboardInstrumentId,
+      field,
+      direction,
+      target,
+      type,
+      dealId
+    } = req.body;
 
-  res.json(dbGet('SELECT * FROM notifications WHERE id = ?', [id]));
+    // 🔍 Debug logs (temporary)
+    console.log('BODY:', req.body);
+    console.log('USER:', req.user);
+
+    // ✅ Validate auth
+    if (!req.user || !req.user.id) {
+      return res.status(401).json({ error: 'Unauthorized' });
+    }
+
+    // ✅ Validate input
+    if (!instrumentName || !direction || target == null) {
+      return res.status(400).json({ error: 'Missing fields' });
+    }
+
+    // ✅ Handle field safely
+    const safeField = (type === 'deal_pnl_alert') ? null : field;
+
+    const id = dbInsert(`
+      INSERT INTO notifications
+      (user_id, dashboard_instrument_id, type, instrument_name, field, direction, target, status, push_enabled, deal_id)
+      VALUES (?, ?, ?, ?, ?, ?, ?, 'armed', 1, ?)
+    `, [
+      req.user.id,
+      dashboardInstrumentId || null,
+      type || 'price_alert',
+      instrumentName,
+      safeField,              // ✅ FIX HERE
+      direction,
+      parseFloat(target),
+      dealId || null
+    ]);
+
+    const saved = dbGet(
+      'SELECT * FROM notifications WHERE id = ?',
+      [id]
+    );
+
+    res.json(saved);
+
+  } catch (err) {
+    console.error('❌ /notifications error:', err);
+    res.status(500).json({ error: err.message });
+  }
 });
 
 // Update existing alert

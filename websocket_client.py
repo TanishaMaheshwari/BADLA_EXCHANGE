@@ -8,6 +8,7 @@ import string
 import logging
 import os
 import sys
+import tempfile
 from datetime import datetime
 
 logging.basicConfig(
@@ -241,16 +242,49 @@ class BadlaWebSocketClient:
 
     # ── atomic broadcast file write ────────────────────────────────────────────
 
+    # def _write_broadcast(self, results: dict):
+    #     tmp = BROADCAST_FILE + ".tmp"
+    #     with self._broadcast_lock:
+    #         try:
+    #             with open(tmp, "w") as f:
+    #                 json.dump({"ts": time.time(), "data": results}, f, separators=(',', ':'))
+    #             os.replace(tmp, BROADCAST_FILE)
+    #         except FileNotFoundError:
+    #             pass  # tmp was consumed by another process (Node watcher) — harmless
     def _write_broadcast(self, results: dict):
-        tmp = BROADCAST_FILE + ".tmp"
         with self._broadcast_lock:
             try:
-                with open(tmp, "w") as f:
-                    json.dump({"ts": time.time(), "data": results}, f, separators=(',', ':'))
-                os.replace(tmp, BROADCAST_FILE)
-            except FileNotFoundError:
-                pass  # tmp was consumed by another process (Node watcher) — harmless
+                dir_name = os.path.dirname(BROADCAST_FILE)
 
+                # ✅ Create unique temp file (prevents collisions)
+                with tempfile.NamedTemporaryFile(
+                    "w",
+                    delete=False,
+                    dir=dir_name,
+                    suffix=".tmp"
+                ) as tmp_file:
+                    json.dump(
+                        {"ts": time.time(), "data": results},
+                        tmp_file,
+                        separators=(',', ':')
+                    )
+                    tmp_file.flush()
+                    os.fsync(tmp_file.fileno())
+                    tmp_name = tmp_file.name
+
+                # ✅ Retry replace (handles Windows lock)
+                for i in range(5):
+                    try:
+                        os.replace(tmp_name, BROADCAST_FILE)
+                        return
+                    except PermissionError:
+                        time.sleep(0.1)
+
+                # ❌ If still failing
+                raise PermissionError("Could not replace broadcast.json after retries")
+
+            except Exception as e:
+                print("❌ Broadcast write error:", e)
     # ── disk save (slow path) ──────────────────────────────────────────────────
 
     def _save_data(self, instrument: dict, value: float, prices: dict):
