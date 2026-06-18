@@ -1,1322 +1,2103 @@
 {
-    "2026-06-17 11:42:59": {
-        "timestamp": "2026-06-17 11:42:59",
+    "2026-06-18 10:30:50": {
+        "timestamp": "2026-06-18 10:30:50",
         "instrument_id": "6a157aae6121bd19cead3930",
         "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24084.0,
+        "computed_value": 24111.0,
         "prices": {
-            "74166801835": 24084.0,
-            "44693": 24079.5,
-            "44695": 105.879997
+            "74166801835": 24111.0,
+            "44693": 24100.5,
+            "44695": 105.849998
         }
     },
-    "2026-06-17 11:43:00": {
-        "timestamp": "2026-06-17 11:43:00",
+    "2026-06-18 10:30:55": {
+        "timestamp": "2026-06-18 10:30:55",
         "instrument_id": "6a157aae6121bd19cead3930",
         "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24084.0,
+        "computed_value": 24111.0,
         "prices": {
-            "74166801835": 24084.0,
-            "44693": 24079.5,
-            "44695": 105.879997
+            "74166801835": 24111.0,
+            "44693": 24102.0,
+            "44695": 105.849998
         }
     },
-    "2026-06-17 11:43:08": {
-        "timestamp": "2026-06-17 11:43:08",
+    "2026-06-18 10:30:56": {
+        "timestamp": "2026-06-18 10:30:56",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24111.0,
+        "prices": {
+            "74166801835": 24111.0,
+            "44693": 24102.0,
+            "44695": 105.849998
+        }
+    },
+    "2026-06-18 10:31:01": {
+        "timestamp": "2026-06-18 10:31:01",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24107.0,
+        "prices": {
+            "74166801835": 24107.0,
+            "44693": 24101.0,
+            "44695": 105.849998
+        }
+    },
+    "2026-06-18 10:31:06": {
+        "timestamp": "2026-06-18 10:31:06",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24107.0,
+        "prices": {
+            "74166801835": 24107.0,
+            "44693": 24102.0,
+            "44695": 105.849998
+        }
+    },
+    "2026-06-18 10:31:11": {
+        "timestamp": "2026-06-18 10:31:11",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24106.0,
+        "prices": {
+            "74166801835": 24106.0,
+            "44693": 24101.0,
+            "44695": 105.830002
+        }
+    },
+    "2026-06-18 10:31:17": {
+        "timestamp": "2026-06-18 10:31:17",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24106.0,
+        "prices": {
+            "74166801835": 24106.0,
+            "44693": 24100.0,
+            "44695": 105.830002
+        }
+    },
+    "2026-06-18 10:31:22": {
+        "timestamp": "2026-06-18 10:31:22",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.6,
+        "prices": {
+            "74166801835": 24115.6,
+            "44693": 24101.0,
+            "44695": 105.830002
+        }
+    },
+    "2026-06-18 10:31:27": {
+        "timestamp": "2026-06-18 10:31:27",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.0,
+        "prices": {
+            "74166801835": 24115.0,
+            "44693": 24105.0,
+            "44695": 105.830002
+        }
+    },
+    "2026-06-18 10:31:28": {
+        "timestamp": "2026-06-18 10:31:28",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.0,
+        "prices": {
+            "74166801835": 24115.0,
+            "44693": 24105.0,
+            "44695": 105.830002
+        }
+    },
+    "2026-06-18 10:31:32": {
+        "timestamp": "2026-06-18 10:31:32",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24119.2,
+        "prices": {
+            "74166801835": 24119.2,
+            "44693": 24105.0,
+            "44695": 105.830002
+        }
+    },
+    "2026-06-18 10:31:33": {
+        "timestamp": "2026-06-18 10:31:33",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24119.2,
+        "prices": {
+            "74166801835": 24119.2,
+            "44693": 24105.0,
+            "44695": 105.830002
+        }
+    },
+    "2026-06-18 10:31:38": {
+        "timestamp": "2026-06-18 10:31:38",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24114.0,
+        "prices": {
+            "74166801835": 24114.0,
+            "44693": 24104.5,
+            "44695": 105.830002
+        }
+    },
+    "2026-06-18 10:31:43": {
+        "timestamp": "2026-06-18 10:31:43",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24114.0,
+        "prices": {
+            "74166801835": 24114.0,
+            "44693": 24105.0,
+            "44695": 105.830002
+        }
+    },
+    "2026-06-18 10:31:48": {
+        "timestamp": "2026-06-18 10:31:48",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24117.0,
+        "prices": {
+            "74166801835": 24117.0,
+            "44693": 24105.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:31:49": {
+        "timestamp": "2026-06-18 10:31:49",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24117.0,
+        "prices": {
+            "74166801835": 24117.0,
+            "44693": 24105.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:31:54": {
+        "timestamp": "2026-06-18 10:31:54",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24121.0,
+        "prices": {
+            "74166801835": 24121.0,
+            "44693": 24107.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:00": {
+        "timestamp": "2026-06-18 10:32:00",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24110.0,
+        "prices": {
+            "74166801835": 24110.0,
+            "44693": 24108.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:01": {
+        "timestamp": "2026-06-18 10:32:01",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24110.0,
+        "prices": {
+            "74166801835": 24110.0,
+            "44693": 24108.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:05": {
+        "timestamp": "2026-06-18 10:32:05",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24112.2,
+        "prices": {
+            "74166801835": 24112.2,
+            "44693": 24108.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:07": {
+        "timestamp": "2026-06-18 10:32:07",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24112.2,
+        "prices": {
+            "74166801835": 24112.2,
+            "44693": 24108.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:10": {
+        "timestamp": "2026-06-18 10:32:10",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24112.2,
+        "prices": {
+            "74166801835": 24112.2,
+            "44693": 24107.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:13": {
+        "timestamp": "2026-06-18 10:32:13",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24112.2,
+        "prices": {
+            "74166801835": 24112.2,
+            "44693": 24107.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:16": {
+        "timestamp": "2026-06-18 10:32:16",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24111.1,
+        "prices": {
+            "74166801835": 24111.1,
+            "44693": 24104.5,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:18": {
+        "timestamp": "2026-06-18 10:32:18",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24110.2,
+        "prices": {
+            "74166801835": 24110.2,
+            "44693": 24104.5,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:21": {
+        "timestamp": "2026-06-18 10:32:21",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24111.0,
+        "prices": {
+            "74166801835": 24111.0,
+            "44693": 24104.5,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:23": {
+        "timestamp": "2026-06-18 10:32:23",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24117.7,
+        "prices": {
+            "74166801835": 24117.7,
+            "44693": 24104.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:26": {
+        "timestamp": "2026-06-18 10:32:26",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24112.0,
+        "prices": {
+            "74166801835": 24112.0,
+            "44693": 24104.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:29": {
+        "timestamp": "2026-06-18 10:32:29",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24111.0,
+        "prices": {
+            "74166801835": 24111.0,
+            "44693": 24104.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:31": {
+        "timestamp": "2026-06-18 10:32:31",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24111.0,
+        "prices": {
+            "74166801835": 24111.0,
+            "44693": 24105.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:34": {
+        "timestamp": "2026-06-18 10:32:34",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.0,
+        "prices": {
+            "74166801835": 24115.0,
+            "44693": 24106.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:36": {
+        "timestamp": "2026-06-18 10:32:36",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.0,
+        "prices": {
+            "74166801835": 24115.0,
+            "44693": 24106.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:39": {
+        "timestamp": "2026-06-18 10:32:39",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.0,
+        "prices": {
+            "74166801835": 24115.0,
+            "44693": 24106.5,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:42": {
+        "timestamp": "2026-06-18 10:32:42",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24107.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:45": {
+        "timestamp": "2026-06-18 10:32:45",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24108.5,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:47": {
+        "timestamp": "2026-06-18 10:32:47",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.1,
+        "prices": {
+            "74166801835": 24115.1,
+            "44693": 24110.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:50": {
+        "timestamp": "2026-06-18 10:32:50",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.1,
+        "prices": {
+            "74166801835": 24115.1,
+            "44693": 24110.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:52": {
+        "timestamp": "2026-06-18 10:32:52",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.1,
+        "prices": {
+            "74166801835": 24115.1,
+            "44693": 24110.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:55": {
+        "timestamp": "2026-06-18 10:32:55",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.1,
+        "prices": {
+            "74166801835": 24115.1,
+            "44693": 24110.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:32:57": {
+        "timestamp": "2026-06-18 10:32:57",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.1,
+        "prices": {
+            "74166801835": 24115.1,
+            "44693": 24110.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:33:00": {
+        "timestamp": "2026-06-18 10:33:00",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24110.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:33:03": {
+        "timestamp": "2026-06-18 10:33:03",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24109.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:33:06": {
+        "timestamp": "2026-06-18 10:33:06",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24109.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:33:08": {
+        "timestamp": "2026-06-18 10:33:08",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.2,
+        "prices": {
+            "74166801835": 24116.2,
+            "44693": 24109.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:33:11": {
+        "timestamp": "2026-06-18 10:33:11",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.2,
+        "prices": {
+            "74166801835": 24116.2,
+            "44693": 24109.5,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:33:13": {
+        "timestamp": "2026-06-18 10:33:13",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.2,
+        "prices": {
+            "74166801835": 24116.2,
+            "44693": 24108.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:33:17": {
+        "timestamp": "2026-06-18 10:33:17",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.2,
+        "prices": {
+            "74166801835": 24116.2,
+            "44693": 24108.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:33:19": {
+        "timestamp": "2026-06-18 10:33:19",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.2,
+        "prices": {
+            "74166801835": 24116.2,
+            "44693": 24108.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:33:23": {
+        "timestamp": "2026-06-18 10:33:23",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24108.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:33:24": {
+        "timestamp": "2026-06-18 10:33:24",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24107.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:33:29": {
+        "timestamp": "2026-06-18 10:33:29",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24119.6,
+        "prices": {
+            "74166801835": 24119.6,
+            "44693": 24106.5,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:33:34": {
+        "timestamp": "2026-06-18 10:33:34",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.2,
+        "prices": {
+            "74166801835": 24116.2,
+            "44693": 24107.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:33:35": {
+        "timestamp": "2026-06-18 10:33:35",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24119.6,
+        "prices": {
+            "74166801835": 24119.6,
+            "44693": 24107.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:33:40": {
+        "timestamp": "2026-06-18 10:33:40",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24119.6,
+        "prices": {
+            "74166801835": 24119.6,
+            "44693": 24107.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:33:45": {
+        "timestamp": "2026-06-18 10:33:45",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24119.6,
+        "prices": {
+            "74166801835": 24119.6,
+            "44693": 24107.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:33:50": {
+        "timestamp": "2026-06-18 10:33:50",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24119.6,
+        "prices": {
+            "74166801835": 24119.6,
+            "44693": 24106.5,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:33:51": {
+        "timestamp": "2026-06-18 10:33:51",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24119.6,
+        "prices": {
+            "74166801835": 24119.6,
+            "44693": 24106.5,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:33:55": {
+        "timestamp": "2026-06-18 10:33:55",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24119.0,
+        "prices": {
+            "74166801835": 24119.0,
+            "44693": 24107.5,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:33:56": {
+        "timestamp": "2026-06-18 10:33:56",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24119.0,
+        "prices": {
+            "74166801835": 24119.0,
+            "44693": 24107.5,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:34:01": {
+        "timestamp": "2026-06-18 10:34:01",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24119.0,
+        "prices": {
+            "74166801835": 24119.0,
+            "44693": 24108.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:34:07": {
+        "timestamp": "2026-06-18 10:34:07",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24119.0,
+        "prices": {
+            "74166801835": 24119.0,
+            "44693": 24108.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:34:13": {
+        "timestamp": "2026-06-18 10:34:13",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24119.0,
+        "prices": {
+            "74166801835": 24119.0,
+            "44693": 24108.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:34:20": {
+        "timestamp": "2026-06-18 10:34:20",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24117.0,
+        "prices": {
+            "74166801835": 24117.0,
+            "44693": 24112.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:34:22": {
+        "timestamp": "2026-06-18 10:34:22",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24117.0,
+        "prices": {
+            "74166801835": 24117.0,
+            "44693": 24109.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:34:26": {
+        "timestamp": "2026-06-18 10:34:26",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24109.5,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:34:28": {
+        "timestamp": "2026-06-18 10:34:28",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24109.5,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:34:32": {
+        "timestamp": "2026-06-18 10:34:32",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24109.5,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:34:33": {
+        "timestamp": "2026-06-18 10:34:33",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24109.5,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:34:37": {
+        "timestamp": "2026-06-18 10:34:37",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24109.5,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:34:38": {
+        "timestamp": "2026-06-18 10:34:38",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.5,
+        "prices": {
+            "74166801835": 24115.5,
+            "44693": 24110.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:34:42": {
+        "timestamp": "2026-06-18 10:34:42",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.5,
+        "prices": {
+            "74166801835": 24115.5,
+            "44693": 24110.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:34:44": {
+        "timestamp": "2026-06-18 10:34:44",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.5,
+        "prices": {
+            "74166801835": 24115.5,
+            "44693": 24110.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:34:48": {
+        "timestamp": "2026-06-18 10:34:48",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.5,
+        "prices": {
+            "74166801835": 24115.5,
+            "44693": 24110.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:34:50": {
+        "timestamp": "2026-06-18 10:34:50",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.5,
+        "prices": {
+            "74166801835": 24115.5,
+            "44693": 24110.5,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:34:53": {
+        "timestamp": "2026-06-18 10:34:53",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24110.5,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:34:55": {
+        "timestamp": "2026-06-18 10:34:55",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24110.5,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:34:58": {
+        "timestamp": "2026-06-18 10:34:58",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24112.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:35:00": {
+        "timestamp": "2026-06-18 10:35:00",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24112.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:35:04": {
+        "timestamp": "2026-06-18 10:35:04",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24112.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:35:06": {
+        "timestamp": "2026-06-18 10:35:06",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24121.0,
+        "prices": {
+            "74166801835": 24121.0,
+            "44693": 24112.0,
+            "44695": 105.809998
+        }
+    },
+    "2026-06-18 10:35:09": {
+        "timestamp": "2026-06-18 10:35:09",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24122.0,
+        "prices": {
+            "74166801835": 24122.0,
+            "44693": 24112.5,
+            "44695": 105.81
+        }
+    },
+    "2026-06-18 10:35:11": {
+        "timestamp": "2026-06-18 10:35:11",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24121.0,
+        "prices": {
+            "74166801835": 24121.0,
+            "44693": 24112.5,
+            "44695": 105.81
+        }
+    },
+    "2026-06-18 10:35:14": {
+        "timestamp": "2026-06-18 10:35:14",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24112.0,
+            "44695": 105.81
+        }
+    },
+    "2026-06-18 10:35:16": {
+        "timestamp": "2026-06-18 10:35:16",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24112.0,
+            "44695": 105.81
+        }
+    },
+    "2026-06-18 10:35:19": {
+        "timestamp": "2026-06-18 10:35:19",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24112.5,
+            "44695": 105.81
+        }
+    },
+    "2026-06-18 10:35:22": {
+        "timestamp": "2026-06-18 10:35:22",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24112.0,
+            "44695": 105.81
+        }
+    },
+    "2026-06-18 10:35:25": {
+        "timestamp": "2026-06-18 10:35:25",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24112.0,
+            "44695": 105.81
+        }
+    },
+    "2026-06-18 10:35:27": {
+        "timestamp": "2026-06-18 10:35:27",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24110.5,
+            "44695": 105.81
+        }
+    },
+    "2026-06-18 10:35:31": {
+        "timestamp": "2026-06-18 10:35:31",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24109.5,
+            "44695": 105.81
+        }
+    },
+    "2026-06-18 10:35:34": {
+        "timestamp": "2026-06-18 10:35:34",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24106.5,
+            "44695": 105.81
+        }
+    },
+    "2026-06-18 10:35:37": {
+        "timestamp": "2026-06-18 10:35:37",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24107.5,
+            "44695": 105.81
+        }
+    },
+    "2026-06-18 10:35:40": {
+        "timestamp": "2026-06-18 10:35:40",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24109.0,
+            "44695": 105.81
+        }
+    },
+    "2026-06-18 10:35:42": {
+        "timestamp": "2026-06-18 10:35:42",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24109.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:35:46": {
+        "timestamp": "2026-06-18 10:35:46",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24111.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:35:48": {
+        "timestamp": "2026-06-18 10:35:48",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24111.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:35:52": {
+        "timestamp": "2026-06-18 10:35:52",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24112.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:35:53": {
+        "timestamp": "2026-06-18 10:35:53",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24112.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:35:57": {
+        "timestamp": "2026-06-18 10:35:57",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24122.0,
+        "prices": {
+            "74166801835": 24122.0,
+            "44693": 24112.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:35:59": {
+        "timestamp": "2026-06-18 10:35:59",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24122.0,
+        "prices": {
+            "74166801835": 24122.0,
+            "44693": 24112.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:36:02": {
+        "timestamp": "2026-06-18 10:36:02",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24122.0,
+        "prices": {
+            "74166801835": 24122.0,
+            "44693": 24110.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:36:04": {
+        "timestamp": "2026-06-18 10:36:04",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24110.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:36:08": {
+        "timestamp": "2026-06-18 10:36:08",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24117.1,
+        "prices": {
+            "74166801835": 24117.1,
+            "44693": 24110.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:36:09": {
+        "timestamp": "2026-06-18 10:36:09",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24110.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:36:13": {
+        "timestamp": "2026-06-18 10:36:13",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.0,
+        "prices": {
+            "74166801835": 24120.0,
+            "44693": 24110.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:36:14": {
+        "timestamp": "2026-06-18 10:36:14",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24118.0,
+        "prices": {
+            "74166801835": 24118.0,
+            "44693": 24108.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:36:18": {
+        "timestamp": "2026-06-18 10:36:18",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.7,
+        "prices": {
+            "74166801835": 24120.7,
+            "44693": 24108.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:36:20": {
+        "timestamp": "2026-06-18 10:36:20",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.7,
+        "prices": {
+            "74166801835": 24120.7,
+            "44693": 24108.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:36:24": {
+        "timestamp": "2026-06-18 10:36:24",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24120.7,
+        "prices": {
+            "74166801835": 24120.7,
+            "44693": 24108.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:36:27": {
+        "timestamp": "2026-06-18 10:36:27",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24117.6,
+        "prices": {
+            "74166801835": 24117.6,
+            "44693": 24108.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:36:29": {
+        "timestamp": "2026-06-18 10:36:29",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24117.5,
+        "prices": {
+            "74166801835": 24117.5,
+            "44693": 24107.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:36:32": {
+        "timestamp": "2026-06-18 10:36:32",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24117.5,
+        "prices": {
+            "74166801835": 24117.5,
+            "44693": 24106.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:36:35": {
+        "timestamp": "2026-06-18 10:36:35",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.6,
+        "prices": {
+            "74166801835": 24116.6,
+            "44693": 24105.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:36:38": {
+        "timestamp": "2026-06-18 10:36:38",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.6,
+        "prices": {
+            "74166801835": 24116.6,
+            "44693": 24105.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:36:41": {
+        "timestamp": "2026-06-18 10:36:41",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.6,
+        "prices": {
+            "74166801835": 24116.6,
+            "44693": 24104.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:36:45": {
+        "timestamp": "2026-06-18 10:36:45",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.6,
+        "prices": {
+            "74166801835": 24116.6,
+            "44693": 24104.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:36:46": {
+        "timestamp": "2026-06-18 10:36:46",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.6,
+        "prices": {
+            "74166801835": 24116.6,
+            "44693": 24104.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:36:50": {
+        "timestamp": "2026-06-18 10:36:50",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.6,
+        "prices": {
+            "74166801835": 24116.6,
+            "44693": 24104.5,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-18 10:36:52": {
+        "timestamp": "2026-06-18 10:36:52",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.6,
+        "prices": {
+            "74166801835": 24116.6,
+            "44693": 24105.5,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-18 10:36:55": {
+        "timestamp": "2026-06-18 10:36:55",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.6,
+        "prices": {
+            "74166801835": 24116.6,
+            "44693": 24105.5,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-18 10:36:57": {
+        "timestamp": "2026-06-18 10:36:57",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.6,
+        "prices": {
+            "74166801835": 24116.6,
+            "44693": 24105.5,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-18 10:37:01": {
+        "timestamp": "2026-06-18 10:37:01",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.6,
+        "prices": {
+            "74166801835": 24116.6,
+            "44693": 24105.5,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-18 10:37:03": {
+        "timestamp": "2026-06-18 10:37:03",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.6,
+        "prices": {
+            "74166801835": 24116.6,
+            "44693": 24105.5,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-18 10:37:07": {
+        "timestamp": "2026-06-18 10:37:07",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.6,
+        "prices": {
+            "74166801835": 24116.6,
+            "44693": 24106.5,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-18 10:37:09": {
+        "timestamp": "2026-06-18 10:37:09",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.6,
+        "prices": {
+            "74166801835": 24116.6,
+            "44693": 24106.5,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-18 10:37:12": {
+        "timestamp": "2026-06-18 10:37:12",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.6,
+        "prices": {
+            "74166801835": 24116.6,
+            "44693": 24107.0,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-18 10:37:14": {
+        "timestamp": "2026-06-18 10:37:14",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.6,
+        "prices": {
+            "74166801835": 24116.6,
+            "44693": 24106.0,
+            "44695": 105.779999
+        }
+    },
+    "2026-06-18 10:37:17": {
+        "timestamp": "2026-06-18 10:37:17",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.6,
+        "prices": {
+            "74166801835": 24116.6,
+            "44693": 24104.5,
+            "44695": 105.779999
+        }
+    },
+    "2026-06-18 10:37:20": {
+        "timestamp": "2026-06-18 10:37:20",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.6,
+        "prices": {
+            "74166801835": 24116.6,
+            "44693": 24104.0,
+            "44695": 105.779999
+        }
+    },
+    "2026-06-18 10:37:23": {
+        "timestamp": "2026-06-18 10:37:23",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.6,
+        "prices": {
+            "74166801835": 24116.6,
+            "44693": 24104.0,
+            "44695": 105.779999
+        }
+    },
+    "2026-06-18 10:37:29": {
+        "timestamp": "2026-06-18 10:37:29",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.0,
+        "prices": {
+            "74166801835": 24116.0,
+            "44693": 24104.5,
+            "44695": 105.779999
+        }
+    },
+    "2026-06-18 10:37:30": {
+        "timestamp": "2026-06-18 10:37:30",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.1,
+        "prices": {
+            "74166801835": 24116.1,
+            "44693": 24105.5,
+            "44695": 105.779999
+        }
+    },
+    "2026-06-18 10:37:36": {
+        "timestamp": "2026-06-18 10:37:36",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24122.2,
+        "prices": {
+            "74166801835": 24122.2,
+            "44693": 24108.0,
+            "44695": 105.779999
+        }
+    },
+    "2026-06-18 10:37:42": {
+        "timestamp": "2026-06-18 10:37:42",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.0,
+        "prices": {
+            "74166801835": 24116.0,
+            "44693": 24106.5,
+            "44695": 105.779999
+        }
+    },
+    "2026-06-18 10:37:48": {
+        "timestamp": "2026-06-18 10:37:48",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.5,
+        "prices": {
+            "74166801835": 24115.5,
+            "44693": 24105.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:37:54": {
+        "timestamp": "2026-06-18 10:37:54",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24116.6,
+        "prices": {
+            "74166801835": 24116.6,
+            "44693": 24103.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:38:01": {
+        "timestamp": "2026-06-18 10:38:01",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.0,
+        "prices": {
+            "74166801835": 24115.0,
+            "44693": 24103.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:38:02": {
+        "timestamp": "2026-06-18 10:38:02",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.0,
+        "prices": {
+            "74166801835": 24115.0,
+            "44693": 24103.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:38:07": {
+        "timestamp": "2026-06-18 10:38:07",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.2,
+        "prices": {
+            "74166801835": 24115.2,
+            "44693": 24103.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:38:08": {
+        "timestamp": "2026-06-18 10:38:08",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24115.2,
+        "prices": {
+            "74166801835": 24115.2,
+            "44693": 24103.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:38:14": {
+        "timestamp": "2026-06-18 10:38:14",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24111.0,
+        "prices": {
+            "74166801835": 24111.0,
+            "44693": 24099.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:38:19": {
+        "timestamp": "2026-06-18 10:38:19",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24110.0,
+        "prices": {
+            "74166801835": 24110.0,
+            "44693": 24099.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:38:25": {
+        "timestamp": "2026-06-18 10:38:25",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24106.0,
+        "prices": {
+            "74166801835": 24106.0,
+            "44693": 24099.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:38:28": {
+        "timestamp": "2026-06-18 10:38:28",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24106.0,
+        "prices": {
+            "74166801835": 24106.0,
+            "44693": 24099.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:38:30": {
+        "timestamp": "2026-06-18 10:38:30",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24106.0,
+        "prices": {
+            "74166801835": 24106.0,
+            "44693": 24100.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:38:33": {
+        "timestamp": "2026-06-18 10:38:33",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24110.1,
+        "prices": {
+            "74166801835": 24110.1,
+            "44693": 24100.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:38:35": {
+        "timestamp": "2026-06-18 10:38:35",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24110.1,
+        "prices": {
+            "74166801835": 24110.1,
+            "44693": 24100.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:38:38": {
+        "timestamp": "2026-06-18 10:38:38",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24113.8,
+        "prices": {
+            "74166801835": 24113.8,
+            "44693": 24100.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:38:41": {
+        "timestamp": "2026-06-18 10:38:41",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24113.8,
+        "prices": {
+            "74166801835": 24113.8,
+            "44693": 24100.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:38:44": {
+        "timestamp": "2026-06-18 10:38:44",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24113.8,
+        "prices": {
+            "74166801835": 24113.8,
+            "44693": 24100.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:38:46": {
+        "timestamp": "2026-06-18 10:38:46",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24105.0,
+        "prices": {
+            "74166801835": 24105.0,
+            "44693": 24100.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:38:49": {
+        "timestamp": "2026-06-18 10:38:49",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24105.0,
+        "prices": {
+            "74166801835": 24105.0,
+            "44693": 24099.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:38:53": {
+        "timestamp": "2026-06-18 10:38:53",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24105.0,
+        "prices": {
+            "74166801835": 24105.0,
+            "44693": 24097.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:38:55": {
+        "timestamp": "2026-06-18 10:38:55",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24105.0,
+        "prices": {
+            "74166801835": 24105.0,
+            "44693": 24097.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:38:58": {
+        "timestamp": "2026-06-18 10:38:58",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24104.5,
+        "prices": {
+            "74166801835": 24104.5,
+            "44693": 24093.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:00": {
+        "timestamp": "2026-06-18 10:39:00",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24100.5,
+        "prices": {
+            "74166801835": 24100.5,
+            "44693": 24093.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:04": {
+        "timestamp": "2026-06-18 10:39:04",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24106.7,
+        "prices": {
+            "74166801835": 24106.7,
+            "44693": 24092.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:05": {
+        "timestamp": "2026-06-18 10:39:05",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24107.4,
+        "prices": {
+            "74166801835": 24107.4,
+            "44693": 24092.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:09": {
+        "timestamp": "2026-06-18 10:39:09",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24105.0,
+        "prices": {
+            "74166801835": 24105.0,
+            "44693": 24093.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:10": {
+        "timestamp": "2026-06-18 10:39:10",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24108.8,
+        "prices": {
+            "74166801835": 24108.8,
+            "44693": 24094.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:14": {
+        "timestamp": "2026-06-18 10:39:14",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24097.2,
+        "prices": {
+            "74166801835": 24097.2,
+            "44693": 24094.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:16": {
+        "timestamp": "2026-06-18 10:39:16",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24099.3,
+        "prices": {
+            "74166801835": 24099.3,
+            "44693": 24093.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:20": {
+        "timestamp": "2026-06-18 10:39:20",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24095.6,
+        "prices": {
+            "74166801835": 24095.6,
+            "44693": 24091.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:21": {
+        "timestamp": "2026-06-18 10:39:21",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24095.6,
+        "prices": {
+            "74166801835": 24095.6,
+            "44693": 24091.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:25": {
+        "timestamp": "2026-06-18 10:39:25",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24095.0,
+        "prices": {
+            "74166801835": 24095.0,
+            "44693": 24090.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:26": {
+        "timestamp": "2026-06-18 10:39:26",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24095.1,
+        "prices": {
+            "74166801835": 24095.1,
+            "44693": 24088.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:30": {
+        "timestamp": "2026-06-18 10:39:30",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24098.0,
+        "prices": {
+            "74166801835": 24098.0,
+            "44693": 24086.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:32": {
+        "timestamp": "2026-06-18 10:39:32",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24095.0,
+        "prices": {
+            "74166801835": 24095.0,
+            "44693": 24085.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:36": {
+        "timestamp": "2026-06-18 10:39:36",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24095.0,
+        "prices": {
+            "74166801835": 24095.0,
+            "44693": 24085.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:37": {
+        "timestamp": "2026-06-18 10:39:37",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24095.0,
+        "prices": {
+            "74166801835": 24095.0,
+            "44693": 24085.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:41": {
+        "timestamp": "2026-06-18 10:39:41",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24095.0,
+        "prices": {
+            "74166801835": 24095.0,
+            "44693": 24085.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:43": {
+        "timestamp": "2026-06-18 10:39:43",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24095.0,
+        "prices": {
+            "74166801835": 24095.0,
+            "44693": 24085.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:46": {
+        "timestamp": "2026-06-18 10:39:46",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24095.0,
+        "prices": {
+            "74166801835": 24095.0,
+            "44693": 24085.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:48": {
+        "timestamp": "2026-06-18 10:39:48",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24095.0,
+        "prices": {
+            "74166801835": 24095.0,
+            "44693": 24085.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:51": {
+        "timestamp": "2026-06-18 10:39:51",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24095.0,
+        "prices": {
+            "74166801835": 24095.0,
+            "44693": 24085.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:53": {
+        "timestamp": "2026-06-18 10:39:53",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24091.6,
+        "prices": {
+            "74166801835": 24091.6,
+            "44693": 24080.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:57": {
+        "timestamp": "2026-06-18 10:39:57",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24095.0,
+        "prices": {
+            "74166801835": 24095.0,
+            "44693": 24085.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:39:58": {
+        "timestamp": "2026-06-18 10:39:58",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24088.9,
+        "prices": {
+            "74166801835": 24088.9,
+            "44693": 24075.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:40:02": {
+        "timestamp": "2026-06-18 10:40:02",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24095.0,
+        "prices": {
+            "74166801835": 24095.0,
+            "44693": 24085.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:40:04": {
+        "timestamp": "2026-06-18 10:40:04",
         "instrument_id": "6a157aae6121bd19cead3930",
         "instrument_name": "NIFTY-SGX(JUNE)",
         "computed_value": 24084.7,
         "prices": {
             "74166801835": 24084.7,
-            "44693": 24079.0,
-            "44695": 105.879997
+            "44693": 24073.0,
+            "44695": 105.800003
         }
     },
-    "2026-06-17 11:43:09": {
-        "timestamp": "2026-06-17 11:43:09",
+    "2026-06-18 10:40:08": {
+        "timestamp": "2026-06-18 10:40:08",
         "instrument_id": "6a157aae6121bd19cead3930",
         "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24085.0,
+        "computed_value": 24095.0,
         "prices": {
-            "74166801835": 24085.0,
-            "44693": 24079.0,
-            "44695": 105.879997
+            "74166801835": 24095.0,
+            "44693": 24085.0,
+            "44695": 105.800003
         }
     },
-    "2026-06-17 11:43:19": {
-        "timestamp": "2026-06-17 11:43:19",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24080.0,
-        "prices": {
-            "74166801835": 24080.0,
-            "44693": 24078.0,
-            "44695": 105.879997
-        }
-    },
-    "2026-06-17 11:43:20": {
-        "timestamp": "2026-06-17 11:43:20",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24080.0,
-        "prices": {
-            "74166801835": 24080.0,
-            "44693": 24078.0,
-            "44695": 105.879997
-        }
-    },
-    "2026-06-17 11:43:29": {
-        "timestamp": "2026-06-17 11:43:29",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24084.0,
-        "prices": {
-            "74166801835": 24084.0,
-            "44693": 24074.5,
-            "44695": 105.879997
-        }
-    },
-    "2026-06-17 12:16:54": {
-        "timestamp": "2026-06-17 12:16:54",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24080.0,
-        "prices": {
-            "74166801835": 24080.0,
-            "44693": 24074.5,
-            "44695": 105.879997
-        }
-    },
-    "2026-06-17 12:17:01": {
-        "timestamp": "2026-06-17 12:17:01",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24080.0,
-        "prices": {
-            "74166801835": 24080.0,
-            "44693": 24074.5,
-            "44695": 105.879997
-        }
-    },
-    "2026-06-17 12:33:39": {
-        "timestamp": "2026-06-17 12:33:39",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24080.0,
-        "prices": {
-            "74166801835": 24080.0,
-            "44693": 24074.5,
-            "44695": 105.879997
-        }
-    },
-    "2026-06-17 12:49:10": {
-        "timestamp": "2026-06-17 12:49:10",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24080.0,
-        "prices": {
-            "74166801835": 24080.0,
-            "44693": 24074.5,
-            "44695": 105.879997
-        }
-    },
-    "2026-06-17 12:49:16": {
-        "timestamp": "2026-06-17 12:49:16",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24080.0,
-        "prices": {
-            "74166801835": 24080.0,
-            "44693": 24074.5,
-            "44695": 105.879997
-        }
-    },
-    "2026-06-17 12:49:24": {
-        "timestamp": "2026-06-17 12:49:24",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24060.5,
-        "prices": {
-            "74166801835": 24060.5,
-            "44693": 24049.5,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 12:49:27": {
-        "timestamp": "2026-06-17 12:49:27",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24047.9,
-        "prices": {
-            "74166801835": 24047.9,
-            "44693": 24049.5,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 12:49:37": {
-        "timestamp": "2026-06-17 12:49:37",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24061.6,
-        "prices": {
-            "74166801835": 24061.6,
-            "44693": 24050.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 12:49:40": {
-        "timestamp": "2026-06-17 12:49:40",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24060.4,
-        "prices": {
-            "74166801835": 24060.4,
-            "44693": 24049.5,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 12:49:45": {
-        "timestamp": "2026-06-17 12:49:45",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24051.8,
-        "prices": {
-            "74166801835": 24051.8,
-            "44693": 24050.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 12:49:46": {
-        "timestamp": "2026-06-17 12:49:46",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24051.8,
-        "prices": {
-            "74166801835": 24051.8,
-            "44693": 24050.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 12:49:52": {
-        "timestamp": "2026-06-17 12:49:52",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24051.8,
-        "prices": {
-            "74166801835": 24051.8,
-            "44693": 24052.5,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 13:06:39": {
-        "timestamp": "2026-06-17 13:06:39",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24062.0,
-        "prices": {
-            "74166801835": 24062.0,
-            "44693": 24053.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 13:22:12": {
-        "timestamp": "2026-06-17 13:22:12",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24062.0,
-        "prices": {
-            "74166801835": 24062.0,
-            "44693": 24053.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 13:22:13": {
-        "timestamp": "2026-06-17 13:22:13",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24062.0,
-        "prices": {
-            "74166801835": 24062.0,
-            "44693": 24053.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 13:22:19": {
-        "timestamp": "2026-06-17 13:22:19",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24062.0,
-        "prices": {
-            "74166801835": 24062.0,
-            "44693": 24053.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 13:22:20": {
-        "timestamp": "2026-06-17 13:22:20",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24062.0,
-        "prices": {
-            "74166801835": 24062.0,
-            "44693": 24053.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 13:22:26": {
-        "timestamp": "2026-06-17 13:22:26",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24062.0,
-        "prices": {
-            "74166801835": 24062.0,
-            "44693": 24053.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 13:22:28": {
-        "timestamp": "2026-06-17 13:22:28",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24062.0,
-        "prices": {
-            "74166801835": 24062.0,
-            "44693": 24053.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 13:22:34": {
-        "timestamp": "2026-06-17 13:22:34",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24062.0,
-        "prices": {
-            "74166801835": 24062.0,
-            "44693": 24053.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 13:22:35": {
-        "timestamp": "2026-06-17 13:22:35",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24062.0,
-        "prices": {
-            "74166801835": 24062.0,
-            "44693": 24053.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 13:22:40": {
-        "timestamp": "2026-06-17 13:22:40",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24062.0,
-        "prices": {
-            "74166801835": 24062.0,
-            "44693": 24053.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 13:22:45": {
-        "timestamp": "2026-06-17 13:22:45",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24062.0,
-        "prices": {
-            "74166801835": 24062.0,
-            "44693": 24053.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 13:22:46": {
-        "timestamp": "2026-06-17 13:22:46",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24062.0,
-        "prices": {
-            "74166801835": 24062.0,
-            "44693": 24053.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 13:22:51": {
-        "timestamp": "2026-06-17 13:22:51",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24062.0,
-        "prices": {
-            "74166801835": 24062.0,
-            "44693": 24053.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 13:22:52": {
-        "timestamp": "2026-06-17 13:22:52",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24062.0,
-        "prices": {
-            "74166801835": 24062.0,
-            "44693": 24053.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 13:22:57": {
-        "timestamp": "2026-06-17 13:22:57",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24062.0,
-        "prices": {
-            "74166801835": 24062.0,
-            "44693": 24053.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 13:39:20": {
-        "timestamp": "2026-06-17 13:39:20",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24062.0,
-        "prices": {
-            "74166801835": 24062.0,
-            "44693": 24053.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 13:39:24": {
-        "timestamp": "2026-06-17 13:39:24",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24062.0,
-        "prices": {
-            "74166801835": 24062.0,
-            "44693": 24053.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 13:50:04": {
-        "timestamp": "2026-06-17 13:50:04",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24062.0,
-        "prices": {
-            "74166801835": 24062.0,
-            "44693": 24053.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 13:50:09": {
-        "timestamp": "2026-06-17 13:50:09",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24062.0,
-        "prices": {
-            "74166801835": 24062.0,
-            "44693": 24053.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 13:50:10": {
-        "timestamp": "2026-06-17 13:50:10",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24062.0,
-        "prices": {
-            "74166801835": 24062.0,
-            "44693": 24053.0,
-            "44695": 105.980003
-        }
-    },
-    "2026-06-17 14:59:27": {
-        "timestamp": "2026-06-17 14:59:27",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24080.0,
-        "prices": {
-            "74166801835": 24080.0,
-            "44693": 24078.5,
-            "44695": 105.779999
-        }
-    },
-    "2026-06-17 15:07:54": {
-        "timestamp": "2026-06-17 15:07:54",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24083.0,
-        "prices": {
-            "74166801835": 24083.0,
-            "44693": 24082.0,
-            "44695": 105.779999
-        }
-    },
-    "2026-06-17 15:08:00": {
-        "timestamp": "2026-06-17 15:08:00",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24083.0,
-        "prices": {
-            "74166801835": 24083.0,
-            "44693": 24082.0,
-            "44695": 105.779999
-        }
-    },
-    "2026-06-17 15:08:08": {
-        "timestamp": "2026-06-17 15:08:08",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24083.0,
-        "prices": {
-            "74166801835": 24083.0,
-            "44693": 24082.0,
-            "44695": 105.779999
-        }
-    },
-    "2026-06-17 15:24:10": {
-        "timestamp": "2026-06-17 15:24:10",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24083.0,
-        "prices": {
-            "74166801835": 24083.0,
-            "44693": 24082.0,
-            "44695": 105.779999
-        }
-    },
-    "2026-06-17 15:24:16": {
-        "timestamp": "2026-06-17 15:24:16",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24083.0,
-        "prices": {
-            "74166801835": 24083.0,
-            "44693": 24082.0,
-            "44695": 105.779999
-        }
-    },
-    "2026-06-17 15:24:21": {
-        "timestamp": "2026-06-17 15:24:21",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24090.0,
-        "prices": {
-            "74166801835": 24090.0,
-            "44693": 24090.0,
-            "44695": 105.779999
-        }
-    },
-    "2026-06-17 15:24:23": {
-        "timestamp": "2026-06-17 15:24:23",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24090.0,
-        "prices": {
-            "74166801835": 24090.0,
-            "44693": 24090.0,
-            "44695": 105.779999
-        }
-    },
-    "2026-06-17 15:40:16": {
-        "timestamp": "2026-06-17 15:40:16",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24090.0,
-        "prices": {
-            "74166801835": 24090.0,
-            "44693": 24090.0,
-            "44695": 105.779999
-        }
-    },
-    "2026-06-17 15:40:18": {
-        "timestamp": "2026-06-17 15:40:18",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24090.0,
-        "prices": {
-            "74166801835": 24090.0,
-            "44693": 24090.0,
-            "44695": 105.779999
-        }
-    },
-    "2026-06-17 15:55:47": {
-        "timestamp": "2026-06-17 15:55:47",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24090.0,
-        "prices": {
-            "74166801835": 24090.0,
-            "44693": 24090.0,
-            "44695": 105.779999
-        }
-    },
-    "2026-06-17 15:55:48": {
-        "timestamp": "2026-06-17 15:55:48",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24090.0,
-        "prices": {
-            "74166801835": 24090.0,
-            "44693": 24090.0,
-            "44695": 105.779999
-        }
-    },
-    "2026-06-17 15:55:53": {
-        "timestamp": "2026-06-17 15:55:53",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24090.0,
-        "prices": {
-            "74166801835": 24090.0,
-            "44693": 24090.0,
-            "44695": 105.779999
-        }
-    },
-    "2026-06-17 15:55:55": {
-        "timestamp": "2026-06-17 15:55:55",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24090.0,
-        "prices": {
-            "74166801835": 24090.0,
-            "44693": 24090.0,
-            "44695": 105.779999
-        }
-    },
-    "2026-06-17 15:56:01": {
-        "timestamp": "2026-06-17 15:56:01",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24090.0,
-        "prices": {
-            "74166801835": 24090.0,
-            "44693": 24090.0,
-            "44695": 105.779999
-        }
-    },
-    "2026-06-17 15:56:03": {
-        "timestamp": "2026-06-17 15:56:03",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24090.0,
-        "prices": {
-            "74166801835": 24090.0,
-            "44693": 24090.0,
-            "44695": 105.779999
-        }
-    },
-    "2026-06-17 15:56:11": {
-        "timestamp": "2026-06-17 15:56:11",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24090.0,
-        "prices": {
-            "74166801835": 24090.0,
-            "44693": 24090.0,
-            "44695": 105.779999
-        }
-    },
-    "2026-06-17 15:56:19": {
-        "timestamp": "2026-06-17 15:56:19",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 15:56:21": {
-        "timestamp": "2026-06-17 15:56:21",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 15:56:24": {
-        "timestamp": "2026-06-17 15:56:24",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 15:56:27": {
-        "timestamp": "2026-06-17 15:56:27",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 15:56:31": {
-        "timestamp": "2026-06-17 15:56:31",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 15:56:34": {
-        "timestamp": "2026-06-17 15:56:34",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 15:56:37": {
-        "timestamp": "2026-06-17 15:56:37",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 15:56:40": {
-        "timestamp": "2026-06-17 15:56:40",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 15:56:44": {
-        "timestamp": "2026-06-17 15:56:44",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 15:56:47": {
-        "timestamp": "2026-06-17 15:56:47",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 15:56:50": {
-        "timestamp": "2026-06-17 15:56:50",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 15:56:54": {
-        "timestamp": "2026-06-17 15:56:54",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 15:56:57": {
-        "timestamp": "2026-06-17 15:56:57",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 15:57:00": {
-        "timestamp": "2026-06-17 15:57:00",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 15:57:03": {
-        "timestamp": "2026-06-17 15:57:03",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 15:57:07": {
-        "timestamp": "2026-06-17 15:57:07",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 15:57:10": {
-        "timestamp": "2026-06-17 15:57:10",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 15:57:14": {
-        "timestamp": "2026-06-17 15:57:14",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 15:57:16": {
-        "timestamp": "2026-06-17 15:57:16",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 16:14:24": {
-        "timestamp": "2026-06-17 16:14:24",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 16:14:26": {
-        "timestamp": "2026-06-17 16:14:26",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 16:25:13": {
-        "timestamp": "2026-06-17 16:25:13",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 16:25:14": {
-        "timestamp": "2026-06-17 16:25:14",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 16:41:57": {
-        "timestamp": "2026-06-17 16:41:57",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.76
-        }
-    },
-    "2026-06-17 16:59:40": {
-        "timestamp": "2026-06-17 16:59:40",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.77
-        }
-    },
-    "2026-06-17 16:59:45": {
-        "timestamp": "2026-06-17 16:59:45",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24090.0,
-            "44695": 105.77
-        }
-    },
-    "2026-06-17 16:59:51": {
-        "timestamp": "2026-06-17 16:59:51",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24089.0,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 16:59:54": {
-        "timestamp": "2026-06-17 16:59:54",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24089.0,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:00:00": {
-        "timestamp": "2026-06-17 17:00:00",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24089.0,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:00:04": {
-        "timestamp": "2026-06-17 17:00:04",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24089.0,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:00:14": {
-        "timestamp": "2026-06-17 17:00:14",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24089.0,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:00:20": {
-        "timestamp": "2026-06-17 17:00:20",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24089.0,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:00:22": {
-        "timestamp": "2026-06-17 17:00:22",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24089.0,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:00:27": {
-        "timestamp": "2026-06-17 17:00:27",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24089.0,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:00:29": {
-        "timestamp": "2026-06-17 17:00:29",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24089.0,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:00:34": {
-        "timestamp": "2026-06-17 17:00:34",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24089.0,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:00:35": {
-        "timestamp": "2026-06-17 17:00:35",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24089.0,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:00:40": {
-        "timestamp": "2026-06-17 17:00:40",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24089.0,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:00:42": {
-        "timestamp": "2026-06-17 17:00:42",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24089.0,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:00:47": {
-        "timestamp": "2026-06-17 17:00:47",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24089.0,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:00:49": {
-        "timestamp": "2026-06-17 17:00:49",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24089.0,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:00:54": {
-        "timestamp": "2026-06-17 17:00:54",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24089.0,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:00:56": {
-        "timestamp": "2026-06-17 17:00:56",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24089.0,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:01:01": {
-        "timestamp": "2026-06-17 17:01:01",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24088.5,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:01:03": {
-        "timestamp": "2026-06-17 17:01:03",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24088.5,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:01:08": {
-        "timestamp": "2026-06-17 17:01:08",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24088.5,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:01:09": {
-        "timestamp": "2026-06-17 17:01:09",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24088.5,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:18:46": {
-        "timestamp": "2026-06-17 17:18:46",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24088.5,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:18:47": {
-        "timestamp": "2026-06-17 17:18:47",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24088.5,
-            "44695": 105.739998
-        }
-    },
-    "2026-06-17 17:26:14": {
-        "timestamp": "2026-06-17 17:26:14",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24095.5,
-            "44695": 105.730003
-        }
-    },
-    "2026-06-17 17:26:15": {
-        "timestamp": "2026-06-17 17:26:15",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24095.5,
-            "44695": 105.730003
-        }
-    },
-    "2026-06-17 17:26:16": {
-        "timestamp": "2026-06-17 17:26:16",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24095.5,
-            "44695": 105.730003
-        }
-    },
-    "2026-06-17 17:42:33": {
-        "timestamp": "2026-06-17 17:42:33",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24089.9,
-        "prices": {
-            "74166801835": 24089.9,
-            "44693": 24095.5,
-            "44695": 105.730003
-        }
-    },
-    "2026-06-18 09:33:02": {
-        "timestamp": "2026-06-18 09:33:02",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24096.2,
-        "prices": {
-            "74166801835": 24096.2,
-            "44693": 24096.0,
-            "44695": 105.629997
-        }
-    },
-    "2026-06-18 09:33:07": {
-        "timestamp": "2026-06-18 09:33:07",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24095.9,
-        "prices": {
-            "74166801835": 24095.9,
-            "44693": 24095.0,
-            "44695": 105.629997
-        }
-    },
-    "2026-06-18 09:33:13": {
-        "timestamp": "2026-06-18 09:33:13",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24100.0,
-        "prices": {
-            "74166801835": 24100.0,
-            "44693": 24095.0,
-            "44695": 105.629997
-        }
-    },
-    "2026-06-18 09:33:20": {
-        "timestamp": "2026-06-18 09:33:20",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24100.0,
-        "prices": {
-            "74166801835": 24100.0,
-            "44693": 24096.0,
-            "44695": 105.629997
-        }
-    },
-    "2026-06-18 09:33:26": {
-        "timestamp": "2026-06-18 09:33:26",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24100.0,
-        "prices": {
-            "74166801835": 24100.0,
-            "44693": 24095.5,
-            "44695": 105.629997
-        }
-    },
-    "2026-06-18 09:33:32": {
-        "timestamp": "2026-06-18 09:33:32",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24095.9,
-        "prices": {
-            "74166801835": 24095.9,
-            "44693": 24094.5,
-            "44695": 105.629997
-        }
-    },
-    "2026-06-18 09:36:27": {
-        "timestamp": "2026-06-18 09:36:27",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24084.0,
-        "prices": {
-            "74166801835": 24084.0,
-            "44693": 24079.0,
-            "44695": 105.629997
-        }
-    },
-    "2026-06-18 09:36:32": {
-        "timestamp": "2026-06-18 09:36:32",
-        "instrument_id": "6a157aae6121bd19cead3930",
-        "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24080.0,
-        "prices": {
-            "74166801835": 24080.0,
-            "44693": 24079.0,
-            "44695": 105.629997
-        }
-    },
-    "2026-06-18 09:36:38": {
-        "timestamp": "2026-06-18 09:36:38",
+    "2026-06-18 10:40:09": {
+        "timestamp": "2026-06-18 10:40:09",
         "instrument_id": "6a157aae6121bd19cead3930",
         "instrument_name": "NIFTY-SGX(JUNE)",
         "computed_value": 24081.0,
         "prices": {
             "74166801835": 24081.0,
-            "44693": 24079.0,
-            "44695": 105.629997
+            "44693": 24072.0,
+            "44695": 105.800003
         }
     },
-    "2026-06-18 09:36:44": {
-        "timestamp": "2026-06-18 09:36:44",
+    "2026-06-18 10:40:14": {
+        "timestamp": "2026-06-18 10:40:14",
         "instrument_id": "6a157aae6121bd19cead3930",
         "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24080.1,
+        "computed_value": 24081.0,
         "prices": {
-            "74166801835": 24080.1,
-            "44693": 24078.5,
-            "44695": 105.629997
+            "74166801835": 24081.0,
+            "44693": 24071.5,
+            "44695": 105.800003
         }
     },
-    "2026-06-18 09:36:50": {
-        "timestamp": "2026-06-18 09:36:50",
+    "2026-06-18 10:40:19": {
+        "timestamp": "2026-06-18 10:40:19",
         "instrument_id": "6a157aae6121bd19cead3930",
         "instrument_name": "NIFTY-SGX(JUNE)",
-        "computed_value": 24080.1,
+        "computed_value": 24095.0,
         "prices": {
-            "74166801835": 24080.1,
-            "44693": 24078.0,
-            "44695": 105.629997
+            "74166801835": 24095.0,
+            "44693": 24085.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:40:21": {
+        "timestamp": "2026-06-18 10:40:21",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24081.2,
+        "prices": {
+            "74166801835": 24081.2,
+            "44693": 24072.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:40:26": {
+        "timestamp": "2026-06-18 10:40:26",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24075.6,
+        "prices": {
+            "74166801835": 24075.6,
+            "44693": 24062.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:40:31": {
+        "timestamp": "2026-06-18 10:40:31",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24066.0,
+        "prices": {
+            "74166801835": 24066.0,
+            "44693": 24062.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:40:38": {
+        "timestamp": "2026-06-18 10:40:38",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24061.0,
+        "prices": {
+            "74166801835": 24061.0,
+            "44693": 24058.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:40:44": {
+        "timestamp": "2026-06-18 10:40:44",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24081.0,
+        "prices": {
+            "74166801835": 24081.0,
+            "44693": 24072.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:40:49": {
+        "timestamp": "2026-06-18 10:40:49",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24075.0,
+        "prices": {
+            "74166801835": 24075.0,
+            "44693": 24061.5,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:40:50": {
+        "timestamp": "2026-06-18 10:40:50",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24072.1,
+        "prices": {
+            "74166801835": 24072.1,
+            "44693": 24065.0,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-18 10:40:55": {
+        "timestamp": "2026-06-18 10:40:55",
+        "instrument_id": "6a157aae6121bd19cead3930",
+        "instrument_name": "NIFTY-SGX(JUNE)",
+        "computed_value": 24072.4,
+        "prices": {
+            "74166801835": 24072.4,
+            "44693": 24068.0,
+            "44695": 105.800003
         }
     }
 }

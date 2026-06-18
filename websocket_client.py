@@ -80,6 +80,12 @@ class BadlaWebSocketClient:
         self._save_buf: dict[str, tuple] = {}
         self._save_lock = threading.Lock()
         self._broadcast_lock = threading.Lock()
+        self._live_prices_lock = threading.Lock()
+
+        self._stop_event = threading.Event()
+        self._conn_generation = 0
+        self._gen_lock = threading.Lock()
+
 
     # ── helpers ────────────────────────────────────────────────────────────────
 
@@ -355,32 +361,49 @@ class BadlaWebSocketClient:
 
         if results:
             self._write_broadcast(results)
-            # Also update live_prices.json for any other readers
-            with self.price_lock:
-                state = {"last": dict(self.price_map), "bid": dict(self.bid_map),
-                         "ask": dict(self.ask_map), "ts": time.time()}
-            tmp = LIVE_PRICES_FILE + ".tmp"
-            with open(tmp, "w") as f:
-                json.dump(state, f)
-            os.replace(tmp, LIVE_PRICES_FILE)
-
             logger.debug(f"Broadcast {len(results)}/{len(self.instrument_settings)} instruments")
+        if not self.price_map:
+            return
+
+        prices, bids, asks = self._snapshot()
+        now = time.time()
+        results = {}
+
+        for inst in self.instrument_settings:
+            inst_id = inst["_id"]
+
+            with self._push_ts_lock:
+                if now - self._last_push_ts.get(inst_id, 0) < MIN_PUSH_INTERVAL_PER_INST:
+                    continue
+                self._last_push_ts[inst_id] = now
+
+            result = self._calculate_badla(inst, prices, bids, asks)
+            if result is None:
+                continue
+
+            results[inst_id] = result
+
+            # Queue disk save
+            value = self._evaluate(inst, prices)
+            if value is not None:
+                with self._save_lock:
+                    self._save_buf[inst_id] = (inst, value, dict(prices))
 
     # ── timer thread ───────────────────────────────────────────────────────────
 
-    def _timed_push(self):
+    def _timed_push(self, my_gen):
         logger.info(f"Push timer started ({1/PUSH_INTERVAL:.0f} Hz)")
         next_tick = time.monotonic() + PUSH_INTERVAL
-        while self.connected:
+        while self.connected and self._conn_generation == my_gen:
             sleep_for = next_tick - time.monotonic()
             if sleep_for > 0:
                 time.sleep(sleep_for)
             next_tick += PUSH_INTERVAL
-            if self.connected and self.price_map:
+            if self.connected and self._conn_generation == my_gen and self.price_map:
                 try:
                     self._push_all()
                 except Exception as e:
-                    logger.error(f"Push timer error: {e}", exc_info=True)  # ← add exc_info=True
+                    logger.error(f"Push timer error: {e}", exc_info=True)
         logger.info("Push timer stopped")
 
     # ── websocket ──────────────────────────────────────────────────────────────
@@ -398,6 +421,10 @@ class BadlaWebSocketClient:
                 break
 
     def connect(self):
+        with self._gen_lock:
+            self._conn_generation += 1
+            my_gen = self._conn_generation
+
         try:
             ssl_ctx = ssl.create_default_context()
             ssl_ctx.check_hostname = False
@@ -426,7 +453,7 @@ class BadlaWebSocketClient:
 
             self.connected = True
             self.ping_thread = threading.Thread(target=self._send_ping, daemon=True)
-            self.push_thread = threading.Thread(target=self._timed_push, daemon=True)
+            self.push_thread = threading.Thread(target=self._timed_push, args=(my_gen,), daemon=True)
             self.save_thread = threading.Thread(target=self._disk_save_loop, daemon=True)
             for t in (self.ping_thread, self.push_thread, self.save_thread):
                 t.start()
@@ -436,7 +463,7 @@ class BadlaWebSocketClient:
             logger.error(f"Connection error: {e}")
             self.connected = False
             return False
-
+    
     def disconnect(self):
         try:
             self.connected = False

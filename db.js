@@ -1,45 +1,26 @@
 // db.js
-const fs = require('fs');
+const Database = require('better-sqlite3');
 const crypto = require('crypto');
-const initSqlJs = require('sql.js/dist/sql-asm.js').default;
 
 const DB_PATH = './badla.db';
 let db;
-let _dbDirty = false;
 
-function saveDB() {
-  const data = db.export();
-  fs.writeFileSync(DB_PATH, Buffer.from(data));
-  _dbDirty = false;
+function dbRun(sql, params = []) {
+  db.prepare(sql).run(...params);
 }
 
-setInterval(() => { if (_dbDirty) saveDB(); }, 500);
-function _markDirty() { _dbDirty = true; }
-
-function dbRun(sql, params = []) { db.run(sql, params); _markDirty(); }
-
 function dbGet(sql, params = []) {
-  const result = db.exec(sql, params);
-  if (!result.length || !result[0].values.length) return null;
-  const cols = result[0].columns;
-  const vals = result[0].values[0];
-  const obj = {}; cols.forEach((c, i) => obj[c] = vals[i]); return obj;
+  const row = db.prepare(sql).get(...params);
+  return row || null;
 }
 
 function dbAll(sql, params = []) {
-  const result = db.exec(sql, params);
-  if (!result.length) return [];
-  const cols = result[0].columns;
-  return result[0].values.map(vals => {
-    const obj = {}; cols.forEach((c, i) => obj[c] = vals[i]); return obj;
-  });
+  return db.prepare(sql).all(...params);
 }
 
 function dbInsert(sql, params = []) {
-  db.run(sql, params);
-  const row = dbGet('SELECT last_insert_rowid() as id');
-  _markDirty();
-  return row ? row.id : null;
+  const result = db.prepare(sql).run(...params);
+  return result.lastInsertRowid;
 }
 
 function hashPassword(password) {
@@ -47,19 +28,16 @@ function hashPassword(password) {
 }
 
 async function initDB() {
-  const SQL = await initSqlJs();
+  db = new Database(DB_PATH);
 
-  if (fs.existsSync(DB_PATH)) {
-    const fileBuffer = fs.readFileSync(DB_PATH);
-    db = new SQL.Database(fileBuffer);
-  } else {
-    db = new SQL.Database();
-  }
+  // WAL mode: better crash safety (a kill -9 mid-write won't corrupt the file
+  // the way it could before) and better concurrent read/write performance.
+  db.pragma('journal_mode = WAL');
 
-// ── New table migrations ───────────────────────────────────────────────────
+  // ── New table migrations ───────────────────────────────────────────────────
 
   // instruments table
-  db.run(`CREATE TABLE IF NOT EXISTS instruments (
+  db.exec(`CREATE TABLE IF NOT EXISTS instruments (
     id           INTEGER PRIMARY KEY AUTOINCREMENT,
     name         TEXT UNIQUE NOT NULL,
     display_name TEXT,
@@ -79,33 +57,29 @@ async function initDB() {
   }
 
   // ── Brokers: add exchange_type if missing ──────────────────────────────────
-  const bCols4 = db.exec("PRAGMA table_info(brokers)");
-  const brokerColNames = bCols4.length ? bCols4[0].values.map(r => r[1]) : [];
+  const brokerColNames = db.pragma('table_info(brokers)').map(r => r.name);
   if (!brokerColNames.includes('exchange_type')) {
-    db.run("ALTER TABLE brokers ADD COLUMN exchange_type TEXT DEFAULT 'MCX'");
+    db.exec("ALTER TABLE brokers ADD COLUMN exchange_type TEXT DEFAULT 'MCX'");
     console.log('Migration: added exchange_type to brokers');
   }
 
   // ── broker_instruments: add instrument_id if missing ──────────────────────
-  const biCols4 = db.exec("PRAGMA table_info(broker_instruments)");
-  const biColNames4 = biCols4.length ? biCols4[0].values.map(r => r[1]) : [];
+  const biColNames4 = db.pragma('table_info(broker_instruments)').map(r => r.name);
   if (!biColNames4.includes('instrument_id'))
-    db.run("ALTER TABLE broker_instruments ADD COLUMN instrument_id INTEGER REFERENCES instruments(id) ON DELETE SET NULL");
+    db.exec("ALTER TABLE broker_instruments ADD COLUMN instrument_id INTEGER REFERENCES instruments(id) ON DELETE SET NULL");
 
   // ── dashboard_instruments: add instrument_id if missing ───────────────────
-  const diCols = db.exec("PRAGMA table_info(dashboard_instruments)");
-  const diColNames = diCols.length ? diCols[0].values.map(r => r[1]) : [];
+  const diColNames = db.pragma('table_info(dashboard_instruments)').map(r => r.name);
   if (!diColNames.includes('instrument_id'))
-    db.run("ALTER TABLE dashboard_instruments ADD COLUMN instrument_id INTEGER REFERENCES instruments(id) ON DELETE SET NULL");
+    db.exec("ALTER TABLE dashboard_instruments ADD COLUMN instrument_id INTEGER REFERENCES instruments(id) ON DELETE SET NULL");
 
   // ── deals: add instrument_id if missing ───────────────────────────────────
-  const dealCols2 = db.exec("PRAGMA table_info(deals)");
-  const dealColNames2 = dealCols2.length ? dealCols2[0].values.map(r => r[1]) : [];
+  const dealColNames2 = db.pragma('table_info(deals)').map(r => r.name);
   if (!dealColNames2.includes('instrument_id'))
-    db.run("ALTER TABLE deals ADD COLUMN instrument_id INTEGER REFERENCES instruments(id) ON DELETE SET NULL");
+    db.exec("ALTER TABLE deals ADD COLUMN instrument_id INTEGER REFERENCES instruments(id) ON DELETE SET NULL");
 
   // ── orders table (replaces mt5_orders for frontend orders) ────────────────
-  db.run(`CREATE TABLE IF NOT EXISTS orders (
+  db.exec(`CREATE TABLE IF NOT EXISTS orders (
     id                INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id           INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
     instrument        TEXT NOT NULL,
@@ -137,7 +111,7 @@ async function initDB() {
   )`);
 
   // ── notifications table ────────────────────────────────────────────────────
-  db.run(`CREATE TABLE IF NOT EXISTS notifications (
+  db.exec(`CREATE TABLE IF NOT EXISTS notifications (
     id                      INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id                 INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
     dashboard_instrument_id INTEGER REFERENCES dashboard_instruments(id) ON DELETE CASCADE,
@@ -154,7 +128,7 @@ async function initDB() {
   )`);
 
   // ── push_subscriptions table ───────────────────────────────────────────────
-  db.run(`CREATE TABLE IF NOT EXISTS push_subscriptions (
+  db.exec(`CREATE TABLE IF NOT EXISTS push_subscriptions (
     id         INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id    INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
     endpoint   TEXT NOT NULL UNIQUE,
@@ -163,44 +137,39 @@ async function initDB() {
     created_at TEXT DEFAULT (datetime('now','localtime'))
   )`);
 
-  const notifCols = db.exec("PRAGMA table_info(notifications)");
-  const notifColNames = notifCols.length ? notifCols[0].values.map(r => r[1]) : [];
+  const notifCols = db.pragma('table_info(notifications)');
+  const notifColNames = notifCols.map(r => r.name);
   if (!notifColNames.includes('deal_id'))
-    db.run("ALTER TABLE notifications ADD COLUMN deal_id INTEGER REFERENCES deals(id) ON DELETE CASCADE");
+    db.exec("ALTER TABLE notifications ADD COLUMN deal_id INTEGER REFERENCES deals(id) ON DELETE CASCADE");
 
-  if (notifCols.length) {
-    const fieldInfo = notifCols[0].values.find(r => r[1] === 'field');
-    if (fieldInfo && (fieldInfo[2].toUpperCase() !== 'TEXT' || fieldInfo[3] === 1)) {
-      console.log('Migration: relaxing notifications.field nullability');
-      db.run(`CREATE TABLE notifications_backup AS SELECT * FROM notifications`);
-      db.run(`DROP TABLE notifications`);
-      db.run(`CREATE TABLE notifications (
-        id                      INTEGER PRIMARY KEY AUTOINCREMENT,
-        user_id                 INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-        dashboard_instrument_id INTEGER REFERENCES dashboard_instruments(id) ON DELETE CASCADE,
-        deal_id                 INTEGER REFERENCES deals(id) ON DELETE CASCADE,
-        type                    TEXT NOT NULL DEFAULT 'price_alert',
-        instrument_name         TEXT,
-        field                   TEXT,
-        direction               TEXT,
-        target                  REAL,
-        message                 TEXT,
-        status                  TEXT DEFAULT 'armed',
-        push_enabled            INTEGER DEFAULT 1,
-        fired_at                TEXT,
-        created_at              TEXT DEFAULT (datetime('now','localtime'))
-      )`);
-      db.run(`INSERT INTO notifications (id, user_id, dashboard_instrument_id, deal_id, type, instrument_name, field, direction, target, message, status, push_enabled, fired_at, created_at)
-              SELECT id, user_id, dashboard_instrument_id, deal_id, type, instrument_name, field, direction, target, message, status, push_enabled, fired_at, created_at
-              FROM notifications_backup`);
-      db.run(`DROP TABLE notifications_backup`);
-    }
+  const fieldInfo = notifCols.find(r => r.name === 'field');
+  if (fieldInfo && (fieldInfo.type.toUpperCase() !== 'TEXT' || fieldInfo.notnull === 1)) {
+    console.log('Migration: relaxing notifications.field nullability');
+    db.exec(`CREATE TABLE notifications_backup AS SELECT * FROM notifications`);
+    db.exec(`DROP TABLE notifications`);
+    db.exec(`CREATE TABLE notifications (
+      id                      INTEGER PRIMARY KEY AUTOINCREMENT,
+      user_id                 INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+      dashboard_instrument_id INTEGER REFERENCES dashboard_instruments(id) ON DELETE CASCADE,
+      deal_id                 INTEGER REFERENCES deals(id) ON DELETE CASCADE,
+      type                    TEXT NOT NULL DEFAULT 'price_alert',
+      instrument_name         TEXT,
+      field                   TEXT,
+      direction               TEXT,
+      target                  REAL,
+      message                 TEXT,
+      status                  TEXT DEFAULT 'armed',
+      push_enabled            INTEGER DEFAULT 1,
+      fired_at                TEXT,
+      created_at              TEXT DEFAULT (datetime('now','localtime'))
+    )`);
+    db.exec(`INSERT INTO notifications (id, user_id, dashboard_instrument_id, deal_id, type, instrument_name, field, direction, target, message, status, push_enabled, fired_at, created_at)
+            SELECT id, user_id, dashboard_instrument_id, deal_id, type, instrument_name, field, direction, target, message, status, push_enabled, fired_at, created_at
+            FROM notifications_backup`);
+    db.exec(`DROP TABLE notifications_backup`);
   }
 
   console.log('New table migrations done');
-
-  // Ensure a final flush after all migrations
-  saveDB();
 }
 
 module.exports = { initDB, dbRun, dbGet, dbAll, dbInsert, hashPassword };
