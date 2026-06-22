@@ -20,6 +20,7 @@ function setActiveDeal(dealId) {
  
 // ── Manual Check EAs button ──────────────────────────────────────────────
 async function checkEAs() {
+  console.log('checkEAs called');
   const btn  = document.getElementById('btn-check-eas');
   const icon = document.getElementById('check-icon');
  
