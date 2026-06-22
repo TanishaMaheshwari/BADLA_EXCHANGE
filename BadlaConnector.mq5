@@ -77,7 +77,7 @@ void PollServer()
    string payload = StringFormat(
       "{\"accountId\":\"%s\",\"brokerName\":\"%s\",\"exchange\":\"%s\",\"symbol\":\"%s\","
       "\"symbolValid\":%s,\"marketOpen\":%s,\"lotUsed\":%.2f,\"lotMax\":%.2f,\"lotHeadroom\":%.2f,\"error\":\"\"}",
-      account_id, BrokerName, _Symbol, _Symbol,
+      JsonEscape(account_id), JsonEscape(BrokerName), JsonEscape(_Symbol), JsonEscape(_Symbol),
       symbolValid ? "true" : "false", marketOpen ? "true" : "false",
       lotUsed, MaxLotsAllowed, lotHeadroom
    );
@@ -212,4 +212,15 @@ void SendReport(int order_id, bool success, ulong ticket, double price, string e
    {
       Print("Failed to send execution report. HTTP code: ", res, " Error code: ", GetLastError());
    }
+}
+
+//+------------------------------------------------------------------+
+//| Escape a string for safe JSON embedding                          |
+//+------------------------------------------------------------------+
+string JsonEscape(string s)
+{
+   string result = s;
+   StringReplace(result, "\\", "\\\\");
+   StringReplace(result, "\"", "\\\"");
+   return result;
 }

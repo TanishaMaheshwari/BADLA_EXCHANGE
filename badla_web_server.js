@@ -16,6 +16,17 @@ const server = http.createServer(app);
 const PORT   = process.env.PORT || 3000;
 
 app.use(cors());
+
+// ── TEMPORARY DEBUG: log raw heartbeat payload before JSON parsing ─────────
+app.use('/api/ea/heartbeat', (req, res, next) => {
+  let raw = '';
+  req.on('data', chunk => raw += chunk);
+  req.on('end', () => {
+    console.log('RAW HEARTBEAT PAYLOAD:', raw);
+    next();
+  });
+});
+
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
