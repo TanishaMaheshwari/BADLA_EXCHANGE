@@ -56,7 +56,6 @@ function brokerToFrontend(b) {
     })),
   };
 }
-
 function saveInstruments(brokerId, instruments = []) {
   // preserve existing total_pnl values keyed by instrument name before wiping
   const existing = dbAll('SELECT name, total_pnl FROM broker_instruments WHERE broker_id = ?', [brokerId]);

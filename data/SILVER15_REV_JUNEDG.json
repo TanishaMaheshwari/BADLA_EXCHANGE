@@ -537,5 +537,2304 @@
             "71069778201": 64.91,
             "44695": 105.93
         }
+    },
+    "2026-06-22 09:19:48": {
+        "timestamp": "2026-06-22 09:19:48",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920404400.0,
+        "prices": {
+            "20446366594": 234806.0,
+            "71069778201": 65.65,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:19:53": {
+        "timestamp": "2026-06-22 09:19:53",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920404400.0,
+        "prices": {
+            "20446366594": 234806.0,
+            "71069778201": 65.65,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:19:58": {
+        "timestamp": "2026-06-22 09:19:58",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920404400.0,
+        "prices": {
+            "20446366594": 234806.0,
+            "71069778201": 65.65,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:03": {
+        "timestamp": "2026-06-22 09:20:03",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920404400.0,
+        "prices": {
+            "20446366594": 234806.0,
+            "71069778201": 65.65,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:09": {
+        "timestamp": "2026-06-22 09:20:09",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919647869.0,
+        "prices": {
+            "20446366594": 234613.0,
+            "71069778201": 65.625,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:14": {
+        "timestamp": "2026-06-22 09:20:14",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919812502.0,
+        "prices": {
+            "20446366594": 234655.0,
+            "71069778201": 65.625,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:19": {
+        "timestamp": "2026-06-22 09:20:19",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920110411.0,
+        "prices": {
+            "20446366594": 234731.0,
+            "71069778201": 65.625,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:24": {
+        "timestamp": "2026-06-22 09:20:24",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920110411.0,
+        "prices": {
+            "20446366594": 234731.0,
+            "71069778201": 65.625,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:30": {
+        "timestamp": "2026-06-22 09:20:30",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920110411.0,
+        "prices": {
+            "20446366594": 234731.0,
+            "71069778201": 65.625,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:35": {
+        "timestamp": "2026-06-22 09:20:35",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920110411.0,
+        "prices": {
+            "20446366594": 234731.0,
+            "71069778201": 65.625,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:40": {
+        "timestamp": "2026-06-22 09:20:40",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920110411.0,
+        "prices": {
+            "20446366594": 234731.0,
+            "71069778201": 65.6,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:45": {
+        "timestamp": "2026-06-22 09:20:45",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920110411.0,
+        "prices": {
+            "20446366594": 234731.0,
+            "71069778201": 65.6,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:51": {
+        "timestamp": "2026-06-22 09:20:51",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919467556.0,
+        "prices": {
+            "20446366594": 234567.0,
+            "71069778201": 65.6,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:56": {
+        "timestamp": "2026-06-22 09:20:56",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919467556.0,
+        "prices": {
+            "20446366594": 234567.0,
+            "71069778201": 65.6,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:01": {
+        "timestamp": "2026-06-22 09:21:01",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919467556.0,
+        "prices": {
+            "20446366594": 234567.0,
+            "71069778201": 65.61,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:06": {
+        "timestamp": "2026-06-22 09:21:06",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919640029.0,
+        "prices": {
+            "20446366594": 234611.0,
+            "71069778201": 65.595,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:12": {
+        "timestamp": "2026-06-22 09:21:12",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919640029.0,
+        "prices": {
+            "20446366594": 234611.0,
+            "71069778201": 65.595,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:17": {
+        "timestamp": "2026-06-22 09:21:17",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919267643.0,
+        "prices": {
+            "20446366594": 234516.0,
+            "71069778201": 65.595,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:22": {
+        "timestamp": "2026-06-22 09:21:22",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919267643.0,
+        "prices": {
+            "20446366594": 234516.0,
+            "71069778201": 65.595,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:27": {
+        "timestamp": "2026-06-22 09:21:27",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919267643.0,
+        "prices": {
+            "20446366594": 234516.0,
+            "71069778201": 65.595,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:33": {
+        "timestamp": "2026-06-22 09:21:33",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919267643.0,
+        "prices": {
+            "20446366594": 234516.0,
+            "71069778201": 65.595,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:38": {
+        "timestamp": "2026-06-22 09:21:38",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919561632.0,
+        "prices": {
+            "20446366594": 234591.0,
+            "71069778201": 65.585,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:43": {
+        "timestamp": "2026-06-22 09:21:43",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919561632.0,
+        "prices": {
+            "20446366594": 234591.0,
+            "71069778201": 65.56,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:48": {
+        "timestamp": "2026-06-22 09:21:48",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919592991.0,
+        "prices": {
+            "20446366594": 234599.0,
+            "71069778201": 65.55,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:54": {
+        "timestamp": "2026-06-22 09:21:54",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919440117.0,
+        "prices": {
+            "20446366594": 234560.0,
+            "71069778201": 65.56,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:59": {
+        "timestamp": "2026-06-22 09:21:59",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919440117.0,
+        "prices": {
+            "20446366594": 234560.0,
+            "71069778201": 65.575,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:04": {
+        "timestamp": "2026-06-22 09:22:04",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919440117.0,
+        "prices": {
+            "20446366594": 234560.0,
+            "71069778201": 65.575,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:09": {
+        "timestamp": "2026-06-22 09:22:09",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919440117.0,
+        "prices": {
+            "20446366594": 234560.0,
+            "71069778201": 65.575,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:15": {
+        "timestamp": "2026-06-22 09:22:15",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919440117.0,
+        "prices": {
+            "20446366594": 234560.0,
+            "71069778201": 65.575,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:20": {
+        "timestamp": "2026-06-22 09:22:20",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919440117.0,
+        "prices": {
+            "20446366594": 234560.0,
+            "71069778201": 65.58,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:25": {
+        "timestamp": "2026-06-22 09:22:25",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919440117.0,
+        "prices": {
+            "20446366594": 234560.0,
+            "71069778201": 65.58,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:30": {
+        "timestamp": "2026-06-22 09:22:30",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919440117.0,
+        "prices": {
+            "20446366594": 234560.0,
+            "71069778201": 65.58,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:36": {
+        "timestamp": "2026-06-22 09:22:36",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919440117.0,
+        "prices": {
+            "20446366594": 234560.0,
+            "71069778201": 65.58,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:41": {
+        "timestamp": "2026-06-22 09:22:41",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919440117.0,
+        "prices": {
+            "20446366594": 234560.0,
+            "71069778201": 65.58,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:46": {
+        "timestamp": "2026-06-22 09:22:46",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919440117.0,
+        "prices": {
+            "20446366594": 234560.0,
+            "71069778201": 65.58,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:51": {
+        "timestamp": "2026-06-22 09:22:51",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920173128.0,
+        "prices": {
+            "20446366594": 234747.0,
+            "71069778201": 65.585,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:57": {
+        "timestamp": "2026-06-22 09:22:57",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920173128.0,
+        "prices": {
+            "20446366594": 234747.0,
+            "71069778201": 65.585,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:02": {
+        "timestamp": "2026-06-22 09:23:02",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919596911.0,
+        "prices": {
+            "20446366594": 234600.0,
+            "71069778201": 65.585,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:07": {
+        "timestamp": "2026-06-22 09:23:07",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919596911.0,
+        "prices": {
+            "20446366594": 234600.0,
+            "71069778201": 65.58,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:12": {
+        "timestamp": "2026-06-22 09:23:12",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919596911.0,
+        "prices": {
+            "20446366594": 234600.0,
+            "71069778201": 65.58,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:18": {
+        "timestamp": "2026-06-22 09:23:18",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919596911.0,
+        "prices": {
+            "20446366594": 234600.0,
+            "71069778201": 65.58,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:23": {
+        "timestamp": "2026-06-22 09:23:23",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919596911.0,
+        "prices": {
+            "20446366594": 234600.0,
+            "71069778201": 65.58,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:28": {
+        "timestamp": "2026-06-22 09:23:28",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919596911.0,
+        "prices": {
+            "20446366594": 234600.0,
+            "71069778201": 65.58,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:33": {
+        "timestamp": "2026-06-22 09:23:33",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919596911.0,
+        "prices": {
+            "20446366594": 234600.0,
+            "71069778201": 65.58,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:39": {
+        "timestamp": "2026-06-22 09:23:39",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919596911.0,
+        "prices": {
+            "20446366594": 234600.0,
+            "71069778201": 65.58,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:44": {
+        "timestamp": "2026-06-22 09:23:44",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919741945.0,
+        "prices": {
+            "20446366594": 234637.0,
+            "71069778201": 65.58,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:49": {
+        "timestamp": "2026-06-22 09:23:49",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919937937.0,
+        "prices": {
+            "20446366594": 234687.0,
+            "71069778201": 65.58,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:54": {
+        "timestamp": "2026-06-22 09:23:54",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919937937.0,
+        "prices": {
+            "20446366594": 234687.0,
+            "71069778201": 65.58,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:59": {
+        "timestamp": "2026-06-22 09:23:59",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920145689.0,
+        "prices": {
+            "20446366594": 234740.0,
+            "71069778201": 65.615,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:05": {
+        "timestamp": "2026-06-22 09:24:05",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920145689.0,
+        "prices": {
+            "20446366594": 234740.0,
+            "71069778201": 65.615,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:10": {
+        "timestamp": "2026-06-22 09:24:10",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920145689.0,
+        "prices": {
+            "20446366594": 234740.0,
+            "71069778201": 65.615,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:15": {
+        "timestamp": "2026-06-22 09:24:15",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920145689.0,
+        "prices": {
+            "20446366594": 234740.0,
+            "71069778201": 65.615,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:20": {
+        "timestamp": "2026-06-22 09:24:20",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919937937.0,
+        "prices": {
+            "20446366594": 234687.0,
+            "71069778201": 65.615,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:26": {
+        "timestamp": "2026-06-22 09:24:26",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919855621.0,
+        "prices": {
+            "20446366594": 234666.0,
+            "71069778201": 65.585,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:31": {
+        "timestamp": "2026-06-22 09:24:31",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919902659.0,
+        "prices": {
+            "20446366594": 234678.0,
+            "71069778201": 65.585,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:36": {
+        "timestamp": "2026-06-22 09:24:36",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919526353.0,
+        "prices": {
+            "20446366594": 234582.0,
+            "71069778201": 65.585,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:41": {
+        "timestamp": "2026-06-22 09:24:41",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919526353.0,
+        "prices": {
+            "20446366594": 234582.0,
+            "71069778201": 65.585,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:47": {
+        "timestamp": "2026-06-22 09:24:47",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919526353.0,
+        "prices": {
+            "20446366594": 234582.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:52": {
+        "timestamp": "2026-06-22 09:24:52",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919832102.0,
+        "prices": {
+            "20446366594": 234660.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:57": {
+        "timestamp": "2026-06-22 09:24:57",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919832102.0,
+        "prices": {
+            "20446366594": 234660.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:02": {
+        "timestamp": "2026-06-22 09:25:02",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919832102.0,
+        "prices": {
+            "20446366594": 234660.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:08": {
+        "timestamp": "2026-06-22 09:25:08",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919832102.0,
+        "prices": {
+            "20446366594": 234660.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:13": {
+        "timestamp": "2026-06-22 09:25:13",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919832102.0,
+        "prices": {
+            "20446366594": 234660.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:18": {
+        "timestamp": "2026-06-22 09:25:18",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919832102.0,
+        "prices": {
+            "20446366594": 234660.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:24": {
+        "timestamp": "2026-06-22 09:25:24",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919981056.0,
+        "prices": {
+            "20446366594": 234698.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:29": {
+        "timestamp": "2026-06-22 09:25:29",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:34": {
+        "timestamp": "2026-06-22 09:25:34",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:39": {
+        "timestamp": "2026-06-22 09:25:39",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:44": {
+        "timestamp": "2026-06-22 09:25:44",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:50": {
+        "timestamp": "2026-06-22 09:25:50",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:55": {
+        "timestamp": "2026-06-22 09:25:55",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:00": {
+        "timestamp": "2026-06-22 09:26:00",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:06": {
+        "timestamp": "2026-06-22 09:26:06",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:11": {
+        "timestamp": "2026-06-22 09:26:11",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:16": {
+        "timestamp": "2026-06-22 09:26:16",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:21": {
+        "timestamp": "2026-06-22 09:26:21",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:27": {
+        "timestamp": "2026-06-22 09:26:27",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:32": {
+        "timestamp": "2026-06-22 09:26:32",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:37": {
+        "timestamp": "2026-06-22 09:26:37",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:42": {
+        "timestamp": "2026-06-22 09:26:42",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:48": {
+        "timestamp": "2026-06-22 09:26:48",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:53": {
+        "timestamp": "2026-06-22 09:26:53",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:58": {
+        "timestamp": "2026-06-22 09:26:58",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:27:03": {
+        "timestamp": "2026-06-22 09:27:03",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:27:09": {
+        "timestamp": "2026-06-22 09:27:09",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:27:14": {
+        "timestamp": "2026-06-22 09:27:14",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:27:19": {
+        "timestamp": "2026-06-22 09:27:19",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:27:24": {
+        "timestamp": "2026-06-22 09:27:24",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:27:30": {
+        "timestamp": "2026-06-22 09:27:30",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:27:35": {
+        "timestamp": "2026-06-22 09:27:35",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:27:40": {
+        "timestamp": "2026-06-22 09:27:40",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:27:45": {
+        "timestamp": "2026-06-22 09:27:45",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984976.0,
+        "prices": {
+            "20446366594": 234699.0,
+            "71069778201": 65.57,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:27:54": {
+        "timestamp": "2026-06-22 09:27:54",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920772865.0,
+        "prices": {
+            "20446366594": 234900.0,
+            "71069778201": 65.575,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:28:00": {
+        "timestamp": "2026-06-22 09:28:00",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920772865.0,
+        "prices": {
+            "20446366594": 234900.0,
+            "71069778201": 65.58,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:28:05": {
+        "timestamp": "2026-06-22 09:28:05",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920772865.0,
+        "prices": {
+            "20446366594": 234900.0,
+            "71069778201": 65.58,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:28:10": {
+        "timestamp": "2026-06-22 09:28:10",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920545514.0,
+        "prices": {
+            "20446366594": 234842.0,
+            "71069778201": 65.58,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:28:16": {
+        "timestamp": "2026-06-22 09:28:16",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920823823.0,
+        "prices": {
+            "20446366594": 234913.0,
+            "71069778201": 65.58,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:28:21": {
+        "timestamp": "2026-06-22 09:28:21",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920129037.0,
+        "prices": {
+            "20446366594": 234913.0,
+            "71069778201": 65.58,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:28:26": {
+        "timestamp": "2026-06-22 09:28:26",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920399302.0,
+        "prices": {
+            "20446366594": 234982.0,
+            "71069778201": 65.595,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:28:31": {
+        "timestamp": "2026-06-22 09:28:31",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920399302.0,
+        "prices": {
+            "20446366594": 234982.0,
+            "71069778201": 65.595,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:28:37": {
+        "timestamp": "2026-06-22 09:28:37",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920399302.0,
+        "prices": {
+            "20446366594": 234982.0,
+            "71069778201": 65.595,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:28:42": {
+        "timestamp": "2026-06-22 09:28:42",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920179956.0,
+        "prices": {
+            "20446366594": 234926.0,
+            "71069778201": 65.595,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:28:47": {
+        "timestamp": "2026-06-22 09:28:47",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920179956.0,
+        "prices": {
+            "20446366594": 234926.0,
+            "71069778201": 65.595,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:28:53": {
+        "timestamp": "2026-06-22 09:28:53",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920266771.0,
+        "prices": {
+            "20446366594": 234926.0,
+            "71069778201": 65.595,
+            "44695": 105.949997
+        }
+    },
+    "2026-06-22 09:28:58": {
+        "timestamp": "2026-06-22 09:28:58",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920341199.0,
+        "prices": {
+            "20446366594": 234945.0,
+            "71069778201": 65.6,
+            "44695": 105.949997
+        }
+    },
+    "2026-06-22 09:29:03": {
+        "timestamp": "2026-06-22 09:29:03",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920341199.0,
+        "prices": {
+            "20446366594": 234945.0,
+            "71069778201": 65.6,
+            "44695": 105.949997
+        }
+    },
+    "2026-06-22 09:29:08": {
+        "timestamp": "2026-06-22 09:29:08",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920341199.0,
+        "prices": {
+            "20446366594": 234945.0,
+            "71069778201": 65.6,
+            "44695": 105.949997
+        }
+    },
+    "2026-06-22 09:29:14": {
+        "timestamp": "2026-06-22 09:29:14",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919996480.0,
+        "prices": {
+            "20446366594": 234857.0,
+            "71069778201": 65.6,
+            "44695": 105.949997
+        }
+    },
+    "2026-06-22 09:29:19": {
+        "timestamp": "2026-06-22 09:29:19",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919996480.0,
+        "prices": {
+            "20446366594": 234857.0,
+            "71069778201": 65.6,
+            "44695": 105.949997
+        }
+    },
+    "2026-06-22 09:29:24": {
+        "timestamp": "2026-06-22 09:29:24",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919921441.0,
+        "prices": {
+            "20446366594": 234860.0,
+            "71069778201": 65.6,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:29:29": {
+        "timestamp": "2026-06-22 09:29:29",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919921441.0,
+        "prices": {
+            "20446366594": 234860.0,
+            "71069778201": 65.6,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:29:35": {
+        "timestamp": "2026-06-22 09:29:35",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919921441.0,
+        "prices": {
+            "20446366594": 234860.0,
+            "71069778201": 65.585,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:29:40": {
+        "timestamp": "2026-06-22 09:29:40",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919921441.0,
+        "prices": {
+            "20446366594": 234860.0,
+            "71069778201": 65.585,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:29:45": {
+        "timestamp": "2026-06-22 09:29:45",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919897940.0,
+        "prices": {
+            "20446366594": 234854.0,
+            "71069778201": 65.585,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:29:50": {
+        "timestamp": "2026-06-22 09:29:50",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919549337.0,
+        "prices": {
+            "20446366594": 234765.0,
+            "71069778201": 65.585,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:29:56": {
+        "timestamp": "2026-06-22 09:29:56",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919741264.0,
+        "prices": {
+            "20446366594": 234814.0,
+            "71069778201": 65.585,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:01": {
+        "timestamp": "2026-06-22 09:30:01",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919741264.0,
+        "prices": {
+            "20446366594": 234814.0,
+            "71069778201": 65.6,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:07": {
+        "timestamp": "2026-06-22 09:30:07",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920289629.0,
+        "prices": {
+            "20446366594": 234954.0,
+            "71069778201": 65.615,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:12": {
+        "timestamp": "2026-06-22 09:30:12",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919984112.0,
+        "prices": {
+            "20446366594": 234876.0,
+            "71069778201": 65.6,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:17": {
+        "timestamp": "2026-06-22 09:30:17",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919373076.0,
+        "prices": {
+            "20446366594": 234720.0,
+            "71069778201": 65.565,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:23": {
+        "timestamp": "2026-06-22 09:30:23",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919373076.0,
+        "prices": {
+            "20446366594": 234720.0,
+            "71069778201": 65.565,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:28": {
+        "timestamp": "2026-06-22 09:30:28",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919373076.0,
+        "prices": {
+            "20446366594": 234720.0,
+            "71069778201": 65.565,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:33": {
+        "timestamp": "2026-06-22 09:30:33",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919373076.0,
+        "prices": {
+            "20446366594": 234720.0,
+            "71069778201": 65.565,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:38": {
+        "timestamp": "2026-06-22 09:30:38",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919373076.0,
+        "prices": {
+            "20446366594": 234720.0,
+            "71069778201": 65.565,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:44": {
+        "timestamp": "2026-06-22 09:30:44",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919373076.0,
+        "prices": {
+            "20446366594": 234720.0,
+            "71069778201": 65.565,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:49": {
+        "timestamp": "2026-06-22 09:30:49",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919373076.0,
+        "prices": {
+            "20446366594": 234720.0,
+            "71069778201": 65.565,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:54": {
+        "timestamp": "2026-06-22 09:30:54",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919373076.0,
+        "prices": {
+            "20446366594": 234720.0,
+            "71069778201": 65.565,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:59": {
+        "timestamp": "2026-06-22 09:30:59",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919588297.0,
+        "prices": {
+            "20446366594": 234908.0,
+            "71069778201": 65.565,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:05": {
+        "timestamp": "2026-06-22 09:31:05",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919588297.0,
+        "prices": {
+            "20446366594": 234908.0,
+            "71069778201": 65.6,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:10": {
+        "timestamp": "2026-06-22 09:31:10",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919588297.0,
+        "prices": {
+            "20446366594": 234908.0,
+            "71069778201": 65.6,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:15": {
+        "timestamp": "2026-06-22 09:31:15",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919678335.0,
+        "prices": {
+            "20446366594": 234931.0,
+            "71069778201": 65.6,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:20": {
+        "timestamp": "2026-06-22 09:31:20",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919678335.0,
+        "prices": {
+            "20446366594": 234931.0,
+            "71069778201": 65.6,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:26": {
+        "timestamp": "2026-06-22 09:31:26",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919678335.0,
+        "prices": {
+            "20446366594": 234931.0,
+            "71069778201": 65.6,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:31": {
+        "timestamp": "2026-06-22 09:31:31",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919678335.0,
+        "prices": {
+            "20446366594": 234931.0,
+            "71069778201": 65.6,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:36": {
+        "timestamp": "2026-06-22 09:31:36",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919678335.0,
+        "prices": {
+            "20446366594": 234931.0,
+            "71069778201": 65.6,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:42": {
+        "timestamp": "2026-06-22 09:31:42",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919678335.0,
+        "prices": {
+            "20446366594": 234931.0,
+            "71069778201": 65.58,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:47": {
+        "timestamp": "2026-06-22 09:31:47",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919674420.0,
+        "prices": {
+            "20446366594": 234930.0,
+            "71069778201": 65.58,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:52": {
+        "timestamp": "2026-06-22 09:31:52",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919326014.0,
+        "prices": {
+            "20446366594": 234841.0,
+            "71069778201": 65.585,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:57": {
+        "timestamp": "2026-06-22 09:31:57",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919326014.0,
+        "prices": {
+            "20446366594": 234841.0,
+            "71069778201": 65.57,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:03": {
+        "timestamp": "2026-06-22 09:32:03",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919326014.0,
+        "prices": {
+            "20446366594": 234841.0,
+            "71069778201": 65.57,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:08": {
+        "timestamp": "2026-06-22 09:32:08",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919513918.0,
+        "prices": {
+            "20446366594": 234889.0,
+            "71069778201": 65.57,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:13": {
+        "timestamp": "2026-06-22 09:32:13",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919361246.0,
+        "prices": {
+            "20446366594": 234850.0,
+            "71069778201": 65.57,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:18": {
+        "timestamp": "2026-06-22 09:32:18",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919494345.0,
+        "prices": {
+            "20446366594": 234884.0,
+            "71069778201": 65.57,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:24": {
+        "timestamp": "2026-06-22 09:32:24",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919447369.0,
+        "prices": {
+            "20446366594": 234872.0,
+            "71069778201": 65.57,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:29": {
+        "timestamp": "2026-06-22 09:32:29",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919447369.0,
+        "prices": {
+            "20446366594": 234872.0,
+            "71069778201": 65.57,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:34": {
+        "timestamp": "2026-06-22 09:32:34",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919447369.0,
+        "prices": {
+            "20446366594": 234872.0,
+            "71069778201": 65.57,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:40": {
+        "timestamp": "2026-06-22 09:32:40",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919447369.0,
+        "prices": {
+            "20446366594": 234872.0,
+            "71069778201": 65.57,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:45": {
+        "timestamp": "2026-06-22 09:32:45",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919447369.0,
+        "prices": {
+            "20446366594": 234872.0,
+            "71069778201": 65.595,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:50": {
+        "timestamp": "2026-06-22 09:32:50",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919447369.0,
+        "prices": {
+            "20446366594": 234872.0,
+            "71069778201": 65.595,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:55": {
+        "timestamp": "2026-06-22 09:32:55",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919556980.0,
+        "prices": {
+            "20446366594": 234900.0,
+            "71069778201": 65.595,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:01": {
+        "timestamp": "2026-06-22 09:33:01",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919556980.0,
+        "prices": {
+            "20446366594": 234900.0,
+            "71069778201": 65.6,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:06": {
+        "timestamp": "2026-06-22 09:33:06",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919098963.0,
+        "prices": {
+            "20446366594": 234783.0,
+            "71069778201": 65.6,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:11": {
+        "timestamp": "2026-06-22 09:33:11",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919098963.0,
+        "prices": {
+            "20446366594": 234783.0,
+            "71069778201": 65.6,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:17": {
+        "timestamp": "2026-06-22 09:33:17",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919098963.0,
+        "prices": {
+            "20446366594": 234783.0,
+            "71069778201": 65.595,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:22": {
+        "timestamp": "2026-06-22 09:33:22",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919098963.0,
+        "prices": {
+            "20446366594": 234783.0,
+            "71069778201": 65.595,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:27": {
+        "timestamp": "2026-06-22 09:33:27",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919098963.0,
+        "prices": {
+            "20446366594": 234783.0,
+            "71069778201": 65.595,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:33": {
+        "timestamp": "2026-06-22 09:33:33",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919635273.0,
+        "prices": {
+            "20446366594": 234920.0,
+            "71069778201": 65.595,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:38": {
+        "timestamp": "2026-06-22 09:33:38",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919635273.0,
+        "prices": {
+            "20446366594": 234920.0,
+            "71069778201": 65.595,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:43": {
+        "timestamp": "2026-06-22 09:33:43",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919635273.0,
+        "prices": {
+            "20446366594": 234920.0,
+            "71069778201": 65.595,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:48": {
+        "timestamp": "2026-06-22 09:33:48",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919791860.0,
+        "prices": {
+            "20446366594": 234960.0,
+            "71069778201": 65.595,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:54": {
+        "timestamp": "2026-06-22 09:33:54",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919639188.0,
+        "prices": {
+            "20446366594": 234921.0,
+            "71069778201": 65.61,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:00": {
+        "timestamp": "2026-06-22 09:34:00",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919639188.0,
+        "prices": {
+            "20446366594": 234921.0,
+            "71069778201": 65.61,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:05": {
+        "timestamp": "2026-06-22 09:34:05",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919639188.0,
+        "prices": {
+            "20446366594": 234921.0,
+            "71069778201": 65.61,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:10": {
+        "timestamp": "2026-06-22 09:34:10",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919639188.0,
+        "prices": {
+            "20446366594": 234921.0,
+            "71069778201": 65.61,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:15": {
+        "timestamp": "2026-06-22 09:34:15",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919639188.0,
+        "prices": {
+            "20446366594": 234921.0,
+            "71069778201": 65.61,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:21": {
+        "timestamp": "2026-06-22 09:34:21",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919870154.0,
+        "prices": {
+            "20446366594": 234980.0,
+            "71069778201": 65.61,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:26": {
+        "timestamp": "2026-06-22 09:34:26",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919870154.0,
+        "prices": {
+            "20446366594": 234980.0,
+            "71069778201": 65.62,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:31": {
+        "timestamp": "2026-06-22 09:34:31",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919870154.0,
+        "prices": {
+            "20446366594": 234980.0,
+            "71069778201": 65.62,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:37": {
+        "timestamp": "2026-06-22 09:34:37",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920148095.0,
+        "prices": {
+            "20446366594": 235051.0,
+            "71069778201": 65.65,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:42": {
+        "timestamp": "2026-06-22 09:34:42",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920277280.0,
+        "prices": {
+            "20446366594": 235084.0,
+            "71069778201": 65.65,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:48": {
+        "timestamp": "2026-06-22 09:34:48",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920277280.0,
+        "prices": {
+            "20446366594": 235084.0,
+            "71069778201": 65.65,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:53": {
+        "timestamp": "2026-06-22 09:34:53",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920277280.0,
+        "prices": {
+            "20446366594": 235084.0,
+            "71069778201": 65.65,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:58": {
+        "timestamp": "2026-06-22 09:34:58",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920277280.0,
+        "prices": {
+            "20446366594": 235084.0,
+            "71069778201": 65.65,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:03": {
+        "timestamp": "2026-06-22 09:35:03",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920336000.0,
+        "prices": {
+            "20446366594": 235099.0,
+            "71069778201": 65.65,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:09": {
+        "timestamp": "2026-06-22 09:35:09",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920336000.0,
+        "prices": {
+            "20446366594": 235099.0,
+            "71069778201": 65.655,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:14": {
+        "timestamp": "2026-06-22 09:35:14",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920336000.0,
+        "prices": {
+            "20446366594": 235099.0,
+            "71069778201": 65.665,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:19": {
+        "timestamp": "2026-06-22 09:35:19",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920336000.0,
+        "prices": {
+            "20446366594": 235099.0,
+            "71069778201": 65.665,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:25": {
+        "timestamp": "2026-06-22 09:35:25",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920336000.0,
+        "prices": {
+            "20446366594": 235099.0,
+            "71069778201": 65.675,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:30": {
+        "timestamp": "2026-06-22 09:35:30",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920336000.0,
+        "prices": {
+            "20446366594": 235099.0,
+            "71069778201": 65.66,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:35": {
+        "timestamp": "2026-06-22 09:35:35",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920336000.0,
+        "prices": {
+            "20446366594": 235099.0,
+            "71069778201": 65.66,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:40": {
+        "timestamp": "2026-06-22 09:35:40",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920336000.0,
+        "prices": {
+            "20446366594": 235099.0,
+            "71069778201": 65.66,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:46": {
+        "timestamp": "2026-06-22 09:35:46",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920336000.0,
+        "prices": {
+            "20446366594": 235099.0,
+            "71069778201": 65.66,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:51": {
+        "timestamp": "2026-06-22 09:35:51",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920336000.0,
+        "prices": {
+            "20446366594": 235099.0,
+            "71069778201": 65.66,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:56": {
+        "timestamp": "2026-06-22 09:35:56",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920336000.0,
+        "prices": {
+            "20446366594": 235099.0,
+            "71069778201": 65.66,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:36:01": {
+        "timestamp": "2026-06-22 09:36:01",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920336000.0,
+        "prices": {
+            "20446366594": 235099.0,
+            "71069778201": 65.66,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:36:07": {
+        "timestamp": "2026-06-22 09:36:07",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920445610.0,
+        "prices": {
+            "20446366594": 235127.0,
+            "71069778201": 65.67,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:36:12": {
+        "timestamp": "2026-06-22 09:36:12",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919750199.0,
+        "prices": {
+            "20446366594": 235127.0,
+            "71069778201": 65.67,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-22 09:36:17": {
+        "timestamp": "2026-06-22 09:36:17",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919750199.0,
+        "prices": {
+            "20446366594": 235127.0,
+            "71069778201": 65.67,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-22 09:36:22": {
+        "timestamp": "2026-06-22 09:36:22",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919750199.0,
+        "prices": {
+            "20446366594": 235127.0,
+            "71069778201": 65.67,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-22 09:36:28": {
+        "timestamp": "2026-06-22 09:36:28",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919663249.0,
+        "prices": {
+            "20446366594": 235127.0,
+            "71069778201": 65.67,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:36:33": {
+        "timestamp": "2026-06-22 09:36:33",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919663249.0,
+        "prices": {
+            "20446366594": 235127.0,
+            "71069778201": 65.67,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:36:38": {
+        "timestamp": "2026-06-22 09:36:38",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919663249.0,
+        "prices": {
+            "20446366594": 235127.0,
+            "71069778201": 65.67,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:36:43": {
+        "timestamp": "2026-06-22 09:36:43",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919663249.0,
+        "prices": {
+            "20446366594": 235127.0,
+            "71069778201": 65.67,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:36:49": {
+        "timestamp": "2026-06-22 09:36:49",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919663249.0,
+        "prices": {
+            "20446366594": 235127.0,
+            "71069778201": 65.67,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:36:54": {
+        "timestamp": "2026-06-22 09:36:54",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919753210.0,
+        "prices": {
+            "20446366594": 235150.0,
+            "71069778201": 65.67,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:36:59": {
+        "timestamp": "2026-06-22 09:36:59",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 919753210.0,
+        "prices": {
+            "20446366594": 235150.0,
+            "71069778201": 65.67,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:05": {
+        "timestamp": "2026-06-22 09:37:05",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920132611.0,
+        "prices": {
+            "20446366594": 235247.0,
+            "71069778201": 65.67,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:10": {
+        "timestamp": "2026-06-22 09:37:10",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920132611.0,
+        "prices": {
+            "20446366594": 235247.0,
+            "71069778201": 65.67,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:15": {
+        "timestamp": "2026-06-22 09:37:15",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920261685.0,
+        "prices": {
+            "20446366594": 235280.0,
+            "71069778201": 65.695,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:20": {
+        "timestamp": "2026-06-22 09:37:20",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920261685.0,
+        "prices": {
+            "20446366594": 235280.0,
+            "71069778201": 65.695,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:26": {
+        "timestamp": "2026-06-22 09:37:26",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920433784.0,
+        "prices": {
+            "20446366594": 235324.0,
+            "71069778201": 65.695,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:31": {
+        "timestamp": "2026-06-22 09:37:31",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920433784.0,
+        "prices": {
+            "20446366594": 235324.0,
+            "71069778201": 65.695,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:36": {
+        "timestamp": "2026-06-22 09:37:36",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920433784.0,
+        "prices": {
+            "20446366594": 235324.0,
+            "71069778201": 65.705,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:42": {
+        "timestamp": "2026-06-22 09:37:42",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920433784.0,
+        "prices": {
+            "20446366594": 235324.0,
+            "71069778201": 65.71,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:47": {
+        "timestamp": "2026-06-22 09:37:47",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920633263.0,
+        "prices": {
+            "20446366594": 235375.0,
+            "71069778201": 65.705,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:52": {
+        "timestamp": "2026-06-22 09:37:52",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920633263.0,
+        "prices": {
+            "20446366594": 235375.0,
+            "71069778201": 65.705,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:57": {
+        "timestamp": "2026-06-22 09:37:57",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920926614.0,
+        "prices": {
+            "20446366594": 235450.0,
+            "71069778201": 65.705,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:38:03": {
+        "timestamp": "2026-06-22 09:38:03",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920752500.0,
+        "prices": {
+            "20446366594": 235450.0,
+            "71069778201": 65.705,
+            "44695": 105.77
+        }
+    },
+    "2026-06-22 09:38:08": {
+        "timestamp": "2026-06-22 09:38:08",
+        "instrument_id": "6a16cccb6121bd19cead3933",
+        "instrument_name": "SILVER15%REV@JUNEDG",
+        "computed_value": 920815070.0,
+        "prices": {
+            "20446366594": 235466.0,
+            "71069778201": 65.735,
+            "44695": 105.77
+        }
     }
 }

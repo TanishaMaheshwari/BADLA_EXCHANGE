@@ -12,7 +12,9 @@ function openDealModal() {
   document.getElementById('d-dgcx-enabled').checked=false;
   document.getElementById('dgcx-leg-fields').style.display='none';
   populateInstrumentSelect('d-instrument');
-  populateLegBrokerSelect('d-mcx-broker',null); populateLegBrokerSelect('d-comex-broker',null); populateLegBrokerSelect('d-dgcx-broker',null);
+  populateLegBrokerSelect('d-mcx-broker', null, 'MCX');
+  populateLegBrokerSelect('d-comex-broker', null, 'COMEX');
+  populateLegBrokerSelect('d-dgcx-broker', null, 'DGCX');
   document.getElementById('deal-modal').classList.add('open');
 }
 function closeDealModal() { document.getElementById('deal-modal').classList.remove('open'); }

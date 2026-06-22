@@ -8,7 +8,7 @@ function renderBrokers() {
     return;
   }
   tbody.innerHTML = brokers.map(b => {
-    const pnlShare = b.totalPnl * b.profitShare / 100;
+    const pnlShare = (b.totalPnl * b.profitShare / 100) || 0;  // ← compute P&L × profit share for display
     const instrCount = (b.instruments || []).length;
     const exchClass = (b.exchangeType || 'MCX').toLowerCase();
     const isExpanded = expandedBrokerId === b.id;
@@ -24,7 +24,7 @@ function renderBrokers() {
       <td style="font-weight:600;color:${b.totalPnl>=0?'var(--accent)':'#e24b4a'}">
         ${b.totalPnl >= 0 ? '₹' : '−₹'}${Math.abs(b.totalPnl).toLocaleString('en-IN')}
       </td>
-     <td style="font-weight:600;color:${pnlShare>=0?'var(--accent)':'#e24b4a'}">
+      <td style="font-weight:600;color:${pnlShare>=0?'var(--accent)':'#e24b4a'}">
         ${pnlShare >= 0 ? '₹' : '−₹'}${Math.abs(pnlShare).toLocaleString('en-IN', {maximumFractionDigits:0})}
       </td>
       <td>
@@ -49,7 +49,6 @@ function renderBrokers() {
   }).join('');
   renderBrokerSummary();
 }
-
 function renderBrokerSummary() {
   const summary = document.getElementById('broker-summary'); if (!summary) return;
   const totalPnl   = brokers.reduce((s, b) => s + (b.totalPnl || 0), 0);
@@ -255,12 +254,25 @@ function renderBrokerExpandPanel(b) {
           padding:8px 0;border-bottom:1px solid var(--border)">
           <div style="font-size:11px;font-weight:600;color:var(--text)">${i.name}</div>
           <div style="font-size:11px;color:var(--muted)">${i.brokerSymbol || '—'}</div>
-          <div style="font-size:11px;color:var(--muted)">₹${i.totalPnl?.toLocaleString('en-IN') || 0}</div>
           <div style="font-size:11px;color:var(--muted)">${i.lotQty || '—'} qty/lot</div>
           <div style="font-size:11px;color:var(--muted)">₹${i.brokerage || 0}/lot</div>
           <div style="font-size:11px;color:var(--muted)">${i.maxLots || '—'} max</div>
+          <div>
+            <input type="number" class="bi-pnl-input" data-broker-id="${b.id}" data-instr="${i.name}"
+              value="${i.totalPnl ?? 0}" step="1"
+              style="width:100%;padding:4px 8px;background:var(--surface);border:1px solid var(--border);
+              border-radius:4px;color:var(--accent);font-weight:600;font-size:11px;text-align:right"
+              onclick="event.stopPropagation()"
+              onchange="saveInstrumentPnl(this)">
+          </div>
         </div>
       `).join('')}
+      <div style="margin-top:10px;display:flex;justify-content:flex-end">
+        <button class="btn btn-sm" style="background:var(--surface);border:1px solid var(--border);color:var(--text)"
+          onclick="event.stopPropagation(); openEditBrokerModal(${b.id})">
+          Edit broker
+        </button>
+      </div>
     </div>`;
 }
 

@@ -36613,3 +36613,22 @@ FileNotFoundError: [Errno 2] No such file or directory: '/Users/tanishamaheshwar
 2026-06-21 16:05:26,077 - BadlaWebSocket - INFO - Shutting down...
 2026-06-21 16:05:26,081 - BadlaWebSocket - INFO - Push timer stopped
 2026-06-21 16:05:26,374 - BadlaWebSocket - INFO - Disconnected
+2026-06-22 09:19:42,124 - BadlaMain - INFO - Starting Badla WebSocket Client
+2026-06-22 09:19:42,124 - BadlaMain - INFO -   data-dir          : data
+2026-06-22 09:19:42,124 - BadlaMain - INFO -   settings-file     : instrument_settings.json
+2026-06-22 09:19:42,124 - BadlaMain - INFO -   response-timeout  : 1.0s
+2026-06-22 09:19:43,039 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-22 09:19:43,039 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-22 09:19:43,040 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-22 09:19:43,040 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-22 09:19:43,040 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-22 09:19:43,245 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-22 09:27:45,844 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-22 09:27:45,913 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-22 09:27:46,241 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-22 09:27:49,761 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-22 09:27:49,762 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-22 09:27:49,763 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-22 09:27:49,763 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-22 09:27:49,765 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-22 09:27:49,970 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...

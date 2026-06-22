@@ -515,5 +515,2304 @@
             "74166801835": 24077.0,
             "44695": 105.93
         }
+    },
+    "2026-06-22 09:19:48": {
+        "timestamp": "2026-06-22 09:19:48",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115970.0,
+        "prices": {
+            "74641093214": 57985.0,
+            "74166801835": 24135.3,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:19:53": {
+        "timestamp": "2026-06-22 09:19:53",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24139.9,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:19:58": {
+        "timestamp": "2026-06-22 09:19:58",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115959.6,
+        "prices": {
+            "74641093214": 57979.8,
+            "74166801835": 24135.2,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:03": {
+        "timestamp": "2026-06-22 09:20:03",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115960.0,
+        "prices": {
+            "74641093214": 57980.0,
+            "74166801835": 24136.9,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:09": {
+        "timestamp": "2026-06-22 09:20:09",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115970.4,
+        "prices": {
+            "74641093214": 57985.2,
+            "74166801835": 24135.4,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:14": {
+        "timestamp": "2026-06-22 09:20:14",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 116033.2,
+        "prices": {
+            "74641093214": 58016.6,
+            "74166801835": 24136.6,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:19": {
+        "timestamp": "2026-06-22 09:20:19",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 116033.2,
+        "prices": {
+            "74641093214": 58016.6,
+            "74166801835": 24142.4,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:24": {
+        "timestamp": "2026-06-22 09:20:24",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 116084.0,
+        "prices": {
+            "74641093214": 58042.0,
+            "74166801835": 24145.0,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:30": {
+        "timestamp": "2026-06-22 09:20:30",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 116084.0,
+        "prices": {
+            "74641093214": 58042.0,
+            "74166801835": 24145.0,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:35": {
+        "timestamp": "2026-06-22 09:20:35",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 116094.0,
+        "prices": {
+            "74641093214": 58047.0,
+            "74166801835": 24141.9,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:40": {
+        "timestamp": "2026-06-22 09:20:40",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 116090.4,
+        "prices": {
+            "74641093214": 58045.2,
+            "74166801835": 24144.0,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:45": {
+        "timestamp": "2026-06-22 09:20:45",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 116033.2,
+        "prices": {
+            "74641093214": 58016.6,
+            "74166801835": 24142.2,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:51": {
+        "timestamp": "2026-06-22 09:20:51",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 116000.0,
+        "prices": {
+            "74641093214": 58000.0,
+            "74166801835": 24140.0,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:20:56": {
+        "timestamp": "2026-06-22 09:20:56",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 116022.8,
+        "prices": {
+            "74641093214": 58011.4,
+            "74166801835": 24142.3,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:01": {
+        "timestamp": "2026-06-22 09:21:01",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115992.0,
+        "prices": {
+            "74641093214": 57996.0,
+            "74166801835": 24138.7,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:06": {
+        "timestamp": "2026-06-22 09:21:06",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115992.0,
+        "prices": {
+            "74641093214": 57996.0,
+            "74166801835": 24138.8,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:11": {
+        "timestamp": "2026-06-22 09:21:11",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115991.2,
+        "prices": {
+            "74641093214": 57995.6,
+            "74166801835": 24136.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:17": {
+        "timestamp": "2026-06-22 09:21:17",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115996.4,
+        "prices": {
+            "74641093214": 57998.2,
+            "74166801835": 24139.0,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:22": {
+        "timestamp": "2026-06-22 09:21:22",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 116000.0,
+        "prices": {
+            "74641093214": 58000.0,
+            "74166801835": 24139.0,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:27": {
+        "timestamp": "2026-06-22 09:21:27",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115994.8,
+        "prices": {
+            "74641093214": 57997.4,
+            "74166801835": 24136.5,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:32": {
+        "timestamp": "2026-06-22 09:21:32",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115990.0,
+        "prices": {
+            "74641093214": 57995.0,
+            "74166801835": 24138.0,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:38": {
+        "timestamp": "2026-06-22 09:21:38",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115966.0,
+        "prices": {
+            "74641093214": 57983.0,
+            "74166801835": 24140.0,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:43": {
+        "timestamp": "2026-06-22 09:21:43",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115960.0,
+        "prices": {
+            "74641093214": 57980.0,
+            "74166801835": 24143.0,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:48": {
+        "timestamp": "2026-06-22 09:21:48",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115980.0,
+        "prices": {
+            "74641093214": 57990.0,
+            "74166801835": 24144.0,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:54": {
+        "timestamp": "2026-06-22 09:21:54",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115960.0,
+        "prices": {
+            "74641093214": 57980.0,
+            "74166801835": 24144.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:21:59": {
+        "timestamp": "2026-06-22 09:21:59",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115960.4,
+        "prices": {
+            "74641093214": 57980.2,
+            "74166801835": 24144.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:04": {
+        "timestamp": "2026-06-22 09:22:04",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115960.0,
+        "prices": {
+            "74641093214": 57980.0,
+            "74166801835": 24145.0,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:09": {
+        "timestamp": "2026-06-22 09:22:09",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115956.0,
+        "prices": {
+            "74641093214": 57978.0,
+            "74166801835": 24142.5,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:15": {
+        "timestamp": "2026-06-22 09:22:15",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115956.0,
+        "prices": {
+            "74641093214": 57978.0,
+            "74166801835": 24138.2,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:20": {
+        "timestamp": "2026-06-22 09:22:20",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115970.0,
+        "prices": {
+            "74641093214": 57985.0,
+            "74166801835": 24141.8,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:25": {
+        "timestamp": "2026-06-22 09:22:25",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115950.0,
+        "prices": {
+            "74641093214": 57975.0,
+            "74166801835": 24135.7,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:30": {
+        "timestamp": "2026-06-22 09:22:30",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115987.6,
+        "prices": {
+            "74641093214": 57993.8,
+            "74166801835": 24136.7,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:35": {
+        "timestamp": "2026-06-22 09:22:35",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115950.0,
+        "prices": {
+            "74641093214": 57975.0,
+            "74166801835": 24144.0,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:41": {
+        "timestamp": "2026-06-22 09:22:41",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115946.0,
+        "prices": {
+            "74641093214": 57973.0,
+            "74166801835": 24144.3,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:46": {
+        "timestamp": "2026-06-22 09:22:46",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115942.0,
+        "prices": {
+            "74641093214": 57971.0,
+            "74166801835": 24144.5,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:51": {
+        "timestamp": "2026-06-22 09:22:51",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115960.0,
+        "prices": {
+            "74641093214": 57980.0,
+            "74166801835": 24141.6,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:22:57": {
+        "timestamp": "2026-06-22 09:22:57",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115960.0,
+        "prices": {
+            "74641093214": 57980.0,
+            "74166801835": 24144.6,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:02": {
+        "timestamp": "2026-06-22 09:23:02",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115995.6,
+        "prices": {
+            "74641093214": 57997.8,
+            "74166801835": 24146.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:07": {
+        "timestamp": "2026-06-22 09:23:07",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115960.0,
+        "prices": {
+            "74641093214": 57980.0,
+            "74166801835": 24148.0,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:12": {
+        "timestamp": "2026-06-22 09:23:12",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115996.0,
+        "prices": {
+            "74641093214": 57998.0,
+            "74166801835": 24145.9,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:17": {
+        "timestamp": "2026-06-22 09:23:17",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115950.4,
+        "prices": {
+            "74641093214": 57975.2,
+            "74166801835": 24147.9,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:23": {
+        "timestamp": "2026-06-22 09:23:23",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115950.4,
+        "prices": {
+            "74641093214": 57975.2,
+            "74166801835": 24147.9,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:28": {
+        "timestamp": "2026-06-22 09:23:28",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115942.8,
+        "prices": {
+            "74641093214": 57971.4,
+            "74166801835": 24147.9,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:33": {
+        "timestamp": "2026-06-22 09:23:33",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24146.9,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:38": {
+        "timestamp": "2026-06-22 09:23:38",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115996.8,
+        "prices": {
+            "74641093214": 57998.4,
+            "74166801835": 24147.2,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:44": {
+        "timestamp": "2026-06-22 09:23:44",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115952.0,
+        "prices": {
+            "74641093214": 57976.0,
+            "74166801835": 24148.9,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:49": {
+        "timestamp": "2026-06-22 09:23:49",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115996.8,
+        "prices": {
+            "74641093214": 57998.4,
+            "74166801835": 24149.0,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:54": {
+        "timestamp": "2026-06-22 09:23:54",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115950.0,
+        "prices": {
+            "74641093214": 57975.0,
+            "74166801835": 24146.7,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:23:59": {
+        "timestamp": "2026-06-22 09:23:59",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115999.6,
+        "prices": {
+            "74641093214": 57999.8,
+            "74166801835": 24149.0,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:05": {
+        "timestamp": "2026-06-22 09:24:05",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115941.6,
+        "prices": {
+            "74641093214": 57970.8,
+            "74166801835": 24146.8,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:10": {
+        "timestamp": "2026-06-22 09:24:10",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115950.0,
+        "prices": {
+            "74641093214": 57975.0,
+            "74166801835": 24149.0,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:15": {
+        "timestamp": "2026-06-22 09:24:15",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115969.6,
+        "prices": {
+            "74641093214": 57984.8,
+            "74166801835": 24149.3,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:20": {
+        "timestamp": "2026-06-22 09:24:20",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115969.6,
+        "prices": {
+            "74641093214": 57984.8,
+            "74166801835": 24148.8,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:26": {
+        "timestamp": "2026-06-22 09:24:26",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115969.6,
+        "prices": {
+            "74641093214": 57984.8,
+            "74166801835": 24149.0,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:31": {
+        "timestamp": "2026-06-22 09:24:31",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115996.0,
+        "prices": {
+            "74641093214": 57998.0,
+            "74166801835": 24150.0,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:36": {
+        "timestamp": "2026-06-22 09:24:36",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115968.4,
+        "prices": {
+            "74641093214": 57984.2,
+            "74166801835": 24148.2,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:41": {
+        "timestamp": "2026-06-22 09:24:41",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115950.0,
+        "prices": {
+            "74641093214": 57975.0,
+            "74166801835": 24150.0,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:47": {
+        "timestamp": "2026-06-22 09:24:47",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115968.4,
+        "prices": {
+            "74641093214": 57984.2,
+            "74166801835": 24150.0,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:52": {
+        "timestamp": "2026-06-22 09:24:52",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115997.6,
+        "prices": {
+            "74641093214": 57998.8,
+            "74166801835": 24150.3,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:24:57": {
+        "timestamp": "2026-06-22 09:24:57",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115968.4,
+        "prices": {
+            "74641093214": 57984.2,
+            "74166801835": 24147.3,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:02": {
+        "timestamp": "2026-06-22 09:25:02",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115997.6,
+        "prices": {
+            "74641093214": 57998.8,
+            "74166801835": 24149.8,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:08": {
+        "timestamp": "2026-06-22 09:25:08",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24149.8,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:13": {
+        "timestamp": "2026-06-22 09:25:13",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24149.8,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:18": {
+        "timestamp": "2026-06-22 09:25:18",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115941.2,
+        "prices": {
+            "74641093214": 57970.6,
+            "74166801835": 24147.3,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:23": {
+        "timestamp": "2026-06-22 09:25:23",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115941.2,
+        "prices": {
+            "74641093214": 57970.6,
+            "74166801835": 24147.3,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:29": {
+        "timestamp": "2026-06-22 09:25:29",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:34": {
+        "timestamp": "2026-06-22 09:25:34",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:39": {
+        "timestamp": "2026-06-22 09:25:39",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:44": {
+        "timestamp": "2026-06-22 09:25:44",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:50": {
+        "timestamp": "2026-06-22 09:25:50",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:25:55": {
+        "timestamp": "2026-06-22 09:25:55",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:00": {
+        "timestamp": "2026-06-22 09:26:00",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:06": {
+        "timestamp": "2026-06-22 09:26:06",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:11": {
+        "timestamp": "2026-06-22 09:26:11",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:16": {
+        "timestamp": "2026-06-22 09:26:16",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:21": {
+        "timestamp": "2026-06-22 09:26:21",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:27": {
+        "timestamp": "2026-06-22 09:26:27",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:32": {
+        "timestamp": "2026-06-22 09:26:32",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:37": {
+        "timestamp": "2026-06-22 09:26:37",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:42": {
+        "timestamp": "2026-06-22 09:26:42",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:48": {
+        "timestamp": "2026-06-22 09:26:48",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:53": {
+        "timestamp": "2026-06-22 09:26:53",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:26:58": {
+        "timestamp": "2026-06-22 09:26:58",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:27:03": {
+        "timestamp": "2026-06-22 09:27:03",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:27:09": {
+        "timestamp": "2026-06-22 09:27:09",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:27:14": {
+        "timestamp": "2026-06-22 09:27:14",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:27:19": {
+        "timestamp": "2026-06-22 09:27:19",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:27:24": {
+        "timestamp": "2026-06-22 09:27:24",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:27:30": {
+        "timestamp": "2026-06-22 09:27:30",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:27:35": {
+        "timestamp": "2026-06-22 09:27:35",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:27:40": {
+        "timestamp": "2026-06-22 09:27:40",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:27:45": {
+        "timestamp": "2026-06-22 09:27:45",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115940.0,
+        "prices": {
+            "74641093214": 57970.0,
+            "74166801835": 24145.1,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:27:54": {
+        "timestamp": "2026-06-22 09:27:54",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115914.0,
+        "prices": {
+            "74641093214": 57957.0,
+            "74166801835": 24138.5,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:28:00": {
+        "timestamp": "2026-06-22 09:28:00",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115914.0,
+        "prices": {
+            "74641093214": 57957.0,
+            "74166801835": 24137.5,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:28:05": {
+        "timestamp": "2026-06-22 09:28:05",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115916.0,
+        "prices": {
+            "74641093214": 57958.0,
+            "74166801835": 24137.3,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:28:10": {
+        "timestamp": "2026-06-22 09:28:10",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115914.0,
+        "prices": {
+            "74641093214": 57957.0,
+            "74166801835": 24137.3,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:28:15": {
+        "timestamp": "2026-06-22 09:28:15",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115914.0,
+        "prices": {
+            "74641093214": 57957.0,
+            "74166801835": 24137.2,
+            "44695": 106.019997
+        }
+    },
+    "2026-06-22 09:28:21": {
+        "timestamp": "2026-06-22 09:28:21",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115914.0,
+        "prices": {
+            "74641093214": 57957.0,
+            "74166801835": 24137.0,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:28:26": {
+        "timestamp": "2026-06-22 09:28:26",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115915.6,
+        "prices": {
+            "74641093214": 57957.8,
+            "74166801835": 24136.7,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:28:31": {
+        "timestamp": "2026-06-22 09:28:31",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115915.2,
+        "prices": {
+            "74641093214": 57957.6,
+            "74166801835": 24136.7,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:28:37": {
+        "timestamp": "2026-06-22 09:28:37",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115914.0,
+        "prices": {
+            "74641093214": 57957.0,
+            "74166801835": 24137.3,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:28:42": {
+        "timestamp": "2026-06-22 09:28:42",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115919.6,
+        "prices": {
+            "74641093214": 57959.8,
+            "74166801835": 24138.4,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:28:47": {
+        "timestamp": "2026-06-22 09:28:47",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115919.6,
+        "prices": {
+            "74641093214": 57959.8,
+            "74166801835": 24136.7,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:28:52": {
+        "timestamp": "2026-06-22 09:28:52",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115920.0,
+        "prices": {
+            "74641093214": 57960.0,
+            "74166801835": 24136.8,
+            "44695": 105.949997
+        }
+    },
+    "2026-06-22 09:28:58": {
+        "timestamp": "2026-06-22 09:28:58",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115924.0,
+        "prices": {
+            "74641093214": 57962.0,
+            "74166801835": 24137.8,
+            "44695": 105.949997
+        }
+    },
+    "2026-06-22 09:29:03": {
+        "timestamp": "2026-06-22 09:29:03",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115924.0,
+        "prices": {
+            "74641093214": 57962.0,
+            "74166801835": 24136.6,
+            "44695": 105.949997
+        }
+    },
+    "2026-06-22 09:29:08": {
+        "timestamp": "2026-06-22 09:29:08",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115924.0,
+        "prices": {
+            "74641093214": 57962.0,
+            "74166801835": 24136.1,
+            "44695": 105.949997
+        }
+    },
+    "2026-06-22 09:29:14": {
+        "timestamp": "2026-06-22 09:29:14",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115924.0,
+        "prices": {
+            "74641093214": 57962.0,
+            "74166801835": 24135.0,
+            "44695": 105.949997
+        }
+    },
+    "2026-06-22 09:29:19": {
+        "timestamp": "2026-06-22 09:29:19",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115933.6,
+        "prices": {
+            "74641093214": 57966.8,
+            "74166801835": 24137.0,
+            "44695": 105.949997
+        }
+    },
+    "2026-06-22 09:29:24": {
+        "timestamp": "2026-06-22 09:29:24",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115945.6,
+        "prices": {
+            "74641093214": 57972.8,
+            "74166801835": 24137.0,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:29:29": {
+        "timestamp": "2026-06-22 09:29:29",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115950.0,
+        "prices": {
+            "74641093214": 57975.0,
+            "74166801835": 24136.8,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:29:34": {
+        "timestamp": "2026-06-22 09:29:34",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115928.0,
+        "prices": {
+            "74641093214": 57964.0,
+            "74166801835": 24136.9,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:29:40": {
+        "timestamp": "2026-06-22 09:29:40",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115928.0,
+        "prices": {
+            "74641093214": 57964.0,
+            "74166801835": 24136.4,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:29:45": {
+        "timestamp": "2026-06-22 09:29:45",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115929.6,
+        "prices": {
+            "74641093214": 57964.8,
+            "74166801835": 24135.9,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:29:50": {
+        "timestamp": "2026-06-22 09:29:50",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115929.2,
+        "prices": {
+            "74641093214": 57964.6,
+            "74166801835": 24139.0,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:29:56": {
+        "timestamp": "2026-06-22 09:29:56",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115933.6,
+        "prices": {
+            "74641093214": 57966.8,
+            "74166801835": 24139.0,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:01": {
+        "timestamp": "2026-06-22 09:30:01",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115947.2,
+        "prices": {
+            "74641093214": 57973.6,
+            "74166801835": 24139.9,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:07": {
+        "timestamp": "2026-06-22 09:30:07",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115950.0,
+        "prices": {
+            "74641093214": 57975.0,
+            "74166801835": 24141.1,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:12": {
+        "timestamp": "2026-06-22 09:30:12",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115950.0,
+        "prices": {
+            "74641093214": 57975.0,
+            "74166801835": 24142.1,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:17": {
+        "timestamp": "2026-06-22 09:30:17",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115927.6,
+        "prices": {
+            "74641093214": 57963.8,
+            "74166801835": 24142.3,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:22": {
+        "timestamp": "2026-06-22 09:30:22",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115927.6,
+        "prices": {
+            "74641093214": 57963.8,
+            "74166801835": 24145.0,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:28": {
+        "timestamp": "2026-06-22 09:30:28",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115927.6,
+        "prices": {
+            "74641093214": 57963.8,
+            "74166801835": 24142.5,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:33": {
+        "timestamp": "2026-06-22 09:30:33",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115927.6,
+        "prices": {
+            "74641093214": 57963.8,
+            "74166801835": 24142.1,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:38": {
+        "timestamp": "2026-06-22 09:30:38",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115920.0,
+        "prices": {
+            "74641093214": 57960.0,
+            "74166801835": 24140.1,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:43": {
+        "timestamp": "2026-06-22 09:30:43",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115927.6,
+        "prices": {
+            "74641093214": 57963.8,
+            "74166801835": 24140.1,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:49": {
+        "timestamp": "2026-06-22 09:30:49",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115910.0,
+        "prices": {
+            "74641093214": 57955.0,
+            "74166801835": 24140.0,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:54": {
+        "timestamp": "2026-06-22 09:30:54",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115888.0,
+        "prices": {
+            "74641093214": 57944.0,
+            "74166801835": 24142.6,
+            "44695": 105.940002
+        }
+    },
+    "2026-06-22 09:30:59": {
+        "timestamp": "2026-06-22 09:30:59",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115882.4,
+        "prices": {
+            "74641093214": 57941.2,
+            "74166801835": 24143.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:05": {
+        "timestamp": "2026-06-22 09:31:05",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115891.2,
+        "prices": {
+            "74641093214": 57945.6,
+            "74166801835": 24145.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:10": {
+        "timestamp": "2026-06-22 09:31:10",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115905.2,
+        "prices": {
+            "74641093214": 57952.6,
+            "74166801835": 24144.8,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:15": {
+        "timestamp": "2026-06-22 09:31:15",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115905.2,
+        "prices": {
+            "74641093214": 57952.6,
+            "74166801835": 24145.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:20": {
+        "timestamp": "2026-06-22 09:31:20",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115920.0,
+        "prices": {
+            "74641093214": 57960.0,
+            "74166801835": 24144.3,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:26": {
+        "timestamp": "2026-06-22 09:31:26",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115913.2,
+        "prices": {
+            "74641093214": 57956.6,
+            "74166801835": 24144.9,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:31": {
+        "timestamp": "2026-06-22 09:31:31",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115900.4,
+        "prices": {
+            "74641093214": 57950.2,
+            "74166801835": 24144.6,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:36": {
+        "timestamp": "2026-06-22 09:31:36",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115892.0,
+        "prices": {
+            "74641093214": 57946.0,
+            "74166801835": 24144.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:42": {
+        "timestamp": "2026-06-22 09:31:42",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115886.0,
+        "prices": {
+            "74641093214": 57943.0,
+            "74166801835": 24145.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:47": {
+        "timestamp": "2026-06-22 09:31:47",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115884.0,
+        "prices": {
+            "74641093214": 57942.0,
+            "74166801835": 24144.6,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:52": {
+        "timestamp": "2026-06-22 09:31:52",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115889.2,
+        "prices": {
+            "74641093214": 57944.6,
+            "74166801835": 24145.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:31:57": {
+        "timestamp": "2026-06-22 09:31:57",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115887.6,
+        "prices": {
+            "74641093214": 57943.8,
+            "74166801835": 24145.2,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:03": {
+        "timestamp": "2026-06-22 09:32:03",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115906.8,
+        "prices": {
+            "74641093214": 57953.4,
+            "74166801835": 24144.9,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:08": {
+        "timestamp": "2026-06-22 09:32:08",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115892.0,
+        "prices": {
+            "74641093214": 57946.0,
+            "74166801835": 24142.3,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:13": {
+        "timestamp": "2026-06-22 09:32:13",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115913.6,
+        "prices": {
+            "74641093214": 57956.8,
+            "74166801835": 24142.2,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:18": {
+        "timestamp": "2026-06-22 09:32:18",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115913.6,
+        "prices": {
+            "74641093214": 57956.8,
+            "74166801835": 24144.9,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:24": {
+        "timestamp": "2026-06-22 09:32:24",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115890.0,
+        "prices": {
+            "74641093214": 57945.0,
+            "74166801835": 24141.2,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:29": {
+        "timestamp": "2026-06-22 09:32:29",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115884.0,
+        "prices": {
+            "74641093214": 57942.0,
+            "74166801835": 24140.8,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:34": {
+        "timestamp": "2026-06-22 09:32:34",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115886.8,
+        "prices": {
+            "74641093214": 57943.4,
+            "74166801835": 24140.8,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:39": {
+        "timestamp": "2026-06-22 09:32:39",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115897.6,
+        "prices": {
+            "74641093214": 57948.8,
+            "74166801835": 24140.8,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:45": {
+        "timestamp": "2026-06-22 09:32:45",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115893.6,
+        "prices": {
+            "74641093214": 57946.8,
+            "74166801835": 24139.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:50": {
+        "timestamp": "2026-06-22 09:32:50",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115897.2,
+        "prices": {
+            "74641093214": 57948.6,
+            "74166801835": 24138.8,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:32:55": {
+        "timestamp": "2026-06-22 09:32:55",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115897.2,
+        "prices": {
+            "74641093214": 57948.6,
+            "74166801835": 24138.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:01": {
+        "timestamp": "2026-06-22 09:33:01",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115897.2,
+        "prices": {
+            "74641093214": 57948.6,
+            "74166801835": 24140.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:06": {
+        "timestamp": "2026-06-22 09:33:06",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115889.2,
+        "prices": {
+            "74641093214": 57944.6,
+            "74166801835": 24140.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:11": {
+        "timestamp": "2026-06-22 09:33:11",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115894.0,
+        "prices": {
+            "74641093214": 57947.0,
+            "74166801835": 24143.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:16": {
+        "timestamp": "2026-06-22 09:33:16",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115890.0,
+        "prices": {
+            "74641093214": 57945.0,
+            "74166801835": 24140.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:22": {
+        "timestamp": "2026-06-22 09:33:22",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115897.2,
+        "prices": {
+            "74641093214": 57948.6,
+            "74166801835": 24140.3,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:27": {
+        "timestamp": "2026-06-22 09:33:27",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115898.0,
+        "prices": {
+            "74641093214": 57949.0,
+            "74166801835": 24140.8,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:32": {
+        "timestamp": "2026-06-22 09:33:32",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115894.0,
+        "prices": {
+            "74641093214": 57947.0,
+            "74166801835": 24140.3,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:38": {
+        "timestamp": "2026-06-22 09:33:38",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115899.6,
+        "prices": {
+            "74641093214": 57949.8,
+            "74166801835": 24143.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:43": {
+        "timestamp": "2026-06-22 09:33:43",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115900.0,
+        "prices": {
+            "74641093214": 57950.0,
+            "74166801835": 24141.4,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:48": {
+        "timestamp": "2026-06-22 09:33:48",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115909.6,
+        "prices": {
+            "74641093214": 57954.8,
+            "74166801835": 24141.5,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:54": {
+        "timestamp": "2026-06-22 09:33:54",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115900.0,
+        "prices": {
+            "74641093214": 57950.0,
+            "74166801835": 24144.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:33:59": {
+        "timestamp": "2026-06-22 09:33:59",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115900.0,
+        "prices": {
+            "74641093214": 57950.0,
+            "74166801835": 24143.8,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:05": {
+        "timestamp": "2026-06-22 09:34:05",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115901.6,
+        "prices": {
+            "74641093214": 57950.8,
+            "74166801835": 24143.8,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:10": {
+        "timestamp": "2026-06-22 09:34:10",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115892.0,
+        "prices": {
+            "74641093214": 57946.0,
+            "74166801835": 24144.9,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:15": {
+        "timestamp": "2026-06-22 09:34:15",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115896.8,
+        "prices": {
+            "74641093214": 57948.4,
+            "74166801835": 24147.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:21": {
+        "timestamp": "2026-06-22 09:34:21",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115901.6,
+        "prices": {
+            "74641093214": 57950.8,
+            "74166801835": 24143.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:26": {
+        "timestamp": "2026-06-22 09:34:26",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115899.2,
+        "prices": {
+            "74641093214": 57949.6,
+            "74166801835": 24144.9,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:31": {
+        "timestamp": "2026-06-22 09:34:31",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115899.2,
+        "prices": {
+            "74641093214": 57949.6,
+            "74166801835": 24143.5,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:37": {
+        "timestamp": "2026-06-22 09:34:37",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115908.0,
+        "prices": {
+            "74641093214": 57954.0,
+            "74166801835": 24147.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:42": {
+        "timestamp": "2026-06-22 09:34:42",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115904.8,
+        "prices": {
+            "74641093214": 57952.4,
+            "74166801835": 24143.4,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:48": {
+        "timestamp": "2026-06-22 09:34:48",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115910.0,
+        "prices": {
+            "74641093214": 57955.0,
+            "74166801835": 24143.8,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:53": {
+        "timestamp": "2026-06-22 09:34:53",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115910.0,
+        "prices": {
+            "74641093214": 57955.0,
+            "74166801835": 24144.1,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:34:58": {
+        "timestamp": "2026-06-22 09:34:58",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115910.0,
+        "prices": {
+            "74641093214": 57955.0,
+            "74166801835": 24144.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:03": {
+        "timestamp": "2026-06-22 09:35:03",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115902.8,
+        "prices": {
+            "74641093214": 57951.4,
+            "74166801835": 24143.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:09": {
+        "timestamp": "2026-06-22 09:35:09",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115916.0,
+        "prices": {
+            "74641093214": 57958.0,
+            "74166801835": 24148.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:14": {
+        "timestamp": "2026-06-22 09:35:14",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115912.8,
+        "prices": {
+            "74641093214": 57956.4,
+            "74166801835": 24144.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:19": {
+        "timestamp": "2026-06-22 09:35:19",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115913.6,
+        "prices": {
+            "74641093214": 57956.8,
+            "74166801835": 24143.2,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:24": {
+        "timestamp": "2026-06-22 09:35:24",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115931.6,
+        "prices": {
+            "74641093214": 57965.8,
+            "74166801835": 24145.9,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:30": {
+        "timestamp": "2026-06-22 09:35:30",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115931.2,
+        "prices": {
+            "74641093214": 57965.6,
+            "74166801835": 24142.8,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:35": {
+        "timestamp": "2026-06-22 09:35:35",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115929.2,
+        "prices": {
+            "74641093214": 57964.6,
+            "74166801835": 24142.2,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:40": {
+        "timestamp": "2026-06-22 09:35:40",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115902.0,
+        "prices": {
+            "74641093214": 57951.0,
+            "74166801835": 24140.8,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:46": {
+        "timestamp": "2026-06-22 09:35:46",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115899.2,
+        "prices": {
+            "74641093214": 57949.6,
+            "74166801835": 24140.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:51": {
+        "timestamp": "2026-06-22 09:35:51",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115899.6,
+        "prices": {
+            "74641093214": 57949.8,
+            "74166801835": 24140.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:35:56": {
+        "timestamp": "2026-06-22 09:35:56",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115921.2,
+        "prices": {
+            "74641093214": 57960.6,
+            "74166801835": 24140.7,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:36:01": {
+        "timestamp": "2026-06-22 09:36:01",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115899.6,
+        "prices": {
+            "74641093214": 57949.8,
+            "74166801835": 24136.4,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:36:07": {
+        "timestamp": "2026-06-22 09:36:07",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115890.0,
+        "prices": {
+            "74641093214": 57945.0,
+            "74166801835": 24138.0,
+            "44695": 105.879997
+        }
+    },
+    "2026-06-22 09:36:12": {
+        "timestamp": "2026-06-22 09:36:12",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115890.8,
+        "prices": {
+            "74641093214": 57945.4,
+            "74166801835": 24135.4,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-22 09:36:17": {
+        "timestamp": "2026-06-22 09:36:17",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115877.2,
+        "prices": {
+            "74641093214": 57938.6,
+            "74166801835": 24136.4,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-22 09:36:22": {
+        "timestamp": "2026-06-22 09:36:22",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115877.2,
+        "prices": {
+            "74641093214": 57938.6,
+            "74166801835": 24136.6,
+            "44695": 105.800003
+        }
+    },
+    "2026-06-22 09:36:28": {
+        "timestamp": "2026-06-22 09:36:28",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115886.4,
+        "prices": {
+            "74641093214": 57943.2,
+            "74166801835": 24139.0,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:36:33": {
+        "timestamp": "2026-06-22 09:36:33",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115886.4,
+        "prices": {
+            "74641093214": 57943.2,
+            "74166801835": 24136.0,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:36:38": {
+        "timestamp": "2026-06-22 09:36:38",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115886.4,
+        "prices": {
+            "74641093214": 57943.2,
+            "74166801835": 24138.6,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:36:43": {
+        "timestamp": "2026-06-22 09:36:43",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115870.0,
+        "prices": {
+            "74641093214": 57935.0,
+            "74166801835": 24136.0,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:36:49": {
+        "timestamp": "2026-06-22 09:36:49",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115859.2,
+        "prices": {
+            "74641093214": 57929.6,
+            "74166801835": 24135.0,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:36:54": {
+        "timestamp": "2026-06-22 09:36:54",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115857.6,
+        "prices": {
+            "74641093214": 57928.8,
+            "74166801835": 24135.0,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:36:59": {
+        "timestamp": "2026-06-22 09:36:59",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115857.6,
+        "prices": {
+            "74641093214": 57928.8,
+            "74166801835": 24132.3,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:05": {
+        "timestamp": "2026-06-22 09:37:05",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115850.0,
+        "prices": {
+            "74641093214": 57925.0,
+            "74166801835": 24132.8,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:10": {
+        "timestamp": "2026-06-22 09:37:10",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115840.0,
+        "prices": {
+            "74641093214": 57920.0,
+            "74166801835": 24133.3,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:15": {
+        "timestamp": "2026-06-22 09:37:15",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115849.6,
+        "prices": {
+            "74641093214": 57924.8,
+            "74166801835": 24133.0,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:20": {
+        "timestamp": "2026-06-22 09:37:20",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115854.8,
+        "prices": {
+            "74641093214": 57927.4,
+            "74166801835": 24133.3,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:26": {
+        "timestamp": "2026-06-22 09:37:26",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115863.2,
+        "prices": {
+            "74641093214": 57931.6,
+            "74166801835": 24132.8,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:31": {
+        "timestamp": "2026-06-22 09:37:31",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115851.6,
+        "prices": {
+            "74641093214": 57925.8,
+            "74166801835": 24132.8,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:36": {
+        "timestamp": "2026-06-22 09:37:36",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115849.2,
+        "prices": {
+            "74641093214": 57924.6,
+            "74166801835": 24132.7,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:41": {
+        "timestamp": "2026-06-22 09:37:41",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115874.4,
+        "prices": {
+            "74641093214": 57937.2,
+            "74166801835": 24134.0,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:47": {
+        "timestamp": "2026-06-22 09:37:47",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115874.4,
+        "prices": {
+            "74641093214": 57937.2,
+            "74166801835": 24134.0,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:52": {
+        "timestamp": "2026-06-22 09:37:52",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115871.2,
+        "prices": {
+            "74641093214": 57935.6,
+            "74166801835": 24134.0,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:37:57": {
+        "timestamp": "2026-06-22 09:37:57",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115850.0,
+        "prices": {
+            "74641093214": 57925.0,
+            "74166801835": 24131.3,
+            "44695": 105.790001
+        }
+    },
+    "2026-06-22 09:38:03": {
+        "timestamp": "2026-06-22 09:38:03",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115840.0,
+        "prices": {
+            "74641093214": 57920.0,
+            "74166801835": 24130.0,
+            "44695": 105.77
+        }
+    },
+    "2026-06-22 09:38:08": {
+        "timestamp": "2026-06-22 09:38:08",
+        "instrument_id": "6a157a466121bd19cead392f",
+        "instrument_name": "NIFTY-BANKNIFTY (JUNE)",
+        "computed_value": 115853.6,
+        "prices": {
+            "74641093214": 57926.8,
+            "74166801835": 24128.0,
+            "44695": 105.77
+        }
     }
 }
