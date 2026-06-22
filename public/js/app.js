@@ -72,19 +72,17 @@ function populateInstrumentSelect(selId) {
   Object.values(prices).forEach(p=>{ const opt=document.createElement('option'); opt.value=p.name; opt.textContent=p.displayName||p.name; sel.appendChild(opt); });
   if (current) sel.value=current;
 }
-function populateLegBrokerSelect(selId, selectedBrokerId) {
+function populateLegBrokerSelect(selId, selectedBrokerId, exchangeType) {
   const sel = document.getElementById(selId); if (!sel) return;
   sel.innerHTML = '<option value="">No broker</option>';
-  brokers.forEach(b => {
-    const opt = document.createElement('option');
-    opt.value = b.id;
-    // Use first instrument name if available, else fallback
-    const instrLabel = b.instruments?.length
-      ? b.instruments.map(i => i.name).join(', ')
-      : 'no instruments';
-    opt.textContent = `${b.brokerName}${b.accountId ? ' [' + b.accountId + ']' : ''} (${instrLabel})`;
-    sel.appendChild(opt);
-  });
+  brokers
+    .filter(b => !exchangeType || (b.exchangeType || 'MCX') === exchangeType)
+    .forEach(b => {
+      const opt = document.createElement('option');
+      opt.value = b.id;
+      opt.textContent = `${b.brokerName}${b.accountId ? ' [' + b.accountId + ']' : ''} — ${b.profitShare}% share`;
+      sel.appendChild(opt);
+    });
   if (selectedBrokerId) sel.value = selectedBrokerId;
 }
 function autofillLotFromBroker(leg) {

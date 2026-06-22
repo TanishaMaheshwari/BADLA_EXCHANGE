@@ -331,9 +331,9 @@ function openEditModal(id) {
     document.getElementById('e-dgcx-qty').value=deal.dgcx.qty||1;
     document.getElementById('e-dgcx-brok').value=deal.dgcx.brokerage||0;
   }
-  populateLegBrokerSelect('e-mcx-broker',  deal.mcx.brokerId);
-  populateLegBrokerSelect('e-comex-broker',deal.comex.brokerId);
-  populateLegBrokerSelect('e-dgcx-broker', deal.dgcx?.brokerId||null);
+  populateLegBrokerSelect('e-mcx-broker',  deal.mcx.brokerId, 'MCX');
+  populateLegBrokerSelect('e-comex-broker',deal.comex.brokerId, 'COMEX');
+  populateLegBrokerSelect('e-dgcx-broker', deal.dgcx?.brokerId||null, 'DGCX');
   document.getElementById('edit-modal').classList.add('open');
 }
 function closeEditModal() { document.getElementById('edit-modal').classList.remove('open'); editingDealId=null; }

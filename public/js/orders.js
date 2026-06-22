@@ -5,9 +5,9 @@
 function openOrderModal(instrumentName) {
   orderModalInstrument = instrumentName;
   populateInstrumentSelect('o-instrument');
-  populateLegBrokerSelect('o-mcx-broker', null);
-  populateLegBrokerSelect('o-comex-broker', null);
-  populateLegBrokerSelect('o-dgcx-broker', null);
+  populateLegBrokerSelect('o-mcx-broker', null, 'MCX');
+  populateLegBrokerSelect('o-comex-broker', null, 'COMEX');
+  populateLegBrokerSelect('o-dgcx-broker', null, 'DGCX');
   document.getElementById('o-mcx-enabled').checked = true;
   document.getElementById('o-comex-enabled').checked = true;
   document.getElementById('o-dgcx-enabled').checked = false;

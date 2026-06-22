@@ -1,46 +1,112 @@
 {
-    "2026-06-18 10:40:44": {
-        "timestamp": "2026-06-18 10:40:44",
+    "2026-06-21 16:04:37": {
+        "timestamp": "2026-06-21 16:04:37",
         "instrument_id": "6a1002dd6121bd19cead392b",
         "instrument_name": "NGAS(COMEXJUNE-MCXJUNE)JUNEDG",
-        "computed_value": 31464.9208922,
+        "computed_value": 31948.488000000005,
         "prices": {
-            "71406830696": 297.4,
-            "97967302236": 3.148,
-            "44695": 105.800003
+            "71406830696": 301.6,
+            "97967302236": 3.198,
+            "44695": 105.93
         }
     },
-    "2026-06-18 10:40:49": {
-        "timestamp": "2026-06-18 10:40:49",
+    "2026-06-21 16:04:42": {
+        "timestamp": "2026-06-21 16:04:42",
         "instrument_id": "6a1002dd6121bd19cead392b",
         "instrument_name": "NGAS(COMEXJUNE-MCXJUNE)JUNEDG",
-        "computed_value": 31464.9208922,
+        "computed_value": 31948.488000000005,
         "prices": {
-            "71406830696": 297.4,
-            "97967302236": 3.146,
-            "44695": 105.800003
+            "71406830696": 301.6,
+            "97967302236": 3.198,
+            "44695": 105.93
         }
     },
-    "2026-06-18 10:40:50": {
-        "timestamp": "2026-06-18 10:40:50",
+    "2026-06-21 16:04:47": {
+        "timestamp": "2026-06-21 16:04:47",
         "instrument_id": "6a1002dd6121bd19cead392b",
         "instrument_name": "NGAS(COMEXJUNE-MCXJUNE)JUNEDG",
-        "computed_value": 31464.9208922,
+        "computed_value": 31948.488000000005,
         "prices": {
-            "71406830696": 297.4,
-            "97967302236": 3.148,
-            "44695": 105.800003
+            "71406830696": 301.6,
+            "97967302236": 3.198,
+            "44695": 105.93
         }
     },
-    "2026-06-18 10:40:55": {
-        "timestamp": "2026-06-18 10:40:55",
+    "2026-06-21 16:04:53": {
+        "timestamp": "2026-06-21 16:04:53",
         "instrument_id": "6a1002dd6121bd19cead392b",
         "instrument_name": "NGAS(COMEXJUNE-MCXJUNE)JUNEDG",
-        "computed_value": 31464.9208922,
+        "computed_value": 31948.488000000005,
         "prices": {
-            "71406830696": 297.4,
-            "97967302236": 3.146,
-            "44695": 105.800003
+            "71406830696": 301.6,
+            "97967302236": 3.198,
+            "44695": 105.93
+        }
+    },
+    "2026-06-21 16:04:58": {
+        "timestamp": "2026-06-21 16:04:58",
+        "instrument_id": "6a1002dd6121bd19cead392b",
+        "instrument_name": "NGAS(COMEXJUNE-MCXJUNE)JUNEDG",
+        "computed_value": 31948.488000000005,
+        "prices": {
+            "71406830696": 301.6,
+            "97967302236": 3.198,
+            "44695": 105.93
+        }
+    },
+    "2026-06-21 16:05:03": {
+        "timestamp": "2026-06-21 16:05:03",
+        "instrument_id": "6a1002dd6121bd19cead392b",
+        "instrument_name": "NGAS(COMEXJUNE-MCXJUNE)JUNEDG",
+        "computed_value": 31948.488000000005,
+        "prices": {
+            "71406830696": 301.6,
+            "97967302236": 3.198,
+            "44695": 105.93
+        }
+    },
+    "2026-06-21 16:05:09": {
+        "timestamp": "2026-06-21 16:05:09",
+        "instrument_id": "6a1002dd6121bd19cead392b",
+        "instrument_name": "NGAS(COMEXJUNE-MCXJUNE)JUNEDG",
+        "computed_value": 31948.488000000005,
+        "prices": {
+            "71406830696": 301.6,
+            "97967302236": 3.198,
+            "44695": 105.93
+        }
+    },
+    "2026-06-21 16:05:14": {
+        "timestamp": "2026-06-21 16:05:14",
+        "instrument_id": "6a1002dd6121bd19cead392b",
+        "instrument_name": "NGAS(COMEXJUNE-MCXJUNE)JUNEDG",
+        "computed_value": 31948.488000000005,
+        "prices": {
+            "71406830696": 301.6,
+            "97967302236": 3.198,
+            "44695": 105.93
+        }
+    },
+    "2026-06-21 16:05:19": {
+        "timestamp": "2026-06-21 16:05:19",
+        "instrument_id": "6a1002dd6121bd19cead392b",
+        "instrument_name": "NGAS(COMEXJUNE-MCXJUNE)JUNEDG",
+        "computed_value": 31948.488000000005,
+        "prices": {
+            "71406830696": 301.6,
+            "97967302236": 3.198,
+            "44695": 105.93
+        }
+    },
+    "2026-06-21 16:05:24": {
+        "timestamp": "2026-06-21 16:05:24",
+        "instrument_id": "6a1002dd6121bd19cead392b",
+        "instrument_name": "NGAS(COMEXJUNE-MCXJUNE)JUNEDG",
+        "computed_value": 31948.488000000005,
+        "prices": {
+            "71406830696": 301.6,
+            "97967302236": 3.198,
+            "44695": 105.93
         }
     }
 }

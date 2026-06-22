@@ -2,11 +2,19 @@
 <div class="modal-overlay" id="broker-modal">
   <div class="modal" style="width:560px">
     <h3 id="broker-modal-title">Add broker account</h3>
-
+    
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
       <div class="form-group">
         <label>Broker name</label>
         <input type="text" id="b-name" placeholder="e.g. Zerodha MCX">
+      </div>
+      <div class="form-group">
+        <label>Exchange type</label>
+        <select id="b-exchange-type">
+          <option value="MCX">MCX</option>
+          <option value="COMEX">COMEX</option>
+          <option value="DGCX">DGCX</option>
+        </select>
       </div>
       <div class="form-group">
         <label>Account ID / Client code</label>
@@ -20,11 +28,11 @@
         <label>Profit share %</label>
         <input type="number" id="b-profit-share" placeholder="0" value="0" min="0" max="100" step="0.1">
       </div>
-    </div>
-
-    <div class="form-group" style="margin-bottom:16px;background:var(--surface2);border-radius:8px;padding:10px 12px;display:flex;align-items:center;justify-content:space-between">
-      <label style="margin:0;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em">Ongoing total P&amp;L (₹)</label>
-      <input type="number" id="b-total-pnl" value="0" style="text-align:right;background:none;border:none;font-size:14px;font-weight:600;color:var(--accent);width:140px;outline:none">
+      <!-- Now sits in the same grid, same size as other fields -->
+      <div class="form-group">
+        <label>Ongoing total P&amp;L (₹)</label>
+        <input type="number" id="b-total-pnl" value="0">
+      </div>
     </div>
 
     <div style="border-top:1px solid var(--border);margin-bottom:14px;padding-top:14px">
@@ -32,14 +40,14 @@
         <span style="font-size:12px;font-weight:600">Instruments</span>
         <button class="btn btn-sm" style="background:rgba(0,255,136,.1);border:1px solid rgba(0,255,136,.25);color:var(--accent);font-size:11px" onclick="addInstrumentRow()">+ Add instrument</button>
       </div>
-     <!-- <div style="display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr 1fr 28px;gap:8px;margin-bottom:4px">
-        <span style="font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Instrument</span>
-        <span style="font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Max lots</span>
-        <span style="font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">1 lot = qty</span>
-        <span style="font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Brokerage/lot ₹</span>
-        <span style="font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Broker symbol</span>
+      <div style="display:grid;grid-template-columns:2fr 1.3fr 0.9fr 1fr 0.9fr 20px;gap:8px;margin-bottom:6px;padding:0 12px">
+        <span style="font-size:9px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Instrument</span>
+        <span style="font-size:9px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Broker symbol</span>
+        <span style="font-size:9px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Lot qty</span>
+        <span style="font-size:9px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">₹/lot</span>
+        <span style="font-size:9px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Max lots</span>
         <span></span>
-      </div> -->
+      </div>
       <div id="broker-instruments-list"></div>
     </div>
 

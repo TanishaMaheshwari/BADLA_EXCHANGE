@@ -1,25 +1,35 @@
-
-  <div class="page" id="page-brokers">
-    <div class="dash-header">
-      <div class="dash-title">Broker Accounts</div>
-      <button class="btn-add-instr" onclick="openBrokerModal()">+ Add Broker</button>
-    </div>
-    <div class="pnl-bar" id="broker-summary" style="margin-bottom:16px"></div>
-    <div class="tbl-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th style="text-align:left">Broker</th>
-            <th style="text-align:left">Account ID</th>
-            <th>Profit share</th>
-            <th>P&amp;L</th>
-            <th>P&amp;L × share</th>
-            <th>Instruments</th>
-            <th class="broker-hide-tablet">Password</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody id="brokers-tbody"></tbody>
-      </table>
-    </div>
+<div class="page" id="page-brokers">
+  <div class="dash-header">
+    <div class="dash-title">Broker Accounts</div>
+    <button class="btn-add-instr" onclick="openBrokerModal()">+ Add Broker</button>
   </div>
+  <div class="pnl-bar" id="broker-summary" style="margin-bottom:16px"></div>
+  <div class="tbl-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align:left;cursor:pointer" onclick="sortBrokers('brokerName')">
+            Broker <span class="sort-arrow" id="sort-brokerName">⇅</span>
+          </th>
+          <th style="text-align:left">Account ID</th>
+          <th style="cursor:pointer" onclick="sortBrokers('exchangeType')">
+            Exchange <span class="sort-arrow" id="sort-exchangeType">⇅</span>
+          </th>
+          <th style="cursor:pointer" onclick="sortBrokers('profitShare')">
+            Profit share <span class="sort-arrow" id="sort-profitShare">⇅</span>
+          </th>
+          <th style="cursor:pointer" onclick="sortBrokers('totalPnl')">
+            P&amp;L <span class="sort-arrow" id="sort-totalPnl">⇅</span>
+          </th>
+          <th style="cursor:pointer" onclick="sortBrokers('pnlShare')">
+            P&amp;L × share <span class="sort-arrow" id="sort-pnlShare">⇅</span>
+          </th>
+          <th>Instruments</th>
+          <th class="broker-hide-tablet">Password</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="brokers-tbody"></tbody>
+    </table>
+  </div>
+</div>

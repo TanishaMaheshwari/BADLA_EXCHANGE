@@ -169,6 +169,11 @@ async function initDB() {
     db.exec(`DROP TABLE notifications_backup`);
   }
 
+  // ── broker_instruments: add total_pnl if missing ───────────────────────────
+  const biColNames5 = db.pragma('table_info(broker_instruments)').map(r => r.name);
+  if (!biColNames5.includes('total_pnl'))
+    db.exec("ALTER TABLE broker_instruments ADD COLUMN total_pnl REAL DEFAULT 0");
+
   console.log('New table migrations done');
 }
 
