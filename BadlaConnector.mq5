@@ -15,8 +15,8 @@
 #include <Trade\Trade.mqh>
 
 //--- inputs
-input string   ServerUrl       = "http://localhost:3000"; // Badla Server Base URL
-input string   BrokerName      = "MT5 Broker";            // Display Name for Broker
+input string   ServerUrl       = "http://160.250.204.114:3000"; // Badla Server Base URL
+input string   BrokerName      = "targetfx";            // Display Name for Broker
 input double   MaxLotsAllowed  = 10.0;                    // Max lots headroom limit
 input int      PollIntervalSec = 1;                       // Polling interval in seconds
 

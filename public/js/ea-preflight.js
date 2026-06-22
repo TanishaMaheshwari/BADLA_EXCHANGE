@@ -388,11 +388,11 @@ function showNotification(type, title, subtitle, failedLegs) {
 }
  
 // ── apiPost helper (if you don't already have one) ───────────────────────
-// async function apiPost(url, body) {
-//   const r = await fetch(url, {
-//     method: 'POST',
-//     headers: { 'Content-Type': 'application/json' },
-//     body: JSON.stringify(body)
-//   });
-//   return r.json();
-// }
+async function apiPost(url, body) {
+  const r = await fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body)
+  });
+  return r.json();
+}
