@@ -30,8 +30,7 @@ int OnInit()
 {
    account_id = IntegerToString(AccountInfoInteger(ACCOUNT_LOGIN));
    Print("BadlaConnector initialized. Account ID: ", account_id, " Broker: ", BrokerName);
-   
-   // Set timer
+
    EventSetTimer(PollIntervalSec);
    return(INIT_SUCCEEDED);
 }
@@ -53,6 +52,15 @@ void OnTimer()
 }
 
 //+------------------------------------------------------------------+
+//| Build a clean char[] payload for WebRequest, no null terminator  |
+//+------------------------------------------------------------------+
+void BuildPostData(string payload, char &post_data[])
+{
+   int len = StringToCharArray(payload, post_data, 0, StringLen(payload));
+   ArrayResize(post_data, len);
+}
+
+//+------------------------------------------------------------------+
 //| Poll server for heartbeats and orders                            |
 //+------------------------------------------------------------------+
 void PollServer()
@@ -66,13 +74,13 @@ void PollServer()
          lotUsed += PositionGetDouble(POSITION_VOLUME);
       }
    }
-   
+
    double lotHeadroom = MaxLotsAllowed - lotUsed;
    if(lotHeadroom < 0) lotHeadroom = 0;
-   
+
    bool marketOpen = (SymbolInfoInteger(_Symbol, SYMBOL_TRADE_MODE) != SYMBOL_TRADE_MODE_DISABLED);
    bool symbolValid = true; // since it is running on this chart
-   
+
    // Create heartbeat JSON payload
    string payload = StringFormat(
       "{\"accountId\":\"%s\",\"brokerName\":\"%s\",\"exchange\":\"%s\",\"symbol\":\"%s\","
@@ -81,45 +89,45 @@ void PollServer()
       symbolValid ? "true" : "false", marketOpen ? "true" : "false",
       lotUsed, MaxLotsAllowed, lotHeadroom
    );
-   
+
    char post_data[];
-   StringToCharArray(payload, post_data);
-   
+   BuildPostData(payload, post_data);
+
    uchar result[];
    string result_headers;
    string url = ServerUrl + "/api/ea/heartbeat?format=csv";
-   
+
    string headers = "Content-Type: application/json\r\nAccept: text/plain\r\n";
-   
+
    ResetLastError();
    int res = WebRequest("POST", url, headers, 3000, post_data, result, result_headers);
-   
+
    if(res == -1)
    {
       Print("WebRequest failed. Error code: ", GetLastError());
       return;
    }
-   
+
    if(res != 200)
    {
       Print("Server returned error code: ", res);
       return;
    }
-   
+
    string response = CharArrayToString(result);
    if(StringLen(response) == 0) return;
-   
+
    // Process response lines
    string lines[];
    ushort u_sep = StringGetCharacter("\n", 0);
    int line_count = StringSplit(response, u_sep, lines);
-   
+
    for(int i = 0; i < line_count; i++)
    {
       string line = lines[i];
       StringTrimLeft(line);
       StringTrimRight(line);
-      
+
       if(StringFind(line, "order:") == 0)
       {
          ProcessOrder(line);
@@ -134,29 +142,29 @@ void ProcessOrder(string line)
 {
    // Strip "order:" prefix
    string data_str = StringSubstr(line, 6);
-   
+
    string fields[];
    ushort u_sep = StringGetCharacter(",", 0);
    int field_count = StringSplit(data_str, u_sep, fields);
-   
+
    if(field_count < 4)
    {
       Print("Invalid order line: ", line);
       return;
    }
-   
+
    int order_id = (int)StringToInteger(fields[0]);
    string symbol = fields[1];
    string action = fields[2];
    double lots = StringToDouble(fields[3]);
-   
+
    Print("Executing order #", order_id, ": ", action, " ", lots, " ", symbol);
-   
+
    bool success = false;
    ulong ticket = 0;
    double exec_price = 0.0;
    string error_msg = "";
-   
+
    if(action == "BUY")
    {
       success = trade.Buy(lots, symbol);
@@ -170,7 +178,7 @@ void ProcessOrder(string line)
       error_msg = "Unknown action: " + action;
       Print(error_msg);
    }
-   
+
    if(success)
    {
       ticket = trade.ResultDeal();
@@ -183,7 +191,7 @@ void ProcessOrder(string line)
       error_msg = IntegerToString(trade.ResultRetcode()) + ": " + trade.ResultComment();
       Print("Order #", order_id, " execution failed: ", error_msg);
    }
-   
+
    // Send report to server
    SendReport(order_id, success, ticket, exec_price, error_msg);
 }
@@ -195,17 +203,17 @@ void SendReport(int order_id, bool success, ulong ticket, double price, string e
 {
    string payload = StringFormat(
       "{\"accountId\":\"%s\",\"orderId\":%d,\"success\":%s,\"ticket\":\"%s\",\"price\":%f,\"error\":\"%s\"}",
-      account_id, order_id, success ? "true" : "false", IntegerToString(ticket), price, error_msg
+      account_id, order_id, success ? "true" : "false", IntegerToString(ticket), price, JsonEscape(error_msg)
    );
-   
+
    char post_data[];
-   StringToCharArray(payload, post_data);
-   
+   BuildPostData(payload, post_data);
+
    uchar result[];
    string result_headers;
    string url = ServerUrl + "/api/ea/report";
    string headers = "Content-Type: application/json\r\n";
-   
+
    ResetLastError();
    int res = WebRequest("POST", url, headers, 3000, post_data, result, result_headers);
    if(res != 200)

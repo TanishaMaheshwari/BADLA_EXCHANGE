@@ -145,21 +145,23 @@ router.post('/ea/check', requireAuth, (req, res) => {
 
   if (dealId) {
     const deal = dbGet('SELECT * FROM deals WHERE id = ?', [parseInt(dealId)]);
+
     if (deal) {
-      dealValidation = [];
+      const legs = [];
 
       const mcx = validateLeg(deal, 'MCX', deal.mcx_broker_id, deal.mcx_qty);
-      if (!mcx.skip) dealValidation.push(mcx);
+      if (!mcx.skip) legs.push(mcx);
 
       const comex = validateLeg(deal, 'COMEX', deal.comex_broker_id, deal.comex_qty);
-      if (!comex.skip) dealValidation.push(comex);
+      if (!comex.skip) legs.push(comex);
 
       if (deal.dgcx_enabled) {
         const dgcx = validateLeg(deal, 'DGCX', deal.dgcx_broker_id, deal.dgcx_qty);
-        if (!dgcx.skip) dealValidation.push(dgcx);
+        if (!dgcx.skip) legs.push(dgcx);
       }
 
-      allReady = dealValidation.every(l => l.ok);
+      dealValidation = legs;
+      allReady = legs.every(l => l.ok);   // override: use deal legs, not all EAs
     }
   }
 

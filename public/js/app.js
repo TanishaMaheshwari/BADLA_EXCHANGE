@@ -151,7 +151,7 @@ function connectWS() {
       // document.getElementById('update-count').textContent=`${updateCount} ticks`;
       document.getElementById('last-update').textContent=new Date().toLocaleTimeString();
       renderPriceRow(msg.data);
-      updateDashCard(msg.data,prev); updateDealsLivePnl(); checkDealPnlAlerts(); checkAlerts(msg.data);
+      updateDashCard(msg.data,prev); updateDealsLivePnl(); checkAlerts(msg.data);
     } else if (msg.type==='order_triggered') {
       const o = orders.find(x=>x.id===msg.orderId);
       showToast('⚡ Order Triggered', `${msg.instrument} order #${msg.orderId} triggered → sending to MT5`, 'order', 5000);

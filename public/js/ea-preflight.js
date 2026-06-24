@@ -146,7 +146,7 @@ function renderDealValidation(legs) {
         indicator.style.borderTop = '1px solid #1e2530';
         indicator.innerHTML = `
           <span class="label">For this deal</span>
-          <span class="value ${leg.ready ? 'ok' : 'bad'}">${leg.ready ? `✓ ${leg.qty} lots` : leg.reason}</span>`;
+          <span class="value ${leg.ok ? 'ok' : 'bad'}">${leg.ok ? `✓ ${leg.qty} lots` : leg.reason}</span>`;
         card.querySelector('.ea-leg-rows').appendChild(indicator);
       }
     });
@@ -180,7 +180,7 @@ function refreshCommitButton() {
  
   // If deal has specific validation, use that
   const dealOk = eaCheckData?.dealValidation
-    ? eaCheckData.dealValidation.every(l => l.ready)
+    ? eaCheckData.dealValidation.every(l => l.ok)
     : allReady;
  
   const armed = allReady && hasDeal && dealOk;
