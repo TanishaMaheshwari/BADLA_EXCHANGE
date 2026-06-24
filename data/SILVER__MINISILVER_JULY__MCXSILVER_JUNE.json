@@ -1,23 +1,3037 @@
 {
-    "2026-06-22 10:55:41": {
-        "timestamp": "2026-06-22 10:55:41",
+    "2026-06-23 16:54:48": {
+        "timestamp": "2026-06-23 16:54:48",
         "instrument_id": "697c47bdd64a70878cc02b0d",
         "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
-        "computed_value": 235950.0,
+        "computed_value": 227361.0,
         "prices": {
-            "20446366594": 235950.0,
-            "80517313346": 239525.0,
+            "20446366594": 227361.0,
+            "80517313346": 231959.0,
             "44439": null
         }
     },
-    "2026-06-22 11:11:05": {
-        "timestamp": "2026-06-22 11:11:05",
+    "2026-06-23 16:54:53": {
+        "timestamp": "2026-06-23 16:54:53",
         "instrument_id": "697c47bdd64a70878cc02b0d",
         "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
-        "computed_value": 235950.0,
+        "computed_value": 227361.0,
         "prices": {
-            "20446366594": 235950.0,
-            "80517313346": 239525.0,
+            "20446366594": 227361.0,
+            "80517313346": 231959.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:54:58": {
+        "timestamp": "2026-06-23 16:54:58",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227361.0,
+        "prices": {
+            "20446366594": 227361.0,
+            "80517313346": 231959.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:55:03": {
+        "timestamp": "2026-06-23 16:55:03",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227361.0,
+        "prices": {
+            "20446366594": 227361.0,
+            "80517313346": 231959.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:55:08": {
+        "timestamp": "2026-06-23 16:55:08",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227361.0,
+        "prices": {
+            "20446366594": 227361.0,
+            "80517313346": 231959.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:55:14": {
+        "timestamp": "2026-06-23 16:55:14",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227361.0,
+        "prices": {
+            "20446366594": 227361.0,
+            "80517313346": 231959.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:55:19": {
+        "timestamp": "2026-06-23 16:55:19",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227361.0,
+        "prices": {
+            "20446366594": 227361.0,
+            "80517313346": 231959.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:55:24": {
+        "timestamp": "2026-06-23 16:55:24",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227580.0,
+        "prices": {
+            "20446366594": 227580.0,
+            "80517313346": 231605.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:55:29": {
+        "timestamp": "2026-06-23 16:55:29",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227579.0,
+        "prices": {
+            "20446366594": 227579.0,
+            "80517313346": 231700.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:55:34": {
+        "timestamp": "2026-06-23 16:55:34",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227702.0,
+        "prices": {
+            "20446366594": 227702.0,
+            "80517313346": 231809.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:55:39": {
+        "timestamp": "2026-06-23 16:55:39",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227702.0,
+        "prices": {
+            "20446366594": 227702.0,
+            "80517313346": 231800.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:55:40": {
+        "timestamp": "2026-06-23 16:55:40",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227702.0,
+        "prices": {
+            "20446366594": 227702.0,
+            "80517313346": 231800.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:55:44": {
+        "timestamp": "2026-06-23 16:55:44",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227702.0,
+        "prices": {
+            "20446366594": 227702.0,
+            "80517313346": 231800.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:55:45": {
+        "timestamp": "2026-06-23 16:55:45",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227702.0,
+        "prices": {
+            "20446366594": 227702.0,
+            "80517313346": 231800.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:55:50": {
+        "timestamp": "2026-06-23 16:55:50",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227702.0,
+        "prices": {
+            "20446366594": 227702.0,
+            "80517313346": 231819.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:55:55": {
+        "timestamp": "2026-06-23 16:55:55",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227702.0,
+        "prices": {
+            "20446366594": 227702.0,
+            "80517313346": 231819.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:56:00": {
+        "timestamp": "2026-06-23 16:56:00",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227702.0,
+        "prices": {
+            "20446366594": 227702.0,
+            "80517313346": 231650.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:56:05": {
+        "timestamp": "2026-06-23 16:56:05",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227702.0,
+        "prices": {
+            "20446366594": 227702.0,
+            "80517313346": 231763.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:56:06": {
+        "timestamp": "2026-06-23 16:56:06",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227702.0,
+        "prices": {
+            "20446366594": 227702.0,
+            "80517313346": 231763.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:56:10": {
+        "timestamp": "2026-06-23 16:56:10",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227702.0,
+        "prices": {
+            "20446366594": 227702.0,
+            "80517313346": 231799.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:56:11": {
+        "timestamp": "2026-06-23 16:56:11",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227702.0,
+        "prices": {
+            "20446366594": 227702.0,
+            "80517313346": 231799.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:56:15": {
+        "timestamp": "2026-06-23 16:56:15",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227573.0,
+        "prices": {
+            "20446366594": 227573.0,
+            "80517313346": 231800.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:56:16": {
+        "timestamp": "2026-06-23 16:56:16",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227573.0,
+        "prices": {
+            "20446366594": 227573.0,
+            "80517313346": 231800.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:56:21": {
+        "timestamp": "2026-06-23 16:56:21",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227573.0,
+        "prices": {
+            "20446366594": 227573.0,
+            "80517313346": 231819.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:56:26": {
+        "timestamp": "2026-06-23 16:56:26",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231754.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:56:31": {
+        "timestamp": "2026-06-23 16:56:31",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231754.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:56:32": {
+        "timestamp": "2026-06-23 16:56:32",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231754.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:56:36": {
+        "timestamp": "2026-06-23 16:56:36",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231754.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:56:37": {
+        "timestamp": "2026-06-23 16:56:37",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231754.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:56:41": {
+        "timestamp": "2026-06-23 16:56:41",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231754.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:56:42": {
+        "timestamp": "2026-06-23 16:56:42",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231754.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:56:46": {
+        "timestamp": "2026-06-23 16:56:46",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231754.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:56:47": {
+        "timestamp": "2026-06-23 16:56:47",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231754.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:56:52": {
+        "timestamp": "2026-06-23 16:56:52",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231747.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:56:57": {
+        "timestamp": "2026-06-23 16:56:57",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231748.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:56:58": {
+        "timestamp": "2026-06-23 16:56:58",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231748.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:02": {
+        "timestamp": "2026-06-23 16:57:02",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231748.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:03": {
+        "timestamp": "2026-06-23 16:57:03",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231748.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:07": {
+        "timestamp": "2026-06-23 16:57:07",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231748.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:08": {
+        "timestamp": "2026-06-23 16:57:08",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231748.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:12": {
+        "timestamp": "2026-06-23 16:57:12",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231699.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:13": {
+        "timestamp": "2026-06-23 16:57:13",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231699.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:18": {
+        "timestamp": "2026-06-23 16:57:18",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231677.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:23": {
+        "timestamp": "2026-06-23 16:57:23",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231677.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:28": {
+        "timestamp": "2026-06-23 16:57:28",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231643.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:29": {
+        "timestamp": "2026-06-23 16:57:29",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231643.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:33": {
+        "timestamp": "2026-06-23 16:57:33",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231643.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:34": {
+        "timestamp": "2026-06-23 16:57:34",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231643.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:38": {
+        "timestamp": "2026-06-23 16:57:38",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231643.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:39": {
+        "timestamp": "2026-06-23 16:57:39",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231643.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:43": {
+        "timestamp": "2026-06-23 16:57:43",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231643.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:44": {
+        "timestamp": "2026-06-23 16:57:44",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231643.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:48": {
+        "timestamp": "2026-06-23 16:57:48",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231527.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:50": {
+        "timestamp": "2026-06-23 16:57:50",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231527.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:54": {
+        "timestamp": "2026-06-23 16:57:54",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231527.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:55": {
+        "timestamp": "2026-06-23 16:57:55",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231527.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:57:59": {
+        "timestamp": "2026-06-23 16:57:59",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231527.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:00": {
+        "timestamp": "2026-06-23 16:58:00",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231527.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:04": {
+        "timestamp": "2026-06-23 16:58:04",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231527.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:05": {
+        "timestamp": "2026-06-23 16:58:05",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231527.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:09": {
+        "timestamp": "2026-06-23 16:58:09",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227621.0,
+        "prices": {
+            "20446366594": 227621.0,
+            "80517313346": 231527.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:10": {
+        "timestamp": "2026-06-23 16:58:10",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227300.0,
+        "prices": {
+            "20446366594": 227300.0,
+            "80517313346": 231527.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:14": {
+        "timestamp": "2026-06-23 16:58:14",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227300.0,
+        "prices": {
+            "20446366594": 227300.0,
+            "80517313346": 231500.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:16": {
+        "timestamp": "2026-06-23 16:58:16",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227300.0,
+        "prices": {
+            "20446366594": 227300.0,
+            "80517313346": 231500.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:20": {
+        "timestamp": "2026-06-23 16:58:20",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227300.0,
+        "prices": {
+            "20446366594": 227300.0,
+            "80517313346": 231498.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:21": {
+        "timestamp": "2026-06-23 16:58:21",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227300.0,
+        "prices": {
+            "20446366594": 227300.0,
+            "80517313346": 231498.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:25": {
+        "timestamp": "2026-06-23 16:58:25",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227300.0,
+        "prices": {
+            "20446366594": 227300.0,
+            "80517313346": 231499.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:26": {
+        "timestamp": "2026-06-23 16:58:26",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227300.0,
+        "prices": {
+            "20446366594": 227300.0,
+            "80517313346": 231499.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:30": {
+        "timestamp": "2026-06-23 16:58:30",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227300.0,
+        "prices": {
+            "20446366594": 227300.0,
+            "80517313346": 231499.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:31": {
+        "timestamp": "2026-06-23 16:58:31",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227300.0,
+        "prices": {
+            "20446366594": 227300.0,
+            "80517313346": 231499.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:35": {
+        "timestamp": "2026-06-23 16:58:35",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227300.0,
+        "prices": {
+            "20446366594": 227300.0,
+            "80517313346": 231499.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:36": {
+        "timestamp": "2026-06-23 16:58:36",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227300.0,
+        "prices": {
+            "20446366594": 227300.0,
+            "80517313346": 231499.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:40": {
+        "timestamp": "2026-06-23 16:58:40",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227300.0,
+        "prices": {
+            "20446366594": 227300.0,
+            "80517313346": 231544.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:42": {
+        "timestamp": "2026-06-23 16:58:42",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227284.0,
+        "prices": {
+            "20446366594": 227284.0,
+            "80517313346": 231479.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:46": {
+        "timestamp": "2026-06-23 16:58:46",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227300.0,
+        "prices": {
+            "20446366594": 227300.0,
+            "80517313346": 231545.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:47": {
+        "timestamp": "2026-06-23 16:58:47",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227300.0,
+        "prices": {
+            "20446366594": 227300.0,
+            "80517313346": 231545.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:51": {
+        "timestamp": "2026-06-23 16:58:51",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227300.0,
+        "prices": {
+            "20446366594": 227300.0,
+            "80517313346": 231461.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:52": {
+        "timestamp": "2026-06-23 16:58:52",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227300.0,
+        "prices": {
+            "20446366594": 227300.0,
+            "80517313346": 231461.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:56": {
+        "timestamp": "2026-06-23 16:58:56",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227298.0,
+        "prices": {
+            "20446366594": 227298.0,
+            "80517313346": 231461.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:58:58": {
+        "timestamp": "2026-06-23 16:58:58",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227298.0,
+        "prices": {
+            "20446366594": 227298.0,
+            "80517313346": 231461.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:01": {
+        "timestamp": "2026-06-23 16:59:01",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227298.0,
+        "prices": {
+            "20446366594": 227298.0,
+            "80517313346": 231461.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:03": {
+        "timestamp": "2026-06-23 16:59:03",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227298.0,
+        "prices": {
+            "20446366594": 227298.0,
+            "80517313346": 231416.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:06": {
+        "timestamp": "2026-06-23 16:59:06",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227298.0,
+        "prices": {
+            "20446366594": 227298.0,
+            "80517313346": 231350.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:08": {
+        "timestamp": "2026-06-23 16:59:08",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227298.0,
+        "prices": {
+            "20446366594": 227298.0,
+            "80517313346": 231350.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:11": {
+        "timestamp": "2026-06-23 16:59:11",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227170.0,
+        "prices": {
+            "20446366594": 227170.0,
+            "80517313346": 231301.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:13": {
+        "timestamp": "2026-06-23 16:59:13",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227170.0,
+        "prices": {
+            "20446366594": 227170.0,
+            "80517313346": 231301.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:17": {
+        "timestamp": "2026-06-23 16:59:17",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227170.0,
+        "prices": {
+            "20446366594": 227170.0,
+            "80517313346": 231350.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:18": {
+        "timestamp": "2026-06-23 16:59:18",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227170.0,
+        "prices": {
+            "20446366594": 227170.0,
+            "80517313346": 231350.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:22": {
+        "timestamp": "2026-06-23 16:59:22",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227170.0,
+        "prices": {
+            "20446366594": 227170.0,
+            "80517313346": 231364.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:23": {
+        "timestamp": "2026-06-23 16:59:23",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227170.0,
+        "prices": {
+            "20446366594": 227170.0,
+            "80517313346": 231364.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:24": {
+        "timestamp": "2026-06-23 16:59:24",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227170.0,
+        "prices": {
+            "20446366594": 227170.0,
+            "80517313346": 231364.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:27": {
+        "timestamp": "2026-06-23 16:59:27",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227170.0,
+        "prices": {
+            "20446366594": 227170.0,
+            "80517313346": 231298.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:29": {
+        "timestamp": "2026-06-23 16:59:29",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227170.0,
+        "prices": {
+            "20446366594": 227170.0,
+            "80517313346": 231298.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:32": {
+        "timestamp": "2026-06-23 16:59:32",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227170.0,
+        "prices": {
+            "20446366594": 227170.0,
+            "80517313346": 231298.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:34": {
+        "timestamp": "2026-06-23 16:59:34",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227170.0,
+        "prices": {
+            "20446366594": 227170.0,
+            "80517313346": 231298.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:37": {
+        "timestamp": "2026-06-23 16:59:37",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227170.0,
+        "prices": {
+            "20446366594": 227170.0,
+            "80517313346": 231250.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:39": {
+        "timestamp": "2026-06-23 16:59:39",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231200.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:43": {
+        "timestamp": "2026-06-23 16:59:43",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231222.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:45": {
+        "timestamp": "2026-06-23 16:59:45",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231173.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:48": {
+        "timestamp": "2026-06-23 16:59:48",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231203.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:50": {
+        "timestamp": "2026-06-23 16:59:50",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231203.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:51": {
+        "timestamp": "2026-06-23 16:59:51",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231203.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:53": {
+        "timestamp": "2026-06-23 16:59:53",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231203.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:56": {
+        "timestamp": "2026-06-23 16:59:56",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231269.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 16:59:58": {
+        "timestamp": "2026-06-23 16:59:58",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231269.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:01": {
+        "timestamp": "2026-06-23 17:00:01",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231269.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:03": {
+        "timestamp": "2026-06-23 17:00:03",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231269.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:06": {
+        "timestamp": "2026-06-23 17:00:06",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231269.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:09": {
+        "timestamp": "2026-06-23 17:00:09",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231269.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:11": {
+        "timestamp": "2026-06-23 17:00:11",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231269.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:14": {
+        "timestamp": "2026-06-23 17:00:14",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231269.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:16": {
+        "timestamp": "2026-06-23 17:00:16",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231269.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:19": {
+        "timestamp": "2026-06-23 17:00:19",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231269.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:22": {
+        "timestamp": "2026-06-23 17:00:22",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231271.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:24": {
+        "timestamp": "2026-06-23 17:00:24",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231271.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:27": {
+        "timestamp": "2026-06-23 17:00:27",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231271.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:29": {
+        "timestamp": "2026-06-23 17:00:29",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231271.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:32": {
+        "timestamp": "2026-06-23 17:00:32",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231269.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:35": {
+        "timestamp": "2026-06-23 17:00:35",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227054.0,
+        "prices": {
+            "20446366594": 227054.0,
+            "80517313346": 231269.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:37": {
+        "timestamp": "2026-06-23 17:00:37",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227100.0,
+        "prices": {
+            "20446366594": 227100.0,
+            "80517313346": 231269.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:40": {
+        "timestamp": "2026-06-23 17:00:40",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227100.0,
+        "prices": {
+            "20446366594": 227100.0,
+            "80517313346": 231269.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:43": {
+        "timestamp": "2026-06-23 17:00:43",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227100.0,
+        "prices": {
+            "20446366594": 227100.0,
+            "80517313346": 231269.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:45": {
+        "timestamp": "2026-06-23 17:00:45",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227100.0,
+        "prices": {
+            "20446366594": 227100.0,
+            "80517313346": 231269.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:48": {
+        "timestamp": "2026-06-23 17:00:48",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227100.0,
+        "prices": {
+            "20446366594": 227100.0,
+            "80517313346": 231269.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:50": {
+        "timestamp": "2026-06-23 17:00:50",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227100.0,
+        "prices": {
+            "20446366594": 227100.0,
+            "80517313346": 231192.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:53": {
+        "timestamp": "2026-06-23 17:00:53",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227100.0,
+        "prices": {
+            "20446366594": 227100.0,
+            "80517313346": 231192.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:55": {
+        "timestamp": "2026-06-23 17:00:55",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227100.0,
+        "prices": {
+            "20446366594": 227100.0,
+            "80517313346": 231198.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:00:58": {
+        "timestamp": "2026-06-23 17:00:58",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227100.0,
+        "prices": {
+            "20446366594": 227100.0,
+            "80517313346": 231322.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:00": {
+        "timestamp": "2026-06-23 17:01:00",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227100.0,
+        "prices": {
+            "20446366594": 227100.0,
+            "80517313346": 231322.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:03": {
+        "timestamp": "2026-06-23 17:01:03",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227100.0,
+        "prices": {
+            "20446366594": 227100.0,
+            "80517313346": 231174.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:04": {
+        "timestamp": "2026-06-23 17:01:04",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227100.0,
+        "prices": {
+            "20446366594": 227100.0,
+            "80517313346": 231174.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:06": {
+        "timestamp": "2026-06-23 17:01:06",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227100.0,
+        "prices": {
+            "20446366594": 227100.0,
+            "80517313346": 231158.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:09": {
+        "timestamp": "2026-06-23 17:01:09",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227100.0,
+        "prices": {
+            "20446366594": 227100.0,
+            "80517313346": 231203.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:11": {
+        "timestamp": "2026-06-23 17:01:11",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227100.0,
+        "prices": {
+            "20446366594": 227100.0,
+            "80517313346": 231147.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:14": {
+        "timestamp": "2026-06-23 17:01:14",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227192.0,
+        "prices": {
+            "20446366594": 227192.0,
+            "80517313346": 231147.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:16": {
+        "timestamp": "2026-06-23 17:01:16",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227192.0,
+        "prices": {
+            "20446366594": 227192.0,
+            "80517313346": 231147.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:19": {
+        "timestamp": "2026-06-23 17:01:19",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227192.0,
+        "prices": {
+            "20446366594": 227192.0,
+            "80517313346": 231122.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:21": {
+        "timestamp": "2026-06-23 17:01:21",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227192.0,
+        "prices": {
+            "20446366594": 227192.0,
+            "80517313346": 231122.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:24": {
+        "timestamp": "2026-06-23 17:01:24",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227192.0,
+        "prices": {
+            "20446366594": 227192.0,
+            "80517313346": 231127.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:26": {
+        "timestamp": "2026-06-23 17:01:26",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227192.0,
+        "prices": {
+            "20446366594": 227192.0,
+            "80517313346": 231155.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:30": {
+        "timestamp": "2026-06-23 17:01:30",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227192.0,
+        "prices": {
+            "20446366594": 227192.0,
+            "80517313346": 231155.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:31": {
+        "timestamp": "2026-06-23 17:01:31",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227192.0,
+        "prices": {
+            "20446366594": 227192.0,
+            "80517313346": 231155.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:35": {
+        "timestamp": "2026-06-23 17:01:35",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227192.0,
+        "prices": {
+            "20446366594": 227192.0,
+            "80517313346": 231155.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:37": {
+        "timestamp": "2026-06-23 17:01:37",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227192.0,
+        "prices": {
+            "20446366594": 227192.0,
+            "80517313346": 231122.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:40": {
+        "timestamp": "2026-06-23 17:01:40",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227192.0,
+        "prices": {
+            "20446366594": 227192.0,
+            "80517313346": 231221.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:42": {
+        "timestamp": "2026-06-23 17:01:42",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227192.0,
+        "prices": {
+            "20446366594": 227192.0,
+            "80517313346": 231221.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:45": {
+        "timestamp": "2026-06-23 17:01:45",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227192.0,
+        "prices": {
+            "20446366594": 227192.0,
+            "80517313346": 231201.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:47": {
+        "timestamp": "2026-06-23 17:01:47",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227192.0,
+        "prices": {
+            "20446366594": 227192.0,
+            "80517313346": 231201.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:50": {
+        "timestamp": "2026-06-23 17:01:50",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227192.0,
+        "prices": {
+            "20446366594": 227192.0,
+            "80517313346": 231201.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:52": {
+        "timestamp": "2026-06-23 17:01:52",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227192.0,
+        "prices": {
+            "20446366594": 227192.0,
+            "80517313346": 231221.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:56": {
+        "timestamp": "2026-06-23 17:01:56",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227192.0,
+        "prices": {
+            "20446366594": 227192.0,
+            "80517313346": 231221.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:01:57": {
+        "timestamp": "2026-06-23 17:01:57",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227192.0,
+        "prices": {
+            "20446366594": 227192.0,
+            "80517313346": 231221.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:01": {
+        "timestamp": "2026-06-23 17:02:01",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227059.0,
+        "prices": {
+            "20446366594": 227059.0,
+            "80517313346": 231221.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:03": {
+        "timestamp": "2026-06-23 17:02:03",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227059.0,
+        "prices": {
+            "20446366594": 227059.0,
+            "80517313346": 231188.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:06": {
+        "timestamp": "2026-06-23 17:02:06",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227059.0,
+        "prices": {
+            "20446366594": 227059.0,
+            "80517313346": 231188.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:08": {
+        "timestamp": "2026-06-23 17:02:08",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227059.0,
+        "prices": {
+            "20446366594": 227059.0,
+            "80517313346": 231188.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:11": {
+        "timestamp": "2026-06-23 17:02:11",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227059.0,
+        "prices": {
+            "20446366594": 227059.0,
+            "80517313346": 231188.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:13": {
+        "timestamp": "2026-06-23 17:02:13",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227059.0,
+        "prices": {
+            "20446366594": 227059.0,
+            "80517313346": 231188.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:16": {
+        "timestamp": "2026-06-23 17:02:16",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227059.0,
+        "prices": {
+            "20446366594": 227059.0,
+            "80517313346": 231300.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:18": {
+        "timestamp": "2026-06-23 17:02:18",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227059.0,
+        "prices": {
+            "20446366594": 227059.0,
+            "80517313346": 231314.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:21": {
+        "timestamp": "2026-06-23 17:02:21",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227300.0,
+        "prices": {
+            "20446366594": 227300.0,
+            "80517313346": 231300.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:23": {
+        "timestamp": "2026-06-23 17:02:23",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227300.0,
+        "prices": {
+            "20446366594": 227300.0,
+            "80517313346": 231300.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:27": {
+        "timestamp": "2026-06-23 17:02:27",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227300.0,
+        "prices": {
+            "20446366594": 227300.0,
+            "80517313346": 231321.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:28": {
+        "timestamp": "2026-06-23 17:02:28",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227300.0,
+        "prices": {
+            "20446366594": 227300.0,
+            "80517313346": 231333.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:32": {
+        "timestamp": "2026-06-23 17:02:32",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227381.0,
+        "prices": {
+            "20446366594": 227381.0,
+            "80517313346": 231382.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:34": {
+        "timestamp": "2026-06-23 17:02:34",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227381.0,
+        "prices": {
+            "20446366594": 227381.0,
+            "80517313346": 231382.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:37": {
+        "timestamp": "2026-06-23 17:02:37",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227381.0,
+        "prices": {
+            "20446366594": 227381.0,
+            "80517313346": 231466.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:39": {
+        "timestamp": "2026-06-23 17:02:39",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227381.0,
+        "prices": {
+            "20446366594": 227381.0,
+            "80517313346": 231466.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:42": {
+        "timestamp": "2026-06-23 17:02:42",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227494.0,
+        "prices": {
+            "20446366594": 227494.0,
+            "80517313346": 231466.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:44": {
+        "timestamp": "2026-06-23 17:02:44",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227494.0,
+        "prices": {
+            "20446366594": 227494.0,
+            "80517313346": 231466.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:47": {
+        "timestamp": "2026-06-23 17:02:47",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227494.0,
+        "prices": {
+            "20446366594": 227494.0,
+            "80517313346": 231397.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:49": {
+        "timestamp": "2026-06-23 17:02:49",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227494.0,
+        "prices": {
+            "20446366594": 227494.0,
+            "80517313346": 231477.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:52": {
+        "timestamp": "2026-06-23 17:02:52",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227494.0,
+        "prices": {
+            "20446366594": 227494.0,
+            "80517313346": 231401.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:54": {
+        "timestamp": "2026-06-23 17:02:54",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227494.0,
+        "prices": {
+            "20446366594": 227494.0,
+            "80517313346": 231401.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:58": {
+        "timestamp": "2026-06-23 17:02:58",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227494.0,
+        "prices": {
+            "20446366594": 227494.0,
+            "80517313346": 231401.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:02:59": {
+        "timestamp": "2026-06-23 17:02:59",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227494.0,
+        "prices": {
+            "20446366594": 227494.0,
+            "80517313346": 231401.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:03:03": {
+        "timestamp": "2026-06-23 17:03:03",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227494.0,
+        "prices": {
+            "20446366594": 227494.0,
+            "80517313346": 231401.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:03:05": {
+        "timestamp": "2026-06-23 17:03:05",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227494.0,
+        "prices": {
+            "20446366594": 227494.0,
+            "80517313346": 231401.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:03:08": {
+        "timestamp": "2026-06-23 17:03:08",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227494.0,
+        "prices": {
+            "20446366594": 227494.0,
+            "80517313346": 231342.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:03:10": {
+        "timestamp": "2026-06-23 17:03:10",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227494.0,
+        "prices": {
+            "20446366594": 227494.0,
+            "80517313346": 231342.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:03:13": {
+        "timestamp": "2026-06-23 17:03:13",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231400.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:03:15": {
+        "timestamp": "2026-06-23 17:03:15",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231450.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:03:19": {
+        "timestamp": "2026-06-23 17:03:19",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231450.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:03:20": {
+        "timestamp": "2026-06-23 17:03:20",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231450.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:03:24": {
+        "timestamp": "2026-06-23 17:03:24",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231396.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:03:25": {
+        "timestamp": "2026-06-23 17:03:25",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231396.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:03:29": {
+        "timestamp": "2026-06-23 17:03:29",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231396.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:03:30": {
+        "timestamp": "2026-06-23 17:03:30",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231396.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:03:34": {
+        "timestamp": "2026-06-23 17:03:34",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231396.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:03:36": {
+        "timestamp": "2026-06-23 17:03:36",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231396.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:03:41": {
+        "timestamp": "2026-06-23 17:03:41",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231400.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:03:46": {
+        "timestamp": "2026-06-23 17:03:46",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231350.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:03:51": {
+        "timestamp": "2026-06-23 17:03:51",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231350.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:03:52": {
+        "timestamp": "2026-06-23 17:03:52",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231350.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:03:56": {
+        "timestamp": "2026-06-23 17:03:56",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231350.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:03:57": {
+        "timestamp": "2026-06-23 17:03:57",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231350.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:04:30": {
+        "timestamp": "2026-06-23 17:04:30",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231300.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:04:31": {
+        "timestamp": "2026-06-23 17:04:31",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231300.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:04:35": {
+        "timestamp": "2026-06-23 17:04:35",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231300.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:04:41": {
+        "timestamp": "2026-06-23 17:04:41",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231300.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:04:45": {
+        "timestamp": "2026-06-23 17:04:45",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231300.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:04:46": {
+        "timestamp": "2026-06-23 17:04:46",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231300.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:04:51": {
+        "timestamp": "2026-06-23 17:04:51",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231300.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:04:52": {
+        "timestamp": "2026-06-23 17:04:52",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227378.0,
+        "prices": {
+            "20446366594": 227378.0,
+            "80517313346": 231300.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:04:56": {
+        "timestamp": "2026-06-23 17:04:56",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227174.0,
+        "prices": {
+            "20446366594": 227174.0,
+            "80517313346": 231171.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:05:02": {
+        "timestamp": "2026-06-23 17:05:02",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227174.0,
+        "prices": {
+            "20446366594": 227174.0,
+            "80517313346": 231176.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:05:08": {
+        "timestamp": "2026-06-23 17:05:08",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227174.0,
+        "prices": {
+            "20446366594": 227174.0,
+            "80517313346": 231176.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:05:13": {
+        "timestamp": "2026-06-23 17:05:13",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227174.0,
+        "prices": {
+            "20446366594": 227174.0,
+            "80517313346": 231194.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:05:18": {
+        "timestamp": "2026-06-23 17:05:18",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227174.0,
+        "prices": {
+            "20446366594": 227174.0,
+            "80517313346": 231169.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:05:23": {
+        "timestamp": "2026-06-23 17:05:23",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227151.0,
+        "prices": {
+            "20446366594": 227151.0,
+            "80517313346": 231107.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:20:28": {
+        "timestamp": "2026-06-23 17:20:28",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227151.0,
+        "prices": {
+            "20446366594": 227151.0,
+            "80517313346": 231169.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:20:34": {
+        "timestamp": "2026-06-23 17:20:34",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227151.0,
+        "prices": {
+            "20446366594": 227151.0,
+            "80517313346": 231169.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:20:39": {
+        "timestamp": "2026-06-23 17:20:39",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227151.0,
+        "prices": {
+            "20446366594": 227151.0,
+            "80517313346": 231169.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:20:44": {
+        "timestamp": "2026-06-23 17:20:44",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227151.0,
+        "prices": {
+            "20446366594": 227151.0,
+            "80517313346": 231169.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:20:49": {
+        "timestamp": "2026-06-23 17:20:49",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227151.0,
+        "prices": {
+            "20446366594": 227151.0,
+            "80517313346": 231169.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:20:54": {
+        "timestamp": "2026-06-23 17:20:54",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227151.0,
+        "prices": {
+            "20446366594": 227151.0,
+            "80517313346": 231169.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:21:00": {
+        "timestamp": "2026-06-23 17:21:00",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227151.0,
+        "prices": {
+            "20446366594": 227151.0,
+            "80517313346": 231169.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:21:05": {
+        "timestamp": "2026-06-23 17:21:05",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227151.0,
+        "prices": {
+            "20446366594": 227151.0,
+            "80517313346": 231169.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:21:10": {
+        "timestamp": "2026-06-23 17:21:10",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227151.0,
+        "prices": {
+            "20446366594": 227151.0,
+            "80517313346": 231169.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:21:15": {
+        "timestamp": "2026-06-23 17:21:15",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227151.0,
+        "prices": {
+            "20446366594": 227151.0,
+            "80517313346": 231169.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:21:20": {
+        "timestamp": "2026-06-23 17:21:20",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227151.0,
+        "prices": {
+            "20446366594": 227151.0,
+            "80517313346": 231169.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:21:26": {
+        "timestamp": "2026-06-23 17:21:26",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227151.0,
+        "prices": {
+            "20446366594": 227151.0,
+            "80517313346": 231169.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:21:31": {
+        "timestamp": "2026-06-23 17:21:31",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227151.0,
+        "prices": {
+            "20446366594": 227151.0,
+            "80517313346": 231169.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:21:36": {
+        "timestamp": "2026-06-23 17:21:36",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227151.0,
+        "prices": {
+            "20446366594": 227151.0,
+            "80517313346": 231169.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:21:41": {
+        "timestamp": "2026-06-23 17:21:41",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227151.0,
+        "prices": {
+            "20446366594": 227151.0,
+            "80517313346": 231169.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:21:46": {
+        "timestamp": "2026-06-23 17:21:46",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227151.0,
+        "prices": {
+            "20446366594": 227151.0,
+            "80517313346": 231169.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:21:52": {
+        "timestamp": "2026-06-23 17:21:52",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227151.0,
+        "prices": {
+            "20446366594": 227151.0,
+            "80517313346": 231169.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:31:11": {
+        "timestamp": "2026-06-23 17:31:11",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 226969.0,
+        "prices": {
+            "20446366594": 226969.0,
+            "80517313346": 231075.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:31:17": {
+        "timestamp": "2026-06-23 17:31:17",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 226969.0,
+        "prices": {
+            "20446366594": 226969.0,
+            "80517313346": 231075.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 17:47:31": {
+        "timestamp": "2026-06-23 17:47:31",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 226969.0,
+        "prices": {
+            "20446366594": 226969.0,
+            "80517313346": 231075.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 18:02:52": {
+        "timestamp": "2026-06-23 18:02:52",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 226985.0,
+        "prices": {
+            "20446366594": 226985.0,
+            "80517313346": 231036.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 18:02:57": {
+        "timestamp": "2026-06-23 18:02:57",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 226985.0,
+        "prices": {
+            "20446366594": 226985.0,
+            "80517313346": 231036.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 18:03:04": {
+        "timestamp": "2026-06-23 18:03:04",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 226985.0,
+        "prices": {
+            "20446366594": 226985.0,
+            "80517313346": 231036.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 18:03:11": {
+        "timestamp": "2026-06-23 18:03:11",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 226985.0,
+        "prices": {
+            "20446366594": 226985.0,
+            "80517313346": 231036.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 18:03:16": {
+        "timestamp": "2026-06-23 18:03:16",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 226985.0,
+        "prices": {
+            "20446366594": 226985.0,
+            "80517313346": 231036.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 18:03:21": {
+        "timestamp": "2026-06-23 18:03:21",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 226985.0,
+        "prices": {
+            "20446366594": 226985.0,
+            "80517313346": 231036.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 18:03:26": {
+        "timestamp": "2026-06-23 18:03:26",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 226985.0,
+        "prices": {
+            "20446366594": 226985.0,
+            "80517313346": 231036.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 18:20:18": {
+        "timestamp": "2026-06-23 18:20:18",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 226985.0,
+        "prices": {
+            "20446366594": 226985.0,
+            "80517313346": 231036.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 18:22:43": {
+        "timestamp": "2026-06-23 18:22:43",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 226985.0,
+        "prices": {
+            "20446366594": 226985.0,
+            "80517313346": 231036.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 18:38:44": {
+        "timestamp": "2026-06-23 18:38:44",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 226985.0,
+        "prices": {
+            "20446366594": 226985.0,
+            "80517313346": 231036.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 18:55:55": {
+        "timestamp": "2026-06-23 18:55:55",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 226985.0,
+        "prices": {
+            "20446366594": 226985.0,
+            "80517313346": 231036.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 18:55:59": {
+        "timestamp": "2026-06-23 18:55:59",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 226985.0,
+        "prices": {
+            "20446366594": 226985.0,
+            "80517313346": 231036.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 19:04:56": {
+        "timestamp": "2026-06-23 19:04:56",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 226985.0,
+        "prices": {
+            "20446366594": 226985.0,
+            "80517313346": 231036.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 19:05:01": {
+        "timestamp": "2026-06-23 19:05:01",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227312.0,
+        "prices": {
+            "20446366594": 227312.0,
+            "80517313346": 231036.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 19:22:07": {
+        "timestamp": "2026-06-23 19:22:07",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227279.0,
+        "prices": {
+            "20446366594": 227279.0,
+            "80517313346": 231540.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 19:22:10": {
+        "timestamp": "2026-06-23 19:22:10",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227785.0,
+        "prices": {
+            "20446366594": 227785.0,
+            "80517313346": 232000.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 19:38:56": {
+        "timestamp": "2026-06-23 19:38:56",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227785.0,
+        "prices": {
+            "20446366594": 227785.0,
+            "80517313346": 232000.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 19:55:32": {
+        "timestamp": "2026-06-23 19:55:32",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227375.0,
+        "prices": {
+            "20446366594": 227375.0,
+            "80517313346": 232000.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 20:05:59": {
+        "timestamp": "2026-06-23 20:05:59",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227375.0,
+        "prices": {
+            "20446366594": 227375.0,
+            "80517313346": 231900.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 20:22:50": {
+        "timestamp": "2026-06-23 20:22:50",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227375.0,
+        "prices": {
+            "20446366594": 227375.0,
+            "80517313346": 231900.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 20:39:18": {
+        "timestamp": "2026-06-23 20:39:18",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 226927.0,
+        "prices": {
+            "20446366594": 226927.0,
+            "80517313346": 232406.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 20:50:03": {
+        "timestamp": "2026-06-23 20:50:03",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 226668.0,
+        "prices": {
+            "20446366594": 226668.0,
+            "80517313346": 232500.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:06:57": {
+        "timestamp": "2026-06-23 21:06:57",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 226668.0,
+        "prices": {
+            "20446366594": 226668.0,
+            "80517313346": 232500.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:07:04": {
+        "timestamp": "2026-06-23 21:07:04",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227157.0,
+        "prices": {
+            "20446366594": 227157.0,
+            "80517313346": 232663.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:22:35": {
+        "timestamp": "2026-06-23 21:22:35",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227157.0,
+        "prices": {
+            "20446366594": 227157.0,
+            "80517313346": 232663.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:22:40": {
+        "timestamp": "2026-06-23 21:22:40",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227157.0,
+        "prices": {
+            "20446366594": 227157.0,
+            "80517313346": 232663.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:22:45": {
+        "timestamp": "2026-06-23 21:22:45",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227157.0,
+        "prices": {
+            "20446366594": 227157.0,
+            "80517313346": 232663.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:22:51": {
+        "timestamp": "2026-06-23 21:22:51",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227157.0,
+        "prices": {
+            "20446366594": 227157.0,
+            "80517313346": 232663.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:22:56": {
+        "timestamp": "2026-06-23 21:22:56",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227157.0,
+        "prices": {
+            "20446366594": 227157.0,
+            "80517313346": 232663.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:23:01": {
+        "timestamp": "2026-06-23 21:23:01",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227157.0,
+        "prices": {
+            "20446366594": 227157.0,
+            "80517313346": 232663.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:23:06": {
+        "timestamp": "2026-06-23 21:23:06",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227157.0,
+        "prices": {
+            "20446366594": 227157.0,
+            "80517313346": 232663.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:23:11": {
+        "timestamp": "2026-06-23 21:23:11",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227157.0,
+        "prices": {
+            "20446366594": 227157.0,
+            "80517313346": 232663.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:23:17": {
+        "timestamp": "2026-06-23 21:23:17",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227157.0,
+        "prices": {
+            "20446366594": 227157.0,
+            "80517313346": 232663.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:38:53": {
+        "timestamp": "2026-06-23 21:38:53",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227157.0,
+        "prices": {
+            "20446366594": 227157.0,
+            "80517313346": 232663.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:54:24": {
+        "timestamp": "2026-06-23 21:54:24",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227157.0,
+        "prices": {
+            "20446366594": 227157.0,
+            "80517313346": 232663.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:54:30": {
+        "timestamp": "2026-06-23 21:54:30",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227188.0,
+        "prices": {
+            "20446366594": 227188.0,
+            "80517313346": 232275.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:54:35": {
+        "timestamp": "2026-06-23 21:54:35",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227188.0,
+        "prices": {
+            "20446366594": 227188.0,
+            "80517313346": 232275.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:54:40": {
+        "timestamp": "2026-06-23 21:54:40",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227188.0,
+        "prices": {
+            "20446366594": 227188.0,
+            "80517313346": 232307.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:54:45": {
+        "timestamp": "2026-06-23 21:54:45",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227188.0,
+        "prices": {
+            "20446366594": 227188.0,
+            "80517313346": 232307.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:54:50": {
+        "timestamp": "2026-06-23 21:54:50",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227188.0,
+        "prices": {
+            "20446366594": 227188.0,
+            "80517313346": 232307.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:54:56": {
+        "timestamp": "2026-06-23 21:54:56",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227188.0,
+        "prices": {
+            "20446366594": 227188.0,
+            "80517313346": 232346.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:55:01": {
+        "timestamp": "2026-06-23 21:55:01",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227188.0,
+        "prices": {
+            "20446366594": 227188.0,
+            "80517313346": 232346.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 21:55:06": {
+        "timestamp": "2026-06-23 21:55:06",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227188.0,
+        "prices": {
+            "20446366594": 227188.0,
+            "80517313346": 232346.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 22:07:59": {
+        "timestamp": "2026-06-23 22:07:59",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227188.0,
+        "prices": {
+            "20446366594": 227188.0,
+            "80517313346": 232346.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 22:24:46": {
+        "timestamp": "2026-06-23 22:24:46",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227188.0,
+        "prices": {
+            "20446366594": 227188.0,
+            "80517313346": 232346.0,
+            "44439": null
+        }
+    },
+    "2026-06-23 22:40:41": {
+        "timestamp": "2026-06-23 22:40:41",
+        "instrument_id": "697c47bdd64a70878cc02b0d",
+        "instrument_name": "SILVER -MINISILVER(JULY) MCXSILVER(JUNE)",
+        "computed_value": 227188.0,
+        "prices": {
+            "20446366594": 227188.0,
+            "80517313346": 232346.0,
             "44439": null
         }
     }
