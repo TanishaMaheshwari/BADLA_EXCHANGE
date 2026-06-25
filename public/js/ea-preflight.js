@@ -387,13 +387,3 @@ function showNotification(type, title, subtitle, failedLegs) {
   document.body.appendChild(el);
   setTimeout(() => el.remove(), type === 'success' ? 8000 : 30000);
 }
- 
-// ── apiPost helper (if you don't already have one) ───────────────────────
-async function apiPost(url, body) {
-  const r = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body)
-  });
-  return r.json();
-}

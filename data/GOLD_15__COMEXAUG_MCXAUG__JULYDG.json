@@ -1,0 +1,57 @@
+{
+    "2026-06-25 14:24:56": {
+        "timestamp": "2026-06-25 14:24:56",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5515879.0,
+        "prices": {
+            "20848323089": 142038.0,
+            "78072679092": 4006.5,
+            "44968": 105.559998
+        }
+    },
+    "2026-06-25 14:25:02": {
+        "timestamp": "2026-06-25 14:25:02",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5517782.0,
+        "prices": {
+            "20848323089": 142087.0,
+            "78072679092": 4005.9,
+            "44968": 105.559998
+        }
+    },
+    "2026-06-25 14:25:08": {
+        "timestamp": "2026-06-25 14:25:08",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5517083.0,
+        "prices": {
+            "20848323089": 142069.0,
+            "78072679092": 4005.9,
+            "44968": 105.559998
+        }
+    },
+    "2026-06-25 14:25:13": {
+        "timestamp": "2026-06-25 14:25:13",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5517083.0,
+        "prices": {
+            "20848323089": 142069.0,
+            "78072679092": 4005.9,
+            "44968": 105.559998
+        }
+    },
+    "2026-06-25 14:25:19": {
+        "timestamp": "2026-06-25 14:25:19",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5517083.0,
+        "prices": {
+            "20848323089": 142069.0,
+            "78072679092": 4005.9,
+            "44968": 105.559998
+        }
+    }
+}

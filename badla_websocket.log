@@ -36940,3 +36940,468 @@ FileNotFoundError: [Errno 2] No such file or directory: '/Users/tanishamaheshwar
 2026-06-23 22:40:41,235 - BadlaWebSocket - INFO - Disk-save thread stopped
 2026-06-24 08:57:57,204 - BadlaWebSocket - INFO - Shutting down...
 2026-06-24 08:57:57,217 - BadlaWebSocket - INFO - Disconnected
+2026-06-24 15:22:24,650 - BadlaMain - INFO - Starting Badla WebSocket Client
+2026-06-24 15:22:24,651 - BadlaMain - INFO -   data-dir          : data
+2026-06-24 15:22:24,651 - BadlaMain - INFO -   settings-file     : instrument_settings.json
+2026-06-24 15:22:24,651 - BadlaMain - INFO -   response-timeout  : 1.0s
+2026-06-24 15:22:25,629 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-24 15:22:25,630 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-24 15:22:25,630 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-24 15:22:25,630 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-24 15:22:25,631 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-24 15:22:25,834 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-24 15:25:58,879 - BadlaWebSocket - INFO - Shutting down...
+2026-06-24 15:25:58,911 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-24 15:25:59,188 - BadlaWebSocket - INFO - Disconnected
+2026-06-24 15:26:00,132 - BadlaMain - INFO - Starting Badla WebSocket Client
+2026-06-24 15:26:00,132 - BadlaMain - INFO -   data-dir          : data
+2026-06-24 15:26:00,132 - BadlaMain - INFO -   settings-file     : instrument_settings.json
+2026-06-24 15:26:00,132 - BadlaMain - INFO -   response-timeout  : 1.0s
+2026-06-24 15:26:01,072 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-24 15:26:01,074 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-24 15:26:01,079 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-24 15:26:01,079 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-24 15:26:01,080 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-24 15:26:01,285 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-24 16:33:02,731 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-24 16:33:02,734 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-24 16:33:02,795 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-24 16:33:05,715 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-24 16:33:05,715 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-24 16:33:05,717 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-24 16:33:05,717 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-24 16:33:05,718 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-24 16:33:05,933 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-24 17:53:49,248 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-24 17:53:49,249 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-24 17:53:51,087 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-24 17:53:52,184 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-24 17:53:52,185 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-24 17:53:52,186 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-24 17:53:52,186 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-24 17:53:52,188 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-24 17:53:52,390 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-24 18:06:06,135 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-24 18:06:06,136 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-24 18:06:06,531 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-24 18:06:09,173 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-24 18:06:09,173 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-24 18:06:09,174 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-24 18:06:09,175 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-24 18:06:09,175 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-24 18:06:09,380 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 00:07:06,017 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 00:07:06,082 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 00:07:07,488 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 00:22:58,609 - BadlaWebSocket - ERROR - Connection error: Connection to remote host was lost.
+2026-06-25 00:22:58,610 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 00:39:13,180 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 00:39:13,180 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 00:39:13,181 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 00:39:13,181 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 00:39:13,182 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 00:39:13,392 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 01:11:17,136 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 01:11:17,200 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 01:11:17,698 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 01:11:20,134 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 01:11:20,135 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 01:11:20,136 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 01:11:20,136 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 01:11:20,137 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 01:11:20,347 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 01:28:11,643 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 01:28:11,700 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 01:28:14,587 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 01:28:14,626 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 01:28:14,630 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 01:28:14,630 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 01:28:14,632 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 01:28:14,836 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 01:51:58,448 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 01:51:58,503 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 01:52:00,397 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 01:52:01,373 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 01:52:01,374 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 01:52:01,375 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 01:52:01,375 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 01:52:01,377 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 01:52:01,581 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 02:08:54,529 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 02:08:54,543 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 02:08:54,561 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 02:08:57,325 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 02:08:57,544 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 02:08:57,545 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 02:08:57,545 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 02:08:57,546 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 02:08:57,546 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 02:08:57,756 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 02:26:43,526 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 02:26:43,563 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 02:42:54,140 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 02:42:54,141 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 02:42:54,142 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 02:42:54,142 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 02:42:54,144 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 02:42:54,354 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 03:08:56,366 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 03:08:56,406 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 03:08:58,688 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 03:08:59,389 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 03:08:59,390 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 03:08:59,390 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 03:08:59,390 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 03:08:59,391 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 03:08:59,601 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 04:11:53,906 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 04:11:53,923 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 04:11:55,257 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 04:11:57,016 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 04:11:57,016 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 04:11:57,017 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 04:11:57,017 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 04:11:57,018 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 04:11:57,222 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 04:55:00,708 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 04:55:00,812 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 04:55:01,056 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 04:55:02,661 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 04:55:03,903 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 04:55:03,904 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 04:55:03,904 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 04:55:03,905 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 04:55:03,906 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 04:55:04,108 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 05:45:38,974 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 05:45:39,024 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 05:45:42,104 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 05:45:42,111 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 05:45:42,111 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 05:45:42,111 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 05:45:42,112 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 05:45:42,322 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 06:12:17,042 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 06:12:17,080 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 06:12:20,145 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 06:12:20,145 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 06:12:20,154 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 06:12:20,154 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 06:12:20,155 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 06:12:20,373 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 06:57:01,954 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 06:57:02,000 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 06:57:02,180 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 06:57:02,740 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 06:57:04,987 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 06:57:04,988 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 06:57:04,989 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 06:57:04,989 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 06:57:04,990 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 06:57:05,199 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 07:14:25,408 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 07:14:25,459 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 07:14:27,075 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 07:14:27,582 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 07:29:58,543 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 07:29:58,543 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 07:46:38,855 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 07:46:38,857 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 07:46:38,858 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 07:46:38,858 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 07:46:38,859 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 07:46:39,069 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 08:15:39,848 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 08:15:39,881 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 08:15:41,531 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 08:15:42,874 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 08:15:42,876 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 08:15:42,876 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 08:15:42,877 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 08:15:42,878 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 08:15:43,089 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 08:32:32,161 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 08:32:32,235 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 08:32:32,509 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 08:48:53,022 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 08:48:53,023 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 08:48:53,024 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 08:48:53,024 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 08:48:53,025 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 08:48:53,227 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 08:56:53,204 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 08:56:53,219 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 08:56:57,816 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 08:57:00,074 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 08:57:00,075 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 08:57:00,076 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 08:57:00,076 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 08:57:00,082 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 08:57:00,282 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 09:02:16,141 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 09:02:16,148 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 09:02:16,704 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 09:02:19,030 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 09:02:19,032 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 09:02:19,033 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 09:02:19,033 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 09:02:19,034 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 09:02:19,239 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 09:26:53,624 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 09:26:53,692 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 09:26:54,065 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 09:26:56,454 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 09:26:56,454 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 09:26:56,455 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 09:26:56,455 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 09:26:56,455 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 09:26:56,660 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 09:36:03,309 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 09:36:03,351 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 09:36:04,284 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 09:36:05,331 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:36:05,331 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:36:10,363 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:36:10,364 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:36:15,391 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:36:15,391 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:36:20,426 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:36:20,428 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:36:25,456 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:36:25,456 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:36:30,485 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:36:30,485 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:36:35,518 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:36:35,518 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:36:40,546 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:36:40,546 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:36:45,575 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:36:45,575 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:36:50,606 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:36:50,607 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:36:55,631 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:36:55,631 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:37:00,664 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:37:00,665 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:37:05,696 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:37:05,696 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:37:10,726 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:37:10,728 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:37:15,763 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:37:15,764 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:37:20,793 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:37:20,793 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:37:25,826 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:37:25,826 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:37:30,857 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:37:30,858 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:37:35,888 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:37:35,888 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:37:40,919 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:37:40,920 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:37:45,955 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:37:45,955 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:37:50,990 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:37:50,992 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:37:56,016 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:37:56,016 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:38:01,047 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:38:01,048 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:38:06,073 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:38:06,074 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:38:11,095 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:38:11,096 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:38:16,125 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:38:16,125 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:38:21,154 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:38:21,154 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:38:26,183 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:38:26,184 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:38:31,216 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:38:31,217 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:38:36,245 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:38:36,246 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:38:41,274 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:38:41,275 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:38:46,324 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:38:46,325 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:38:51,354 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:38:51,355 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:38:56,385 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:38:56,386 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:39:01,413 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:39:01,415 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:39:06,453 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:39:06,453 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:39:11,482 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:39:11,483 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:39:16,514 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:39:16,514 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:39:21,546 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:39:21,547 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:39:26,580 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:39:26,580 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:39:31,609 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:39:31,610 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:39:36,637 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:39:36,637 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:39:41,656 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:39:41,656 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:39:46,688 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:39:46,688 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:39:51,710 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:39:51,711 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:39:56,736 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:39:56,736 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:40:01,763 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:40:01,765 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:40:06,790 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:40:06,790 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:40:11,826 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:40:11,827 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:40:16,861 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:40:16,861 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:40:21,888 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:40:21,889 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:40:26,919 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:40:26,920 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:40:31,948 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:40:31,948 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:40:55,603 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 09:40:55,619 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 09:41:02,035 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 09:41:02,042 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 09:41:02,060 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 09:41:02,061 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 09:41:02,073 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 09:41:02,474 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 10:11:06,787 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 10:11:06,790 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 10:11:07,568 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 10:11:09,676 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 10:11:09,676 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 10:11:09,677 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 10:11:09,677 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 10:11:09,677 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 10:11:09,882 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 10:22:53,082 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 10:22:53,128 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 10:22:55,639 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 10:23:00,007 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 10:23:00,008 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 10:23:00,010 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 10:23:00,010 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 10:23:00,011 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 10:23:00,216 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 10:33:56,012 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 10:33:56,017 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 10:33:56,076 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 10:33:58,923 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 10:33:58,923 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 10:33:58,923 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 10:33:58,924 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 10:33:58,924 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 10:33:59,129 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 10:46:58,750 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 10:46:58,779 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 10:47:01,565 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 10:47:01,565 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 10:47:01,566 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 10:47:01,566 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 10:47:01,567 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 10:47:01,772 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 10:58:44,200 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 10:58:44,221 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 10:58:46,976 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 10:58:47,109 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 10:58:50,748 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 10:58:50,750 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 10:58:50,752 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 10:58:50,752 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 10:58:50,753 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 10:58:50,957 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 11:07:52,242 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 11:07:52,280 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 11:07:53,393 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 11:07:56,094 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 11:07:56,095 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 11:07:56,096 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 11:07:56,097 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 11:07:56,098 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 11:07:56,303 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 11:09:25,038 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 11:09:25,068 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 11:09:27,801 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 11:09:28,401 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 11:09:28,403 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 11:09:28,404 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 11:09:28,404 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 11:09:28,406 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 11:09:28,612 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 11:14:41,435 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 11:14:41,448 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 11:14:44,534 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 11:14:44,535 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 11:14:44,536 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 11:14:44,536 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 11:14:44,538 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 11:14:44,743 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 11:47:04,325 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 11:47:04,394 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 11:47:05,772 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 11:47:06,371 - BadlaWebSocket - ERROR - Connection error: [Errno 8] nodename nor servname provided, or not known
+2026-06-25 11:47:06,371 - BadlaWebSocket - WARNING - Reconnecting in 5s...
+2026-06-25 11:50:31,714 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 11:50:37,872 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 11:50:37,880 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 11:50:37,882 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 11:50:37,882 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 11:50:37,890 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 11:50:38,101 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 12:24:58,069 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 12:24:58,070 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 12:25:01,095 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 12:25:01,096 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 12:25:01,097 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 12:25:01,098 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 12:25:01,100 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 12:25:01,303 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 14:02:14,708 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 14:02:14,720 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 14:02:16,076 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 14:02:16,101 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 14:02:17,711 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 14:02:17,712 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 14:02:17,713 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 14:02:17,713 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 14:02:17,714 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 14:02:17,915 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 14:04:35,761 - BadlaWebSocket - INFO - Shutting down...
+2026-06-25 14:04:35,802 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 14:04:36,057 - BadlaWebSocket - INFO - Disconnected
+2026-06-25 14:07:39,571 - BadlaMain - INFO - Starting Badla WebSocket Client
+2026-06-25 14:07:39,571 - BadlaMain - INFO -   data-dir          : data
+2026-06-25 14:07:39,572 - BadlaMain - INFO -   settings-file     : instrument_settings.json
+2026-06-25 14:07:39,572 - BadlaMain - INFO -   response-timeout  : 1.0s
+2026-06-25 14:07:40,589 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 14:07:40,590 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 14:07:40,590 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 14:07:40,590 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 14:07:40,591 - BadlaWebSocket - INFO - Sent watch-instruments for 27 instruments
+2026-06-25 14:07:40,796 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 14:24:46,849 - BadlaWebSocket - INFO - Shutting down...
+2026-06-25 14:24:46,915 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 14:24:47,156 - BadlaWebSocket - INFO - Disconnected
+2026-06-25 14:24:50,187 - BadlaMain - INFO - Starting Badla WebSocket Client
+2026-06-25 14:24:50,187 - BadlaMain - INFO -   data-dir          : data
+2026-06-25 14:24:50,188 - BadlaMain - INFO -   settings-file     : instrument_settings.json
+2026-06-25 14:24:50,188 - BadlaMain - INFO -   response-timeout  : 1.0s
+2026-06-25 14:24:51,329 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 14:24:51,339 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-25 14:24:51,397 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 14:24:51,416 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 14:24:51,436 - BadlaWebSocket - INFO - Sent watch-instruments for 37 instruments
+2026-06-25 14:24:51,643 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 14:25:21,824 - BadlaWebSocket - INFO - Shutting down...
+2026-06-25 14:25:21,863 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 14:25:22,144 - BadlaWebSocket - INFO - Disconnected
