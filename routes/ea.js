@@ -5,6 +5,10 @@ const requireAuth = require('../middleware/auth');
 const { broadcast } = require('../services/websocket');
 const { activeEAs, getEAStatus, checkDealStatus } = require('../services/ea-registry');
 
+router.get('/ea/debug', (req, res) => {
+  res.json({ activeEAs, count: Object.keys(activeEAs).length });
+});
+
 router.post('/ea/heartbeat', (req, res) => {
   const { accountId, brokerName, exchange, symbol, symbolValid, marketOpen, lotUsed, lotMax, lotHeadroom, error, status } = req.body;
   if (!accountId) return res.status(400).json({ error: 'accountId is required' });

@@ -2,6 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const { dbGet, dbAll, dbRun, dbInsert } = require('../db');
+const { activeEAs, getEAStatus, checkDealStatus } = require('../services/ea-registry');
 const requireAuth = require('../middleware/auth');
 
 // ─── Brokers FUNCTIONS ──────────────────────────────────────────────────────────────────
