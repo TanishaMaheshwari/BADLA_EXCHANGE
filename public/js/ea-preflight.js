@@ -240,8 +240,8 @@ function showEAError(msg) {
 // ── Handle WebSocket messages from server ────────────────────────────────
 function handleEAWebSocketMessage(data) {
   if (data.type === 'ea_status_update') {
-    // A single EA just sent a heartbeat — update its card live
     if (!eaCheckData) return;
+    if (!eaCheckData.eas) eaCheckData.eas = [];  // ← add this line
     const idx = eaCheckData.eas.findIndex(e => e.accountId === data.ea.accountId);
     if (idx >= 0) eaCheckData.eas[idx] = data.ea;
     else eaCheckData.eas.push(data.ea);

@@ -6,7 +6,10 @@ import logging
 import sys
 from pathlib import Path
 from websocket_client import BadlaWebSocketClient
+import io
 
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Badla WebSocket Client")
