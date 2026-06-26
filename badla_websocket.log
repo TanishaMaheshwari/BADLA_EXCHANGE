@@ -37405,3 +37405,66 @@ FileNotFoundError: [Errno 2] No such file or directory: '/Users/tanishamaheshwar
 2026-06-25 14:25:21,824 - BadlaWebSocket - INFO - Shutting down...
 2026-06-25 14:25:21,863 - BadlaWebSocket - INFO - Push timer stopped
 2026-06-25 14:25:22,144 - BadlaWebSocket - INFO - Disconnected
+2026-06-25 14:29:04,089 - BadlaMain - INFO - Starting Badla WebSocket Client
+2026-06-25 14:29:04,089 - BadlaMain - INFO -   data-dir          : data
+2026-06-25 14:29:04,093 - BadlaMain - INFO -   settings-file     : instrument_settings.json
+2026-06-25 14:29:04,094 - BadlaMain - INFO -   response-timeout  : 1.0s
+2026-06-25 14:29:05,063 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 14:29:05,103 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 14:29:05,105 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 14:29:05,105 - BadlaWebSocket - INFO - Sent watch-instruments for 37 instruments
+2026-06-25 14:29:05,307 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 14:29:49,520 - BadlaWebSocket - INFO - Shutting down...
+2026-06-25 14:29:49,527 - BadlaWebSocket - INFO - Disconnected
+2026-06-25 14:30:16,814 - BadlaMain - INFO - Starting Badla WebSocket Client
+2026-06-25 14:30:16,816 - BadlaMain - INFO -   data-dir          : data
+2026-06-25 14:30:16,818 - BadlaMain - INFO -   settings-file     : instrument_settings.json
+2026-06-25 14:30:16,823 - BadlaMain - INFO -   response-timeout  : 1.0s
+2026-06-25 14:30:17,763 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 14:30:17,811 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 14:30:17,812 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 14:30:17,817 - BadlaWebSocket - INFO - Sent watch-instruments for 37 instruments
+2026-06-25 14:30:18,019 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 14:43:15,773 - BadlaMain - INFO - Starting Badla WebSocket Client
+2026-06-25 14:43:15,773 - BadlaMain - INFO -   data-dir          : data
+2026-06-25 14:43:15,774 - BadlaMain - INFO -   settings-file     : instrument_settings.json
+2026-06-25 14:43:15,775 - BadlaMain - INFO -   response-timeout  : 1.0s
+2026-06-25 14:43:16,566 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 14:43:16,580 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 14:43:16,580 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 14:43:16,581 - BadlaWebSocket - INFO - Sent watch-instruments for 37 instruments
+2026-06-25 14:43:16,785 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 19:00:01,815 - BadlaWebSocket - ERROR - Connection lost: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-25 19:00:01,896 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 19:00:04,856 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 19:00:05,608 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 19:00:05,640 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 19:00:05,670 - BadlaWebSocket - INFO - Sent watch-instruments for 37 instruments
+2026-06-25 19:00:05,879 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 19:57:37,159 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-25 19:57:37,172 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 19:57:40,355 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 19:57:40,470 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 19:57:40,475 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 19:57:40,481 - BadlaWebSocket - INFO - Sent watch-instruments for 37 instruments
+2026-06-25 19:57:40,700 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 20:42:30,664 - BadlaWebSocket - ERROR - Connection lost: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-25 20:42:30,714 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 20:42:30,801 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 20:42:34,211 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 20:42:34,277 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-25 20:42:35,382 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 20:42:35,410 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 20:42:35,411 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 20:42:35,412 - BadlaWebSocket - INFO - Sent watch-instruments for 37 instruments
+2026-06-25 20:42:35,616 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-25 20:53:56,735 - BadlaWebSocket - ERROR - Connection lost: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-25 20:53:56,771 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-25 20:53:59,837 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-25 20:53:59,844 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-25 20:53:59,844 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-25 20:53:59,845 - BadlaWebSocket - INFO - Sent watch-instruments for 37 instruments
+2026-06-25 20:54:00,055 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-26 13:56:42,644 - BadlaWebSocket - INFO - Shutting down...
+2026-06-26 13:56:42,696 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-26 13:56:43,178 - BadlaWebSocket - INFO - Disconnected

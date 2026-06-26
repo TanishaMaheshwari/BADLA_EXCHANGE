@@ -1,62 +1,1922 @@
 {
-    "2026-06-25 14:24:57": {
-        "timestamp": "2026-06-25 14:24:57",
+    "2026-06-26 13:43:21": {
+        "timestamp": "2026-06-26 13:43:21",
         "instrument_id": "699e91656754c439a4ad8e78",
         "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
-        "computed_value": 57.44,
+        "computed_value": 57.732,
         "prices": {
-            "43681": 57.44,
-            "91084863423": 57.965,
-            "44695": 105.96,
-            "44968": 105.559998
+            "43681": 57.732,
+            "91084863423": 58.18,
+            "44695": 105.84,
+            "44968": 105.529999
         }
     },
-    "2026-06-25 14:25:02": {
-        "timestamp": "2026-06-25 14:25:02",
+    "2026-06-26 13:43:23": {
+        "timestamp": "2026-06-26 13:43:23",
         "instrument_id": "699e91656754c439a4ad8e78",
         "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
-        "computed_value": 57.418,
+        "computed_value": 57.718,
         "prices": {
-            "43681": 57.418,
-            "91084863423": 57.905,
-            "44695": 105.96,
-            "44968": 105.559998
+            "43681": 57.718,
+            "91084863423": 58.18,
+            "44695": 105.84,
+            "44968": 105.529999
         }
     },
-    "2026-06-25 14:25:08": {
-        "timestamp": "2026-06-25 14:25:08",
+    "2026-06-26 13:43:32": {
+        "timestamp": "2026-06-26 13:43:32",
         "instrument_id": "699e91656754c439a4ad8e78",
         "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
-        "computed_value": 57.413,
+        "computed_value": 57.706,
         "prices": {
-            "43681": 57.413,
-            "91084863423": 57.905,
-            "44695": 105.96,
-            "44968": 105.559998
+            "43681": 57.706,
+            "91084863423": 58.165,
+            "44695": 105.84,
+            "44968": 105.529999
         }
     },
-    "2026-06-25 14:25:14": {
-        "timestamp": "2026-06-25 14:25:14",
+    "2026-06-26 13:43:34": {
+        "timestamp": "2026-06-26 13:43:34",
         "instrument_id": "699e91656754c439a4ad8e78",
         "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
-        "computed_value": 57.396,
+        "computed_value": 57.709,
         "prices": {
-            "43681": 57.396,
-            "91084863423": 57.87,
-            "44695": 105.96,
-            "44968": 105.559998
+            "43681": 57.709,
+            "91084863423": 58.165,
+            "44695": 105.84,
+            "44968": 105.529999
         }
     },
-    "2026-06-25 14:25:19": {
-        "timestamp": "2026-06-25 14:25:19",
+    "2026-06-26 13:43:43": {
+        "timestamp": "2026-06-26 13:43:43",
         "instrument_id": "699e91656754c439a4ad8e78",
         "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
-        "computed_value": 57.4,
+        "computed_value": 57.708,
         "prices": {
-            "43681": 57.4,
-            "91084863423": 57.87,
-            "44695": 105.96,
-            "44968": 105.559998
+            "43681": 57.708,
+            "91084863423": 58.165,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:43:45": {
+        "timestamp": "2026-06-26 13:43:45",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.708,
+        "prices": {
+            "43681": 57.708,
+            "91084863423": 58.165,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:43:55": {
+        "timestamp": "2026-06-26 13:43:55",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.717,
+        "prices": {
+            "43681": 57.717,
+            "91084863423": 58.19,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:43:56": {
+        "timestamp": "2026-06-26 13:43:56",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.717,
+        "prices": {
+            "43681": 57.717,
+            "91084863423": 58.19,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:44:09": {
+        "timestamp": "2026-06-26 13:44:09",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.736,
+        "prices": {
+            "43681": 57.736,
+            "91084863423": 58.2,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:44:10": {
+        "timestamp": "2026-06-26 13:44:10",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.736,
+        "prices": {
+            "43681": 57.736,
+            "91084863423": 58.2,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:44:21": {
+        "timestamp": "2026-06-26 13:44:21",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.726,
+        "prices": {
+            "43681": 57.726,
+            "91084863423": 58.2,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:44:22": {
+        "timestamp": "2026-06-26 13:44:22",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.726,
+        "prices": {
+            "43681": 57.726,
+            "91084863423": 58.2,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:44:33": {
+        "timestamp": "2026-06-26 13:44:33",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.737,
+        "prices": {
+            "43681": 57.737,
+            "91084863423": 58.2,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:44:34": {
+        "timestamp": "2026-06-26 13:44:34",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.737,
+        "prices": {
+            "43681": 57.737,
+            "91084863423": 58.2,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:44:45": {
+        "timestamp": "2026-06-26 13:44:45",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.744,
+        "prices": {
+            "43681": 57.744,
+            "91084863423": 58.2,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:44:56": {
+        "timestamp": "2026-06-26 13:44:56",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.724,
+        "prices": {
+            "43681": 57.724,
+            "91084863423": 58.2,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:44:57": {
+        "timestamp": "2026-06-26 13:44:57",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.724,
+        "prices": {
+            "43681": 57.724,
+            "91084863423": 58.2,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:45:12": {
+        "timestamp": "2026-06-26 13:45:12",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.752,
+        "prices": {
+            "43681": 57.752,
+            "91084863423": 58.2,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:45:13": {
+        "timestamp": "2026-06-26 13:45:13",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.752,
+        "prices": {
+            "43681": 57.752,
+            "91084863423": 58.2,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:45:23": {
+        "timestamp": "2026-06-26 13:45:23",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.745,
+        "prices": {
+            "43681": 57.745,
+            "91084863423": 58.215,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:45:24": {
+        "timestamp": "2026-06-26 13:45:24",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.745,
+        "prices": {
+            "43681": 57.745,
+            "91084863423": 58.215,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:45:34": {
+        "timestamp": "2026-06-26 13:45:34",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.741,
+        "prices": {
+            "43681": 57.741,
+            "91084863423": 58.215,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:45:46": {
+        "timestamp": "2026-06-26 13:45:46",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.775,
+        "prices": {
+            "43681": 57.775,
+            "91084863423": 58.215,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:45:47": {
+        "timestamp": "2026-06-26 13:45:47",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.775,
+        "prices": {
+            "43681": 57.775,
+            "91084863423": 58.215,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:45:55": {
+        "timestamp": "2026-06-26 13:45:55",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.805,
+        "prices": {
+            "43681": 57.805,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:45:57": {
+        "timestamp": "2026-06-26 13:45:57",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.805,
+        "prices": {
+            "43681": 57.805,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:46:07": {
+        "timestamp": "2026-06-26 13:46:07",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.813,
+        "prices": {
+            "43681": 57.813,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:46:08": {
+        "timestamp": "2026-06-26 13:46:08",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.813,
+        "prices": {
+            "43681": 57.813,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:46:19": {
+        "timestamp": "2026-06-26 13:46:19",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.807,
+        "prices": {
+            "43681": 57.807,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:46:27": {
+        "timestamp": "2026-06-26 13:46:27",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.806,
+        "prices": {
+            "43681": 57.806,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:46:32": {
+        "timestamp": "2026-06-26 13:46:32",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.814,
+        "prices": {
+            "43681": 57.814,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:46:34": {
+        "timestamp": "2026-06-26 13:46:34",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.802,
+        "prices": {
+            "43681": 57.802,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:46:41": {
+        "timestamp": "2026-06-26 13:46:41",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.801,
+        "prices": {
+            "43681": 57.801,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:46:43": {
+        "timestamp": "2026-06-26 13:46:43",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.801,
+        "prices": {
+            "43681": 57.801,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:46:51": {
+        "timestamp": "2026-06-26 13:46:51",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.795,
+        "prices": {
+            "43681": 57.795,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:46:53": {
+        "timestamp": "2026-06-26 13:46:53",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.807,
+        "prices": {
+            "43681": 57.807,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:47:00": {
+        "timestamp": "2026-06-26 13:47:00",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.801,
+        "prices": {
+            "43681": 57.801,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:47:05": {
+        "timestamp": "2026-06-26 13:47:05",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.801,
+        "prices": {
+            "43681": 57.801,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:47:12": {
+        "timestamp": "2026-06-26 13:47:12",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.796,
+        "prices": {
+            "43681": 57.796,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:47:15": {
+        "timestamp": "2026-06-26 13:47:15",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.822,
+        "prices": {
+            "43681": 57.822,
+            "91084863423": 58.275,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:47:19": {
+        "timestamp": "2026-06-26 13:47:19",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.819,
+        "prices": {
+            "43681": 57.819,
+            "91084863423": 58.26,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:47:24": {
+        "timestamp": "2026-06-26 13:47:24",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.816,
+        "prices": {
+            "43681": 57.816,
+            "91084863423": 58.26,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:47:29": {
+        "timestamp": "2026-06-26 13:47:29",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.816,
+        "prices": {
+            "43681": 57.816,
+            "91084863423": 58.26,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:47:33": {
+        "timestamp": "2026-06-26 13:47:33",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.806,
+        "prices": {
+            "43681": 57.806,
+            "91084863423": 58.26,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:47:38": {
+        "timestamp": "2026-06-26 13:47:38",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.817,
+        "prices": {
+            "43681": 57.817,
+            "91084863423": 58.26,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:47:41": {
+        "timestamp": "2026-06-26 13:47:41",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.809,
+        "prices": {
+            "43681": 57.809,
+            "91084863423": 58.26,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:47:45": {
+        "timestamp": "2026-06-26 13:47:45",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.789,
+        "prices": {
+            "43681": 57.789,
+            "91084863423": 58.275,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:47:49": {
+        "timestamp": "2026-06-26 13:47:49",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.801,
+        "prices": {
+            "43681": 57.801,
+            "91084863423": 58.275,
+            "44695": 105.84,
+            "44968": 105.529999
+        }
+    },
+    "2026-06-26 13:47:54": {
+        "timestamp": "2026-06-26 13:47:54",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.798,
+        "prices": {
+            "43681": 57.798,
+            "91084863423": 58.275,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:47:57": {
+        "timestamp": "2026-06-26 13:47:57",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.805,
+        "prices": {
+            "43681": 57.805,
+            "91084863423": 58.275,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:48:07": {
+        "timestamp": "2026-06-26 13:48:07",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.819,
+        "prices": {
+            "43681": 57.819,
+            "91084863423": 58.28,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:48:08": {
+        "timestamp": "2026-06-26 13:48:08",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.814,
+        "prices": {
+            "43681": 57.814,
+            "91084863423": 58.29,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:48:17": {
+        "timestamp": "2026-06-26 13:48:17",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.825,
+        "prices": {
+            "43681": 57.825,
+            "91084863423": 58.29,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:48:19": {
+        "timestamp": "2026-06-26 13:48:19",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.839,
+        "prices": {
+            "43681": 57.839,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:48:25": {
+        "timestamp": "2026-06-26 13:48:25",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.852,
+        "prices": {
+            "43681": 57.852,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:48:29": {
+        "timestamp": "2026-06-26 13:48:29",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.852,
+        "prices": {
+            "43681": 57.852,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:48:38": {
+        "timestamp": "2026-06-26 13:48:38",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.825,
+        "prices": {
+            "43681": 57.825,
+            "91084863423": 58.28,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:48:39": {
+        "timestamp": "2026-06-26 13:48:39",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.831,
+        "prices": {
+            "43681": 57.831,
+            "91084863423": 58.28,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:48:47": {
+        "timestamp": "2026-06-26 13:48:47",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.831,
+        "prices": {
+            "43681": 57.831,
+            "91084863423": 58.285,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:48:49": {
+        "timestamp": "2026-06-26 13:48:49",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.822,
+        "prices": {
+            "43681": 57.822,
+            "91084863423": 58.285,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:48:57": {
+        "timestamp": "2026-06-26 13:48:57",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.807,
+        "prices": {
+            "43681": 57.807,
+            "91084863423": 58.25,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:48:58": {
+        "timestamp": "2026-06-26 13:48:58",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.814,
+        "prices": {
+            "43681": 57.814,
+            "91084863423": 58.25,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:49:07": {
+        "timestamp": "2026-06-26 13:49:07",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.811,
+        "prices": {
+            "43681": 57.811,
+            "91084863423": 58.26,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:49:08": {
+        "timestamp": "2026-06-26 13:49:08",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.811,
+        "prices": {
+            "43681": 57.811,
+            "91084863423": 58.26,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:49:15": {
+        "timestamp": "2026-06-26 13:49:15",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.806,
+        "prices": {
+            "43681": 57.806,
+            "91084863423": 58.26,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:49:16": {
+        "timestamp": "2026-06-26 13:49:16",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.806,
+        "prices": {
+            "43681": 57.806,
+            "91084863423": 58.26,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:49:24": {
+        "timestamp": "2026-06-26 13:49:24",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.81,
+        "prices": {
+            "43681": 57.81,
+            "91084863423": 58.26,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:49:25": {
+        "timestamp": "2026-06-26 13:49:25",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.818,
+        "prices": {
+            "43681": 57.818,
+            "91084863423": 58.26,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:49:32": {
+        "timestamp": "2026-06-26 13:49:32",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.805,
+        "prices": {
+            "43681": 57.805,
+            "91084863423": 58.26,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:49:34": {
+        "timestamp": "2026-06-26 13:49:34",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.792,
+        "prices": {
+            "43681": 57.792,
+            "91084863423": 58.26,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:49:40": {
+        "timestamp": "2026-06-26 13:49:40",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.794,
+        "prices": {
+            "43681": 57.794,
+            "91084863423": 58.26,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:49:43": {
+        "timestamp": "2026-06-26 13:49:43",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.822,
+        "prices": {
+            "43681": 57.822,
+            "91084863423": 58.26,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:49:49": {
+        "timestamp": "2026-06-26 13:49:49",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.81,
+        "prices": {
+            "43681": 57.81,
+            "91084863423": 58.26,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:49:51": {
+        "timestamp": "2026-06-26 13:49:51",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.797,
+        "prices": {
+            "43681": 57.797,
+            "91084863423": 58.26,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:49:55": {
+        "timestamp": "2026-06-26 13:49:55",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.82,
+        "prices": {
+            "43681": 57.82,
+            "91084863423": 58.29,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:49:59": {
+        "timestamp": "2026-06-26 13:49:59",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.801,
+        "prices": {
+            "43681": 57.801,
+            "91084863423": 58.29,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:50:07": {
+        "timestamp": "2026-06-26 13:50:07",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.818,
+        "prices": {
+            "43681": 57.818,
+            "91084863423": 58.29,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:50:09": {
+        "timestamp": "2026-06-26 13:50:09",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.809,
+        "prices": {
+            "43681": 57.809,
+            "91084863423": 58.265,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:50:16": {
+        "timestamp": "2026-06-26 13:50:16",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.799,
+        "prices": {
+            "43681": 57.799,
+            "91084863423": 58.265,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:50:18": {
+        "timestamp": "2026-06-26 13:50:18",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.82,
+        "prices": {
+            "43681": 57.82,
+            "91084863423": 58.265,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:50:24": {
+        "timestamp": "2026-06-26 13:50:24",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.785,
+        "prices": {
+            "43681": 57.785,
+            "91084863423": 58.265,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:50:26": {
+        "timestamp": "2026-06-26 13:50:26",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.785,
+        "prices": {
+            "43681": 57.785,
+            "91084863423": 58.265,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:50:33": {
+        "timestamp": "2026-06-26 13:50:33",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.792,
+        "prices": {
+            "43681": 57.792,
+            "91084863423": 58.265,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:50:36": {
+        "timestamp": "2026-06-26 13:50:36",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.798,
+        "prices": {
+            "43681": 57.798,
+            "91084863423": 58.22,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:50:40": {
+        "timestamp": "2026-06-26 13:50:40",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.792,
+        "prices": {
+            "43681": 57.792,
+            "91084863423": 58.24,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:50:45": {
+        "timestamp": "2026-06-26 13:50:45",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.799,
+        "prices": {
+            "43681": 57.799,
+            "91084863423": 58.24,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:50:50": {
+        "timestamp": "2026-06-26 13:50:50",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.799,
+        "prices": {
+            "43681": 57.799,
+            "91084863423": 58.24,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:50:53": {
+        "timestamp": "2026-06-26 13:50:53",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.8,
+        "prices": {
+            "43681": 57.8,
+            "91084863423": 58.24,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:50:59": {
+        "timestamp": "2026-06-26 13:50:59",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.786,
+        "prices": {
+            "43681": 57.786,
+            "91084863423": 58.24,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:51:02": {
+        "timestamp": "2026-06-26 13:51:02",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.786,
+        "prices": {
+            "43681": 57.786,
+            "91084863423": 58.24,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:51:08": {
+        "timestamp": "2026-06-26 13:51:08",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.79,
+        "prices": {
+            "43681": 57.79,
+            "91084863423": 58.24,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:51:11": {
+        "timestamp": "2026-06-26 13:51:11",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.796,
+        "prices": {
+            "43681": 57.796,
+            "91084863423": 58.24,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:51:16": {
+        "timestamp": "2026-06-26 13:51:16",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.807,
+        "prices": {
+            "43681": 57.807,
+            "91084863423": 58.24,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:51:20": {
+        "timestamp": "2026-06-26 13:51:20",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.831,
+        "prices": {
+            "43681": 57.831,
+            "91084863423": 58.24,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:51:25": {
+        "timestamp": "2026-06-26 13:51:25",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.838,
+        "prices": {
+            "43681": 57.838,
+            "91084863423": 58.24,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:51:29": {
+        "timestamp": "2026-06-26 13:51:29",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.836,
+        "prices": {
+            "43681": 57.836,
+            "91084863423": 58.24,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:51:33": {
+        "timestamp": "2026-06-26 13:51:33",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.847,
+        "prices": {
+            "43681": 57.847,
+            "91084863423": 58.24,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:51:38": {
+        "timestamp": "2026-06-26 13:51:38",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.848,
+        "prices": {
+            "43681": 57.848,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:51:41": {
+        "timestamp": "2026-06-26 13:51:41",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.845,
+        "prices": {
+            "43681": 57.845,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:51:46": {
+        "timestamp": "2026-06-26 13:51:46",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.842,
+        "prices": {
+            "43681": 57.842,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:51:49": {
+        "timestamp": "2026-06-26 13:51:49",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.827,
+        "prices": {
+            "43681": 57.827,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:51:54": {
+        "timestamp": "2026-06-26 13:51:54",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.829,
+        "prices": {
+            "43681": 57.829,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:51:57": {
+        "timestamp": "2026-06-26 13:51:57",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.829,
+        "prices": {
+            "43681": 57.829,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:52:04": {
+        "timestamp": "2026-06-26 13:52:04",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.853,
+        "prices": {
+            "43681": 57.853,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:52:06": {
+        "timestamp": "2026-06-26 13:52:06",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.86,
+        "prices": {
+            "43681": 57.86,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:52:14": {
+        "timestamp": "2026-06-26 13:52:14",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.872,
+        "prices": {
+            "43681": 57.872,
+            "91084863423": 58.34,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:52:16": {
+        "timestamp": "2026-06-26 13:52:16",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.881,
+        "prices": {
+            "43681": 57.881,
+            "91084863423": 58.34,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:52:24": {
+        "timestamp": "2026-06-26 13:52:24",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.863,
+        "prices": {
+            "43681": 57.863,
+            "91084863423": 58.33,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:52:25": {
+        "timestamp": "2026-06-26 13:52:25",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.866,
+        "prices": {
+            "43681": 57.866,
+            "91084863423": 58.33,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:52:33": {
+        "timestamp": "2026-06-26 13:52:33",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.865,
+        "prices": {
+            "43681": 57.865,
+            "91084863423": 58.33,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:52:34": {
+        "timestamp": "2026-06-26 13:52:34",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.865,
+        "prices": {
+            "43681": 57.865,
+            "91084863423": 58.33,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:52:43": {
+        "timestamp": "2026-06-26 13:52:43",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.851,
+        "prices": {
+            "43681": 57.851,
+            "91084863423": 58.33,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:52:44": {
+        "timestamp": "2026-06-26 13:52:44",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.851,
+        "prices": {
+            "43681": 57.851,
+            "91084863423": 58.33,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:52:53": {
+        "timestamp": "2026-06-26 13:52:53",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.852,
+        "prices": {
+            "43681": 57.852,
+            "91084863423": 58.33,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:53:03": {
+        "timestamp": "2026-06-26 13:53:03",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.846,
+        "prices": {
+            "43681": 57.846,
+            "91084863423": 58.33,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:53:04": {
+        "timestamp": "2026-06-26 13:53:04",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.846,
+        "prices": {
+            "43681": 57.846,
+            "91084863423": 58.33,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:53:13": {
+        "timestamp": "2026-06-26 13:53:13",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.851,
+        "prices": {
+            "43681": 57.851,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:53:21": {
+        "timestamp": "2026-06-26 13:53:21",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.851,
+        "prices": {
+            "43681": 57.851,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:53:22": {
+        "timestamp": "2026-06-26 13:53:22",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.851,
+        "prices": {
+            "43681": 57.851,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:53:27": {
+        "timestamp": "2026-06-26 13:53:27",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.846,
+        "prices": {
+            "43681": 57.846,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:53:31": {
+        "timestamp": "2026-06-26 13:53:31",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.841,
+        "prices": {
+            "43681": 57.841,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:53:40": {
+        "timestamp": "2026-06-26 13:53:40",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.859,
+        "prices": {
+            "43681": 57.859,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:53:41": {
+        "timestamp": "2026-06-26 13:53:41",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.859,
+        "prices": {
+            "43681": 57.859,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:53:49": {
+        "timestamp": "2026-06-26 13:53:49",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.85,
+        "prices": {
+            "43681": 57.85,
+            "91084863423": 58.3,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:53:51": {
+        "timestamp": "2026-06-26 13:53:51",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.849,
+        "prices": {
+            "43681": 57.849,
+            "91084863423": 58.3,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:53:58": {
+        "timestamp": "2026-06-26 13:53:58",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.851,
+        "prices": {
+            "43681": 57.851,
+            "91084863423": 58.295,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:54:00": {
+        "timestamp": "2026-06-26 13:54:00",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.851,
+        "prices": {
+            "43681": 57.851,
+            "91084863423": 58.295,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:54:06": {
+        "timestamp": "2026-06-26 13:54:06",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.831,
+        "prices": {
+            "43681": 57.831,
+            "91084863423": 58.295,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:54:09": {
+        "timestamp": "2026-06-26 13:54:09",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.828,
+        "prices": {
+            "43681": 57.828,
+            "91084863423": 58.295,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:54:15": {
+        "timestamp": "2026-06-26 13:54:15",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.828,
+        "prices": {
+            "43681": 57.828,
+            "91084863423": 58.285,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:54:18": {
+        "timestamp": "2026-06-26 13:54:18",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.817,
+        "prices": {
+            "43681": 57.817,
+            "91084863423": 58.295,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:54:24": {
+        "timestamp": "2026-06-26 13:54:24",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.827,
+        "prices": {
+            "43681": 57.827,
+            "91084863423": 58.295,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:54:27": {
+        "timestamp": "2026-06-26 13:54:27",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.84,
+        "prices": {
+            "43681": 57.84,
+            "91084863423": 58.285,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:54:32": {
+        "timestamp": "2026-06-26 13:54:32",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.832,
+        "prices": {
+            "43681": 57.832,
+            "91084863423": 58.285,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:54:36": {
+        "timestamp": "2026-06-26 13:54:36",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.825,
+        "prices": {
+            "43681": 57.825,
+            "91084863423": 58.285,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:54:40": {
+        "timestamp": "2026-06-26 13:54:40",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.821,
+        "prices": {
+            "43681": 57.821,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:54:44": {
+        "timestamp": "2026-06-26 13:54:44",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.804,
+        "prices": {
+            "43681": 57.804,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:54:49": {
+        "timestamp": "2026-06-26 13:54:49",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.808,
+        "prices": {
+            "43681": 57.808,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:54:52": {
+        "timestamp": "2026-06-26 13:54:52",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.804,
+        "prices": {
+            "43681": 57.804,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:54:57": {
+        "timestamp": "2026-06-26 13:54:57",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.827,
+        "prices": {
+            "43681": 57.827,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:55:01": {
+        "timestamp": "2026-06-26 13:55:01",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.823,
+        "prices": {
+            "43681": 57.823,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:55:09": {
+        "timestamp": "2026-06-26 13:55:09",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.823,
+        "prices": {
+            "43681": 57.823,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:55:10": {
+        "timestamp": "2026-06-26 13:55:10",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.802,
+        "prices": {
+            "43681": 57.802,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:55:16": {
+        "timestamp": "2026-06-26 13:55:16",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.832,
+        "prices": {
+            "43681": 57.832,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:55:19": {
+        "timestamp": "2026-06-26 13:55:19",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.832,
+        "prices": {
+            "43681": 57.832,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:55:27": {
+        "timestamp": "2026-06-26 13:55:27",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.843,
+        "prices": {
+            "43681": 57.843,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:55:28": {
+        "timestamp": "2026-06-26 13:55:28",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.843,
+        "prices": {
+            "43681": 57.843,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:55:36": {
+        "timestamp": "2026-06-26 13:55:36",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.855,
+        "prices": {
+            "43681": 57.855,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:55:46": {
+        "timestamp": "2026-06-26 13:55:46",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.857,
+        "prices": {
+            "43681": 57.857,
+            "91084863423": 58.255,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:55:55": {
+        "timestamp": "2026-06-26 13:55:55",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.851,
+        "prices": {
+            "43681": 57.851,
+            "91084863423": 58.315,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:55:56": {
+        "timestamp": "2026-06-26 13:55:56",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.851,
+        "prices": {
+            "43681": 57.851,
+            "91084863423": 58.315,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:56:05": {
+        "timestamp": "2026-06-26 13:56:05",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.844,
+        "prices": {
+            "43681": 57.844,
+            "91084863423": 58.285,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:56:06": {
+        "timestamp": "2026-06-26 13:56:06",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.844,
+        "prices": {
+            "43681": 57.844,
+            "91084863423": 58.285,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:56:14": {
+        "timestamp": "2026-06-26 13:56:14",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.826,
+        "prices": {
+            "43681": 57.826,
+            "91084863423": 58.275,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:56:22": {
+        "timestamp": "2026-06-26 13:56:22",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.843,
+        "prices": {
+            "43681": 57.843,
+            "91084863423": 58.29,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:56:23": {
+        "timestamp": "2026-06-26 13:56:23",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.843,
+        "prices": {
+            "43681": 57.843,
+            "91084863423": 58.29,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:56:30": {
+        "timestamp": "2026-06-26 13:56:30",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.863,
+        "prices": {
+            "43681": 57.863,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:56:32": {
+        "timestamp": "2026-06-26 13:56:32",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.863,
+        "prices": {
+            "43681": 57.863,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:56:40": {
+        "timestamp": "2026-06-26 13:56:40",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.857,
+        "prices": {
+            "43681": 57.857,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
+        }
+    },
+    "2026-06-26 13:56:41": {
+        "timestamp": "2026-06-26 13:56:41",
+        "instrument_id": "699e91656754c439a4ad8e78",
+        "instrument_name": "SILVER -SPOTSILVER(DEC) COMEXSILVER(SEP)",
+        "computed_value": 57.857,
+        "prices": {
+            "43681": 57.857,
+            "91084863423": 58.31,
+            "44695": 105.84,
+            "44968": 105.540001
         }
     }
 }
