@@ -8,3 +8,6 @@ broadcast.json
 live_prices.json*.db-shm
 *.db-wal
 data/*.json
+*.db-shm
+*.db-wal
+data/*.json
