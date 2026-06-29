@@ -962,6 +962,7 @@ select option { background: var(--surface); }
   border-bottom: 0.5px solid var(--border, #1e2530);
   vertical-align: middle;
   color: var(--color-text-primary);
+  text-align: left;
 }
 .ea-table tr:last-child td { border-bottom: none; }
 .ea-table tr:hover td { background: rgba(255,255,255,.03); }

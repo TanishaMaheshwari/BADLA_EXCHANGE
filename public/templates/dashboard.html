@@ -49,9 +49,6 @@
     </div>
     <div class="ea-controls">
       <label class="ea-auto-label">
-        <input type="checkbox" id="ea-auto-recheck" onchange="toggleAutoRecheck(this.checked)" style="display:none;">
-        <span id="ea-auto-recheck" style="display:none;"></span>
-        <!-- toggle visual -->
         <span id="auto-tog" onclick="toggleAutoToggle()" style="
           display:inline-block;width:30px;height:16px;border-radius:8px;
           background:var(--border,#1e2530);position:relative;cursor:pointer;flex-shrink:0;">
@@ -124,9 +121,9 @@
       <span id="ea-overall-text">No EAs connected</span>
     </div>
     <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;">
-      <button class="btn-commit locked" id="btn-commit-deal" disabled onclick="commitDeal()">
+      <!-- <button class="btn-commit locked" id="btn-commit-deal" disabled onclick="commitDeal()">
         Place Trade
-      </button>
+      </button> -->
       <span id="ea-last-checked"></span>
     </div>
   </div>

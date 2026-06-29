@@ -49,6 +49,29 @@ function toggleAutoRecheck(enabled) {
   }
 }
 
+let _autoOn = false;
+
+function toggleAutoToggle() {
+  _autoOn = !_autoOn;
+
+  // update visual
+  document.getElementById('auto-tog').style.background = _autoOn ? '#1D9E75' : 'var(--border,#1e2530)';
+  document.getElementById('auto-tog-knob').style.left = _autoOn ? '17px' : '3px';
+
+  // actually start/stop the interval
+  if (_autoOn) {
+    eaAutoInterval = setInterval(() => {
+      if (Date.now() - eaCheckedAt < 29_000) return;
+      checkEAs();
+    }, 30_000);
+  } else {
+    if (eaAutoInterval) {
+      clearInterval(eaAutoInterval);
+      eaAutoInterval = null;
+    }
+  }
+}
+
 // ── Render panel — desktop table + mobile tabs ───────────────────────────
 function renderEAPanel(data) {
   if (!data.eas || data.eas.length === 0) {
