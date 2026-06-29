@@ -37468,3 +37468,16 @@ FileNotFoundError: [Errno 2] No such file or directory: '/Users/tanishamaheshwar
 2026-06-26 13:56:42,644 - BadlaWebSocket - INFO - Shutting down...
 2026-06-26 13:56:42,696 - BadlaWebSocket - INFO - Push timer stopped
 2026-06-26 13:56:43,178 - BadlaWebSocket - INFO - Disconnected
+2026-06-29 09:19:19,411 - BadlaMain - INFO - Starting Badla WebSocket Client
+2026-06-29 09:19:19,411 - BadlaMain - INFO -   data-dir          : data
+2026-06-29 09:19:19,412 - BadlaMain - INFO -   settings-file     : instrument_settings.json
+2026-06-29 09:19:19,412 - BadlaMain - INFO -   response-timeout  : 1.0s
+2026-06-29 09:19:20,354 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-29 09:19:20,357 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-29 09:19:20,357 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-29 09:19:20,358 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-29 09:19:20,359 - BadlaWebSocket - INFO - Sent watch-instruments for 37 instruments
+2026-06-29 09:19:20,564 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-29 09:21:16,637 - BadlaWebSocket - INFO - Shutting down...
+2026-06-29 09:21:16,682 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-29 09:21:16,882 - BadlaWebSocket - INFO - Disconnected

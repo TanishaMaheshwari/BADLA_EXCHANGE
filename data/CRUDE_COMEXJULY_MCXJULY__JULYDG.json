@@ -11251,5 +11251,236 @@
             "77764798265": 69.44,
             "44968": 105.540001
         }
+    },
+    "2026-06-29 09:19:25": {
+        "timestamp": "2026-06-29 09:19:25",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 700552.7200000001,
+        "prices": {
+            "73686685723": 6629.0,
+            "77764798265": 69.99,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:19:30": {
+        "timestamp": "2026-06-29 09:19:30",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 700658.4,
+        "prices": {
+            "73686685723": 6630.0,
+            "77764798265": 69.99,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:19:36": {
+        "timestamp": "2026-06-29 09:19:36",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 700658.4,
+        "prices": {
+            "73686685723": 6630.0,
+            "77764798265": 69.99,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:19:41": {
+        "timestamp": "2026-06-29 09:19:41",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 700658.4,
+        "prices": {
+            "73686685723": 6630.0,
+            "77764798265": 69.99,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:19:47": {
+        "timestamp": "2026-06-29 09:19:47",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 700658.4,
+        "prices": {
+            "73686685723": 6630.0,
+            "77764798265": 69.99,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:19:52": {
+        "timestamp": "2026-06-29 09:19:52",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 700658.4,
+        "prices": {
+            "73686685723": 6630.0,
+            "77764798265": 69.99,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:19:57": {
+        "timestamp": "2026-06-29 09:19:57",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 700447.04,
+        "prices": {
+            "73686685723": 6628.0,
+            "77764798265": 69.99,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:02": {
+        "timestamp": "2026-06-29 09:20:02",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 700447.04,
+        "prices": {
+            "73686685723": 6628.0,
+            "77764798265": 69.99,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:08": {
+        "timestamp": "2026-06-29 09:20:08",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 700658.4,
+        "prices": {
+            "73686685723": 6630.0,
+            "77764798265": 69.99,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:13": {
+        "timestamp": "2026-06-29 09:20:13",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 700552.7200000001,
+        "prices": {
+            "73686685723": 6629.0,
+            "77764798265": 69.99,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:18": {
+        "timestamp": "2026-06-29 09:20:18",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 700341.3600000001,
+        "prices": {
+            "73686685723": 6627.0,
+            "77764798265": 69.96,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:24": {
+        "timestamp": "2026-06-29 09:20:24",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 700341.3600000001,
+        "prices": {
+            "73686685723": 6627.0,
+            "77764798265": 69.97,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:29": {
+        "timestamp": "2026-06-29 09:20:29",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 700447.04,
+        "prices": {
+            "73686685723": 6628.0,
+            "77764798265": 69.97,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:35": {
+        "timestamp": "2026-06-29 09:20:35",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 700447.04,
+        "prices": {
+            "73686685723": 6628.0,
+            "77764798265": 69.97,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:40": {
+        "timestamp": "2026-06-29 09:20:40",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 700447.04,
+        "prices": {
+            "73686685723": 6628.0,
+            "77764798265": 69.97,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:46": {
+        "timestamp": "2026-06-29 09:20:46",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 700447.04,
+        "prices": {
+            "73686685723": 6628.0,
+            "77764798265": 69.97,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:51": {
+        "timestamp": "2026-06-29 09:20:51",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 700658.4,
+        "prices": {
+            "73686685723": 6630.0,
+            "77764798265": 69.97,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:56": {
+        "timestamp": "2026-06-29 09:20:56",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 700658.4,
+        "prices": {
+            "73686685723": 6630.0,
+            "77764798265": 69.97,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:21:02": {
+        "timestamp": "2026-06-29 09:21:02",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 700658.4,
+        "prices": {
+            "73686685723": 6630.0,
+            "77764798265": 69.97,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:21:07": {
+        "timestamp": "2026-06-29 09:21:07",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 700658.4,
+        "prices": {
+            "73686685723": 6630.0,
+            "77764798265": 69.97,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:21:13": {
+        "timestamp": "2026-06-29 09:21:13",
+        "instrument_id": "6a33890db2d57f677d7aa427",
+        "instrument_name": "CRUDE(COMEXJULY-MCXJULY)@JULYDG",
+        "computed_value": 701609.52,
+        "prices": {
+            "73686685723": 6639.0,
+            "77764798265": 70.04,
+            "44968": 105.68
+        }
     }
 }

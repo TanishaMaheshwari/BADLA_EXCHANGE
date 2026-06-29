@@ -178,5 +178,257 @@
             "44695": 105.84,
             "44968": 105.540001
         }
+    },
+    "2026-06-29 09:19:25": {
+        "timestamp": "2026-06-29 09:19:25",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4067.55,
+        "prices": {
+            "43680": 4067.55,
+            "78072679092": 4082.0,
+            "44695": 105.84,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:19:31": {
+        "timestamp": "2026-06-29 09:19:31",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4067.4,
+        "prices": {
+            "43680": 4067.4,
+            "78072679092": 4082.0,
+            "44695": 105.84,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:19:36": {
+        "timestamp": "2026-06-29 09:19:36",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4066.65,
+        "prices": {
+            "43680": 4066.65,
+            "78072679092": 4082.0,
+            "44695": 105.84,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:19:41": {
+        "timestamp": "2026-06-29 09:19:41",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4067.2,
+        "prices": {
+            "43680": 4067.2,
+            "78072679092": 4082.0,
+            "44695": 105.84,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:19:47": {
+        "timestamp": "2026-06-29 09:19:47",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4067.8,
+        "prices": {
+            "43680": 4067.8,
+            "78072679092": 4082.0,
+            "44695": 105.84,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:19:52": {
+        "timestamp": "2026-06-29 09:19:52",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4067.4,
+        "prices": {
+            "43680": 4067.4,
+            "78072679092": 4082.0,
+            "44695": 105.84,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:19:57": {
+        "timestamp": "2026-06-29 09:19:57",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4068.1,
+        "prices": {
+            "43680": 4068.1,
+            "78072679092": 4082.0,
+            "44695": 105.84,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:02": {
+        "timestamp": "2026-06-29 09:20:02",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4067.55,
+        "prices": {
+            "43680": 4067.55,
+            "78072679092": 4082.0,
+            "44695": 105.84,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:08": {
+        "timestamp": "2026-06-29 09:20:08",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4067.55,
+        "prices": {
+            "43680": 4067.55,
+            "78072679092": 4082.0,
+            "44695": 105.84,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:13": {
+        "timestamp": "2026-06-29 09:20:13",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4067.85,
+        "prices": {
+            "43680": 4067.85,
+            "78072679092": 4082.0,
+            "44695": 105.84,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:18": {
+        "timestamp": "2026-06-29 09:20:18",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4067.5,
+        "prices": {
+            "43680": 4067.5,
+            "78072679092": 4082.0,
+            "44695": 105.84,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:24": {
+        "timestamp": "2026-06-29 09:20:24",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4068.4,
+        "prices": {
+            "43680": 4068.4,
+            "78072679092": 4082.0,
+            "44695": 105.84,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:29": {
+        "timestamp": "2026-06-29 09:20:29",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4067.9,
+        "prices": {
+            "43680": 4067.9,
+            "78072679092": 4082.0,
+            "44695": 105.84,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:35": {
+        "timestamp": "2026-06-29 09:20:35",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4068.25,
+        "prices": {
+            "43680": 4068.25,
+            "78072679092": 4082.0,
+            "44695": 105.84,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:40": {
+        "timestamp": "2026-06-29 09:20:40",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4067.6,
+        "prices": {
+            "43680": 4067.6,
+            "78072679092": 4082.0,
+            "44695": 105.84,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:46": {
+        "timestamp": "2026-06-29 09:20:46",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4067.65,
+        "prices": {
+            "43680": 4067.65,
+            "78072679092": 4082.0,
+            "44695": 105.84,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:51": {
+        "timestamp": "2026-06-29 09:20:51",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4067.15,
+        "prices": {
+            "43680": 4067.15,
+            "78072679092": 4082.0,
+            "44695": 105.84,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:20:57": {
+        "timestamp": "2026-06-29 09:20:57",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4067.55,
+        "prices": {
+            "43680": 4067.55,
+            "78072679092": 4082.0,
+            "44695": 105.84,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:21:02": {
+        "timestamp": "2026-06-29 09:21:02",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4068.0,
+        "prices": {
+            "43680": 4068.0,
+            "78072679092": 4082.2,
+            "44695": 105.84,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:21:07": {
+        "timestamp": "2026-06-29 09:21:07",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4066.4,
+        "prices": {
+            "43680": 4066.4,
+            "78072679092": 4081.3,
+            "44695": 105.84,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:21:13": {
+        "timestamp": "2026-06-29 09:21:13",
+        "instrument_id": "6a159db66121bd19cead3931",
+        "instrument_name": "GOLD -SPOTGOLD(DEC) COMEXGOLD(AUG)",
+        "computed_value": 4066.7,
+        "prices": {
+            "43680": 4066.7,
+            "78072679092": 4081.3,
+            "44695": 105.84,
+            "44968": 105.68
+        }
     }
 }

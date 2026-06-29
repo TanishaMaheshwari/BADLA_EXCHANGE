@@ -33,53 +33,116 @@
       </table>
     </div>
   </div>
+ 
+<!-- ═══════════════════════════════════════════════════════════════
+     EA PREFLIGHT CHECK — HTML snippet
+     Replace your existing EA panel section with this
+     ═══════════════════════════════════════════════════════════════ -->
 
-  <div id="ea-check-panel">
-  <h3>⬡ EA Preflight Check</h3>
- 
-  <div class="ea-toolbar">
-    <button class="btn-check" id="btn-check-eas" onclick="checkEAs()">
-      <span id="check-icon">↻</span> Check EAs
-    </button>
- 
-    <label class="ea-auto-toggle">
-      <input type="checkbox" id="ea-auto-recheck" onchange="toggleAutoRecheck(this.checked)">
-      <span class="ea-toggle-track"></span>
-      <span class="ea-toggle-knob"></span>
-      Auto-recheck every 30s
-    </label>
- 
-    <span id="ea-last-checked" style="font-size:11px;color:#4a5060;margin-left:auto;">
-      Never checked
-    </span>
-  </div>
- 
-  <!-- Validity countdown bar -->
-  <div class="ea-validity-bar" id="ea-validity-bar" style="display:none;">
-    <span style="font-size:11px;color:#4a5060;">Valid for</span>
-    <div class="validity-track"><div class="validity-fill" id="validity-fill"></div></div>
-    <span class="validity-label" id="validity-label">5:00</span>
-  </div>
- 
-  <!-- Per-EA leg cards -->
-  <div class="ea-legs-grid" id="ea-legs-grid">
-    <div style="font-size:11px;color:#3a4050;padding:8px 0;">
-      No EAs connected yet — click Check EAs
+<section id="ea-preflight-section">
+
+  <!-- Header -->
+  <div class="ea-panel-header">
+    <div class="ea-panel-title">
+      <span class="ea-status-dot dot-none" id="ea-overall-dot"></span>
+      EA preflight check
+    </div>
+    <div class="ea-controls">
+      <label class="ea-auto-label">
+        <input type="checkbox" id="ea-auto-recheck" onchange="toggleAutoRecheck(this.checked)" style="display:none;">
+        <span id="ea-auto-recheck" style="display:none;"></span>
+        <!-- toggle visual -->
+        <span id="auto-tog" onclick="toggleAutoToggle()" style="
+          display:inline-block;width:30px;height:16px;border-radius:8px;
+          background:var(--border,#1e2530);position:relative;cursor:pointer;flex-shrink:0;">
+          <span id="auto-tog-knob" style="
+            position:absolute;width:10px;height:10px;border-radius:50%;
+            background:#fff;top:3px;left:3px;transition:left .15s;"></span>
+        </span>
+        Auto-recheck 30s
+      </label>
+      <button id="btn-check-eas" onclick="checkEAs()" style="
+        display:flex;align-items:center;gap:6px;font-size:13px;
+        padding:6px 14px;border-radius:8px;
+        border:0.5px solid var(--border,#1e2530);
+        background:transparent;color:inherit;cursor:pointer;">
+        <span id="check-icon">↻</span> Check EAs
+      </button>
     </div>
   </div>
- 
-  <!-- Status footer + commit gate -->
-  <div class="ea-status-footer">
-    <div class="ea-status-dot dot-unknown" id="ea-overall-dot"></div>
-    <span class="ea-status-text" id="ea-overall-text">
-      Run preflight check before placing a trade
-    </span>
-    <button class="btn-commit locked" id="btn-commit-deal"
-            onclick="commitDeal()" disabled>
-      Place Trade
-    </button>
+
+  <!-- Validity countdown bar -->
+  <div id="ea-validity-bar">
+    <span class="validity-label" id="validity-label">Valid for</span>
+    <div id="validity-track">
+      <div id="validity-fill" style="width:0%;"></div>
+    </div>
+    <span id="validity-time"></span>
   </div>
 
-</div>
+  <!-- DESKTOP: table -->
+  <div class="ea-desktop-view">
+    <table class="ea-table">
+      <thead>
+        <tr>
+          <th style="width:18%;">Broker</th>
+          <th style="width:15%;">Account ID</th>
+          <th style="width:10%;">Status</th>
+          <th style="width:11%;">Symbol</th>
+          <th style="width:9%;">Market</th>
+          <th style="width:18%;">Lots used / max</th>
+          <th style="width:10%;">Headroom</th>
+          <th style="width:9%;">Last seen</th>
+        </tr>
+      </thead>
+      <tbody id="ea-desktop-body">
+        <tr>
+          <td colspan="8" style="padding:16px;color:var(--color-text-secondary);font-size:12px;">
+            No EAs connected — click Check EAs
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- MOBILE: tabs -->
+  <div class="ea-mobile-view">
+    <div class="ea-tab-bar" id="ea-mobile-tabs">
+      <!-- tabs injected by JS -->
+    </div>
+    <div id="ea-mobile-panels">
+      <div style="font-size:12px;color:var(--color-text-secondary);padding:8px 0;">
+        No EAs connected — click Check EAs
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="ea-panel-footer">
+    <div class="ea-overall">
+      <span class="ea-status-dot dot-none" id="ea-overall-dot"></span>
+      <span id="ea-overall-text">No EAs connected</span>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;">
+      <button class="btn-commit locked" id="btn-commit-deal" disabled onclick="commitDeal()">
+        Place Trade
+      </button>
+      <span id="ea-last-checked"></span>
+    </div>
+  </div>
+
+</section>
+
+<!-- ── auto-toggle helper (pure JS, no checkbox needed) ── -->
+<script>
+let _autoOn = false;
+function toggleAutoToggle() {
+  _autoOn = !_autoOn;
+  document.getElementById('auto-tog').style.background = _autoOn ? '#1D9E75' : 'var(--border,#1e2530)';
+  document.getElementById('auto-tog-knob').style.left = _autoOn ? '17px' : '3px';
+  toggleAutoRecheck(_autoOn);
+}
+</script>
+
  
 </div>
