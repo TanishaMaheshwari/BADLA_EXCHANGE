@@ -26,6 +26,7 @@ app.use('/api', require('./routes/deals'));
 app.use('/api', require('./routes/brokers'));
 app.use('/api', require('./routes/mt5').router);
 app.use('/api', require('./routes/ea'));
+app.use('/api', require('./routes/orders'));
 app.use('/api', require('./routes/push'));
 app.use('/api', require('./routes/notification'));
 
