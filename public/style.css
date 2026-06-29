@@ -954,11 +954,11 @@ select option { background: var(--surface); }
   color: var(--color-text-secondary);
   text-transform: uppercase;
   letter-spacing: .04em;
-  padding: 0 12px 10px;
+  padding: 5px 12px 5px;
   border-bottom: 0.5px solid var(--border, #1e2530);
 }
 .ea-table td {
-  padding: 12px;
+  padding: 5px 12px;
   border-bottom: 0.5px solid var(--border, #1e2530);
   vertical-align: middle;
   color: var(--color-text-primary);
