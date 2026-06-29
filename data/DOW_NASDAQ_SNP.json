@@ -10591,5 +10591,2447 @@
             "84282184193": 29572.75,
             "44695": 105.84
         }
+    },
+    "2026-06-29 09:49:13": {
+        "timestamp": "2026-06-29 09:49:13",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26175.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29555.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:49:22": {
+        "timestamp": "2026-06-29 09:49:22",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26175.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29554.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:49:30": {
+        "timestamp": "2026-06-29 09:49:30",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26175.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29554.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:49:38": {
+        "timestamp": "2026-06-29 09:49:38",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26175.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29554.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:49:46": {
+        "timestamp": "2026-06-29 09:49:46",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26175.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29552.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:49:54": {
+        "timestamp": "2026-06-29 09:49:54",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26175.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29552.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:50:04": {
+        "timestamp": "2026-06-29 09:50:04",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26175.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29545.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:50:13": {
+        "timestamp": "2026-06-29 09:50:13",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26173.0,
+        "prices": {
+            "91683347732": 52346.0,
+            "84282184193": 29543.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:50:21": {
+        "timestamp": "2026-06-29 09:50:21",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26173.0,
+        "prices": {
+            "91683347732": 52346.0,
+            "84282184193": 29541.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:50:30": {
+        "timestamp": "2026-06-29 09:50:30",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26173.0,
+        "prices": {
+            "91683347732": 52346.0,
+            "84282184193": 29541.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:50:38": {
+        "timestamp": "2026-06-29 09:50:38",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26173.0,
+        "prices": {
+            "91683347732": 52346.0,
+            "84282184193": 29540.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:50:46": {
+        "timestamp": "2026-06-29 09:50:46",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26173.0,
+        "prices": {
+            "91683347732": 52346.0,
+            "84282184193": 29544.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:50:54": {
+        "timestamp": "2026-06-29 09:50:54",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26175.5,
+        "prices": {
+            "91683347732": 52351.0,
+            "84282184193": 29547.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:51:03": {
+        "timestamp": "2026-06-29 09:51:03",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26175.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29545.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:51:11": {
+        "timestamp": "2026-06-29 09:51:11",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26174.5,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29538.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:51:20": {
+        "timestamp": "2026-06-29 09:51:20",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26174.5,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29535.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:51:28": {
+        "timestamp": "2026-06-29 09:51:28",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26171.5,
+        "prices": {
+            "91683347732": 52343.0,
+            "84282184193": 29537.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:51:36": {
+        "timestamp": "2026-06-29 09:51:36",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26171.5,
+        "prices": {
+            "91683347732": 52343.0,
+            "84282184193": 29536.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:51:45": {
+        "timestamp": "2026-06-29 09:51:45",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26171.5,
+        "prices": {
+            "91683347732": 52343.0,
+            "84282184193": 29533.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:51:53": {
+        "timestamp": "2026-06-29 09:51:53",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26171.5,
+        "prices": {
+            "91683347732": 52343.0,
+            "84282184193": 29530.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:52:02": {
+        "timestamp": "2026-06-29 09:52:02",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26171.5,
+        "prices": {
+            "91683347732": 52343.0,
+            "84282184193": 29530.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:52:11": {
+        "timestamp": "2026-06-29 09:52:11",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26172.5,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29529.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:52:19": {
+        "timestamp": "2026-06-29 09:52:19",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26172.5,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29528.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:52:27": {
+        "timestamp": "2026-06-29 09:52:27",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26172.5,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29524.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:52:35": {
+        "timestamp": "2026-06-29 09:52:35",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26172.5,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29527.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:52:43": {
+        "timestamp": "2026-06-29 09:52:43",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26172.5,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29529.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:52:51": {
+        "timestamp": "2026-06-29 09:52:51",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26172.5,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29529.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:52:59": {
+        "timestamp": "2026-06-29 09:52:59",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26172.5,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29527.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:53:07": {
+        "timestamp": "2026-06-29 09:53:07",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26172.5,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29526.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:53:15": {
+        "timestamp": "2026-06-29 09:53:15",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26172.5,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29526.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:53:23": {
+        "timestamp": "2026-06-29 09:53:23",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26172.5,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29525.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:53:31": {
+        "timestamp": "2026-06-29 09:53:31",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26173.0,
+        "prices": {
+            "91683347732": 52346.0,
+            "84282184193": 29529.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:53:40": {
+        "timestamp": "2026-06-29 09:53:40",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26173.0,
+        "prices": {
+            "91683347732": 52346.0,
+            "84282184193": 29526.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:53:48": {
+        "timestamp": "2026-06-29 09:53:48",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26173.0,
+        "prices": {
+            "91683347732": 52346.0,
+            "84282184193": 29526.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:53:57": {
+        "timestamp": "2026-06-29 09:53:57",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26173.0,
+        "prices": {
+            "91683347732": 52346.0,
+            "84282184193": 29529.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:54:06": {
+        "timestamp": "2026-06-29 09:54:06",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26174.5,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29537.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:54:13": {
+        "timestamp": "2026-06-29 09:54:13",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26174.5,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29537.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:54:23": {
+        "timestamp": "2026-06-29 09:54:23",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26174.5,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29543.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:54:32": {
+        "timestamp": "2026-06-29 09:54:32",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29543.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:54:42": {
+        "timestamp": "2026-06-29 09:54:42",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.0,
+        "prices": {
+            "91683347732": 52354.0,
+            "84282184193": 29552.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:54:51": {
+        "timestamp": "2026-06-29 09:54:51",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.0,
+        "prices": {
+            "91683347732": 52354.0,
+            "84282184193": 29556.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:54:59": {
+        "timestamp": "2026-06-29 09:54:59",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.5,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29552.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:55:07": {
+        "timestamp": "2026-06-29 09:55:07",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.5,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29559.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:55:15": {
+        "timestamp": "2026-06-29 09:55:15",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26182.0,
+        "prices": {
+            "91683347732": 52364.0,
+            "84282184193": 29561.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:55:24": {
+        "timestamp": "2026-06-29 09:55:24",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26182.0,
+        "prices": {
+            "91683347732": 52364.0,
+            "84282184193": 29565.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:55:33": {
+        "timestamp": "2026-06-29 09:55:33",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26182.5,
+        "prices": {
+            "91683347732": 52365.0,
+            "84282184193": 29569.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:55:42": {
+        "timestamp": "2026-06-29 09:55:42",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26181.5,
+        "prices": {
+            "91683347732": 52363.0,
+            "84282184193": 29568.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:55:51": {
+        "timestamp": "2026-06-29 09:55:51",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26182.0,
+        "prices": {
+            "91683347732": 52364.0,
+            "84282184193": 29568.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:56:01": {
+        "timestamp": "2026-06-29 09:56:01",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26183.5,
+        "prices": {
+            "91683347732": 52367.0,
+            "84282184193": 29570.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:56:11": {
+        "timestamp": "2026-06-29 09:56:11",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26184.5,
+        "prices": {
+            "91683347732": 52369.0,
+            "84282184193": 29573.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:56:20": {
+        "timestamp": "2026-06-29 09:56:20",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26184.0,
+        "prices": {
+            "91683347732": 52368.0,
+            "84282184193": 29567.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:56:29": {
+        "timestamp": "2026-06-29 09:56:29",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26184.0,
+        "prices": {
+            "91683347732": 52368.0,
+            "84282184193": 29562.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:56:35": {
+        "timestamp": "2026-06-29 09:56:35",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26184.0,
+        "prices": {
+            "91683347732": 52368.0,
+            "84282184193": 29562.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:56:46": {
+        "timestamp": "2026-06-29 09:56:46",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26184.0,
+        "prices": {
+            "91683347732": 52368.0,
+            "84282184193": 29557.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:56:54": {
+        "timestamp": "2026-06-29 09:56:54",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.5,
+        "prices": {
+            "91683347732": 52357.0,
+            "84282184193": 29544.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:57:04": {
+        "timestamp": "2026-06-29 09:57:04",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.5,
+        "prices": {
+            "91683347732": 52357.0,
+            "84282184193": 29547.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:57:13": {
+        "timestamp": "2026-06-29 09:57:13",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29543.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:57:22": {
+        "timestamp": "2026-06-29 09:57:22",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29546.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:57:28": {
+        "timestamp": "2026-06-29 09:57:28",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.5,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29550.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:57:40": {
+        "timestamp": "2026-06-29 09:57:40",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29548.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:57:48": {
+        "timestamp": "2026-06-29 09:57:48",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29548.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:57:56": {
+        "timestamp": "2026-06-29 09:57:56",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29552.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:58:06": {
+        "timestamp": "2026-06-29 09:58:06",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29544.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:58:14": {
+        "timestamp": "2026-06-29 09:58:14",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29542.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:58:22": {
+        "timestamp": "2026-06-29 09:58:22",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29538.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:58:30": {
+        "timestamp": "2026-06-29 09:58:30",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29542.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:58:38": {
+        "timestamp": "2026-06-29 09:58:38",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29541.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:58:46": {
+        "timestamp": "2026-06-29 09:58:46",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29540.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:58:55": {
+        "timestamp": "2026-06-29 09:58:55",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29539.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:59:04": {
+        "timestamp": "2026-06-29 09:59:04",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29539.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:59:12": {
+        "timestamp": "2026-06-29 09:59:12",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29544.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:59:20": {
+        "timestamp": "2026-06-29 09:59:20",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29543.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:59:28": {
+        "timestamp": "2026-06-29 09:59:28",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26182.0,
+        "prices": {
+            "91683347732": 52364.0,
+            "84282184193": 29546.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:59:37": {
+        "timestamp": "2026-06-29 09:59:37",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.5,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29546.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:59:46": {
+        "timestamp": "2026-06-29 09:59:46",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.5,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29546.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 09:59:55": {
+        "timestamp": "2026-06-29 09:59:55",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.5,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29540.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:00:08": {
+        "timestamp": "2026-06-29 10:00:08",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.5,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29539.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:00:14": {
+        "timestamp": "2026-06-29 10:00:14",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29539.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:00:26": {
+        "timestamp": "2026-06-29 10:00:26",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29541.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:00:35": {
+        "timestamp": "2026-06-29 10:00:35",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.5,
+        "prices": {
+            "91683347732": 52357.0,
+            "84282184193": 29532.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:00:43": {
+        "timestamp": "2026-06-29 10:00:43",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.5,
+        "prices": {
+            "91683347732": 52357.0,
+            "84282184193": 29532.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:00:52": {
+        "timestamp": "2026-06-29 10:00:52",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29532.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:01:02": {
+        "timestamp": "2026-06-29 10:01:02",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29540.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:01:11": {
+        "timestamp": "2026-06-29 10:01:11",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29545.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:01:21": {
+        "timestamp": "2026-06-29 10:01:21",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26183.0,
+        "prices": {
+            "91683347732": 52366.0,
+            "84282184193": 29551.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:01:30": {
+        "timestamp": "2026-06-29 10:01:30",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26183.0,
+        "prices": {
+            "91683347732": 52366.0,
+            "84282184193": 29550.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:01:38": {
+        "timestamp": "2026-06-29 10:01:38",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26183.0,
+        "prices": {
+            "91683347732": 52366.0,
+            "84282184193": 29548.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:01:46": {
+        "timestamp": "2026-06-29 10:01:46",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26183.0,
+        "prices": {
+            "91683347732": 52366.0,
+            "84282184193": 29544.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:01:55": {
+        "timestamp": "2026-06-29 10:01:55",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26183.0,
+        "prices": {
+            "91683347732": 52366.0,
+            "84282184193": 29544.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:02:04": {
+        "timestamp": "2026-06-29 10:02:04",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.5,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29542.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:02:13": {
+        "timestamp": "2026-06-29 10:02:13",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.5,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29540.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:02:21": {
+        "timestamp": "2026-06-29 10:02:21",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.5,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29544.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:02:30": {
+        "timestamp": "2026-06-29 10:02:30",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.5,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29541.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:02:38": {
+        "timestamp": "2026-06-29 10:02:38",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.5,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29538.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:02:47": {
+        "timestamp": "2026-06-29 10:02:47",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.5,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29539.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:02:56": {
+        "timestamp": "2026-06-29 10:02:56",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.5,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29544.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:03:05": {
+        "timestamp": "2026-06-29 10:03:05",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.5,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29541.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:03:14": {
+        "timestamp": "2026-06-29 10:03:14",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26181.0,
+        "prices": {
+            "91683347732": 52362.0,
+            "84282184193": 29545.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:03:23": {
+        "timestamp": "2026-06-29 10:03:23",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26181.0,
+        "prices": {
+            "91683347732": 52362.0,
+            "84282184193": 29544.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:03:30": {
+        "timestamp": "2026-06-29 10:03:30",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.5,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29533.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:03:42": {
+        "timestamp": "2026-06-29 10:03:42",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.5,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29537.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:03:52": {
+        "timestamp": "2026-06-29 10:03:52",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.5,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29535.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:04:03": {
+        "timestamp": "2026-06-29 10:04:03",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.5,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29535.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:04:13": {
+        "timestamp": "2026-06-29 10:04:13",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.5,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29532.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:04:22": {
+        "timestamp": "2026-06-29 10:04:22",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.5,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29532.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:04:31": {
+        "timestamp": "2026-06-29 10:04:31",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.5,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29523.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:04:40": {
+        "timestamp": "2026-06-29 10:04:40",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29526.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:04:49": {
+        "timestamp": "2026-06-29 10:04:49",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29528.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:04:58": {
+        "timestamp": "2026-06-29 10:04:58",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29532.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:05:08": {
+        "timestamp": "2026-06-29 10:05:08",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29527.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:05:17": {
+        "timestamp": "2026-06-29 10:05:17",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.0,
+        "prices": {
+            "91683347732": 52354.0,
+            "84282184193": 29524.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:05:26": {
+        "timestamp": "2026-06-29 10:05:26",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29525.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:05:36": {
+        "timestamp": "2026-06-29 10:05:36",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29529.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:05:45": {
+        "timestamp": "2026-06-29 10:05:45",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29528.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:05:54": {
+        "timestamp": "2026-06-29 10:05:54",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29530.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:06:03": {
+        "timestamp": "2026-06-29 10:06:03",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29531.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:06:12": {
+        "timestamp": "2026-06-29 10:06:12",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29534.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:06:20": {
+        "timestamp": "2026-06-29 10:06:20",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.5,
+        "prices": {
+            "91683347732": 52357.0,
+            "84282184193": 29533.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:06:29": {
+        "timestamp": "2026-06-29 10:06:29",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.5,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29529.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:06:37": {
+        "timestamp": "2026-06-29 10:06:37",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.5,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29526.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:06:46": {
+        "timestamp": "2026-06-29 10:06:46",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29523.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:06:55": {
+        "timestamp": "2026-06-29 10:06:55",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29519.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:07:04": {
+        "timestamp": "2026-06-29 10:07:04",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29522.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:07:13": {
+        "timestamp": "2026-06-29 10:07:13",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.0,
+        "prices": {
+            "91683347732": 52354.0,
+            "84282184193": 29522.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:07:21": {
+        "timestamp": "2026-06-29 10:07:21",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.0,
+        "prices": {
+            "91683347732": 52354.0,
+            "84282184193": 29520.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:07:29": {
+        "timestamp": "2026-06-29 10:07:29",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.0,
+        "prices": {
+            "91683347732": 52354.0,
+            "84282184193": 29525.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:07:38": {
+        "timestamp": "2026-06-29 10:07:38",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.0,
+        "prices": {
+            "91683347732": 52354.0,
+            "84282184193": 29525.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:07:47": {
+        "timestamp": "2026-06-29 10:07:47",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.5,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29528.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:07:56": {
+        "timestamp": "2026-06-29 10:07:56",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.5,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29534.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:08:08": {
+        "timestamp": "2026-06-29 10:08:08",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26182.0,
+        "prices": {
+            "91683347732": 52364.0,
+            "84282184193": 29536.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:08:17": {
+        "timestamp": "2026-06-29 10:08:17",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26184.5,
+        "prices": {
+            "91683347732": 52369.0,
+            "84282184193": 29542.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:08:26": {
+        "timestamp": "2026-06-29 10:08:26",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26183.5,
+        "prices": {
+            "91683347732": 52367.0,
+            "84282184193": 29536.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:08:35": {
+        "timestamp": "2026-06-29 10:08:35",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.5,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29537.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:08:44": {
+        "timestamp": "2026-06-29 10:08:44",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26181.5,
+        "prices": {
+            "91683347732": 52363.0,
+            "84282184193": 29538.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:08:53": {
+        "timestamp": "2026-06-29 10:08:53",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26182.5,
+        "prices": {
+            "91683347732": 52365.0,
+            "84282184193": 29542.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:09:05": {
+        "timestamp": "2026-06-29 10:09:05",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26182.5,
+        "prices": {
+            "91683347732": 52365.0,
+            "84282184193": 29544.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:09:14": {
+        "timestamp": "2026-06-29 10:09:14",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26181.0,
+        "prices": {
+            "91683347732": 52362.0,
+            "84282184193": 29532.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:09:23": {
+        "timestamp": "2026-06-29 10:09:23",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26181.0,
+        "prices": {
+            "91683347732": 52362.0,
+            "84282184193": 29527.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:09:32": {
+        "timestamp": "2026-06-29 10:09:32",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26181.0,
+        "prices": {
+            "91683347732": 52362.0,
+            "84282184193": 29524.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:09:40": {
+        "timestamp": "2026-06-29 10:09:40",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29525.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:09:51": {
+        "timestamp": "2026-06-29 10:09:51",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29526.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:10:00": {
+        "timestamp": "2026-06-29 10:10:00",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.5,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29524.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:10:10": {
+        "timestamp": "2026-06-29 10:10:10",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29526.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:10:19": {
+        "timestamp": "2026-06-29 10:10:19",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29527.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:10:28": {
+        "timestamp": "2026-06-29 10:10:28",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29514.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:10:38": {
+        "timestamp": "2026-06-29 10:10:38",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26175.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29509.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:10:48": {
+        "timestamp": "2026-06-29 10:10:48",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26175.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29509.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:10:57": {
+        "timestamp": "2026-06-29 10:10:57",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26175.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29513.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:11:06": {
+        "timestamp": "2026-06-29 10:11:06",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26175.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29511.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:11:12": {
+        "timestamp": "2026-06-29 10:11:12",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26175.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29506.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:11:24": {
+        "timestamp": "2026-06-29 10:11:24",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26175.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29509.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:11:33": {
+        "timestamp": "2026-06-29 10:11:33",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26173.5,
+        "prices": {
+            "91683347732": 52347.0,
+            "84282184193": 29510.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:11:42": {
+        "timestamp": "2026-06-29 10:11:42",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26172.5,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29511.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:11:51": {
+        "timestamp": "2026-06-29 10:11:51",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26172.5,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29514.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:11:59": {
+        "timestamp": "2026-06-29 10:11:59",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26172.5,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29515.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:12:06": {
+        "timestamp": "2026-06-29 10:12:06",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26173.5,
+        "prices": {
+            "91683347732": 52347.0,
+            "84282184193": 29515.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:12:17": {
+        "timestamp": "2026-06-29 10:12:17",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26174.0,
+        "prices": {
+            "91683347732": 52348.0,
+            "84282184193": 29511.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:12:25": {
+        "timestamp": "2026-06-29 10:12:25",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26174.5,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29515.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:12:34": {
+        "timestamp": "2026-06-29 10:12:34",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26174.5,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29514.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:12:42": {
+        "timestamp": "2026-06-29 10:12:42",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26174.5,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29515.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:12:51": {
+        "timestamp": "2026-06-29 10:12:51",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26174.5,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29510.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:13:00": {
+        "timestamp": "2026-06-29 10:13:00",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26173.5,
+        "prices": {
+            "91683347732": 52347.0,
+            "84282184193": 29512.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:13:09": {
+        "timestamp": "2026-06-29 10:13:09",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26174.5,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29515.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:13:19": {
+        "timestamp": "2026-06-29 10:13:19",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26174.5,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29515.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:13:28": {
+        "timestamp": "2026-06-29 10:13:28",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26174.5,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29513.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:13:41": {
+        "timestamp": "2026-06-29 10:13:41",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26173.5,
+        "prices": {
+            "91683347732": 52347.0,
+            "84282184193": 29514.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:13:51": {
+        "timestamp": "2026-06-29 10:13:51",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26173.5,
+        "prices": {
+            "91683347732": 52347.0,
+            "84282184193": 29518.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:14:01": {
+        "timestamp": "2026-06-29 10:14:01",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.0,
+        "prices": {
+            "91683347732": 52354.0,
+            "84282184193": 29520.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:14:11": {
+        "timestamp": "2026-06-29 10:14:11",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.5,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29524.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:14:21": {
+        "timestamp": "2026-06-29 10:14:21",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.5,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29523.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:14:31": {
+        "timestamp": "2026-06-29 10:14:31",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.5,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29523.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:14:43": {
+        "timestamp": "2026-06-29 10:14:43",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.5,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29521.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:14:53": {
+        "timestamp": "2026-06-29 10:14:53",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.5,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29523.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:15:05": {
+        "timestamp": "2026-06-29 10:15:05",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29521.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:15:15": {
+        "timestamp": "2026-06-29 10:15:15",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29519.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:15:24": {
+        "timestamp": "2026-06-29 10:15:24",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.5,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29516.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:15:34": {
+        "timestamp": "2026-06-29 10:15:34",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.5,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29516.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:15:44": {
+        "timestamp": "2026-06-29 10:15:44",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.5,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29512.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:15:54": {
+        "timestamp": "2026-06-29 10:15:54",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.5,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29519.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:16:06": {
+        "timestamp": "2026-06-29 10:16:06",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26175.5,
+        "prices": {
+            "91683347732": 52351.0,
+            "84282184193": 29512.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:16:16": {
+        "timestamp": "2026-06-29 10:16:16",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26175.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29508.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:16:25": {
+        "timestamp": "2026-06-29 10:16:25",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29515.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:16:35": {
+        "timestamp": "2026-06-29 10:16:35",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29515.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:16:44": {
+        "timestamp": "2026-06-29 10:16:44",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29514.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:16:54": {
+        "timestamp": "2026-06-29 10:16:54",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29516.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:17:06": {
+        "timestamp": "2026-06-29 10:17:06",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29518.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:17:14": {
+        "timestamp": "2026-06-29 10:17:14",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.5,
+        "prices": {
+            "91683347732": 52357.0,
+            "84282184193": 29521.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:17:24": {
+        "timestamp": "2026-06-29 10:17:24",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.5,
+        "prices": {
+            "91683347732": 52357.0,
+            "84282184193": 29524.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:17:33": {
+        "timestamp": "2026-06-29 10:17:33",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.5,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29523.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:17:42": {
+        "timestamp": "2026-06-29 10:17:42",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.5,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29520.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:17:51": {
+        "timestamp": "2026-06-29 10:17:51",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29513.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:18:00": {
+        "timestamp": "2026-06-29 10:18:00",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29513.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:18:09": {
+        "timestamp": "2026-06-29 10:18:09",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29515.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:18:18": {
+        "timestamp": "2026-06-29 10:18:18",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29514.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:18:27": {
+        "timestamp": "2026-06-29 10:18:27",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29513.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:18:36": {
+        "timestamp": "2026-06-29 10:18:36",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29511.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:18:42": {
+        "timestamp": "2026-06-29 10:18:42",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26175.5,
+        "prices": {
+            "91683347732": 52351.0,
+            "84282184193": 29512.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:18:53": {
+        "timestamp": "2026-06-29 10:18:53",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.5,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29513.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:19:06": {
+        "timestamp": "2026-06-29 10:19:06",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.5,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29510.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:19:15": {
+        "timestamp": "2026-06-29 10:19:15",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.5,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29511.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:19:24": {
+        "timestamp": "2026-06-29 10:19:24",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.5,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29516.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:19:33": {
+        "timestamp": "2026-06-29 10:19:33",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26176.5,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29523.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:19:42": {
+        "timestamp": "2026-06-29 10:19:42",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29531.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:19:51": {
+        "timestamp": "2026-06-29 10:19:51",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.5,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29535.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:20:04": {
+        "timestamp": "2026-06-29 10:20:04",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.5,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29533.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:20:14": {
+        "timestamp": "2026-06-29 10:20:14",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.5,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29537.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:20:24": {
+        "timestamp": "2026-06-29 10:20:24",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26179.5,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29536.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:20:32": {
+        "timestamp": "2026-06-29 10:20:32",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.5,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29539.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:20:41": {
+        "timestamp": "2026-06-29 10:20:41",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29538.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:20:51": {
+        "timestamp": "2026-06-29 10:20:51",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29533.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:21:01": {
+        "timestamp": "2026-06-29 10:21:01",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29533.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:21:12": {
+        "timestamp": "2026-06-29 10:21:12",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29528.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:21:22": {
+        "timestamp": "2026-06-29 10:21:22",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.5,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29533.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:21:32": {
+        "timestamp": "2026-06-29 10:21:32",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.5,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29534.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:21:42": {
+        "timestamp": "2026-06-29 10:21:42",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.5,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29535.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:21:49": {
+        "timestamp": "2026-06-29 10:21:49",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.5,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29536.5,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:22:03": {
+        "timestamp": "2026-06-29 10:22:03",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26177.5,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29542.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:22:12": {
+        "timestamp": "2026-06-29 10:22:12",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.5,
+        "prices": {
+            "91683347732": 52357.0,
+            "84282184193": 29537.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:22:21": {
+        "timestamp": "2026-06-29 10:22:21",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26178.5,
+        "prices": {
+            "91683347732": 52357.0,
+            "84282184193": 29546.75,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:22:31": {
+        "timestamp": "2026-06-29 10:22:31",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26180.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29544.25,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:22:42": {
+        "timestamp": "2026-06-29 10:22:42",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26181.0,
+        "prices": {
+            "91683347732": 52362.0,
+            "84282184193": 29548.0,
+            "44695": 105.84
+        }
+    },
+    "2026-06-29 10:22:51": {
+        "timestamp": "2026-06-29 10:22:51",
+        "instrument_id": "69cb71586754c439a4ad8e89",
+        "instrument_name": "DOW-NASDAQ-SNP",
+        "computed_value": 26181.0,
+        "prices": {
+            "91683347732": 52362.0,
+            "84282184193": 29549.25,
+            "44695": 105.84
+        }
     }
 }

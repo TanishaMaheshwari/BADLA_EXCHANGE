@@ -1791,5 +1791,2458 @@
             "78072679092": 4081.3,
             "44968": 105.68
         }
+    },
+    "2026-06-29 09:49:11": {
+        "timestamp": "2026-06-29 09:49:11",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5579455.0,
+        "prices": {
+            "20848323089": 143512.0,
+            "78072679092": 4078.2,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:49:20": {
+        "timestamp": "2026-06-29 09:49:20",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5579455.0,
+        "prices": {
+            "20848323089": 143512.0,
+            "78072679092": 4078.2,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:49:28": {
+        "timestamp": "2026-06-29 09:49:28",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578982.0,
+        "prices": {
+            "20848323089": 143527.0,
+            "78072679092": 4079.1,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:49:35": {
+        "timestamp": "2026-06-29 09:49:35",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578982.0,
+        "prices": {
+            "20848323089": 143527.0,
+            "78072679092": 4079.1,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:49:43": {
+        "timestamp": "2026-06-29 09:49:43",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578982.0,
+        "prices": {
+            "20848323089": 143527.0,
+            "78072679092": 4079.1,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:49:51": {
+        "timestamp": "2026-06-29 09:49:51",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578982.0,
+        "prices": {
+            "20848323089": 143527.0,
+            "78072679092": 4079.1,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:49:59": {
+        "timestamp": "2026-06-29 09:49:59",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578982.0,
+        "prices": {
+            "20848323089": 143527.0,
+            "78072679092": 4078.7,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:50:10": {
+        "timestamp": "2026-06-29 09:50:10",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578982.0,
+        "prices": {
+            "20848323089": 143527.0,
+            "78072679092": 4078.7,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:50:19": {
+        "timestamp": "2026-06-29 09:50:19",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578321.0,
+        "prices": {
+            "20848323089": 143510.0,
+            "78072679092": 4078.7,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:50:27": {
+        "timestamp": "2026-06-29 09:50:27",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5576417.0,
+        "prices": {
+            "20848323089": 143461.0,
+            "78072679092": 4078.7,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:50:36": {
+        "timestamp": "2026-06-29 09:50:36",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5577777.0,
+        "prices": {
+            "20848323089": 143496.0,
+            "78072679092": 4078.7,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:50:44": {
+        "timestamp": "2026-06-29 09:50:44",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5577660.0,
+        "prices": {
+            "20848323089": 143493.0,
+            "78072679092": 4078.7,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:50:52": {
+        "timestamp": "2026-06-29 09:50:52",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5577660.0,
+        "prices": {
+            "20848323089": 143493.0,
+            "78072679092": 4078.7,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:51:00": {
+        "timestamp": "2026-06-29 09:51:00",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578710.0,
+        "prices": {
+            "20848323089": 143520.0,
+            "78072679092": 4078.7,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:51:09": {
+        "timestamp": "2026-06-29 09:51:09",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578710.0,
+        "prices": {
+            "20848323089": 143520.0,
+            "78072679092": 4078.6,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:51:17": {
+        "timestamp": "2026-06-29 09:51:17",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578710.0,
+        "prices": {
+            "20848323089": 143520.0,
+            "78072679092": 4078.6,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:51:26": {
+        "timestamp": "2026-06-29 09:51:26",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5577777.0,
+        "prices": {
+            "20848323089": 143496.0,
+            "78072679092": 4078.6,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:51:34": {
+        "timestamp": "2026-06-29 09:51:34",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5577777.0,
+        "prices": {
+            "20848323089": 143496.0,
+            "78072679092": 4078.6,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:51:42": {
+        "timestamp": "2026-06-29 09:51:42",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5577777.0,
+        "prices": {
+            "20848323089": 143496.0,
+            "78072679092": 4078.5,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:51:51": {
+        "timestamp": "2026-06-29 09:51:51",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5576300.0,
+        "prices": {
+            "20848323089": 143458.0,
+            "78072679092": 4078.5,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:51:59": {
+        "timestamp": "2026-06-29 09:51:59",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5576300.0,
+        "prices": {
+            "20848323089": 143458.0,
+            "78072679092": 4078.5,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:52:08": {
+        "timestamp": "2026-06-29 09:52:08",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5576300.0,
+        "prices": {
+            "20848323089": 143458.0,
+            "78072679092": 4078.5,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:52:17": {
+        "timestamp": "2026-06-29 09:52:17",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5576300.0,
+        "prices": {
+            "20848323089": 143458.0,
+            "78072679092": 4078.2,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:52:25": {
+        "timestamp": "2026-06-29 09:52:25",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5576300.0,
+        "prices": {
+            "20848323089": 143458.0,
+            "78072679092": 4077.7,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:52:33": {
+        "timestamp": "2026-06-29 09:52:33",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578943.0,
+        "prices": {
+            "20848323089": 143526.0,
+            "78072679092": 4077.7,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:52:41": {
+        "timestamp": "2026-06-29 09:52:41",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578943.0,
+        "prices": {
+            "20848323089": 143526.0,
+            "78072679092": 4077.7,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:52:49": {
+        "timestamp": "2026-06-29 09:52:49",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578943.0,
+        "prices": {
+            "20848323089": 143526.0,
+            "78072679092": 4077.7,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:52:57": {
+        "timestamp": "2026-06-29 09:52:57",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578943.0,
+        "prices": {
+            "20848323089": 143526.0,
+            "78072679092": 4078.0,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:53:05": {
+        "timestamp": "2026-06-29 09:53:05",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578943.0,
+        "prices": {
+            "20848323089": 143526.0,
+            "78072679092": 4078.0,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:53:13": {
+        "timestamp": "2026-06-29 09:53:13",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578943.0,
+        "prices": {
+            "20848323089": 143526.0,
+            "78072679092": 4077.4,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:53:21": {
+        "timestamp": "2026-06-29 09:53:21",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578943.0,
+        "prices": {
+            "20848323089": 143526.0,
+            "78072679092": 4077.1,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:53:29": {
+        "timestamp": "2026-06-29 09:53:29",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578415.0,
+        "prices": {
+            "20848323089": 143526.0,
+            "78072679092": 4076.8,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 09:53:37": {
+        "timestamp": "2026-06-29 09:53:37",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578415.0,
+        "prices": {
+            "20848323089": 143526.0,
+            "78072679092": 4076.8,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 09:53:46": {
+        "timestamp": "2026-06-29 09:53:46",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578415.0,
+        "prices": {
+            "20848323089": 143526.0,
+            "78072679092": 4076.8,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 09:53:54": {
+        "timestamp": "2026-06-29 09:53:54",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578415.0,
+        "prices": {
+            "20848323089": 143526.0,
+            "78072679092": 4076.5,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 09:54:03": {
+        "timestamp": "2026-06-29 09:54:03",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578415.0,
+        "prices": {
+            "20848323089": 143526.0,
+            "78072679092": 4077.0,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 09:54:14": {
+        "timestamp": "2026-06-29 09:54:14",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578415.0,
+        "prices": {
+            "20848323089": 143526.0,
+            "78072679092": 4077.1,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 09:54:20": {
+        "timestamp": "2026-06-29 09:54:20",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578415.0,
+        "prices": {
+            "20848323089": 143526.0,
+            "78072679092": 4077.1,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 09:54:29": {
+        "timestamp": "2026-06-29 09:54:29",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578415.0,
+        "prices": {
+            "20848323089": 143526.0,
+            "78072679092": 4077.7,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 09:54:39": {
+        "timestamp": "2026-06-29 09:54:39",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578415.0,
+        "prices": {
+            "20848323089": 143526.0,
+            "78072679092": 4077.5,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 09:54:48": {
+        "timestamp": "2026-06-29 09:54:48",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5577359.0,
+        "prices": {
+            "20848323089": 143526.0,
+            "78072679092": 4078.7,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:54:57": {
+        "timestamp": "2026-06-29 09:54:57",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5577359.0,
+        "prices": {
+            "20848323089": 143526.0,
+            "78072679092": 4077.9,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:55:05": {
+        "timestamp": "2026-06-29 09:55:05",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5577359.0,
+        "prices": {
+            "20848323089": 143526.0,
+            "78072679092": 4078.3,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:55:12": {
+        "timestamp": "2026-06-29 09:55:12",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578758.0,
+        "prices": {
+            "20848323089": 143562.0,
+            "78072679092": 4078.9,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:55:21": {
+        "timestamp": "2026-06-29 09:55:21",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578758.0,
+        "prices": {
+            "20848323089": 143562.0,
+            "78072679092": 4078.9,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:55:30": {
+        "timestamp": "2026-06-29 09:55:30",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5579729.0,
+        "prices": {
+            "20848323089": 143587.0,
+            "78072679092": 4078.9,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:55:39": {
+        "timestamp": "2026-06-29 09:55:39",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5579729.0,
+        "prices": {
+            "20848323089": 143587.0,
+            "78072679092": 4078.9,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:55:48": {
+        "timestamp": "2026-06-29 09:55:48",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5579729.0,
+        "prices": {
+            "20848323089": 143587.0,
+            "78072679092": 4078.9,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:55:57": {
+        "timestamp": "2026-06-29 09:55:57",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5579729.0,
+        "prices": {
+            "20848323089": 143587.0,
+            "78072679092": 4078.8,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:56:09": {
+        "timestamp": "2026-06-29 09:56:09",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5579729.0,
+        "prices": {
+            "20848323089": 143587.0,
+            "78072679092": 4078.8,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:56:17": {
+        "timestamp": "2026-06-29 09:56:17",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5579729.0,
+        "prices": {
+            "20848323089": 143587.0,
+            "78072679092": 4078.9,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:56:26": {
+        "timestamp": "2026-06-29 09:56:26",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5579729.0,
+        "prices": {
+            "20848323089": 143587.0,
+            "78072679092": 4078.8,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:56:36": {
+        "timestamp": "2026-06-29 09:56:36",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578291.0,
+        "prices": {
+            "20848323089": 143550.0,
+            "78072679092": 4079.1,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:56:43": {
+        "timestamp": "2026-06-29 09:56:43",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578291.0,
+        "prices": {
+            "20848323089": 143550.0,
+            "78072679092": 4079.1,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:56:51": {
+        "timestamp": "2026-06-29 09:56:51",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578330.0,
+        "prices": {
+            "20848323089": 143551.0,
+            "78072679092": 4078.3,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:57:00": {
+        "timestamp": "2026-06-29 09:57:00",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578330.0,
+        "prices": {
+            "20848323089": 143551.0,
+            "78072679092": 4078.6,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:57:10": {
+        "timestamp": "2026-06-29 09:57:10",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578330.0,
+        "prices": {
+            "20848323089": 143551.0,
+            "78072679092": 4078.6,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:57:19": {
+        "timestamp": "2026-06-29 09:57:19",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578330.0,
+        "prices": {
+            "20848323089": 143551.0,
+            "78072679092": 4078.6,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:57:29": {
+        "timestamp": "2026-06-29 09:57:29",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578330.0,
+        "prices": {
+            "20848323089": 143551.0,
+            "78072679092": 4078.6,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:57:37": {
+        "timestamp": "2026-06-29 09:57:37",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578330.0,
+        "prices": {
+            "20848323089": 143551.0,
+            "78072679092": 4080.0,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:57:46": {
+        "timestamp": "2026-06-29 09:57:46",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578175.0,
+        "prices": {
+            "20848323089": 143547.0,
+            "78072679092": 4080.4,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:57:54": {
+        "timestamp": "2026-06-29 09:57:54",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578175.0,
+        "prices": {
+            "20848323089": 143547.0,
+            "78072679092": 4080.4,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:58:03": {
+        "timestamp": "2026-06-29 09:58:03",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578175.0,
+        "prices": {
+            "20848323089": 143547.0,
+            "78072679092": 4080.4,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:58:12": {
+        "timestamp": "2026-06-29 09:58:12",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578175.0,
+        "prices": {
+            "20848323089": 143547.0,
+            "78072679092": 4080.4,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:58:19": {
+        "timestamp": "2026-06-29 09:58:19",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578175.0,
+        "prices": {
+            "20848323089": 143547.0,
+            "78072679092": 4080.0,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:58:28": {
+        "timestamp": "2026-06-29 09:58:28",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578175.0,
+        "prices": {
+            "20848323089": 143547.0,
+            "78072679092": 4079.8,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:58:36": {
+        "timestamp": "2026-06-29 09:58:36",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578175.0,
+        "prices": {
+            "20848323089": 143547.0,
+            "78072679092": 4079.5,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:58:44": {
+        "timestamp": "2026-06-29 09:58:44",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578175.0,
+        "prices": {
+            "20848323089": 143547.0,
+            "78072679092": 4079.5,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:58:52": {
+        "timestamp": "2026-06-29 09:58:52",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578175.0,
+        "prices": {
+            "20848323089": 143547.0,
+            "78072679092": 4079.5,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:59:00": {
+        "timestamp": "2026-06-29 09:59:00",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578175.0,
+        "prices": {
+            "20848323089": 143547.0,
+            "78072679092": 4079.3,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:59:10": {
+        "timestamp": "2026-06-29 09:59:10",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578175.0,
+        "prices": {
+            "20848323089": 143547.0,
+            "78072679092": 4079.1,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:59:18": {
+        "timestamp": "2026-06-29 09:59:18",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578175.0,
+        "prices": {
+            "20848323089": 143547.0,
+            "78072679092": 4079.7,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:59:26": {
+        "timestamp": "2026-06-29 09:59:26",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578175.0,
+        "prices": {
+            "20848323089": 143547.0,
+            "78072679092": 4079.9,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:59:34": {
+        "timestamp": "2026-06-29 09:59:34",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578175.0,
+        "prices": {
+            "20848323089": 143547.0,
+            "78072679092": 4079.9,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:59:43": {
+        "timestamp": "2026-06-29 09:59:43",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578175.0,
+        "prices": {
+            "20848323089": 143547.0,
+            "78072679092": 4079.9,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:59:52": {
+        "timestamp": "2026-06-29 09:59:52",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5578175.0,
+        "prices": {
+            "20848323089": 143547.0,
+            "78072679092": 4079.9,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 10:00:02": {
+        "timestamp": "2026-06-29 10:00:02",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5577903.0,
+        "prices": {
+            "20848323089": 143540.0,
+            "78072679092": 4079.7,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 10:00:15": {
+        "timestamp": "2026-06-29 10:00:15",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5577903.0,
+        "prices": {
+            "20848323089": 143540.0,
+            "78072679092": 4078.9,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 10:00:23": {
+        "timestamp": "2026-06-29 10:00:23",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5581599.0,
+        "prices": {
+            "20848323089": 143540.0,
+            "78072679092": 4079.0,
+            "44968": 105.699997
+        }
+    },
+    "2026-06-29 10:00:32": {
+        "timestamp": "2026-06-29 10:00:32",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5580472.0,
+        "prices": {
+            "20848323089": 143511.0,
+            "78072679092": 4079.0,
+            "44968": 105.699997
+        }
+    },
+    "2026-06-29 10:00:41": {
+        "timestamp": "2026-06-29 10:00:41",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5580472.0,
+        "prices": {
+            "20848323089": 143511.0,
+            "78072679092": 4078.7,
+            "44968": 105.699997
+        }
+    },
+    "2026-06-29 10:00:49": {
+        "timestamp": "2026-06-29 10:00:49",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5580472.0,
+        "prices": {
+            "20848323089": 143511.0,
+            "78072679092": 4078.7,
+            "44968": 105.699997
+        }
+    },
+    "2026-06-29 10:00:58": {
+        "timestamp": "2026-06-29 10:00:58",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5580472.0,
+        "prices": {
+            "20848323089": 143511.0,
+            "78072679092": 4079.0,
+            "44968": 105.699997
+        }
+    },
+    "2026-06-29 10:01:08": {
+        "timestamp": "2026-06-29 10:01:08",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5580472.0,
+        "prices": {
+            "20848323089": 143511.0,
+            "78072679092": 4079.0,
+            "44968": 105.699997
+        }
+    },
+    "2026-06-29 10:01:17": {
+        "timestamp": "2026-06-29 10:01:17",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5579416.0,
+        "prices": {
+            "20848323089": 143511.0,
+            "78072679092": 4079.0,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:01:27": {
+        "timestamp": "2026-06-29 10:01:27",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5580154.0,
+        "prices": {
+            "20848323089": 143530.0,
+            "78072679092": 4078.9,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:01:35": {
+        "timestamp": "2026-06-29 10:01:35",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5580154.0,
+        "prices": {
+            "20848323089": 143530.0,
+            "78072679092": 4079.0,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:01:44": {
+        "timestamp": "2026-06-29 10:01:44",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5580154.0,
+        "prices": {
+            "20848323089": 143530.0,
+            "78072679092": 4079.0,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:01:52": {
+        "timestamp": "2026-06-29 10:01:52",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5580154.0,
+        "prices": {
+            "20848323089": 143530.0,
+            "78072679092": 4079.0,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:02:01": {
+        "timestamp": "2026-06-29 10:02:01",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5580154.0,
+        "prices": {
+            "20848323089": 143530.0,
+            "78072679092": 4079.2,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:02:10": {
+        "timestamp": "2026-06-29 10:02:10",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5580154.0,
+        "prices": {
+            "20848323089": 143530.0,
+            "78072679092": 4079.0,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:02:18": {
+        "timestamp": "2026-06-29 10:02:18",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5577239.0,
+        "prices": {
+            "20848323089": 143455.0,
+            "78072679092": 4077.9,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:02:27": {
+        "timestamp": "2026-06-29 10:02:27",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5577822.0,
+        "prices": {
+            "20848323089": 143470.0,
+            "78072679092": 4077.9,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:02:36": {
+        "timestamp": "2026-06-29 10:02:36",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5577822.0,
+        "prices": {
+            "20848323089": 143470.0,
+            "78072679092": 4077.5,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:02:44": {
+        "timestamp": "2026-06-29 10:02:44",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5577822.0,
+        "prices": {
+            "20848323089": 143470.0,
+            "78072679092": 4077.5,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:02:53": {
+        "timestamp": "2026-06-29 10:02:53",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5577822.0,
+        "prices": {
+            "20848323089": 143470.0,
+            "78072679092": 4077.6,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:03:02": {
+        "timestamp": "2026-06-29 10:03:02",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5577822.0,
+        "prices": {
+            "20848323089": 143470.0,
+            "78072679092": 4077.5,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:03:12": {
+        "timestamp": "2026-06-29 10:03:12",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5579105.0,
+        "prices": {
+            "20848323089": 143503.0,
+            "78072679092": 4077.5,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:03:21": {
+        "timestamp": "2026-06-29 10:03:21",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5579105.0,
+        "prices": {
+            "20848323089": 143503.0,
+            "78072679092": 4077.5,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:03:31": {
+        "timestamp": "2026-06-29 10:03:31",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5577122.0,
+        "prices": {
+            "20848323089": 143452.0,
+            "78072679092": 4075.9,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:03:39": {
+        "timestamp": "2026-06-29 10:03:39",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5577122.0,
+        "prices": {
+            "20848323089": 143452.0,
+            "78072679092": 4075.5,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:03:49": {
+        "timestamp": "2026-06-29 10:03:49",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5575178.0,
+        "prices": {
+            "20848323089": 143402.0,
+            "78072679092": 4075.4,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:03:58": {
+        "timestamp": "2026-06-29 10:03:58",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5575178.0,
+        "prices": {
+            "20848323089": 143402.0,
+            "78072679092": 4076.3,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:04:10": {
+        "timestamp": "2026-06-29 10:04:10",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5574439.0,
+        "prices": {
+            "20848323089": 143383.0,
+            "78072679092": 4075.6,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:04:20": {
+        "timestamp": "2026-06-29 10:04:20",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5572923.0,
+        "prices": {
+            "20848323089": 143344.0,
+            "78072679092": 4074.8,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:04:28": {
+        "timestamp": "2026-06-29 10:04:28",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5574012.0,
+        "prices": {
+            "20848323089": 143372.0,
+            "78072679092": 4074.8,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:04:37": {
+        "timestamp": "2026-06-29 10:04:37",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5574012.0,
+        "prices": {
+            "20848323089": 143372.0,
+            "78072679092": 4074.8,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:04:46": {
+        "timestamp": "2026-06-29 10:04:46",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5572807.0,
+        "prices": {
+            "20848323089": 143341.0,
+            "78072679092": 4075.4,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:04:55": {
+        "timestamp": "2026-06-29 10:04:55",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5574284.0,
+        "prices": {
+            "20848323089": 143379.0,
+            "78072679092": 4075.2,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:05:05": {
+        "timestamp": "2026-06-29 10:05:05",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5574284.0,
+        "prices": {
+            "20848323089": 143379.0,
+            "78072679092": 4075.9,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:05:14": {
+        "timestamp": "2026-06-29 10:05:14",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5574284.0,
+        "prices": {
+            "20848323089": 143379.0,
+            "78072679092": 4075.0,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:05:23": {
+        "timestamp": "2026-06-29 10:05:23",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5574284.0,
+        "prices": {
+            "20848323089": 143379.0,
+            "78072679092": 4075.5,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:05:32": {
+        "timestamp": "2026-06-29 10:05:32",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5574284.0,
+        "prices": {
+            "20848323089": 143379.0,
+            "78072679092": 4075.3,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:05:42": {
+        "timestamp": "2026-06-29 10:05:42",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5573701.0,
+        "prices": {
+            "20848323089": 143364.0,
+            "78072679092": 4074.8,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:05:52": {
+        "timestamp": "2026-06-29 10:05:52",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5573701.0,
+        "prices": {
+            "20848323089": 143364.0,
+            "78072679092": 4074.7,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:06:00": {
+        "timestamp": "2026-06-29 10:06:00",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5573157.0,
+        "prices": {
+            "20848323089": 143350.0,
+            "78072679092": 4074.2,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:06:09": {
+        "timestamp": "2026-06-29 10:06:09",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5573468.0,
+        "prices": {
+            "20848323089": 143358.0,
+            "78072679092": 4074.5,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:06:18": {
+        "timestamp": "2026-06-29 10:06:18",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5573157.0,
+        "prices": {
+            "20848323089": 143350.0,
+            "78072679092": 4074.3,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:06:26": {
+        "timestamp": "2026-06-29 10:06:26",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5572068.0,
+        "prices": {
+            "20848323089": 143322.0,
+            "78072679092": 4074.1,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:06:35": {
+        "timestamp": "2026-06-29 10:06:35",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5572068.0,
+        "prices": {
+            "20848323089": 143322.0,
+            "78072679092": 4073.0,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:06:44": {
+        "timestamp": "2026-06-29 10:06:44",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5571213.0,
+        "prices": {
+            "20848323089": 143300.0,
+            "78072679092": 4073.4,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:06:52": {
+        "timestamp": "2026-06-29 10:06:52",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5571213.0,
+        "prices": {
+            "20848323089": 143300.0,
+            "78072679092": 4073.4,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:07:01": {
+        "timestamp": "2026-06-29 10:07:01",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5571213.0,
+        "prices": {
+            "20848323089": 143300.0,
+            "78072679092": 4073.5,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:07:10": {
+        "timestamp": "2026-06-29 10:07:10",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5571912.0,
+        "prices": {
+            "20848323089": 143318.0,
+            "78072679092": 4072.4,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:07:19": {
+        "timestamp": "2026-06-29 10:07:19",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5571213.0,
+        "prices": {
+            "20848323089": 143300.0,
+            "78072679092": 4072.2,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:07:27": {
+        "timestamp": "2026-06-29 10:07:27",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5571213.0,
+        "prices": {
+            "20848323089": 143300.0,
+            "78072679092": 4072.5,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:07:36": {
+        "timestamp": "2026-06-29 10:07:36",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5571213.0,
+        "prices": {
+            "20848323089": 143300.0,
+            "78072679092": 4072.5,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:07:44": {
+        "timestamp": "2026-06-29 10:07:44",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5571213.0,
+        "prices": {
+            "20848323089": 143300.0,
+            "78072679092": 4071.9,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:07:54": {
+        "timestamp": "2026-06-29 10:07:54",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5571796.0,
+        "prices": {
+            "20848323089": 143315.0,
+            "78072679092": 4072.8,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:08:04": {
+        "timestamp": "2026-06-29 10:08:04",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5571796.0,
+        "prices": {
+            "20848323089": 143315.0,
+            "78072679092": 4072.6,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:08:14": {
+        "timestamp": "2026-06-29 10:08:14",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569852.0,
+        "prices": {
+            "20848323089": 143265.0,
+            "78072679092": 4072.6,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:08:23": {
+        "timestamp": "2026-06-29 10:08:23",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569230.0,
+        "prices": {
+            "20848323089": 143249.0,
+            "78072679092": 4071.7,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:08:32": {
+        "timestamp": "2026-06-29 10:08:32",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569230.0,
+        "prices": {
+            "20848323089": 143249.0,
+            "78072679092": 4071.6,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:08:41": {
+        "timestamp": "2026-06-29 10:08:41",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5567169.0,
+        "prices": {
+            "20848323089": 143196.0,
+            "78072679092": 4071.4,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:08:51": {
+        "timestamp": "2026-06-29 10:08:51",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5568141.0,
+        "prices": {
+            "20848323089": 143221.0,
+            "78072679092": 4071.9,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:08:59": {
+        "timestamp": "2026-06-29 10:08:59",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5568569.0,
+        "prices": {
+            "20848323089": 143232.0,
+            "78072679092": 4072.2,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:09:11": {
+        "timestamp": "2026-06-29 10:09:11",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5567558.0,
+        "prices": {
+            "20848323089": 143206.0,
+            "78072679092": 4070.7,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:09:20": {
+        "timestamp": "2026-06-29 10:09:20",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5566508.0,
+        "prices": {
+            "20848323089": 143179.0,
+            "78072679092": 4071.4,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:09:29": {
+        "timestamp": "2026-06-29 10:09:29",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5567675.0,
+        "prices": {
+            "20848323089": 143209.0,
+            "78072679092": 4070.4,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:09:41": {
+        "timestamp": "2026-06-29 10:09:41",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5566314.0,
+        "prices": {
+            "20848323089": 143174.0,
+            "78072679092": 4070.5,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:09:48": {
+        "timestamp": "2026-06-29 10:09:48",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5568413.0,
+        "prices": {
+            "20848323089": 143228.0,
+            "78072679092": 4070.6,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:09:57": {
+        "timestamp": "2026-06-29 10:09:57",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5568413.0,
+        "prices": {
+            "20848323089": 143228.0,
+            "78072679092": 4070.7,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:10:06": {
+        "timestamp": "2026-06-29 10:10:06",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5568413.0,
+        "prices": {
+            "20848323089": 143228.0,
+            "78072679092": 4069.4,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:10:16": {
+        "timestamp": "2026-06-29 10:10:16",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5566936.0,
+        "prices": {
+            "20848323089": 143190.0,
+            "78072679092": 4068.7,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:10:25": {
+        "timestamp": "2026-06-29 10:10:25",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5566703.0,
+        "prices": {
+            "20848323089": 143184.0,
+            "78072679092": 4068.8,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:10:35": {
+        "timestamp": "2026-06-29 10:10:35",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5565303.0,
+        "prices": {
+            "20848323089": 143148.0,
+            "78072679092": 4068.6,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:10:45": {
+        "timestamp": "2026-06-29 10:10:45",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5565731.0,
+        "prices": {
+            "20848323089": 143159.0,
+            "78072679092": 4067.9,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:10:54": {
+        "timestamp": "2026-06-29 10:10:54",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5565731.0,
+        "prices": {
+            "20848323089": 143159.0,
+            "78072679092": 4068.4,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:11:03": {
+        "timestamp": "2026-06-29 10:11:03",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5565264.0,
+        "prices": {
+            "20848323089": 143147.0,
+            "78072679092": 4068.2,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:11:13": {
+        "timestamp": "2026-06-29 10:11:13",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5565381.0,
+        "prices": {
+            "20848323089": 143150.0,
+            "78072679092": 4067.3,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:11:21": {
+        "timestamp": "2026-06-29 10:11:21",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5564992.0,
+        "prices": {
+            "20848323089": 143140.0,
+            "78072679092": 4066.9,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:11:30": {
+        "timestamp": "2026-06-29 10:11:30",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5564681.0,
+        "prices": {
+            "20848323089": 143132.0,
+            "78072679092": 4067.5,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:11:39": {
+        "timestamp": "2026-06-29 10:11:39",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5565420.0,
+        "prices": {
+            "20848323089": 143151.0,
+            "78072679092": 4067.9,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:11:48": {
+        "timestamp": "2026-06-29 10:11:48",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5565420.0,
+        "prices": {
+            "20848323089": 143151.0,
+            "78072679092": 4067.6,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:11:57": {
+        "timestamp": "2026-06-29 10:11:57",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5565498.0,
+        "prices": {
+            "20848323089": 143153.0,
+            "78072679092": 4068.6,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:12:07": {
+        "timestamp": "2026-06-29 10:12:07",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5563918.0,
+        "prices": {
+            "20848323089": 143153.0,
+            "78072679092": 4068.5,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:12:14": {
+        "timestamp": "2026-06-29 10:12:14",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5564190.0,
+        "prices": {
+            "20848323089": 143160.0,
+            "78072679092": 4068.2,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:12:23": {
+        "timestamp": "2026-06-29 10:12:23",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5565162.0,
+        "prices": {
+            "20848323089": 143185.0,
+            "78072679092": 4068.5,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:12:31": {
+        "timestamp": "2026-06-29 10:12:31",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5565162.0,
+        "prices": {
+            "20848323089": 143185.0,
+            "78072679092": 4068.9,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:12:40": {
+        "timestamp": "2026-06-29 10:12:40",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5564190.0,
+        "prices": {
+            "20848323089": 143160.0,
+            "78072679092": 4068.0,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:12:48": {
+        "timestamp": "2026-06-29 10:12:48",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5564190.0,
+        "prices": {
+            "20848323089": 143160.0,
+            "78072679092": 4069.0,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:12:57": {
+        "timestamp": "2026-06-29 10:12:57",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5564190.0,
+        "prices": {
+            "20848323089": 143160.0,
+            "78072679092": 4068.7,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:13:06": {
+        "timestamp": "2026-06-29 10:13:06",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5567144.0,
+        "prices": {
+            "20848323089": 143236.0,
+            "78072679092": 4069.8,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:13:15": {
+        "timestamp": "2026-06-29 10:13:15",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5567144.0,
+        "prices": {
+            "20848323089": 143236.0,
+            "78072679092": 4069.8,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:13:25": {
+        "timestamp": "2026-06-29 10:13:25",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5567144.0,
+        "prices": {
+            "20848323089": 143236.0,
+            "78072679092": 4069.1,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:13:35": {
+        "timestamp": "2026-06-29 10:13:35",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5567144.0,
+        "prices": {
+            "20848323089": 143236.0,
+            "78072679092": 4069.3,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:13:48": {
+        "timestamp": "2026-06-29 10:13:48",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5568932.0,
+        "prices": {
+            "20848323089": 143282.0,
+            "78072679092": 4069.4,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:13:58": {
+        "timestamp": "2026-06-29 10:13:58",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5570098.0,
+        "prices": {
+            "20848323089": 143312.0,
+            "78072679092": 4070.6,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:14:08": {
+        "timestamp": "2026-06-29 10:14:08",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5570797.0,
+        "prices": {
+            "20848323089": 143330.0,
+            "78072679092": 4070.2,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:14:17": {
+        "timestamp": "2026-06-29 10:14:17",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5570797.0,
+        "prices": {
+            "20848323089": 143330.0,
+            "78072679092": 4070.8,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:14:27": {
+        "timestamp": "2026-06-29 10:14:27",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5571380.0,
+        "prices": {
+            "20848323089": 143345.0,
+            "78072679092": 4071.4,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:14:37": {
+        "timestamp": "2026-06-29 10:14:37",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5572702.0,
+        "prices": {
+            "20848323089": 143379.0,
+            "78072679092": 4071.0,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:14:49": {
+        "timestamp": "2026-06-29 10:14:49",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5572702.0,
+        "prices": {
+            "20848323089": 143379.0,
+            "78072679092": 4071.0,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:14:59": {
+        "timestamp": "2026-06-29 10:14:59",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5572741.0,
+        "prices": {
+            "20848323089": 143380.0,
+            "78072679092": 4071.4,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:15:12": {
+        "timestamp": "2026-06-29 10:15:12",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5572430.0,
+        "prices": {
+            "20848323089": 143372.0,
+            "78072679092": 4071.4,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:15:21": {
+        "timestamp": "2026-06-29 10:15:21",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5572430.0,
+        "prices": {
+            "20848323089": 143372.0,
+            "78072679092": 4071.2,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:15:30": {
+        "timestamp": "2026-06-29 10:15:30",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5572430.0,
+        "prices": {
+            "20848323089": 143372.0,
+            "78072679092": 4071.2,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:15:40": {
+        "timestamp": "2026-06-29 10:15:40",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5572430.0,
+        "prices": {
+            "20848323089": 143372.0,
+            "78072679092": 4070.4,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:15:50": {
+        "timestamp": "2026-06-29 10:15:50",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5572430.0,
+        "prices": {
+            "20848323089": 143372.0,
+            "78072679092": 4070.7,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:16:01": {
+        "timestamp": "2026-06-29 10:16:01",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5570292.0,
+        "prices": {
+            "20848323089": 143317.0,
+            "78072679092": 4070.3,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:16:12": {
+        "timestamp": "2026-06-29 10:16:12",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5570292.0,
+        "prices": {
+            "20848323089": 143317.0,
+            "78072679092": 4070.4,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:16:21": {
+        "timestamp": "2026-06-29 10:16:21",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5570292.0,
+        "prices": {
+            "20848323089": 143317.0,
+            "78072679092": 4070.7,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:16:31": {
+        "timestamp": "2026-06-29 10:16:31",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5570292.0,
+        "prices": {
+            "20848323089": 143317.0,
+            "78072679092": 4070.7,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:16:41": {
+        "timestamp": "2026-06-29 10:16:41",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569942.0,
+        "prices": {
+            "20848323089": 143308.0,
+            "78072679092": 4070.7,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:16:51": {
+        "timestamp": "2026-06-29 10:16:51",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569942.0,
+        "prices": {
+            "20848323089": 143308.0,
+            "78072679092": 4070.6,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:17:00": {
+        "timestamp": "2026-06-29 10:17:00",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569942.0,
+        "prices": {
+            "20848323089": 143308.0,
+            "78072679092": 4070.6,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:17:12": {
+        "timestamp": "2026-06-29 10:17:12",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5570603.0,
+        "prices": {
+            "20848323089": 143325.0,
+            "78072679092": 4071.3,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:17:21": {
+        "timestamp": "2026-06-29 10:17:21",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5570075.0,
+        "prices": {
+            "20848323089": 143325.0,
+            "78072679092": 4071.0,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:17:30": {
+        "timestamp": "2026-06-29 10:17:30",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5570075.0,
+        "prices": {
+            "20848323089": 143325.0,
+            "78072679092": 4071.0,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:17:39": {
+        "timestamp": "2026-06-29 10:17:39",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5570075.0,
+        "prices": {
+            "20848323089": 143325.0,
+            "78072679092": 4071.2,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:17:48": {
+        "timestamp": "2026-06-29 10:17:48",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5571708.0,
+        "prices": {
+            "20848323089": 143367.0,
+            "78072679092": 4070.9,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:17:57": {
+        "timestamp": "2026-06-29 10:17:57",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5571708.0,
+        "prices": {
+            "20848323089": 143367.0,
+            "78072679092": 4070.9,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:18:06": {
+        "timestamp": "2026-06-29 10:18:06",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5571708.0,
+        "prices": {
+            "20848323089": 143367.0,
+            "78072679092": 4071.4,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:18:15": {
+        "timestamp": "2026-06-29 10:18:15",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5571280.0,
+        "prices": {
+            "20848323089": 143356.0,
+            "78072679092": 4071.4,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:18:24": {
+        "timestamp": "2026-06-29 10:18:24",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5571280.0,
+        "prices": {
+            "20848323089": 143356.0,
+            "78072679092": 4071.4,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:18:33": {
+        "timestamp": "2026-06-29 10:18:33",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5571280.0,
+        "prices": {
+            "20848323089": 143356.0,
+            "78072679092": 4070.5,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:18:43": {
+        "timestamp": "2026-06-29 10:18:43",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5571280.0,
+        "prices": {
+            "20848323089": 143356.0,
+            "78072679092": 4070.5,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:18:54": {
+        "timestamp": "2026-06-29 10:18:54",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5571280.0,
+        "prices": {
+            "20848323089": 143356.0,
+            "78072679092": 4071.1,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:19:04": {
+        "timestamp": "2026-06-29 10:19:04",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5571280.0,
+        "prices": {
+            "20848323089": 143356.0,
+            "78072679092": 4070.5,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:19:12": {
+        "timestamp": "2026-06-29 10:19:12",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569298.0,
+        "prices": {
+            "20848323089": 143305.0,
+            "78072679092": 4070.5,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:19:21": {
+        "timestamp": "2026-06-29 10:19:21",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569298.0,
+        "prices": {
+            "20848323089": 143305.0,
+            "78072679092": 4070.5,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:19:30": {
+        "timestamp": "2026-06-29 10:19:30",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569298.0,
+        "prices": {
+            "20848323089": 143305.0,
+            "78072679092": 4070.6,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:19:39": {
+        "timestamp": "2026-06-29 10:19:39",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569298.0,
+        "prices": {
+            "20848323089": 143305.0,
+            "78072679092": 4071.0,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:19:48": {
+        "timestamp": "2026-06-29 10:19:48",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569298.0,
+        "prices": {
+            "20848323089": 143305.0,
+            "78072679092": 4071.0,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:19:57": {
+        "timestamp": "2026-06-29 10:19:57",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569298.0,
+        "prices": {
+            "20848323089": 143305.0,
+            "78072679092": 4071.0,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:20:11": {
+        "timestamp": "2026-06-29 10:20:11",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569298.0,
+        "prices": {
+            "20848323089": 143305.0,
+            "78072679092": 4071.2,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:20:21": {
+        "timestamp": "2026-06-29 10:20:21",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569298.0,
+        "prices": {
+            "20848323089": 143305.0,
+            "78072679092": 4071.2,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:20:30": {
+        "timestamp": "2026-06-29 10:20:30",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569298.0,
+        "prices": {
+            "20848323089": 143305.0,
+            "78072679092": 4071.2,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:20:41": {
+        "timestamp": "2026-06-29 10:20:41",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569298.0,
+        "prices": {
+            "20848323089": 143305.0,
+            "78072679092": 4072.0,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:20:48": {
+        "timestamp": "2026-06-29 10:20:48",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569298.0,
+        "prices": {
+            "20848323089": 143305.0,
+            "78072679092": 4071.3,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:20:57": {
+        "timestamp": "2026-06-29 10:20:57",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569298.0,
+        "prices": {
+            "20848323089": 143305.0,
+            "78072679092": 4071.2,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:21:08": {
+        "timestamp": "2026-06-29 10:21:08",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569298.0,
+        "prices": {
+            "20848323089": 143305.0,
+            "78072679092": 4070.5,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:21:18": {
+        "timestamp": "2026-06-29 10:21:18",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569298.0,
+        "prices": {
+            "20848323089": 143305.0,
+            "78072679092": 4070.8,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:21:28": {
+        "timestamp": "2026-06-29 10:21:28",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569298.0,
+        "prices": {
+            "20848323089": 143305.0,
+            "78072679092": 4070.6,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:21:38": {
+        "timestamp": "2026-06-29 10:21:38",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569298.0,
+        "prices": {
+            "20848323089": 143305.0,
+            "78072679092": 4070.6,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:21:50": {
+        "timestamp": "2026-06-29 10:21:50",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569298.0,
+        "prices": {
+            "20848323089": 143305.0,
+            "78072679092": 4070.4,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:21:58": {
+        "timestamp": "2026-06-29 10:21:58",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5569104.0,
+        "prices": {
+            "20848323089": 143300.0,
+            "78072679092": 4069.6,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:22:09": {
+        "timestamp": "2026-06-29 10:22:09",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5566850.0,
+        "prices": {
+            "20848323089": 143242.0,
+            "78072679092": 4069.6,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:22:18": {
+        "timestamp": "2026-06-29 10:22:18",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5566850.0,
+        "prices": {
+            "20848323089": 143242.0,
+            "78072679092": 4070.1,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:22:27": {
+        "timestamp": "2026-06-29 10:22:27",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5566850.0,
+        "prices": {
+            "20848323089": 143242.0,
+            "78072679092": 4069.0,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:22:37": {
+        "timestamp": "2026-06-29 10:22:37",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5566850.0,
+        "prices": {
+            "20848323089": 143242.0,
+            "78072679092": 4069.5,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:22:48": {
+        "timestamp": "2026-06-29 10:22:48",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5567705.0,
+        "prices": {
+            "20848323089": 143264.0,
+            "78072679092": 4069.3,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:22:57": {
+        "timestamp": "2026-06-29 10:22:57",
+        "instrument_id": "6a38c8827b72d976eef100e7",
+        "instrument_name": "GOLD-15%(COMEXAUG-MCXAUG)@JULYDG",
+        "computed_value": 5567705.0,
+        "prices": {
+            "20848323089": 143264.0,
+            "78072679092": 4069.9,
+            "44968": 105.639999
+        }
     }
 }

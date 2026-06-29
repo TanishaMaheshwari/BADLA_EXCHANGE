@@ -1637,5 +1637,2458 @@
             "91084863423": 59.0,
             "44968": 105.68
         }
+    },
+    "2026-06-29 09:49:10": {
+        "timestamp": "2026-06-29 09:49:10",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871714488.0,
+        "prices": {
+            "73210686713": 223100.0,
+            "91084863423": 58.935,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:49:19": {
+        "timestamp": "2026-06-29 09:49:19",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871714488.0,
+        "prices": {
+            "73210686713": 223100.0,
+            "91084863423": 58.915,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 09:49:27": {
+        "timestamp": "2026-06-29 09:49:27",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871549548.0,
+        "prices": {
+            "73210686713": 223100.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:49:35": {
+        "timestamp": "2026-06-29 09:49:35",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871936296.0,
+        "prices": {
+            "73210686713": 223199.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:49:43": {
+        "timestamp": "2026-06-29 09:49:43",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871936296.0,
+        "prices": {
+            "73210686713": 223199.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:49:51": {
+        "timestamp": "2026-06-29 09:49:51",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871936296.0,
+        "prices": {
+            "73210686713": 223199.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:49:59": {
+        "timestamp": "2026-06-29 09:49:59",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871936296.0,
+        "prices": {
+            "73210686713": 223199.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:50:10": {
+        "timestamp": "2026-06-29 09:50:10",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871936296.0,
+        "prices": {
+            "73210686713": 223199.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:50:18": {
+        "timestamp": "2026-06-29 09:50:18",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871936296.0,
+        "prices": {
+            "73210686713": 223199.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:50:27": {
+        "timestamp": "2026-06-29 09:50:27",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871936296.0,
+        "prices": {
+            "73210686713": 223199.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:50:35": {
+        "timestamp": "2026-06-29 09:50:35",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871936296.0,
+        "prices": {
+            "73210686713": 223199.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:50:43": {
+        "timestamp": "2026-06-29 09:50:43",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871936296.0,
+        "prices": {
+            "73210686713": 223199.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:50:52": {
+        "timestamp": "2026-06-29 09:50:52",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871936296.0,
+        "prices": {
+            "73210686713": 223199.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:50:59": {
+        "timestamp": "2026-06-29 09:50:59",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871936296.0,
+        "prices": {
+            "73210686713": 223199.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:51:09": {
+        "timestamp": "2026-06-29 09:51:09",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871936296.0,
+        "prices": {
+            "73210686713": 223199.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:51:17": {
+        "timestamp": "2026-06-29 09:51:17",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871936296.0,
+        "prices": {
+            "73210686713": 223199.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:51:26": {
+        "timestamp": "2026-06-29 09:51:26",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871393287.0,
+        "prices": {
+            "73210686713": 223060.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:51:33": {
+        "timestamp": "2026-06-29 09:51:33",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871393287.0,
+        "prices": {
+            "73210686713": 223060.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:51:42": {
+        "timestamp": "2026-06-29 09:51:42",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871823006.0,
+        "prices": {
+            "73210686713": 223170.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:51:51": {
+        "timestamp": "2026-06-29 09:51:51",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871823006.0,
+        "prices": {
+            "73210686713": 223170.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:51:59": {
+        "timestamp": "2026-06-29 09:51:59",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871823006.0,
+        "prices": {
+            "73210686713": 223170.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:52:08": {
+        "timestamp": "2026-06-29 09:52:08",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871823006.0,
+        "prices": {
+            "73210686713": 223170.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:52:17": {
+        "timestamp": "2026-06-29 09:52:17",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871823006.0,
+        "prices": {
+            "73210686713": 223170.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:52:25": {
+        "timestamp": "2026-06-29 09:52:25",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871799567.0,
+        "prices": {
+            "73210686713": 223164.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:52:33": {
+        "timestamp": "2026-06-29 09:52:33",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871565175.0,
+        "prices": {
+            "73210686713": 223104.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:52:40": {
+        "timestamp": "2026-06-29 09:52:40",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871783941.0,
+        "prices": {
+            "73210686713": 223160.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:52:48": {
+        "timestamp": "2026-06-29 09:52:48",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871783941.0,
+        "prices": {
+            "73210686713": 223160.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:52:56": {
+        "timestamp": "2026-06-29 09:52:56",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871783941.0,
+        "prices": {
+            "73210686713": 223160.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:53:05": {
+        "timestamp": "2026-06-29 09:53:05",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871869885.0,
+        "prices": {
+            "73210686713": 223182.0,
+            "91084863423": 58.915,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:53:13": {
+        "timestamp": "2026-06-29 09:53:13",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871588614.0,
+        "prices": {
+            "73210686713": 223110.0,
+            "91084863423": 58.855,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:53:21": {
+        "timestamp": "2026-06-29 09:53:21",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871588614.0,
+        "prices": {
+            "73210686713": 223110.0,
+            "91084863423": 58.85,
+            "44968": 105.660004
+        }
+    },
+    "2026-06-29 09:53:29": {
+        "timestamp": "2026-06-29 09:53:29",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871115490.0,
+        "prices": {
+            "73210686713": 223010.0,
+            "91084863423": 58.85,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 09:53:37": {
+        "timestamp": "2026-06-29 09:53:37",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871076429.0,
+        "prices": {
+            "73210686713": 223000.0,
+            "91084863423": 58.85,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 09:53:45": {
+        "timestamp": "2026-06-29 09:53:45",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870693624.0,
+        "prices": {
+            "73210686713": 222902.0,
+            "91084863423": 58.875,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 09:53:54": {
+        "timestamp": "2026-06-29 09:53:54",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870885026.0,
+        "prices": {
+            "73210686713": 222951.0,
+            "91084863423": 58.875,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 09:54:03": {
+        "timestamp": "2026-06-29 09:54:03",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871291268.0,
+        "prices": {
+            "73210686713": 223055.0,
+            "91084863423": 58.875,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 09:54:13": {
+        "timestamp": "2026-06-29 09:54:13",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871084241.0,
+        "prices": {
+            "73210686713": 223002.0,
+            "91084863423": 58.875,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 09:54:20": {
+        "timestamp": "2026-06-29 09:54:20",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871084241.0,
+        "prices": {
+            "73210686713": 223002.0,
+            "91084863423": 58.875,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 09:54:28": {
+        "timestamp": "2026-06-29 09:54:28",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871084241.0,
+        "prices": {
+            "73210686713": 223002.0,
+            "91084863423": 58.875,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 09:54:38": {
+        "timestamp": "2026-06-29 09:54:38",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871650636.0,
+        "prices": {
+            "73210686713": 223147.0,
+            "91084863423": 58.92,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 09:54:48": {
+        "timestamp": "2026-06-29 09:54:48",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871274694.0,
+        "prices": {
+            "73210686713": 223093.0,
+            "91084863423": 58.92,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:54:56": {
+        "timestamp": "2026-06-29 09:54:56",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871274694.0,
+        "prices": {
+            "73210686713": 223093.0,
+            "91084863423": 58.92,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:55:04": {
+        "timestamp": "2026-06-29 09:55:04",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871325465.0,
+        "prices": {
+            "73210686713": 223106.0,
+            "91084863423": 58.92,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:55:12": {
+        "timestamp": "2026-06-29 09:55:12",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871325465.0,
+        "prices": {
+            "73210686713": 223106.0,
+            "91084863423": 58.945,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:55:21": {
+        "timestamp": "2026-06-29 09:55:21",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871341086.0,
+        "prices": {
+            "73210686713": 223110.0,
+            "91084863423": 58.945,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:55:30": {
+        "timestamp": "2026-06-29 09:55:30",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871341086.0,
+        "prices": {
+            "73210686713": 223110.0,
+            "91084863423": 58.945,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:55:39": {
+        "timestamp": "2026-06-29 09:55:39",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871341086.0,
+        "prices": {
+            "73210686713": 223110.0,
+            "91084863423": 58.93,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:55:48": {
+        "timestamp": "2026-06-29 09:55:48",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871325465.0,
+        "prices": {
+            "73210686713": 223106.0,
+            "91084863423": 58.93,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:55:57": {
+        "timestamp": "2026-06-29 09:55:57",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871341086.0,
+        "prices": {
+            "73210686713": 223110.0,
+            "91084863423": 58.93,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:56:08": {
+        "timestamp": "2026-06-29 09:56:08",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871567601.0,
+        "prices": {
+            "73210686713": 223168.0,
+            "91084863423": 58.945,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:56:17": {
+        "timestamp": "2026-06-29 09:56:17",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871567601.0,
+        "prices": {
+            "73210686713": 223168.0,
+            "91084863423": 58.945,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:56:25": {
+        "timestamp": "2026-06-29 09:56:25",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871571507.0,
+        "prices": {
+            "73210686713": 223169.0,
+            "91084863423": 58.95,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:56:35": {
+        "timestamp": "2026-06-29 09:56:35",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871669142.0,
+        "prices": {
+            "73210686713": 223194.0,
+            "91084863423": 58.95,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:56:43": {
+        "timestamp": "2026-06-29 09:56:43",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871380141.0,
+        "prices": {
+            "73210686713": 223120.0,
+            "91084863423": 58.95,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:56:51": {
+        "timestamp": "2026-06-29 09:56:51",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871614466.0,
+        "prices": {
+            "73210686713": 223180.0,
+            "91084863423": 58.95,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:57:00": {
+        "timestamp": "2026-06-29 09:57:00",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871555885.0,
+        "prices": {
+            "73210686713": 223165.0,
+            "91084863423": 58.885,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:57:10": {
+        "timestamp": "2026-06-29 09:57:10",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871610561.0,
+        "prices": {
+            "73210686713": 223179.0,
+            "91084863423": 58.885,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:57:19": {
+        "timestamp": "2026-06-29 09:57:19",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871384046.0,
+        "prices": {
+            "73210686713": 223121.0,
+            "91084863423": 58.885,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:57:29": {
+        "timestamp": "2026-06-29 09:57:29",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871380141.0,
+        "prices": {
+            "73210686713": 223120.0,
+            "91084863423": 58.885,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:57:37": {
+        "timestamp": "2026-06-29 09:57:37",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871692575.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.905,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:57:45": {
+        "timestamp": "2026-06-29 09:57:45",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871602750.0,
+        "prices": {
+            "73210686713": 223177.0,
+            "91084863423": 58.88,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:57:54": {
+        "timestamp": "2026-06-29 09:57:54",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871692575.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.89,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:58:02": {
+        "timestamp": "2026-06-29 09:58:02",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871692575.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.89,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:58:11": {
+        "timestamp": "2026-06-29 09:58:11",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871692575.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.895,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:58:19": {
+        "timestamp": "2026-06-29 09:58:19",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871692575.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.895,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:58:27": {
+        "timestamp": "2026-06-29 09:58:27",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871692575.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.895,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:58:35": {
+        "timestamp": "2026-06-29 09:58:35",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871692575.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.895,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:58:44": {
+        "timestamp": "2026-06-29 09:58:44",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871692575.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.895,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:58:52": {
+        "timestamp": "2026-06-29 09:58:52",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871692575.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.895,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:59:00": {
+        "timestamp": "2026-06-29 09:59:00",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871692575.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.895,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:59:09": {
+        "timestamp": "2026-06-29 09:59:09",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871692575.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.895,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:59:17": {
+        "timestamp": "2026-06-29 09:59:17",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871692575.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.895,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:59:26": {
+        "timestamp": "2026-06-29 09:59:26",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871692575.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.895,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:59:34": {
+        "timestamp": "2026-06-29 09:59:34",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871692575.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.895,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:59:42": {
+        "timestamp": "2026-06-29 09:59:42",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871692575.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.895,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 09:59:52": {
+        "timestamp": "2026-06-29 09:59:52",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871692575.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.895,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 10:00:01": {
+        "timestamp": "2026-06-29 10:00:01",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871692575.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.9,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 10:00:14": {
+        "timestamp": "2026-06-29 10:00:14",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871692575.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.865,
+            "44968": 105.629997
+        }
+    },
+    "2026-06-29 10:00:22": {
+        "timestamp": "2026-06-29 10:00:22",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872637591.0,
+        "prices": {
+            "73210686713": 223294.0,
+            "91084863423": 58.865,
+            "44968": 105.699997
+        }
+    },
+    "2026-06-29 10:00:32": {
+        "timestamp": "2026-06-29 10:00:32",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872637591.0,
+        "prices": {
+            "73210686713": 223294.0,
+            "91084863423": 58.865,
+            "44968": 105.699997
+        }
+    },
+    "2026-06-29 10:00:40": {
+        "timestamp": "2026-06-29 10:00:40",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872637591.0,
+        "prices": {
+            "73210686713": 223294.0,
+            "91084863423": 58.865,
+            "44968": 105.699997
+        }
+    },
+    "2026-06-29 10:00:49": {
+        "timestamp": "2026-06-29 10:00:49",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872637591.0,
+        "prices": {
+            "73210686713": 223294.0,
+            "91084863423": 58.855,
+            "44968": 105.699997
+        }
+    },
+    "2026-06-29 10:00:58": {
+        "timestamp": "2026-06-29 10:00:58",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872270237.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.875,
+            "44968": 105.699997
+        }
+    },
+    "2026-06-29 10:01:08": {
+        "timestamp": "2026-06-29 10:01:08",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872285869.0,
+        "prices": {
+            "73210686713": 223204.0,
+            "91084863423": 58.875,
+            "44968": 105.699997
+        }
+    },
+    "2026-06-29 10:01:17": {
+        "timestamp": "2026-06-29 10:01:17",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872113030.0,
+        "prices": {
+            "73210686713": 223202.0,
+            "91084863423": 58.885,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:01:26": {
+        "timestamp": "2026-06-29 10:01:26",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872113030.0,
+        "prices": {
+            "73210686713": 223202.0,
+            "91084863423": 58.885,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:01:35": {
+        "timestamp": "2026-06-29 10:01:35",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872113030.0,
+        "prices": {
+            "73210686713": 223202.0,
+            "91084863423": 58.885,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:01:43": {
+        "timestamp": "2026-06-29 10:01:43",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872144289.0,
+        "prices": {
+            "73210686713": 223210.0,
+            "91084863423": 58.88,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:01:52": {
+        "timestamp": "2026-06-29 10:01:52",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872144289.0,
+        "prices": {
+            "73210686713": 223210.0,
+            "91084863423": 58.88,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:02:00": {
+        "timestamp": "2026-06-29 10:02:00",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872144289.0,
+        "prices": {
+            "73210686713": 223210.0,
+            "91084863423": 58.88,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:02:10": {
+        "timestamp": "2026-06-29 10:02:10",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872105216.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.835,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:02:18": {
+        "timestamp": "2026-06-29 10:02:18",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872452964.0,
+        "prices": {
+            "73210686713": 223289.0,
+            "91084863423": 58.815,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:02:26": {
+        "timestamp": "2026-06-29 10:02:26",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872452964.0,
+        "prices": {
+            "73210686713": 223289.0,
+            "91084863423": 58.815,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:02:35": {
+        "timestamp": "2026-06-29 10:02:35",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871987997.0,
+        "prices": {
+            "73210686713": 223170.0,
+            "91084863423": 58.815,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:02:44": {
+        "timestamp": "2026-06-29 10:02:44",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871987997.0,
+        "prices": {
+            "73210686713": 223170.0,
+            "91084863423": 58.83,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:02:52": {
+        "timestamp": "2026-06-29 10:02:52",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872003626.0,
+        "prices": {
+            "73210686713": 223174.0,
+            "91084863423": 58.83,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:03:01": {
+        "timestamp": "2026-06-29 10:03:01",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872003626.0,
+        "prices": {
+            "73210686713": 223174.0,
+            "91084863423": 58.83,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:03:11": {
+        "timestamp": "2026-06-29 10:03:11",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872128659.0,
+        "prices": {
+            "73210686713": 223206.0,
+            "91084863423": 58.835,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:03:20": {
+        "timestamp": "2026-06-29 10:03:20",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872128659.0,
+        "prices": {
+            "73210686713": 223206.0,
+            "91084863423": 58.835,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:03:31": {
+        "timestamp": "2026-06-29 10:03:31",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872058328.0,
+        "prices": {
+            "73210686713": 223188.0,
+            "91084863423": 58.825,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:03:38": {
+        "timestamp": "2026-06-29 10:03:38",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872058328.0,
+        "prices": {
+            "73210686713": 223188.0,
+            "91084863423": 58.825,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:03:48": {
+        "timestamp": "2026-06-29 10:03:48",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872058328.0,
+        "prices": {
+            "73210686713": 223188.0,
+            "91084863423": 58.79,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:03:57": {
+        "timestamp": "2026-06-29 10:03:57",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872105216.0,
+        "prices": {
+            "73210686713": 223200.0,
+            "91084863423": 58.79,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:04:09": {
+        "timestamp": "2026-06-29 10:04:09",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872007534.0,
+        "prices": {
+            "73210686713": 223175.0,
+            "91084863423": 58.79,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:04:19": {
+        "timestamp": "2026-06-29 10:04:19",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 872007534.0,
+        "prices": {
+            "73210686713": 223175.0,
+            "91084863423": 58.79,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:04:27": {
+        "timestamp": "2026-06-29 10:04:27",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871913759.0,
+        "prices": {
+            "73210686713": 223151.0,
+            "91084863423": 58.79,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:04:36": {
+        "timestamp": "2026-06-29 10:04:36",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871909852.0,
+        "prices": {
+            "73210686713": 223150.0,
+            "91084863423": 58.72,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:04:46": {
+        "timestamp": "2026-06-29 10:04:46",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871909852.0,
+        "prices": {
+            "73210686713": 223150.0,
+            "91084863423": 58.735,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:04:55": {
+        "timestamp": "2026-06-29 10:04:55",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871272965.0,
+        "prices": {
+            "73210686713": 222987.0,
+            "91084863423": 58.735,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:05:04": {
+        "timestamp": "2026-06-29 10:05:04",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871425349.0,
+        "prices": {
+            "73210686713": 223026.0,
+            "91084863423": 58.74,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:05:14": {
+        "timestamp": "2026-06-29 10:05:14",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871425349.0,
+        "prices": {
+            "73210686713": 223026.0,
+            "91084863423": 58.74,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:05:22": {
+        "timestamp": "2026-06-29 10:05:22",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871351111.0,
+        "prices": {
+            "73210686713": 223007.0,
+            "91084863423": 58.74,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:05:31": {
+        "timestamp": "2026-06-29 10:05:31",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871351111.0,
+        "prices": {
+            "73210686713": 223007.0,
+            "91084863423": 58.74,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:05:41": {
+        "timestamp": "2026-06-29 10:05:41",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871351111.0,
+        "prices": {
+            "73210686713": 223007.0,
+            "91084863423": 58.735,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:05:51": {
+        "timestamp": "2026-06-29 10:05:51",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871405813.0,
+        "prices": {
+            "73210686713": 223021.0,
+            "91084863423": 58.735,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:06:00": {
+        "timestamp": "2026-06-29 10:06:00",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871409720.0,
+        "prices": {
+            "73210686713": 223022.0,
+            "91084863423": 58.725,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:06:09": {
+        "timestamp": "2026-06-29 10:06:09",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871456607.0,
+        "prices": {
+            "73210686713": 223034.0,
+            "91084863423": 58.73,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:06:18": {
+        "timestamp": "2026-06-29 10:06:18",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871456607.0,
+        "prices": {
+            "73210686713": 223034.0,
+            "91084863423": 58.73,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:06:26": {
+        "timestamp": "2026-06-29 10:06:26",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871503495.0,
+        "prices": {
+            "73210686713": 223046.0,
+            "91084863423": 58.72,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:06:34": {
+        "timestamp": "2026-06-29 10:06:34",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871343296.0,
+        "prices": {
+            "73210686713": 223005.0,
+            "91084863423": 58.72,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:06:43": {
+        "timestamp": "2026-06-29 10:06:43",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870557933.0,
+        "prices": {
+            "73210686713": 222804.0,
+            "91084863423": 58.67,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:06:51": {
+        "timestamp": "2026-06-29 10:06:51",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870557933.0,
+        "prices": {
+            "73210686713": 222804.0,
+            "91084863423": 58.675,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:07:00": {
+        "timestamp": "2026-06-29 10:07:00",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870780648.0,
+        "prices": {
+            "73210686713": 222861.0,
+            "91084863423": 58.695,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:07:10": {
+        "timestamp": "2026-06-29 10:07:10",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870819721.0,
+        "prices": {
+            "73210686713": 222871.0,
+            "91084863423": 58.695,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:07:18": {
+        "timestamp": "2026-06-29 10:07:18",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870639986.0,
+        "prices": {
+            "73210686713": 222825.0,
+            "91084863423": 58.69,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:07:27": {
+        "timestamp": "2026-06-29 10:07:27",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870479788.0,
+        "prices": {
+            "73210686713": 222784.0,
+            "91084863423": 58.68,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:07:35": {
+        "timestamp": "2026-06-29 10:07:35",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870694688.0,
+        "prices": {
+            "73210686713": 222839.0,
+            "91084863423": 58.695,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:07:44": {
+        "timestamp": "2026-06-29 10:07:44",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870694688.0,
+        "prices": {
+            "73210686713": 222839.0,
+            "91084863423": 58.69,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:07:53": {
+        "timestamp": "2026-06-29 10:07:53",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870600913.0,
+        "prices": {
+            "73210686713": 222815.0,
+            "91084863423": 58.69,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:08:02": {
+        "timestamp": "2026-06-29 10:08:02",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870600913.0,
+        "prices": {
+            "73210686713": 222815.0,
+            "91084863423": 58.69,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:08:13": {
+        "timestamp": "2026-06-29 10:08:13",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870890052.0,
+        "prices": {
+            "73210686713": 222889.0,
+            "91084863423": 58.69,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:08:23": {
+        "timestamp": "2026-06-29 10:08:23",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870597006.0,
+        "prices": {
+            "73210686713": 222814.0,
+            "91084863423": 58.69,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:08:32": {
+        "timestamp": "2026-06-29 10:08:32",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870597006.0,
+        "prices": {
+            "73210686713": 222814.0,
+            "91084863423": 58.685,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:08:40": {
+        "timestamp": "2026-06-29 10:08:40",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870597006.0,
+        "prices": {
+            "73210686713": 222814.0,
+            "91084863423": 58.685,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:08:50": {
+        "timestamp": "2026-06-29 10:08:50",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870597006.0,
+        "prices": {
+            "73210686713": 222814.0,
+            "91084863423": 58.685,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:08:59": {
+        "timestamp": "2026-06-29 10:08:59",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870202371.0,
+        "prices": {
+            "73210686713": 222713.0,
+            "91084863423": 58.685,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:09:10": {
+        "timestamp": "2026-06-29 10:09:10",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869932769.0,
+        "prices": {
+            "73210686713": 222644.0,
+            "91084863423": 58.69,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:09:19": {
+        "timestamp": "2026-06-29 10:09:19",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869921047.0,
+        "prices": {
+            "73210686713": 222641.0,
+            "91084863423": 58.69,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:09:28": {
+        "timestamp": "2026-06-29 10:09:28",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869760848.0,
+        "prices": {
+            "73210686713": 222600.0,
+            "91084863423": 58.705,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:09:41": {
+        "timestamp": "2026-06-29 10:09:41",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869409193.0,
+        "prices": {
+            "73210686713": 222510.0,
+            "91084863423": 58.705,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:09:47": {
+        "timestamp": "2026-06-29 10:09:47",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869452173.0,
+        "prices": {
+            "73210686713": 222521.0,
+            "91084863423": 58.705,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:09:57": {
+        "timestamp": "2026-06-29 10:09:57",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869452173.0,
+        "prices": {
+            "73210686713": 222521.0,
+            "91084863423": 58.705,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:10:05": {
+        "timestamp": "2026-06-29 10:10:05",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869565484.0,
+        "prices": {
+            "73210686713": 222550.0,
+            "91084863423": 58.66,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:10:15": {
+        "timestamp": "2026-06-29 10:10:15",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869448266.0,
+        "prices": {
+            "73210686713": 222520.0,
+            "91084863423": 58.66,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:10:25": {
+        "timestamp": "2026-06-29 10:10:25",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869448266.0,
+        "prices": {
+            "73210686713": 222520.0,
+            "91084863423": 58.64,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:10:34": {
+        "timestamp": "2026-06-29 10:10:34",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869557670.0,
+        "prices": {
+            "73210686713": 222548.0,
+            "91084863423": 58.64,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:10:45": {
+        "timestamp": "2026-06-29 10:10:45",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869565484.0,
+        "prices": {
+            "73210686713": 222550.0,
+            "91084863423": 58.655,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:10:54": {
+        "timestamp": "2026-06-29 10:10:54",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869565484.0,
+        "prices": {
+            "73210686713": 222550.0,
+            "91084863423": 58.675,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:11:03": {
+        "timestamp": "2026-06-29 10:11:03",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869565484.0,
+        "prices": {
+            "73210686713": 222550.0,
+            "91084863423": 58.67,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:11:13": {
+        "timestamp": "2026-06-29 10:11:13",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869565484.0,
+        "prices": {
+            "73210686713": 222550.0,
+            "91084863423": 58.67,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:11:20": {
+        "timestamp": "2026-06-29 10:11:20",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869565484.0,
+        "prices": {
+            "73210686713": 222550.0,
+            "91084863423": 58.655,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:11:29": {
+        "timestamp": "2026-06-29 10:11:29",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869526412.0,
+        "prices": {
+            "73210686713": 222540.0,
+            "91084863423": 58.665,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:11:39": {
+        "timestamp": "2026-06-29 10:11:39",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869733497.0,
+        "prices": {
+            "73210686713": 222593.0,
+            "91084863423": 58.665,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:11:47": {
+        "timestamp": "2026-06-29 10:11:47",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869733497.0,
+        "prices": {
+            "73210686713": 222593.0,
+            "91084863423": 58.665,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:11:56": {
+        "timestamp": "2026-06-29 10:11:56",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869733497.0,
+        "prices": {
+            "73210686713": 222593.0,
+            "91084863423": 58.67,
+            "44968": 105.68
+        }
+    },
+    "2026-06-29 10:12:06": {
+        "timestamp": "2026-06-29 10:12:06",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869470993.0,
+        "prices": {
+            "73210686713": 222589.0,
+            "91084863423": 58.69,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:12:14": {
+        "timestamp": "2026-06-29 10:12:14",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869318652.0,
+        "prices": {
+            "73210686713": 222550.0,
+            "91084863423": 58.69,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:12:22": {
+        "timestamp": "2026-06-29 10:12:22",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869506148.0,
+        "prices": {
+            "73210686713": 222598.0,
+            "91084863423": 58.66,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:12:31": {
+        "timestamp": "2026-06-29 10:12:31",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869506148.0,
+        "prices": {
+            "73210686713": 222598.0,
+            "91084863423": 58.66,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:12:39": {
+        "timestamp": "2026-06-29 10:12:39",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869506148.0,
+        "prices": {
+            "73210686713": 222598.0,
+            "91084863423": 58.66,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:12:48": {
+        "timestamp": "2026-06-29 10:12:48",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869506148.0,
+        "prices": {
+            "73210686713": 222598.0,
+            "91084863423": 58.66,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:12:56": {
+        "timestamp": "2026-06-29 10:12:56",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869506148.0,
+        "prices": {
+            "73210686713": 222598.0,
+            "91084863423": 58.675,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:13:05": {
+        "timestamp": "2026-06-29 10:13:05",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869506148.0,
+        "prices": {
+            "73210686713": 222598.0,
+            "91084863423": 58.71,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:13:15": {
+        "timestamp": "2026-06-29 10:13:15",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869513961.0,
+        "prices": {
+            "73210686713": 222600.0,
+            "91084863423": 58.71,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:13:24": {
+        "timestamp": "2026-06-29 10:13:24",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869513961.0,
+        "prices": {
+            "73210686713": 222600.0,
+            "91084863423": 58.71,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:13:35": {
+        "timestamp": "2026-06-29 10:13:35",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869513961.0,
+        "prices": {
+            "73210686713": 222600.0,
+            "91084863423": 58.7,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:13:47": {
+        "timestamp": "2026-06-29 10:13:47",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870045200.0,
+        "prices": {
+            "73210686713": 222736.0,
+            "91084863423": 58.7,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:13:57": {
+        "timestamp": "2026-06-29 10:13:57",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869873328.0,
+        "prices": {
+            "73210686713": 222692.0,
+            "91084863423": 58.7,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:14:08": {
+        "timestamp": "2026-06-29 10:14:08",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869873328.0,
+        "prices": {
+            "73210686713": 222692.0,
+            "91084863423": 58.725,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:14:17": {
+        "timestamp": "2026-06-29 10:14:17",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869928015.0,
+        "prices": {
+            "73210686713": 222706.0,
+            "91084863423": 58.735,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:14:26": {
+        "timestamp": "2026-06-29 10:14:26",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870193634.0,
+        "prices": {
+            "73210686713": 222774.0,
+            "91084863423": 58.745,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:14:36": {
+        "timestamp": "2026-06-29 10:14:36",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870049106.0,
+        "prices": {
+            "73210686713": 222737.0,
+            "91084863423": 58.745,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:14:48": {
+        "timestamp": "2026-06-29 10:14:48",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870213165.0,
+        "prices": {
+            "73210686713": 222779.0,
+            "91084863423": 58.745,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:14:59": {
+        "timestamp": "2026-06-29 10:14:59",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870295195.0,
+        "prices": {
+            "73210686713": 222800.0,
+            "91084863423": 58.745,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:15:11": {
+        "timestamp": "2026-06-29 10:15:11",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870451442.0,
+        "prices": {
+            "73210686713": 222840.0,
+            "91084863423": 58.755,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:15:21": {
+        "timestamp": "2026-06-29 10:15:21",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870568627.0,
+        "prices": {
+            "73210686713": 222870.0,
+            "91084863423": 58.735,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:15:30": {
+        "timestamp": "2026-06-29 10:15:30",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870388943.0,
+        "prices": {
+            "73210686713": 222824.0,
+            "91084863423": 58.725,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:15:39": {
+        "timestamp": "2026-06-29 10:15:39",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870295195.0,
+        "prices": {
+            "73210686713": 222800.0,
+            "91084863423": 58.72,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:15:50": {
+        "timestamp": "2026-06-29 10:15:50",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870275664.0,
+        "prices": {
+            "73210686713": 222795.0,
+            "91084863423": 58.72,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:16:00": {
+        "timestamp": "2026-06-29 10:16:00",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870205353.0,
+        "prices": {
+            "73210686713": 222777.0,
+            "91084863423": 58.72,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:16:12": {
+        "timestamp": "2026-06-29 10:16:12",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869830361.0,
+        "prices": {
+            "73210686713": 222681.0,
+            "91084863423": 58.695,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:16:21": {
+        "timestamp": "2026-06-29 10:16:21",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869830361.0,
+        "prices": {
+            "73210686713": 222681.0,
+            "91084863423": 58.695,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:16:30": {
+        "timestamp": "2026-06-29 10:16:30",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869830361.0,
+        "prices": {
+            "73210686713": 222681.0,
+            "91084863423": 58.695,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:16:41": {
+        "timestamp": "2026-06-29 10:16:41",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869830361.0,
+        "prices": {
+            "73210686713": 222681.0,
+            "91084863423": 58.695,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:16:50": {
+        "timestamp": "2026-06-29 10:16:50",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869978795.0,
+        "prices": {
+            "73210686713": 222719.0,
+            "91084863423": 58.695,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:16:59": {
+        "timestamp": "2026-06-29 10:16:59",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869978795.0,
+        "prices": {
+            "73210686713": 222719.0,
+            "91084863423": 58.695,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:17:11": {
+        "timestamp": "2026-06-29 10:17:11",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869982701.0,
+        "prices": {
+            "73210686713": 222720.0,
+            "91084863423": 58.755,
+            "44968": 105.650002
+        }
+    },
+    "2026-06-29 10:17:20": {
+        "timestamp": "2026-06-29 10:17:20",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869900331.0,
+        "prices": {
+            "73210686713": 222720.0,
+            "91084863423": 58.725,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:17:29": {
+        "timestamp": "2026-06-29 10:17:29",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869900331.0,
+        "prices": {
+            "73210686713": 222720.0,
+            "91084863423": 58.725,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:17:38": {
+        "timestamp": "2026-06-29 10:17:38",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869900331.0,
+        "prices": {
+            "73210686713": 222720.0,
+            "91084863423": 58.725,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:17:47": {
+        "timestamp": "2026-06-29 10:17:47",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869900331.0,
+        "prices": {
+            "73210686713": 222720.0,
+            "91084863423": 58.725,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:17:56": {
+        "timestamp": "2026-06-29 10:17:56",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870107338.0,
+        "prices": {
+            "73210686713": 222773.0,
+            "91084863423": 58.725,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:18:05": {
+        "timestamp": "2026-06-29 10:18:05",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870107338.0,
+        "prices": {
+            "73210686713": 222773.0,
+            "91084863423": 58.725,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:18:14": {
+        "timestamp": "2026-06-29 10:18:14",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870107338.0,
+        "prices": {
+            "73210686713": 222773.0,
+            "91084863423": 58.725,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:18:23": {
+        "timestamp": "2026-06-29 10:18:23",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869751910.0,
+        "prices": {
+            "73210686713": 222682.0,
+            "91084863423": 58.725,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:18:32": {
+        "timestamp": "2026-06-29 10:18:32",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869751910.0,
+        "prices": {
+            "73210686713": 222682.0,
+            "91084863423": 58.725,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:18:42": {
+        "timestamp": "2026-06-29 10:18:42",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869751910.0,
+        "prices": {
+            "73210686713": 222682.0,
+            "91084863423": 58.73,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:18:54": {
+        "timestamp": "2026-06-29 10:18:54",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869751910.0,
+        "prices": {
+            "73210686713": 222682.0,
+            "91084863423": 58.73,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:19:03": {
+        "timestamp": "2026-06-29 10:19:03",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869751910.0,
+        "prices": {
+            "73210686713": 222682.0,
+            "91084863423": 58.73,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:19:12": {
+        "timestamp": "2026-06-29 10:19:12",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869751910.0,
+        "prices": {
+            "73210686713": 222682.0,
+            "91084863423": 58.73,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:19:21": {
+        "timestamp": "2026-06-29 10:19:21",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870720549.0,
+        "prices": {
+            "73210686713": 222930.0,
+            "91084863423": 58.73,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:19:30": {
+        "timestamp": "2026-06-29 10:19:30",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870720549.0,
+        "prices": {
+            "73210686713": 222930.0,
+            "91084863423": 58.73,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:19:38": {
+        "timestamp": "2026-06-29 10:19:38",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870439331.0,
+        "prices": {
+            "73210686713": 222858.0,
+            "91084863423": 58.73,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:19:47": {
+        "timestamp": "2026-06-29 10:19:47",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871130658.0,
+        "prices": {
+            "73210686713": 223035.0,
+            "91084863423": 58.745,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:19:56": {
+        "timestamp": "2026-06-29 10:19:56",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871279078.0,
+        "prices": {
+            "73210686713": 223073.0,
+            "91084863423": 58.74,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:20:10": {
+        "timestamp": "2026-06-29 10:20:10",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870810382.0,
+        "prices": {
+            "73210686713": 222953.0,
+            "91084863423": 58.75,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:20:20": {
+        "timestamp": "2026-06-29 10:20:20",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870993955.0,
+        "prices": {
+            "73210686713": 223000.0,
+            "91084863423": 58.75,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:20:29": {
+        "timestamp": "2026-06-29 10:20:29",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870993955.0,
+        "prices": {
+            "73210686713": 223000.0,
+            "91084863423": 58.75,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:20:41": {
+        "timestamp": "2026-06-29 10:20:41",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871025201.0,
+        "prices": {
+            "73210686713": 223008.0,
+            "91084863423": 58.75,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:20:47": {
+        "timestamp": "2026-06-29 10:20:47",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 871025201.0,
+        "prices": {
+            "73210686713": 223008.0,
+            "91084863423": 58.75,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:20:56": {
+        "timestamp": "2026-06-29 10:20:56",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870798665.0,
+        "prices": {
+            "73210686713": 222950.0,
+            "91084863423": 58.75,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:21:07": {
+        "timestamp": "2026-06-29 10:21:07",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870025316.0,
+        "prices": {
+            "73210686713": 222752.0,
+            "91084863423": 58.75,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:21:17": {
+        "timestamp": "2026-06-29 10:21:17",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870025316.0,
+        "prices": {
+            "73210686713": 222752.0,
+            "91084863423": 58.75,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:21:27": {
+        "timestamp": "2026-06-29 10:21:27",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869822215.0,
+        "prices": {
+            "73210686713": 222700.0,
+            "91084863423": 58.75,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:21:38": {
+        "timestamp": "2026-06-29 10:21:38",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869833932.0,
+        "prices": {
+            "73210686713": 222703.0,
+            "91084863423": 58.75,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:21:50": {
+        "timestamp": "2026-06-29 10:21:50",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869833932.0,
+        "prices": {
+            "73210686713": 222703.0,
+            "91084863423": 58.75,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:21:58": {
+        "timestamp": "2026-06-29 10:21:58",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870165925.0,
+        "prices": {
+            "73210686713": 222788.0,
+            "91084863423": 58.72,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:22:08": {
+        "timestamp": "2026-06-29 10:22:08",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870165925.0,
+        "prices": {
+            "73210686713": 222788.0,
+            "91084863423": 58.72,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:22:18": {
+        "timestamp": "2026-06-29 10:22:18",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869822215.0,
+        "prices": {
+            "73210686713": 222700.0,
+            "91084863423": 58.72,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:22:26": {
+        "timestamp": "2026-06-29 10:22:26",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870212795.0,
+        "prices": {
+            "73210686713": 222800.0,
+            "91084863423": 58.725,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:22:37": {
+        "timestamp": "2026-06-29 10:22:37",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869759722.0,
+        "prices": {
+            "73210686713": 222684.0,
+            "91084863423": 58.725,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:22:47": {
+        "timestamp": "2026-06-29 10:22:47",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 869787063.0,
+        "prices": {
+            "73210686713": 222691.0,
+            "91084863423": 58.725,
+            "44968": 105.639999
+        }
+    },
+    "2026-06-29 10:22:57": {
+        "timestamp": "2026-06-29 10:22:57",
+        "instrument_id": "6a338a997b72d976eef100de",
+        "instrument_name": "SILVER-15%(COMEXSEP-MCXSEP)@JULYDG@PREMIUM@15",
+        "computed_value": 870626809.0,
+        "prices": {
+            "73210686713": 222906.0,
+            "91084863423": 58.725,
+            "44968": 105.639999
+        }
     }
 }

@@ -1588,5 +1588,2235 @@
             "91683347732": 52365.0,
             "84282184193": 29572.75
         }
+    },
+    "2026-06-29 09:49:11": {
+        "timestamp": "2026-06-29 09:49:11",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104700.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29555.5
+        }
+    },
+    "2026-06-29 09:49:20": {
+        "timestamp": "2026-06-29 09:49:20",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104700.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29554.0
+        }
+    },
+    "2026-06-29 09:49:28": {
+        "timestamp": "2026-06-29 09:49:28",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104700.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29554.75
+        }
+    },
+    "2026-06-29 09:49:36": {
+        "timestamp": "2026-06-29 09:49:36",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104700.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29554.25
+        }
+    },
+    "2026-06-29 09:49:44": {
+        "timestamp": "2026-06-29 09:49:44",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104700.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29552.25
+        }
+    },
+    "2026-06-29 09:49:52": {
+        "timestamp": "2026-06-29 09:49:52",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104700.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29552.25
+        }
+    },
+    "2026-06-29 09:50:00": {
+        "timestamp": "2026-06-29 09:50:00",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104700.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29545.0
+        }
+    },
+    "2026-06-29 09:50:10": {
+        "timestamp": "2026-06-29 09:50:10",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104692.0,
+        "prices": {
+            "91683347732": 52346.0,
+            "84282184193": 29543.25
+        }
+    },
+    "2026-06-29 09:50:19": {
+        "timestamp": "2026-06-29 09:50:19",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104692.0,
+        "prices": {
+            "91683347732": 52346.0,
+            "84282184193": 29541.75
+        }
+    },
+    "2026-06-29 09:50:28": {
+        "timestamp": "2026-06-29 09:50:28",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104692.0,
+        "prices": {
+            "91683347732": 52346.0,
+            "84282184193": 29541.0
+        }
+    },
+    "2026-06-29 09:50:36": {
+        "timestamp": "2026-06-29 09:50:36",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104692.0,
+        "prices": {
+            "91683347732": 52346.0,
+            "84282184193": 29540.0
+        }
+    },
+    "2026-06-29 09:50:44": {
+        "timestamp": "2026-06-29 09:50:44",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104692.0,
+        "prices": {
+            "91683347732": 52346.0,
+            "84282184193": 29544.75
+        }
+    },
+    "2026-06-29 09:50:52": {
+        "timestamp": "2026-06-29 09:50:52",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104702.0,
+        "prices": {
+            "91683347732": 52351.0,
+            "84282184193": 29547.75
+        }
+    },
+    "2026-06-29 09:51:00": {
+        "timestamp": "2026-06-29 09:51:00",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104700.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29545.25
+        }
+    },
+    "2026-06-29 09:51:09": {
+        "timestamp": "2026-06-29 09:51:09",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104698.0,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29538.5
+        }
+    },
+    "2026-06-29 09:51:18": {
+        "timestamp": "2026-06-29 09:51:18",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104698.0,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29535.0
+        }
+    },
+    "2026-06-29 09:51:26": {
+        "timestamp": "2026-06-29 09:51:26",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104686.0,
+        "prices": {
+            "91683347732": 52343.0,
+            "84282184193": 29537.5
+        }
+    },
+    "2026-06-29 09:51:34": {
+        "timestamp": "2026-06-29 09:51:34",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104686.0,
+        "prices": {
+            "91683347732": 52343.0,
+            "84282184193": 29536.5
+        }
+    },
+    "2026-06-29 09:51:42": {
+        "timestamp": "2026-06-29 09:51:42",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104686.0,
+        "prices": {
+            "91683347732": 52343.0,
+            "84282184193": 29533.25
+        }
+    },
+    "2026-06-29 09:51:51": {
+        "timestamp": "2026-06-29 09:51:51",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104686.0,
+        "prices": {
+            "91683347732": 52343.0,
+            "84282184193": 29530.75
+        }
+    },
+    "2026-06-29 09:51:59": {
+        "timestamp": "2026-06-29 09:51:59",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104686.0,
+        "prices": {
+            "91683347732": 52343.0,
+            "84282184193": 29530.0
+        }
+    },
+    "2026-06-29 09:52:09": {
+        "timestamp": "2026-06-29 09:52:09",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104690.0,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29529.25
+        }
+    },
+    "2026-06-29 09:52:17": {
+        "timestamp": "2026-06-29 09:52:17",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104690.0,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29528.5
+        }
+    },
+    "2026-06-29 09:52:25": {
+        "timestamp": "2026-06-29 09:52:25",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104690.0,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29524.0
+        }
+    },
+    "2026-06-29 09:52:33": {
+        "timestamp": "2026-06-29 09:52:33",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104690.0,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29527.0
+        }
+    },
+    "2026-06-29 09:52:41": {
+        "timestamp": "2026-06-29 09:52:41",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104690.0,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29529.0
+        }
+    },
+    "2026-06-29 09:52:49": {
+        "timestamp": "2026-06-29 09:52:49",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104690.0,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29529.75
+        }
+    },
+    "2026-06-29 09:52:57": {
+        "timestamp": "2026-06-29 09:52:57",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104690.0,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29527.75
+        }
+    },
+    "2026-06-29 09:53:05": {
+        "timestamp": "2026-06-29 09:53:05",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104690.0,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29526.75
+        }
+    },
+    "2026-06-29 09:53:13": {
+        "timestamp": "2026-06-29 09:53:13",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104690.0,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29526.5
+        }
+    },
+    "2026-06-29 09:53:21": {
+        "timestamp": "2026-06-29 09:53:21",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104690.0,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29525.5
+        }
+    },
+    "2026-06-29 09:53:29": {
+        "timestamp": "2026-06-29 09:53:29",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104692.0,
+        "prices": {
+            "91683347732": 52346.0,
+            "84282184193": 29529.0
+        }
+    },
+    "2026-06-29 09:53:37": {
+        "timestamp": "2026-06-29 09:53:37",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104692.0,
+        "prices": {
+            "91683347732": 52346.0,
+            "84282184193": 29526.75
+        }
+    },
+    "2026-06-29 09:53:46": {
+        "timestamp": "2026-06-29 09:53:46",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104692.0,
+        "prices": {
+            "91683347732": 52346.0,
+            "84282184193": 29526.25
+        }
+    },
+    "2026-06-29 09:53:54": {
+        "timestamp": "2026-06-29 09:53:54",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104692.0,
+        "prices": {
+            "91683347732": 52346.0,
+            "84282184193": 29529.0
+        }
+    },
+    "2026-06-29 09:54:04": {
+        "timestamp": "2026-06-29 09:54:04",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104698.0,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29537.0
+        }
+    },
+    "2026-06-29 09:54:14": {
+        "timestamp": "2026-06-29 09:54:14",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104698.0,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29537.5
+        }
+    },
+    "2026-06-29 09:54:20": {
+        "timestamp": "2026-06-29 09:54:20",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104698.0,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29543.25
+        }
+    },
+    "2026-06-29 09:54:29": {
+        "timestamp": "2026-06-29 09:54:29",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104704.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29543.0
+        }
+    },
+    "2026-06-29 09:54:39": {
+        "timestamp": "2026-06-29 09:54:39",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104708.0,
+        "prices": {
+            "91683347732": 52354.0,
+            "84282184193": 29552.75
+        }
+    },
+    "2026-06-29 09:54:48": {
+        "timestamp": "2026-06-29 09:54:48",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104708.0,
+        "prices": {
+            "91683347732": 52354.0,
+            "84282184193": 29556.0
+        }
+    },
+    "2026-06-29 09:54:57": {
+        "timestamp": "2026-06-29 09:54:57",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104718.0,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29552.25
+        }
+    },
+    "2026-06-29 09:55:05": {
+        "timestamp": "2026-06-29 09:55:05",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104722.0,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29559.5
+        }
+    },
+    "2026-06-29 09:55:12": {
+        "timestamp": "2026-06-29 09:55:12",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104728.0,
+        "prices": {
+            "91683347732": 52364.0,
+            "84282184193": 29561.25
+        }
+    },
+    "2026-06-29 09:55:21": {
+        "timestamp": "2026-06-29 09:55:21",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104728.0,
+        "prices": {
+            "91683347732": 52364.0,
+            "84282184193": 29565.5
+        }
+    },
+    "2026-06-29 09:55:30": {
+        "timestamp": "2026-06-29 09:55:30",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104730.0,
+        "prices": {
+            "91683347732": 52365.0,
+            "84282184193": 29569.5
+        }
+    },
+    "2026-06-29 09:55:40": {
+        "timestamp": "2026-06-29 09:55:40",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104726.0,
+        "prices": {
+            "91683347732": 52363.0,
+            "84282184193": 29568.25
+        }
+    },
+    "2026-06-29 09:55:48": {
+        "timestamp": "2026-06-29 09:55:48",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104728.0,
+        "prices": {
+            "91683347732": 52364.0,
+            "84282184193": 29568.25
+        }
+    },
+    "2026-06-29 09:55:57": {
+        "timestamp": "2026-06-29 09:55:57",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104734.0,
+        "prices": {
+            "91683347732": 52367.0,
+            "84282184193": 29570.25
+        }
+    },
+    "2026-06-29 09:56:09": {
+        "timestamp": "2026-06-29 09:56:09",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104738.0,
+        "prices": {
+            "91683347732": 52369.0,
+            "84282184193": 29573.75
+        }
+    },
+    "2026-06-29 09:56:17": {
+        "timestamp": "2026-06-29 09:56:17",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104736.0,
+        "prices": {
+            "91683347732": 52368.0,
+            "84282184193": 29567.0
+        }
+    },
+    "2026-06-29 09:56:26": {
+        "timestamp": "2026-06-29 09:56:26",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104736.0,
+        "prices": {
+            "91683347732": 52368.0,
+            "84282184193": 29562.75
+        }
+    },
+    "2026-06-29 09:56:36": {
+        "timestamp": "2026-06-29 09:56:36",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104736.0,
+        "prices": {
+            "91683347732": 52368.0,
+            "84282184193": 29562.75
+        }
+    },
+    "2026-06-29 09:56:43": {
+        "timestamp": "2026-06-29 09:56:43",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104736.0,
+        "prices": {
+            "91683347732": 52368.0,
+            "84282184193": 29557.75
+        }
+    },
+    "2026-06-29 09:56:52": {
+        "timestamp": "2026-06-29 09:56:52",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104714.0,
+        "prices": {
+            "91683347732": 52357.0,
+            "84282184193": 29544.25
+        }
+    },
+    "2026-06-29 09:57:00": {
+        "timestamp": "2026-06-29 09:57:00",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104714.0,
+        "prices": {
+            "91683347732": 52357.0,
+            "84282184193": 29547.5
+        }
+    },
+    "2026-06-29 09:57:11": {
+        "timestamp": "2026-06-29 09:57:11",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104712.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29543.25
+        }
+    },
+    "2026-06-29 09:57:20": {
+        "timestamp": "2026-06-29 09:57:20",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104712.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29546.5
+        }
+    },
+    "2026-06-29 09:57:29": {
+        "timestamp": "2026-06-29 09:57:29",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104718.0,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29550.0
+        }
+    },
+    "2026-06-29 09:57:37": {
+        "timestamp": "2026-06-29 09:57:37",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104720.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29548.0
+        }
+    },
+    "2026-06-29 09:57:46": {
+        "timestamp": "2026-06-29 09:57:46",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104720.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29548.5
+        }
+    },
+    "2026-06-29 09:57:54": {
+        "timestamp": "2026-06-29 09:57:54",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104720.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29552.75
+        }
+    },
+    "2026-06-29 09:58:04": {
+        "timestamp": "2026-06-29 09:58:04",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104720.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29544.25
+        }
+    },
+    "2026-06-29 09:58:12": {
+        "timestamp": "2026-06-29 09:58:12",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104720.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29542.5
+        }
+    },
+    "2026-06-29 09:58:20": {
+        "timestamp": "2026-06-29 09:58:20",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104716.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29538.75
+        }
+    },
+    "2026-06-29 09:58:28": {
+        "timestamp": "2026-06-29 09:58:28",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104716.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29542.5
+        }
+    },
+    "2026-06-29 09:58:36": {
+        "timestamp": "2026-06-29 09:58:36",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104716.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29541.5
+        }
+    },
+    "2026-06-29 09:58:44": {
+        "timestamp": "2026-06-29 09:58:44",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104716.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29540.0
+        }
+    },
+    "2026-06-29 09:58:52": {
+        "timestamp": "2026-06-29 09:58:52",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104716.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29539.0
+        }
+    },
+    "2026-06-29 09:59:01": {
+        "timestamp": "2026-06-29 09:59:01",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104716.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29539.25
+        }
+    },
+    "2026-06-29 09:59:10": {
+        "timestamp": "2026-06-29 09:59:10",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104716.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29544.75
+        }
+    },
+    "2026-06-29 09:59:18": {
+        "timestamp": "2026-06-29 09:59:18",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104716.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29543.5
+        }
+    },
+    "2026-06-29 09:59:26": {
+        "timestamp": "2026-06-29 09:59:26",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104728.0,
+        "prices": {
+            "91683347732": 52364.0,
+            "84282184193": 29546.5
+        }
+    },
+    "2026-06-29 09:59:34": {
+        "timestamp": "2026-06-29 09:59:34",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104722.0,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29546.75
+        }
+    },
+    "2026-06-29 09:59:43": {
+        "timestamp": "2026-06-29 09:59:43",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104722.0,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29546.25
+        }
+    },
+    "2026-06-29 09:59:52": {
+        "timestamp": "2026-06-29 09:59:52",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104722.0,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29540.0
+        }
+    },
+    "2026-06-29 10:00:03": {
+        "timestamp": "2026-06-29 10:00:03",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104722.0,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29539.5
+        }
+    },
+    "2026-06-29 10:00:15": {
+        "timestamp": "2026-06-29 10:00:15",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104720.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29539.0
+        }
+    },
+    "2026-06-29 10:00:23": {
+        "timestamp": "2026-06-29 10:00:23",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104720.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29541.5
+        }
+    },
+    "2026-06-29 10:00:32": {
+        "timestamp": "2026-06-29 10:00:32",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104714.0,
+        "prices": {
+            "91683347732": 52357.0,
+            "84282184193": 29532.0
+        }
+    },
+    "2026-06-29 10:00:41": {
+        "timestamp": "2026-06-29 10:00:41",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104714.0,
+        "prices": {
+            "91683347732": 52357.0,
+            "84282184193": 29532.75
+        }
+    },
+    "2026-06-29 10:00:49": {
+        "timestamp": "2026-06-29 10:00:49",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104712.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29532.25
+        }
+    },
+    "2026-06-29 10:00:58": {
+        "timestamp": "2026-06-29 10:00:58",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104712.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29540.5
+        }
+    },
+    "2026-06-29 10:01:09": {
+        "timestamp": "2026-06-29 10:01:09",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104712.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29545.25
+        }
+    },
+    "2026-06-29 10:01:18": {
+        "timestamp": "2026-06-29 10:01:18",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104732.0,
+        "prices": {
+            "91683347732": 52366.0,
+            "84282184193": 29551.5
+        }
+    },
+    "2026-06-29 10:01:27": {
+        "timestamp": "2026-06-29 10:01:27",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104732.0,
+        "prices": {
+            "91683347732": 52366.0,
+            "84282184193": 29550.0
+        }
+    },
+    "2026-06-29 10:01:36": {
+        "timestamp": "2026-06-29 10:01:36",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104732.0,
+        "prices": {
+            "91683347732": 52366.0,
+            "84282184193": 29548.0
+        }
+    },
+    "2026-06-29 10:01:44": {
+        "timestamp": "2026-06-29 10:01:44",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104732.0,
+        "prices": {
+            "91683347732": 52366.0,
+            "84282184193": 29544.0
+        }
+    },
+    "2026-06-29 10:01:52": {
+        "timestamp": "2026-06-29 10:01:52",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104732.0,
+        "prices": {
+            "91683347732": 52366.0,
+            "84282184193": 29544.25
+        }
+    },
+    "2026-06-29 10:02:01": {
+        "timestamp": "2026-06-29 10:02:01",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104722.0,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29542.25
+        }
+    },
+    "2026-06-29 10:02:10": {
+        "timestamp": "2026-06-29 10:02:10",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104722.0,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29540.0
+        }
+    },
+    "2026-06-29 10:02:19": {
+        "timestamp": "2026-06-29 10:02:19",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104722.0,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29544.5
+        }
+    },
+    "2026-06-29 10:02:27": {
+        "timestamp": "2026-06-29 10:02:27",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104722.0,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29541.5
+        }
+    },
+    "2026-06-29 10:02:36": {
+        "timestamp": "2026-06-29 10:02:36",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104722.0,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29538.0
+        }
+    },
+    "2026-06-29 10:02:44": {
+        "timestamp": "2026-06-29 10:02:44",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104722.0,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29539.5
+        }
+    },
+    "2026-06-29 10:02:53": {
+        "timestamp": "2026-06-29 10:02:53",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104722.0,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29544.0
+        }
+    },
+    "2026-06-29 10:03:02": {
+        "timestamp": "2026-06-29 10:03:02",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104722.0,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29541.75
+        }
+    },
+    "2026-06-29 10:03:12": {
+        "timestamp": "2026-06-29 10:03:12",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104724.0,
+        "prices": {
+            "91683347732": 52362.0,
+            "84282184193": 29545.25
+        }
+    },
+    "2026-06-29 10:03:21": {
+        "timestamp": "2026-06-29 10:03:21",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104724.0,
+        "prices": {
+            "91683347732": 52362.0,
+            "84282184193": 29544.5
+        }
+    },
+    "2026-06-29 10:03:32": {
+        "timestamp": "2026-06-29 10:03:32",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104718.0,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29533.75
+        }
+    },
+    "2026-06-29 10:03:39": {
+        "timestamp": "2026-06-29 10:03:39",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104718.0,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29537.0
+        }
+    },
+    "2026-06-29 10:03:49": {
+        "timestamp": "2026-06-29 10:03:49",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104718.0,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29535.5
+        }
+    },
+    "2026-06-29 10:03:58": {
+        "timestamp": "2026-06-29 10:03:58",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104718.0,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29535.5
+        }
+    },
+    "2026-06-29 10:04:10": {
+        "timestamp": "2026-06-29 10:04:10",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104718.0,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29532.75
+        }
+    },
+    "2026-06-29 10:04:20": {
+        "timestamp": "2026-06-29 10:04:20",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104718.0,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29532.25
+        }
+    },
+    "2026-06-29 10:04:28": {
+        "timestamp": "2026-06-29 10:04:28",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104710.0,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29523.75
+        }
+    },
+    "2026-06-29 10:04:37": {
+        "timestamp": "2026-06-29 10:04:37",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104716.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29526.25
+        }
+    },
+    "2026-06-29 10:04:47": {
+        "timestamp": "2026-06-29 10:04:47",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104716.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29528.75
+        }
+    },
+    "2026-06-29 10:04:55": {
+        "timestamp": "2026-06-29 10:04:55",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104720.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29532.0
+        }
+    },
+    "2026-06-29 10:05:05": {
+        "timestamp": "2026-06-29 10:05:05",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104720.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29527.75
+        }
+    },
+    "2026-06-29 10:05:14": {
+        "timestamp": "2026-06-29 10:05:14",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104708.0,
+        "prices": {
+            "91683347732": 52354.0,
+            "84282184193": 29524.5
+        }
+    },
+    "2026-06-29 10:05:23": {
+        "timestamp": "2026-06-29 10:05:23",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104712.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29525.75
+        }
+    },
+    "2026-06-29 10:05:32": {
+        "timestamp": "2026-06-29 10:05:32",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104712.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29529.0
+        }
+    },
+    "2026-06-29 10:05:43": {
+        "timestamp": "2026-06-29 10:05:43",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104712.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29528.0
+        }
+    },
+    "2026-06-29 10:05:52": {
+        "timestamp": "2026-06-29 10:05:52",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104712.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29530.0
+        }
+    },
+    "2026-06-29 10:06:00": {
+        "timestamp": "2026-06-29 10:06:00",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104712.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29531.25
+        }
+    },
+    "2026-06-29 10:06:09": {
+        "timestamp": "2026-06-29 10:06:09",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104716.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29534.0
+        }
+    },
+    "2026-06-29 10:06:18": {
+        "timestamp": "2026-06-29 10:06:18",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104714.0,
+        "prices": {
+            "91683347732": 52357.0,
+            "84282184193": 29533.75
+        }
+    },
+    "2026-06-29 10:06:26": {
+        "timestamp": "2026-06-29 10:06:26",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104710.0,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29529.25
+        }
+    },
+    "2026-06-29 10:06:35": {
+        "timestamp": "2026-06-29 10:06:35",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104710.0,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29526.0
+        }
+    },
+    "2026-06-29 10:06:44": {
+        "timestamp": "2026-06-29 10:06:44",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104704.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29523.5
+        }
+    },
+    "2026-06-29 10:06:52": {
+        "timestamp": "2026-06-29 10:06:52",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104704.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29519.5
+        }
+    },
+    "2026-06-29 10:07:01": {
+        "timestamp": "2026-06-29 10:07:01",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104704.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29522.0
+        }
+    },
+    "2026-06-29 10:07:11": {
+        "timestamp": "2026-06-29 10:07:11",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104708.0,
+        "prices": {
+            "91683347732": 52354.0,
+            "84282184193": 29522.5
+        }
+    },
+    "2026-06-29 10:07:19": {
+        "timestamp": "2026-06-29 10:07:19",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104708.0,
+        "prices": {
+            "91683347732": 52354.0,
+            "84282184193": 29520.5
+        }
+    },
+    "2026-06-29 10:07:27": {
+        "timestamp": "2026-06-29 10:07:27",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104708.0,
+        "prices": {
+            "91683347732": 52354.0,
+            "84282184193": 29525.0
+        }
+    },
+    "2026-06-29 10:07:36": {
+        "timestamp": "2026-06-29 10:07:36",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104708.0,
+        "prices": {
+            "91683347732": 52354.0,
+            "84282184193": 29525.0
+        }
+    },
+    "2026-06-29 10:07:44": {
+        "timestamp": "2026-06-29 10:07:44",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104706.0,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29528.0
+        }
+    },
+    "2026-06-29 10:07:54": {
+        "timestamp": "2026-06-29 10:07:54",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104706.0,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29534.5
+        }
+    },
+    "2026-06-29 10:08:04": {
+        "timestamp": "2026-06-29 10:08:04",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104728.0,
+        "prices": {
+            "91683347732": 52364.0,
+            "84282184193": 29536.75
+        }
+    },
+    "2026-06-29 10:08:14": {
+        "timestamp": "2026-06-29 10:08:14",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104738.0,
+        "prices": {
+            "91683347732": 52369.0,
+            "84282184193": 29542.25
+        }
+    },
+    "2026-06-29 10:08:23": {
+        "timestamp": "2026-06-29 10:08:23",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104734.0,
+        "prices": {
+            "91683347732": 52367.0,
+            "84282184193": 29536.5
+        }
+    },
+    "2026-06-29 10:08:32": {
+        "timestamp": "2026-06-29 10:08:32",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104722.0,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29537.5
+        }
+    },
+    "2026-06-29 10:08:41": {
+        "timestamp": "2026-06-29 10:08:41",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104726.0,
+        "prices": {
+            "91683347732": 52363.0,
+            "84282184193": 29538.0
+        }
+    },
+    "2026-06-29 10:08:51": {
+        "timestamp": "2026-06-29 10:08:51",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104730.0,
+        "prices": {
+            "91683347732": 52365.0,
+            "84282184193": 29542.75
+        }
+    },
+    "2026-06-29 10:09:00": {
+        "timestamp": "2026-06-29 10:09:00",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104730.0,
+        "prices": {
+            "91683347732": 52365.0,
+            "84282184193": 29544.75
+        }
+    },
+    "2026-06-29 10:09:11": {
+        "timestamp": "2026-06-29 10:09:11",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104724.0,
+        "prices": {
+            "91683347732": 52362.0,
+            "84282184193": 29532.5
+        }
+    },
+    "2026-06-29 10:09:20": {
+        "timestamp": "2026-06-29 10:09:20",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104724.0,
+        "prices": {
+            "91683347732": 52362.0,
+            "84282184193": 29527.0
+        }
+    },
+    "2026-06-29 10:09:29": {
+        "timestamp": "2026-06-29 10:09:29",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104724.0,
+        "prices": {
+            "91683347732": 52362.0,
+            "84282184193": 29524.75
+        }
+    },
+    "2026-06-29 10:09:41": {
+        "timestamp": "2026-06-29 10:09:41",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104716.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29525.25
+        }
+    },
+    "2026-06-29 10:09:48": {
+        "timestamp": "2026-06-29 10:09:48",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104720.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29526.5
+        }
+    },
+    "2026-06-29 10:09:57": {
+        "timestamp": "2026-06-29 10:09:57",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104722.0,
+        "prices": {
+            "91683347732": 52361.0,
+            "84282184193": 29524.5
+        }
+    },
+    "2026-06-29 10:10:06": {
+        "timestamp": "2026-06-29 10:10:06",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104720.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29526.25
+        }
+    },
+    "2026-06-29 10:10:16": {
+        "timestamp": "2026-06-29 10:10:16",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104720.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29527.0
+        }
+    },
+    "2026-06-29 10:10:26": {
+        "timestamp": "2026-06-29 10:10:26",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104720.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29514.75
+        }
+    },
+    "2026-06-29 10:10:35": {
+        "timestamp": "2026-06-29 10:10:35",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104700.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29509.25
+        }
+    },
+    "2026-06-29 10:10:45": {
+        "timestamp": "2026-06-29 10:10:45",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104700.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29509.25
+        }
+    },
+    "2026-06-29 10:10:54": {
+        "timestamp": "2026-06-29 10:10:54",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104700.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29513.75
+        }
+    },
+    "2026-06-29 10:11:04": {
+        "timestamp": "2026-06-29 10:11:04",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104700.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29511.25
+        }
+    },
+    "2026-06-29 10:11:13": {
+        "timestamp": "2026-06-29 10:11:13",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104700.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29506.5
+        }
+    },
+    "2026-06-29 10:11:21": {
+        "timestamp": "2026-06-29 10:11:21",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104700.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29509.5
+        }
+    },
+    "2026-06-29 10:11:30": {
+        "timestamp": "2026-06-29 10:11:30",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104694.0,
+        "prices": {
+            "91683347732": 52347.0,
+            "84282184193": 29510.5
+        }
+    },
+    "2026-06-29 10:11:39": {
+        "timestamp": "2026-06-29 10:11:39",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104690.0,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29511.25
+        }
+    },
+    "2026-06-29 10:11:48": {
+        "timestamp": "2026-06-29 10:11:48",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104690.0,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29514.0
+        }
+    },
+    "2026-06-29 10:11:57": {
+        "timestamp": "2026-06-29 10:11:57",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104690.0,
+        "prices": {
+            "91683347732": 52345.0,
+            "84282184193": 29515.0
+        }
+    },
+    "2026-06-29 10:12:07": {
+        "timestamp": "2026-06-29 10:12:07",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104694.0,
+        "prices": {
+            "91683347732": 52347.0,
+            "84282184193": 29515.5
+        }
+    },
+    "2026-06-29 10:12:14": {
+        "timestamp": "2026-06-29 10:12:14",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104696.0,
+        "prices": {
+            "91683347732": 52348.0,
+            "84282184193": 29511.25
+        }
+    },
+    "2026-06-29 10:12:23": {
+        "timestamp": "2026-06-29 10:12:23",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104698.0,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29515.0
+        }
+    },
+    "2026-06-29 10:12:32": {
+        "timestamp": "2026-06-29 10:12:32",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104698.0,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29514.75
+        }
+    },
+    "2026-06-29 10:12:40": {
+        "timestamp": "2026-06-29 10:12:40",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104698.0,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29515.75
+        }
+    },
+    "2026-06-29 10:12:49": {
+        "timestamp": "2026-06-29 10:12:49",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104698.0,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29510.5
+        }
+    },
+    "2026-06-29 10:12:57": {
+        "timestamp": "2026-06-29 10:12:57",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104694.0,
+        "prices": {
+            "91683347732": 52347.0,
+            "84282184193": 29512.25
+        }
+    },
+    "2026-06-29 10:13:06": {
+        "timestamp": "2026-06-29 10:13:06",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104698.0,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29515.75
+        }
+    },
+    "2026-06-29 10:13:15": {
+        "timestamp": "2026-06-29 10:13:15",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104698.0,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29515.0
+        }
+    },
+    "2026-06-29 10:13:25": {
+        "timestamp": "2026-06-29 10:13:25",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104698.0,
+        "prices": {
+            "91683347732": 52349.0,
+            "84282184193": 29513.75
+        }
+    },
+    "2026-06-29 10:13:36": {
+        "timestamp": "2026-06-29 10:13:36",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104694.0,
+        "prices": {
+            "91683347732": 52347.0,
+            "84282184193": 29514.25
+        }
+    },
+    "2026-06-29 10:13:48": {
+        "timestamp": "2026-06-29 10:13:48",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104694.0,
+        "prices": {
+            "91683347732": 52347.0,
+            "84282184193": 29518.25
+        }
+    },
+    "2026-06-29 10:13:58": {
+        "timestamp": "2026-06-29 10:13:58",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104708.0,
+        "prices": {
+            "91683347732": 52354.0,
+            "84282184193": 29520.0
+        }
+    },
+    "2026-06-29 10:14:09": {
+        "timestamp": "2026-06-29 10:14:09",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104710.0,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29524.5
+        }
+    },
+    "2026-06-29 10:14:18": {
+        "timestamp": "2026-06-29 10:14:18",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104710.0,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29523.25
+        }
+    },
+    "2026-06-29 10:14:27": {
+        "timestamp": "2026-06-29 10:14:27",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104710.0,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29523.75
+        }
+    },
+    "2026-06-29 10:14:38": {
+        "timestamp": "2026-06-29 10:14:38",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104706.0,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29521.25
+        }
+    },
+    "2026-06-29 10:14:49": {
+        "timestamp": "2026-06-29 10:14:49",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104710.0,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29523.0
+        }
+    },
+    "2026-06-29 10:14:59": {
+        "timestamp": "2026-06-29 10:14:59",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104712.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29521.25
+        }
+    },
+    "2026-06-29 10:15:12": {
+        "timestamp": "2026-06-29 10:15:12",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104704.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29519.5
+        }
+    },
+    "2026-06-29 10:15:21": {
+        "timestamp": "2026-06-29 10:15:21",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104706.0,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29516.5
+        }
+    },
+    "2026-06-29 10:15:31": {
+        "timestamp": "2026-06-29 10:15:31",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104706.0,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29516.5
+        }
+    },
+    "2026-06-29 10:15:40": {
+        "timestamp": "2026-06-29 10:15:40",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104706.0,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29512.5
+        }
+    },
+    "2026-06-29 10:15:51": {
+        "timestamp": "2026-06-29 10:15:51",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104706.0,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29519.5
+        }
+    },
+    "2026-06-29 10:16:01": {
+        "timestamp": "2026-06-29 10:16:01",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104702.0,
+        "prices": {
+            "91683347732": 52351.0,
+            "84282184193": 29512.75
+        }
+    },
+    "2026-06-29 10:16:12": {
+        "timestamp": "2026-06-29 10:16:12",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104700.0,
+        "prices": {
+            "91683347732": 52350.0,
+            "84282184193": 29508.75
+        }
+    },
+    "2026-06-29 10:16:22": {
+        "timestamp": "2026-06-29 10:16:22",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104704.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29515.5
+        }
+    },
+    "2026-06-29 10:16:31": {
+        "timestamp": "2026-06-29 10:16:31",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104704.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29515.25
+        }
+    },
+    "2026-06-29 10:16:42": {
+        "timestamp": "2026-06-29 10:16:42",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104704.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29514.0
+        }
+    },
+    "2026-06-29 10:16:51": {
+        "timestamp": "2026-06-29 10:16:51",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104704.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29516.5
+        }
+    },
+    "2026-06-29 10:17:00": {
+        "timestamp": "2026-06-29 10:17:00",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104704.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29518.5
+        }
+    },
+    "2026-06-29 10:17:12": {
+        "timestamp": "2026-06-29 10:17:12",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104714.0,
+        "prices": {
+            "91683347732": 52357.0,
+            "84282184193": 29521.25
+        }
+    },
+    "2026-06-29 10:17:21": {
+        "timestamp": "2026-06-29 10:17:21",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104714.0,
+        "prices": {
+            "91683347732": 52357.0,
+            "84282184193": 29524.75
+        }
+    },
+    "2026-06-29 10:17:30": {
+        "timestamp": "2026-06-29 10:17:30",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104706.0,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29523.75
+        }
+    },
+    "2026-06-29 10:17:39": {
+        "timestamp": "2026-06-29 10:17:39",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104706.0,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29520.25
+        }
+    },
+    "2026-06-29 10:17:48": {
+        "timestamp": "2026-06-29 10:17:48",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104704.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29513.0
+        }
+    },
+    "2026-06-29 10:17:57": {
+        "timestamp": "2026-06-29 10:17:57",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104704.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29513.0
+        }
+    },
+    "2026-06-29 10:18:06": {
+        "timestamp": "2026-06-29 10:18:06",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104704.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29515.5
+        }
+    },
+    "2026-06-29 10:18:15": {
+        "timestamp": "2026-06-29 10:18:15",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104704.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29514.0
+        }
+    },
+    "2026-06-29 10:18:24": {
+        "timestamp": "2026-06-29 10:18:24",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104704.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29513.5
+        }
+    },
+    "2026-06-29 10:18:33": {
+        "timestamp": "2026-06-29 10:18:33",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104704.0,
+        "prices": {
+            "91683347732": 52352.0,
+            "84282184193": 29511.0
+        }
+    },
+    "2026-06-29 10:18:44": {
+        "timestamp": "2026-06-29 10:18:44",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104702.0,
+        "prices": {
+            "91683347732": 52351.0,
+            "84282184193": 29512.5
+        }
+    },
+    "2026-06-29 10:18:55": {
+        "timestamp": "2026-06-29 10:18:55",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104706.0,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29513.75
+        }
+    },
+    "2026-06-29 10:19:04": {
+        "timestamp": "2026-06-29 10:19:04",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104706.0,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29510.25
+        }
+    },
+    "2026-06-29 10:19:13": {
+        "timestamp": "2026-06-29 10:19:13",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104706.0,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29511.75
+        }
+    },
+    "2026-06-29 10:19:22": {
+        "timestamp": "2026-06-29 10:19:22",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104706.0,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29516.75
+        }
+    },
+    "2026-06-29 10:19:30": {
+        "timestamp": "2026-06-29 10:19:30",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104706.0,
+        "prices": {
+            "91683347732": 52353.0,
+            "84282184193": 29523.5
+        }
+    },
+    "2026-06-29 10:19:39": {
+        "timestamp": "2026-06-29 10:19:39",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104716.0,
+        "prices": {
+            "91683347732": 52358.0,
+            "84282184193": 29531.5
+        }
+    },
+    "2026-06-29 10:19:48": {
+        "timestamp": "2026-06-29 10:19:48",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104718.0,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29535.25
+        }
+    },
+    "2026-06-29 10:19:57": {
+        "timestamp": "2026-06-29 10:19:57",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104718.0,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29533.5
+        }
+    },
+    "2026-06-29 10:20:11": {
+        "timestamp": "2026-06-29 10:20:11",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104718.0,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29537.75
+        }
+    },
+    "2026-06-29 10:20:21": {
+        "timestamp": "2026-06-29 10:20:21",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104718.0,
+        "prices": {
+            "91683347732": 52359.0,
+            "84282184193": 29536.5
+        }
+    },
+    "2026-06-29 10:20:30": {
+        "timestamp": "2026-06-29 10:20:30",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104710.0,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29539.25
+        }
+    },
+    "2026-06-29 10:20:42": {
+        "timestamp": "2026-06-29 10:20:42",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104712.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29538.0
+        }
+    },
+    "2026-06-29 10:20:48": {
+        "timestamp": "2026-06-29 10:20:48",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104712.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29533.25
+        }
+    },
+    "2026-06-29 10:20:57": {
+        "timestamp": "2026-06-29 10:20:57",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104712.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29533.0
+        }
+    },
+    "2026-06-29 10:21:08": {
+        "timestamp": "2026-06-29 10:21:08",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104712.0,
+        "prices": {
+            "91683347732": 52356.0,
+            "84282184193": 29528.75
+        }
+    },
+    "2026-06-29 10:21:18": {
+        "timestamp": "2026-06-29 10:21:18",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104710.0,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29533.5
+        }
+    },
+    "2026-06-29 10:21:28": {
+        "timestamp": "2026-06-29 10:21:28",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104710.0,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29534.0
+        }
+    },
+    "2026-06-29 10:21:38": {
+        "timestamp": "2026-06-29 10:21:38",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104710.0,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29535.75
+        }
+    },
+    "2026-06-29 10:21:51": {
+        "timestamp": "2026-06-29 10:21:51",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104710.0,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29536.5
+        }
+    },
+    "2026-06-29 10:21:58": {
+        "timestamp": "2026-06-29 10:21:58",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104710.0,
+        "prices": {
+            "91683347732": 52355.0,
+            "84282184193": 29542.0
+        }
+    },
+    "2026-06-29 10:22:09": {
+        "timestamp": "2026-06-29 10:22:09",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104714.0,
+        "prices": {
+            "91683347732": 52357.0,
+            "84282184193": 29537.25
+        }
+    },
+    "2026-06-29 10:22:19": {
+        "timestamp": "2026-06-29 10:22:19",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104714.0,
+        "prices": {
+            "91683347732": 52357.0,
+            "84282184193": 29546.75
+        }
+    },
+    "2026-06-29 10:22:27": {
+        "timestamp": "2026-06-29 10:22:27",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104720.0,
+        "prices": {
+            "91683347732": 52360.0,
+            "84282184193": 29544.25
+        }
+    },
+    "2026-06-29 10:22:38": {
+        "timestamp": "2026-06-29 10:22:38",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104724.0,
+        "prices": {
+            "91683347732": 52362.0,
+            "84282184193": 29548.0
+        }
+    },
+    "2026-06-29 10:22:48": {
+        "timestamp": "2026-06-29 10:22:48",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104724.0,
+        "prices": {
+            "91683347732": 52362.0,
+            "84282184193": 29549.25
+        }
+    },
+    "2026-06-29 10:22:58": {
+        "timestamp": "2026-06-29 10:22:58",
+        "instrument_id": "6a3a28577b72d976eef100eb",
+        "instrument_name": "dow@nasdaq@nasdaq",
+        "computed_value": 104728.0,
+        "prices": {
+            "91683347732": 52364.0,
+            "84282184193": 29549.0
+        }
     }
 }
