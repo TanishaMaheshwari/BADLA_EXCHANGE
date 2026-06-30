@@ -196,11 +196,16 @@ function orderCardHTML(o) {
       <span class="tl-time">${time ? new Date(time).toLocaleString() : '—'}</span>
     </div>`;
 
-  const eaWarning = o.status === 'pending'
+  const eaWarning = o.status === 'pending' && (!eaCheckData || !eaCheckData.allReady)
     ? `<div class="ea-warning">
         <i class="ti ti-alert-triangle" aria-hidden="true" style="font-size:13px;"></i>
         EA not checked — run preflight before condition triggers
-       </div>`
+      </div>`
+    : o.status === 'pending' && eaCheckData?.allReady
+    ? `<div class="ea-warning" style="color:#3B6D11;background:#EAF3DE;border-color:#C0DD97;">
+        <i class="ti ti-check" aria-hidden="true" style="font-size:13px;"></i>
+        All EAs ready — order will execute when condition is met
+      </div>`
     : '';
 
   const mt5Error = o.mt5_result
