@@ -156,31 +156,95 @@ function statusLabel(status) {
 }
 
 function orderCardHTML(o) {
-  const brokerName = id => { if (!id) return null; const b = brokers.find(x=>x.id===parseInt(id)); return b?.brokerName||null; };
-  const legChips = [
-    o.mcx   ? `<span class="order-leg-chip ${o.mcx.side.toLowerCase()}">MCX ${o.mcx.side} ${o.mcx.qty}lot${brokerName(o.mcx.brokerId)?' · '+brokerName(o.mcx.brokerId):''}</span>` : '',
-    o.comex ? `<span class="order-leg-chip ${o.comex.side.toLowerCase()}">COMEX ${o.comex.side} ${o.comex.qty}lot${brokerName(o.comex.brokerId)?' · '+brokerName(o.comex.brokerId):''}</span>` : '',
-    o.dgcx  ? `<span class="order-leg-chip ${o.dgcx.side.toLowerCase()}">DGCX ${o.dgcx.side} ${o.dgcx.qty}lot${brokerName(o.dgcx.brokerId)?' · '+brokerName(o.dgcx.brokerId):''}</span>` : '',
-  ].filter(Boolean).join('');
-  const condTag = o.condition
-    ? `<div class="order-condition-tag">⚡ When ${o.condition.field} ${o.condition.direction==='above'?'≥':'≤'} ${o.condition.value}</div>`
-    : `<div class="order-condition-tag" style="border-color:rgba(0,255,136,0.2);background:rgba(0,255,136,0.05);color:var(--accent)">⚡ Immediate</div>`;
+  const brokerName = id => {
+    if (!id) return null;
+    const b = brokers.find(x => x.id === parseInt(id));
+    return b?.brokerName || b?.name || null;
+  };
+
+  const legs = [
+    o.mcx_side ? { exchange: 'MCX', side: o.mcx_side, qty: o.mcx_qty, brokerId: o.mcx_broker_id } : null,
+    o.comex_side ? { exchange: 'COMEX', side: o.comex_side, qty: o.comex_qty, brokerId: o.comex_broker_id } : null,
+    o.dgcx_enabled && o.dgcx_side ? { exchange: 'DGCX', side: o.dgcx_side, qty: o.dgcx_qty, brokerId: o.dgcx_broker_id } : null,
+  ].filter(Boolean);
+
+  const legChips = legs.map(leg => {
+    const bn = brokerName(leg.brokerId);
+    const arrow = leg.side === 'BUY' ? 'ti-arrow-up' : 'ti-arrow-down';
+    return `<span class="order-leg-chip ${leg.side.toLowerCase()}">
+      <i class="ti ${arrow}" aria-hidden="true" style="font-size:12px;"></i>
+      ${leg.exchange} ${leg.side} ${leg.qty} lots
+      ${bn ? `<span class="leg-broker">· ${bn}</span>` : ''}
+    </span>`;
+  }).join('');
+
+  const condTag = o.has_condition
+    ? `<div class="condition-row">
+        <i class="ti ti-bolt" aria-hidden="true"></i>
+        <span>When <strong>${o.condition_field}</strong> 
+        ${o.condition_dir?.includes('above') || o.condition_dir === '>=' ? '&ge;' : '&le;'}
+        <strong>${Number(o.condition_value).toLocaleString()}</strong></span>
+       </div>`
+    : `<div class="immediate-tag">
+        <i class="ti ti-bolt" aria-hidden="true" style="font-size:13px;"></i> Immediate execution
+       </div>`;
+
+  const tlStep = (label, time) => `
+    <div class="tl-row">
+      <div class="tl-dot ${time ? 'done' : 'empty'}"></div>
+      <span class="tl-label">${label}</span>
+      <span class="tl-time">${time ? new Date(time).toLocaleString() : '—'}</span>
+    </div>`;
+
+  const eaWarning = o.status === 'pending'
+    ? `<div class="ea-warning">
+        <i class="ti ti-alert-triangle" aria-hidden="true" style="font-size:13px;"></i>
+        EA not checked — run preflight before condition triggers
+       </div>`
+    : '';
+
+  const mt5Error = o.mt5_result
+    ? `<div class="mt5-result">
+        <i class="ti ti-alert-circle" aria-hidden="true" style="font-size:12px;margin-right:4px;"></i>
+        ${o.mt5_result}
+       </div>`
+    : '';
+
+  const cancelBtn = o.status === 'pending'
+    ? `<div class="order-actions">
+        <button class="btn-cancel" onclick="cancelOrder(${o.id})">
+          <i class="ti ti-x" aria-hidden="true" style="font-size:12px;"></i> Cancel order
+        </button>
+       </div>`
+    : '';
 
   return `
     <div class="order-card status-${o.status}">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
-        <div style="min-width:0">
-          <div style="font-size:13px;font-weight:700;color:var(--text)">${o.instrument}${o.note?` <span style="font-size:11px;color:var(--muted);font-weight:400">· ${o.note}</span>`:''}</div>
-          <div style="margin-top:4px">${legChips}</div>
-          ${condTag}
-          <div style="font-size:10px;color:var(--muted);margin-top:6px">Created: ${new Date(o.createdAt).toLocaleString()}${o.triggeredAt?` · Triggered: ${new Date(o.triggeredAt).toLocaleString()}`:''}${o.sentToMt5At?` · Sent MT5: ${new Date(o.sentToMt5At).toLocaleString()}`:''}${o.mt5ConfirmedAt?` · Confirmed: ${new Date(o.mt5ConfirmedAt).toLocaleString()}`:''}</div>
-          ${o.mt5Result?`<div style="font-size:10px;color:var(--muted);margin-top:2px">MT5: ${o.mt5Result}</div>`:''}
+      <div class="card-top">
+        <div style="min-width:0;">
+          <div class="instrument">
+            ${o.instrument}
+            ${o.note ? `<span class="note">· ${o.note}</span>` : ''}
+          </div>
+          <div class="legs">${legChips}</div>
         </div>
-        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0">
-          <span class="order-status-pill ${o.status}">${statusLabel(o.status)}</span>
-          ${o.status==='pending'?`<button class="btn btn-sm btn-danger" onclick="cancelOrder(${o.id})">Cancel</button>`:''}
-        </div>
+        <span class="order-status-pill ${o.status}">${statusLabel(o.status)}</span>
       </div>
+
+      <div class="order-divider"></div>
+
+      ${condTag}
+      ${eaWarning}
+      ${mt5Error}
+
+      <div class="timeline">
+        ${tlStep('Created',     o.created_at)}
+        ${tlStep('Triggered',   o.triggered_at)}
+        ${tlStep('Sent to MT5', o.sent_to_mt5_at)}
+        ${tlStep('Confirmed',   o.mt5_confirmed_at)}
+      </div>
+
+      ${cancelBtn}
     </div>`;
 }
 

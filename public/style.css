@@ -1078,3 +1078,36 @@ select option { background: var(--surface); }
   .ea-desktop-view { display: none; }
   .ea-mobile-view  { display: block; }
 }
+
+
+.order-card { border-left: 3px solid var(--border); }
+.order-card.status-pending   { border-left-color: #BA7517; }
+.order-card.status-triggered { border-left-color: #378ADD; }
+.order-card.status-executed  { border-left-color: #639922; }
+.order-card.status-failed    { border-left-color: #E24B4A; }
+
+.order-divider { border: none; border-top: 0.5px solid var(--border); margin: 10px 0; }
+
+.order-leg-chip { display:inline-flex; align-items:center; gap:5px; font-size:12px; font-weight:500; padding:3px 8px; border-radius:6px; border:0.5px solid var(--border); }
+.order-leg-chip.buy  { background:#EAF3DE; color:#3B6D11; border-color:#C0DD97; }
+.order-leg-chip.sell { background:#FCEBEB; color:#A32D2D; border-color:#F7C1C1; }
+.leg-broker { font-size:11px; font-weight:400; opacity:.7; }
+
+.condition-row { display:flex; align-items:center; gap:6px; font-size:12px; color:var(--text-secondary); }
+.condition-row i { font-size:14px; color:#BA7517; }
+.immediate-tag { display:inline-flex; align-items:center; gap:5px; font-size:12px; color:#3B6D11; background:#EAF3DE; border:0.5px solid #C0DD97; padding:2px 8px; border-radius:6px; }
+
+.ea-warning { display:flex; align-items:center; gap:6px; font-size:11px; color:#854F0B; background:#FAEEDA; border:0.5px solid #FAC775; border-radius:6px; padding:5px 8px; margin-top:8px; }
+.mt5-result { margin-top:8px; font-size:11px; color:#A32D2D; background:#FCEBEB; border:0.5px solid #F7C1C1; border-radius:6px; padding:4px 8px; }
+
+.timeline { display:flex; flex-direction:column; gap:4px; margin-top:10px; }
+.tl-row { display:flex; align-items:center; gap:8px; font-size:11px; }
+.tl-dot { width:6px; height:6px; border-radius:50%; flex-shrink:0; }
+.tl-dot.done  { background:#639922; }
+.tl-dot.empty { background:var(--border-strong); }
+.tl-label { color:var(--text-secondary); min-width:75px; }
+.tl-time  { color:var(--text-muted); }
+
+.order-actions { margin-top:10px; }
+.btn-cancel { display:inline-flex; align-items:center; gap:4px; font-size:12px; padding:4px 10px; border-radius:6px; border:0.5px solid #F7C1C1; background:#FCEBEB; color:#A32D2D; cursor:pointer; }
+.btn-cancel:hover { background:#F7C1C1; }

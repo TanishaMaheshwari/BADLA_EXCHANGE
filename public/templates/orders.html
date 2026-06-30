@@ -4,13 +4,6 @@
       <div class="dash-title">Orders</div>
       <button class="btn-add-instr" onclick="openOrderModal(null)">+ New Order</button>
     </div>
-    <div class="mt5-info-box" id="mt5-info-box">
-      <strong>MT5 EA Connection</strong>
-      The MT5 Expert Advisor polls <code>GET /api/mt5/pending-orders</code> with header <code>x-mt5-key: YOUR_KEY</code>.
-      Set <code>MT5_EA_KEY</code> env var on the server. EA confirms execution via <code>POST /api/mt5/confirm</code>.
-      Once wired, orders placed here will be automatically sent to MT5 for execution.
-      <br>Status: <span id="mt5-orders-status" style="color:var(--muted)">Not yet connected</span>
-    </div>
     <div class="deal-controls" style="margin-bottom:12px">
       <div style="display:flex;gap:4px;flex-wrap:wrap">
         <button class="filter-btn active" id="otab-all"      onclick="setOrderTab('all')">All</button>

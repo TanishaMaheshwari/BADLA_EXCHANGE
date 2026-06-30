@@ -6,35 +6,19 @@ const requireAuth = require('../middleware/auth');
 // ── GET /api/orders — list all orders for current user ───────────────────
 router.get('/orders', requireAuth, (req, res) => {
   const orders = dbAll(`
-    SELECT o.*,
-      mb.name  AS mcx_broker_name,
-      cb.name  AS comex_broker_name,
-      db.name  AS dgcx_broker_name
-    FROM orders o
-    LEFT JOIN brokers mb ON mb.id = o.mcx_broker_id
-    LEFT JOIN brokers cb ON cb.id = o.comex_broker_id
-    LEFT JOIN brokers db ON db.id = o.dgcx_broker_id
-    WHERE o.user_id = ?
-    ORDER BY o.created_at DESC
+    SELECT * FROM orders
+    WHERE user_id = ?
+    ORDER BY created_at DESC
   `, [req.user.id]);
-
   res.json(orders);
 });
 
 // ── GET /api/orders/:id — single order ──────────────────────────────────
 router.get('/orders/:id', requireAuth, (req, res) => {
-  const order = dbGet(`
-    SELECT o.*,
-      mb.name AS mcx_broker_name,
-      cb.name AS comex_broker_name,
-      db.name AS dgcx_broker_name
-    FROM orders o
-    LEFT JOIN brokers mb ON mb.id = o.mcx_broker_id
-    LEFT JOIN brokers cb ON cb.id = o.comex_broker_id
-    LEFT JOIN brokers db ON db.id = o.dgcx_broker_id
-    WHERE o.id = ? AND o.user_id = ?
-  `, [req.params.id, req.user.id]);
-
+  const order = dbGet(
+    'SELECT * FROM orders WHERE id = ? AND user_id = ?',
+    [req.params.id, req.user.id]
+  );
   if (!order) return res.status(404).json({ error: 'Order not found' });
   res.json(order);
 });
@@ -43,11 +27,22 @@ router.get('/orders/:id', requireAuth, (req, res) => {
 router.post('/orders', requireAuth, (req, res) => {
   const {
     instrument, instrument_id, note,
-    mcx_side, mcx_qty, mcx_broker_id,
-    comex_side, comex_qty, comex_broker_id,
-    dgcx_enabled, dgcx_side, dgcx_qty, dgcx_broker_id,
-    has_condition, condition_field, condition_dir, condition_value,
-    place_immediately
+    // camelCase from frontend
+    mcxSide:      mcx_side,
+    mcxQty:       mcx_qty,
+    mcxBrokerId:  mcx_broker_id,
+    comexSide:    comex_side,
+    comexQty:     comex_qty,
+    comexBrokerId: comex_broker_id,
+    dgcxEnabled:  dgcx_enabled,
+    dgcxSide:     dgcx_side,
+    dgcxQty:      dgcx_qty,
+    dgcxBrokerId: dgcx_broker_id,
+    hasCondition:     has_condition,
+    conditionField:   condition_field,
+    conditionDir:     condition_dir,
+    conditionValue:   condition_value,
+    placeImmediately: place_immediately
   } = req.body;
 
   if (!instrument) return res.status(400).json({ error: 'instrument is required' });

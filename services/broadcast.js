@@ -158,6 +158,51 @@ async function checkPriceFieldAlert(alert, data) {
   });
 }
 
+function getPriceValue(data, field) {
+  const f = (field || '').toLowerCase().trim();
+  if (f === 'badla ltp' || f === 'ltp')   return data.ltp   ?? null;
+  if (f === 'badla buy' || f === 'buy')   return data.buy   ?? null;
+  if (f === 'badla sell'|| f === 'sell')  return data.sell  ?? null;
+  if (f === 'mcx ltp')                    return data.mcx?.ltp   ?? null;
+  if (f === 'comex ltp')                  return data.comex?.ltp ?? null;
+  if (f === 'dgcx ltp')                   return data.dgcx?.ltp  ?? null;
+  return null;
+}
+
+async function checkPendingOrders(data) {
+  const pending = dbAll(
+    `SELECT * FROM orders WHERE status = 'pending' AND instrument = ?`,
+    [data.name]
+  );
+  if (!pending.length) return;
+
+  for (const order of pending) {
+    try {
+      // immediately place
+      if (order.place_immediately) {
+        executeOrder(order);
+        continue;
+      }
+
+      // condition based
+      if (!order.has_condition || !order.condition_field || !order.condition_dir || order.condition_value === null) continue;
+
+      const current = getPriceValue(data, order.condition_field);
+      if (current === null) continue;
+
+      const dir = (order.condition_dir || '').toLowerCase();
+      const hit = (dir.includes('above') || dir === '>=') ? current >= order.condition_value
+                : (dir.includes('below') || dir === '<=') ? current <= order.condition_value
+                : false;
+
+      if (hit) executeOrder(order);
+
+    } catch (err) {
+      console.error(`[Orders] Error on order #${order.id}:`, err.message);
+    }
+  }
+}
+
 async function checkNotifications(data) {
   let armed;
   try {
@@ -203,6 +248,7 @@ function startBroadcastWatcher() {
           latestPrices[id] = result;
           broadcast({ type: 'update', data: result });
           await checkNotifications(result);  // ← check alerts on every price update
+          await checkPendingOrders(result);
         }
       } catch(e) { console.error('broadcast watcher error:', e.message, '\n', e.stack); }
     }, 4);

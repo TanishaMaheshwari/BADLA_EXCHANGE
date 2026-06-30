@@ -37481,3 +37481,53 @@ FileNotFoundError: [Errno 2] No such file or directory: '/Users/tanishamaheshwar
 2026-06-29 09:21:16,637 - BadlaWebSocket - INFO - Shutting down...
 2026-06-29 09:21:16,682 - BadlaWebSocket - INFO - Push timer stopped
 2026-06-29 09:21:16,882 - BadlaWebSocket - INFO - Disconnected
+2026-06-30 10:45:13,609 - BadlaMain - INFO - Starting Badla WebSocket Client
+2026-06-30 10:45:13,610 - BadlaMain - INFO -   data-dir          : data
+2026-06-30 10:45:13,610 - BadlaMain - INFO -   settings-file     : instrument_settings.json
+2026-06-30 10:45:13,610 - BadlaMain - INFO -   response-timeout  : 1.0s
+2026-06-30 10:45:14,633 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-30 10:45:14,638 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-30 10:45:14,641 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-30 10:45:14,641 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-30 10:45:14,653 - BadlaWebSocket - INFO - Sent watch-instruments for 37 instruments
+2026-06-30 10:45:14,853 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-30 11:07:15,342 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-30 11:07:15,346 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-30 11:07:18,238 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-30 11:07:18,238 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-30 11:07:18,239 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-30 11:07:18,239 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-30 11:07:18,240 - BadlaWebSocket - INFO - Sent watch-instruments for 37 instruments
+2026-06-30 11:07:18,441 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-30 11:10:22,392 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-30 11:10:22,394 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-30 11:10:24,039 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-30 11:10:25,012 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-30 11:10:25,835 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-30 11:10:25,836 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-30 11:10:25,840 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-30 11:10:25,840 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-30 11:10:25,845 - BadlaWebSocket - INFO - Sent watch-instruments for 37 instruments
+2026-06-30 11:10:26,047 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-30 11:13:33,606 - BadlaMain - INFO - Starting Badla WebSocket Client
+2026-06-30 11:13:33,606 - BadlaMain - INFO -   data-dir          : data
+2026-06-30 11:13:33,607 - BadlaMain - INFO -   settings-file     : instrument_settings.json
+2026-06-30 11:13:33,607 - BadlaMain - INFO -   response-timeout  : 1.0s
+2026-06-30 11:13:34,558 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-30 11:13:34,559 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-30 11:13:34,562 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-30 11:13:34,563 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-30 11:13:34,564 - BadlaWebSocket - INFO - Sent watch-instruments for 37 instruments
+2026-06-30 11:13:34,767 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-30 11:32:57,521 - BadlaWebSocket - ERROR - Connection lost: Connection to remote host was lost.
+2026-06-30 11:32:57,523 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-30 11:32:59,887 - BadlaWebSocket - INFO - Disk-save thread stopped
+2026-06-30 11:33:00,453 - BadlaWebSocket - INFO - Connection established, ping interval: 25000ms
+2026-06-30 11:33:00,454 - BadlaWebSocket - INFO - Namespace connected ✓
+2026-06-30 11:33:00,456 - BadlaWebSocket - INFO - Push timer started (12 Hz)
+2026-06-30 11:33:00,456 - BadlaWebSocket - INFO - Disk-save thread started (interval=5.0s)
+2026-06-30 11:33:00,458 - BadlaWebSocket - INFO - Sent watch-instruments for 37 instruments
+2026-06-30 11:33:00,663 - BadlaWebSocket - INFO - Subscribed — listening for live ticks...
+2026-06-30 11:39:41,590 - BadlaWebSocket - INFO - Shutting down...
+2026-06-30 11:39:41,657 - BadlaWebSocket - INFO - Push timer stopped
+2026-06-30 11:39:41,849 - BadlaWebSocket - INFO - Disconnected
