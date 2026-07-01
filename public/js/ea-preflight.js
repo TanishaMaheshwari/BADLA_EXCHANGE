@@ -27,7 +27,6 @@ async function checkEAs() {
     eaCheckData = data;
     eaCheckedAt = Date.now();
     renderEAPanel(data);
-    startValidityCountdown();
     const ts = new Date().toLocaleTimeString();
     document.getElementById('ea-last-checked').textContent = `Checked at ${ts}`;
   } catch (err) {
@@ -46,29 +45,6 @@ function toggleAutoRecheck(enabled) {
       if (Date.now() - eaCheckedAt < 29_000) return;
       checkEAs();
     }, 30_000);
-  }
-}
-
-let _autoOn = false;
-
-function toggleAutoToggle() {
-  _autoOn = !_autoOn;
-
-  // update visual
-  document.getElementById('auto-tog').style.background = _autoOn ? '#1D9E75' : 'var(--border,#1e2530)';
-  document.getElementById('auto-tog-knob').style.left = _autoOn ? '17px' : '3px';
-
-  // actually start/stop the interval
-  if (_autoOn) {
-    eaAutoInterval = setInterval(() => {
-      if (Date.now() - eaCheckedAt < 29_000) return;
-      checkEAs();
-    }, 30_000);
-  } else {
-    if (eaAutoInterval) {
-      clearInterval(eaAutoInterval);
-      eaAutoInterval = null;
-    }
   }
 }
 
@@ -247,57 +223,24 @@ function setOverallStatus(state, text) {
 
 // ── Commit button gate ───────────────────────────────────────────────────
 function refreshCommitButton() {
-  const btn     = document.getElementById('btn-commit-deal');
-  const now     = Date.now();
-  const isValid = eaCheckedAt > 0 && (now - eaCheckedAt) < EA_VALID_MS;
-  const allReady = eaCheckData?.allReady && isValid;
+  const btn = document.getElementById('btn-commit-deal');
+  
+  // consider EA stale if no update in 15s
+  const eaFresh = eaCheckData?.eas?.every(ea => 
+    ea.lastSeen && (Date.now() - ea.lastSeen) < 15000
+  );
+
+  const allReady = eaCheckData?.allReady && eaFresh;
   const hasDeal  = !!currentDealId;
   const dealOk   = eaCheckData?.dealValidation
     ? eaCheckData.dealValidation.every(l => l.ok)
     : allReady;
   const armed = allReady && hasDeal && dealOk;
+
   btn.disabled = !armed;
   btn.className = 'btn-commit ' + (armed ? 'armed' : 'locked');
   btn.textContent = armed ? '⚡ Place Trade' : 'Place Trade';
 }
-
-// ── Validity countdown ───────────────────────────────────────────────────
-function startValidityCountdown() {
-  if (eaValidityTimer) clearInterval(eaValidityTimer);
-  const bar   = document.getElementById('ea-validity-bar');
-  const fill  = document.getElementById('validity-fill');
-  const label = document.getElementById('validity-label');
-  bar.style.display = 'flex';
-
-  eaValidityTimer = setInterval(() => {
-    const elapsed   = Date.now() - eaCheckedAt;
-    const remaining = EA_VALID_MS - elapsed;
-
-    if (remaining <= 0) {
-      clearInterval(eaValidityTimer);
-      fill.style.width = '0%';
-      fill.style.background = '#E24B4A';
-      label.textContent = 'EXPIRED';
-      label.className = 'validity-label expired';
-      setOverallStatus('none', 'Preflight expired — run Check EAs again');
-      refreshCommitButton();
-      if (document.getElementById('ea-auto-recheck').checked) checkEAs();
-      return;
-    }
-
-    const pct  = (remaining / EA_VALID_MS) * 100;
-    const mins = Math.floor(remaining / 60000);
-    const secs = Math.floor((remaining % 60000) / 1000);
-
-    fill.style.width = pct + '%';
-    fill.style.background = pct > 40 ? '#378ADD' : pct > 15 ? '#EF9F27' : '#E24B4A';
-    label.textContent = `${mins}:${String(secs).padStart(2, '0')}`;
-    label.className = 'validity-label' + (pct < 15 ? ' warning' : '');
-
-    refreshCommitButton();
-  }, 1000);
-}
-
 // ── Error state ──────────────────────────────────────────────────────────
 function showEAError(msg) {
   document.getElementById('ea-desktop-body').innerHTML = `
@@ -310,11 +253,22 @@ function showEAError(msg) {
 // ── WebSocket handler ────────────────────────────────────────────────────
 function handleEAWebSocketMessage(data) {
   if (data.type === 'ea_status_update') {
-    if (!eaCheckData) return;
+    // initialize if never checked
+    if (!eaCheckData) {
+      eaCheckData = { eas: [], allReady: false };
+      eaCheckedAt = Date.now();
+    }
     if (!eaCheckData.eas) eaCheckData.eas = [];
     const idx = eaCheckData.eas.findIndex(e => e.accountId === data.ea.accountId);
     if (idx >= 0) eaCheckData.eas[idx] = data.ea;
     else eaCheckData.eas.push(data.ea);
+
+    // recompute allReady
+    eaCheckData.allReady = eaCheckData.eas.every(e => e.status === 'ready');
+    
+    // refresh timestamp so it never expires while EAs are live
+    eaCheckedAt = Date.now();
+
     renderEAPanel(eaCheckData);
   }
   if (data.type === 'commit_success') showCommitResult(true, data);

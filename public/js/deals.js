@@ -66,7 +66,7 @@ function getLivePnl(deal) {
   let mcxPnl=null, comexPnl=null, dgcxPnl=null, mcxNow=null, comexNow=null, dgcxNow=null;
   if (p?.mcx&&deal.mcx) {
     const qty=parseFloat(deal.mcx.qty)||1, brok=parseFloat(deal.mcx.brokerage)||0;
-    mcxNow=deal.mcx.side==='SELL'?p.mcx.ask:p.mcx.bid;
+    mcxNow=deal.mcx.side==='SELL'?p.mcx.bid:p.mcx.ask;
     if (mcxNow!=null) {
       const raw=deal.mcx.side==='SELL'?(parseFloat(deal.mcx.entryPrice)-parseFloat(mcxNow)):(parseFloat(mcxNow)-parseFloat(deal.mcx.entryPrice));
       const broker=deal.mcx.brokerId?brokers.find(b=>b.id===parseInt(deal.mcx.brokerId)):null;
@@ -76,7 +76,7 @@ function getLivePnl(deal) {
   }
   if (p?.comex&&deal.comex) {
     const qty=parseFloat(deal.comex.qty)||1, brok=parseFloat(deal.comex.brokerage)||0;
-    comexNow=deal.comex.side==='SELL'?p.comex.ask:p.comex.bid;
+    comexNow=deal.comex.side==='SELL'?p.comex.bid:p.comex.ask;
     if (comexNow!=null) {
       const raw=deal.comex.side==='SELL'?(parseFloat(deal.comex.entryPrice)-parseFloat(comexNow)):(parseFloat(comexNow)-parseFloat(deal.comex.entryPrice));
       const convRate = raw >= 0 ? 88.88 : 89;
